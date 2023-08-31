@@ -1,28 +1,9 @@
 image: jekyll/jekyll
 
-cache:
-  paths:
-    - _bundle/
-
-build:
-  stage: build
+pages:
   script:
     - bundle install
-    - bundle exec jekyll build
-    - mv _site public
+    - bundle exec jekyll build -d public
   artifacts:
     paths:
       - public
-  except:
-    - main
-
-pages:
-  stage: deploy
-  script:
-    - bundle exec jekyll build
-    - mv _site public
-  artifacts:
-    paths:
-      - public
-  only:
-    - main

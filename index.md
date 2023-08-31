@@ -15,10 +15,15 @@ jgs~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~
 
 Edit a bit of metadata and tweak some of the included graphics and have a blog up in minutes!
 
+- Pretty, yet lightweight. No JavaScript are used.
 - Proper favicon for modern browsers and Apple device icons.
-- Mastodon, Facebook and other social media meta cards for easy sharing. Try [Share Preview](https://apps.gnome.org/app/com.rafaelmardojai.SharePreview) to test.
+- Mastodon, Lemmy and other social media meta cards for easy sharing. Try [Share Preview](https://apps.gnome.org/app/com.rafaelmardojai.SharePreview) to test.
 - Local copy of the amazing [Inter font](https://rsms.me/inter/). No slowdowns pulling from external hosting.
-- Mobile friendly, dark variant included.
+- Mobile friendly, with proper dark variant included.
+- [jekyll-compress-html](https://github.com/penibelst/jekyll-compress-html) and [jekyll-loading-lazy](https://github.com/gildesmarais/jekyll-loading-lazy) are included for better experience on slow networks.
+- [Mastodon-powered comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon). Comment using any ActivityPub service by replying to Mastodon post.
+
+> See [demo](demo) for showcase of all Duckquill possibilities. Oh and [comments demo](comments) for showcase of Mastodon-powered comments.
 
 Make yourself a cup of your <abbr title="Coffee, tea, or water">favorite drink</abbr> and let's start!
 
@@ -47,3 +52,9 @@ The process of setting up the site locally consists of:
 - Test the site locally. Run `local.sh serve`.
 
 - `git commit` your changes and push to your remote repo for automatic deployment.
+
+## Special thanks ♥
+
+- [Jakub Steiner](https://jimmac.eu) for an awesome [OS Component Website](https://jimmac.github.io/os-component-website), on top of which this whole thing is built
+- [Cassidy James](https://cassidyjames.com) for an awesome [Mastodon-powered comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon)
+- dwb, ejm and jgs for awesome ASCII art

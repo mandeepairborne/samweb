@@ -1,0 +1,18 @@
+/* Custom styles/overrides */
+section#comments {
+  .comment {
+    .avatar-link {
+      &.op::after {
+        color: var(--dark4);
+      }
+    }
+
+    .author {
+      .instance {
+        &.op {
+          color: var(--dark4);
+        }
+      }
+    }
+  }
+}

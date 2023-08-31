@@ -106,11 +106,11 @@ end
 
 ### Small image
 
-![Codeberg icon](https://codeberg.org/Codeberg/Design/raw/branch/main/logo/icon/png/codeberg-logo_icon_blue-64x64.png){:loading="lazy"}
+![Codeberg icon](https://codeberg.org/Codeberg/Design/raw/branch/main/logo/icon/png/codeberg-logo_icon_blue-64x64.png)
 
 ### Large image
 
-![Codeberg horizontal](https://codeberg.org/Codeberg/Design/raw/branch/main/logo/horizontal/png/codeberg-logo_horizontal_blue-850x250.png){:loading="lazy"}
+![Codeberg horizontal](https://codeberg.org/Codeberg/Design/raw/branch/main/logo/horizontal/png/codeberg-logo_horizontal_blue-850x250.png)
 
 ### Definition lists can be used with HTML syntax.
 
@@ -135,15 +135,33 @@ The final element.
 
 ### Extra
 
-Display pixel-art in full width without filtering.
+Display pixel-art without filtering.
 
 ```
-![Pixels](https://pixeljoint.com/files/icons/full/animation_rewinded_mostfinal.gif){:.full.pixels}{:loading="lazy"}
+{:.pixels}
 ```
 
-![Pixels](https://pixeljoint.com/files/icons/full/animation_rewinded_mostfinal.gif){:.full.pixels}{:loading="lazy"}
+![Pixels](https://pixeljoint.com/files/icons/full/animation_rewinded_mostfinal.gif){:.full.pixels}
 
 [Source](https://pixeljoint.com/pixelart/15027.htm){:.site-link}
+
+Full-width.
+
+```
+{:.full}
+```
+
+Shadow and round corners.
+
+```
+{:.media}
+```
+
+...With zoom on hover.
+
+```
+{:.media.hover}
+```
 
 ---
 
@@ -157,15 +175,19 @@ Keyboard shortcuts.
 
 ---
 
-Link with arrow.
+Link to page (rightwards arrow).
 
 ```
-[Link to page](markdown-page.md){:.page-link}
-
-[Link to site](https://example.org){:.site-link}
+{:.page-link}
 ```
 
 [Link to page](../markdown-page){:.page-link}
+
+Link to site (up-rightwards arrow).
+
+```
+{:.site-link}
+```
 
 [Link to site](https://example.org){:.site-link}
 

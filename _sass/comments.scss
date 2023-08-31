@@ -33,7 +33,7 @@ section#comments {
         background-color: var(--accent-color);
         border-radius: 50%;
         bottom: -0.25rem;
-        color: var(--dark4);
+        color: var(--light2);
         content: "✓";
         display: block;
         font-size: 1.25rem;
@@ -70,7 +70,7 @@ section#comments {
 
         &.op {
           background-color: var(--accent-color);
-          color: var(--dark4);
+          color: var(--light2);
 
           &::before {
             content: "✓";
