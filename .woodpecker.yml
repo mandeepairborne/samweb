@@ -34,7 +34,7 @@ steps:
       - git config --global init.defaultBranch pages
       # clone and move the target repo
       - git clone -b pages https://codeberg.org/daudix-UFO/duckquill.git
-      - mv blog _site
+      - mv duckquill _site
       - chmod -R a+w _site
       - cd _site
       # Prepare for push
