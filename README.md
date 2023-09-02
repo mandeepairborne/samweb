@@ -1,6 +1,9 @@
-# Duckquill
+# Duckquill 🦆🪶
 
+[![Please don't upload to GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
 [![status-badge](https://ci.codeberg.org/api/badges/12567/status.svg)](https://ci.codeberg.org/repos/12567)
+
+[Duckquill](https://daudix-ufo.codeberg.page/duckquill/) is a modern, pretty, and clean [Jekyll](https://jekyllrb.com) template that has the purpose of greatly simplifying the process of rolling up your blog. It aims to let you write simple markdown pages and deploy them to Codeberg or GitLab Pages.
 
 ## Usage
 

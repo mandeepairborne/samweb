@@ -5,10 +5,10 @@ baseurl:
   # usually empty. necessary for building absolute URIs
   # for metadata header
 url: "https://daudix-ufo.codeberg.page" # the base hostname & protocol for your site
-sourceurl: "https://codeberg.org/daudix-UFO/duckquill" # "edit this website" link in the footer
+sourceurl: "https://codeberg.org/daudix-UFO/duckquill-source" # "edit this website" link in the footer
 hosting: "Codeberg" # the hosting of your site, e.g Codeberg
 description: "Duckquill blog template."
-issuesurl: "https://codeberg.org/daudix-UFO/duckquill/issues" # issue tracker for website
+issuesurl: "https://codeberg.org/daudix-UFO/duckquill-source/issues" # issue tracker for website
 permalink: /:title/
 primary-color: "#ffa348" # used in iOS theme. further color customization in _sass/variables.scss
 

@@ -11,7 +11,7 @@ jgs~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~
 
 # Duckquill
 
-[Duckquill](https://codeberg.org/daudix-UFO/duckquill) is a modern, pretty, and clean [Jekyll](https://jekyllrb.com) template that has the purpose of greatly simplifying the process of rolling up your blog. It aims to let you write simple markdown pages and deploy them to Codeberg or GitLab Pages.
+[Duckquill](https://codeberg.org/daudix-UFO/duckquill-source) is a modern, pretty, and clean [Jekyll](https://jekyllrb.com) template that has the purpose of greatly simplifying the process of rolling up your blog. It aims to let you write simple markdown pages and deploy them to Codeberg or GitLab Pages.
 
 Edit a bit of metadata and tweak some of the included graphics and have a blog up in minutes!
 
