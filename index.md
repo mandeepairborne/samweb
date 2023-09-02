@@ -29,7 +29,7 @@ Make yourself a cup of your <abbr title="Coffee, tea, or water">favorite drink</
 
 ## Preparation
 
-This template needs a <abbr title="Continuous Integration – Practice of automating the integration of code changes from multiple contributors into a single software project">CI</abbr> to be built and deployed, I recommend using either Codeberg or GitLab Pages. For Codeberg Pages I've written a [blog post](https://daudix-ufo.codeberg.page/blog/migration-from-github-to-codeberg/#github-pages--codeberg-pages) on step-by-step guide how to get the CI working.
+This template needs a <abbr title="Continuous Integration – Practice of automating the integration of code changes from multiple contributors into a single software project">CI</abbr> to be built and deployed, using either Codeberg or GitLab Pages are recommended. For Codeberg Pages I've written a [blog post](https://daudix-ufo.codeberg.page/blog/migration-from-github-to-codeberg/#github-pages--codeberg-pages) on step-by-step guide how to get the CI working.
 
 There is an included `.woodpecker.yml` and `.gitlab-ci.yml` that should be easy to adjust to your situation. For additional info see [Codeberg Pages](https://docs.codeberg.org/codeberg-pages/) and [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/) docs.
 
@@ -48,6 +48,8 @@ The process of setting up the site locally consists of:
 - Replace all mentions and links of `Daudix` and `Duckquill` with yours.
 
 - Replace or edit all the graphics. Using [Inkscape](https://inkscape.org) are recommended. If you want to reduce the SVGs size, use [svgo](https://github.com/svg/svgo).
+
+- Add/override styles by doing so in `_sass/custom.scss`. doing this instead of modifying styles directly are strongly recommended, as it will allow you to update Duckquill easily.
 
 - Test the site locally. Run `local.sh serve`.
 
