@@ -11,7 +11,7 @@
 
 - [Demo page](https://daudix-ufo.codeberg.page/duckquill/demo/)
 - [Cake Party!](https://daudix-ufo.codeberg.page/duckquill/demo-page/)
-- [ActivityPub/​Fediverse comments demo](https://daudix-ufo.codeberg.page/duckquill/comments/)
+- [ActivityPub/​Fediverse comments demo](https://daudix-ufo.codeberg.page/duckquill/demo-comments/)
 
 ### 🏗️ Build static files
 
