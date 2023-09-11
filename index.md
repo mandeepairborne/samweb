@@ -23,7 +23,7 @@ Edit a bit of metadata and tweak some of the included graphics and have a blog u
 - [jekyll-compress-html](https://github.com/penibelst/jekyll-compress-html) and [jekyll-loading-lazy](https://github.com/gildesmarais/jekyll-loading-lazy) are included for better experience on slow networks.
 - [Mastodon-powered comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon). Comment using any ActivityPub service by replying to Mastodon post.
 
-> See [demo](demo) for showcase of all Duckquill possibilities. Oh and [comments demo](comments) for showcase of Mastodon-powered comments.
+> See [demo](demo) for showcase of all Duckquill possibilities. Oh and [comments demo](demo-comments) for showcase of Mastodon-powered comments.
 
 Make yourself a cup of your <abbr title="Coffee, tea, or water">favorite drink</abbr> and let's start!
 
