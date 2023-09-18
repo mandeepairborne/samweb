@@ -21,9 +21,10 @@ Edit a bit of metadata and tweak some of the included graphics and have a blog u
 - Local copy of the amazing [Inter font](https://rsms.me/inter/). No slowdowns pulling from external hosting.
 - Mobile friendly, with proper dark variant included.
 - [jekyll-compress-html](https://github.com/penibelst/jekyll-compress-html) and [jekyll-loading-lazy](https://github.com/gildesmarais/jekyll-loading-lazy) are included for better experience on slow networks.
+- [github-pages](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins)-like experience without actual `github-pages` plugin, since it has a lot of useless stuff like default Jekyll themes, plus some GitHub-specific stuff.
 - [Mastodon-powered comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon). Comment using any ActivityPub service by replying to Mastodon post.
 
-> See [demo](demo) for showcase of all Duckquill possibilities. Oh and [comments demo](demo-comments) for showcase of Mastodon-powered comments.
+> See [demo](demo.md) for showcase of all Duckquill possibilities. Oh and [comments demo](demo-comments.md) for showcase of Mastodon-powered comments.
 
 Make yourself a cup of your <abbr title="Coffee, tea, or water">favorite drink</abbr> and let's start!
 
