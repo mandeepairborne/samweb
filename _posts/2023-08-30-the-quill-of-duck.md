@@ -8,7 +8,7 @@ comments:
   id:
 ---
 
-![Quill](../assets/posts/2023-08-31/quill.png){:.full.media.hover}
+![Quill](/assets/posts/2023-08-31/quill.png){:.full.media.hover}
 
 ## The what?
 
@@ -32,7 +32,7 @@ This is the story of a man named _Stanley_.
 
 _Stanley_ worked for a company in a big building where he was Employee `#427`.
 
-![The Office](../assets/posts/2023-08-31/The_Office.webp){:.full.media.hover}
+![The Office](/assets/posts/2023-08-31/The_Office.webp){:.full.media.hover}
 
 <figcaption>The Office where Stanley works, it has yellow floor and beige walls</figcaption>
 
