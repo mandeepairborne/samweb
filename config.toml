@@ -27,10 +27,10 @@ blog_title = "Writings of Duck's Feet"
 blog_description = "Welcome to my quack'in blog, I quack about various stuff, but mostly I'm a demo"
 date_format = "%d %B %Y"
 hosting = "Codeberg"
-issues_url = "https://codeberg.org/daudix-UFO/duckquill/issues"
-source_url = "https://codeberg.org/daudix-UFO/duckquill"
+issues_url = "https://git.exozy.me/daudix/duckquill/issues"
+source_url = "https://git.exozy.me/daudix/duckquill"
 nav_links = [
-  {url = "https://codeberg.org/daudix-UFO/duckquill", name = "Repo"},
+  {url = "https://git.exozy.me/daudix/duckquill", name = "Repo"},
   {url = "/demo", name = "Demo"},
   {url = "/blog", name = "Blog"},
 ]

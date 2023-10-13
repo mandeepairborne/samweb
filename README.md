@@ -1,9 +1,9 @@
 # Duckquill
 
 [![Please don't upload to GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
-[![status-badge](https://ci.codeberg.org/api/badges/12567/status.svg)](https://ci.codeberg.org/repos/12567)
+[![status-badge](https://ci.exozy.me/api/badges/159/status.svg)](https://ci.exozy.me/repos/159)
 
-[Duckquill](https://codeberg.org/daudix-UFO/duckquill) is a modern, pretty, and clean (and very opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
+[Duckquill](https://git.exozy.me/daudix/duckquill) is a modern, pretty, and clean (and very opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
 
 ## Installation
 
@@ -11,14 +11,14 @@ First download this theme to your `themes` directory:
 
 ```sh
 cd themes
-git clone https://codeberg.org/daudix-UFO/duckquill-source.git
+git clone https://git.exozy.me/daudix/duckquill.git
 ```
 
 ...or add as submodule for easy updating (recommended if you already have git setup on site):
 
 ```sh
 cd themes
-git submodule add https://codeberg.org/daudix-UFO/duckquill.git
+git submodule add https://git.exozy.me/daudix/duckquill.git
 ```
 
 and then enable it in your `config.toml`:
