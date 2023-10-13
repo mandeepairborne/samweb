@@ -16,4 +16,4 @@ pipeline:
     image: bash
     commands:
       - cd /home/daudix/.exoci/duckquill
-      - ~/.nix-profile/bin/zola build --output-dir /srv/http/pages/daudix/duckquill --force
+      - ~/.nix-profile/bin/zola build --output-dir /srv/http/pages/duckquill --force
