@@ -16,8 +16,7 @@ git clone https://codeberg.org/daudix-UFO/duckquill-source.git
 
 ...or add as submodule for easy updating (recommended if you already have git setup on site):
 
-sh
-```
+```sh
 cd themes
 git submodule add https://codeberg.org/daudix-UFO/duckquill.git
 ```
