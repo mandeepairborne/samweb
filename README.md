@@ -33,7 +33,7 @@ Duckquill offers some configuration options to make it fit you better (but that 
 
 ### Custom CSS
 
-You can add your own or override existing styles in the `sass/_custom.scss`, if for some reason overridden class are not respected, try using `!important`. This file is empty by default so you should not have issues with doing the `git pull`.
+You can add your own or override existing styles in the `themes/duckquill/sass/_custom.scss`, if for some reason overridden class are not respected, try using `!important`. This file is empty by default so you should not have issues with doing the `git pull` later.
 
 ### Accent color
 
@@ -46,7 +46,7 @@ First, change the accent color in `config.toml`:
 accent_color = "#HEX_COLOR_CODE"
 ```
 
-Then, also change it in `sass/_variables.scss`:
+Then, also change it in `themes/duckquill/sass/_variables.scss`:
 
 ```
 $accent-color: #HEX_COLOR_CODE;
@@ -54,7 +54,7 @@ $accent-color: #HEX_COLOR_CODE;
 
 ### `[extra]` variables:
 
-- `accent_color`: Accent color used in some browsers set in metadata, for actual accent color see `sass/_variables.scss`
+- `accent_color`: Accent color used in some browsers set in metadata, for actual accent color see `themes/duckquill/sass/_variables.scss`
 - `blog_title`: The title of the blog, used in `/blog`
 - `blog_description`: The description of the blog, displayed right under the blog title
 - `date_format`: Allows setting custom date format in [Tera](https://keats.github.io/tera) format, all available variables are listed [here](https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html). Does not apply to comments
