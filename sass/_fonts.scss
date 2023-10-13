@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: oblique italic 0deg 10deg;
+  src: url("/fonts/inter.woff2?v=4.0") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/jetbrains-mono.woff2?v=2.304") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  src: url("/fonts/jetbrains-mono-italic.woff2?v=2.304") format("woff2");
+}

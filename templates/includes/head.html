@@ -1,0 +1,20 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="{{ config.extra.accent_color }}" />
+
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+  <link href="{{ get_url(path='style.css') }}" rel="stylesheet" />
+
+  <link rel="icon" type="image/gif" href="{{ config.base_url }}/favicon.gif" />
+  <link rel="icon" type="image/png" href="{{ config.base_url }}/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ config.base_url }}/apple-touch-icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ config.title }}" />
+  <meta property="og:url" content="{{ config.base_url }}" />
+  <meta property="og:description" content="{{ config.description }}" />
+  <meta property="og:image" content="{{ config.base_url }}/card.png" />
+</head>

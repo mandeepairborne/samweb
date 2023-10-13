@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ config.extra.blog_title }}</h1>
+
+<p>{{ config.extra.blog_description }}</p>
+
+<small>
+  <a class="link-page" href="{{ config.base_url }}/tags">Filter by tag</a>
+  <br />
+  From newest to oldest ↓
+</small>
+
+{% for page in section.pages %}
+<article>
+  <h2>
+    <a class="link-page" href="{{ page.permalink | safe }}">{{ page.title }}</a>
+  </h2>
+  <small>
+    <time datetime="{{ page.date | date(format='%+') }}" pubdate>
+      {{- page.date | date(format=config.extra.date_format) -}}
+    </time>
+    {%- if page.taxonomies %}
+      {%- for name, taxon in page.taxonomies %}
+      •
+        {%-for item in taxon %}
+        <a class="link-tag" href="{{ get_taxonomy_url(kind=name, name=item) }}">
+          <svg class="link-icon" viewBox="0 0 16 16" width="16" height="16">
+            <path
+              fill="currentColor"
+              d="M4 0C1.785 0 0 1.785 0 4v3.09c0 .847.336 1.66.938 2.262l5.382 5.382c.93.934 2.43.934 3.36 0l4.965-4.964c.98-.98.98-2.56 0-3.54L9.227.812A2.777 2.777 0 0 0 7.266 0H4zm0 2h3.266c.207 0 .402.082.546.227l5.418 5.418a.512.512 0 0 1 0 .71L8.266 13.32a.38.38 0 0 1-.532 0L2.352 7.937A1.198 1.198 0 0 1 2 7.09V4c0-1.098.902-2 2-2zm.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+            />
+          </svg>
+          {{ item }}
+        </a>&nbsp;
+        {%- endfor %}
+      {%- endfor %}
+    {%- endif %}
+  </small>
+</article>
+{% endfor %} {% endblock content %}

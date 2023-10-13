@@ -1,0 +1,21 @@
+/* 
+
+    Duckquill
+    ====================
+
+    based on OS Component Website which shamelessly stolen CSS from systemd
+    https://github.com/jimmac/os-component-website
+    https://github.com/systemd/systemd/tree/main/docs
+    scanlines.scss are taken from https://codepen.io/meduzen/pen/zxbwRV
+
+*/
+
+@use "variables";
+@use "gnome-hig";
+@use "fonts";
+@use "main";
+@use "comments";
+@use "scanlines";
+@use "custom";
+@import "syntax-theme-dark.css" (prefers-color-scheme: dark);
+@import "syntax-theme-light.css" (prefers-color-scheme: light);

@@ -1,9 +1,0 @@
-image: jekyll/jekyll
-
-pages:
-  script:
-    - bundle install
-    - bundle exec jekyll build -d public
-  artifacts:
-    paths:
-      - public
