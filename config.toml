@@ -31,7 +31,8 @@ issues_url = "https://codeberg.org/daudix-UFO/duckquill/issues"
 source_url = "https://codeberg.org/daudix-UFO/duckquill"
 nav_links = [
   {url = "https://codeberg.org/daudix-UFO/duckquill", name = "Repo"},
-  {url = "blog", name = "Blog"},
+  {url = "/demo", name = "Demo"},
+  {url = "/blog", name = "Blog"},
 ]
 
 [extra.footer]

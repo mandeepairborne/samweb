@@ -3,17 +3,17 @@ clone:
     image: bash
     commands:
       - cd /home/daudix
-      - if [ -d Projects/duckquill ]; then
-      -   cd Projects/duckquill
+      - if [ -d .exoci/duckquill ]; then
+      -   cd .exoci/duckquill
       -   git pull
       -   git submodule update
       - else
-      -   git clone --recursive https://git.exozy.me/daudix/duckquill.git Projects/duckquill
+      -   git clone --recursive https://git.exozy.me/daudix/duckquill.git .exoci/duckquill
       - fi
 
 pipeline:
   build:
     image: bash
     commands:
-      - cd /home/daudix/Projects/duckquill
+      - cd /home/daudix/.exoci/duckquill
       - ~/.nix-profile/bin/zola build --output-dir /srv/http/pages/daudix/duckquill --force
