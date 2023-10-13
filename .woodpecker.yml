@@ -1,0 +1,19 @@
+clone:
+  git:
+    image: bash
+    commands:
+      - cd /home/daudix
+      - if [ -d Projects/duckquill ]; then
+      -   cd Projects/duckquill
+      -   git pull
+      -   git submodule update
+      - else
+      -   git clone --recursive https://git.exozy.me/daudix/duckquill.git Projects/duckquill
+      - fi
+
+pipeline:
+  build:
+    image: bash
+    commands:
+      - cd /home/daudix/Projects/duckquill
+      - ~/.nix-profile/bin/zola build --output-dir /srv/http/pages/daudix/duckquill --force
