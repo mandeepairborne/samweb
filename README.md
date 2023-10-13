@@ -7,18 +7,17 @@
 
 ## Installation
 
-First download this theme to your `themes` directory:
+First, fork it and download this theme to your `themes` directory:
 
 ```sh
-cd themes
-git clone https://git.exozy.me/daudix/duckquill.git
+git clone YOUR_FORK.git themes/duckquill
 ```
 
 ...or add as submodule for easy updating (recommended if you already have git setup on site):
 
 ```sh
-cd themes
-git submodule add https://git.exozy.me/daudix/duckquill.git
+git submodule init
+git submodule add YOUR_FORK.git themes/duckquill
 ```
 
 and then enable it in your `config.toml`:
