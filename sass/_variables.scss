@@ -1,7 +1,6 @@
 @use "sass:color";
 
-$accent-color: #ff7800 !default;
-@import "accent-color";
+$accent-color: #ff7800;
 
 $crt-bg-l: radial-gradient(
   color.mix($accent-color, black, 30%),
