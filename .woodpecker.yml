@@ -6,7 +6,7 @@ clone:
       - if [ -d .exoci/duckquill ]; then
       -   cd .exoci/duckquill
       -   git pull
-      -   git submodule update
+      -   git submodule update --remote --merge
       - else
       -   git clone --recursive https://git.exozy.me/daudix/duckquill.git .exoci/duckquill
       - fi
