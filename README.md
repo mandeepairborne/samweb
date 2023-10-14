@@ -54,6 +54,7 @@ $accent-color: #HEX_COLOR_CODE;
 ### `[extra]` variables:
 
 - `accent_color`: Accent color used in some browsers set in metadata, for actual accent color see `themes/duckquill/sass/_variables.scss`
+- `animated_favicon`: Specify if the favicon are animated GIF (true, false)
 - `blog_title`: The title of the blog, used in `/blog`
 - `blog_description`: The description of the blog, displayed right under the blog title
 - `date_format`: Allows setting custom date format in [Tera](https://keats.github.io/tera) format, all available variables are listed [here](https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html). Does not apply to comments
