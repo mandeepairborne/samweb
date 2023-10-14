@@ -14,12 +14,12 @@ body {
   accent-color: var(--accent-color);
 }
 
-// @media only screen and (max-device-width: 480px) {
-//   html,
-//   body {
-//     font-size: 14px;
-//   }
-// }
+@media only screen and (max-device-width: 480px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
 
 body {
   font-family: "Inter", sans-serif;
