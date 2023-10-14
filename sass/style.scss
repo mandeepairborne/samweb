@@ -16,6 +16,5 @@
 @use "main";
 @use "comments";
 @use "scanlines";
-@use "custom";
 @import "syntax-theme-dark.css" (prefers-color-scheme: dark);
 @import "syntax-theme-light.css" (prefers-color-scheme: light);

@@ -1,32 +1,26 @@
 @use "sass:color";
 
-$accent-color: #ff7800;
+$accent-color: #ffa348;
+$accent-color-20: color.scale($accent-color, $alpha: -80%);
 
-$crt-bg-l: radial-gradient(
-  color.mix($accent-color, black, 30%),
-  color.mix($accent-color, black, 20%)
+$crt-bg: radial-gradient(
+  color.scale($accent-color, $lightness: -80%),
+  color.scale($accent-color, $lightness: -90%)
 );
 
-$crt-bg-d: radial-gradient(
-  color.mix($accent-color, black, 20%),
-  color.mix($accent-color, black, 10%)
-);
+$bg-l: color.mix($accent-color, rgb(250, 250, 250), 10%);
+$bg-d: color.mix($accent-color, rgb(11, 11, 11), 5%);
 
-$bg1-l: color.mix($accent-color, rgb(250, 250, 250), 10%);
-$bg2-l: color.mix($accent-color, rgb(255, 255, 255), 20%);
-$bg3-l: color.mix($accent-color, rgb(75, 75, 75), 30%);
-
-$bg1-d: color.mix($accent-color, rgb(36, 36, 36), 15%);
-$bg2-d: color.mix($accent-color, rgb(30, 30, 30), 10%);
-$bg3-d: color.mix($accent-color, rgb(11, 11, 11), 5%);
-
-$marked: color.scale($accent-color, $alpha: -80%);
-
+$glow:
+  0 0 0 1px color.scale($accent-color, $alpha: -95%),
+  0 2px 6px 2px color.scale($accent-color, $alpha: -95%),
+  0 4px 24px 4px color.scale($accent-color, $alpha: -90%);
+  
 :root {
   // GENERAL SETUP
   --accent-color: #{$accent-color};
   --text: var(--dark4);
-  --background: var(--bg1);
+  --background: var(--bg);
   --border: rgba(120, 120, 120, 0.4);
   --border-radius: 0.75rem;
   --border-radius-big: 1.2rem;
@@ -34,17 +28,13 @@ $marked: color.scale($accent-color, $alpha: -80%);
   --content-width: 720px;
 
   // CUSTOM COLOR PALETTE
-  --bg1: #{$bg1-l};
-  --bg2: #{$bg2-l};
-  --bg3: #{$bg3-l};
+  --bg: #{$bg-l};
 
-  --fg01: rgba(0, 0, 0, 0.01);
-  --fg03: rgba(0, 0, 0, 0.03);
-  --fg05: rgba(0, 0, 0, 0.05);
-  --fg07: rgba(0, 0, 0, 0.07);
-  --fg09: rgba(0, 0, 0, 0.09);
-  --fg40: rgba(0, 0, 0, 0.4);
-  --fg50: rgba(0, 0, 0, 0.5);
+  --fg-03: rgba(0, 0, 0, 0.03);
+  --fg-05: rgba(0, 0, 0, 0.05);
+  --fg-07: rgba(0, 0, 0, 0.07);
+  --fg-09: rgba(0, 0, 0, 0.09);
+  --fg-50: rgba(0, 0, 0, 0.5);
 
   --purple-bg: rgba(145, 65, 172, 0.1);
   --purple-fg: rgb(145, 65, 172);
@@ -55,9 +45,9 @@ $marked: color.scale($accent-color, $alpha: -80%);
   --orange-bg: rgba(255, 120, 0, 0.1);
   --orange-fg: rgb(255, 120, 0);
 
-  --crt-bg: #{$crt-bg-l};
+  --crt-bg: #{$crt-bg};
 
-  --marked: #{$marked};
+  --accent-color-20: #{$accent-color-20};
 
   // CUSTOM VARIABLES
   --shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
@@ -66,6 +56,7 @@ $marked: color.scale($accent-color, $alpha: -80%);
     0 2px 6px 2px rgba(0, 0, 0, 0.14), 0 4px 12px 4px rgba(0, 0, 0, 0.06);
   --drop-shadow: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.07))
     drop-shadow(0 2px 2px rgba(0, 0, 0, 0.06));
+  --glow: #{$glow};
 
   --transition: 200ms;
   --transition-longer: 400ms;
@@ -76,20 +67,18 @@ $marked: color.scale($accent-color, $alpha: -80%);
   :root {
     color-scheme: dark;
 
+    // GENERAL SETUP
     --text: var(--light2);
-    --background: var(--bg3);
+    --background: var(--bg);
 
-    --fg01: rgba(255, 255, 255, 0.01);
-    --fg03: rgba(255, 255, 255, 0.03);
-    --fg05: rgba(255, 255, 255, 0.05);
-    --fg07: rgba(255, 255, 255, 0.07);
-    --fg09: rgba(255, 255, 255, 0.09);
-    --fg40: rgba(255, 255, 255, 0.4);
-    --fg50: rgba(255, 255, 255, 0.5);
+    // CUSTOM COLOR PALETTE
+    --bg: #{$bg-d};
 
-    --bg1: #{$bg1-d};
-    --bg2: #{$bg2-d};
-    --bg3: #{$bg3-d};
+    --fg-03: rgba(255, 255, 255, 0.03);
+    --fg-05: rgba(255, 255, 255, 0.05);
+    --fg-07: rgba(255, 255, 255, 0.07);
+    --fg-09: rgba(255, 255, 255, 0.09);
+    --fg-50: rgba(255, 255, 255, 0.5);
 
     --purple-bg: rgba(220, 138, 221, 0.1);
     --purple-fg: rgb(220, 138, 221);
@@ -99,7 +88,5 @@ $marked: color.scale($accent-color, $alpha: -80%);
     --yellow-fg: rgb(248, 228, 92);
     --orange-bg: rgba(255, 190, 111, 0.1);
     --orange-fg: rgb(255, 190, 111);
-
-    --crt-bg: #{$crt-bg-d};
   }
 }

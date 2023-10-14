@@ -22,7 +22,7 @@ section#comments {
       .avatar {
         all: unset;
         display: block;
-        background-color: var(--bg2);
+        background-color: var(--fg-05);
         border-radius: var(--border-radius);
         box-shadow: var(--shadow);
         height: 100%;
@@ -56,7 +56,7 @@ section#comments {
       grid-area: name;
 
       .instance {
-        background-color: var(--fg05);
+        background-color: var(--fg-05);
         border-radius: 9999px;
         color: var(--text);
         font-size: smaller;
@@ -117,7 +117,7 @@ section#comments {
 
       figure {
         border-radius: var(--border-radius);
-        background-color: var(--bg2);
+        background-color: var(--fg-05);
         box-shadow: var(--shadow);
         margin-left: 0;
         margin-right: 0;
@@ -224,15 +224,15 @@ section#comments {
             to right,
             transparent,
             transparent 0.4rem,
-            var(--bg2) 0.4rem,
-            var(--bg2) calc(100% - 0.4rem),
+            var(--fg-05) 0.4rem,
+            var(--fg-05) calc(100% - 0.4rem),
             transparent calc(100% - 0.4rem),
             transparent
           ),
           repeating-linear-gradient(
             45deg,
-            var(--bg1),
-            var(--bg1) 0.3rem,
+            var(--fg-50),
+            var(--fg-50) 0.3rem,
             var(--accent-color) 0.3rem,
             var(--accent-color) 0.6rem
           );
