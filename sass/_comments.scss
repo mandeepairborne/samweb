@@ -137,7 +137,6 @@ section#comments {
 
       figcaption {
         color: var(--text);
-        font-size: unset;
         display: grid;
         gap: 0.5rem;
         margin: 0;
@@ -146,17 +145,17 @@ section#comments {
 
         * {
           display: inline-block;
-          line-height: 1.25;
           margin: 0;
-          overflow: hidden;
           padding: 0;
-          text-overflow: ellipsis;
-          white-space: nowrap;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
         }
       }
     }
 
-    Hide the card from the shared post
+    // Hide the card from the shared post
     &:first-of-type .card {
       display: none;
     }
@@ -220,27 +219,11 @@ section#comments {
 
     details {
       summary {
-        background-image: linear-gradient(
-            to right,
-            transparent,
-            transparent 0.4rem,
-            var(--fg-05) 0.4rem,
-            var(--fg-05) calc(100% - 0.4rem),
-            transparent calc(100% - 0.4rem),
-            transparent
-          ),
-          repeating-linear-gradient(
-            45deg,
-            var(--fg-50),
-            var(--fg-50) 0.3rem,
-            var(--accent-color) 0.3rem,
-            var(--accent-color) 0.6rem
-          );
-        border-radius: var(--border-radius);
-        cursor: pointer;
-        box-shadow: var(--shadow);
-        padding: 1rem;
+        color: var(--yellow-fg);
       }
+
+      margin-top: 1rem;
+      background-color: var(--yellow-bg);
     }
   }
 }
