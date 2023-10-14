@@ -18,36 +18,32 @@ $glow:
   
 :root {
   // GENERAL SETUP
+  --accent-color-20: #{$accent-color-20};
   --accent-color: #{$accent-color};
-  --text: var(--dark4);
-  --background: var(--bg);
-  --border: rgba(120, 120, 120, 0.4);
-  --border-radius: 0.75rem;
+  --background: #{$bg-l};
   --border-radius-big: 1.2rem;
   --border-radius-small: 0.5rem;
+  --border-radius: 0.75rem;
+  --border: rgba(120, 120, 120, 0.4);
   --content-width: 720px;
+  --crt-bg: #{$crt-bg};
+  --text: var(--dark4);
 
   // CUSTOM COLOR PALETTE
-  --bg: #{$bg-l};
-
   --fg-03: rgba(0, 0, 0, 0.03);
   --fg-05: rgba(0, 0, 0, 0.05);
   --fg-07: rgba(0, 0, 0, 0.07);
   --fg-09: rgba(0, 0, 0, 0.09);
   --fg-50: rgba(0, 0, 0, 0.5);
 
+  --orange-bg: rgba(255, 120, 0, 0.1);
+  --orange-fg: rgb(255, 120, 0);
   --purple-bg: rgba(145, 65, 172, 0.1);
   --purple-fg: rgb(145, 65, 172);
   --red-bg: rgba(224, 27, 36, 0.1);
   --red-fg: rgb(224, 27, 36);
   --yellow-bg: rgba(156, 110, 3, 0.1);
   --yellow-fg: rgb(156, 110, 3);
-  --orange-bg: rgba(255, 120, 0, 0.1);
-  --orange-fg: rgb(255, 120, 0);
-
-  --crt-bg: #{$crt-bg};
-
-  --accent-color-20: #{$accent-color-20};
 
   // CUSTOM VARIABLES
   --shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
@@ -58,9 +54,9 @@ $glow:
     drop-shadow(0 2px 2px rgba(0, 0, 0, 0.06));
   --glow: #{$glow};
 
-  --transition: 200ms;
-  --transition-longer: 400ms;
   --transition-long: 800ms;
+  --transition-longer: 400ms;
+  --transition: 200ms;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -68,25 +64,23 @@ $glow:
     color-scheme: dark;
 
     // GENERAL SETUP
+    --background: #{$bg-d};
     --text: var(--light2);
-    --background: var(--bg);
 
     // CUSTOM COLOR PALETTE
-    --bg: #{$bg-d};
-
     --fg-03: rgba(255, 255, 255, 0.03);
     --fg-05: rgba(255, 255, 255, 0.05);
     --fg-07: rgba(255, 255, 255, 0.07);
     --fg-09: rgba(255, 255, 255, 0.09);
     --fg-50: rgba(255, 255, 255, 0.5);
 
+    --orange-bg: rgba(255, 190, 111, 0.1);
+    --orange-fg: rgb(255, 190, 111);
     --purple-bg: rgba(220, 138, 221, 0.1);
     --purple-fg: rgb(220, 138, 221);
     --red-bg: rgba(226, 97, 81, 0.1);
     --red-fg: rgb(246, 97, 81);
     --yellow-bg: rgba(248, 228, 92, 0.1);
     --yellow-fg: rgb(248, 228, 92);
-    --orange-bg: rgba(255, 190, 111, 0.1);
-    --orange-fg: rgb(255, 190, 111);
   }
 }
