@@ -5,21 +5,23 @@
 
 [Duckquill](https://git.exozy.me/daudix/duckquill) is a modern, pretty, and clean (and very opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
 
+> Duckquill is made based on needs of [my website](https://daudix.exozy.me), if you need some feature/configuration that doesn't exist feel free to open an issue or better yet, pull request!
+
 [![Duckquill](https://i.imgur.com/PrzgtNB.png)](https://i.imgur.com/1fCi1sF.png)
 
 ## Installation
 
-First, fork it and download this theme to your `themes` directory:
+First, download this theme to your `themes` directory:
 
 ```sh
-git clone YOUR_FORK.git themes/duckquill
+git clone https://git.exozy.me/daudix/duckquill.git themes/duckquill
 ```
 
 ...or add as submodule for easy updating (recommended if you already have git setup on site):
 
 ```sh
 git submodule init
-git submodule add YOUR_FORK.git themes/duckquill
+git submodule add https://git.exozy.me/daudix/duckquill.git themes/duckquill
 ```
 
 and then enable it in your `config.toml`:
@@ -34,7 +36,7 @@ Duckquill offers some configuration options to make it fit you better (but that 
 
 ### Custom CSS
 
-You can add your own or override existing styles in the `themes/duckquill/sass/_custom.scss`, if for some reason overridden class are not respected, try using `!important`. This file is empty by default so you should not have issues with doing the `git pull` later.
+You can add your own or override existing styles in the `sass/custom.scss` of your site, if for some reason overridden class are not respected, try using `!important`. You can import styles from Duckquill using `@use "../themes/duckquill/sass/NEEDED_FILE.scss";`.
 
 ### Accent color
 
@@ -47,17 +49,49 @@ First, change the accent color in `config.toml`:
 accent_color = "#HEX_COLOR_CODE"
 ```
 
-Then, also change it in `themes/duckquill/sass/_variables.scss`:
+Then, paste the following code inside `sass/custom.scss` (inside your site, not the theme):
 
 ```
+@use "sass:color";
+
 $accent-color: #HEX_COLOR_CODE;
+$accent-color-20: color.scale($accent-color, $alpha: -80%);
+
+$crt-bg: radial-gradient(
+  color.scale($accent-color, $lightness: -80%),
+  color.scale($accent-color, $lightness: -90%)
+);
+
+$bg-l: color.mix($accent-color, rgb(250, 250, 250), 10%);
+$bg-d: color.mix($accent-color, rgb(11, 11, 11), 5%);
+
+$glow:
+  0 0 0 1px color.scale($accent-color, $alpha: -95%),
+  0 2px 6px 2px color.scale($accent-color, $alpha: -95%),
+  0 4px 24px 4px color.scale($accent-color, $alpha: -90%);
+  
+:root {
+  --accent-color-20: #{$accent-color-20};
+  --accent-color: #{$accent-color};
+  --background: #{$bg-l};
+  --crt-bg: #{$crt-bg};
+  --glow: #{$glow};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #{$bg-d};
+  }
+}
 ```
+
+Set any color in `$accent-color` and reload, the accent color should be used now. This is a hack that is needed until Zola will be able to use `config.toml` inside Sass.
 
 ### `[extra]` variables:
 
-- `accent_color`: Accent color used in some browsers set in metadata, for actual accent color see `themes/duckquill/sass/_variables.scss`
+- `accent_color`: Accent color used in some browsers set in metadata, see [#accent-color](https://git.exozy.me/daudix/duckquill#accent-color)
 - `animated_favicon`: Specify if the favicon are animated GIF (true, false)
-- `blog_title`: The title of the blog, used in `/blog`
+- `blog_title`: The title of the blog
 - `blog_description`: The description of the blog, displayed right under the blog title
 - `date_format`: Allows setting custom date format in [Tera](https://keats.github.io/tera) format, all available variables are listed [here](https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html). Does not apply to comments
 - `hosting`: Where the website source are located, used on 404 page
@@ -89,11 +123,17 @@ nav_links = [
 - `user`: Mastodon username, e.g `Daudix`
 - `token`: Mastodon app token, e.g `jTNX9pAV8XEPBby0cPWF6CmGY60kkIy4vidggfxXmoQ`. Can be left empty, but in this case only first 60 comments will be loaded, instructions on how to get one are available [here](https://github.com/cassidyjames/cassidyjames.github.io/blob/47c449a0083113ea5be8d215beb6650ac64929e4/_config.yaml#L48-L52)
 
+These values are also used in the `<head>` for Mastodon verification.
+
 ## Test pages
 
 - [Demo page](https://duckquill.exozy.me/demo)
 - [Cake Party!](https://duckquill.exozy.me/demo/page)
 - [ActivityPub/​Fediverse comments demo](https://duckquill.exozy.me/demo/comments)
+
+## Contribute
+
+If you want to improve Duckquill in any way, feel free to open an issue, or even better, a pull request! I'm happy about every contribution!
 
 ## Special thanks ♥
 
@@ -101,3 +141,4 @@ nav_links = [
 - [Cassidy James](https://cassidyjames.com) for an awesome [Mastodon-powered Comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon)
 - [Mehdi](https://codepen.io/meduzen) for an awesome [CSS Scanlines](https://codepen.io/meduzen/pen/zxbwRV)
 - dwb, ejm and jgs for awesome ASCII art
+- Everyone who supported me and said good stuff <3

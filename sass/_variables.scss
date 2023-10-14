@@ -1,6 +1,6 @@
 @use "sass:color";
 
-$accent-color: #ffa348;
+$accent-color: #ff7800;
 $accent-color-20: color.scale($accent-color, $alpha: -80%);
 
 $crt-bg: radial-gradient(
