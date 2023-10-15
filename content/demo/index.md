@@ -68,25 +68,25 @@ end
 | ok           | good `oreos`      | hmm   |
 | ok           | good `zoute` drop | yumm  |
 
-### There's a horizontal rule below this.
+## There's a horizontal rule below this.
 
 ---
 
-### Here is an unordered list:
+## Here is an unordered list:
 
 - Item foo
 - Item bar
 - Item baz
 - Item zip
 
-### And an ordered list:
+## And an ordered list:
 
 1. Item one
 1. Item two
 1. Item three
 1. Item four
 
-### And a nested list:
+## And a nested list:
 
 - level 1 item
   - level 2 item
@@ -102,22 +102,23 @@ end
   - level 2 item
 - level 1 item
 
-### Here is a checkboxes:
+## Here is a checkboxes:
 
 - [ ] Milk
 - [x] Eggs
 - [x] Flour
 - [ ] Coffee
+- [x] Combustible lemons
 
-### Small image
+## Small image
 
 {{ image(url="https://codeberg.org/Codeberg/Design/raw/branch/main/logo/icon/png/codeberg-logo_icon_blue-64x64.png", alt="Codeberg icon", transparent=true, no_hover=true) }}
 
-### Large image
+## Large image
 
 {{ image(url="https://codeberg.org/Codeberg/Design/raw/branch/main/logo/horizontal/png/codeberg-logo_horizontal_blue-850x250.png", alt="Codeberg horizontal", transparent=true, no_hover=true) }}
 
-### Definition lists can be used with HTML syntax.
+## Definition lists can be used with HTML syntax.
 
 <dl>
 <dt>Name</dt>
@@ -138,15 +139,15 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 The final element.
 ```
 
-### Extra
+## Extra
 
 Alright now that the generic (slightly extended) ~~Jekyll~~ Zola demo page have ended, we can get to the custom stuff, which believe me, are neat.
 
-#### Shortcodes
+### Shortcodes
 
 Duckquill provides a few useful [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) that simplify some tasks.
 
-##### Image
+#### Image
 
 By default images come with styling, such as round corners and shadow. To fine-tune these, you can use shortcodes with different variable combinations.
 
@@ -168,7 +169,7 @@ Variables should be comma-separated and be inside the brackets.
 
 {{ image(url="https://i.imgur.com/Fr1ImW9.png", alt="Portal Gun blueprint", no_hover=true) }}
 
-##### Video
+#### Video
 
 Same as images, but with a few differences: `no_hover` and `url_min` are not available.
 
@@ -178,7 +179,7 @@ Same as images, but with a few differences: `no_hover` and `url_min` are not ava
 
 {{ video(url="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm", alt="Red flower wakes up") }}
 
-##### CRT
+#### CRT
 
 Alright, this one doesn't simplify anything, it just adds a CRT-like effect around Markdown code blocks.
 
@@ -213,7 +214,7 @@ Alright, this one doesn't simplify anything, it just adds a CRT-like effect arou
 ```
 {% end %}
 
-### Captions
+## Captions
 
 Media can have additional text description using the `<figcaption>` HTML tag.
 
@@ -225,7 +226,7 @@ Media can have additional text description using the `<figcaption>` HTML tag.
 ![The Office](https://i.imgur.com/ImMAXM3.png)
 <figcaption>The Office where Stanley works, it has yellow floor and beige walls</figcaption>
 
-### Accordion
+## Accordion
 
 <details>
   <summary>I can be a spoiler, I can be a long text, I could be anything.</summary>
@@ -236,15 +237,15 @@ _Quack-quack!_
 
 </details>
 
-### Small
+## Small
 
 <small>Small, cute text that doesn't catch attention.</small>
 
-### Abbreviation
+## Abbreviation
 
 The <abbr title="American Standard Code for Information Interchange">ASCII</abbr> art are awesome!
 
-### Keyboard shortcut
+## Keyboard shortcut
 
 ```
 <kbd>⌘ Super</kbd> + <kbd>Space</kbd>
@@ -252,11 +253,11 @@ The <abbr title="American Standard Code for Information Interchange">ASCII</abbr
 
 <kbd>⌘ Super</kbd> + <kbd>Space</kbd>
 
-### Highlighted
+## Highlighted
 
 You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>important</mark> that even **bold** is not enough.
 
-### Link to page (rightwards arrow)
+## Link to page (rightwards arrow)
 
 ```
 <a class="page-link" href="demo/demo-page">Link to page</a>
@@ -264,7 +265,7 @@ You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>im
 
 <a class="link-page" href="demo/page">Link to page</a>
 
-### Link to site (up-rightwards arrow)
+## Link to site (up-rightwards arrow)
 
 ```
 <a class="site-link" href="https://example.org">Link to site</a>
@@ -272,7 +273,7 @@ You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>im
 
 <a class="link-site" href="https://example.org">Link to site</a>
 
-### Buttons
+## Buttons
 
 ```
 <p class="dialog-buttons">
