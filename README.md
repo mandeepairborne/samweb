@@ -5,6 +5,8 @@
 
 [Duckquill](https://git.exozy.me/daudix/duckquill) is a modern, pretty, and clean (and very opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
 
+[![Duckquill](https://i.imgur.com/PrzgtNB.png)](https://i.imgur.com/1fCi1sF.png)
+
 ## Installation
 
 First, fork it and download this theme to your `themes` directory:
