@@ -46,16 +46,14 @@ zola init blog
 git init
 ```
 
-3. Fork Duckquill
-
-4. Add Duckquill as Git submodule for easy updating:
+3. Add Duckquill as Git submodule for easy updating:
 
 ```
 git submodule init
-git submodule add YOUR_FORK.git themes/duckquill
+git submodule add https://git.exozy.me/daudix/duckquill.git themes/duckquill
 ```
 
-5. Edit `config.toml` and enable Duckquill theme:
+4. Edit `config.toml` and enable Duckquill theme:
 
 ```
 theme = "duckquill"

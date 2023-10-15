@@ -30,7 +30,10 @@ date_format = "%d %B %Y"
 hosting = "Codeberg"
 issues_url = "https://git.exozy.me/daudix/duckquill/issues"
 source_url = "https://git.exozy.me/daudix/duckquill"
-nav_links = [
+
+[extra.nav]
+show_feed = true
+links = [
   {url = "https://git.exozy.me/daudix/duckquill", name = "Repo"},
   {url = "/demo", name = "Demo"},
   {url = "/blog", name = "Blog"},

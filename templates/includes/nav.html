@@ -4,11 +4,12 @@
       {{ config.title }}
     </a>
     <ul>
-      {% for link in config.extra.nav_links %}
+      {% for link in config.extra.nav.links %}
       <li>
         <a href="{{link.url}}">{{link.name}}</a>
       </li>
       {% endfor %}
+      {% if config.extra.nav.show_feed %}
       <li>
         <a href="{{ config.base_url }}/atom.xml">
           <svg class="link-icon" viewBox="0 0 16 16" width="16" height="16">
@@ -20,6 +21,7 @@
           Feed
         </a>
       </li>
+      {% endif %}
     </ul>
   </div>
 </nav>

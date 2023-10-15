@@ -32,7 +32,7 @@ theme = "duckquill"
 
 ## Options
 
-Duckquill offers some configuration options to make it fit you better (but that doesn't make it less opinionated).
+Duckquill offers some configuration options to make it fit you better.
 
 ### Custom CSS
 
@@ -97,9 +97,13 @@ Set any color in `$accent-color` and reload, the accent color should be used now
 - `hosting`: Where the website source are located, used on 404 page
 - `issues_url`: Link to site bug tracker, if present
 - `source_url`: Link to site source (not built site)
+
+### `[extra.nav]` variables:
+
+- `show_feed`: Whether to display "Feed" link
 - `nav_links`: Links used in navigation bar
 
-The `nav_links` are set like so:
+The `nav_links` are set like the following:
 
 ```
 [extra]
