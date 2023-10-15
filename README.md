@@ -86,7 +86,6 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
 
     // GENERAL SETUP
     --bg-color: #{$bg-color-d};
-    --fg-color: var(--light2);
   }
 }
 ```
