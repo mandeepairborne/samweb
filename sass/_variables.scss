@@ -1,40 +1,38 @@
 @use "sass:color";
 
-$accent-color: #ff7800;
-$accent-color-20: color.scale($accent-color, $alpha: -80%);
+$primary-color: #ff7800;
+$primary-color-alpha: color.scale($primary-color, $alpha: -80%);
+
+$bg-color-l: color.mix($primary-color, rgb(250, 250, 250), 10%);
+$bg-color-d: color.mix($primary-color, rgb(11, 11, 11), 5%);
 
 $crt-bg: radial-gradient(
-  color.scale($accent-color, $lightness: -80%),
-  color.scale($accent-color, $lightness: -90%)
+  color.scale($primary-color, $lightness: -80%),
+  color.scale($primary-color, $lightness: -90%)
 );
 
-$bg-l: color.mix($accent-color, rgb(250, 250, 250), 10%);
-$bg-d: color.mix($accent-color, rgb(11, 11, 11), 5%);
+$glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
+  0 2px 6px 2px color.scale($primary-color, $alpha: -95%),
+  0 4px 24px 4px color.scale($primary-color, $alpha: -90%);
 
-$glow:
-  0 0 0 1px color.scale($accent-color, $alpha: -95%),
-  0 2px 6px 2px color.scale($accent-color, $alpha: -95%),
-  0 4px 24px 4px color.scale($accent-color, $alpha: -90%);
-  
 :root {
   // GENERAL SETUP
-  --accent-color-20: #{$accent-color-20};
-  --accent-color: #{$accent-color};
-  --background: #{$bg-l};
+  --primary-color: #{$primary-color};
+  --primary-color-alpha: #{$primary-color-alpha};
+  --bg-color: #{$bg-color-l};
+  --fg-color: var(--dark4);
+  --crt-bg: #{$crt-bg};
   --border-radius-big: 1.2rem;
   --border-radius-small: 0.5rem;
   --border-radius: 0.75rem;
-  --border: rgba(120, 120, 120, 0.4);
   --content-width: 720px;
-  --crt-bg: #{$crt-bg};
-  --text: var(--dark4);
 
   // CUSTOM COLOR PALETTE
-  --fg-03: rgba(0, 0, 0, 0.03);
-  --fg-05: rgba(0, 0, 0, 0.05);
-  --fg-07: rgba(0, 0, 0, 0.07);
-  --fg-09: rgba(0, 0, 0, 0.09);
-  --fg-50: rgba(0, 0, 0, 0.5);
+  --fg03: rgba(0, 0, 0, 0.03);
+  --fg05: rgba(0, 0, 0, 0.05);
+  --fg07: rgba(0, 0, 0, 0.07);
+  --fg09: rgba(0, 0, 0, 0.09);
+  --fg50: rgba(0, 0, 0, 0.5);
 
   --orange-bg: rgba(255, 120, 0, 0.1);
   --orange-fg: rgb(255, 120, 0);
@@ -64,15 +62,15 @@ $glow:
     color-scheme: dark;
 
     // GENERAL SETUP
-    --background: #{$bg-d};
-    --text: var(--light2);
+    --bg-color: #{$bg-color-d};
+    --fg-color: var(--light2);
 
     // CUSTOM COLOR PALETTE
-    --fg-03: rgba(255, 255, 255, 0.03);
-    --fg-05: rgba(255, 255, 255, 0.05);
-    --fg-07: rgba(255, 255, 255, 0.07);
-    --fg-09: rgba(255, 255, 255, 0.09);
-    --fg-50: rgba(255, 255, 255, 0.5);
+    --fg03: rgba(255, 255, 255, 0.03);
+    --fg05: rgba(255, 255, 255, 0.05);
+    --fg07: rgba(255, 255, 255, 0.07);
+    --fg09: rgba(255, 255, 255, 0.09);
+    --fg50: rgba(255, 255, 255, 0.5);
 
     --orange-bg: rgba(255, 190, 111, 0.1);
     --orange-fg: rgb(255, 190, 111);

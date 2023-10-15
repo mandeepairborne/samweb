@@ -38,15 +38,15 @@ Duckquill offers some configuration options to make it fit you better.
 
 You can add your own or override existing styles in the `sass/custom.scss` of your site, if for some reason overridden class are not respected, try using `!important`. You can import styles from Duckquill using `@use "../themes/duckquill/sass/NEEDED_FILE.scss";`.
 
-### Accent color
+### Primary color
 
-Duckquill respects chosen accent color everywhere, you can use any HEX color code you want
+Duckquill respects chosen primary color everywhere, you can use any HEX color code you want
 
-First, change the accent color in `config.toml`:
+First, change the primary color in `config.toml`:
 
 ```toml
 [extra]
-accent_color = "#HEX_COLOR_CODE"
+primary_color = "#HEX_COLOR_CODE"
 ```
 
 Then, paste the following code inside `sass/custom.scss` (inside your site, not the theme):
@@ -54,42 +54,48 @@ Then, paste the following code inside `sass/custom.scss` (inside your site, not 
 ```sass
 @use "sass:color";
 
-$accent-color: #HEX_COLOR_CODE;
-$accent-color-20: color.scale($accent-color, $alpha: -80%);
+$primary-color: #HEX_COLOR_CODE;
+$primary-color-alpha: color.scale($primary-color, $alpha: -80%);
+
+$bg-color-l: color.mix($primary-color, rgb(250, 250, 250), 10%);
+$bg-color-d: color.mix($primary-color, rgb(11, 11, 11), 5%);
 
 $crt-bg: radial-gradient(
-  color.scale($accent-color, $lightness: -80%),
-  color.scale($accent-color, $lightness: -90%)
+  color.scale($primary-color, $lightness: -80%),
+  color.scale($primary-color, $lightness: -90%)
 );
 
-$bg-l: color.mix($accent-color, rgb(250, 250, 250), 10%);
-$bg-d: color.mix($accent-color, rgb(11, 11, 11), 5%);
+$glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
+  0 2px 6px 2px color.scale($primary-color, $alpha: -95%),
+  0 4px 24px 4px color.scale($primary-color, $alpha: -90%);
 
-$glow:
-  0 0 0 1px color.scale($accent-color, $alpha: -95%),
-  0 2px 6px 2px color.scale($accent-color, $alpha: -95%),
-  0 4px 24px 4px color.scale($accent-color, $alpha: -90%);
-  
 :root {
-  --accent-color-20: #{$accent-color-20};
-  --accent-color: #{$accent-color};
-  --background: #{$bg-l};
+  // GENERAL SETUP
+  --primary-color: #{$primary-color};
+  --primary-color-alpha: #{$primary-color-alpha};
+  --bg-color: #{$bg-color-l};
   --crt-bg: #{$crt-bg};
+
+  // CUSTOM VARIABLES
   --glow: #{$glow};
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #{$bg-d};
+    color-scheme: dark;
+
+    // GENERAL SETUP
+    --bg-color: #{$bg-color-d};
+    --fg-color: var(--light2);
   }
 }
 ```
 
-Set any color in `$accent-color` and reload, the accent color should be used now. This is a hack that is needed until Zola will be able to use `config.toml` inside Sass.
+Set any color in `$primary-color` and reload, the primary color should be used now. This is a hack that is needed until Zola will be able to use `config.toml` inside Sass.
 
 ### `[extra]` variables:
 
-- `accent_color`: Accent color used in some browsers set in metadata, see [#accent-color](https://git.exozy.me/daudix/duckquill#accent-color)
+- `primary_color`: Primary color used in some browsers set in metadata, see [#primary-color](https://git.exozy.me/daudix/duckquill#primary-color)
 - `animated_favicon`: Specify if the favicon are animated GIF (true, false)
 - `blog_title`: The title of the blog
 - `blog_description`: The description of the blog, displayed right under the blog title

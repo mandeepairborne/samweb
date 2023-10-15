@@ -10,10 +10,11 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  scrollbar-color: var(--accent-color) transparent;
-  accent-color: var(--accent-color);
+  scrollbar-color: var(--primary-color) transparent;
+  primary-color: var(--primary-color);
 }
 
+// smaller font size on mobile
 // @media only screen and (max-device-width: 480px) {
 //   html,
 //   body {
@@ -25,9 +26,9 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  color: var(--text);
+  color: var(--fg-color);
   background-color: var(--background);
-  // ⇩⇩ put footer at the bottom for short pages, such as the 404 ⇩⇩
+  // put footer at the bottom for short pages, such as the 404
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto minmax(auto, 1fr) auto; // header, stuff, footer
@@ -39,11 +40,14 @@ body {
   }
 }
 
+// style text selection to use primary color
 ::selection {
   color: var(--background);
-  background-color: var(--accent-color);
+  background-color: var(--primary-color);
 }
 
+// make focused anchor not get covered by nav,
+// and flash it with primary color when jumping to it
 :target {
   scroll-margin-top: 25vh;
   animation: highlight-in-out var(--transition-long);
@@ -52,11 +56,11 @@ body {
 
 @keyframes highlight-in-out {
   50% {
-    color: var(--accent-color);
+    color: var(--primary-color);
   }
 }
 
-// Layout
+// LAYOUT
 .container {
   width: 80%;
   margin-left: auto;
@@ -65,7 +69,6 @@ body {
 }
 
 @media only screen and (max-device-width: 480px) {
-  // Mobile
   .container {
     width: 90%;
   }
@@ -93,7 +96,7 @@ h2 {
 a {
   font-weight: 600;
   text-decoration: none;
-  color: var(--accent-color);
+  color: var(--primary-color);
   cursor: pointer;
 }
 
@@ -101,12 +104,13 @@ a:hover {
   text-decoration: underline;
 }
 
-b {
+b,
+strong {
   font-weight: 600;
 }
 
 small {
-  color: var(--fg-50);
+  color: var(--fg50);
 }
 
 dl {
@@ -134,8 +138,8 @@ hr {
 blockquote {
   padding: 0 1rem;
   margin-left: 0;
-  color: var(--fg-50);
-  border-left: 0.3rem solid var(--accent-color);
+  color: var(--fg50);
+  border-left: 0.3rem solid var(--primary-color);
 }
 
 blockquote > :first-child {
@@ -146,6 +150,11 @@ blockquote > :last-child {
   margin-bottom: 0;
 }
 
+// make border slightly transparent for nested blockquote
+blockquote > blockquote {
+  border-left: 0.3rem solid var(--primary-color-alpha);
+}
+
 abbr {
   cursor: help;
 }
@@ -154,25 +163,26 @@ kbd {
   display: inline-block;
   padding: 2px 6px;
   border-radius: var(--border-radius-small);
-  background-color: var(--fg-07);
-  box-shadow: inset 0 -2px 0 var(--fg-09);
+  background-color: var(--fg07);
+  box-shadow: inset 0 -2px 0 var(--fg09);
   font-size: medium;
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
 }
 
+// small nice thingy, keys can be pressed!
 kbd:active {
-  background-color: var(--fg-09);
-  box-shadow: inset 0 1px 0 var(--fg-09);
+  background-color: var(--fg09);
+  box-shadow: inset 0 1px 0 var(--fg09);
   transform: translate(0, 2px);
 }
 
 mark {
   padding: 2px 6px;
   border-radius: var(--border-radius-small);
-  background-color: var(--accent-color-20);
-  color: var(--accent-color);
+  background-color: var(--primary-color-alpha);
+  color: var(--primary-color);
 }
 
 figcaption {
@@ -180,12 +190,12 @@ figcaption {
   margin-bottom: 2rem;
   display: block;
   text-align: center;
-  color: var(--fg-50);
+  color: var(--fg50);
   font-size: smaller;
 }
 
 details {
-  background-color: var(--fg-05);
+  background-color: var(--fg05);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   padding: 1rem;
@@ -195,7 +205,7 @@ details {
   }
 }
 
-// Tables
+// TABLES
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -214,7 +224,7 @@ table th {
 table th,
 table td {
   padding: 0.5rem 1rem;
-  border: 1px solid var(--fg-05);
+  border: 1px solid var(--fg05);
 }
 
 td,
@@ -222,12 +232,12 @@ th {
   padding: 0;
 }
 
-// Make tables vertically aligned to the top
+// make tables vertically aligned to the top
 tbody td {
   vertical-align: top;
 }
 
-// Media
+// MEDIA
 img,
 video {
   display: block;
@@ -248,7 +258,6 @@ img:not(.no-hover):hover {
 }
 
 @media only screen and (max-device-width: 480px) {
-  // Mobile
   img:not(.no-hover):hover {
     transform: scale(110%);
   }
@@ -268,20 +277,20 @@ img:not(.no-hover):hover {
   box-shadow: none;
 }
 
-// Navbar
+// NAVBAR
 .site-nav {
-  position: sticky;
-  top: 1rem;
   z-index: 1;
   width: 80%;
+  top: 1rem;
+  position: sticky;
+  overflow: auto;
   max-width: var(--content-width);
   margin: 1rem auto;
+  box-shadow: var(--shadow);
   border-radius: var(--border-radius-big);
-  background-color: var(--fg-05);
+  background-color: var(--fg05);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  box-shadow: var(--shadow);
-  overflow: auto;
 
   ul {
     list-style-type: none;
@@ -291,7 +300,7 @@ img:not(.no-hover):hover {
   }
 
   li {
-    color: var(--fg-50);
+    color: var(--fg50);
     display: inline-block;
   }
 
@@ -301,23 +310,23 @@ img:not(.no-hover):hover {
     padding: 0.4rem 1rem;
     border-radius: var(--border-radius);
     background-color: transparent;
-    color: var(--fg-50);
+    color: var(--fg50);
     transition: var(--transition);
     text-decoration: none;
   }
 
   a:hover {
-    background-color: var(--fg-05);
-    color: var(--accent-color);
+    background-color: var(--fg05);
+    color: var(--primary-color);
   }
 
   a.site-nav-title {
-    line-height: normal;
+    line-height: normal; // unset line height
     font-size: 1.2rem;
   }
 
   svg {
-    transform: translateY(-0.125rem) translateX(-0.125rem);
+    transform: translateY(-0.125rem) translateX(-0.125rem); // fix icon position
   }
 }
 
@@ -347,7 +356,7 @@ img:not(.no-hover):hover {
   }
 }
 
-// Footer
+// FOOTER
 .site-footer {
   text-align: center;
   padding: 3rem 0 3rem;
@@ -361,7 +370,7 @@ img:not(.no-hover):hover {
   }
 }
 
-// Link arrows
+// LINK ARROWS
 .link-page::after {
   content: " →";
 }
@@ -370,14 +379,14 @@ img:not(.no-hover):hover {
   content: " ↗";
 }
 
-// Center link icons vertically
+// center link icons vertically
 .link-icon {
   height: 1rem;
   width: 1rem;
   vertical-align: middle;
 }
 
-// Buttons
+// BUTTONS
 .dialog-buttons {
   display: flex;
   flex-direction: row;
@@ -391,16 +400,16 @@ img:not(.no-hover):hover {
   font-size: 0.9rem;
   padding: 0.4rem 1rem;
   border-radius: var(--border-radius);
-  background-color: var(--fg-05);
-  color: var(--text);
+  background-color: var(--fg05);
+  color: var(--fg-color);
 }
 
-// Code
+// CODE
 code {
   font-family: "JetBrains Mono", monospace;
   padding: 2px 6px;
   border-radius: var(--border-radius-small);
-  background-color: var(--fg-07);
+  background-color: var(--fg07);
   color: var(--red-fg);
 }
 
@@ -411,12 +420,13 @@ pre code {
   padding: unset;
 }
 
+// apply monospace font to everything inside <pre>
 pre * {
   font-family: "JetBrains Mono", monospace;
 }
 
 pre {
-  line-height: normal;
+  line-height: normal; // unset line height
   padding: 1rem;
   margin: 1rem 0 1rem;
   border-radius: var(--border-radius);
@@ -425,7 +435,7 @@ pre {
   overflow: auto;
 }
 
-// The line numbers already provide some kind of left/right padding
+// the line numbers already provide some kind of left/right padding
 pre[data-linenos] {
   padding: 1rem 0;
 }
@@ -435,23 +445,18 @@ pre table td {
   border: none;
 }
 
-// The line number cells
+// the line number cells
 pre table td:nth-of-type(1) {
   text-align: center;
   user-select: none;
 }
 
 pre mark {
-  // If you want your highlights to take the full width.
   display: block;
-  // The default background colour of a mark is bright yellow
-  background-color: var(--fg-07);
-  // Set color from accent color to text color
-  color: var(--text);
-  // Unset code block border radius
-  border-radius: 0;
-  // Unset mark padding
-  padding: 0;
+  background-color: var(--fg07);
+  color: var(--fg-color); // unset mark color from primary color to text color
+  border-radius: 0; // unset code block border radius
+  padding: 0; // unset mark padding
 }
 
 pre table {
@@ -467,16 +472,16 @@ pre table {
   background: var(--crt-bg);
 
   pre {
-    text-shadow: var(--accent-color) 0 0 12px;
-    color: var(--accent-color);
+    text-shadow: var(--primary-color) 0 0 12px;
+    color: var(--primary-color);
     padding: 1rem 1rem;
+    // unset some <pre> stuff
     margin: unset;
     background-color: unset;
     box-shadow: unset;
   }
 
   a {
-    color: var(--accent-color);
     text-decoration: underline;
   }
 }
@@ -497,7 +502,7 @@ pre table {
   }
 }
 
-// Statements
+// STATEMENTS
 .statement-container {
   margin: 1rem 0 1rem;
   padding: 1rem 1rem;

@@ -28,7 +28,7 @@ This is a normal paragraph following a header. Codeberg is a code hosting platfo
 
 > This is a blockquote following a header.
 >
-> When something is important enough, you do it even if the odds are not in your favor.
+> > When something is important enough, you do it even if the odds are not in your favor.
 
 ### Header 3
 

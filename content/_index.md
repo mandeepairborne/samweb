@@ -17,7 +17,7 @@ jgs~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~
 Edit a bit of metadata and tweak some of the included graphics and have a blog up in minutes!
 
 - Pretty, yet lightweight. No JavaScript are used.
-- For a very pleasant look, the colors are tinted with an accent color.
+- For a very pleasant look, the colors are tinted with the primary color.
 - Proper favicon for modern browsers and Apple device icons.
 - Mastodon, Lemmy and other social media meta cards for easy sharing. Try [Share Preview](https://apps.gnome.org/SharePreview/) to test.
 - Local copy of the amazing [Inter](https://rsms.me/inter/) and [JetBrains Mono](https://www.jetbrains.com/lp/mono/) fonts. No slowdowns pulling from external hosting.
