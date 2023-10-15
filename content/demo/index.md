@@ -47,6 +47,24 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
+```scss, linenos, linenostart=10, hl_lines=3-4 8-9, hide_lines=2 7
+pre mark {
+
+  display: block;
+
+  color: currentcolor;
+
+}
+
+pre table td:nth-of-type(1) {
+
+  color: #6b6b6b;
+
+  font-style: italic;
+
+}
+```
+
 #### Header 4
 
 - This is an unordered list following a header.
@@ -163,7 +181,7 @@ Available variables are:
 
 Variables should be comma-separated and be inside the brackets.
 
-```
+```jinja2
 {{/* image(url="image.png", alt="This is an image" no_hover=true) */}}
 ```
 
@@ -173,7 +191,7 @@ Variables should be comma-separated and be inside the brackets.
 
 Same as images, but with a few differences: `no_hover` and `url_min` are not available.
 
-```
+```jinja2
 {{/* video(url="video.webm", alt="This is a video") */}}
 ```
 
@@ -183,7 +201,7 @@ Same as images, but with a few differences: `no_hover` and `url_min` are not ava
 
 Alright, this one doesn't simplify anything, it just adds a CRT-like effect around Markdown code blocks.
 
-```
+```jinja2
 {%/* crt() */%}
 -> Markdown code block <-
 {%/* end */%}
@@ -218,7 +236,7 @@ Alright, this one doesn't simplify anything, it just adds a CRT-like effect arou
 
 Media can have additional text description using the `<figcaption>` HTML tag.
 
-```
+```markdown
 ![Image](image.pmg)
 <figcaption>The image caption</figcaption>
 ```
@@ -247,7 +265,7 @@ The <abbr title="American Standard Code for Information Interchange">ASCII</abbr
 
 ## Keyboard shortcut
 
-```
+```html
 <kbd>⌘ Super</kbd> + <kbd>Space</kbd>
 ```
 
@@ -259,7 +277,7 @@ You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>im
 
 ## Link to page (rightwards arrow)
 
-```
+```html
 <a class="page-link" href="demo/demo-page">Link to page</a>
 ```
 
@@ -267,7 +285,7 @@ You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>im
 
 ## Link to site (up-rightwards arrow)
 
-```
+```html
 <a class="site-link" href="https://example.org">Link to site</a>
 ```
 
@@ -275,7 +293,7 @@ You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>im
 
 ## Buttons
 
-```
+```html.j2
 <p class="dialog-buttons">
   <a class="inline-button" href="#top">Go to top</a>
   <a href="{{site.issuesurl}}">File an issue</a>
