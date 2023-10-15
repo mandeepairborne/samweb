@@ -70,21 +70,15 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
   0 4px 24px 4px color.scale($primary-color, $alpha: -90%);
 
 :root {
-  // GENERAL SETUP
   --primary-color: #{$primary-color};
   --primary-color-alpha: #{$primary-color-alpha};
   --bg-color: #{$bg-color-l};
   --crt-bg: #{$crt-bg};
-
-  // CUSTOM VARIABLES
   --glow: #{$glow};
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    color-scheme: dark;
-
-    // GENERAL SETUP
     --bg-color: #{$bg-color-d};
   }
 }
