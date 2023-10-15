@@ -135,6 +135,8 @@ These values are also used in the `<head>` for Mastodon verification.
 
 If you want to improve Duckquill in any way, feel free to open an issue, or even better, a pull request! I'm happy about every contribution!
 
+The main repo are https://git.exozy.me/daudix/duckquill, but since only exozy.me members can open issues and pull requests, there are two-way mirror at https://next.forgejo.org/daudix-UFO/duckquill, you can open issues and pull requests there just fine.
+
 ## Special thanks ♥
 
 - [Jakub Steiner](https://jimmac.eu) for an awesome [OS Component Website](https://jimmac.github.io/os-component-website), on top of which this whole thing is built
