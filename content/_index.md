@@ -71,3 +71,4 @@ See project's [README](https://codeberg.org/daudix-UFO/duckquill#duckquill) for 
 - [Cassidy James](https://cassidyjames.com) for an awesome [Mastodon-powered Comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon)
 - [Mehdi](https://codepen.io/meduzen) for an awesome [CSS Scanlines](https://codepen.io/meduzen/pen/zxbwRV)
 - dwb, ejm and jgs for awesome ASCII art
+- Everyone who supported me and said good stuff <3
