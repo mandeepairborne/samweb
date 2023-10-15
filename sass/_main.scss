@@ -46,19 +46,13 @@ body {
 
 :target {
   scroll-margin-top: 25vh;
-  animation: fade-in-out var(--transition-long);
+  animation: highlight-in-out var(--transition-long);
   animation-delay: 1s;
 }
 
-@keyframes fade-in-out {
-  0% {
-    color: initial;
-  }
+@keyframes highlight-in-out {
   50% {
     color: var(--accent-color);
-  }
-  100% {
-    color: initial;
   }
 }
 
@@ -196,7 +190,7 @@ details {
   box-shadow: var(--shadow);
   padding: 1rem;
 
-  &>summary {
+  & > summary {
     cursor: pointer;
   }
 }
@@ -480,7 +474,7 @@ pre table {
     background-color: unset;
     box-shadow: unset;
   }
-  
+
   a {
     color: var(--accent-color);
     text-decoration: underline;
