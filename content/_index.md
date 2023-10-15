@@ -48,14 +48,14 @@ git init
 
 3. Add Duckquill as Git submodule for easy updating:
 
-```
+```sh
 git submodule init
 git submodule add https://git.exozy.me/daudix/duckquill.git themes/duckquill
 ```
 
 4. Edit `config.toml` and enable Duckquill theme:
 
-```
+```toml
 theme = "duckquill"
 ```
 

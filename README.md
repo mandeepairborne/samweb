@@ -26,7 +26,7 @@ git submodule add https://git.exozy.me/daudix/duckquill.git themes/duckquill
 
 and then enable it in your `config.toml`:
 
-```
+```toml
 theme = "duckquill"
 ```
 
@@ -44,14 +44,14 @@ Duckquill respects chosen accent color everywhere, you can use any HEX color cod
 
 First, change the accent color in `config.toml`:
 
-```
+```toml
 [extra]
 accent_color = "#HEX_COLOR_CODE"
 ```
 
 Then, paste the following code inside `sass/custom.scss` (inside your site, not the theme):
 
-```
+```sass
 @use "sass:color";
 
 $accent-color: #HEX_COLOR_CODE;
@@ -105,7 +105,7 @@ Set any color in `$accent-color` and reload, the accent color should be used now
 
 The `nav_links` are set like the following:
 
-```
+```toml
 [extra]
 nav_links = [
   {url = "https://example.org", name = "Example"},
