@@ -11,7 +11,7 @@ body {
   padding: 0;
   scroll-behavior: smooth;
   scrollbar-color: var(--primary-color) transparent;
-  primary-color: var(--primary-color);
+  accent-color: var(--primary-color);
 }
 
 // smaller font size on mobile
@@ -27,7 +27,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: var(--fg-color);
-  background-color: var(--background);
+  background-color: var(--bg-color);
   // put footer at the bottom for short pages, such as the 404
   display: grid;
   min-height: 100vh;
@@ -42,7 +42,7 @@ body {
 
 // style text selection to use primary color
 ::selection {
-  color: var(--background);
+  color: var(--bg-color);
   background-color: var(--primary-color);
 }
 
@@ -162,7 +162,7 @@ abbr {
 kbd {
   display: inline-block;
   padding: 2px 6px;
-  border-radius: var(--border-radius-small);
+  border-radius: var(--rounded-corner-small);
   background-color: var(--fg07);
   box-shadow: inset 0 -2px 0 var(--fg09);
   font-size: medium;
@@ -180,7 +180,7 @@ kbd:active {
 
 mark {
   padding: 2px 6px;
-  border-radius: var(--border-radius-small);
+  border-radius: var(--rounded-corner-small);
   background-color: var(--primary-color-alpha);
   color: var(--primary-color);
 }
@@ -196,7 +196,7 @@ figcaption {
 
 details {
   background-color: var(--fg05);
-  border-radius: var(--border-radius);
+  border-radius: var(--rounded-corner);
   box-shadow: var(--shadow);
   padding: 1rem;
 
@@ -243,7 +243,7 @@ video {
   display: block;
   margin: 2rem auto;
   max-width: 100%;
-  border-radius: var(--border-radius);
+  border-radius: var(--rounded-corner);
   box-shadow: var(--shadow);
 }
 
@@ -287,7 +287,7 @@ img:not(.no-hover):hover {
   max-width: var(--content-width);
   margin: 1rem auto;
   box-shadow: var(--shadow);
-  border-radius: var(--border-radius-big);
+  border-radius: var(--rounded-corner-big);
   background-color: var(--fg05);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
@@ -308,7 +308,7 @@ img:not(.no-hover):hover {
     display: inline-block;
     font-size: 0.9rem;
     padding: 0.4rem 1rem;
-    border-radius: var(--border-radius);
+    border-radius: var(--rounded-corner);
     background-color: transparent;
     color: var(--fg50);
     transition: var(--transition);
@@ -399,7 +399,7 @@ img:not(.no-hover):hover {
   display: inline-block;
   font-size: 0.9rem;
   padding: 0.4rem 1rem;
-  border-radius: var(--border-radius);
+  border-radius: var(--rounded-corner);
   background-color: var(--fg05);
   color: var(--fg-color);
 }
@@ -408,7 +408,7 @@ img:not(.no-hover):hover {
 code {
   font-family: "JetBrains Mono", monospace;
   padding: 2px 6px;
-  border-radius: var(--border-radius-small);
+  border-radius: var(--rounded-corner-small);
   background-color: var(--fg07);
   color: var(--red-fg);
 }
@@ -429,7 +429,7 @@ pre {
   line-height: normal; // unset line height
   padding: 1rem;
   margin: 1rem 0 1rem;
-  border-radius: var(--border-radius);
+  border-radius: var(--rounded-corner);
   max-width: 100vw;
   box-shadow: var(--shadow);
   overflow: auto;
@@ -467,7 +467,7 @@ pre table {
 // CRT
 .crt {
   margin: 1rem 0 1rem;
-  border-radius: var(--border-radius);
+  border-radius: var(--rounded-corner);
   box-shadow: var(--glow);
   background: var(--crt-bg);
 
@@ -506,7 +506,7 @@ pre table {
 .statement-container {
   margin: 1rem 0 1rem;
   padding: 1rem 1rem;
-  border-radius: var(--border-radius);
+  border-radius: var(--rounded-corner);
   box-shadow: var(--shadow);
 
   h2 {

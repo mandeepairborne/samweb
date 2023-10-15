@@ -17,15 +17,15 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
 
 :root {
   // GENERAL SETUP
-  --primary-color: #{$primary-color};
-  --primary-color-alpha: #{$primary-color-alpha};
   --bg-color: #{$bg-color-l};
-  --fg-color: var(--dark4);
-  --crt-bg: #{$crt-bg};
-  --border-radius-big: 1.2rem;
-  --border-radius-small: 0.5rem;
-  --border-radius: 0.75rem;
   --content-width: 720px;
+  --crt-bg: #{$crt-bg};
+  --fg-color: var(--dark4);
+  --primary-color-alpha: #{$primary-color-alpha};
+  --primary-color: #{$primary-color};
+  --rounded-corner-big: 1.2rem;
+  --rounded-corner-small: 0.5rem;
+  --rounded-corner: 0.75rem;
 
   // CUSTOM COLOR PALETTE
   --fg03: rgba(0, 0, 0, 0.03);

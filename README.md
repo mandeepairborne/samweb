@@ -70,10 +70,10 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
   0 4px 24px 4px color.scale($primary-color, $alpha: -90%);
 
 :root {
-  --primary-color: #{$primary-color};
-  --primary-color-alpha: #{$primary-color-alpha};
   --bg-color: #{$bg-color-l};
   --crt-bg: #{$crt-bg};
+  --primary-color-alpha: #{$primary-color-alpha};
+  --primary-color: #{$primary-color};
   --glow: #{$glow};
 }
 

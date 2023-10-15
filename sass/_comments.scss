@@ -23,7 +23,7 @@ section#comments {
         all: unset;
         display: block;
         background-color: var(--fg05);
-        border-radius: var(--border-radius);
+        border-radius: var(--rounded-corner);
         box-shadow: var(--shadow);
         height: 100%;
         width: 100%;
@@ -116,7 +116,7 @@ section#comments {
       }
 
       figure {
-        border-radius: var(--border-radius);
+        border-radius: var(--rounded-corner);
         background-color: var(--fg05);
         box-shadow: var(--shadow);
         margin-left: 0;
@@ -173,7 +173,7 @@ section#comments {
         font-weight: 600;
         font-size: 90%;
         padding: 0.4rem 1rem;
-        border-radius: var(--border-radius);
+        border-radius: var(--rounded-corner);
         background-color: var(--orange-bg);
         color: var(--orange-fg);
 
@@ -189,7 +189,7 @@ section#comments {
         font-weight: 600;
         font-size: 90%;
         padding: 0.4rem 1rem;
-        border-radius: var(--border-radius);
+        border-radius: var(--rounded-corner);
         background-color: var(--red-bg);
         color: var(--red-fg);
 
