@@ -34,9 +34,20 @@ theme = "duckquill"
 
 Duckquill offers some configuration options to make it fit you better.
 
-### Custom CSS
+### Custom stylesheets
 
-You can add your own or override existing styles in the `sass/custom.scss` of your site, if for some reason overridden class are not respected, try using `!important`. You can import styles from Duckquill using `@use "../themes/duckquill/sass/NEEDED_FILE.scss";`.
+You can add your own or override existing styles by creating custom stylesheet and adding it in the `config.toml`:
+
+```toml
+[extra]
+stylesheets = [
+  "YOUR_STYLE.css"
+]
+```
+
+It expects the style to be in the `static` directory. If you are using Sass it will be compiled there anyway.
+
+If for some reason overridden class are not respected, try using `!important`. You can import styles from Duckquill using `@use "../themes/duckquill/sass/NEEDED_FILE.scss";`.
 
 ### Primary color
 
