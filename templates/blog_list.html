@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>{{ config.extra.blog_title }}</h1>
+<h1>{{ section.title }}</h1>
 
-<p>{{ config.extra.blog_description }}</p>
+<p>{{ section.description }}</p>
 
 <small>
   <a class="link-page" href="{{ config.base_url }}/tags">Filter by tag</a>

@@ -24,8 +24,6 @@ smart_punctuation = true
 [extra]
 primary_color = "#ff7800"
 animated_favicon = false
-blog_description = "Welcome to my quack'in blog, I quack about various stuff, but mostly I'm a demo"
-blog_title = "Writings of Duck's Feet"
 date_format = "%d %B %Y"
 hosting = "Codeberg"
 issues_url = "https://git.exozy.me/daudix/duckquill/issues"
