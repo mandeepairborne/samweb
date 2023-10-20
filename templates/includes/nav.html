@@ -6,7 +6,7 @@
     <ul>
       {% for link in config.extra.nav.links %}
         <li>
-          <a href="{{link.url}}">{{link.name}}</a>
+          <a href="{{ link.url }}">{{ link.name }}</a>
         </li>
       {% endfor %}
       {% if config.extra.nav.show_feed %}
