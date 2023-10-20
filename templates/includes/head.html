@@ -14,7 +14,7 @@
   <link href="{{ get_url(path='style.css') }}" rel="stylesheet" />
   {% if config.extra.stylesheets %}
     {% for stylesheet in config.extra.stylesheets %}
-      <link href="{{ get_url(path='stylesheet') }}" rel="stylesheet" />
+      <link href="{{ get_url(path=stylesheet) }}" rel="stylesheet" />
     {% endfor %}
   {% endif %}
 
