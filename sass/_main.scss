@@ -86,7 +86,14 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  letter-spacing: -0.08rem;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+h1::after {
+  content: ".";
+  color: var(--primary-color);
 }
 
 h2 {
@@ -130,10 +137,14 @@ dl dd {
 }
 
 hr {
+  background-color: var(--primary-color);
+  height: 0.3rem;
   margin: 3rem auto 4rem;
   width: 40%;
-  opacity: 40%;
+  border: 0;
 }
+
+// background-image: repeating-linear-gradient(-45deg, transparent, transparent 8px, var(--primary-color) 8px, var(--primary-color) 10px);
 
 blockquote {
   padding: 0 1rem;
@@ -161,14 +172,13 @@ abbr {
 
 kbd {
   display: inline-block;
+  line-height: normal;
+  font-family: "JetBrains Mono", monospace;
   padding: 2px 6px;
   border-radius: var(--rounded-corner-small);
   background-color: var(--fg07);
-  box-shadow: inset 0 -2px 0 var(--fg09);
-  font-size: 0.8rem;
+  box-shadow: inset 0 -2px 0 var(--fg09), 0 -1px 0 var(--fg09);
   cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
 }
 
 // small nice thingy, keys can be pressed!
@@ -272,6 +282,11 @@ img:not(.no-hover):hover {
   box-shadow: none;
 }
 
+// bootstrap icons
+.bi {
+  font-size: 1rem;
+}
+
 // NAVBAR
 .site-nav {
   z-index: 1;
@@ -320,9 +335,9 @@ img:not(.no-hover):hover {
     font-size: 1.2rem;
   }
 
-  svg {
-    transform: translateY(-0.125rem) translateX(-0.125rem); // fix icon position
-  }
+  // svg {
+  //   transform: translateY(-0.125rem) translateX(-0.125rem); // fix icon position
+  // }
 }
 
 @media only screen and (max-device-width: 480px) {

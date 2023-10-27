@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<img src="404.png" class="full pixels transparent no-hover" />
+<img src="{{ get_url(path='404.png') }}" class="full pixels transparent no-hover" />
 
 <h1>Document Not Found</h1>
 

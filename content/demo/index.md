@@ -167,7 +167,13 @@ Variables should be comma-separated and be inside the brackets.
 {{/* image(url="image.png", alt="This is an image" no_hover=true) */}}
 ```
 
-{{ image(url="https://i.imgur.com/Fr1ImW9.png", alt="Portal Gun blueprint", no_hover=true) }}
+{{ image(url="https://i1.theportalwiki.net/img/2/23/Ashpd_blueprint.jpg", alt="Portal Gun blueprint", no_hover=true) }}
+
+<figcaption>Image with an alt text and without zoom on hover</figcaption>
+
+{{ image(url="https://upload.wikimedia.org/wikipedia/commons/b/b4/JPEG_example_JPG_RIP_100.jpg", url_min="https://upload.wikimedia.org/wikipedia/commons/3/38/JPEG_example_JPG_RIP_010.jpg", alt="The gravestone of J.P.G.", no_hover=true) }}
+
+<figcaption>Image with compressed version, an alt text, and without zoom on hover</figcaption>
 
 #### Video
 
@@ -178,6 +184,8 @@ Same as images, but with a few differences: `no_hover` and `url_min` are not ava
 ```
 
 {{ video(url="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm", alt="Red flower wakes up") }}
+
+<figcaption>WebM video example from MDN</figcaption>
 
 #### CRT
 
@@ -190,6 +198,7 @@ Alright, this one doesn't simplify anything, it just adds a CRT-like effect arou
 ```
 
 {% crt() %}
+
 ```
  _____________________________________________
 |.'',        Public_Library_Halls         ,''.|
@@ -212,6 +221,7 @@ Alright, this one doesn't simplify anything, it just adds a CRT-like effect arou
 |.','          /%%%%%%%%%%%%%%%\          ','.|
 |;____________/%%%%%Spicer%%%%%%\____________;|
 ```
+
 {% end %}
 
 ## Captions
@@ -220,10 +230,12 @@ Media can have additional text description using the `<figcaption>` HTML tag.
 
 ```markdown
 ![Image](image.pmg)
+
 <figcaption>The image caption</figcaption>
 ```
 
-![The Office](https://i.imgur.com/ImMAXM3.png)
+![The Office](https://i.ibb.co/MPDJRsT/ImMAXM3.png)
+
 <figcaption>The Office where Stanley works, it has yellow floor and beige walls</figcaption>
 
 ## Accordion
@@ -233,7 +245,7 @@ Media can have additional text description using the `<figcaption>` HTML tag.
 
 _Quack-quack!_
 
-![Cute duck](https://i.imgur.com/EEVSKgV.jpg)
+![Cute duck](https://i.ibb.co/x5Wd5dm/EEVSKgV.jpg)
 
 </details>
 
@@ -251,7 +263,7 @@ The <abbr title="American Standard Code for Information Interchange">ASCII</abbr
 <kbd>⌘ Super</kbd> + <kbd>Space</kbd>
 ```
 
-<kbd>⌘ Super</kbd> + <kbd>Space</kbd>
+To switch the keyboard layout, press <kbd>⌘ Super</kbd> + <kbd>Space</kbd>.
 
 ## Highlighted
 

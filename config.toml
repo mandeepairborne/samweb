@@ -32,9 +32,9 @@ source_url = "https://git.exozy.me/daudix/duckquill"
 [extra.nav]
 show_feed = true
 links = [
-  {url = "https://git.exozy.me/daudix/duckquill", name = "Repo"},
-  {url = "/demo", name = "Demo"},
-  {url = "/blog", name = "Blog"},
+  {url = "https://git.exozy.me/daudix/duckquill", name = "Repo", icon = "git"},
+  {url = "/demo", name = "Demo", icon = "car-front-fill"},
+  {url = "/blog", name = "Blog", icon = "journal-bookmark-fill"},
 ]
 
 [extra.footer]
