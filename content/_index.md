@@ -12,9 +12,6 @@ jgs~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~
 
 # Duckquill
 
-<a href="https://nogithub.codeberg.page"><img class="transparent no-hover" style="display:inline-block;" alt="Please don't upload to GitHub" src="https://nogithub.codeberg.page/badge.svg" /></a>
-<a href="https://ci.exozy.me/repos/159"><img class="transparent no-hover" style="display:inline-block;" alt="status-badge" src="https://ci.exozy.me/api/badges/159/status.svg" /></a>
-
 [Duckquill](https://codeberg.org/daudix-UFO/duckquill) is a modern, pretty, and clean (and very opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
 
 Edit a bit of metadata and tweak some of the included graphics and have a blog up in minutes!

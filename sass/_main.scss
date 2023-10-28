@@ -282,11 +282,6 @@ img:not(.no-hover):hover {
   box-shadow: none;
 }
 
-// bootstrap icons
-.bi {
-  font-size: 1rem;
-}
-
 // NAVBAR
 .site-nav {
   z-index: 1;
@@ -301,6 +296,11 @@ img:not(.no-hover):hover {
   background-color: var(--fg05);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
+
+  // bootstrap icons
+  .bi {
+    font-size: 1rem;
+  }
 
   ul {
     list-style-type: none;
