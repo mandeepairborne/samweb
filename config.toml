@@ -25,7 +25,7 @@ smart_punctuation = true
 primary_color = "#ff7800"
 animated_favicon = false
 date_format = "%d %B %Y"
-hosting = "Codeberg"
+hosting = "Forgejo"
 issues_url = "https://git.exozy.me/daudix/duckquill/issues"
 source_url = "https://git.exozy.me/daudix/duckquill"
 
