@@ -5,9 +5,11 @@
 
 [Duckquill](https://codeberg.org/daudix-UFO/duckquill) is a modern, pretty, and clean (and very opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
 
+![Duckquill banner](./banner.webp)
+
 ## Docs
 
-See https://duckquill.exozy.me for the docs.
+See [duckquill.exozy.me](https://duckquill.exozy.me) for the docs.
 
 ## Contribute
 
