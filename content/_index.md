@@ -41,6 +41,12 @@ git submodule init
 git submodule add https://git.exozy.me/daudix/duckquill.git themes/duckquill
 ```
 
+To update the submodule, use the following command:
+
+```sh
+git submodule update --remote --merge
+```
+
 and then enable it in your `config.toml`:
 
 ```toml
