@@ -25,7 +25,7 @@ body {
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.5;
   color: var(--fg-color);
   background-color: var(--bg-color);
   // put footer at the bottom for short pages, such as the 404
@@ -217,14 +217,14 @@ details {
 
 // TABLES
 table {
+  display: block;
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-table {
+  max-width: 100vw;
   overflow: auto;
   word-break: normal;
-  word-break: keep-all;
+  word-break: keep-all; // For Firefox to horizontally scroll wider tables.
+  -webkit-overflow-scrolling: touch;
 }
 
 table th {
@@ -234,7 +234,7 @@ table th {
 table th,
 table td {
   padding: 0.5rem 1rem;
-  border: 1px solid var(--fg05);
+  border: 1px solid var(--fg07);
 }
 
 td,
@@ -404,9 +404,6 @@ img:not(.no-hover):hover {
 // CODE
 code {
   font-family: "JetBrains Mono", monospace;
-  padding: 2px 6px;
-  border-radius: var(--rounded-corner-small);
-  background-color: var(--fg07);
   color: var(--red-fg);
 }
 

@@ -122,25 +122,30 @@ Set any color in `$primary-color` and reload, the primary color should be used n
 
 ### `[extra]` variables:
 
-- `primary_color`: Primary color used in some browsers set in metadata, see [#primary-color](https://git.exozy.me/daudix/duckquill#primary-color)
-- `animated_favicon`: Specify if the favicon are animated GIF (true, false)
-- `date_format`: Allows setting custom date format in [Tera](https://keats.github.io/tera) format, all available variables are listed [here](https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html). Does not apply to comments
-- `hosting`: Where the website source are located, used on 404 page
-- `issues_url`: Link to site bug tracker, if present
-- `source_url`: Link to site source (not built site)
+| Variable           | Description                                                                                                                                                                                                                         | Default                                        |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| `primary_color`    | Primary color used in some browsers set in metadata, see  [ #primary-color ]( https://git.exozy.me/daudix/duckquill#primary-color )                                                                                                 | `#ff7800`                                      |
+| `animated_favicon` | Specify if the favicon are animated GIF                                                                                                                                                                                             | `false`                                        |
+| `date_format`      | Allows setting custom date format in  [ Tera ]( https://keats.github.io/tera )  format, all available variables are listed  [ here ]( https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html ). Does not apply to comments | `%d %B %Y`                                     |
+| `hosting`          | Where the website source are located, used on 404 page                                                                                                                                                                              | `Forgejo`                                      |
+| `issues_url`       | Link to site bug tracker, if present                                                                                                                                                                                                | `https://git.exozy.me/daudix/duckquill/issues` |
+| `source_url`       | Link to site source (not built site)                                                                                                                                                                                                | `https://git.exozy.me/daudix/duckquill`        |
 
 ### `[extra.nav]` variables:
 
-- `show_feed`: Whether to display "Feed" link
-- `nav_links`: Links used in navigation bar
+| Variable    | Description                                                                                                  | Default   |
+|-------------|--------------------------------------------------------------------------------------------------------------|-----------|
+| `show_feed` | Whether to display "Feed" link                                                                               | `true`    |
+| `icons`     | Whether to display icons in navigation bar, when set to  `false`, icons set in `links` won't display as well | `true`    |
+| `links`     | Links used in navigation bar                                                                                 | see below |
 
-The `nav_links` are set like the following:
+The `links` are set like the following:
 
 ```toml
-[extra]
-nav_links = [
-  {url = "https://example.org", name = "Example"},
-  {url = "https://mstdn.social", name = "Mastodon", icon = "mastodon"},
+links = [
+  {url = "https://git.exozy.me/daudix/duckquill", name = "Repo", icon = "git"},
+  {url = "/demo", name = "Demo", icon = "car-front-fill"},
+  {url = "/blog", name = "Blog", icon = "journal-bookmark-fill"},
 ]
 ```
 
@@ -148,17 +153,21 @@ You can set any icon from [Bootstrap Icons](https://icons.getbootstrap.com) for 
 
 ### `[extra.footer]` variables:
 
-- `johnvert_ref`: Site URL without `https://` part or trailing slashes, e.g `example.org`. Works only if `show_johnvert` are set to `true`
-- `show_copyright`: Whether to display `© Duckquill, 2023`. (true, false)
-- `show_johnvert`: Whether to display [Johnvertisement](https://john.citrons.xyz). (true, false)
-- `show_powered_by`: Whether to display `Powered by Zola and Duckquill`. (true, false)
-- `show_source`: Whether to display `Website source` link. (true, false)
+| Variable          | Description                                                                                                              | Default           |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------|-------------------|
+| `johnvert_ref`    | Site URL without `https://` part or trailing slashes, e.g `example.org`. Works only if `show_johnvert` are set to `true` | `daudix.exozy.me` |
+| `show_copyright`  | Whether to display `© Duckquill, 2023`                                                                                   | `true`            |
+| `show_johnvert`   | Whether to display [Johnvertisement](https://john.citrons.xyz)                                                           | `false`           |
+| `show_powered_by` | Whether to display `Powered by Zola and Duckquill`                                                                       | `true`            |
+| `show_source`     | Whether to display `Website source` link                                                                                 | `true`            |
 
 ### `[extra.comments]` variables:
 
-- `host`: Mastodon home server, e.g `mstdn.social`
-- `user`: Mastodon username, e.g `Daudix`
-- `token`: Mastodon app token, e.g `jTNX9pAV8XEPBby0cPWF6CmGY60kkIy4vidggfxXmoQ`. Can be left empty, but in this case only first 60 comments will be loaded, instructions on how to get one are available [here](https://github.com/cassidyjames/cassidyjames.github.io/blob/47c449a0083113ea5be8d215beb6650ac64929e4/_config.yaml#L48-L52)
+| Variable | Description                                                                                                                                                                                                                                                                    | Default                                       |
+|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| `host`   | Mastodon home server, e.g `mstdn.social`                                                                                                                                                                                                                                       | `mstdn.social`                                |
+| `user`   | Mastodon username                                                                                                                                                                                                                                                              | `Daudix`                                      |
+| `token`  | Mastodon app token. Can be left empty, but in this case only first 60 comments will be loaded, instructions on how to get one are available  [here](https://github.com/cassidyjames/cassidyjames.github.io/blob/47c449a0083113ea5be8d215beb6650ac64929e4/_config.yaml#L48-L52) | `jTNX9pAV8XEPBby0cPWF6CmGY60kkIy4vidggfxXmoQ` |
 
 These values are also used in the `<head>` for Mastodon verification.
 
@@ -172,7 +181,7 @@ These values are also used in the `<head>` for Mastodon verification.
 
 If you want to improve Duckquill in any way, feel free to open an issue, or even better, a pull request! I'm happy about every contribution!
 
-The main repo is https://git.exozy.me/daudix/duckquill, but since only exozy.me members can open issues and pull requests, there is two-way mirror at https://next.forgejo.org/daudix-UFO/duckquill, you can open issues and pull requests there just fine.
+The main repo is [git.exozy.me/daudix/duckquill](https://git.exozy.me/daudix/duckquill), but since only exozy.me members can open issues and pull requests, there is two-way mirror at [next.forgejo.org/daudix-UFO/duckquill](https://next.forgejo.org/daudix-UFO/duckquill), you can open issues and pull requests there just fine.
 
 ## Credits
 

@@ -1,15 +1,19 @@
 <nav class="nav">
   <div class="nav-container">
     <a href="{{ config.base_url }}">
-      <i class="bi bi-house-fill"></i>
+      {% if config.extra.nav.icons %}
+        <i class="bi bi-house-fill"></i>
+      {% endif %}
       {{ config.title }}
     </a>
     <ul>
       {% for link in config.extra.nav.links %}
         <li>
           <a href="{{ link.url }}">
-            {% if link.icon %}
-              <i class="bi bi-{{ link.icon }}"></i>
+            {% if config.extra.nav.icons %}
+              {% if link.icon %}
+                <i class="bi bi-{{ link.icon }}"></i>
+              {% endif %}
             {% endif %}
             {{ link.name }}
           </a>
@@ -18,7 +22,9 @@
       {% if config.extra.nav.show_feed %}
         <li>
           <a href="{{ config.base_url }}/atom.xml">
-            <i class="bi bi-rss-fill"></i>
+            {% if config.extra.nav.icons %}
+              <i class="bi bi-rss-fill"></i>
+            {% endif %}
             Feed
           </a>
         </li>

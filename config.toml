@@ -31,6 +31,7 @@ source_url = "https://git.exozy.me/daudix/duckquill"
 
 [extra.nav]
 show_feed = true
+icons = true
 links = [
   {url = "https://git.exozy.me/daudix/duckquill", name = "Repo", icon = "git"},
   {url = "/demo", name = "Demo", icon = "car-front-fill"},
