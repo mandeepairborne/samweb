@@ -55,7 +55,7 @@ theme = "duckquill"
 
 ## Options
 
-Duckquill offers some configuration options to make it fit you better.
+Duckquill offers some configuration options to make it fit you better; most options have pretty descriptive comments, so it should be easy to understand what they do.
 
 ### Custom stylesheets
 
@@ -68,7 +68,7 @@ stylesheets = [
 ]
 ```
 
-It expects the style to be in the `static` directory. If you are using Sass it will be compiled there anyway.
+Additional stylesheets; expects it to be in the `static` directory. If you are using Sass it will be compiled there anyway.
 
 If for some reason overridden class are not respected, try using `!important`. You can import styles from Duckquill using `@use "../themes/duckquill/sass/NEEDED_FILE.scss";`.
 
@@ -81,6 +81,15 @@ First, change the primary color in `config.toml`:
 ```toml
 [extra]
 primary_color = "#HEX_COLOR_CODE"
+```
+
+Then, add `custom.css` to additional stylesheets.
+
+```toml
+[extra]
+stylesheets = [
+  "custom.css"
+]
 ```
 
 Then, paste the following code inside `sass/custom.scss` (inside your site, not the theme):
@@ -118,58 +127,7 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
 }
 ```
 
-Set any color in `$primary-color` and reload, the primary color should be used now. This is a hack that is needed until Zola will be able to use `config.toml` inside Sass.
-
-### `[extra]` variables:
-
-| Variable           | Description                                                                                                                                                                                                                         | Default                                        |
-|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| `primary_color`    | Primary color used in some browsers set in metadata, see  [ #primary-color ]( https://git.exozy.me/daudix/duckquill#primary-color )                                                                                                 | `#ff7800`                                      |
-| `animated_favicon` | Specify if the favicon are animated GIF                                                                                                                                                                                             | `false`                                        |
-| `date_format`      | Allows setting custom date format in  [ Tera ]( https://keats.github.io/tera )  format, all available variables are listed  [ here ]( https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html ). Does not apply to comments | `%d %B %Y`                                     |
-| `hosting`          | Where the website source are located, used on 404 page                                                                                                                                                                              | `Forgejo`                                      |
-| `issues_url`       | Link to site bug tracker, if present                                                                                                                                                                                                | `https://git.exozy.me/daudix/duckquill/issues` |
-| `source_url`       | Link to site source (not built site)                                                                                                                                                                                                | `https://git.exozy.me/daudix/duckquill`        |
-
-### `[extra.nav]` variables:
-
-| Variable    | Description                                                                                                  | Default   |
-|-------------|--------------------------------------------------------------------------------------------------------------|-----------|
-| `show_feed` | Whether to display "Feed" link                                                                               | `true`    |
-| `icons`     | Whether to display icons in navigation bar, when set to  `false`, icons set in `links` won't display as well | `true`    |
-| `links`     | Links used in navigation bar                                                                                 | see below |
-
-The `links` are set like the following:
-
-```toml
-links = [
-  {url = "https://git.exozy.me/daudix/duckquill", name = "Repo", icon = "git"},
-  {url = "/demo", name = "Demo", icon = "car-front-fill"},
-  {url = "/blog", name = "Blog", icon = "journal-bookmark-fill"},
-]
-```
-
-You can set any icon from [Bootstrap Icons](https://icons.getbootstrap.com) for the navigation items, simply add the `icon` variable and put icon name there, without `bi-` prefix, since it's added automatically :)
-
-### `[extra.footer]` variables:
-
-| Variable          | Description                                                                                                              | Default           |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------|-------------------|
-| `johnvert_ref`    | Site URL without `https://` part or trailing slashes, e.g `example.org`. Works only if `show_johnvert` are set to `true` | `daudix.exozy.me` |
-| `show_copyright`  | Whether to display `© Duckquill, 2023`                                                                                   | `true`            |
-| `show_johnvert`   | Whether to display [Johnvertisement](https://john.citrons.xyz)                                                           | `false`           |
-| `show_powered_by` | Whether to display `Powered by Zola and Duckquill`                                                                       | `true`            |
-| `show_source`     | Whether to display `Website source` link                                                                                 | `true`            |
-
-### `[extra.comments]` variables:
-
-| Variable | Description                                                                                                                                                                                                                                                                    | Default                                       |
-|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| `host`   | Mastodon home server, e.g `mstdn.social`                                                                                                                                                                                                                                       | `mstdn.social`                                |
-| `user`   | Mastodon username                                                                                                                                                                                                                                                              | `Daudix`                                      |
-| `token`  | Mastodon app token. Can be left empty, but in this case only first 60 comments will be loaded, instructions on how to get one are available  [here](https://github.com/cassidyjames/cassidyjames.github.io/blob/47c449a0083113ea5be8d215beb6650ac64929e4/_config.yaml#L48-L52) | `jTNX9pAV8XEPBby0cPWF6CmGY60kkIy4vidggfxXmoQ` |
-
-These values are also used in the `<head>` for Mastodon verification.
+Set any color in `$primary-color` and reload, the primary color should be used now. This is a hack that is needed until Zola will be able to use `config.toml` options inside Sass files.
 
 ## Test pages
 

@@ -25,7 +25,7 @@ body {
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.6;
   color: var(--fg-color);
   background-color: var(--bg-color);
   // put footer at the bottom for short pages, such as the 404
@@ -176,7 +176,7 @@ kbd {
   font-family: "JetBrains Mono", monospace;
   padding: 2px 6px;
   border-radius: var(--rounded-corner-small);
-  background-color: var(--fg07);
+  background-color: var(--fg05);
   box-shadow: inset 0 -2px 0 var(--fg09), 0 -1px 0 var(--fg09);
   cursor: pointer;
 }
@@ -186,6 +186,66 @@ kbd:active {
   background-color: var(--fg09);
   box-shadow: inset 0 1px 0 var(--fg09);
   transform: translateY(2px);
+}
+
+// CODE
+code {
+  font-family: "JetBrains Mono", monospace;
+  padding: 2px 6px;
+  border-radius: var(--rounded-corner-small);
+  background-color: var(--fg05);
+  color: var(--red-fg);
+}
+
+pre code {
+  background-color: unset;
+  border-radius: unset;
+  color: unset;
+  padding: unset;
+}
+
+// apply monospace font to everything inside <pre>
+pre * {
+  font-family: "JetBrains Mono", monospace;
+}
+
+pre {
+  line-height: normal; // unset line height
+  padding: 1rem;
+  margin: 1rem 0 1rem;
+  border-radius: var(--rounded-corner);
+  max-width: 100vw;
+  box-shadow: var(--shadow);
+  overflow: auto;
+}
+
+// the line numbers already provide some kind of left/right padding
+pre[data-linenos] {
+  padding: 1rem 0;
+}
+
+pre table td {
+  padding: 0;
+  border: none;
+}
+
+// the line number cells
+pre table td:nth-of-type(1) {
+  text-align: center;
+  user-select: none;
+}
+
+pre mark {
+  display: block;
+  background-color: var(--fg05);
+  color: var(--fg-color); // unset mark color from primary color to text color
+  border-radius: 0; // unset code block border radius
+  padding: 0; // unset mark padding
+}
+
+pre table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
 mark {
@@ -234,7 +294,7 @@ table th {
 table th,
 table td {
   padding: 0.5rem 1rem;
-  border: 1px solid var(--fg07);
+  border: 1px solid var(--fg05);
 }
 
 td,
@@ -399,63 +459,6 @@ img:not(.no-hover):hover {
   border-radius: var(--rounded-corner);
   background-color: var(--fg05);
   color: var(--fg-color);
-}
-
-// CODE
-code {
-  font-family: "JetBrains Mono", monospace;
-  color: var(--red-fg);
-}
-
-pre code {
-  background-color: unset;
-  border-radius: unset;
-  color: unset;
-  padding: unset;
-}
-
-// apply monospace font to everything inside <pre>
-pre * {
-  font-family: "JetBrains Mono", monospace;
-}
-
-pre {
-  line-height: normal; // unset line height
-  padding: 1rem;
-  margin: 1rem 0 1rem;
-  border-radius: var(--rounded-corner);
-  max-width: 100vw;
-  box-shadow: var(--shadow);
-  overflow: auto;
-}
-
-// the line numbers already provide some kind of left/right padding
-pre[data-linenos] {
-  padding: 1rem 0;
-}
-
-pre table td {
-  padding: 0;
-  border: none;
-}
-
-// the line number cells
-pre table td:nth-of-type(1) {
-  text-align: center;
-  user-select: none;
-}
-
-pre mark {
-  display: block;
-  background-color: var(--fg07);
-  color: var(--fg-color); // unset mark color from primary color to text color
-  border-radius: 0; // unset code block border radius
-  padding: 0; // unset mark padding
-}
-
-pre table {
-  width: 100%;
-  border-collapse: collapse;
 }
 
 // CRT

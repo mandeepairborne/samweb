@@ -28,9 +28,7 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
   --rounded-corner: 0.75rem;
 
   // CUSTOM COLOR PALETTE
-  --fg03: rgba(0, 0, 0, 0.03);
   --fg05: rgba(0, 0, 0, 0.05);
-  --fg07: rgba(0, 0, 0, 0.07);
   --fg09: rgba(0, 0, 0, 0.09);
   --fg50: rgba(0, 0, 0, 0.5);
 
@@ -66,9 +64,7 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
     --fg-color: var(--light2);
 
     // CUSTOM COLOR PALETTE
-    --fg03: rgba(255, 255, 255, 0.03);
     --fg05: rgba(255, 255, 255, 0.05);
-    --fg07: rgba(255, 255, 255, 0.07);
     --fg09: rgba(255, 255, 255, 0.09);
     --fg50: rgba(255, 255, 255, 0.5);
 
