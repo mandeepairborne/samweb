@@ -1,18 +1,18 @@
 clone:
   git:
-    image: bash
+    image: fish
     commands:
-      - cd /home/daudix
-      - if [ -d .exoci/duckquill ]; then
-      -   cd .exoci/duckquill
+      - cd ~/.exoci
+      - if [ -d duckquill ]; then
+      -   cd duckquill
       -   git pull
       - else
-      -   git clone https://git.exozy.me/daudix/duckquill.git .exoci/duckquill
+      -   git clone https://git.exozy.me/daudix/duckquill.git
       - fi
 
 pipeline:
   build:
-    image: bash
+    image: fish
     commands:
-      - cd /home/daudix/.exoci/duckquill
-      - ~/.nix-profile/bin/zola build --output-dir /srv/http/pages/duckquill --force
+      - cd ~/.exoci/duckquill
+      - zola build --output-dir /srv/http/pages/duckquill --force

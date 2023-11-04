@@ -94,7 +94,7 @@ stylesheets = [
 
 Then, paste the following code inside `sass/custom.scss` (inside your site, not the theme):
 
-```sass
+```scss
 @use "sass:color";
 
 $primary-color: #HEX_COLOR_CODE;
