@@ -3,12 +3,12 @@ clone:
     image: fish
     commands:
       - cd ~/.exoci
-      - if [ -d duckquill ]; then
+      - if test -d duckquill
       -   cd duckquill
       -   git pull
       - else
       -   git clone https://git.exozy.me/daudix/duckquill.git
-      - fi
+      - end
 
 pipeline:
   build:
