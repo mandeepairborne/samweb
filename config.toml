@@ -31,8 +31,6 @@ animated_favicon = false
 # see https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html
 # for all available variables.
 date_format = "%d %B %Y"
-# The name of the Git forge the site's source code is hosted on, used on the 404 page
-hosting = "Forgejo"
 # URL to issue tracker
 issues_url = "https://git.exozy.me/daudix/duckquill/issues"
 # URL to website's source code
