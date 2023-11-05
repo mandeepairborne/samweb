@@ -4,11 +4,8 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html {
   font-size: 16px;
-  margin: 0;
-  padding: 0;
   scroll-behavior: smooth;
   scrollbar-color: var(--primary-color) transparent;
   accent-color: var(--primary-color);
@@ -16,11 +13,16 @@ body {
 
 // smaller font size on mobile
 // @media only screen and (max-device-width: 480px) {
-//   html,
-//   body {
+//   html {
 //     font-size: 14px;
 //   }
 // }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: "Inter", sans-serif;
@@ -32,12 +34,6 @@ body {
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto minmax(auto, 1fr) auto; // header, stuff, footer
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    background-color: var(--dark5);
-  }
 }
 
 // style text selection to use primary color
@@ -88,7 +84,7 @@ h6 {
 h1 {
   letter-spacing: -0.08rem;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 
 h1::after {
@@ -143,8 +139,6 @@ hr {
   width: 40%;
   border: 0;
 }
-
-// background-image: repeating-linear-gradient(-45deg, transparent, transparent 8px, var(--primary-color) 8px, var(--primary-color) 10px);
 
 blockquote {
   padding: 0 1rem;
@@ -434,13 +428,6 @@ img:not(.no-hover):hover {
 
 .link-site::after {
   content: " ↗";
-}
-
-// center link icons vertically
-.link-icon {
-  height: 1rem;
-  width: 1rem;
-  vertical-align: middle;
 }
 
 // BUTTONS
