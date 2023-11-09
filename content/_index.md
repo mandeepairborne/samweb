@@ -145,10 +145,13 @@ The main repo is [git.exozy.me/daudix/duckquill](https://git.exozy.me/daudix/duc
 
 - [Quill image used in the metadata card](https://commons.wikimedia.org/wiki/File:3quills.jpg)
 
-## Special thanks ♥
+## Thanks to ♥
 
-- [Jakub Steiner](https://jimmac.eu) for an awesome [OS Component Website](https://jimmac.github.io/os-component-website), on top of which this whole thing is built
-- [Cassidy James](https://cassidyjames.com) for an awesome [Mastodon-powered Comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon)
-- [Mehdi](https://codepen.io/meduzen) for an awesome [CSS Scanlines](https://codepen.io/meduzen/pen/zxbwRV)
-- dwb, ejm and jgs for awesome ASCII art
+- [Jakub Steiner](https://jimmac.eu) for the [OS Component Website](https://jimmac.github.io/os-component-website), on top of which this whole thing is built
+- [Cassidy James](https://cassidyjames.com) for the [Mastodon-powered Comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon)
+- [Mehdi Merah](https://mehdi.cc) for the [CSS Scanlines](https://codepen.io/meduzen/pen/zxbwRV)
+- [Bootstrap team](https://getbootstrap.com/docs/5.3/about/team/) for the [Bootstrap Icons](https://icons.getbootstrap.com)
+- [Rasmus](https://rsms.me) for the [Inter](https://rsms.me/inter/) font
+- [JetBrains](https://www.jetbrains.com) for the [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font
+- dwb, ejm and jgs for the ASCII art
 - Everyone who supported me and said good stuff <3

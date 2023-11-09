@@ -33,6 +33,9 @@ $scan-opacity: 0.75;
   } @else {
     animation: none;
   }
+  @media (prefers-reduced-motion) {
+    animation: none;
+  }
 }
 
 // apply CRT animation: @include scan-crt($scan-crt);
@@ -40,6 +43,9 @@ $scan-opacity: 0.75;
   @if $scan-moving-line == true {
     animation: scanline 6s linear infinite;
   } @else {
+    animation: none;
+  }
+    @media (prefers-reduced-motion) {
     animation: none;
   }
 }
