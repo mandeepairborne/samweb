@@ -406,6 +406,7 @@ img:not(.no-hover):hover {
 @media only screen and (max-device-width: 480px) {
   .nav {
     width: 90%;
+    position: static;
   }
 }
 
