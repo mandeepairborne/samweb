@@ -1,14 +1,14 @@
-/* 
+/*!
+ * Duckquill v1.0.0 (https://duckquill.exozy.me)
+ * Copyright 2023 David "Daudix" Lapshin
+ * Licensed under MIT (https://git.exozy.me/daudix/duckquill/src/branch/main/LICENSE)
+ *
+ * Based on OS Component Website which shamelessly stole CSS from systemd
+ * https://github.com/jimmac/os-component-website
+ * https://github.com/systemd/systemd/tree/main/docs
+ */
 
-    Duckquill
-    ====================
-
-    based on OS Component Website which shamelessly stolen CSS from systemd
-    https://github.com/jimmac/os-component-website
-    https://github.com/systemd/systemd/tree/main/docs
-    scanlines.scss are taken from https://codepen.io/meduzen/pen/zxbwRV
-
-*/
+@use "normalize";
 
 @use "variables";
 @use "gnome-hig";
@@ -17,5 +17,6 @@
 @use "comments";
 @use "scanlines";
 @use "bootstrap-icons";
-@import "syntax-theme-dark.css" (prefers-color-scheme: dark);
-@import "syntax-theme-light.css" (prefers-color-scheme: light);
+
+@import url("syntax-theme-dark.css") (prefers-color-scheme: dark);
+@import url("syntax-theme-light.css") (prefers-color-scheme: light);

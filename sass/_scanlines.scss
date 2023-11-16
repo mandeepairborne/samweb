@@ -1,3 +1,5 @@
+/*! scanlines.scss | MIT License | https://codepen.io/meduzen/pen/zxbwRV */
+
 // REGULAR SCANLINES SETTINGS
 
 // width of 1 scanline (min.: 1px)
@@ -45,7 +47,7 @@ $scan-opacity: 0.75;
   } @else {
     animation: none;
   }
-    @media (prefers-reduced-motion) {
+  @media (prefers-reduced-motion) {
     animation: none;
   }
 }

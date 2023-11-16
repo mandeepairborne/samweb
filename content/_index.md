@@ -1,4 +1,5 @@
 +++
+insert_anchor_links = "right"
 +++
 
 {% crt() %}
@@ -70,7 +71,11 @@ stylesheets = [
 
 Additional stylesheets; expects it to be in the `static` directory. If you are using Sass it will be compiled there anyway.
 
-If for some reason overridden class are not respected, try using `!important`. You can import styles from Duckquill using `@use "../themes/duckquill/sass/NEEDED_FILE.scss";`.
+If for some reason overridden class are not respected, try using `!important`. You can import styles from Duckquill using:
+
+```scss
+@use "../themes/duckquill/sass/NEEDED_FILE.scss";
+```
 
 ### Primary color
 

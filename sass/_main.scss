@@ -45,14 +45,14 @@ body {
 // make focused anchor not get covered by nav,
 // and flash it with primary color when jumping to it
 :target {
-  scroll-margin-top: 25vh;
+  scroll-margin-top: 15vh;
   animation: highlight-in-out var(--transition-long);
   animation-delay: 1s;
-}
 
-@keyframes highlight-in-out {
-  50% {
-    color: var(--primary-color);
+  @keyframes highlight-in-out {
+    50% {
+      color: var(--primary-color);
+    }
   }
 }
 
@@ -79,17 +79,36 @@ h6 {
   margin: 3rem 0 1rem;
   font-weight: 600;
   line-height: 1.25;
+
+  .zola-anchor {
+    color: inherit;
+
+    .bi {
+      display: none;
+      visibility: hidden;
+      color: var(--fg50);
+    }
+  }
+
+  &:hover .zola-anchor .bi {
+    display: inline-block;
+    visibility: visible;
+  }
 }
 
 h1 {
   letter-spacing: -0.08rem;
   font-weight: 900;
   font-size: 2.4rem;
-}
 
-h1::after {
-  content: ".";
-  color: var(--primary-color);
+  a {
+    font-weight: 900;
+  }
+
+  &::after {
+    content: ".";
+    color: var(--primary-color);
+  }
 }
 
 h2 {
@@ -119,18 +138,18 @@ small {
 
 dl {
   padding: 0;
-}
 
-dl dt {
-  padding: 0;
-  margin-top: 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-}
+  dt {
+    padding: 0;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
 
-dl dd {
-  padding: 0;
-  margin-bottom: 1rem;
+  dd {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
 }
 
 hr {
@@ -146,19 +165,19 @@ blockquote {
   margin-left: 0;
   color: var(--fg50);
   border-left: 0.3rem solid var(--primary-color);
-}
 
-blockquote > :first-child {
-  margin-top: 0;
-}
+  > :first-child {
+    margin-top: 0;
+  }
 
-blockquote > :last-child {
-  margin-bottom: 0;
-}
+  > :last-child {
+    margin-bottom: 0;
+  }
 
-// make border slightly transparent for nested blockquote
-blockquote > blockquote {
-  border-left: 0.3rem solid var(--primary-color-alpha);
+  // make border slightly transparent for nested blockquote
+  > blockquote {
+    border-left: 0.3rem solid var(--primary-color-alpha);
+  }
 }
 
 abbr {
@@ -175,13 +194,13 @@ kbd {
   background-color: var(--fg05);
   box-shadow: inset 0 -2px 0 var(--fg09), 0 -1px 0 var(--fg09);
   cursor: pointer;
-}
 
-// small nice thingy, keys can be pressed!
-kbd:active {
-  background-color: var(--fg09);
-  box-shadow: inset 0 1px 0 var(--fg09);
-  transform: translateY(2px);
+  // small nice thingy, keys can be pressed!
+  &:active {
+    background-color: var(--fg09);
+    box-shadow: inset 0 1px 0 var(--fg09);
+    transform: translateY(2px);
+  }
 }
 
 // CODE
@@ -193,18 +212,7 @@ code {
   color: var(--red-fg);
 }
 
-pre code {
-  background-color: unset;
-  border-radius: unset;
-  color: unset;
-  padding: unset;
-}
-
-// apply monospace font to everything inside <pre>
-pre * {
-  font-family: "JetBrains Mono", monospace;
-}
-
+// apply monospace font to everything inside the <pre>
 pre {
   line-height: normal; // unset line height
   padding: 1rem;
@@ -213,35 +221,46 @@ pre {
   max-width: 100vw;
   box-shadow: var(--shadow);
   overflow: auto;
-}
 
-// the line numbers already provide some kind of left/right padding
-pre[data-linenos] {
-  padding: 1rem 0;
-}
+  & * {
+    font-family: "JetBrains Mono", monospace;
+  }
 
-pre table td {
-  padding: 0;
-  border: none;
-}
+  code {
+    background-color: unset;
+    border-radius: unset;
+    color: unset;
+    padding: unset;
+  }
 
-// the line number cells
-pre table td:nth-of-type(1) {
-  text-align: center;
-  user-select: none;
-}
+  table td {
+    padding: 0;
+    border: none;
+  }
 
-pre mark {
-  display: block;
-  background-color: var(--fg05);
-  color: var(--fg-color); // unset mark color from primary color to text color
-  border-radius: 0; // unset code block border radius
-  padding: 0; // unset mark padding
-}
+  // the line number cells
+  table td:nth-of-type(1) {
+    text-align: center;
+    user-select: none;
+  }
 
-pre table {
-  width: 100%;
-  border-collapse: collapse;
+  mark {
+    display: block;
+    background-color: var(--fg05);
+    color: var(--fg-color); // unset mark color from primary color to text color
+    border-radius: 0; // unset code block border radius
+    padding: 0; // unset mark padding
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  // the line numbers already provide some kind of left/right padding
+  &[data-linenos] {
+    padding: 1rem 0;
+  }
 }
 
 mark {
@@ -281,16 +300,16 @@ table {
   word-break: normal;
   word-break: keep-all; // for Firefox to horizontally scroll wider tables.
   -webkit-overflow-scrolling: touch;
-}
 
-table th {
-  font-weight: bold;
-}
+  th {
+    font-weight: bold;
+  }
 
-table th,
-table td {
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--fg05);
+  th,
+  td {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--fg05);
+  }
 }
 
 td,
@@ -310,17 +329,17 @@ video {
 
 img {
   transition: var(--transition-longer);
-}
 
-img:not(.no-hover):hover {
-  transform: scale(125%);
-  border-radius: 0;
-  box-shadow: var(--shadow-raised);
-}
+  &:not(.no-hover):hover {
+    transform: scale(125%);
+    border-radius: 0;
+    box-shadow: var(--shadow-raised);
+  }
 
-@media only screen and (max-device-width: 480px) {
-  img:not(.no-hover):hover {
-    transform: scale(110%);
+  @media only screen and (max-device-width: 480px) {
+    &:not(.no-hover):hover {
+      transform: scale(110%);
+    }
   }
 }
 
@@ -387,26 +406,26 @@ img:not(.no-hover):hover {
       color: var(--primary-color);
     }
   }
-}
 
-@media (min-width: 600px) {
-  .nav {
-    &-container {
-      text-align: left;
-    }
-
-    ul {
-      bottom: 0;
-      position: absolute;
-      right: 0;
+  @media only screen and (max-device-width: 480px) {
+    & {
+      width: 90%;
+      position: static;
     }
   }
-}
 
-@media only screen and (max-device-width: 480px) {
-  .nav {
-    width: 90%;
-    position: static;
+  @media (min-width: 600px) {
+    & {
+      &-container {
+        text-align: left;
+      }
+
+      ul {
+        bottom: 0;
+        position: absolute;
+        right: 0;
+      }
+    }
   }
 }
 
@@ -416,9 +435,7 @@ img:not(.no-hover):hover {
   padding: 3rem 0 3rem;
   font-size: 1rem;
   margin-top: 4rem;
-}
 
-.footer {
   details {
     all: unset;
   }
@@ -475,17 +492,17 @@ img:not(.no-hover):hover {
 
 .cursor {
   animation: blicking 1s infinite;
-}
 
-@keyframes blicking {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 1;
+  @keyframes blicking {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+    }
   }
 }
 
@@ -507,21 +524,21 @@ img:not(.no-hover):hover {
   ul {
     margin: 0;
   }
-}
 
-.archive {
-  background-color: var(--purple-bg);
-  color: var(--purple-fg);
-}
+  &.archive {
+    background-color: var(--purple-bg);
+    color: var(--purple-fg);
+  }
 
-.disclaimer {
-  background-color: var(--red-bg);
-  color: var(--red-fg);
-}
+  &.disclaimer {
+    background-color: var(--red-bg);
+    color: var(--red-fg);
+  }
 
-.trigger {
-  background-color: var(--yellow-bg);
-  color: var(--yellow-fg);
+  &.trigger {
+    background-color: var(--yellow-bg);
+    color: var(--yellow-fg);
+  }
 }
 
 .johnvertisement {
