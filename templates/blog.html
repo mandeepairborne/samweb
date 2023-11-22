@@ -13,7 +13,7 @@
       {%- for name, taxon in page.taxonomies %}
         •
         {%- for item in taxon %}
-          <a href="{{ get_taxonomy_url(kind=name, name=item) }}">
+          <a class="pill" href="{{ get_taxonomy_url(kind=name, name=item) }}">
             <i class="bi bi-tag-fill"></i>
             {{ item }}
           </a>&nbsp;
@@ -25,21 +25,21 @@
 
 {% if page.extra.archive %}
   <div class="statement-container archive">
-    <h2>⚠ Archived</h2>
+    <strong class="big">⚠ Archived</strong>
     {{ page.extra.archive | markdown | safe }}
   </div>
 {% endif %}
 
 {% if page.extra.trigger %}
   <div class="statement-container trigger">
-    <h2>⚠ Trigger Warning</h2>
+    <strong class="big">⚠ Trigger Warning</strong>
     {{ page.extra.trigger | markdown | safe }}
   </div>
 {% endif %}
 
 {% if page.extra.disclaimer %}
   <div class="statement-container disclaimer">
-    <h2>⚠ Disclaimer(s)</h2>
+    <strong class="big">⚠ Disclaimer(s)</strong>
     {{ page.extra.disclaimer | markdown | safe }}
   </div>
 {% endif %}

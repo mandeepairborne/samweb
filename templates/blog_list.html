@@ -13,9 +13,9 @@
 
 {% for page in section.pages %}
 <article>
-  <h2>
+  <h3>
     <a class="link-page" href="{{ page.permalink | safe }}">{{ page.title }}</a>
-  </h2>
+  </h3>
   {%- if page.description %}
     <p>{{ page.description }}</p>
   {%- endif %}
@@ -28,7 +28,7 @@
         {%- for name, taxon in page.taxonomies %}
         •
           {%-for item in taxon %}
-          <a href="{{ get_taxonomy_url(kind=name, name=item) }}">
+          <a class="pill" href="{{ get_taxonomy_url(kind=name, name=item) }}">
             <i class="bi bi-tag-fill"></i>
             {{ item }}
           </a>&nbsp;
@@ -38,5 +38,6 @@
     </small>
   {%- endif %}
 </article>
+<hr>
 {% endfor %}
 {% endblock content %}

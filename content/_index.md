@@ -17,11 +17,11 @@ jgs~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~
 
 Edit a bit of metadata and tweak some of the included graphics and have a blog up in minutes!
 
-- Pretty, yet lightweight. No JavaScript are used.
+- Pretty, yet lightweight. No JavaScript is used.
 - For a very pleasant look, the colors are tinted with the primary color.
 - Proper favicon for modern browsers and Apple device icons.
 - Mastodon, Lemmy and other social media meta cards for easy sharing. Try [Share Preview](https://apps.gnome.org/SharePreview/) to test.
-- Local copy of the amazing [Inter](https://rsms.me/inter/) and [JetBrains Mono](https://www.jetbrains.com/lp/mono/) fonts, plus [Bootstrap Icons](https://icons.getbootstrap.com). No slowdowns pulling from external hosting.
+- Local copy of the amazing [Inter](https://rsms.me/inter/) and [Source Code Pro](https://adobe-fonts.github.io/source-code-pro/) fonts, plus [Bootstrap Icons](https://icons.getbootstrap.com). No slowdowns pulling from external hosting.
 - Mobile friendly, with proper dark variant.
 - [Mastodon-powered comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon). Comment using any ActivityPub service by replying to Mastodon post.
 
@@ -85,7 +85,7 @@ First, change the primary color in `config.toml`:
 
 ```toml
 [extra]
-primary_color = "#HEX_COLOR_CODE"
+primary_color = "COLOR_CODE"
 ```
 
 Then, add `custom.css` to additional stylesheets.
@@ -102,16 +102,19 @@ Then, paste the following code inside `sass/custom.scss` (inside your site, not 
 ```scss
 @use "sass:color";
 
-$primary-color: #HEX_COLOR_CODE;
+$primary-color: COLOR_CODE;
 $primary-color-alpha: color.scale($primary-color, $alpha: -80%);
 
-$bg-color-l: color.mix($primary-color, rgb(250, 250, 250), 10%);
-$bg-color-d: color.mix($primary-color, rgb(11, 11, 11), 5%);
+$bg-color-l: color.scale($primary-color, $lightness: 80%);
+$bg-color-d: color.scale($primary-color, $lightness: -90%, $saturation: -50%);
 
 $crt-bg: radial-gradient(
   color.scale($primary-color, $lightness: -80%),
   color.scale($primary-color, $lightness: -90%)
 );
+
+$nav-bg-l: color.scale($bg-color-l, $alpha: -20%, $lightness: 50%);
+$nav-bg-d: color.scale($bg-color-d, $alpha: -20%, $lightness: 5%, $saturation: -50%);
 
 $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
   0 2px 6px 2px color.scale($primary-color, $alpha: -95%),
@@ -120,6 +123,7 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
 :root {
   --bg-color: #{$bg-color-l};
   --crt-bg: #{$crt-bg};
+  --nav-bg: #{$nav-bg-l};
   --primary-color-alpha: #{$primary-color-alpha};
   --primary-color: #{$primary-color};
   --glow: #{$glow};
@@ -128,6 +132,7 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #{$bg-color-d};
+    --nav-bg: #{$nav-bg-d};
   }
 }
 ```
@@ -156,7 +161,7 @@ The main repo is [git.exozy.me/daudix/duckquill](https://git.exozy.me/daudix/duc
 - [Cassidy James](https://cassidyjames.com) for the [Mastodon-powered Comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon)
 - [Mehdi Merah](https://mehdi.cc) for the [CSS Scanlines](https://codepen.io/meduzen/pen/zxbwRV)
 - [Bootstrap team](https://getbootstrap.com/docs/5.3/about/team/) for the [Bootstrap Icons](https://icons.getbootstrap.com)
+- [Adobe Fonts](https://github.com/adobe-fonts) for the [Source Code Pro](https://adobe-fonts.github.io/source-code-pro/) font
 - [Rasmus](https://rsms.me) for the [Inter](https://rsms.me/inter/) font
-- [JetBrains](https://www.jetbrains.com) for the [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font
 - dwb, ejm and jgs for the ASCII art
 - Everyone who supported me and said good stuff <3

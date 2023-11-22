@@ -9,11 +9,11 @@
 </small>
 <article>
   {% for page in term.pages %}
-  <h2>
+  <h3>
     <a class="link-page" href="{{ page.permalink | safe }}">
       {{ page.title }}
     </a>
-  </h2>
+  </h3>
   <small>
     <time datetime='{{ page.date | date(format='%+') }}' pubdate>
       {{- page.date | date(format=config.extra.date_format) -}}
@@ -22,7 +22,7 @@
       {%- for name, taxon in page.taxonomies %}
         •
         {%- for item in taxon %}
-          <a href="{{ get_taxonomy_url(kind=name, name=item) }}">
+          <a class="pill" href="{{ get_taxonomy_url(kind=name, name=item) }}">
             <i class="bi bi-tag-fill"></i>
             {{ item }}
           </a>&nbsp;

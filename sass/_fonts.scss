@@ -1,23 +1,34 @@
 @font-face {
-  font-family: "Inter";
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: oblique italic 0deg 10deg;
-  src: url("./fonts/inter.woff2?v=4.0") format("woff2");
-}
-
-@font-face {
-  font-family: "JetBrains Mono";
-  font-weight: 100 900;
-  font-display: swap;
+  font-family: "Inter Variable";
   font-style: normal;
-  src: url("./fonts/jetbrains-mono.woff2?v=2.304") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("./fonts/inter-variable.woff2?v=4.0") format("woff2"),
+    url("./fonts/inter-variable.ttf?v=4.0") format("truetype");
+}
+@font-face {
+  font-family: "Inter Variable";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("./fonts/inter-variable-italic.woff2?v=4.0") format("woff2"),
+    url("./fonts/inter-variable-italic.ttf?v=4.0") format("truetype");
 }
 
 @font-face {
-  font-family: "JetBrains Mono";
-  font-weight: 100 900;
-  font-display: swap;
+  font-family: "Source Code VF";
+  font-style: normal;
+  font-weight: 200 900;
+  font-stretch: normal;
+  src: url("./fonts/source-code-vf-upright.woff2?v=1.026R") format("woff2"),
+    url("./fonts/source-code-vf-upright.ttf?v=1.026R") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Code VF";
   font-style: italic;
-  src: url("./fonts/jetbrains-mono-italic.woff2?v=2.304") format("woff2");
+  font-weight: 200 900;
+  font-stretch: normal;
+  src: url("./fonts/source-code-vf-italic.woff2?v=1.026R") format("woff2"),
+    url("./fonts/source-code-vf-italic.ttf?v=1.026R") format("truetype");
 }

@@ -3,13 +3,16 @@
 $primary-color: #ff7800;
 $primary-color-alpha: color.scale($primary-color, $alpha: -80%);
 
-$bg-color-l: color.mix($primary-color, rgb(250, 250, 250), 10%);
-$bg-color-d: color.mix($primary-color, rgb(11, 11, 11), 5%);
+$bg-color-l: color.scale($primary-color, $lightness: 80%);
+$bg-color-d: color.scale($primary-color, $lightness: -90%, $saturation: -50%);
 
 $crt-bg: radial-gradient(
   color.scale($primary-color, $lightness: -80%),
   color.scale($primary-color, $lightness: -90%)
 );
+
+$nav-bg-l: color.scale($bg-color-l, $alpha: -20%, $lightness: 50%);
+$nav-bg-d: color.scale($bg-color-d, $alpha: -20%, $lightness: 5%, $saturation: -50%);
 
 $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
   0 2px 6px 2px color.scale($primary-color, $alpha: -95%),
@@ -20,7 +23,7 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
   --bg-color: #{$bg-color-l};
   --content-width: 720px;
   --crt-bg: #{$crt-bg};
-  --fg-color: var(--dark4);
+  --fg-color: rgba(0, 0, 0, 0.8);
   --primary-color-alpha: #{$primary-color-alpha};
   --primary-color: #{$primary-color};
   --rounded-corner-big: 1.2rem;
@@ -31,6 +34,7 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
   --fg05: rgba(0, 0, 0, 0.05);
   --fg09: rgba(0, 0, 0, 0.09);
   --fg50: rgba(0, 0, 0, 0.5);
+  --nav-bg: #{$nav-bg-l};
 
   --orange-bg: rgba(255, 120, 0, 0.1);
   --orange-fg: rgb(255, 120, 0);
@@ -50,6 +54,7 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
     drop-shadow(0 2px 2px rgba(0, 0, 0, 0.06));
   --glow: #{$glow};
 
+  --transition-bezier: 350ms cubic-bezier(0.17, 0.89, 0.32, 1.28);
   --transition-long: 800ms;
   --transition-longer: 400ms;
   --transition: 200ms;
@@ -61,12 +66,13 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
 
     // GENERAL SETUP
     --bg-color: #{$bg-color-d};
-    --fg-color: var(--light2);
+    --fg-color: rgb(255, 255, 255);
 
     // CUSTOM COLOR PALETTE
     --fg05: rgba(255, 255, 255, 0.05);
     --fg09: rgba(255, 255, 255, 0.09);
     --fg50: rgba(255, 255, 255, 0.5);
+    --nav-bg: #{$nav-bg-d};
 
     --orange-bg: rgba(255, 190, 111, 0.1);
     --orange-fg: rgb(255, 190, 111);

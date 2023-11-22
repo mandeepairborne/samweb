@@ -9,6 +9,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-color: var(--primary-color) transparent;
   accent-color: var(--primary-color);
+  overflow-wrap: break-word;
 }
 
 // smaller font size on mobile
@@ -25,7 +26,7 @@ body {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Variable", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: var(--fg-color);
@@ -58,7 +59,7 @@ body {
 
 // LAYOUT
 .container {
-  width: 80%;
+  width: 80vw;
   margin-left: auto;
   margin-right: auto;
   max-width: var(--content-width);
@@ -66,7 +67,7 @@ body {
 
 @media only screen and (max-device-width: 480px) {
   .container {
-    width: 90%;
+    width: 90vw;
   }
 }
 
@@ -99,7 +100,7 @@ h6 {
 h1 {
   letter-spacing: -0.08rem;
   font-weight: 900;
-  font-size: 2.4rem;
+  font-size: 3rem;
 
   a {
     font-weight: 900;
@@ -112,17 +113,35 @@ h1 {
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
+  letter-spacing: -0.04rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.75rem;
 }
 
 a {
-  font-weight: 600;
-  text-decoration: none;
   color: var(--primary-color);
   cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  text-decoration: underline;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: underline wavy;
   }
 }
 
@@ -153,18 +172,16 @@ dl {
 }
 
 hr {
-  background-color: var(--primary-color);
-  height: 0.3rem;
-  margin: 3rem auto 4rem;
+  border: 0.125rem solid var(--fg05);
+  margin: 3rem auto;
   width: 40%;
-  border: 0;
 }
 
 blockquote {
   padding: 0 1rem;
   margin-left: 0;
   color: var(--fg50);
-  border-left: 0.3rem solid var(--primary-color);
+  border-left: 0.25rem solid var(--primary-color);
 
   > :first-child {
     margin-top: 0;
@@ -185,34 +202,19 @@ abbr {
   text-decoration: underline dotted;
 }
 
-kbd {
-  display: inline-block;
-  line-height: normal;
-  font-family: "JetBrains Mono", monospace;
-  padding: 2px 6px;
-  border-radius: var(--rounded-corner-small);
-  background-color: var(--fg05);
-  box-shadow: inset 0 -2px 0 var(--fg09), 0 -1px 0 var(--fg09);
-  cursor: pointer;
-
-  // small nice thingy, keys can be pressed!
-  &:active {
-    background-color: var(--fg09);
-    box-shadow: inset 0 1px 0 var(--fg09);
-    transform: translateY(2px);
-  }
+// CODE
+pre,
+code {
+  font-family: "Source Code VF", monospace;
 }
 
-// CODE
-code {
-  font-family: "JetBrains Mono", monospace;
+code:not(pre code) {
   padding: 2px 6px;
   border-radius: var(--rounded-corner-small);
   background-color: var(--fg05);
   color: var(--red-fg);
 }
 
-// apply monospace font to everything inside the <pre>
 pre {
   line-height: normal; // unset line height
   padding: 1rem;
@@ -221,17 +223,6 @@ pre {
   max-width: 100vw;
   box-shadow: var(--shadow);
   overflow: auto;
-
-  & * {
-    font-family: "JetBrains Mono", monospace;
-  }
-
-  code {
-    background-color: unset;
-    border-radius: unset;
-    color: unset;
-    padding: unset;
-  }
 
   table td {
     padding: 0;
@@ -260,6 +251,23 @@ pre {
   // the line numbers already provide some kind of left/right padding
   &[data-linenos] {
     padding: 1rem 0;
+  }
+}
+
+kbd {
+  display: inline-block;
+  line-height: normal;
+  padding: 2px 6px;
+  border-radius: var(--rounded-corner-small);
+  background-color: var(--fg05);
+  box-shadow: inset 0 -2px 0 var(--fg09), 0 -1px 0 var(--fg09);
+  cursor: pointer;
+
+  // small nice thingy, keys can be pressed!
+  &:active {
+    background-color: var(--fg09);
+    box-shadow: inset 0 1px 0 var(--fg09);
+    transform: translateY(2px);
   }
 }
 
@@ -293,13 +301,8 @@ details {
 // TABLES
 table {
   display: block;
+  overflow-x: auto;
   border-collapse: collapse;
-  border-spacing: 0;
-  max-width: 100vw;
-  overflow: auto;
-  word-break: normal;
-  word-break: keep-all; // for Firefox to horizontally scroll wider tables.
-  -webkit-overflow-scrolling: touch;
 
   th {
     font-weight: bold;
@@ -360,12 +363,12 @@ img {
 // NAVBAR
 .nav {
   overflow: auto;
-  width: 80%;
+  width: 80vw;
   max-width: var(--content-width);
   margin: 1rem auto;
-  box-shadow: var(--shadow);
+  box-shadow: 0px 12px 24px -16px rgba(0, 0, 0, 0.5);
   border-radius: var(--rounded-corner-big);
-  background-color: var(--fg05);
+  background-color: var(--nav-bg);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   position: sticky;
@@ -400,8 +403,7 @@ img {
     transition: var(--transition);
     text-decoration: none;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: var(--fg05);
       color: var(--primary-color);
     }
@@ -409,13 +411,15 @@ img {
 
   @media only screen and (max-device-width: 480px) {
     & {
-      width: 90%;
+      width: 90vw;
       position: static;
     }
   }
 
   @media (min-width: 600px) {
     & {
+      border-radius: 9999px;
+
       &-container {
         text-align: left;
       }
@@ -424,6 +428,10 @@ img {
         bottom: 0;
         position: absolute;
         right: 0;
+      }
+
+      a {
+        border-radius: 9999px;
       }
     }
   }
@@ -460,12 +468,19 @@ img {
 }
 
 .inline-button {
+  background-color: var(--fg05);
+  border-radius: var(--rounded-corner);
+  color: var(--fg-color);
   display: inline-block;
   font-size: 0.9rem;
   padding: 0.4rem 1rem;
-  border-radius: var(--rounded-corner);
-  background-color: var(--fg05);
-  color: var(--fg-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.inline-button:hover {
+  background-color: var(--fg09);
+  text-decoration: none;
 }
 
 // CRT
@@ -509,20 +524,22 @@ img {
 // STATEMENTS
 .statement-container {
   margin: 1rem 0 1rem;
-  padding: 1rem 1rem;
+  padding: 1rem 1rem 0.5rem 1rem;
   border-radius: var(--rounded-corner);
   box-shadow: var(--shadow);
 
-  h2 {
-    margin: 0 0 1rem;
-  }
-
-  p {
+  * {
     margin: 0;
   }
 
-  ul {
-    margin: 0;
+  p,
+  ul,
+  ol {
+    margin: 0.5rem 0 0.5rem;
+  }
+
+  .big {
+    font-size: 150%;
   }
 
   &.archive {
@@ -547,4 +564,19 @@ img {
   width: min(728px, 100vw);
   height: min(90px, 12.367vw);
   border: none;
+}
+
+.pill {
+  background-color: var(--fg05);
+  border-radius: 9999px;
+  color: var(--fg-color);
+  padding: 0.25rem 0.75rem;
+  text-decoration: none;
+  transition: var(--transition);
+
+  &:hover {
+    background-color: var(--fg09);
+    color: var(--primary-color);
+    text-decoration: none;
+  }
 }

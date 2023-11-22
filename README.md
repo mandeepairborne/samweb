@@ -27,7 +27,7 @@ The main repo is https://git.exozy.me/daudix/duckquill, but since only exozy.me 
 - [Cassidy James](https://cassidyjames.com) for the [Mastodon-powered Comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon)
 - [Mehdi Merah](https://mehdi.cc) for the [CSS Scanlines](https://codepen.io/meduzen/pen/zxbwRV)
 - [Bootstrap team](https://getbootstrap.com/docs/5.3/about/team/) for the [Bootstrap Icons](https://icons.getbootstrap.com)
+- [Adobe Fonts](https://github.com/adobe-fonts) for the [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) font
 - [Rasmus](https://rsms.me) for the [Inter](https://rsms.me/inter/) font
-- [JetBrains](https://www.jetbrains.com) for the [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font
 - dwb, ejm and jgs for the ASCII art
 - Everyone who supported me and said good stuff <3

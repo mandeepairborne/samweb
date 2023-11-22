@@ -8,7 +8,7 @@
   <br />
   {% for tag in terms %}
   <small>
-    <a href="{{ get_taxonomy_url(kind='tags', name=tag.name) }}">
+    <a class="pill" href="{{ get_taxonomy_url(kind='tags', name=tag.name) }}">
       <i class="bi bi-tag-fill"></i>
       {{ tag.name }}
     </a>
