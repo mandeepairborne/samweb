@@ -9,14 +9,11 @@
  */
 
 @use "normalize";
-
 @use "variables";
 @use "gnome-hig";
 @use "fonts";
 @use "main";
 @use "comments";
-@use "scanlines";
-@use "bootstrap-icons";
 
 @import url("syntax-theme-dark.css") (prefers-color-scheme: dark);
 @import url("syntax-theme-light.css") (prefers-color-scheme: light);

@@ -1,5 +1,4 @@
 +++
-insert_anchor_links = "right"
 +++
 
 {% crt() %}
@@ -21,7 +20,7 @@ Edit a bit of metadata and tweak some of the included graphics and have a blog u
 - For a very pleasant look, the colors are tinted with the primary color.
 - Proper favicon for modern browsers and Apple device icons.
 - Mastodon, Lemmy and other social media meta cards for easy sharing. Try [Share Preview](https://apps.gnome.org/SharePreview/) to test.
-- Local copy of the amazing [Inter](https://rsms.me/inter/) and [Source Code Pro](https://adobe-fonts.github.io/source-code-pro/) fonts, plus [Bootstrap Icons](https://icons.getbootstrap.com). No slowdowns pulling from external hosting.
+- Local copy of the amazing [Inter](https://rsms.me/inter/) and [Source Code Pro](https://adobe-fonts.github.io/source-code-pro/) fonts. No slowdowns pulling from external hosting.
 - Mobile friendly, with proper dark variant.
 - [Mastodon-powered comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon). Comment using any ActivityPub service by replying to Mastodon post.
 
@@ -159,9 +158,6 @@ The main repo is [git.exozy.me/daudix/duckquill](https://git.exozy.me/daudix/duc
 
 - [Jakub Steiner](https://jimmac.eu) for the [OS Component Website](https://jimmac.github.io/os-component-website), on top of which this whole thing is built
 - [Cassidy James](https://cassidyjames.com) for the [Mastodon-powered Comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon)
-- [Mehdi Merah](https://mehdi.cc) for the [CSS Scanlines](https://codepen.io/meduzen/pen/zxbwRV)
-- [Bootstrap team](https://getbootstrap.com/docs/5.3/about/team/) for the [Bootstrap Icons](https://icons.getbootstrap.com)
 - [Adobe Fonts](https://github.com/adobe-fonts) for the [Source Code Pro](https://adobe-fonts.github.io/source-code-pro/) font
 - [Rasmus](https://rsms.me) for the [Inter](https://rsms.me/inter/) font
-- dwb, ejm and jgs for the ASCII art
 - Everyone who supported me and said good stuff <3

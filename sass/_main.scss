@@ -82,17 +82,13 @@ h6 {
   line-height: 1.25;
 
   .zola-anchor {
-    color: inherit;
-
-    .bi {
-      display: none;
-      visibility: hidden;
-      color: var(--fg50);
-    }
+    display: none;
+    visibility: hidden;
   }
 
-  &:hover .zola-anchor .bi {
+  &:hover .zola-anchor {
     display: inline-block;
+    text-decoration: none;
     visibility: visible;
   }
 }
@@ -138,10 +134,9 @@ a {
   cursor: pointer;
   font-weight: 600;
   text-decoration: none;
-  text-decoration: underline;
 
   &:hover {
-    text-decoration: underline wavy;
+    text-decoration: underline;
   }
 }
 
@@ -255,18 +250,19 @@ pre {
 }
 
 kbd {
+  background-color: var(--fg05);
+  border-radius: var(--rounded-corner-small);
+  box-shadow: inset 0 -2px 0 var(--fg10), 0 -1px 0 var(--fg10);
+  cursor: pointer;
   display: inline-block;
+  font-size: 0.8rem;
   line-height: normal;
   padding: 2px 6px;
-  border-radius: var(--rounded-corner-small);
-  background-color: var(--fg05);
-  box-shadow: inset 0 -2px 0 var(--fg09), 0 -1px 0 var(--fg09);
-  cursor: pointer;
 
   // small nice thingy, keys can be pressed!
   &:active {
-    background-color: var(--fg09);
-    box-shadow: inset 0 1px 0 var(--fg09);
+    background-color: var(--fg10);
+    box-shadow: inset 0 1px 0 var(--fg10);
     transform: translateY(2px);
   }
 }
@@ -401,11 +397,11 @@ img {
     background-color: transparent;
     color: var(--fg50);
     transition: var(--transition);
-    text-decoration: none;
 
     &:hover {
       background-color: var(--fg05);
       color: var(--primary-color);
+      text-decoration: none;
     }
   }
 
@@ -474,12 +470,11 @@ img {
   display: inline-block;
   font-size: 0.9rem;
   padding: 0.4rem 1rem;
-  text-decoration: none;
   transition: var(--transition);
 }
 
 .inline-button:hover {
-  background-color: var(--fg09);
+  background-color: var(--fg10);
   text-decoration: none;
 }
 
@@ -491,18 +486,38 @@ img {
   background: var(--crt-bg);
 
   pre {
-    text-shadow: var(--primary-color) 0 0 12px;
     color: var(--primary-color);
     padding: 1rem 1rem;
+    text-shadow: var(--primary-color-alpha) 0 0 4px, var(--primary-color) 0 0 12px;
     // unset some <pre> stuff
-    margin: unset;
     background-color: unset;
     box-shadow: unset;
+    margin: unset;
   }
+}
 
-  a {
-    text-decoration: underline;
-  }
+.scanlines {
+  position: relative;
+  overflow: hidden;
+}
+
+.scanlines::after {
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25) 1px,
+    transparent 3px,
+    transparent 4px
+  );
 }
 
 .cursor {
@@ -566,17 +581,43 @@ img {
   border: none;
 }
 
-.pill {
-  background-color: var(--fg05);
+.tags {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+
+  li {
+    display: inline-block;
+    margin: 0 0.2rem 0.4rem 0;
+  }
+}
+
+.tag {
   border-radius: 9999px;
   color: var(--fg-color);
   padding: 0.25rem 0.75rem;
-  text-decoration: none;
   transition: var(--transition);
+  background-color: var(--fg05);
 
   &:hover {
-    background-color: var(--fg09);
-    color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    background-color: var(--purple3);
+    background-image: radial-gradient(at 0 0, var(--blue3) 0, transparent 50%),
+      radial-gradient(at 100% 100%, var(--red2) 0, transparent 50%);
     text-decoration: none;
+  }
+
+  &::before {
+    content: "#";
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:hover {
+      color: rgba(0, 0, 0, 0.8);
+      background-color: var(--purple2);
+      background-image: radial-gradient(at 0 0, var(--blue2) 0, transparent 50%),
+        radial-gradient(at 100% 100%, var(--red1) 0, transparent 50%);
+      text-decoration: none;
+    }
   }
 }

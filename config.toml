@@ -43,16 +43,13 @@ source_url = "https://git.exozy.me/daudix/duckquill"
 # ]
 
 [extra.nav]
-# Display RSS/Atom feed button in the nav
+# Display Atom/RSS feed button in the nav
 show_feed = true
-# Show icons next to links in the nav
-icons = true
-# Links used in the nav; any icon from https://icons.getbootstrap.com
-# can be used as the icon. The bi- prefix should not be added.
+# Links used in the nav
 links = [
-  {url = "https://git.exozy.me/daudix/duckquill", name = "Repo", icon = "git"},
-  {url = "/demo", name = "Demo", icon = "car-front-fill"},
-  {url = "/blog", name = "Blog", icon = "journal-bookmark-fill"},
+  {url = "https://git.exozy.me/daudix/duckquill", name = "Repo"},
+  {url = "/demo", name = "Demo"},
+  {url = "/blog", name = "Blog"},
 ]
 
 [extra.footer]
