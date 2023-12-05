@@ -101,11 +101,6 @@ h1 {
   a {
     font-weight: 900;
   }
-
-  &::after {
-    content: ".";
-    color: var(--primary-color);
-  }
 }
 
 h2 {
@@ -146,7 +141,7 @@ strong {
 }
 
 small {
-  color: var(--fg50);
+  // color: var(--fg50);
   font-size: 0.8rem;
 }
 
@@ -167,16 +162,17 @@ dl {
 }
 
 hr {
-  border: 0.125rem solid var(--fg05);
+  border: 0.125rem solid var(--fg50);
   margin: 3rem auto;
   width: 40%;
+  border-radius: 9999px;
 }
 
 blockquote {
-  padding: 0 1rem;
-  margin-left: 0;
-  color: var(--fg50);
+  padding: 0 0.75em;
   border-left: 0.25rem solid var(--primary-color);
+  margin: 0;
+  border-radius: 2.5px;
 
   > :first-child {
     margin-top: 0;
@@ -186,10 +182,10 @@ blockquote {
     margin-bottom: 0;
   }
 
-  // make border slightly transparent for nested blockquote
-  > blockquote {
-    border-left: 0.3rem solid var(--primary-color-alpha);
-  }
+  // // make border slightly transparent for nested blockquote
+  // > blockquote {
+  //   border-left: 0.3rem solid var(--primary-color-alpha);
+  // }
 }
 
 abbr {
@@ -307,7 +303,7 @@ table {
   th,
   td {
     padding: 0.5rem 1rem;
-    border: 1px solid var(--fg05);
+    border: 1px solid var(--fg50);
   }
 }
 
@@ -360,14 +356,14 @@ img {
 .nav {
   overflow: auto;
   width: 80vw;
-  max-width: var(--content-width);
+  // max-width: var(--content-width);
   margin: 1rem auto;
   box-shadow: 0px 12px 24px -16px rgba(0, 0, 0, 0.5);
   border-radius: var(--rounded-corner-big);
   background-color: var(--nav-bg);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  position: sticky;
+  // position: sticky;
   top: 1rem;
   z-index: 1;
 
@@ -488,7 +484,8 @@ img {
   pre {
     color: var(--primary-color);
     padding: 1rem 1rem;
-    text-shadow: var(--primary-color-alpha) 0 0 4px, var(--primary-color) 0 0 12px;
+    text-shadow: var(--primary-color-alpha) 0 0 4px,
+      var(--primary-color) 0 0 12px;
     // unset some <pre> stuff
     background-color: unset;
     box-shadow: unset;
@@ -620,4 +617,13 @@ img {
       text-decoration: none;
     }
   }
+}
+
+.heading {
+  text-align: center;
+  text-decoration: underline;
+  // &::after {
+  //   content: ".";
+  //   color: var(--primary-color);
+  // }
 }
