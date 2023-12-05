@@ -26,14 +26,16 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
   --fg-color: rgba(0, 0, 0, 0.8);
   --primary-color-alpha: #{$primary-color-alpha};
   --primary-color: #{$primary-color};
-  --rounded-corner-big: 1.2rem;
-  --rounded-corner-small: 0.5rem;
-  --rounded-corner: 0.75rem;
+  --rounded-corner-big: 18px;
+  --rounded-corner-small: 8px;
+  --rounded-corner: 12px;
 
   // CUSTOM COLOR PALETTE
   --fg05: rgba(0, 0, 0, 0.05);
   --fg10: rgba(0, 0, 0, 0.1);
+  --fg20: rgba(0, 0, 0, 0.2);
   --fg50: rgba(0, 0, 0, 0.5);
+  --fg60: rgba(0, 0, 0, 0.6);
   --nav-bg: #{$nav-bg-l};
 
   --orange-bg: rgba(255, 120, 0, 0.1);
@@ -71,7 +73,9 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
     // CUSTOM COLOR PALETTE
     --fg05: rgba(255, 255, 255, 0.05);
     --fg10: rgba(255, 255, 255, 0.1);
+    --fg20: rgba(255, 255, 255, 0.1);
     --fg50: rgba(255, 255, 255, 0.5);
+    --fg60: rgba(255, 255, 255, 0.6);
     --nav-bg: #{$nav-bg-d};
 
     --orange-bg: rgba(255, 190, 111, 0.1);

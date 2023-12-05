@@ -4,23 +4,25 @@
 <h1 class="heading">{{ page.title }}</h1>
 
 {%- if page.date %}
-  <small>
-    <time datetime='{{ page.date | date(format='%+') }}' pubdate>
-      {{- page.date | date(format=config.extra.date_format) -}}
-    </time>
-    {%- if page.taxonomies %}
-      {%- for name, taxon in page.taxonomies %}
-      <ul class="tags">
-        <span>•&nbsp;</span>
-        {%-for item in taxon %}
-        <li>
-          <a class="tag" href="{{ get_taxonomy_url(kind=name, name=item) }}">{{ item }}</a>
-        </li>
+  <div class="date-row">
+    <small>
+      <time datetime='{{ page.date | date(format='%+') }}' pubdate>
+        {{- page.date | date(format=config.extra.date_format) -}}
+      </time>
+      {%- if page.taxonomies %}
+        {%- for name, taxon in page.taxonomies %}
+        <span>•</span>
+        <ul class="tags">
+          {%-for item in taxon %}
+          <li>
+            <a class="tag" href="{{ get_taxonomy_url(kind=name, name=item) }}">{{ item }}</a>
+          </li>
+          {%- endfor %}
+        </ul>
         {%- endfor %}
-      </ul>
-      {%- endfor %}
-    {%- endif %}
-  </small>
+      {%- endif %}
+    </small>
+  </div>
 {%- endif %}
 
 {% if page.extra.archive %}

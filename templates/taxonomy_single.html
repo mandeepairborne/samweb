@@ -20,8 +20,8 @@
     </time>
     {%- if page.taxonomies %}
       {%- for name, taxon in page.taxonomies %}
+      <span>•</span>
       <ul class="tags">
-        <span>•&nbsp;</span>
         {%-for item in taxon %}
         <li>
           <a class="tag" href="{{ get_taxonomy_url(kind=name, name=item) }}">{{ item }}</a>

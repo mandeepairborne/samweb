@@ -144,6 +144,10 @@ section#comments {
         padding: 1rem;
         text-align: left;
 
+        p {
+          color: var(--fg60);
+        }
+
         * {
           display: inline-block;
           margin: 0;
