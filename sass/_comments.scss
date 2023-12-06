@@ -75,7 +75,7 @@ section#comments {
 
           &::before {
             content: "✓";
-            font-weight: bold;
+            font-weight: 600;
             margin-inline-end: 0.25rem;
             margin-inline-start: -0.25rem;
           }
