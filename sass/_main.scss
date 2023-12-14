@@ -27,7 +27,6 @@ body {
 
 body {
   font-family: "Inter Variable", sans-serif;
-  font-weight: 400;
   line-height: 1.6;
   color: var(--fg-color);
   background-color: var(--bg-color);
@@ -135,13 +134,8 @@ a {
   }
 }
 
-b,
-strong {
-  font-weight: 600;
-}
-
 small {
-  color: var(--fg60);
+  color: var(--fg-muted-5);
   font-size: 0.8rem;
 }
 
@@ -162,7 +156,7 @@ dl {
 }
 
 hr {
-  border: 0.125rem solid var(--fg20);
+  border: 0.125rem solid var(--fg-muted-3);
   margin: 3rem auto;
   width: 40%;
   border-radius: 9999px;
@@ -170,15 +164,10 @@ hr {
 
 blockquote {
   border-left: 0.25rem solid var(--primary-color);
-  border-radius: var(--rounded-corner-small);
-  color: var(--fg60);
+  border-radius: 0.25rem;
+  color: var(--fg-muted-5);
   margin: 0;
   padding: 0 0.75rem;
-
-  // make border slightly transparent for nested blockquote
-  > blockquote {
-    border-left: 0.3rem solid var(--primary-color-alpha);
-  }
 }
 
 abbr {
@@ -195,7 +184,7 @@ code {
 code:not(pre code) {
   padding: 2px 6px;
   border-radius: var(--rounded-corner-small);
-  background-color: var(--fg10);
+  background-color: var(--fg-muted-2);
   color: var(--red-fg);
 }
 
@@ -221,7 +210,7 @@ pre {
 
   mark {
     display: block;
-    background-color: var(--fg05);
+    background-color: var(--fg-muted-1);
     color: var(--fg-color); // unset mark color from primary color to text color
     border-radius: 0; // unset code block border radius
     padding: 0; // unset mark padding
@@ -239,9 +228,9 @@ pre {
 }
 
 kbd {
-  background-color: var(--fg05);
+  background-color: var(--fg-muted-1);
   border-radius: var(--rounded-corner-small);
-  box-shadow: inset 0 -2px 0 var(--fg10), 0 -1px 0 var(--fg10);
+  box-shadow: inset 0 -2px 0 var(--fg-muted-2), 0 -1px 0 var(--fg-muted-2);
   cursor: pointer;
   display: inline-block;
   font-size: 0.8rem;
@@ -250,8 +239,8 @@ kbd {
 
   // small nice thingy, keys can be pressed!
   &:active {
-    background-color: var(--fg10);
-    box-shadow: inset 0 1px 0 var(--fg10);
+    background-color: var(--fg-muted-2);
+    box-shadow: inset 0 1px 0 var(--fg-muted-2);
     transform: translateY(2px);
   }
 }
@@ -268,12 +257,12 @@ figcaption {
   margin-bottom: 2rem;
   display: block;
   text-align: center;
-  color: var(--fg50);
+  color: var(--fg-muted-4);
   font-size: 0.8rem;
 }
 
 details {
-  background-color: var(--fg05);
+  background-color: var(--fg-muted-1);
   border-radius: var(--rounded-corner);
   box-shadow: var(--shadow);
   padding: 1rem;
@@ -285,9 +274,9 @@ details {
 
 // TABLES
 table {
-  display: block;
-  overflow-x: auto;
   border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
 
   th {
     font-weight: bold;
@@ -296,7 +285,18 @@ table {
   th,
   td {
     padding: 0.5rem 1rem;
-    border: 1px solid var(--fg20);
+  }
+
+  tr {
+    border-bottom: 1px solid var(--fg-muted-2);
+
+    &:nth-child(even) {
+      background-color: var(--fg-muted-1);
+    }
+
+    th {
+      background-color: var(--fg-muted-2);
+    }
   }
 }
 
@@ -349,7 +349,7 @@ img {
 .nav {
   overflow: auto;
   width: 80vw;
-  // max-width: var(--content-width);
+  max-width: calc(var(--content-width) + 10rem);
   margin: 1rem auto;
   box-shadow: 0px 12px 24px -16px rgba(0, 0, 0, 0.5);
   border-radius: var(--rounded-corner-big);
@@ -384,11 +384,11 @@ img {
     padding: 0.4rem 1rem;
     border-radius: var(--rounded-corner);
     background-color: transparent;
-    color: var(--fg50);
+    color: var(--fg-muted-4);
     transition: var(--transition);
 
     &:hover {
-      background-color: var(--fg05);
+      background-color: var(--fg-muted-1);
       color: var(--primary-color);
       text-decoration: none;
     }
@@ -453,18 +453,27 @@ img {
 }
 
 .inline-button {
-  background-color: var(--fg05);
+  background-color: var(--fg-muted-1);
   border-radius: var(--rounded-corner);
   color: var(--fg-color);
   display: inline-block;
   font-size: 0.9rem;
   padding: 0.4rem 1rem;
   transition: var(--transition);
-}
 
-.inline-button:hover {
-  background-color: var(--fg10);
-  text-decoration: none;
+  &:hover {
+    background-color: var(--fg-muted-2);
+    text-decoration: none;
+  }
+
+  &.colored {
+    color: var(--primary-color);
+    background-color: transparent;
+
+    &:hover {
+      background-color: var(--primary-color-alpha);
+    }
+  }
 }
 
 // CRT
@@ -477,8 +486,7 @@ img {
   pre {
     color: var(--primary-color);
     padding: 1rem 1rem;
-    text-shadow: var(--primary-color-alpha) 0 0 4px,
-      var(--primary-color) 0 0 12px;
+    text-shadow: var(--primary-color-alpha) 0 0 4px, var(--primary-color) 0 0 12px;
     // unset some <pre> stuff
     background-color: unset;
     box-shadow: unset;
@@ -587,7 +595,7 @@ img {
   color: var(--fg-color);
   padding: 0.25rem 0.75rem;
   transition: var(--transition);
-  background-color: var(--fg05);
+  background-color: var(--fg-muted-1);
 
   &:hover {
     color: rgb(255, 255, 255);
@@ -612,16 +620,44 @@ img {
   }
 }
 
-.heading {
-  text-align: center;
-  &::after {
-    content: ".";
-    color: var(--primary-color);
-  }
-}
-
-.date-row {
+.post-nav {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  margin-top: 6rem;
+  border-top: 1px solid var(--fg-muted-2);
+
+  .post-nav-item {
+    border-bottom: 0;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    width: 50%;
+    padding-top: 1rem;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    &:hover .post-title {
+      color: var(--primary-color);
+    }
+
+    &:nth-child(2n+1) {
+      padding-left: 0;
+      padding-right: 1rem;
+    }
+
+    &:nth-child(2n) {
+      text-align: right;
+      padding-right: 0;
+      padding-left: 1rem;
+    }
+
+    .nav-arrow {
+      font-weight: 400;
+      color: var(--fg-muted-5);
+      margin-bottom: 0.5rem;
+    }
+
+    .post-title {
+      color: var(--fg-color);
+      transition: var(--transition);
+    }
+  }
 }

@@ -1,28 +1,26 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="heading">{{ page.title }}</h1>
+<h1>{{ page.title }}</h1>
 
 {%- if page.date %}
-  <div class="date-row">
-    <small>
-      <time datetime='{{ page.date | date(format='%+') }}' pubdate>
-        {{- page.date | date(format=config.extra.date_format) -}}
-      </time>
-      {%- if page.taxonomies %}
-        {%- for name, taxon in page.taxonomies %}
-        <span>•</span>
-        <ul class="tags">
-          {%-for item in taxon %}
-          <li>
-            <a class="tag" href="{{ get_taxonomy_url(kind=name, name=item) }}">{{ item }}</a>
-          </li>
-          {%- endfor %}
-        </ul>
+  <small>
+    <time datetime='{{ page.date | date(format='%+') }}' pubdate>
+      {{- page.date | date(format=config.extra.date_format) -}}
+    </time>
+    {%- if page.taxonomies %}
+      {%- for name, taxon in page.taxonomies %}
+      <span>•</span>
+      <ul class="tags">
+        {%-for item in taxon %}
+        <li>
+          <a class="tag" href="{{ get_taxonomy_url(kind=name, name=item) }}">{{ item }}</a>
+        </li>
         {%- endfor %}
-      {%- endif %}
-    </small>
-  </div>
+      </ul>
+      {%- endfor %}
+    {%- endif %}
+  </small>
 {%- endif %}
 
 {% if page.extra.archive %}
@@ -72,30 +70,27 @@
 
 {% if page.extra.comments.id %}
   {% include "includes/comments.html" %}
-  <hr>
 {% endif %}
 
 {% if page.lower or page.higher %}
-  {% if page.lower %}
-  <h2>
-    Read Next
-  </h2>
-  <a class="link-page" href="{{ page.lower.permalink }}">
-    {{ page.lower.title }}
-  </a>
-  {% endif %}
+  <nav class="post-nav">
   {% if page.higher %}
-  <h2>
-    Read Previous
-  </h2>
-  <a class="link-page" href="{{ page.higher.permalink }}">
-    {{ page.higher.title }}
+    <a class="post-nav-item post-nav-prev" href="{{ page.higher.permalink }}">
+      <div class="nav-arrow">← Previous</div>
+      <span class="post-title">{{ page.higher.title }}</span>
+    </a>
+  {% endif %}
+  {% if page.lower %}
+  <a class="post-nav-item post-nav-next" href="{{ page.lower.permalink }}">
+    <div class="nav-arrow">Next →</div>
+    <span class="post-title">{{ page.lower.title }}</span>
   </a>
   {% endif %}
+  </nav>
 {% endif %}
 
 <p class="dialog-buttons">
-  <a href="#top" class="inline-button">Go to top</a>
-  <a href="{{ config.extra.issues_url }}">File an issue</a>
+  <a class="inline-button" href="#top">Go to top</a>
+  <a class="inline-button colored" href="{{ config.extra.issues_url }}">File an issue</a>
 </p>
 {% endblock content %}

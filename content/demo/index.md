@@ -22,8 +22,6 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # Heading 1
 
-> Yes, H1 has ultra-bold style and a dot at the end. You probably shouldn't use it for anything other than page header :)
-
 This is a normal paragraph following a header. Codeberg is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
 ## Heading 2
