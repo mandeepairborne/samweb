@@ -21,17 +21,17 @@ section#comments {
 
       .avatar {
         all: unset;
-        display: block;
         background-color: var(--fg-muted-1);
         border-radius: var(--rounded-corner);
         box-shadow: var(--shadow);
+        display: block;
         height: 100%;
-        width: 100%;
         transition: var(--transition);
+        width: 100%;
 
         &:hover {
-          transform: rotate(10deg) scale(1.1);
           box-shadow: var(--shadow-raised);
+          transform: rotate(10deg) scale(1.1);
         }
       }
 
