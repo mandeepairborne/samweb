@@ -27,6 +27,12 @@ section#comments {
         box-shadow: var(--shadow);
         height: 100%;
         width: 100%;
+        transition: var(--transition);
+
+        &:hover {
+          transform: rotate(10deg) scale(1.1);
+          box-shadow: var(--shadow-raised);
+        }
       }
 
       &.op::after {
