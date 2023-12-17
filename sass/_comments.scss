@@ -180,32 +180,30 @@ section#comments {
       margin-top: 0.925rem;
 
       .boosts {
-        cursor: default;
-        font-weight: 600;
-        font-size: 0.9rem;
-        padding: 0.4rem 1rem;
-        border-radius: var(--rounded-corner);
         background-color: var(--orange-bg);
+        border-radius: var(--rounded-corner);
         color: var(--orange-fg);
+        cursor: default;
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 0.4rem 1rem;
 
         &::before {
-          color: var(--orange2);
           content: "🔁";
           margin-inline-end: 0.25rem;
         }
       }
 
       .faves {
-        cursor: default;
-        font-weight: 600;
-        font-size: 0.9rem;
-        padding: 0.4rem 1rem;
-        border-radius: var(--rounded-corner);
         background-color: var(--red-bg);
+        border-radius: var(--rounded-corner);
         color: var(--red-fg);
+        cursor: default;
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 0.4rem 1rem;
 
         &::before {
-          color: var(--red2);
           content: "❤️";
           margin-inline-end: 0.25rem;
         }
