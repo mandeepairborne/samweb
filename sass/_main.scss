@@ -12,7 +12,7 @@ html {
   overflow-wrap: break-word;
 }
 
-// smaller font size on mobile
+// Smaller font size on mobile
 // @media only screen and (max-device-width: 480px) {
 //   html {
 //     font-size: 14px;
@@ -30,19 +30,19 @@ body {
   line-height: 1.6;
   color: var(--fg-color);
   background-color: var(--bg-color);
-  // put footer at the bottom for short pages, such as the 404
+  // Put footer at the bottom for short pages, such as the 404
   display: grid;
   min-height: 100vh;
-  grid-template-rows: auto minmax(auto, 1fr) auto; // header, stuff, footer
+  grid-template-rows: auto minmax(auto, 1fr) auto; // Header, stuff, footer
 }
 
-// style text selection to use primary color
+// Style text selection to use primary color
 ::selection {
   color: var(--bg-color);
   background-color: var(--primary-color);
 }
 
-// make focused anchor not get covered by nav,
+// Make focused anchor not get covered by nav,
 // and flash it with primary color when jumping to it
 :target {
   scroll-margin-top: 15vh;
@@ -189,7 +189,7 @@ code:not(pre code) {
 }
 
 pre {
-  line-height: normal; // unset line height
+  line-height: normal; // Unset line height
   padding: 1rem;
   margin: 1rem 0 1rem;
   border-radius: var(--rounded-corner);
@@ -202,7 +202,7 @@ pre {
     border: none;
   }
 
-  // the line number cells
+  // The line number cells
   table td:nth-of-type(1) {
     text-align: center;
     user-select: none;
@@ -211,9 +211,9 @@ pre {
   mark {
     display: block;
     background-color: var(--fg-muted-1);
-    color: var(--fg-color); // unset mark color from primary color to text color
-    border-radius: 0; // unset code block border radius
-    padding: 0; // unset mark padding
+    color: var(--fg-color); // Unset mark color from primary color to text color
+    border-radius: 0; // Unset code block border radius
+    padding: 0; // Unset mark padding
   }
 
   table {
@@ -221,7 +221,7 @@ pre {
     border-collapse: collapse;
   }
 
-  // the line numbers already provide some kind of left/right padding
+  // The line numbers already provide some kind of left/right padding
   &[data-linenos] {
     padding: 1rem 0;
   }
@@ -237,7 +237,7 @@ kbd {
   line-height: normal;
   padding: 2px 6px;
 
-  // small nice thingy, keys can be pressed!
+  // Small nice thingy, keys can be pressed!
   &:active {
     background-color: var(--fg-muted-2);
     box-shadow: inset 0 1px 0 var(--fg-muted-2);
@@ -336,7 +336,6 @@ img {
 }
 
 .pixels {
-  image-rendering: crisp-edges; // older firefox browsers
   image-rendering: pixelated;
 }
 
@@ -486,8 +485,9 @@ img {
   pre {
     color: var(--primary-color);
     padding: 1rem 1rem;
-    text-shadow: var(--primary-color-alpha) 0 0 4px, var(--primary-color) 0 0 12px;
-    // unset some <pre> stuff
+    text-shadow: var(--primary-color-alpha) 0 0 4px,
+      var(--primary-color) 0 0 12px;
+    // Unset some <pre> stuff
     background-color: unset;
     box-shadow: unset;
     margin: unset;
@@ -507,7 +507,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% + 8px);
   pointer-events: none;
   background: repeating-linear-gradient(
     0deg,
@@ -516,6 +516,16 @@ img {
     transparent 3px,
     transparent 4px
   );
+  animation: scanlines 250ms linear infinite;
+
+  @keyframes scanlines {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-8px);
+    }
+  }
 }
 
 .cursor {
@@ -598,25 +608,13 @@ img {
   background-color: var(--fg-muted-1);
 
   &:hover {
-    color: rgb(255, 255, 255);
-    background-color: var(--purple3);
-    background-image: radial-gradient(at 0 0, var(--blue3) 0, transparent 50%),
-      radial-gradient(at 100% 100%, var(--red2) 0, transparent 50%);
+    color: var(--primary-color);
+    background-color: var(--primary-color-alpha);
     text-decoration: none;
   }
 
   &::before {
     content: "#";
-  }
-
-  @media (prefers-color-scheme: dark) {
-    &:hover {
-      color: rgba(0, 0, 0, 0.8);
-      background-color: var(--purple2);
-      background-image: radial-gradient(at 0 0, var(--blue2) 0, transparent 50%),
-        radial-gradient(at 100% 100%, var(--red1) 0, transparent 50%);
-      text-decoration: none;
-    }
   }
 }
 
@@ -626,19 +624,16 @@ img {
   border-top: 1px solid var(--fg-muted-2);
 
   .post-nav-item {
-    border-bottom: 0;
     font-weight: 600;
-    padding-bottom: 0.5rem;
     width: 50%;
     padding-top: 1rem;
     text-decoration: none;
-    box-sizing: border-box;
 
     &:hover .post-title {
       color: var(--primary-color);
     }
 
-    &:nth-child(2n+1) {
+    &:nth-child(2n + 1) {
       padding-left: 0;
       padding-right: 1rem;
     }

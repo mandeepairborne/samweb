@@ -113,7 +113,12 @@ $crt-bg: radial-gradient(
 );
 
 $nav-bg-l: color.scale($bg-color-l, $alpha: -20%, $lightness: 50%);
-$nav-bg-d: color.scale($bg-color-d, $alpha: -20%, $lightness: 5%, $saturation: -50%);
+$nav-bg-d: color.scale(
+  $bg-color-d,
+  $alpha: -20%,
+  $lightness: 5%,
+  $saturation: -50%
+);
 
 $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
   0 2px 6px 2px color.scale($primary-color, $alpha: -95%),
@@ -122,10 +127,10 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
 :root {
   --bg-color: #{$bg-color-l};
   --crt-bg: #{$crt-bg};
+  --glow: #{$glow};
   --nav-bg: #{$nav-bg-l};
   --primary-color-alpha: #{$primary-color-alpha};
   --primary-color: #{$primary-color};
-  --glow: #{$glow};
 }
 
 @media (prefers-color-scheme: dark) {
