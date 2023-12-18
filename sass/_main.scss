@@ -288,8 +288,6 @@ table {
   }
 
   tr {
-    border-bottom: 1px solid var(--fg-muted-2);
-
     &:nth-child(even) {
       background-color: var(--fg-muted-1);
     }
