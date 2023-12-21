@@ -1,9 +1,9 @@
 # Duckquill
 
 [![Please don't upload to GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
-[![status-badge](https://ci.exozy.me/api/badges/159/status.svg)](https://ci.exozy.me/repos/159)
+[![status-badge](https://ci.codeberg.org/api/badges/12890/status.svg)](https://ci.codeberg.org/repos/12890)
 
-[Duckquill](https://git.exozy.me/daudix/duckquill) is a modern, pretty, and clean (and very opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
+[Duckquill](https://daudix.codeberg.page/duckquill) is a modern, pretty, and clean (and very opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
 
 [![Duckquill screenshot](./screenshot.png)](https://daudix.codeberg.page/duckquill)
 

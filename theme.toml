@@ -1,7 +1,7 @@
 name = "Duckquill"
 description = "Modern, pretty, and clean theme"
 license = "MIT"
-homepage = "https://git.exozy.me/daudix/duckquill"
+homepage = "https://codeberg.org/daudix/duckquill"
 min_version = "0.17.2"
 demo = "https://daudix.codeberg.page/duckquill"
 
@@ -9,4 +9,4 @@ demo = "https://daudix.codeberg.page/duckquill"
 
 [author]
 name = "David Lapshin"
-homepage = "https://daudix.exozy.me"
+homepage = "https://daudix.codeberg.page"

@@ -12,7 +12,7 @@ jgs~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~
 
 # Duckquill
 
-[Duckquill](https://git.exozy.me/daudix/duckquill) is a modern, pretty, and clean (and very opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
+[Duckquill](https://codeberg.org/daudix/duckquill) is a modern, pretty, and clean (and very opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
 
 Edit a bit of metadata and tweak some of the included graphics and have a blog up in minutes!
 
@@ -24,21 +24,21 @@ Edit a bit of metadata and tweak some of the included graphics and have a blog u
 - Mobile friendly, with proper dark variant.
 - [Mastodon-powered comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon). Comment using any ActivityPub service by replying to Mastodon post.
 
-> Duckquill is made based on needs of [my website](https://daudix.exozy.me), if you need some feature/configuration that doesn't exist feel free to open an issue or better yet, pull request!
+> Duckquill is made based on needs of [my website](https://daudix.codeberg.page), if you need some feature/configuration that doesn't exist feel free to open an issue or better yet, pull request!
 
 ## Installation
 
 First, download this theme to your `themes` directory:
 
 ```sh
-git clone https://git.exozy.me/daudix/duckquill.git themes/duckquill
+git clone https://codeberg.org/daudix/duckquill.git themes/duckquill
 ```
 
 ...or add as submodule for easy updating (recommended if you already have git setup on site):
 
 ```sh
 git submodule init
-git submodule add https://git.exozy.me/daudix/duckquill.git themes/duckquill
+git submodule add https://codeberg.org/daudix/duckquill.git themes/duckquill
 ```
 
 To update the submodule, use the following command:
