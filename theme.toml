@@ -3,7 +3,7 @@ description = "Modern, pretty, and clean theme"
 license = "MIT"
 homepage = "https://git.exozy.me/daudix/duckquill"
 min_version = "0.17.2"
-demo = "https://duckquill.exozy.me"
+demo = "https://daudix.codeberg.page/duckquill"
 
 [extra]
 

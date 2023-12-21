@@ -5,17 +5,15 @@
 
 [Duckquill](https://git.exozy.me/daudix/duckquill) is a modern, pretty, and clean (and very opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
 
-[![Duckquill screenshot](./screenshot.png)](https://duckquill.exozy.me)
+[![Duckquill screenshot](./screenshot.png)](https://daudix.codeberg.page/duckquill)
 
 ## Docs
 
-See [duckquill.exozy.me](https://duckquill.exozy.me) for the docs.
+See the [live demo](https://daudix.codeberg.page/duckquill) for the docs.
 
 ## Contribute
 
-If you want to improve Duckquill in any way, feel free to open an issue, or even better, a pull request! I'm happy about every contribution!
-
-The main repo is https://git.exozy.me/daudix/duckquill, but since only exozy.me members can open issues and pull requests, there is two-way mirror at https://next.forgejo.org/daudix-UFO/duckquill, you can open issues and pull requests there just fine.
+If you want to improve Duckquill in any way, feel free to open an issue, or better yet, a pull request! I appreciate every contribution!
 
 ## Credits
 

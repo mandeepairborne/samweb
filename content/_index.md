@@ -145,15 +145,13 @@ Set any color in `$primary-color` and reload, the primary color should be used n
 
 ## Test pages
 
-- [Demo page](https://duckquill.exozy.me/demo)
-- [Cake Party!](https://duckquill.exozy.me/demo/page)
-- [ActivityPub/​Fediverse comments demo](https://duckquill.exozy.me/demo/comments)
+- [Demo page](https://daudix.codeberg.page/duckquill/demo)
+- [Cake Party!](https://daudix.codeberg.page/duckquill/demo/page)
+- [ActivityPub/​Fediverse comments demo](https://daudix.codeberg.page/duckquill/demo/comments)
 
 ## Contribute
 
-If you want to improve Duckquill in any way, feel free to open an issue, or even better, a pull request! I'm happy about every contribution!
-
-The main repo is [git.exozy.me/daudix/duckquill](https://git.exozy.me/daudix/duckquill), but since only exozy.me members can open issues and pull requests, there is two-way mirror at [next.forgejo.org/daudix-UFO/duckquill](https://next.forgejo.org/daudix-UFO/duckquill), you can open issues and pull requests there just fine.
+If you want to improve Duckquill in any way, feel free to open an issue, or better yet, a pull request! I appreciate every contribution!
 
 ## Credits
 

@@ -1,5 +1,5 @@
 title = "Duckquill"
-base_url = "https://duckquill.exozy.me"
+base_url = "https://daudix.codeberg.page/duckquill"
 description = "Modern, pretty, and clean theme."
 
 compile_sass = true
