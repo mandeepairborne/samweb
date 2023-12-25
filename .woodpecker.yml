@@ -33,8 +33,11 @@ steps:
       - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git $CI_REPO_NAME
       # Remove old files from repository
       - ls # Debug
-      - git -C $CI_REPO_NAME rm -r "*"
+      - cd $CI_REPO_NAME
       - ls # Debug
+      - git rm -r "*"
+      - ls # Debug
+      - cd ..
       # Copy build step output to repository folder
       - cp -ar $ZOLA_OUTPUT/. $CI_REPO_NAME/
       - ls # Debug
