@@ -23,6 +23,6 @@ If you want to improve Duckquill in any way, feel free to open an issue, or bett
 
 - [Jakub Steiner](https://jimmac.eu) for the [OS Component Website](https://jimmac.github.io/os-component-website), on top of which this whole thing is built
 - [Cassidy James](https://cassidyjames.com) for the [Mastodon-powered Comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon)
-- [Adobe Fonts](https://github.com/adobe-fonts) for the [Source Code Pro](https://adobe-fonts.github.io/source-code-pro/) font
 - [Rasmus](https://rsms.me) for the [Inter](https://rsms.me/inter/) font
+- [JetBrains](https://www.jetbrains.com) for the [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font
 - Everyone who supported me and said good stuff <3

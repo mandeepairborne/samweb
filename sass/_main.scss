@@ -26,7 +26,7 @@ body {
 }
 
 body {
-  font-family: "Inter Variable", sans-serif;
+  font-family: InterVariable, sans-serif;
   line-height: 1.6;
   color: var(--fg-color);
   background-color: var(--bg-color);
@@ -52,6 +52,7 @@ body {
   @keyframes highlight-in-out {
     50% {
       color: var(--primary-color);
+      font-weight: 800;
     }
   }
 }
@@ -76,9 +77,12 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 3rem 0 1rem;
-  font-weight: 600;
+  font-family: JetBrainsMono, monospace;
+  font-feature-settings: "ss02";
+  font-style: italic;
+  font-weight: 200;
   line-height: 1.25;
+  margin: 3rem 0 1rem;
 
   .zola-anchor {
     display: none;
@@ -93,30 +97,29 @@ h6 {
 }
 
 h1 {
-  letter-spacing: -0.08rem;
-  font-weight: 900;
   font-size: 3rem;
-
-  a {
-    font-weight: 900;
-  }
+  font-weight: 400;
+  letter-spacing: -0.14rem;
 }
 
 h2 {
   font-size: 2.4rem;
-  letter-spacing: -0.04rem;
+  letter-spacing: -0.14rem;
 }
 
 h3 {
   font-size: 1.5rem;
+  letter-spacing: -0.08rem;
 }
 
 h4 {
   font-size: 1.25rem;
+  letter-spacing: -0.06rem;
 }
 
 h5 {
   font-size: 1rem;
+  letter-spacing: -0.04rem;
 }
 
 h6 {
@@ -177,8 +180,9 @@ abbr {
 
 // CODE
 pre,
-code {
-  font-family: "Source Code VF", monospace;
+code,
+kbd {
+  font-family: JetBrainsMono, monospace;
 }
 
 code:not(pre code) {
@@ -275,6 +279,8 @@ details {
 // TABLES
 table {
   border-collapse: collapse;
+  border-radius: var(--rounded-corner);
+  overflow: hidden;
   table-layout: fixed;
   width: 100%;
 
@@ -559,7 +565,7 @@ img {
   }
 
   .big {
-    font-size: 150%;
+    font-size: 1.5rem;
   }
 
   &.archive {

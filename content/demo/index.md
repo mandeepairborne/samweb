@@ -102,7 +102,7 @@ end
   - level 2 item
 - level 1 item
 
-## Here is a checkboxes:
+## Here are checkboxes:
 
 - [ ] Milk
 - [x] Eggs
