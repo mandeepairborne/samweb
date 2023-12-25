@@ -486,6 +486,10 @@ img {
   box-shadow: var(--glow);
   background: var(--crt-bg);
 
+  a {
+    text-decoration: underline;
+  }
+
   pre {
     color: var(--primary-color);
     padding: 1rem 1rem;
