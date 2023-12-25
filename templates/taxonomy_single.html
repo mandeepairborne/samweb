@@ -3,7 +3,7 @@
 {% block content %}
 <h1>Posts with tag “{{ term.name }}”</h1>
 <small>
-  <a class="link-page" href="{{ config.base_url }}/tags">See all tags</a>
+  <a class="link-page" href="{{ get_url(path='tags') }}">See all tags</a>
   <br />
   {{ term.pages | length }} posts in total
 </small>

@@ -289,7 +289,7 @@ which were inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/comm
               } else if(
                 status.card != null &&
                 status.card.image != null &&
-                !status.card.url.startsWith("{{ config.base_url }}")
+                !status.card.url.startsWith("{{ get_url(path='') }}")
               ) {
                 let cardImg = document.createElement("img");
                 cardImg.setAttribute("src", status.card.image);
