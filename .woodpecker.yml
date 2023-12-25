@@ -34,9 +34,9 @@ steps:
       # Remove old files from repository folder
       - git rm -r "*"
       # Copy build step output to repository folder
-      - cp -ar ../public/. $CI_REPO_NAME/
+      - cp -ar ../public/. .
       # Commit and push all static files with source commit SHA
-      - git add -A
+      - git add --all
       - git commit -m "Woodpecker CI ${CI_COMMIT_SHA} [SKIP CI]"
       - git push
     when:
