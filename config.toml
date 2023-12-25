@@ -48,8 +48,8 @@ show_feed = true
 # Links used in the nav
 links = [
   {url = "https://codeberg.org/daudix/duckquill", name = "Repo"},
-  {url = "/demo", name = "Demo"},
-  {url = "/blog", name = "Blog"},
+  {url = "$BASE_URL/demo", name = "Demo"},
+  {url = "$BASE_URL/blog", name = "Blog"},
 ]
 
 [extra.footer]
