@@ -45,11 +45,14 @@ source_url = "https://codeberg.org/daudix/duckquill"
 [extra.nav]
 # Display Atom/RSS feed button in the nav
 show_feed = true
-# Links used in the nav
+# Whether to use icons in the nav
+icons = true
+# Links used in the nav; any icon from https://icons.getbootstrap.com
+# can be used as the icon. The bi- prefix should not be added.
 links = [
-  {url = "https://codeberg.org/daudix/duckquill", name = "Repo"},
-  {url = "$BASE_URL/demo", name = "Demo"},
-  {url = "$BASE_URL/blog", name = "Blog"},
+  {url = "https://codeberg.org/daudix/duckquill", name = "Repo", icon = "code-slash"},
+  {url = "$BASE_URL/demo", name = "Demo", icon = "car-front"},
+  {url = "$BASE_URL/blog", name = "Blog", icon = "journal-bookmark"},
 ]
 
 [extra.footer]
