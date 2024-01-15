@@ -33,6 +33,11 @@ section#comments {
           box-shadow: var(--shadow-raised);
           transform: rotate(10deg) scale(1.1);
         }
+
+        &:active {
+          box-shadow: var(--shadow);
+          transform: scale(var(--active));
+        }
       }
 
       &.op::after {
@@ -63,7 +68,7 @@ section#comments {
 
       .instance {
         background-color: var(--fg-muted-1);
-        border-radius: 9999px;
+        border-radius: 999px;
         color: var(--fg-color);
         font-size: 0.8rem;
         font-weight: 600;

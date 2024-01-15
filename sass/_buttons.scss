@@ -13,11 +13,16 @@
   display: inline-block;
   font-size: 0.9rem;
   padding: 0.4rem 1rem;
+  text-decoration: none;
   transition: var(--transition);
 
   &:hover {
     background-color: var(--fg-muted-2);
     text-decoration: none;
+  }
+
+  &:active {
+    transform: scale(var(--active));
   }
 
   &.colored {

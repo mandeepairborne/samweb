@@ -38,6 +38,7 @@
     display: inline-block;
     font-weight: 400;
     padding: 0.4rem 1rem;
+    text-decoration: none;
     transform: scale(1);
     transition: var(--transition);
 
@@ -45,6 +46,10 @@
       background-color: var(--fg-muted-1);
       color: var(--primary-color);
       text-decoration: none;
+    }
+
+    &:active {
+      transform: scale(var(--active));
     }
   }
 
@@ -57,7 +62,7 @@
 
   @media (min-width: 600px) {
     & {
-      border-radius: 9999px;
+      border-radius: 999px;
 
       &-container {
         text-align: left;
@@ -70,7 +75,7 @@
       }
 
       a {
-        border-radius: 9999px;
+        border-radius: 999px;
       }
     }
   }

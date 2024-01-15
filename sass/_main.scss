@@ -130,7 +130,7 @@ a {
   color: var(--primary-color);
   cursor: pointer;
   font-weight: 600;
-  text-decoration: none;
+  text-decoration: underline dotted;
 
   &:hover {
     text-decoration: underline;
@@ -236,18 +236,18 @@ pre {
 }
 
 kbd {
-  background-color: var(--fg-muted-1);
+  background-color: var(--fg-muted-2);
   border-radius: var(--rounded-corner-small);
-  box-shadow: inset 0 -2px 0 var(--fg-muted-2), 0 -1px 0 var(--fg-muted-2);
+  box-shadow: inset 0 -2px 0 var(--fg-muted-2), 0 -1px 0 var(--fg-muted-3);
   cursor: pointer;
   display: inline-block;
   font-size: 0.8rem;
   line-height: normal;
   padding: 2px 6px;
-
+  transition: var(--transition);
   // Small nice thingy, keys can be pressed!
   &:active {
-    background-color: var(--fg-muted-2);
+    background-color: var(--fg-muted-3);
     box-shadow: inset 0 1px 0 var(--fg-muted-2);
     transform: translateY(2px);
   }
@@ -312,4 +312,3 @@ td,
 th {
   padding: 0;
 }
-
