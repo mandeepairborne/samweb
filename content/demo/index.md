@@ -141,7 +141,7 @@ The final element.
 
 ## Extra
 
-Alright now that the generic (slightly extended) ~~Jekyll~~ Zola demo page have ended, we can get to the custom stuff, which believe me, are neat.
+Alright now that the generic (slightly extended) ~~Jekyll~~ Zola demo page have ended, we can get to the custom stuff, which believe me, is neat.
 
 ### Shortcodes
 
@@ -149,7 +149,7 @@ Duckquill provides a few useful [shortcodes](https://www.getzola.org/documentati
 
 #### Image
 
-By default images come with styling, such as round corners and shadow. To fine-tune these, you can use shortcodes with different variable combinations.
+By default images come with styling, such as rounded corners and shadow. To fine-tune these, you can use shortcodes with different variable combinations.
 
 Available variables are:
 
