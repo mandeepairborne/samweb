@@ -211,21 +211,23 @@ which were inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/comm
               let interactions = document.createElement("footer");
 
               if(status.reblogs_count > 0) {
-                let boosts = document.createElement("span");
-                boosts.className = "boosts";
-                boosts.setAttribute("title", "Boosts");
-                boosts.textContent = status.reblogs_count;
+                let reblogs = document.createElement("a");
+                reblogs.setAttribute("href", status.url + "/reblogs");
+                reblogs.className = "reblogs";
+                reblogs.setAttribute("title", "Boosts");
+                reblogs.textContent = status.reblogs_count;
 
-                interactions.appendChild(boosts);
+                interactions.appendChild(reblogs);
               }
 
               if(status.favourites_count > 0) {
-                let faves = document.createElement("span");
-                faves.className = "faves";
-                faves.setAttribute("title", "Favorites");
-                faves.textContent = status.favourites_count;
+                let favourites = document.createElement("a");
+                favourites.setAttribute("href", status.url + "/favourites");
+                favourites.className = "favourites";
+                favourites.setAttribute("title", "Favorites");
+                favourites.textContent = status.favourites_count;
 
-                interactions.appendChild(faves);
+                interactions.appendChild(favourites);
               }
 
               let comment = document.createElement("article");

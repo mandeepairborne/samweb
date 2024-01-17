@@ -10,23 +10,24 @@
 
 @use "normalize";
 
+@use "variables";
+@use "fonts";
+@use "main";
+
 @use "bootstrap-icons";
 @use "buttons";
 @use "comments";
 @use "crt";
-@use "fonts";
 @use "footer";
 @use "gnome-hig";
 @use "johnvertisement";
 @use "links";
-@use "main";
 @use "media";
 @use "nav";
 @use "not-found";
 @use "post-nav";
 @use "statements";
 @use "tags";
-@use "variables";
 
 @import url("syntax-theme-dark.css") (prefers-color-scheme: dark);
 @import url("syntax-theme-light.css") (prefers-color-scheme: light);

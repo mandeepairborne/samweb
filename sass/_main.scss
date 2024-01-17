@@ -13,7 +13,7 @@ html {
 }
 
 // Smaller font size on mobile
-// @media only screen and (max-device-width: 480px) {
+// @media screen and (max-width: 480px) {
 //   html {
 //     font-size: 14px;
 //   }
@@ -65,7 +65,7 @@ body {
   max-width: var(--content-width);
 }
 
-@media only screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .container {
     width: 90vw;
   }

@@ -122,6 +122,7 @@ section#comments {
       color: inherit;
       grid-area: card;
       max-width: 400px;
+      text-decoration: none; 
 
       &:hover {
         text-decoration: none;
@@ -155,8 +156,16 @@ section#comments {
         padding: 1rem;
         text-align: left;
 
+        h5 {
+          font-weight: 600;
+          all: unset;
+          font-size: 1rem;
+        }
+
         p {
+          font-weight: 400;
           color: var(--fg-muted-5);
+          font-size: 0.8rem;
         }
 
         * {
@@ -177,40 +186,66 @@ section#comments {
     }
 
     footer {
-      @extend small;
-
       display: flex;
       gap: 0.4rem;
       grid-area: interactions;
       margin-top: 1rem;
 
-      .boosts {
-        background-color: var(--orange-bg);
+      .reblogs,
+      .favourites {
         border-radius: var(--rounded-corner);
-        color: var(--orange-fg);
-        cursor: default;
-        font-size: 0.9rem;
-        font-weight: 600;
+        font-size: 1rem;
+        font-variant-numeric: tabular-nums;
+        font-weight: 400;
         padding: 0.4rem 1rem;
+        text-decoration: none;
+        transition: var(--transition);
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:active {
+          transform: scale(var(--active));
+        }
 
         &::before {
-          content: "🔁";
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased;
+          display: inline-block;
+          font-family: "bootstrap-icons" !important;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal !important;
+          line-height: 1;
           margin-inline-end: 0.25rem;
+          text-transform: none;
+          vertical-align: -0.125em;
+          transform: scale(1);
         }
       }
 
-      .faves {
-        background-color: var(--red-bg);
-        border-radius: var(--rounded-corner);
-        color: var(--red-fg);
-        cursor: default;
-        font-size: 0.9rem;
-        font-weight: 600;
-        padding: 0.4rem 1rem;
+      .reblogs {
+        color: var(--orange-fg);
+
+        &:hover {
+          background-color: var(--orange-bg);
+        }
 
         &::before {
-          content: "❤️";
-          margin-inline-end: 0.25rem;
+          content: "\F813";
+        }
+      }
+
+      .favourites {
+        color: var(--red-fg);
+
+        &:hover {
+          background-color: var(--red-bg);
+        }
+
+        &::before {
+          content: "\F417";
         }
       }
     }

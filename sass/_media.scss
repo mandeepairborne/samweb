@@ -16,7 +16,11 @@ img {
     box-shadow: var(--shadow-raised);
   }
 
-  @media only screen and (max-device-width: 480px) {
+  &:active {
+    transform: scale(var(--active));
+  }
+
+  @media screen and (max-width: 480px) {
     &:not(.no-hover):hover {
       transform: scale(110%);
     }

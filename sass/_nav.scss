@@ -1,81 +1,78 @@
-.nav {
-  overflow: auto;
-  width: 80vw;
-  max-width: calc(var(--content-width) + 10rem);
-  margin: 1rem auto;
-  box-shadow: 0px 12px 24px -16px rgba(0, 0, 0, 0.5);
-  border-radius: var(--rounded-corner-big);
-  background-color: var(--nav-bg);
-  backdrop-filter: blur(24px);
+header {
   -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  background-color: var(--nav-bg);
+  border-radius: 999px;
+  box-shadow: 0px 12px 24px -16px rgba(0, 0, 0, 0.5);
+  margin: 1rem auto;
+  max-width: calc(var(--content-width) + 10rem);
   position: sticky;
   top: 1rem;
+  width: 80vw;
   z-index: 1;
 
-  &-container {
-    margin: 0.5rem 0.5rem;
-    position: relative;
-    text-align: center;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 1rem 0 0;
-    padding: 0;
-    text-align: center;
-  }
-
-  li {
-    transition: var(--transition);
-    color: var(--default-color);
-    display: inline-block;
-  }
-
-  a {
-    background-color: transparent;
-    border-radius: var(--rounded-corner);
-    color: var(--fg-muted-4);
-    display: inline-block;
-    font-weight: 400;
-    padding: 0.4rem 1rem;
-    text-decoration: none;
-    transform: scale(1);
-    transition: var(--transition);
-
-    &:hover {
-      background-color: var(--fg-muted-1);
-      color: var(--primary-color);
-      text-decoration: none;
-    }
-
-    &:active {
-      transform: scale(var(--active));
+  @media screen and (max-width: 630px) {
+    & {
+      border-radius: 16px;
     }
   }
 
-  @media only screen and (max-device-width: 480px) {
+  @media screen and (max-width: 480px) {
     & {
       width: 90vw;
-      position: static;
     }
   }
 
-  @media (min-width: 600px) {
-    & {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem;
+
+    @media screen and (max-width: 630px) {
+      & {
+        justify-content: center;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.2rem;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      display: inline-flex;
+    }
+
+    a {
       border-radius: 999px;
+      color: var(--fg-muted-4);
+      font-weight: 400;
+      padding: 0.4rem 1rem;
+      text-decoration: none;
+      transform: scale(1);
+      transition: var(--transition);
 
-      &-container {
-        text-align: left;
+      @media screen and (max-width: 630px) {
+        & {
+          border-radius: var(--rounded-corner);
+        }
       }
 
-      ul {
-        bottom: 0;
-        position: absolute;
-        right: 0;
+      &:hover {
+        background-color: var(--fg-muted-1);
+        color: var(--primary-color);
+        text-decoration: none;
       }
 
-      a {
-        border-radius: 999px;
+      &:active {
+        transform: scale(var(--active));
       }
     }
   }
