@@ -3,7 +3,7 @@
 {% block content %}
 <h1>{{ section.title }}</h1>
 
-<p>{{ section.description }}</p>
+<p>{{ section.description | markdown | safe }}</p>
 
 <small>
   <a class="link-page" href="{{ get_url(path='tags') }}">Filter by tag</a>

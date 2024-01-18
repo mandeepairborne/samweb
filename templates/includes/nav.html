@@ -20,7 +20,7 @@
       </li>
       {% endfor %} {% if config.extra.nav.show_feed %}
       <li>
-        <a href="{{ get_url(path='atom.xml') }}">
+        <a href="{{ get_url(path='') }}/{{ config.feed_filename }}">
           {% if config.extra.nav.icons %}
             <i class="bi bi-rss"></i>
           {% endif %}
