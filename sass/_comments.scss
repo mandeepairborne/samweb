@@ -1,3 +1,20 @@
+.avatar-link.op::after,
+.instance.op::before,
+.reblogs::before,
+.favourites::before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-family: "bootstrap-icons" !important;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal !important;
+  line-height: 1;
+  margin-inline-end: 0.25rem;
+  text-transform: none;
+  vertical-align: -0.125em;
+}
+
 section#comments {
   .comment {
     display: grid;
@@ -45,16 +62,11 @@ section#comments {
         border-radius: 50%;
         bottom: -0.25rem;
         color: var(--light2);
-        content: "✓";
-        display: block;
-        font-size: 1.25rem;
-        font-weight: bold;
-        height: 1.5rem;
-        line-height: 1.5rem;
+        display: flex;
         position: absolute;
         right: -0.25rem;
-        text-align: center;
-        width: 1.5rem;
+        padding: 0.25rem;
+        content: "\F4B5";
       }
     }
 
@@ -73,6 +85,7 @@ section#comments {
         font-size: 0.8rem;
         font-weight: 600;
         padding: 0.25rem 0.75rem;
+        text-decoration: none;
         transition: var(--transition);
 
         &:hover {
@@ -85,8 +98,8 @@ section#comments {
           color: var(--light2);
 
           &::before {
-            content: "✓";
-            font-weight: 600;
+            content: "\F4B5";
+            display: inline-block;
             margin-inline-end: 0.25rem;
             margin-inline-start: -0.25rem;
           }
@@ -122,7 +135,7 @@ section#comments {
       color: inherit;
       grid-area: card;
       max-width: 400px;
-      text-decoration: none; 
+      text-decoration: none;
 
       &:hover {
         text-decoration: none;
@@ -207,21 +220,6 @@ section#comments {
 
         &:active {
           transform: scale(var(--active));
-        }
-
-        &::before {
-          -moz-osx-font-smoothing: grayscale;
-          -webkit-font-smoothing: antialiased;
-          display: inline-block;
-          font-family: "bootstrap-icons" !important;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: normal !important;
-          line-height: 1;
-          margin-inline-end: 0.25rem;
-          text-transform: none;
-          vertical-align: -0.125em;
-          transform: scale(1);
         }
       }
 
