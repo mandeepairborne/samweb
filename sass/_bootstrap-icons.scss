@@ -26,6 +26,7 @@ $bootstrap-icons-font-src: url("#{$bootstrap-icons-font-file}.woff2?#{$bootstrap
   font-weight: normal !important;
   font-variant: normal;
   text-transform: none;
+  transform: scale(1);
   line-height: 1;
   vertical-align: -.125em;
   -webkit-font-smoothing: antialiased;
