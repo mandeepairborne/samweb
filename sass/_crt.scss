@@ -41,10 +41,10 @@
 
   @keyframes scanlines {
     from {
-      transform: translateY(0px);
+      transform: translateY(-8px);
     }
     to {
-      transform: translateY(-8px);
+      transform: translateY(0px);
     }
   }
 }

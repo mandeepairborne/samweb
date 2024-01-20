@@ -1,4 +1,5 @@
 +++
+authors = ["Duck Quack"]
 title = "The Quill of Duck"
 description = "This is a Duckquill post example, this post has nothing but a bunch of text and random formatting, acting like a demo."
 date = 2023-08-31
@@ -7,7 +8,7 @@ tags = ["Demo", "Test"]
 [extra]
 toc = true
 disclaimer = """
-See [demo](/demo) for showcase of all Duckquill possibilities, this page is a demo of a post with title, publication date, tags, disclaimer, table of contents and comments.
+See [demo](@/demo/index.md) for showcase of all Duckquill possibilities, this page is a demo of a post with title, publication date, tags, disclaimer, table of contents and comments.
 """
 [extra.comments]
 id = ""
