@@ -13,7 +13,7 @@
 
   @media screen and (max-width: 480px) {
     & {
-      width: auto;
+      position: static;
     }
   }
 
@@ -27,12 +27,6 @@
     @media screen and (max-width: 630px) {
       & {
         justify-content: center;
-      }
-    }
-
-    @media screen and (max-width: 480px) {
-      #title {
-        margin: 0 0.2rem 0 0;
       }
     }
 
@@ -57,16 +51,6 @@
       padding: 0.45rem 1rem;
       text-decoration: none;
       transition: var(--transition);
-
-      @media screen and (max-width: 480px) {
-        & {
-          padding: 0.45rem 0.75rem;
-        }
-
-        span {
-          display: none;
-        }
-      }
 
       &:hover {
         background-color: var(--fg-muted-1);
