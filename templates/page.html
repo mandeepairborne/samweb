@@ -2,4 +2,10 @@
 
 {% block content %}
 {{ page.content | safe }}
+{% if page.extra.archive %}
+  <div class="statement-container archive">
+    <strong class="big">⚠ Archived</strong>
+    {{ page.extra.archive | markdown | safe }}
+  </div>
+{% endif %}
 {% endblock content %}
