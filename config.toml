@@ -28,6 +28,8 @@ smart_punctuation = true
 primary_color = "#ff7800"
 # Same as primary_color, but with 20% opacity
 primary_color_alpha = "rgba(255, 120, 0, 0.2)"
+# Emoji favicon; can be set per-page or even section.
+emoji_favicon = false
 # If the favicon is GIF or not
 animated_favicon = false
 # Tera date format (not used in comments!),
