@@ -78,70 +78,13 @@ If for some reason overridden class are not respected, try using `!important`. Y
 
 ### Primary color
 
-Duckquill respects chosen primary color everywhere, you can use any HEX color code you want
-
-First, change the primary color in `config.toml`:
+Duckquill respects chosen primary color everywhere, simply change the primary color in `config.toml`:
 
 ```toml
 [extra]
 primary_color = "COLOR_CODE"
+primary_color_alpha = "COLOR_CODE"
 ```
-
-Then, add `custom.css` to additional stylesheets.
-
-```toml
-[extra]
-stylesheets = [
-  "custom.css"
-]
-```
-
-Then, paste the following code inside `sass/custom.scss` (inside your site, not the theme):
-
-```scss
-@use "sass:color";
-
-$primary-color: COLOR_CODE;
-$primary-color-alpha: color.scale($primary-color, $alpha: -80%);
-
-$bg-color-l: color.scale($primary-color, $lightness: 80%);
-$bg-color-d: color.scale($primary-color, $lightness: -90%, $saturation: -50%);
-
-$crt-bg: radial-gradient(
-  color.scale($primary-color, $lightness: -80%),
-  color.scale($primary-color, $lightness: -90%)
-);
-
-$nav-bg-l: color.scale($bg-color-l, $alpha: -20%, $lightness: 50%);
-$nav-bg-d: color.scale(
-  $bg-color-d,
-  $alpha: -20%,
-  $lightness: 5%,
-  $saturation: -50%
-);
-
-$glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
-  0 2px 6px 2px color.scale($primary-color, $alpha: -95%),
-  0 4px 24px 4px color.scale($primary-color, $alpha: -90%);
-
-:root {
-  --bg-color: #{$bg-color-l};
-  --crt-bg: #{$crt-bg};
-  --glow: #{$glow};
-  --nav-bg: #{$nav-bg-l};
-  --primary-color-alpha: #{$primary-color-alpha};
-  --primary-color: #{$primary-color};
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #{$bg-color-d};
-    --nav-bg: #{$nav-bg-d};
-  }
-}
-```
-
-Set any color in `$primary-color` and reload, the primary color should be used now. This is a hack that is needed until Zola will be able to use `config.toml` options inside Sass files.
 
 ## Test pages
 
