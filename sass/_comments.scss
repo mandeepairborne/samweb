@@ -10,7 +10,6 @@
   font-variant: normal;
   font-weight: normal !important;
   line-height: 1;
-  margin-inline-end: 0.25rem;
   text-transform: none;
   vertical-align: -0.125em;
 }
@@ -220,6 +219,10 @@ section#comments {
 
         &:active {
           transform: scale(var(--active));
+        }
+
+        &::before {
+          margin-inline-end: 0.25rem;
         }
       }
 

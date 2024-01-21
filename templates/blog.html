@@ -78,7 +78,7 @@
 
 {% if page.lower or page.higher %}
   <hr>
-  <nav class="post-nav">
+  <nav id="post-nav">
   {% if page.higher %}
     <a class="post-nav-item post-nav-prev" href="{{ page.higher.permalink }}">
       <div class="nav-arrow">← Previous</div>
