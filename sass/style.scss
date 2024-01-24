@@ -8,18 +8,15 @@
  * https://github.com/systemd/systemd/tree/main/docs
  */
 
-@use "normalize";
-
 @use "variables";
+@use "gnome-hig";
 @use "fonts";
 @use "main";
 
-@use "bootstrap-icons";
 @use "buttons";
 @use "comments";
 @use "crt";
 @use "footer";
-@use "gnome-hig";
 @use "johnvertisement";
 @use "links";
 @use "media";
@@ -30,5 +27,7 @@
 @use "statements";
 @use "tags";
 
+@import url("normalize.css");
+@import url("bootstrap-icons.css");
 @import url("syntax-theme-dark.css") (prefers-color-scheme: dark);
 @import url("syntax-theme-light.css") (prefers-color-scheme: light);

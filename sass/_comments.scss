@@ -1,4 +1,3 @@
-.avatar-link.op::after,
 .instance.op::before,
 .reblogs::before,
 .favourites::before {
@@ -54,18 +53,6 @@ section#comments {
           transform: scale(var(--active));
         }
       }
-
-      &.op::after {
-        background-color: var(--primary-color);
-        border-radius: 50%;
-        bottom: -0.25rem;
-        color: var(--light2);
-        display: flex;
-        position: absolute;
-        right: -0.25rem;
-        padding: 0.25rem;
-        content: "\F4B5";
-      }
     }
 
     .author {
@@ -73,7 +60,7 @@ section#comments {
       cursor: default;
       display: flex;
       font-weight: bold;
-      gap: 0.5rem;
+      gap: 0.25rem;
       grid-area: name;
 
       .instance {
@@ -87,13 +74,17 @@ section#comments {
         transition: var(--transition);
 
         &:hover {
-          opacity: 0.8;
+          background-color: var(--fg-muted-2);
           text-decoration: none;
         }
 
         &.op {
-          background-color: var(--primary-color);
-          color: var(--light2);
+          background-color: unset;
+          color: var(--primary-color);
+
+          &:hover {
+            background-color: var(--primary-color-alpha);
+          }
 
           &::before {
             content: "\F4B5";
