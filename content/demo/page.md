@@ -7,4 +7,4 @@
 
 Sadly, the cake is a _lie_
 
-<a class="inline-button" href="demo">Go Crying</a>
+<a class="inline-button" href="../">Go Crying</a>

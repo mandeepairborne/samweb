@@ -143,6 +143,8 @@ The final element.
 
 Alright now that the generic (slightly extended) ~~Jekyll~~ Zola demo page have ended, we can get to the custom stuff, which believe me, is neat.
 
+😭😂🥺🤣❤️✨🙏😍🥰😊
+
 ### Shortcodes
 
 Duckquill provides a few useful [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) that simplify some tasks.

@@ -87,28 +87,19 @@ section#comments {
           }
 
           &::before {
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-font-smoothing: antialiased;
-            content: "\F4B5";
-            display: inline-block;
-            font-family: "bootstrap-icons" !important;
-            font-style: normal;
-            font-variant: normal;
-            font-weight: normal !important;
-            line-height: 1;
+            content: "✔";
             margin-inline-end: 0.25rem;
-            text-transform: none;
-            vertical-align: -0.125em;
           }
         }
       }
     }
 
     .emoji {
+      all: unset;
       display: inline;
-      height: 1.25rem;
+      height: 2rem;
       vertical-align: middle;
-      width: 1.25rem;
+      width: 2rem;
     }
 
     time {
@@ -149,18 +140,8 @@ section#comments {
         }
 
         &::before {
-          -moz-osx-font-smoothing: grayscale;
-          -webkit-font-smoothing: antialiased;
-          content: "\F417";
-          display: inline-block;
-          font-family: "bootstrap-icons" !important;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: normal !important;
-          line-height: 1;
+          content: "♥";
           margin-inline-end: 0.25rem;
-          text-transform: none;
-          vertical-align: -0.125em;
         }
       }
     }

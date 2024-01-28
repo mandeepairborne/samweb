@@ -26,7 +26,7 @@ body {
 }
 
 body {
-  font-family: InterVariable, sans-serif;
+  font-family: system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   line-height: 1.6;
   color: var(--fg-color);
   background: var(--bg-color);
@@ -70,9 +70,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: JetBrainsMono, monospace;
-  font-feature-settings: "ss02";
-  font-style: italic;
+  font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 200;
   line-height: 1.25;
   margin: 3rem 0 1rem;
@@ -92,27 +90,27 @@ h6 {
 h1 {
   font-size: 3rem;
   font-weight: 400;
-  letter-spacing: -0.14rem;
+  letter-spacing: -0.15rem;
 }
 
 h2 {
   font-size: 2.4rem;
-  letter-spacing: -0.14rem;
+  letter-spacing: -0.15rem;
 }
 
 h3 {
   font-size: 1.5rem;
-  letter-spacing: -0.08rem;
+  letter-spacing: -0.1rem;
 }
 
 h4 {
   font-size: 1.25rem;
-  letter-spacing: -0.06rem;
+  letter-spacing: -0.05rem;
 }
 
 h5 {
   font-size: 1rem;
-  letter-spacing: -0.04rem;
+  letter-spacing: -0.05rem;
 }
 
 h6 {
@@ -179,7 +177,7 @@ abbr {
 pre,
 code,
 kbd {
-  font-family: JetBrainsMono, monospace;
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 }
 
 code:not(pre code) {

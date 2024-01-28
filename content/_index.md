@@ -20,9 +20,8 @@ Edit a bit of metadata and tweak some of the included graphics and have a blog u
 - For a very pleasant look, the colors are tinted with the primary color.
 - Proper favicon for modern browsers and Apple device icons.
 - Mastodon, Lemmy and other social media meta cards for easy sharing. Try [Share Preview](https://apps.gnome.org/SharePreview/) to test.
-- Local copy of the amazing [Inter](https://rsms.me/inter/) and [JetBrains Mono](https://www.jetbrains.com/lp/mono/) fonts. No slowdowns pulling from external hosting.
 - Mobile friendly, with proper dark variant.
-- [Mastodon-powered comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon). Comment using any ActivityPub service by replying to Mastodon post.
+- [Mastodon-powered comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/). Comment using compatible ActivityPub server by replying to a Mastodon post.
 
 > Duckquill is made based on needs of [my website](https://daudix.codeberg.page), if you need some feature/configuration that doesn't exist feel free to open an issue or better yet, pull request!
 
@@ -103,8 +102,5 @@ If you want to improve Duckquill in any way, feel free to open an issue, or bett
 ## Thanks to ♥
 
 - [Jakub Steiner](https://jimmac.eu) for the [OS Component Website](https://jimmac.github.io/os-component-website), on top of which this whole thing is built
-- [Cassidy James](https://cassidyjames.com) for the [Mastodon-powered Comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon)
-- [Rasmus](https://rsms.me) for the [Inter](https://rsms.me/inter/) font
-- [JetBrains](https://www.jetbrains.com) for the [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font
-- [Bootstrap](https://getbootstrap.com) for the [Bootstrap Icons](https://icons.getbootstrap.com) font
+- [Carl Schwan](https://carlschwan.eu) for the [Mastodon-powered Comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/)
 - Everyone who supported me and said good stuff <3

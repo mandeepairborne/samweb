@@ -22,8 +22,5 @@ If you want to improve Duckquill in any way, feel free to open an issue, or bett
 ## Thanks to ♥
 
 - [Jakub Steiner](https://jimmac.eu) for the [OS Component Website](https://jimmac.github.io/os-component-website), on top of which this whole thing is built
-- [Cassidy James](https://cassidyjames.com) for the [Mastodon-powered Comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon)
-- [Rasmus](https://rsms.me) for the [Inter](https://rsms.me/inter/) font
-- [JetBrains](https://www.jetbrains.com) for the [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font
-- [Bootstrap](https://getbootstrap.com) for the [Bootstrap Icons](https://icons.getbootstrap.com) font
+- [Carl Schwan](https://carlschwan.eu) for the [Mastodon-powered Comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/)
 - Everyone who supported me and said good stuff <3

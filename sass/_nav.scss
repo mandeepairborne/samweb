@@ -8,28 +8,15 @@
   margin: 1rem auto;
   position: sticky;
   top: 1rem;
-  width: min(calc(var(--content-width) + 10rem), 90%);
+  max-width: min(calc(var(--content-width) + 10rem), 90%);
   z-index: 1;
-
-  @media screen and (max-width: 720px) {
-    & {
-      width: auto;
-      max-width: min(calc(var(--content-width) + 10rem), 90%);
-    }
-  }
 
   nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0.5rem;
-
-    @media screen and (max-width: 720px) {
-      & {
-        justify-content: center;
-      }
-    }
 
     ul {
       display: flex;
@@ -48,7 +35,6 @@
     a {
       border-radius: 999px;
       color: var(--fg-muted-4);
-      font-weight: 400;
       padding: 0.325rem 0.75rem;
       text-decoration: none;
       transition: var(--transition);
@@ -62,24 +48,34 @@
       &:active {
         transform: scale(var(--active));
       }
-
-      @media screen and (max-width: 480px) {
-        &:has(span) {
-          padding: 0.325rem 0.625rem;
-
-          span {
-            display: none;
-          }
-        }
-      }
     }
 
     #home {
-      margin-right: 0.25rem;
+      position: relative;
+      font-weight: 800;
+      color: var(--fg-muted-5);
+
+      &:hover {
+        color: var(--primary-color);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 110%;
+        width: 1px;
+        background-color: var(--fg-muted-2);
+        top: 0;
+        right: -0.2rem;
+      }
     }
 
     #feed {
-      margin-left: 0.25rem;
+      padding: 0.325rem 0.625rem;
+      
+      svg {
+        vertical-align: -.125em;
+      }
     }
   }
 }
