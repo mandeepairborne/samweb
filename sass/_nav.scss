@@ -52,13 +52,14 @@
 
     #home {
       position: relative;
+      margin-right: 10px;
 
       &::after {
         background-color: var(--fg-muted-2);
         content: "";
         height: 110%;
         position: absolute;
-        right: -0.2rem;
+        right: -.5rem;
         top: 0;
         width: 1px;
       }
