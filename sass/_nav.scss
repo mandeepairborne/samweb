@@ -52,14 +52,14 @@
 
     #home {
       position: relative;
-      margin-right: 10px;
+      margin-right: 0.625rem;
 
       &::after {
         background-color: var(--fg-muted-2);
         content: "";
         height: 110%;
         position: absolute;
-        right: -.5rem;
+        right: -0.5rem;
         top: 0;
         width: 1px;
       }
