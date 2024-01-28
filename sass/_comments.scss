@@ -124,6 +124,7 @@ section#comments {
         background-color: transparent;
         border-radius: var(--rounded-corner);
         color: var(--red-fg);
+        display: inline-block;
         font-variant-numeric: tabular-nums;
         font-weight: 400;
         padding: 0.5rem 1rem;
