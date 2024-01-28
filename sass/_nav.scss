@@ -52,29 +52,32 @@
 
     #home {
       position: relative;
-      font-weight: 800;
-      color: var(--fg-muted-5);
-
-      &:hover {
-        color: var(--primary-color);
-      }
 
       &::after {
-        content: "";
-        position: absolute;
-        height: 110%;
-        width: 1px;
         background-color: var(--fg-muted-2);
-        top: 0;
+        content: "";
+        height: 110%;
+        position: absolute;
         right: -0.2rem;
+        top: 0;
+        width: 1px;
+      }
+
+      a {
+        font-weight: 800;
+        color: var(--fg-muted-5);
+
+        &:hover {
+          color: var(--primary-color);
+        }
       }
     }
 
-    #feed {
+    #feed a {
       padding: 0.325rem 0.625rem;
-      
+
       svg {
-        vertical-align: -.125em;
+        vertical-align: -0.125em;
       }
     }
   }
