@@ -72,7 +72,7 @@ show_powered_by = true
 # Link to website source
 show_source = true
 
-# Based on https://github.com/cassidyjames/cassidyjames.github.io/blob/75cd2a202de7a1026de1ea00a4ef1d5b2675c7ff/_config.yaml#L35-L74
+# Based on https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
 #
 # Mastodon-powered commenting.
 # Values can be overridden in front-matter, e.g.
@@ -86,9 +86,3 @@ host = "mstdn.social"
 # Used to determine who the original/verified poster is;
 # role may be expanded in the future (e.g. for moderation).
 user = "Daudix"
-# Optional; required to fetch more than 60 replies to any given blog post.
-# Application access token with read:statuses scope; NOTE: IF INCLUDED, ANYONE
-# WILL BE ABLE TO READ THE ASSOCIATED ACCOUNT'S PRIVATE STATUSES. It is highly
-# recommended to use a dedicated bot/API account to create an application with
-# scope read:statuses.
-token = "jTNX9pAV8XEPBby0cPWF6CmGY60kkIy4vidggfxXmoQ"
