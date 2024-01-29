@@ -15,7 +15,7 @@
 {% set id = page.extra.comments.id %}
 
 <section id="comments">
-  <img id="qrcode" class="no-hover pixels"
+  <img id="qrcode" class="no-hover pixels" alt="QR code to a Mastodon post"
     src="https://api.qrserver.com/v1/create-qr-code/?data=https://{{ host }}/@{{ username }}/{{ id }}">
   <h2>Comments</h2>
   <p>
