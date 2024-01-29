@@ -52,9 +52,9 @@ source_url = "https://codeberg.org/daudix/duckquill"
 show_feed = true
 # Links used in the nav
 links = [
-  {url = "https://codeberg.org/daudix/duckquill", name = "Repo", icon = "code-slash"},
-  {url = "$BASE_URL/demo", name = "Demo", icon = "car-front"},
-  {url = "$BASE_URL/blog", name = "Blog", icon = "journal-bookmark"},
+  {url = "https://codeberg.org/daudix/duckquill", name = "Repo"},
+  {url = "$BASE_URL/demo", name = "Demo"},
+  {url = "$BASE_URL/blog", name = "Blog"},
 ]
 
 [extra.footer]
