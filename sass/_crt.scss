@@ -16,6 +16,29 @@
     background-color: unset;
     box-shadow: unset;
     margin: unset;
+    animation: flicker 250ms alternate infinite;
+
+    @keyframes flicker {
+      from {
+        opacity: 1;
+      }
+      25%{
+        opacity: 0.95;
+      }
+      50% {
+        opacity: 0.85;
+      }
+      75% {
+        opacity: 1;
+      }
+      to {
+        opacity: 0.9;
+      }
+    }
+  
+    @media (prefers-reduced-motion) {
+      animation: none;
+    }
   }
 }
 
