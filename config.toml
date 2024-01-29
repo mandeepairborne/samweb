@@ -50,10 +50,7 @@ source_url = "https://codeberg.org/daudix/duckquill"
 [extra.nav]
 # Display Atom/RSS feed button in the nav
 show_feed = true
-# Whether to use icons in the nav
-icons = true
-# Links used in the nav; any icon from https://icons.getbootstrap.com
-# can be used as the icon. The bi- prefix should not be added.
+# Links used in the nav
 links = [
   {url = "https://codeberg.org/daudix/duckquill", name = "Repo", icon = "code-slash"},
   {url = "$BASE_URL/demo", name = "Demo", icon = "car-front"},
@@ -83,6 +80,5 @@ show_source = true
 [extra.comments]
 # Your Mastodon API host; this should be where you have an account
 host = "mstdn.social"
-# Used to determine who the original/verified poster is;
-# role may be expanded in the future (e.g. for moderation).
+# Used to determine who the original poster is
 user = "Daudix"
