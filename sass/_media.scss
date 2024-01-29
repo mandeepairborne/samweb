@@ -10,6 +10,10 @@ video {
 img {
   transition: var(--transition-longer);
 
+  &:not(.no-hover) {
+    cursor: zoom-in;
+  }
+
   &:not(.no-hover):hover {
     border-radius: 0;
     box-shadow: var(--shadow-raised);
