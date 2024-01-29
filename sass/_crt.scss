@@ -91,9 +91,9 @@
 }
 
 .cursor {
-  animation: blicking 1s infinite;
+  animation: cursor-blink 1s infinite;
 
-  @keyframes blicking {
+  @keyframes cursor-blink {
     from {
       opacity: 1;
     }
