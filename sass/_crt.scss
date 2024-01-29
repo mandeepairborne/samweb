@@ -22,7 +22,7 @@
       from {
         opacity: 1;
       }
-      25%{
+      25% {
         opacity: 0.95;
       }
       50% {
@@ -35,7 +35,7 @@
         opacity: 0.9;
       }
     }
-  
+
     @media (prefers-reduced-motion) {
       animation: none;
     }
