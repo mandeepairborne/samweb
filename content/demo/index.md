@@ -5,10 +5,10 @@ title = "Demo Page"
 archive = "This page is, in fact, not archived, meaning it will receive content updates."
 trigger = "This page contains blackjack and hookers, and bad jokes such as this one."
 disclaimer = """
-- All tricks in this page are performed by the lab boys, don't try this at home.
-- Don't expose yourself to 4000° kelvin.
-- Don't take party escort submission position.
-- Don't interact with asbestos and moon rocks.
+- All tricks in this page are performed by the lab boys, don't try this at home
+- Don't expose yourself to 4000° kelvin
+- Don't take party escort submission position
+- Don't interact with asbestos and moon rocks
 """
 +++
 
@@ -161,7 +161,9 @@ Available variables are:
 - `full`: Forces image/video to be full-width.
 - `pixels`: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.
 - `transparent`: Removes rounded corners and shadow, useful for transparent images.
+- `inline`: Allows putting image inline, e.g for putting multiple images next to each one.
 - `no_hover`: Removes zoom on hover.
+- `no_margin`: Removes margins.
 
 Variables should be comma-separated and be inside the brackets.
 

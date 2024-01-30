@@ -5,6 +5,27 @@ video {
   display: block;
   margin: 2rem auto;
   max-width: 100%;
+
+  &.full {
+    width: 100%;
+  }
+  
+  &.pixels {
+    image-rendering: pixelated;
+  }
+  
+  &.transparent {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  &.inline {
+    display: inline;
+  }
+
+  &.no-margin {
+    margin: 0;
+  }
 }
 
 img {
@@ -21,15 +42,3 @@ img {
   }
 }
 
-.full {
-  width: 100%;
-}
-
-.pixels {
-  image-rendering: pixelated;
-}
-
-.transparent {
-  border-radius: 0;
-  box-shadow: none;
-}

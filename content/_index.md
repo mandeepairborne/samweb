@@ -16,14 +16,14 @@ jgs~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~
 
 Edit a bit of metadata and tweak some of the included graphics and have a blog up in minutes!
 
-- Pretty, yet lightweight. No JavaScript is used (except for comments, heh)
-- Colors are tinted with the user-selected primary color for a pleasent look
+- Pretty, yet lightweight. No JavaScript is used (except for comments, heh).
+- Colors are tinted with the user-selected primary color for a pleasent look.
 - ~50kB in size; take that, 12MB Medium!
-- Uses system fonts for blazingly fast loading
-- Mobile friendly, with a proper dark variant
-- Proper favicon for modern browsers and Apple device icons
-- Twitter, Mastodon and other social media meta cards for easy sharing. Try [Share Preview](https://apps.gnome.org/SharePreview/) to test
-- [Mastodon-powered comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/); comment using compatible ActivityPub server by replying to a Mastodon post
+- Uses system fonts for blazingly fast loading.
+- Mobile friendly, with a proper dark variant.
+- Proper favicon for modern browsers and Apple device icons.
+- Twitter, Mastodon and other social media meta cards for easy sharing. Try [Share Preview](https://apps.gnome.org/SharePreview/) to test.
+- [Mastodon-powered comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/); comment using compatible ActivityPub server by replying to a Mastodon post.
 
 > Duckquill is made based on needs of [my website](https://daudix.codeberg.page), if you need some feature/configuration that doesn't exist feel free to open an issue or better yet, pull request!
 
@@ -103,6 +103,6 @@ If you want to improve Duckquill in any way, feel free to open an issue, or bett
 
 ## Thanks to ♥
 
-- [Jakub Steiner](https://jimmac.eu) for the [OS Component Website](https://jimmac.github.io/os-component-website), on top of which this whole thing is built
-- [Carl Schwan](https://carlschwan.eu) for the [Mastodon-powered Comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/)
+- [Jakub Steiner](https://jimmac.eu) for the [OS Component Website](https://jimmac.github.io/os-component-website), on top of which this whole thing is built.
+- [Carl Schwan](https://carlschwan.eu) for the [Mastodon-powered Comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/).
 - Everyone who supported me and said good stuff <3
