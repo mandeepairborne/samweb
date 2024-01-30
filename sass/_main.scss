@@ -52,7 +52,7 @@ body {
   @keyframes highlight-in-out {
     50% {
       color: var(--primary-color);
-      font-weight: 800;
+      font-weight: bolder;
     }
   }
 }
@@ -71,7 +71,7 @@ h4,
 h5,
 h6 {
   font-family: Superclarendon, "Bookman Old Style", "URW Bookman", "URW Bookman L", "Georgia Pro", Georgia, serif;
-  font-weight: 200;
+  font-weight: lighter;
   line-height: 1.25;
   margin: 3rem 0 1rem;
 
@@ -89,7 +89,7 @@ h6 {
 
 h1 {
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: normal;
   letter-spacing: -0.15rem;
 }
 
@@ -120,7 +120,7 @@ h6 {
 a {
   color: var(--primary-color);
   cursor: pointer;
-  font-weight: 600;
+  font-weight: bold;
   text-decoration: underline dotted;
 
   &:hover {
