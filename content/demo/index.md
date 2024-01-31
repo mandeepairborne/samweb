@@ -161,9 +161,7 @@ Available variables are:
 - `full`: Forces image/video to be full-width.
 - `pixels`: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.
 - `transparent`: Removes rounded corners and shadow, useful for transparent images.
-- `inline`: Allows putting image inline, e.g for putting multiple images next to each one.
 - `no_hover`: Removes zoom on hover.
-- `no_margin`: Removes margins.
 
 Variables should be comma-separated and be inside the brackets.
 
