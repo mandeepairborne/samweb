@@ -6,7 +6,7 @@
   padding: 15px;
   width: 155px;
 
-  @media screen and (max-width: 720px) {
+  @media only screen and (max-width: 720px) {
     & {
       display: none;
     }
