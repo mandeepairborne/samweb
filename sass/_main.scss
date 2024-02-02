@@ -46,13 +46,12 @@ body {
 // and flash it with primary color when jumping to it
 :target {
   scroll-margin-top: 15vh;
-  animation: highlight-in-out var(--transition-long);
-  animation-delay: 1s;
+  animation: var(--transition-long) 1s highlight-in-out;
 
   @keyframes highlight-in-out {
     50% {
       color: var(--primary-color);
-      font-weight: bolder;
+      letter-spacing: 0.25rem;
     }
   }
 }
