@@ -47,12 +47,16 @@ body {
 :target {
   scroll-margin-top: 15vh;
   animation: var(--transition-long) 1s highlight-in-out;
+  color: var(--primary-color);
 
   @keyframes highlight-in-out {
     50% {
-      color: var(--primary-color);
       letter-spacing: 0.125rem;
     }
+  }
+
+  @media (prefers-reduced-motion) {
+    animation: none;
   }
 }
 
