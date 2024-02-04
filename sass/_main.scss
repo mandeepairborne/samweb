@@ -48,6 +48,7 @@ body {
   scroll-margin-top: 15vh;
   animation: var(--transition-long) 1s highlight-in-out;
   color: var(--primary-color);
+  text-shadow: var(--primary-color-alpha) 0 0 4px, var(--primary-color) 0 0 12px;
 
   @keyframes highlight-in-out {
     50% {
@@ -73,7 +74,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Superclarendon, "Bookman Old Style", "URW Bookman", "URW Bookman L", "Georgia Pro", Georgia, serif;
+  font-family: Superclarendon, "Bookman Old Style", "URW Bookman",
+    "URW Bookman L", "Georgia Pro", Georgia, serif;
   font-weight: lighter;
   line-height: 1.25;
   margin: 3rem 0 1rem;
@@ -198,7 +200,8 @@ aside {
 pre,
 code,
 kbd {
-  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+    "DejaVu Sans Mono", monospace;
 }
 
 code:not(pre code) {
