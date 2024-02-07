@@ -1,9 +1,0 @@
-.main-content {
-  position: absolute;
-  transform: translateY(-200%);
-  transition: var(--transition);
-
-  &:focus {
-    transform: translateY(0);
-  }
-}
