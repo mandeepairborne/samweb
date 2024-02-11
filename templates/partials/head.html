@@ -33,20 +33,20 @@
   </style>
 
   {% if page.extra.emoji_favicon %}
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%22-.1em%22 y=%22.9em%22 font-size=%2290%22>{{ page.extra.emoji_favicon }}</text></svg>">
-    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%22-.1em%22 y=%22.9em%22 font-size=%2290%22>{{ page.extra.emoji_favicon }}</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%22-.1em%22 y=%22.9em%22 font-size=%2290%22>{{ page.extra.emoji_favicon }}</text></svg>">
+    <link rel="apple-touch-icon" type="image/svg+xml" sizes="180x180" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%22-.1em%22 y=%22.9em%22 font-size=%2290%22>{{ page.extra.emoji_favicon }}</text></svg>">
   {% elif section.extra.emoji_favicon %}
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%22-.1em%22 y=%22.9em%22 font-size=%2290%22>{{ section.extra.emoji_favicon }}</text></svg>">
-    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%22-.1em%22 y=%22.9em%22 font-size=%2290%22>{{ section.extra.emoji_favicon }}</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%22-.1em%22 y=%22.9em%22 font-size=%2290%22>{{ section.extra.emoji_favicon }}</text></svg>">
+    <link rel="apple-touch-icon" type="image/svg+xml" sizes="180x180" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%22-.1em%22 y=%22.9em%22 font-size=%2290%22>{{ section.extra.emoji_favicon }}</text></svg>">
   {% elif config.extra.emoji_favicon %}
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%22-.1em%22 y=%22.9em%22 font-size=%2290%22>{{ config.extra.emoji_favicon }}</text></svg>">
-    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%22-.1em%22 y=%22.9em%22 font-size=%2290%22>{{ config.extra.emoji_favicon }}</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%22-.1em%22 y=%22.9em%22 font-size=%2290%22>{{ config.extra.emoji_favicon }}</text></svg>">
+    <link rel="apple-touch-icon" type="image/svg+xml" sizes="180x180" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%22-.1em%22 y=%22.9em%22 font-size=%2290%22>{{ config.extra.emoji_favicon }}</text></svg>">
   {% elif config.extra.animated_favicon %}
     <link rel="icon" type="image/gif" href="{{ get_url(path='favicon.gif') }}" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path='apple-touch-icon.png') }}" />
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ get_url(path='apple-touch-icon.png') }}" />
   {% else %}
     <link rel="icon" type="image/png" href="{{ get_url(path='favicon.png') }}" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path='apple-touch-icon.png') }}" />
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ get_url(path='apple-touch-icon.png') }}" />
   {% endif %}
   <link rel="me" href="https://{{ config.extra.comments.host }}/@{{ config.extra.comments.user }}" />
 

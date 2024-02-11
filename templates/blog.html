@@ -73,7 +73,7 @@
 {{ page.content | safe }}
 
 {% if page.extra.comments.id %}
-  {% include "includes/comments.html" %}
+  {% include "partials/comments.html" %}
 {% endif %}
 
 {% if page.lower or page.higher %}
