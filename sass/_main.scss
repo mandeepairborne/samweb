@@ -26,7 +26,7 @@ body {
 }
 
 body {
-  font-family: system-ui, sans-serif;
+  font-family: var(--font-system);
   line-height: 1.6;
   color: var(--fg-color);
   background: var(--bg-color);
@@ -74,8 +74,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Superclarendon, "Bookman Old Style", "URW Bookman",
-    "URW Bookman L", "Georgia Pro", Georgia, serif;
+  font-family: var(--font-serif);
   font-weight: lighter;
   line-height: 1.25;
   margin: 3rem 0 1rem;
@@ -204,8 +203,7 @@ aside {
 pre,
 code,
 kbd {
-  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
-    "DejaVu Sans Mono", monospace;
+  font-family: var(--font-monospace);
 }
 
 code:not(pre code) {
