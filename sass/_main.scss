@@ -129,7 +129,7 @@ a {
   text-decoration: underline dotted;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: underline wavy;
   }
 }
 
@@ -171,6 +171,10 @@ blockquote {
   color: var(--fg-muted-5);
   margin: 0;
   padding: 0 0.75rem;
+
+  & & {
+    border-radius: 0;
+  }
 }
 
 abbr {
