@@ -1,15 +1,15 @@
 <!-- Taken from the https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/ -->
 
 {% if page.extra.comments.host %}
-{% set host = page.extra.comments.host %}
+  {% set host = page.extra.comments.host %}
 {% else %}
-{% set host = config.extra.comments.host %}
+  {% set host = config.extra.comments.host %}
 {% endif %}
 
 {% if page.extra.comments.user %}
-{% set username = page.extra.comments.user %}
+  {% set username = page.extra.comments.user %}
 {% else %}
-{% set username = config.extra.comments.user %}
+  {% set username = config.extra.comments.user %}
 {% endif %}
 
 {% set id = page.extra.comments.id %}
@@ -20,12 +20,12 @@
   <h2>Comments</h2>
   <p>
     You can respond to this <a href="https://{{ host }}/@{{ username }}/{{ id }}">post</a> with an account on the
-    Fediverse (e.g Mastodon, Akkoma, Sharkey).
+    Fediverse (e.g Mastodon, Akkoma, Sharkey or any Mastodon API compatible server).
   </p>
   <p>
     <small>
-      Since Fediverse is decentralized, you can use your existing Mastodon or a compatible account if you don't have an
-      account on this one. Known non-private replies are displayed below.
+      Since Fediverse is decentralized, you can use your existing Mastodon API compatible account if you don't have an
+      account on this server. Known non-private replies are displayed below.
     </small>
   </p>
 
