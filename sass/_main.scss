@@ -182,8 +182,6 @@ abbr {
 }
 
 aside {
-  -webkit-backdrop-filter: var(--blur);
-  backdrop-filter: var(--blur);
   background-color: var(--primary-color-alpha);
   border-radius: var(--rounded-corner);
   box-shadow: var(--edge-highlight);
@@ -209,8 +207,6 @@ kbd {
 }
 
 code:not(pre code) {
-  -webkit-backdrop-filter: var(--blur);
-  backdrop-filter: var(--blur);
   background-color: var(--fg-muted-2);
   border-radius: var(--rounded-corner-small);
   color: var(--red-fg);
@@ -257,8 +253,6 @@ pre {
 }
 
 kbd {
-  -webkit-backdrop-filter: var(--blur);
-  backdrop-filter: var(--blur);
   background-color: var(--fg-muted-2);
   border-radius: var(--rounded-corner-small);
   box-shadow: inset 0 -2px 0 var(--fg-muted-2), 0 -1px 0 var(--fg-muted-3);
@@ -278,8 +272,6 @@ kbd {
 }
 
 mark {
-  -webkit-backdrop-filter: var(--blur);
-  backdrop-filter: var(--blur);
   background-color: var(--primary-color-alpha);
   border-radius: var(--rounded-corner-small);
   box-shadow: var(--edge-highlight);
@@ -295,8 +287,6 @@ figcaption {
 }
 
 details {
-  -webkit-backdrop-filter: var(--blur);
-  backdrop-filter: var(--blur);
   background-color: var(--fg-muted-1);
   border-radius: var(--rounded-corner);
   padding: 1rem;
@@ -325,14 +315,10 @@ table {
 
   tr {
     &:nth-child(even) {
-      -webkit-backdrop-filter: var(--blur);
-      backdrop-filter: var(--blur);
       background-color: var(--fg-muted-1);
     }
 
     th {
-      -webkit-backdrop-filter: var(--blur);
-      backdrop-filter: var(--blur);
       background-color: var(--fg-muted-2);
     }
   }

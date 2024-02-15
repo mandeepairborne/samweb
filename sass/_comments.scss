@@ -30,9 +30,7 @@ section#comments {
       width: 4rem;
 
       .avatar {
-        -webkit-backdrop-filter: var(--blur);
         all: unset;
-        backdrop-filter: var(--blur);
         background-color: var(--fg-muted-1);
         background-position: 50%;
         background-size: cover;
@@ -63,8 +61,6 @@ section#comments {
       grid-area: name;
 
       .instance {
-        -webkit-backdrop-filter: var(--blur);
-        backdrop-filter: var(--blur);
         background-color: var(--fg-muted-1);
         border-radius: 999px;
         box-shadow: var(--edge-highlight);
@@ -91,8 +87,6 @@ section#comments {
           color: var(--primary-color);
 
           &:hover {
-            -webkit-backdrop-filter: var(--blur);
-            backdrop-filter: var(--blur);
             background-color: var(--primary-color-alpha);
             box-shadow: var(--edge-highlight);
           }
@@ -142,8 +136,6 @@ section#comments {
         transition: var(--transition);
 
         &:hover {
-          -webkit-backdrop-filter: var(--blur);
-          backdrop-filter: var(--blur);
           background-color: var(--red-bg);
           box-shadow: var(--edge-highlight);
           text-decoration: none;

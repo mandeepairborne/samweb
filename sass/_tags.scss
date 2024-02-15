@@ -14,8 +14,6 @@
   }
 
   .tag {
-    -webkit-backdrop-filter: var(--blur);
-    backdrop-filter: var(--blur);
     background-color: var(--fg-muted-1);
     border-radius: 999px;
     box-shadow: var(--edge-highlight);
