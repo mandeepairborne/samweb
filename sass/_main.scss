@@ -125,10 +125,10 @@ a {
   color: var(--primary-color);
   cursor: pointer;
   font-weight: bold;
-  text-decoration: underline dotted;
 
   &:hover {
     text-decoration: underline wavy;
+    -webkit-text-decoration: underline wavy;
   }
 }
 
@@ -178,7 +178,8 @@ blockquote {
 
 abbr {
   cursor: help;
-  text-decoration: underline dotted;
+  text-decoration: underline;
+  -webkit-text-decoration: underline;
 }
 
 aside {
