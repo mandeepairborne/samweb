@@ -14,8 +14,11 @@
   }
 
   .tag {
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
     background-color: var(--fg-muted-1);
     border-radius: 999px;
+    box-shadow: var(--edge-highlight);
     color: var(--fg-color);
     padding: 0.25rem 0.75rem;
     text-decoration: none;

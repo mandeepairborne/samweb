@@ -30,24 +30,26 @@ section#comments {
       width: 4rem;
 
       .avatar {
+        -webkit-backdrop-filter: var(--blur);
         all: unset;
+        backdrop-filter: var(--blur);
         background-color: var(--fg-muted-1);
         background-position: 50%;
         background-size: cover;
         border-radius: var(--rounded-corner);
-        box-shadow: var(--shadow);
+        box-shadow: var(--edge-highlight), var(--shadow);
         height: 100%;
         overflow: hidden;
         transition: var(--transition);
         width: 100%;
 
         &:hover {
-          box-shadow: var(--shadow-raised);
+          box-shadow: var(--edge-highlight), var(--shadow-raised);
           transform: rotate(10deg) scale(1.1);
         }
 
         &:active {
-          box-shadow: var(--shadow);
+          box-shadow: var(--edge-highlight), var(--shadow);
           transform: scale(var(--active));
         }
       }
@@ -61,8 +63,11 @@ section#comments {
       grid-area: name;
 
       .instance {
+        -webkit-backdrop-filter: var(--blur);
+        backdrop-filter: var(--blur);
         background-color: var(--fg-muted-1);
         border-radius: 999px;
+        box-shadow: var(--edge-highlight);
         color: var(--fg-color);
         font-size: 0.8rem;
         padding: 0.25rem 0.75rem;
@@ -79,11 +84,17 @@ section#comments {
         }
 
         &.op {
+          -webkit-backdrop-filter: unset;
+          backdrop-filter: unset;
           background-color: transparent;
+          box-shadow: none;
           color: var(--primary-color);
 
           &:hover {
+            -webkit-backdrop-filter: var(--blur);
+            backdrop-filter: var(--blur);
             background-color: var(--primary-color-alpha);
+            box-shadow: var(--edge-highlight);
           }
 
           &::before {
@@ -131,7 +142,10 @@ section#comments {
         transition: var(--transition);
 
         &:hover {
+          -webkit-backdrop-filter: var(--blur);
+          backdrop-filter: var(--blur);
           background-color: var(--red-bg);
+          box-shadow: var(--edge-highlight);
           text-decoration: none;
         }
 

@@ -7,8 +7,11 @@
 }
 
 .inline-button {
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
   background-color: var(--fg-muted-1);
   border-radius: var(--rounded-corner);
+  box-shadow: var(--edge-highlight);
   color: var(--fg-color);
   display: inline-block;
   font-size: 0.9rem;
@@ -26,11 +29,17 @@
   }
 
   &.colored {
-    color: var(--primary-color);
+    -webkit-backdrop-filter: unset;
+    backdrop-filter: unset;
     background-color: transparent;
+    box-shadow: none;
+    color: var(--primary-color);
 
     &:hover {
+      -webkit-backdrop-filter: var(--blur);
+      backdrop-filter: var(--blur);
       background-color: var(--primary-color-alpha);
+      box-shadow: var(--edge-highlight);
     }
   }
 }
