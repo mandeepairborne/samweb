@@ -263,7 +263,7 @@ The <abbr title="American Standard Code for Information Interchange">ASCII</abbr
 
 <aside>
 Abraham Lincoln portrait
-<img class="transparent no-hover" style="margin-bottom: 0;" alt="Abraham Lincoln" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/372px-Abraham_Lincoln_O-77_matte_collodion_print.jpg" />
+<img class="transparent no-hover" style="margin-bottom: 0; border-radius: 0;" alt="Abraham Lincoln" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/372px-Abraham_Lincoln_O-77_matte_collodion_print.jpg" />
 </aside>
 
 Abraham Lincoln (/ˈlɪŋkən/ LINK-ən; February 12, 1809 – April 15, 1865) was an American lawyer, politician, and statesman who served as the 16th president of the United States from 1861 until his assassination in 1865. Lincoln led the United States through the American Civil War, defending the nation as a constitutional union, defeating the insurgent Confederacy, abolishing slavery, expanding the power of the federal government, and modernizing the U.S. economy.
