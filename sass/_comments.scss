@@ -156,18 +156,18 @@ section#comments {
 			}
 
 			.boosts {
-				color: var(--yellow-fg);
+				color: var(--purple-fg);
 
 				&:hover {
-					background-color: var(--yellow-bg);
+					background-color: var(--purple-bg);
 				}
 			}
 
 			.faves {
-				color: var(--red-fg);
+				color: var(--orange-fg);
 
 				&:hover {
-					background-color: var(--red-bg);
+					background-color: var(--orange-bg);
 				}
 			}
 		}
