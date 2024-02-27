@@ -1,4 +1,8 @@
 section#comments {
+	#load-comments {
+		cursor: pointer;
+	}
+
 	#comments-wrapper {
 		display: flex;
 		flex-direction: column;
@@ -125,18 +129,23 @@ section#comments {
 			grid-area: interactions;
 			margin-top: 1rem;
 
+			.boosts,
 			.faves {
 				background-color: transparent;
-				border-radius: var(--rounded-corner);
-				color: var(--red-fg);
+				border-radius: 999px;
 				display: inline-block;
 				font-variant-numeric: tabular-nums;
-				padding: 0.5rem 1rem;
+				margin-right: 0.25rem;
+				padding: 0.25rem 0.75rem;
 				text-decoration: none;
 				transition: var(--transition);
 
+				svg {
+					margin-inline-end: 0.25rem;
+					vertical-align: -0.125em;
+				}
+
 				&:hover {
-					background-color: var(--red-bg);
 					box-shadow: var(--edge-highlight);
 					text-decoration: none;
 				}
@@ -144,10 +153,21 @@ section#comments {
 				&:active {
 					transform: scale(var(--active));
 				}
+			}
 
-				&::before {
-					content: "❤️";
-					margin-inline-end: 0.25rem;
+			.boosts {
+				color: var(--yellow-fg);
+
+				&:hover {
+					background-color: var(--yellow-bg);
+				}
+			}
+
+			.faves {
+				color: var(--red-fg);
+
+				&:hover {
+					background-color: var(--red-bg);
 				}
 			}
 		}

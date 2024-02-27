@@ -205,11 +205,42 @@
 
 							let interactions = document.createElement("footer");
 
+							let boosts = document.createElement("a");
+							boosts.className = "boosts";
+							boosts.setAttribute("href", `${status.url}/reblogs`);
+							boosts.setAttribute("title", `Favorites from ${instance}`);
+							
+							let boostsIcon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+							boostsIcon.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+							boostsIcon.setAttribute("width", "16");
+							boostsIcon.setAttribute("height", "16");
+							boostsIcon.setAttribute("viewBox", "0 0 16 16");
+
+							let boostsPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+							boostsPath.setAttribute("fill", "currentColor");
+							boostsPath.setAttribute("d", "M8 1v2H4C1.8 3 0 4.8 0 7v2a4 4 0 0 0 1.02 2.672 1 1 0 1 0 1.488-1.336A1.97 1.97 0 0 1 2 9V7c0-1.125.875-2 2-2h4v2h1v-.008a1 1 0 0 0 .707-.285l2-2a1 1 0 0 0 0-1.414l-2-2A1 1 0 0 0 9 1.008V1zm6.29 3a1 1 0 0 0-.72.258.993.993 0 0 0-.078 1.41c.317.355.508.816.508 1.34v2c0 1.125-.875 2-2 2H8V9H7v.008a1 1 0 0 0-.707.285l-2 2a1 1 0 0 0 0 1.414l2 2c.187.184.441.29.707.285V15h1v-1.992h4c2.2 0 4-1.805 4-4v-2a4 4 0 0 0-1.02-2.676A1 1 0 0 0 14.29 4m0 0");
+							boostsIcon.appendChild(boostsPath);
+							boosts.appendChild(boostsIcon);
+							boosts.insertAdjacentHTML('beforeend', ` ${status.reblogs_count}`);
+							interactions.appendChild(boosts);
+
 							let faves = document.createElement("a");
 							faves.className = "faves";
 							faves.setAttribute("href", `${status.url}/favourites`);
 							faves.setAttribute("title", `Favorites from ${instance}`);
-							faves.textContent = status.favourites_count;
+
+							let favesIcon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+							favesIcon.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+							favesIcon.setAttribute("width", "16");
+							favesIcon.setAttribute("height", "16");
+							favesIcon.setAttribute("viewBox", "0 0 16 16");
+
+							let favesPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+							favesPath.setAttribute("fill", "currentColor");
+							favesPath.setAttribute("d", "M8 0a1 1 0 0 0-.95.684l-1.448 4.34-4.59-.016C.032 5.004-.371 6.266.43 6.828l3.625 2.555-1.5 4.285c-.317.902.687 1.691 1.492 1.172l4.004-2.594 3.894 2.586c.801.531 1.817-.258 1.5-1.16l-1.504-4.29 3.645-2.577c.789-.563.394-1.809-.574-1.813l-4.66-.015L8.949.69A1 1 0 0 0 8 0m0 0");
+							favesIcon.appendChild(favesPath);
+							faves.appendChild(favesIcon);
+							faves.insertAdjacentHTML('beforeend', ` ${status.favourites_count}`);
 							interactions.appendChild(faves);
 
 							let comment = document.createElement("article");
@@ -221,9 +252,7 @@
 							comment.appendChild(header);
 							comment.appendChild(timestamp);
 							comment.appendChild(main);
-							if (status.favourites_count > 0) {
-								comment.appendChild(interactions);
-							}
+							comment.appendChild(interactions);
 
 							if (op === true) {
 								comment.classList.add("op");
