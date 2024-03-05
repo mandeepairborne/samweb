@@ -2,5 +2,7 @@
 template = "blog.html"
 title = "ActivityPub/​Fediverse comments demo"
 [extra.comments]
-id = "110896168682002971"
+host = "toot.community"
+user = "sungsphinx"
+id = "111784580759701190"
 +++
