@@ -262,13 +262,13 @@ The <abbr title="American Standard Code for Information Interchange">ASCII</abbr
 ## Aside
 
 <aside>
-Abraham Lincoln portrait
-<img class="transparent no-hover" style="margin-bottom: 0; border-radius: 0;" alt="Abraham Lincoln" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/372px-Abraham_Lincoln_O-77_matte_collodion_print.jpg" />
+Quill and a parchment
+<img class="transparent no-hover" style="margin-bottom: 0; border-radius: 0;" alt="Quill and a parchment" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/%D7%A7%D7%9C%D7%A3%2C_%D7%A0%D7%95%D7%A6%D7%94_%D7%95%D7%93%D7%99%D7%95.jpg/326px-%D7%A7%D7%9C%D7%A3%2C_%D7%A0%D7%95%D7%A6%D7%94_%D7%95%D7%93%D7%99%D7%95.jpg" />
 </aside>
 
-Abraham Lincoln (/ˈlɪŋkən/ LINK-ən; February 12, 1809 – April 15, 1865) was an American lawyer, politician, and statesman who served as the 16th president of the United States from 1861 until his assassination in 1865. Lincoln led the United States through the American Civil War, defending the nation as a constitutional union, defeating the insurgent Confederacy, abolishing slavery, expanding the power of the federal government, and modernizing the U.S. economy.
+A quill is a writing tool made from a moulted flight feather (preferably a primary wing-feather) of a large bird. Quills were used for writing with ink before the invention of the dip pen, the metal-nibbed pen, the fountain pen, and, eventually, the ballpoint pen.
 
-Lincoln was born into poverty in a log cabin in Kentucky and was raised on the frontier, primarily in Indiana. He was self-educated and became a lawyer, Whig Party leader, Illinois state legislator, and U.S. congressman from Illinois.
+As with the earlier reed pen (and later dip pen), a quill has no internal ink reservoir and therefore needs to periodically be dipped into an inkwell during writing. The hand-cut goose quill is rarely used as a calligraphy tool anymore because many papers are now derived from wood pulp and would quickly wear a quill down. However it is still the tool of choice for a few scribes who have noted that quills provide an unmatched sharp stroke as well as greater flexibility than a steel pen.
 
 ## Keyboard shortcut
 
