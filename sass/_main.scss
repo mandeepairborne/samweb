@@ -10,6 +10,7 @@ html {
 	// scrollbar-color: var(--primary-color) transparent;
 	accent-color: var(--primary-color);
 	overflow-wrap: break-word;
+	overflow: hidden; // Disable scroll of html, scroll body instead
 }
 
 // Smaller font size on mobile
@@ -26,6 +27,8 @@ body {
 }
 
 body {
+	overflow: scroll; // Scroll body instead of html
+	height: 100vh;
 	font-family: var(--font-system);
 	line-height: 1.6;
 	color: var(--fg-color);
