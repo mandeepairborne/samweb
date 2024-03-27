@@ -2,6 +2,9 @@
 
 [![Please don't upload to GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
 [![status-badge](https://ci.codeberg.org/api/badges/13032/status.svg)](https://ci.codeberg.org/repos/13032)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Donate-FF5E5B?logo=kofi)](https://ko-fi.com/daudix)
+[![Liberapay](https://img.shields.io/badge/Liberapay-Donate-F6C915?logo=liberapay)](https://liberapay.com/daudix)
+[![Paypal](https://img.shields.io/badge/PayPal-Donate-00457C?logo=paypal)](https://paypal.me/Daudix)
 
 [Duckquill](https://daudix.codeberg.page/duckquill) is a modern, pretty, and clean (and opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
 
