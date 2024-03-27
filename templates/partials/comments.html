@@ -15,8 +15,21 @@
 {% set id = page.extra.comments.id %}
 
 <section id="comments">
-	<img id="qrcode" class="no-hover pixels" alt="QR code to a Mastodon post"
-		src="https://api.qrserver.com/v1/create-qr-code/?data=https://{{ host }}/@{{ username }}/{{ id }}">
+
+	{% if config.extra.comments.show_qr %}
+		<img id="qrcode" class="no-hover pixels" alt="QR code to a Mastodon post" src="">
+		<script>
+			const apiUrl = "http://api.duckduckgo.com/?q=qr%20https://{{ host }}/@{{ username }}/{{ id }}&format=json";
+
+			fetch(apiUrl)
+				.then(response => response.json())
+				.then(data => {
+					const base64Data = data.Answer.match(/src="([^"]*)"/)[1];
+					document.getElementById("qrcode").src = base64Data;
+				})
+				.catch(error => console.error("Error fetching QR code:", error));
+		</script>
+	{% endif %}
 	<h2>Comments</h2>
 	<p>
 		You can respond to this <a href="https://{{ host }}/@{{ username }}/{{ id }}">post</a> with an account on the
