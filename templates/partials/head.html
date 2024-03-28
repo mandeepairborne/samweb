@@ -49,7 +49,9 @@
 		<link rel="icon" type="image/png" href="{{ get_url(path='favicon.png') }}" />
 		<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ get_url(path='apple-touch-icon.png') }}" />
 	{% endif %}
-	<link rel="me" href="https://{{ config.extra.comments.host }}/@{{ config.extra.comments.user }}" />
+	{% if config.extra.comments %}
+		<link rel="me" href="https://{{ config.extra.comments.host }}/@{{ config.extra.comments.user }}" />
+	{% endif %}
 
 	<!-- Open Graph -->
 	<meta property="og:site_name" content="{{ config.title }}" />
