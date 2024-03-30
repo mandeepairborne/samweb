@@ -20,18 +20,29 @@ If you want to improve Duckquill in any way, feel free to open an issue, or bett
 
 ## Sites that use Duckquill
 
-- http://www.lukoktonos.com
-- https://agustinramirodiaz.github.io
-- https://alavi.me
-- https://blog.pansi21.xyz
-- https://daudix.codeberg.page (obviously)
-- https://digital-horror.com
-- https://jzbor.de
-- https://notaplace.com
-- https://pyter.at
-- https://sorg.codeberg.page
-- https://sungsphinx.codeberg.page
+- [agustinramirodiaz.github.io](https://agustinramirodiaz.github.io)
+- [alavi.me](https://alavi.me)
+- [bano.dev](https://bano.dev)
+- [blog.pansi21.xyz](https://blog.pansi21.xyz)
+- [daudix.codeberg.page](https://daudix.codeberg.page) (obviously)
+- [daveparr.info](https://www.daveparr.info)
+- [digital-horror.com](https://digital-horror.com)
+- [enriquekesslerm.com](https://enriquekesslerm.com)
+- [jzbor.de](https://jzbor.de)
+- [luciengheerbrant.com](https://luciengheerbrant.com)
+- [lukoktonos.com](http://www.lukoktonos.com)
+- [notaplace.com](https://notaplace.com)
+- [pyter.at](https://pyter.at)
+- [rerere.unlogic.co.uk](https://rerere.unlogic.co.uk)
+- [sorg.codeberg.page](https://sorg.codeberg.page)
+- [sungsphinx.codeberg.page](https://sungsphinx.codeberg.page)
+- [treeniks.github.io](https://treeniks.github.io)
 - Yours?
+
+Not sites that use Duckquill but ones that mention it in credits:
+
+- [andreatitolo.com](https://www.andreatitolo.com/credits)
+- [aplos.gxbs.me](https://aplos.gxbs.me)
 
 ## Credits
 
