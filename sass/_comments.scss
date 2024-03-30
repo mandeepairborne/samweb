@@ -142,12 +142,17 @@ section#comments {
 
 				svg {
 					margin-inline-end: 0.25rem;
+					transition: var(--transition-long);
 					vertical-align: -0.125em;
 				}
 
 				&:hover {
 					box-shadow: var(--edge-highlight);
 					text-decoration: none;
+
+					svg {
+						rotate: 360deg;
+					}
 				}
 
 				&:active {
