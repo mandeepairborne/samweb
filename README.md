@@ -28,21 +28,29 @@ If you want to improve Duckquill in any way, feel free to open an issue, or bett
 - [daveparr.info](https://www.daveparr.info)
 - [digital-horror.com](https://digital-horror.com)
 - [enriquekesslerm.com](https://enriquekesslerm.com)
+- [enriquekesslerm.com](https://enriquekesslerm.com)
 - [jzbor.de](https://jzbor.de)
+- [licu.dev](https://licu.dev)
 - [luciengheerbrant.com](https://luciengheerbrant.com)
 - [lukoktonos.com](http://www.lukoktonos.com)
+- [malloc.garden](https://malloc.garden)
+- [mourelask.xyz](https://mourelask.xyz)
+- [nbenedek.me](https://nbenedek.me)
 - [notaplace.com](https://notaplace.com)
 - [pyter.at](https://pyter.at)
+- [rbd.gg](https://www.rbd.gg)
 - [rerere.unlogic.co.uk](https://rerere.unlogic.co.uk)
 - [sorg.codeberg.page](https://sorg.codeberg.page)
 - [sungsphinx.codeberg.page](https://sungsphinx.codeberg.page)
 - [treeniks.github.io](https://treeniks.github.io)
+
 - Yours?
 
 Not sites that use Duckquill but ones that mention it in credits:
 
 - [andreatitolo.com](https://www.andreatitolo.com/credits)
 - [aplos.gxbs.me](https://aplos.gxbs.me)
+- [oomfie.town](https://oomfie.town/credits)
 
 ## Credits
 
