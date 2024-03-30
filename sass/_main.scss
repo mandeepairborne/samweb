@@ -161,10 +161,10 @@ blockquote {
 	}
 }
 
-abbr {
+abbr[title] {
 	cursor: help;
-	text-decoration: underline;
-	-webkit-text-decoration: underline;
+	text-decoration: underline dotted;
+	-webkit-text-decoration: underline dotted;
 }
 
 aside {
