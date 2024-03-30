@@ -43,7 +43,6 @@ If you want to improve Duckquill in any way, feel free to open an issue, or bett
 - [sorg.codeberg.page](https://sorg.codeberg.page)
 - [sungsphinx.codeberg.page](https://sungsphinx.codeberg.page)
 - [treeniks.github.io](https://treeniks.github.io)
-
 - Yours?
 
 Not sites that use Duckquill but ones that mention it in credits:
