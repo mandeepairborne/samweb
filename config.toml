@@ -82,5 +82,5 @@ show_source = true
 host = "mstdn.social"
 # Used to determine who the original poster is
 user = "Daudix"
-# Display the QR code to Mastodon post (utilizes DuckDuckGo Instant Answer API)
+# Display the QR code to Mastodon post
 show_qr = true
