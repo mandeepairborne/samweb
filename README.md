@@ -20,16 +20,17 @@ If you want to improve Duckquill in any way, feel free to open an issue, or bett
 
 ## Sites that use Duckquill
 
-- https://sungsphinx.codeberg.page
-- https://sorg.codeberg.page
-- https://alavi.me
-- https://agustinramirodiaz.github.io
-- https://jzbor.de
-- https://blog.pansi21.xyz
-- https://pyter.at
-- https://digital-horror.com
 - http://www.lukoktonos.com
+- https://agustinramirodiaz.github.io
+- https://alavi.me
+- https://blog.pansi21.xyz
+- https://daudix.codeberg.page (obviously)
+- https://digital-horror.com
+- https://jzbor.de
 - https://notaplace.com
+- https://pyter.at
+- https://sorg.codeberg.page
+- https://sungsphinx.codeberg.page
 - Yours?
 
 ## Credits
