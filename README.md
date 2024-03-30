@@ -18,6 +18,20 @@ See the [live demo](https://daudix.codeberg.page/duckquill) for the docs.
 
 If you want to improve Duckquill in any way, feel free to open an issue, or better yet, a pull request! I appreciate every contribution!
 
+## Sites that use Duckquill
+
+- https://sungsphinx.codeberg.page
+- https://sorg.codeberg.page
+- https://alavi.me
+- https://agustinramirodiaz.github.io
+- https://jzbor.de
+- https://blog.pansi21.xyz
+- https://pyter.at
+- https://digital-horror.com
+- http://www.lukoktonos.com
+- https://notaplace.com
+- Yours?
+
 ## Credits
 
 - [Quill image used in the metadata card](https://commons.wikimedia.org/wiki/File:3quills.jpg)
