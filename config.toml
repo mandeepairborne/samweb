@@ -52,8 +52,8 @@ source_url = "https://codeberg.org/daudix/duckquill"
 show_feed = true
 # Links used in the nav
 links = [
-  {url = "$BASE_URL/blog", name = "Blog"},
-  {url = "$BASE_URL/demo", name = "Demo"},
+  {url = "@/blog/_index.md", name = "Blog"},
+  {url = "@/demo/index.md", name = "Demo"},
   {url = "https://codeberg.org/daudix/duckquill", name = "Repo"},
 ]
 
