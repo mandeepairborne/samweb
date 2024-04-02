@@ -1,21 +1,21 @@
 .dialog-buttons {
 	display: flex;
 	flex-direction: row;
-	align-items: baseline;
 	justify-content: space-between;
+	align-items: baseline;
 	margin-top: 6rem;
 }
 
 .inline-button {
-	background-color: var(--fg-muted-1);
-	border-radius: var(--rounded-corner);
-	box-shadow: var(--edge-highlight);
-	color: var(--fg-color);
 	display: inline-block;
-	font-size: 0.9rem;
-	padding: 0.5rem 1rem;
-	text-decoration: none;
 	transition: var(--transition);
+	box-shadow: var(--edge-highlight);
+	border-radius: var(--rounded-corner);
+	background-color: var(--fg-muted-1);
+	padding: 0.5rem 1rem;
+	color: var(--fg-color);
+	font-size: 0.9rem;
+	text-decoration: none;
 
 	&:hover {
 		background-color: var(--fg-muted-2);
@@ -27,13 +27,13 @@
 	}
 
 	&.colored {
-		background-color: transparent;
 		box-shadow: none;
+		background-color: transparent;
 		color: var(--primary-color);
 
 		&:hover {
-			background-color: var(--primary-color-alpha);
 			box-shadow: var(--edge-highlight);
+			background-color: var(--primary-color-alpha);
 		}
 	}
 }

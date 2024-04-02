@@ -1,14 +1,14 @@
 #site-nav {
 	-webkit-backdrop-filter: var(--blur);
-	backdrop-filter: var(--blur);
-	background-color: var(--nav-bg);
-	border-radius: 26px;
-	box-shadow: var(--edge-highlight), 0px 12px 24px -16px rgba(0, 0, 0, 0.5);
-	margin: 1rem auto;
-	max-width: min(calc(var(--content-width) + 10rem), 90%);
 	position: sticky;
 	top: 1rem;
 	z-index: 999;
+	backdrop-filter: var(--blur);
+	margin: 1rem auto;
+	box-shadow: var(--edge-highlight), 0px 12px 24px -16px rgba(0, 0, 0, 0.5);
+	border-radius: 26px;
+	background-color: var(--nav-bg);
+	max-width: min(calc(var(--content-width) + 10rem), 90%);
 
 	nav {
 		display: flex;
@@ -20,27 +20,27 @@
 		ul {
 			display: flex;
 			flex-wrap: wrap;
-			gap: 0.25rem;
 			justify-content: center;
+			gap: 0.25rem;
 			margin: 0;
 			padding: 0;
 		}
 
 		li {
-			list-style: none;
 			display: inline-flex;
+			list-style: none;
 		}
 
 		a {
-			border-radius: 999px;
-			color: var(--fg-muted-4);
-			padding: 0.325rem 0.75rem;
-			text-decoration: none;
 			transition: var(--transition);
+			border-radius: 999px;
+			padding: 0.325rem 0.75rem;
+			color: var(--fg-muted-4);
+			text-decoration: none;
 
 			&:hover {
-				background-color: var(--fg-muted-1);
 				box-shadow: var(--edge-highlight);
+				background-color: var(--fg-muted-1);
 				color: var(--primary-color);
 				text-decoration: none;
 			}
@@ -51,10 +51,10 @@
 		}
 
 		#main-content {
-			background: var(--bg-color);
 			position: absolute;
 			transform: translateY(-300%);
 			z-index: 999;
+			background: var(--bg-color);
 
 			&:focus {
 				transform: translateY(0);
@@ -66,18 +66,18 @@
 			margin-right: 0.625rem;
 
 			&::after {
-				background-color: var(--fg-muted-2);
-				content: "";
-				height: 110%;
 				position: absolute;
-				right: -0.5rem;
 				top: 0;
+				right: -0.5rem;
+				background-color: var(--fg-muted-2);
 				width: 1px;
+				height: 110%;
+				content: "";
 			}
 
 			a {
-				font-weight: 800;
 				color: var(--fg-muted-5);
+				font-weight: 800;
 
 				&:hover {
 					color: var(--primary-color);
