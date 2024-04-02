@@ -7,8 +7,6 @@
 	width: 150px;
 
 	@media only screen and (max-width: 720px) {
-		& {
-			display: none;
-		}
+		display: none;
 	}
 }

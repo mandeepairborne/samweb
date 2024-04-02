@@ -11,14 +11,12 @@ html {
 	accent-color: var(--primary-color);
 	overflow-wrap: break-word;
 	overflow: hidden; // Disable scroll of html, scroll body instead
-}
 
-// Smaller font size on mobile
-// @media only screen and (max-width: 480px) {
-//   html {
-//     font-size: 14px;
-//   }
-// }
+	// Smaller font size on mobile
+	// @media only screen and (max-width: 480px) {
+	//     font-size: 14px;
+	// }
+}
 
 html,
 body {
@@ -177,11 +175,9 @@ aside {
 	width: 30%;
 
 	@media only screen and (max-width: 720px) {
-		& {
-			width: 100%;
-			float: none;
-			margin-inline-start: 0;
-		}
+		width: 100%;
+		float: none;
+		margin-inline-start: 0;
 	}
 }
 

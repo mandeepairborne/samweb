@@ -27,8 +27,6 @@
 	}
 
 	&.colored {
-		-webkit-backdrop-filter: unset;
-		backdrop-filter: unset;
 		background-color: transparent;
 		box-shadow: none;
 		color: var(--primary-color);
