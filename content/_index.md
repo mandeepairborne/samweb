@@ -42,13 +42,24 @@ git submodule init
 git submodule add https://codeberg.org/daudix/duckquill.git themes/duckquill
 ```
 
-To update the submodule, use the following command:
+It is highly recommended to switch from the `main` branch to the lates release:
+
+```sh
+cd themes/duckquill
+git checkout tags/v1.0.0
+```
+
+To update the submodule, simply switch to a new tag:
+
+> **Note:** Check the changelog for all versions that came after the one you are using, there may be some breaking changes that need manual involvement.
 
 ```sh
 git submodule update --remote --merge
+git tag --list
+git checkout tags/v1.0.0
 ```
 
-and then enable it in your `config.toml`:
+Then, enable it in your `config.toml`:
 
 ```toml
 theme = "duckquill"
