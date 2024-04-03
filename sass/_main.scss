@@ -5,7 +5,6 @@
 }
 
 html {
-	overflow: hidden; // Disable scroll of html, scroll body instead
 	scroll-behavior: smooth;
 	// scrollbar-color: var(--primary-color) transparent;
 	accent-color: var(--primary-color);
@@ -31,7 +30,6 @@ body {
 	background: var(--bg-color);
 	height: 100vh;
 	min-height: 100vh;
-	overflow: scroll; // Scroll body instead of html
 	color: var(--fg-color);
 	line-height: 1.6;
 	font-family: var(--font-system);
