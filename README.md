@@ -1,62 +1,44 @@
-# Duckquill
-
 [![Please don't upload to GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
 [![status-badge](https://ci.codeberg.org/api/badges/13032/status.svg)](https://ci.codeberg.org/repos/13032)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue)](https://mit-license.org)
+
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Donate-FF5E5B?logo=kofi)](https://ko-fi.com/daudix)
 [![Liberapay](https://img.shields.io/badge/Liberapay-Donate-F6C915?logo=liberapay)](https://liberapay.com/daudix)
 [![Paypal](https://img.shields.io/badge/PayPal-Donate-00457C?logo=paypal)](https://paypal.me/Daudix)
 
-[Duckquill](https://daudix.codeberg.page/duckquill) is a modern, pretty, and clean (and opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
+# [Duckquill](https://daudix.codeberg.page/duckquill/) <img src="static/apple-touch-icon.png" alt="logo" width="90" align="right"/>
 
-[![Duckquill screenshot](./screenshot.png)](https://daudix.codeberg.page/duckquill)
+Duckquill is a modern, pretty, and clean (and opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
+
+![Duckquill screenshot](screenshot.png)
 
 ## Docs
 
-See the [live demo](https://daudix.codeberg.page/duckquill) for the docs.
+Docs are provided in form of a [live demo](https://daudix.codeberg.page/duckquill).
 
-## Contribute
+## Know your rights
 
-If you want to improve Duckquill in any way, feel free to open an issue, or better yet, a pull request! I appreciate every contribution!
+This website is under the MIT license:
 
-## Sites that use Duckquill
+- **Freedom to Use**: You have the right to use the software for any purpose, whether it's personal, academic, or commercial.
+- **Freedom to Modify**: You can modify the source code of the software to suit your needs or preferences.
+- **Freedom to Distribute**: You have the right to distribute the software, whether in its original form or modified, to others.
+- **Collaboration**: You can collaborate with others on the software's development and improvement.
+- **No License Compatibility Issues**: You can combine the MIT-licensed software with other software, even if they use different licenses.
+- **No Usage Restrictions**: There are no restrictions on the technologies or fields of use, giving you maximum flexibility.
+- **No Royalties**: You are not required to pay any royalties or fees for using, modifying, or distributing the software.
 
-- [agustinramirodiaz.github.io](https://agustinramirodiaz.github.io)
-- [alavi.me](https://alavi.me)
-- [bano.dev](https://bano.dev)
-- [blog.pansi21.xyz](https://blog.pansi21.xyz)
-- [daudix.codeberg.page](https://daudix.codeberg.page) (obviously)
-- [daveparr.info](https://www.daveparr.info)
-- [digital-horror.com](https://digital-horror.com)
-- [enriquekesslerm.com](https://enriquekesslerm.com)
-- [enriquekesslerm.com](https://enriquekesslerm.com)
-- [jzbor.de](https://jzbor.de)
-- [licu.dev](https://licu.dev)
-- [luciengheerbrant.com](https://luciengheerbrant.com)
-- [lukoktonos.com](http://www.lukoktonos.com)
-- [malloc.garden](https://malloc.garden)
-- [mourelask.xyz](https://mourelask.xyz)
-- [nbenedek.me](https://nbenedek.me)
-- [notaplace.com](https://notaplace.com)
-- [pyter.at](https://pyter.at)
-- [rbd.gg](https://www.rbd.gg)
-- [rerere.unlogic.co.uk](https://rerere.unlogic.co.uk)
-- [sorg.codeberg.page](https://sorg.codeberg.page)
-- [sungsphinx.codeberg.page](https://sungsphinx.codeberg.page)
-- [treeniks.github.io](https://treeniks.github.io)
-- Yours?
+## Contributing guidelines
 
-Not sites that use Duckquill but ones that mention it in credits:
+There are several ways to contribute to this project:
 
-- [andreatitolo.com](https://www.andreatitolo.com/credits)
-- [aplos.gxbs.me](https://aplos.gxbs.me)
-- [oomfie.town](https://oomfie.town/credits)
+- Reporting issues
+- Discussing potential improvements
+- Contributing code
+- Writing documentation
+- Submitting feature requests
+- Providing feedback
 
-## Credits
+When making any sort of contribution, please make sure to follow [Forgejo's Code of Conduct](https://codeberg.org/forgejo/code-of-conduct). If you don't have the time to read it, just know that all you have to do is be nice, and you'll be just fine.
 
-- [Quill image used in the metadata card](https://commons.wikimedia.org/wiki/File:3quills.jpg)
-
-## Thanks to ♥
-
-- [Jakub Steiner](https://jimmac.eu) for the [OS Component Website](https://jimmac.github.io/os-component-website), on top of which this whole thing is built
-- [Carl Schwan](https://carlschwan.eu) for the [Mastodon-powered Comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/)
-- Everyone who supported me and said good stuff <3
+*</> with <3 by [daudix](https://daudix.codeberg.page) | README based on [libreivan's](https://codeberg.org/libreivan/libreivan.com)*
