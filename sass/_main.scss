@@ -225,8 +225,12 @@ pre {
 	}
 
 	table {
+		box-shadow: none;
+		border-radius: 0;
 		border-collapse: collapse;
 		width: 100%;
+		table-layout: auto;
+		overflow: auto;
 	}
 
 	// The line numbers already provide some kind of left/right padding
