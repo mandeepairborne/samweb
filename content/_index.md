@@ -89,9 +89,10 @@ primary_color_alpha = "COLOR_CODE"
 
 ## Test pages
 
-- [Demo page](https://daudix.codeberg.page/duckquill/demo)
-- [Cake Party!](https://daudix.codeberg.page/duckquill/demo/page)
-- [ActivityPub/​Fediverse comments demo](https://daudix.codeberg.page/duckquill/demo/comments)
+- [Demo page](@/demo/index.md)
+- [Cake Party!](@/demo/page.md)
+- [ActivityPub/​Fediverse comments demo](@/demo/comments.md)
+- [Code block demo (needs Zola v0.18.0 and higher)](@/demo/code.md)
 
 ## Contribute
 
