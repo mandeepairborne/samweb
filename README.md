@@ -1,6 +1,6 @@
 [![Please don't upload to GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
-[![status-badge](https://ci.codeberg.org/api/badges/13032/status.svg)](https://ci.codeberg.org/repos/13032)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue)](https://mit-license.org)
+[![status-badge](https://ci.codeberg.org/api/badges/13032/status.svg)](https://ci.codeberg.org/repos/13032)
 
 # [Duckquill](https://daudix.codeberg.page/duckquill/) <img src="static/apple-touch-icon.png" alt="Logo" width="90" align="right"/>
 
