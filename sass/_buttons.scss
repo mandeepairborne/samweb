@@ -9,6 +9,7 @@
 .inline-button {
 	display: inline-block;
 	transition: var(--transition);
+	cursor: pointer;
 	box-shadow: var(--edge-highlight);
 	border-radius: var(--rounded-corner);
 	background-color: var(--fg-muted-1);
