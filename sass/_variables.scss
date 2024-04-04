@@ -45,8 +45,6 @@
 	}
 
 	@media (prefers-color-scheme: dark) {
-		color-scheme: dark;
-	
 		// COLORS
 		--bg-color: var(--bg-color-d);
 		--fg-color: rgb(255, 255, 255);
@@ -64,5 +62,7 @@
 		--red-fg: rgb(246, 97, 81);
 		--yellow-bg: rgba(248, 228, 92, 0.1);
 		--yellow-fg: rgb(248, 228, 92);
+
+		color-scheme: dark;
 	}
 }
