@@ -28,7 +28,6 @@ body {
 	display: grid;
 	grid-template-rows: auto minmax(auto, 1fr) auto; // Header, stuff, footer
 	background: var(--bg-color);
-	height: 100vh;
 	min-height: 100vh;
 	color: var(--fg-color);
 	line-height: 1.6;
