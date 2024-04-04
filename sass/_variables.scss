@@ -8,14 +8,16 @@
 	--fg-muted-4: rgba(0, 0, 0, 0.5);
 	--fg-muted-5: rgba(0, 0, 0, 0.6);
 	--nav-bg: rgba(242, 242, 242, 0.7);
-	--orange-bg: rgba(255, 120, 0, 0.1);
-	--orange-fg: rgb(255, 120, 0);
 	--purple-bg: rgba(145, 65, 172, 0.1);
 	--purple-fg: rgb(145, 65, 172);
 	--red-bg: rgba(224, 27, 36, 0.1);
 	--red-fg: rgb(224, 27, 36);
 	--yellow-bg: rgba(156, 110, 3, 0.1);
 	--yellow-fg: rgb(156, 110, 3);
+	--boosts-bg: rgba(145, 65, 172, 0.1);
+	--boosts-fg: rgb(145, 65, 172);
+	--faves-bg: rgba(229, 165, 10, 0.1);
+	--faves-fg: rgb(229, 165, 10);
 
 	// VARIABLES
 	--active: 0.9;
@@ -31,10 +33,10 @@
 	--rounded-corner: 12px;
 	--shadow-raised: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 2px 6px 2px rgba(0, 0, 0, 0.14), 0 4px 12px 4px rgba(0, 0, 0, 0.06);
 	--shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
-	--transition-bezier: 350ms cubic-bezier(0.17, 0.89, 0.32, 1.28);
-	--transition-long: 800ms;
-	--transition-longer: 400ms;
-	--transition: 200ms;
+	--transition-bezier: 0.35s cubic-bezier(0.17, 0.89, 0.32, 1.28);
+	--transition-long: 0.8s;
+	--transition-longer: 0.4s;
+	--transition: 0.2s;
 
 	@media (prefers-reduced-motion) {
 		// VARIABLES
@@ -54,14 +56,16 @@
 		--fg-muted-4: rgba(255, 255, 255, 0.5);
 		--fg-muted-5: rgba(255, 255, 255, 0.6);
 		--nav-bg: rgba(25, 25, 25, 0.7);
-		--orange-bg: rgba(255, 190, 111, 0.1);
-		--orange-fg: rgb(255, 190, 111);
 		--purple-bg: rgba(220, 138, 221, 0.1);
 		--purple-fg: rgb(220, 138, 221);
 		--red-bg: rgba(226, 97, 81, 0.1);
 		--red-fg: rgb(246, 97, 81);
 		--yellow-bg: rgba(248, 228, 92, 0.1);
 		--yellow-fg: rgb(248, 228, 92);
+		--boosts-bg: rgba(220, 138, 221, 0.1);
+		--boosts-fg: rgb(220, 138, 221);
+		--faves-bg: rgba(249, 240, 107, 0.1);
+		--faves-fg: rgb(249, 240, 107);
 
 		color-scheme: dark;
 	}

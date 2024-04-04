@@ -5,7 +5,7 @@
 	background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), var(--primary-color);
 
 	pre {
-		animation: flicker 250ms alternate infinite;
+		animation: flicker 0.25s alternate infinite;
 		margin: unset;
 		box-shadow: unset;
 		// Unset some <pre> stuff
@@ -52,7 +52,7 @@
 		top: 0;
 		left: 0;
 		z-index: 1;
-		animation: scanlines 250ms linear infinite;
+		animation: scanlines 0.25s linear infinite;
 		background: repeating-linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) 1px, transparent 3px, transparent 4px);
 		width: 100%;
 		height: calc(100% + 0.5rem);

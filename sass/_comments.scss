@@ -155,17 +155,13 @@ section#comments {
 
 				svg {
 					vertical-align: -0.125em;
-					transition: var(--transition-long);
+					transition: var(--transition-longer);
 					margin-inline-end: 0.25rem;
 				}
 
 				&:hover {
 					box-shadow: var(--edge-highlight);
 					text-decoration: none;
-
-					svg {
-						rotate: 360deg;
-					}
 				}
 
 				&:active {
@@ -174,18 +170,26 @@ section#comments {
 			}
 
 			.boosts {
-				color: var(--purple-fg);
+				color: var(--boosts-fg);
 
 				&:hover {
-					background-color: var(--purple-bg);
+					background-color: var(--boosts-bg);
+
+					svg {
+						rotate: 180deg;
+					}
 				}
 			}
 
 			.faves {
-				color: var(--orange-fg);
+				color: var(--faves-fg);
 
 				&:hover {
-					background-color: var(--orange-bg);
+					background-color: var(--faves-bg);
+
+					svg {
+						rotate: 72deg;
+					}
 				}
 			}
 		}
