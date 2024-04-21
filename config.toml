@@ -28,26 +28,29 @@ smart_punctuation = true
 primary_color = "#ff7800"
 # Same as primary_color, but with 20% opacity
 primary_color_alpha = "rgba(255, 120, 0, 0.2)"
-# Emoji favicon; can be set per-page or even section.
+# Whether to use emoji as a favicon.
+# Replace with an emoji wrapped in quotes.
 emoji_favicon = false
-# If the favicon is GIF or not
+# Whether the favicon is an animated GIF or not
 animated_favicon = false
-# Tera date format (not used in comments).
+# Tera Date format used when listing posts
+# (post publication date, tag posts list...).
+# Not used in comments.
 # See https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html
 date_format = "%d %B %Y"
-# URL to issue tracker
+# URL to website's issue tracker
 issues_url = "https://codeberg.org/daudix/duckquill/issues"
 # URL to website's source code
 source_url = "https://codeberg.org/daudix/duckquill"
 # Additional stylesheets; expects it to be in the "./static/" directory.
-# If you are using Sass it will be compiled there anyway.
+# If you are using Sass it will be generated there automatically.
 # stylesheets = [
 #   "YOUR_STYLE.css",
 #   "ALSO_YOUR_STYLE.css"
 # ]
 
 [extra.nav]
-# Display Atom/RSS feed button in the nav
+# Whether to show Atom/RSS feed button in the nav
 show_feed = true
 # Links used in the nav.
 # For local files use same link format as in Markdown,
@@ -60,15 +63,16 @@ links = [
 ]
 
 [extra.footer]
-# URL to the website without the https:// part, used for Johnvertisement leaderboard
+# URL to the website without the https:// part,
+# used for Johnvertisement leaderboard.
 johnvert_ref = "daudix.codeberg.page"
-# "© Title, YEAR" in the footer
+# Whether to show "© Title, YEAR"
 show_copyright = true
-# Marketing via "john" in the footer
+# Whether to show marketing via "john"
 show_johnvert = false
-# "Powered by Zola and Duckquill" in footer
+# Whether to show "Powered by Zola and Duckquill"
 show_powered_by = true
-# Link to website source
+# Whether to show link to website source
 show_source = true
 
 # Based on https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
@@ -80,9 +84,12 @@ show_source = true
 # These variables are also used for Mastodon verification,
 # the needed rel="me" link is set in the head based on these.
 [extra.comments]
-# Your Mastodon API host; this should be where you have an account
-host = "mstdn.social"
-# Used to determine who the original poster is
-user = "Daudix"
-# Display the QR code to Mastodon post
+# Your Mastodon API host; instance that you have an account on
+host = "social.treehouse.systems"
+# Your Mastodon username; used to determine who the original poster is
+user = "daudix"
+# Whether to show the QR code to Mastodon post
 show_qr = true
+# BCP 47 locale used for comment timestamps;
+# See https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
+locale = "en-IE"

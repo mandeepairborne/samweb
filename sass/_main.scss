@@ -210,6 +210,7 @@ pre {
 
 	mark {
 		display: block;
+		box-shadow: none;
 		border-radius: 0; // Unset code block border radius
 		background-color: var(--fg-muted-1);
 		padding: 0; // Unset mark padding
@@ -223,6 +224,12 @@ pre {
 		width: 100%;
 		table-layout: auto;
 		overflow: auto;
+
+		tr {
+			&:nth-child(even) {
+				background-color: unset;
+			}
+		}
 	}
 
 	// The line numbers already provide some kind of left/right padding
