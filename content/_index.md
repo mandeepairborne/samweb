@@ -115,7 +115,6 @@ primary_color_alpha = "COLOR_CODE"
 - [daveparr.info](https://www.daveparr.info)
 - [digital-horror.com](https://digital-horror.com)
 - [enriquekesslerm.com](https://enriquekesslerm.com)
-- [enriquekesslerm.com](https://enriquekesslerm.com)
 - [jzbor.de](https://jzbor.de)
 - [licu.dev](https://licu.dev)
 - [luciengheerbrant.com](https://luciengheerbrant.com)
