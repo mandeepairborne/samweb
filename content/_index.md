@@ -145,4 +145,5 @@ primary_color_alpha = "COLOR_CODE"
 
 - [Jakub Steiner](https://jimmac.eu) for the [OS Component Website](https://jimmac.github.io/os-component-website), which served as a starting point and inspiration.
 - [Carl Schwan](https://carlschwan.eu) for the [Mastodon-powered Comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/).
+- [Jonathan Neal](https://github.com/jonathantneal) for the [normalize.css](https://csstools.github.io/normalize.css/).
 - Everyone who supported me and said good stuff <3
