@@ -6,12 +6,11 @@ date = 2023-08-31
 [taxonomies]
 tags = ["Demo", "Test"]
 [extra]
+archive = "This page is, in fact, not archived."
 toc = true
 disclaimer = """
 See [demo](@/demo/index.md) for showcase of all Duckquill possibilities, this page is a demo of a post with title, publication date, tags, disclaimer, table of contents and comments.
 """
-[extra.comments]
-id = ""
 +++
 
 ![Quill](quill.png)

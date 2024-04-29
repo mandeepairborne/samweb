@@ -1,10 +1,11 @@
 +++
-authors = ["John Lorem"]
-title = "Lorem"
-description = "Lorem ipsum dolor sit amet."
-date = 1970-01-01
+authors = ["John Draft"]
+title = "Drafty draft"
+description = "Drafted post, very drafty."
+date = 2024-04-29
+draft = true
 [taxonomies]
-tags = ["Lorem", "Ipsum"]
+tags = ["Draft"]
 [extra]
 toc = false
 +++
