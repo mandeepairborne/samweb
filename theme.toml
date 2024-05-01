@@ -12,9 +12,6 @@ date_format = "%d %B %Y"
 issues_url = ""
 source_url = ""
 
-[extra.nav]
-links = []
-
 [author]
 name = "David Lapshin"
 homepage = "https://daudix.codeberg.page"
