@@ -3,9 +3,19 @@
 		position: relative;
 
 		&.draft {
+			scale: 0.95;
+			opacity: 0.6;
+			transition: var(--transition);
 			outline: 2px dashed var(--fg-muted-2);
-			outline-offset: 0.5rem;
+			outline-offset: 1rem;
 			border-radius: 1rem;
+
+			&:hover {
+				scale: 1;
+				opacity: 1;
+				outline: 2px dashed transparent;
+				outline-offset: 0;
+			}
 		}
 
 		.draft-badge,
