@@ -3,7 +3,7 @@
 		position: relative;
 
 		&.draft {
-			scale: 0.95;
+			transform: scale(0.95);
 			opacity: 0.6;
 			transition: var(--transition-longer);
 			outline: 2px dashed var(--fg-muted-2);
@@ -11,7 +11,7 @@
 			border-radius: 1rem;
 
 			&:hover {
-				scale: 1;
+				transform: scale(1);
 				opacity: 1;
 				outline: 2px dashed transparent;
 				outline-offset: 0;

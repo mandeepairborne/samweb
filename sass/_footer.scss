@@ -60,6 +60,10 @@
 					background-color: var(--primary-color);
 				}
 
+				&:active {
+					transform: scale(var(--active));
+				}
+
 				span {
 					display: none;
 				}

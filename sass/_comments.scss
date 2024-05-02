@@ -175,7 +175,7 @@ section#comments {
 					background-color: var(--boosts-bg);
 
 					svg {
-						rotate: 180deg;
+						transform: rotate(180deg);
 					}
 				}
 			}
@@ -187,7 +187,7 @@ section#comments {
 					background-color: var(--faves-bg);
 
 					svg {
-						rotate: 72deg;
+						transform: rotate(72deg);
 					}
 				}
 			}
