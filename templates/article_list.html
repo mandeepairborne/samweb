@@ -11,7 +11,7 @@
 	From newest to oldest ↓
 </small>
 
-<div class="blog-list">
+<div id="article-list">
 	{% for page in section.pages %}
 		<article {% if page.draft %}class="draft"{% endif %}>
 			<h3><a class="link-page" href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>

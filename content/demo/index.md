@@ -1,5 +1,5 @@
 +++
-template = "blog.html"
+template = "article.html"
 title = "Demo Page"
 [extra]
 archive = "This page is, in fact, not archived, meaning it will receive content updates."
