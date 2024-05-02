@@ -1,11 +1,81 @@
 #site-footer {
-	margin-top: 4rem;
-	padding: 3rem 0 3rem;
-	font-size: 1rem;
+	margin-top: 6rem;
+	background-color: var(--fg-muted-1);
+	padding: 2rem 0 2rem;
 	text-align: center;
+
+	#links {
+		display: block;
+		column-gap: 2rem;
+		column-width: 25ex;
+		margin: 0 auto 1rem;
+		padding: 0;
+		max-width: min(var(--content-width) + 10rem, 90%);
+
+		li {
+			display: block;
+			padding: 0.25rem 0;
+			list-style: none;
+
+			a {
+				display: block;
+				margin: auto;
+				color: var(--fg-muted-5);
+				text-decoration: none;
+
+				&:hover {
+					color: var(--primary-color);
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	#socials {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: baseline;
+		gap: 1rem;
+		margin: 1rem 0 0;
+		padding: 0;
+
+		li {
+			display: block;
+			padding: 0;
+			padding: 0.25rem 0;
+			list-style: none;
+
+			a {
+				display: inline-block;
+				transition: var(--transition);
+				margin: 0;
+				background-color: var(--fg-muted-5);
+				width: 2rem;
+				height: 2rem;
+				content: "";
+
+				&:hover {
+					background-color: var(--primary-color);
+				}
+
+				span {
+					display: none;
+				}
+			}
+		}
+	}
+
+	p {
+		margin: auto;
+		padding: 0.5rem;
+		max-width: min(var(--content-width) + 10rem, 90%);
+	}
 
 	details {
 		all: unset;
+		margin: 0 auto;
 		color: var(--fg-muted-5);
 		font-size: 0.8rem;
 	}

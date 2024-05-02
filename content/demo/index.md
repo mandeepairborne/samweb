@@ -282,21 +282,13 @@ To switch the keyboard layout, press <kbd>⌘ Super</kbd> + <kbd>Space</kbd>.
 
 You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>important</mark> that even **bold** is not enough.
 
-## Link to page (rightwards arrow)
+## External link
 
 ```html
-<a class="page-link" href="demo/demo-page">Link to page</a>
+<a class="external" href="https://example.org">Link to site</a>
 ```
 
-<a class="link-page" href="demo/page">Link to page</a>
-
-## Link to site (up-rightwards arrow)
-
-```html
-<a class="site-link" href="https://example.org">Link to site</a>
-```
-
-<a class="link-site" href="https://example.org">Link to site</a>
+<a class="external" href="https://example.org">Link to site</a>
 
 ## Buttons
 
