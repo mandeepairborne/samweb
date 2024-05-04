@@ -46,7 +46,10 @@
 		<ul id="socials">
 			{% for link in config.extra.footer.socials %}
 				<li>
-					<a style='mask-image: url("data:image/svg+xml,{{ link.icon }}"); -webkit-mask-image: url("data:image/svg+xml,{{ link.icon }}")' href="{{ link.url | safe }}" rel="me" title="{{ link.name }}"><span>{{ link.name }}</span></a>
+					<a href="{{ link.url | safe }}" rel="me" title="{{ link.name }}">
+						<i style='mask-image: url("data:image/svg+xml,{{ link.icon }}"); -webkit-mask-image: url("data:image/svg+xml,{{ link.icon }}")'></i>
+						<span>{{ link.name }}</span>
+					</a>
 				</li>
 			{% endfor %}
 		</ul>
