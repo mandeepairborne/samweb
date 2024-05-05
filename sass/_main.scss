@@ -63,7 +63,7 @@ body {
 .container {
 	margin-right: auto;
 	margin-left: auto;
-	width: min(var(--content-width), 90%);
+	width: min(var(--container-width), 90%);
 }
 
 h1,
