@@ -100,7 +100,7 @@ show_source = true
 # the needed rel="me" link is set in the head based on these.
 [extra.comments]
 # Your Mastodon API host; instance that you have an account on
-host = "social.treehouse.systems"
+host = "vmst.io"
 # Your Mastodon username; used to determine who the original poster is
 user = "daudix"
 # Whether to show the QR code to Mastodon post
