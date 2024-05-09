@@ -9,8 +9,12 @@ tags = ["Demo", "Test"]
 archive = "This page is, in fact, not archived."
 toc = true
 disclaimer = """
-See [demo](@/demo/index.md) for showcase of all Duckquill possibilities, this page is a demo of a post with title, publication date, tags, disclaimer, table of contents and comments.
+See [demo](@/demo/index.md) for showcase of all Duckquill possibilities. This page is a demo of a post with title, publication date, tags, disclaimer, table of contents and comments.
 """
+[extra.comments]
+host = "toot.community"
+user = "sungsphinx"
+id = "111789185826519979"
 +++
 
 ![Quill](quill.png)

@@ -27,7 +27,7 @@
 		}
 
 		.post-title {
-			transition: var(--transition);
+			transition: color var(--transition);
 			color: var(--fg-color);
 		}
 	}

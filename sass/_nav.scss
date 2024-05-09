@@ -32,7 +32,8 @@
 		}
 
 		a {
-			transition: var(--transition);
+			transition-duration: var(--transition);
+			transition-property: box-shadow, background-color, color;
 			border-radius: 999px;
 			padding: 0.325rem 0.75rem;
 			color: var(--fg-muted-4);

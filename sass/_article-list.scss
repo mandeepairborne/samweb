@@ -5,7 +5,8 @@
 		&.draft {
 			transform: scale(0.95);
 			opacity: 0.6;
-			transition: var(--transition-longer);
+			transition-duration: var(--transition-longer);
+			transition-property: transform, opacity, outline, outline-offset;
 			outline: 2px dashed var(--fg-muted-2);
 			outline-offset: 1rem;
 			border-radius: 1rem;
@@ -23,7 +24,6 @@
 			position: absolute;
 			top: 0;
 			right: 0;
-			transition: var(--transition);
 			box-shadow: var(--edge-highlight);
 			border-radius: 999px;
 			padding: 0.25rem 0.75rem;

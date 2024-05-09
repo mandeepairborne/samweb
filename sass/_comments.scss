@@ -47,7 +47,8 @@ section#comments {
 
 			.avatar {
 				all: unset;
-				transition: var(--transition);
+				transition-duration: var(--transition);
+				transition-property: transform, box-shadow;
 				box-shadow: var(--edge-highlight), var(--shadow);
 				border-radius: var(--rounded-corner);
 				background-position: 50%;
@@ -77,7 +78,8 @@ section#comments {
 			font-weight: bold;
 
 			.instance {
-				transition: var(--transition);
+				transition-duration: var(--transition);
+				transition-property: background-color, transform, box-shadow;
 				box-shadow: var(--edge-highlight);
 				border-radius: 999px;
 				background-color: var(--fg-muted-1);
@@ -96,8 +98,6 @@ section#comments {
 				}
 
 				&.op {
-					-webkit-backdrop-filter: unset;
-					backdrop-filter: unset;
 					box-shadow: none;
 					background-color: transparent;
 					color: var(--primary-color);
@@ -144,7 +144,8 @@ section#comments {
 			.boosts,
 			.faves {
 				display: inline-block;
-				transition: var(--transition);
+				transition-duration: var(--transition);
+				transition-property: box-shadow, transform, background-color;
 				margin-right: 0.25rem;
 				border-radius: 999px;
 				background-color: transparent;
@@ -154,7 +155,7 @@ section#comments {
 
 				svg {
 					vertical-align: -0.125em;
-					transition: var(--transition-longer);
+					transition: transform var(--transition-longer);
 					margin-inline-end: 0.25rem;
 				}
 

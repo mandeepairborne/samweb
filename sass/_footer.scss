@@ -45,7 +45,8 @@
 
 			a {
 				display: inline-flex;
-				transition: var(--transition);
+				transition-duration: var(--transition);
+				transition-property: box-shadow, background-color;
 				border-radius: 999px;
 				padding: 0.5rem;
 
@@ -64,7 +65,7 @@
 
 				i {
 					display: inline-block;
-					transition: var(--transition);
+					transition: background-color var(--transition);
 					background-color: var(--fg-muted-4);
 					width: 1.5rem;
 					height: 1.5rem;

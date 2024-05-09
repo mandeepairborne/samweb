@@ -8,7 +8,8 @@
 
 .inline-button {
 	display: inline-block;
-	transition: var(--transition);
+	transition-duration: var(--transition);
+	transition-property: background-color, transform, box-shadow;
 	cursor: pointer;
 	box-shadow: var(--edge-highlight);
 	border-radius: var(--rounded-corner);
