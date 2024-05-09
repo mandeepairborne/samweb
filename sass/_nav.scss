@@ -33,7 +33,7 @@
 
 		a {
 			transition-duration: var(--transition);
-			transition-property: box-shadow, background-color, color;
+			transition-property: box-shadow, background-color, color, transform;
 			border-radius: 999px;
 			padding: 0.325rem 0.75rem;
 			color: var(--fg-muted-4);
