@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
             let button = document.createElement("button");
             let icon = document.createElement("i");
 
+            icon.classList.add("icon");
+
             button.appendChild(icon);
             block.appendChild(button);
 
