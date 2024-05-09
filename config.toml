@@ -48,6 +48,10 @@ source_url = "https://codeberg.org/daudix/duckquill"
 #   "YOUR_STYLE.css",
 #   "ALSO_YOUR_STYLE.css"
 # ]
+# Whether to display "copy code" button on all code blocks
+# that have the language set.
+# See https://www.getzola.org/documentation/content/syntax-highlighting/
+show_copy_button = true
 
 [extra.nav]
 # Whether to show Atom/RSS feed button in the nav
@@ -88,7 +92,7 @@ show_johnvert = false
 # Whether to show "Powered by Zola and Duckquill"
 show_powered_by = true
 # Whether to show link to website source
-show_source = true
+show_source = false
 
 # Based on https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
 #
