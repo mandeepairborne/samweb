@@ -37,15 +37,6 @@
 	--transition-longer: 0.4s;
 	--transition: 0.2s;
 
-	@media (prefers-reduced-motion) {
-		*,
-		*::before,
-		*::after {
-			animation: none !important;
-			transition: none !important;
-		}
-	}
-
 	@media (prefers-color-scheme: dark) {
 		// COLORS
 		--bg-color: var(--bg-color-d);
@@ -68,5 +59,14 @@
 		--faves-fg: rgb(249, 240, 107);
 
 		color-scheme: dark;
+	}
+}
+
+@media (prefers-reduced-motion) {
+	*,
+	*::before,
+	*::after {
+		animation: none !important;
+		transition: none !important;
 	}
 }
