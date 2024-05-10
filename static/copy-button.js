@@ -4,13 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     blocks.forEach((block) => {
         if (navigator.clipboard) {
+            let container = document.createElement("div");
+            container.classList.add("pre-container");
+
+            block.parentNode.insertBefore(container, block);
+            container.appendChild(block);
+
             let button = document.createElement("button");
             let icon = document.createElement("i");
-
             icon.classList.add("icon");
-
             button.appendChild(icon);
-            block.appendChild(button);
+            container.appendChild(button);
 
             button.addEventListener("click", async () => {
                 await copyCode(block, button);
