@@ -65,6 +65,7 @@
 
 				i {
 					display: inline-block;
+					mask-size: cover;
 					transition: background-color var(--transition);
 					background-color: var(--fg-muted-4);
 					width: 1.5rem;
