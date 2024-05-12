@@ -130,6 +130,7 @@ primary_color_alpha = "COLOR_CODE"
 - [sorg.codeberg.page](https://sorg.codeberg.page)
 - [sungsphinx.codeberg.page](https://sungsphinx.codeberg.page)
 - [treeniks.github.io](https://treeniks.github.io)
+- [vikramxd.github.io](https://vikramxd.github.io)
 - Yours?
 
 ## Sites that mention Duckquill in credits
