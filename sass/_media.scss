@@ -2,11 +2,11 @@ img {
 	transition-duration: var(--transition-longer);
 	transition-property: transform, box-shadow, border-radius;
 
-	&:not(.no-hover) {
+	&:not(.no-hover, &[src*="#no-hover"]) {
 		cursor: zoom-in;
 	}
 
-	&:not(.no-hover):hover {
+	&:not(.no-hover, &[src*="#no-hover"]):hover {
 		transform: scale(1.1);
 		box-shadow: var(--shadow-raised);
 		border-radius: 0;
@@ -21,15 +21,18 @@ video {
 	border-radius: var(--rounded-corner);
 	max-width: 100%;
 
-	&.full {
+	&.full,
+	&[src*="#full"] {
 		width: 100%;
 	}
 
-	&.pixels {
+	&.pixels,
+	&[src*="#pixels"] {
 		image-rendering: pixelated;
 	}
 
-	&.transparent {
+	&.transparent,
+	&[src*="#transparent"] {
 		box-shadow: none;
 		border-radius: 0;
 

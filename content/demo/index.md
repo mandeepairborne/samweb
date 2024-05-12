@@ -170,12 +170,20 @@ Variables should be comma-separated and be inside the brackets.
 ```
 
 {{ image(url="https://i1.theportalwiki.net/img/2/23/Ashpd_blueprint.jpg", alt="Portal Gun blueprint", no_hover=true) }}
-
 <figcaption>Image with an alt text and without zoom on hover</figcaption>
 
 {{ image(url="https://upload.wikimedia.org/wikipedia/commons/b/b4/JPEG_example_JPG_RIP_100.jpg", url_min="https://upload.wikimedia.org/wikipedia/commons/3/38/JPEG_example_JPG_RIP_010.jpg", alt="The gravestone of J.P.G.", no_hover=true) }}
-
 <figcaption>Image with compressed version, an alt text, and without zoom on hover</figcaption>
+
+Alternatively, you can append the following url anchors. It can be more handy in some cases, e.g such images will render normally in any Markdown editor, opposed to the Zola shortcodes.
+
+- `#full`: Forces image/video to be full-width.
+- `#pixels`: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.
+- `#transparent`: Removes rounded corners and shadow, useful for transparent images.
+- `#no-hover`: Removes zoom on hover.
+
+![Toolbx header image](https://containertoolbx.org/assets/toolbx.gif#full#pixels#transparent#no-hover)
+<figcaption>Full-width image with an alt text, pixel-art rendering, no shadow and rounded corners, and no zoom on hover</figcaption>
 
 #### Video
 
@@ -186,7 +194,6 @@ Same as images, but with a few differences: `no_hover` and `url_min` are not ava
 ```
 
 {{ video(url="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm", alt="Red flower wakes up") }}
-
 <figcaption>WebM video example from MDN</figcaption>
 
 #### CRT
@@ -228,16 +235,14 @@ Alright, this one doesn't simplify anything, it just adds a CRT-like effect arou
 
 ## Captions
 
-Media can have additional text description using the `<figcaption>` HTML tag.
+Media can have additional text description using the `<figcaption>` HTML tag directly under it.
 
 ```markdown
-![Image](image.pmg)
-
+![The Office](https://i.ibb.co/MPDJRsT/ImMAXM3.png)
 <figcaption>The image caption</figcaption>
 ```
 
 ![The Office](https://i.ibb.co/MPDJRsT/ImMAXM3.png)
-
 <figcaption>The Office where Stanley works, it has yellow floor and beige walls</figcaption>
 
 ## Accordion
