@@ -19,6 +19,10 @@
 			}
 		}
 
+		&:has(.draft-badge, .archive-badge) h3 {
+			margin-right: 7rem;
+		}
+
 		.draft-badge,
 		.archive-badge {
 			position: absolute;
