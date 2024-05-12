@@ -28,8 +28,8 @@
 
 	<style type="text/css">
 		:root {
-			--primary-color-alpha: {{ config.extra.primary_color_alpha }};
-			--primary-color: {{ config.extra.primary_color }};
+			--primary-color-alpha: {{ config.extra.primary_color_alpha | safe }};
+			--primary-color: {{ config.extra.primary_color | safe}};
 		}
 	</style>
 

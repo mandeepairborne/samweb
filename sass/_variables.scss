@@ -1,38 +1,38 @@
 :root {
 	// COLORS
 	--bg-color: var(--bg-color-l);
-	--fg-color: rgba(0, 0, 0, 0.8);
-	--fg-muted-1: rgba(0, 0, 0, 0.05);
-	--fg-muted-2: rgba(0, 0, 0, 0.1);
-	--fg-muted-3: rgba(0, 0, 0, 0.2);
-	--fg-muted-4: rgba(0, 0, 0, 0.5);
-	--fg-muted-5: rgba(0, 0, 0, 0.6);
-	--nav-bg: rgba(242, 242, 242, 0.7);
-	--purple-bg: rgba(145, 65, 172, 0.1);
-	--purple-fg: rgb(145, 65, 172);
-	--red-bg: rgba(224, 27, 36, 0.1);
-	--red-fg: rgb(224, 27, 36);
-	--yellow-bg: rgba(156, 110, 3, 0.1);
-	--yellow-fg: rgb(156, 110, 3);
-	--boosts-bg: rgba(145, 65, 172, 0.1);
-	--boosts-fg: rgb(145, 65, 172);
-	--faves-bg: rgba(229, 165, 10, 0.1);
-	--faves-fg: rgb(229, 165, 10);
+	--fg-color: hsl(0 0% 0% / 80%);
+	--fg-muted-1: hsl(0 0% 0% / 5%);
+	--fg-muted-2: hsl(0 0% 0% / 10%);
+	--fg-muted-3: hsl(0 0% 0% / 20%);
+	--fg-muted-4: hsl(0 0% 0% / 50%);
+	--fg-muted-5: hsl(0 0% 0% / 60%);
+	--nav-bg: hsl(0 0% 95% / 70%);
+	--purple-bg: hsl(285 45% 46% / 10%);
+	--purple-fg: hsl(285 45% 46%);
+	--red-bg: hsl(357 78% 49% / 10%);
+	--red-fg: hsl(357 78% 49%);
+	--yellow-bg: hsl(42 96% 31% / 10%);
+	--yellow-fg: hsl(42 96% 31%);
+	--boosts-bg: hsl(285 45% 46% / 10%);
+	--boosts-fg: hsl(285 45% 46%);
+	--faves-bg: hsl(42 92% 47% / 10%);
+	--faves-fg: hsl(42 92% 47%);
 
 	// VARIABLES
 	--active: 0.9;
-	--bg-color-d: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), var(--primary-color);
-	--bg-color-l: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), var(--primary-color);
+	--bg-color-d: linear-gradient(hsl(0 0% 0% / 90%), hsl(0 0% 0% / 90%)), var(--primary-color);
+	--bg-color-l: linear-gradient(hsl(0 0% 100% / 80%), hsl(0 0% 100% / 80%)), var(--primary-color);
 	--blur: saturate(180%) blur(10px);
 	--container-width: 720px;
-	--edge-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+	--edge-highlight: inset 0 1px 0 hsl(0 0% 100% / 10%);
 	--font-monospace: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
 	--font-serif: Rockwell, "Rockwell Nova", "Roboto Slab", "DejaVu Serif", "Sitka Small", serif;
 	--font-system: system-ui, sans-serif;
 	--rounded-corner-small: 8px;
 	--rounded-corner: 12px;
-	--shadow-raised: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 2px 6px 2px rgba(0, 0, 0, 0.14), 0 4px 12px 4px rgba(0, 0, 0, 0.06);
-	--shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
+	--shadow-raised: 0 0 0 1px hsl(0 0% 0% / 6%), 0 2px 6px 2px hsl(0 0% 0% / 14%), 0 4px 12px 4px hsl(0 0% 0% / 6%);
+	--shadow: 0 0 0 1px hsl(0 0% 0% / 3%), 0 1px 3px 1px hsl(0 0% 0% / 7%), 0 2px 6px 2px hsl(0 0% 0% / 3%);
 	--transition-long: 0.8s;
 	--transition-longer: 0.4s;
 	--transition: 0.2s;
@@ -40,29 +40,30 @@
 	@media (prefers-color-scheme: dark) {
 		// COLORS
 		--bg-color: var(--bg-color-d);
-		--fg-color: rgb(255, 255, 255);
-		--fg-muted-1: rgba(255, 255, 255, 0.05);
-		--fg-muted-2: rgba(255, 255, 255, 0.1);
-		--fg-muted-3: rgba(255, 255, 255, 0.2);
-		--fg-muted-4: rgba(255, 255, 255, 0.5);
-		--fg-muted-5: rgba(255, 255, 255, 0.6);
-		--nav-bg: rgba(25, 25, 25, 0.7);
-		--purple-bg: rgba(220, 138, 221, 0.1);
-		--purple-fg: rgb(220, 138, 221);
-		--red-bg: rgba(226, 97, 81, 0.1);
-		--red-fg: rgb(246, 97, 81);
-		--yellow-bg: rgba(248, 228, 92, 0.1);
-		--yellow-fg: rgb(248, 228, 92);
-		--boosts-bg: rgba(220, 138, 221, 0.1);
-		--boosts-fg: rgb(220, 138, 221);
-		--faves-bg: rgba(249, 240, 107, 0.1);
-		--faves-fg: rgb(249, 240, 107);
+		--fg-color: hsl(0 0% 100%);
+		--fg-muted-1: hsl(0 0% 100% / 5%);
+		--fg-muted-2: hsl(0 0% 100% / 10%);
+		--fg-muted-3: hsl(0 0% 100% / 20%);
+		--fg-muted-4: hsl(0 0% 100% / 50%);
+		--fg-muted-5: hsl(0 0% 100% / 60%);
+		--nav-bg: hsl(0 0% 10% / 70%);
+		--purple-bg: hsl(299 55% 70% / 10%);
+		--purple-fg: hsl(299 55% 70%);
+		--red-bg: hsl(7 71% 60% / 10%);
+		--red-fg: hsl(6 90% 64%);
+		--yellow-bg: hsl(52 92% 67% / 10%);
+		--yellow-fg: hsl(52 92% 67%);
+		--boosts-bg: hsl(299 55% 70% / 10%);
+		--boosts-fg: hsl(299 55% 70%);
+		--faves-bg: hsl(56 92% 70% / 10%);
+		--faves-fg: hsl(56 92% 70%);
 
 		color-scheme: dark;
 	}
 }
 
 @media (prefers-reduced-motion) {
+
 	*,
 	*::before,
 	*::after {
