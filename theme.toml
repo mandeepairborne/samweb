@@ -6,8 +6,8 @@ min_version = "0.17.2"
 demo = "https://daudix.codeberg.page/duckquill"
 
 [extra]
-primary_color = "hsl(45 2% 60%)"
-primary_color_alpha = "hsl(45 2% 60% / 20%)"
+primary_color = "#9a9996"
+primary_color_alpha = "rgba(154, 153, 150, 0.2)"
 date_format = "%d %B %Y"
 issues_url = ""
 source_url = ""

@@ -25,9 +25,9 @@ smart_punctuation = true
 [extra]
 # Sets theme and browser theme color.
 # See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
-primary_color = "hsl(28 100% 50%)"
+primary_color = "#ff7800"
 # Same as primary_color, but with 20% opacity
-primary_color_alpha = "hsl(28 100% 50% / 20%)"
+primary_color_alpha = "rgba(255, 120, 0, 0.2)"
 # Whether to use emoji as a favicon.
 # Replace with an emoji wrapped in quotes.
 emoji_favicon = false

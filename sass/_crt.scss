@@ -2,7 +2,7 @@
 	margin: 1rem 0 1rem;
 	box-shadow: 0 0 0 1px var(--primary-color-alpha), 0 2px 6px 2px var(--primary-color-alpha), 0 4px 24px 4px var(--primary-color-alpha);
 	border-radius: var(--rounded-corner);
-	background: radial-gradient(hsl(0 0% 0% / 70%), hsl(0 0% 0% / 85%)), var(--primary-color);
+	background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), var(--primary-color);
 
 	pre {
 		animation: flicker 0.25s alternate infinite;
@@ -52,7 +52,7 @@
 		left: 0;
 		z-index: 1;
 		animation: scanlines 0.25s linear infinite;
-		background: repeating-linear-gradient(to top, hsl(0 0% 0% / 25%), hsl(0 0% 0% / 25%) 1px, transparent 3px, transparent 4px);
+		background: repeating-linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) 1px, transparent 3px, transparent 4px);
 		width: 100%;
 		height: calc(100% + 0.5rem);
 		pointer-events: none;
