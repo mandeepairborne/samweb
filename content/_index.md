@@ -130,6 +130,7 @@ primary_color_alpha = "COLOR_CODE"
 - [sorg.codeberg.page](https://sorg.codeberg.page)
 - [sungsphinx.codeberg.page](https://sungsphinx.codeberg.page)
 - [treeniks.github.io](https://treeniks.github.io)
+- [veeronniecaw.space](https://veeronniecaw.space)
 - [vikramxd.github.io](https://vikramxd.github.io)
 - [zorrn.net](https://www.zorrn.net)
 - Yours?
