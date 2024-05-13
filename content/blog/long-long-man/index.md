@@ -1,6 +1,6 @@
 +++
 authors = ["Long Long Man"]
-title = "Loooooooooooooooooooooooooooooooooooooooooooooooong Loooooooooooooooooooooooooooooooooooooooooooooooong Man"
+title = "Loooooong Loooooong Loooooong Loooooong Loooooong Man"
 description = "Veeery, veeery looong man."
 date = 2017-01-01
 [taxonomies]
