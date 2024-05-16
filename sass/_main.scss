@@ -31,7 +31,7 @@ body {
 	min-height: 100vh;
 	color: var(--fg-color);
 	line-height: 1.6;
-	font-family: var(--font-system);
+	font-family: var(--font-system-ui);
 }
 
 // Style text selection to use primary color
@@ -75,8 +75,8 @@ h6 {
 	margin: 3rem 0 1rem;
 	font-weight: lighter;
 	line-height: normal;
-	font-family: var(--font-serif);
-	letter-spacing: -0.05em;
+	font-family: var(--font-antique);
+	letter-spacing: -0.02em;
 }
 
 h1 {
@@ -173,7 +173,7 @@ aside {
 pre,
 code,
 kbd {
-	font-family: var(--font-monospace);
+	font-family: var(--font-monospace-code);
 }
 
 code:not(pre code) {
