@@ -145,7 +145,7 @@ primary_color_alpha = "COLOR_CODE"
 
 - [Quill image used in the metadata card](https://commons.wikimedia.org/wiki/File:3quills.jpg)
 
-## Thanks to ♥
+## Thanks to
 
 - [Jakub Steiner](https://jimmac.eu) for the [OS Component Website](https://jimmac.github.io/os-component-website), which served as a starting point and inspiration.
 - [Carl Schwan](https://carlschwan.eu) for the [Mastodon-powered Comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/).
