@@ -185,7 +185,7 @@
 							permalink.setAttribute("rel", "external nofollow");
 							permalink.textContent = new Date(
 								status.created_at
-							).toLocaleString("{{ config.extra.comments.locale }}", {
+							).toLocaleString("{{ config.extra.comments.locale | default(value='en-IE') }}", {
 								dateStyle: "long",
 								timeStyle: "short",
 							});

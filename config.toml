@@ -103,12 +103,20 @@ show_source = false
 # These variables are also used for Mastodon verification,
 # the needed rel="me" link is set in the head based on these.
 [extra.comments]
-# Your Mastodon API host; instance that you have an account on
+# Your Mastodon API host; instance that you have an account on.
 host = "vmst.io"
-# Your Mastodon username; used to determine who the original poster is
+# Your Mastodon username; used to determine who the original poster is.
 user = "daudix"
 # Whether to show the QR code to Mastodon post
 show_qr = true
 # BCP 47 locale used for comment timestamps;
 # See https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
-locale = "en-IE"
+# Default: "en-IE"
+# locale = "YOUR_LOCALE"
+
+# GoatCounter analytics; enabled only if present in config.
+[extra.goatcounter]
+# Your GoatCounter server; goatcounter.com is used by default.
+# host = "YOUR_SERVER"
+# Your GoatCounter username
+user = "daudix"

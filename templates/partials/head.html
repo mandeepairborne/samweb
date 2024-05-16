@@ -37,6 +37,11 @@
 		<script src="{{ get_url(path='copy-button.js') }}"></script> 
 	{% endif %}
 
+	{% if config.extra.goatcounter %}
+		<script data-goatcounter="https://{{ config.extra.goatcounter.user }}.{{ config.extra.goatcounter.host | default(value='goatcounter.com') }}/count" async src="//gc.zgo.at/count.js"></script>
+		<noscript><img src="https://{{ config.extra.goatcounter.user }}.{{ config.extra.goatcounter.host | default(value='goatcounter.com') }}/count?p={{ current_path | default(value='/') | safe }}"></noscript>
+	{% endif %}
+
 	{% if config.extra.comments %}
 		<link rel="me" href="https://{{ config.extra.comments.host }}/@{{ config.extra.comments.user }}" />
 	{% endif %}

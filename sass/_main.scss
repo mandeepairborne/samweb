@@ -62,8 +62,7 @@ body {
 
 // LAYOUT
 .container {
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;
 	width: min(var(--container-width), 90%);
 }
 
@@ -125,9 +124,20 @@ dl {
 
 hr {
 	margin: 2rem auto;
-	border: 0;
-	border-top: 1px solid var(--fg-muted-2);
-	width: 100%;
+	border: none;
+	border-top: 3px double var(--fg-muted-2);
+	overflow: visible;
+	color: var(--fg-muted-4);
+	font-size: 1.5rem;
+	text-align: center;
+
+	&::after {
+		position: relative;
+		top: -1.5rem;
+		background: var(--bg-color);
+		padding: 0 0.25rem;
+		content: "☙❧";
+	}
 }
 
 blockquote {

@@ -112,7 +112,7 @@ primary_color_alpha = "COLOR_CODE"
 - [alavi.me](https://alavi.me)
 - [bano.dev](https://bano.dev)
 - [blog.pansi21.xyz](https://blog.pansi21.xyz)
-- [daudix.codeberg.page](https://daudix.codeberg.page) (obviously)
+- [daudix.codeberg.page](https://daudix.codeberg.page) <small>(obviously)</small>
 - [daveparr.info](https://www.daveparr.info)
 - [digital-horror.com](https://digital-horror.com)
 - [enriquekesslerm.com](https://enriquekesslerm.com)
