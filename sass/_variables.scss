@@ -48,6 +48,7 @@
 	--font-antique: Superclarendon, "Bookman Old Style", "URW Bookman", "URW Bookman L", "Georgia Pro", Georgia, serif;
 	--font-didone: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif;
 	--font-handwritten: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual, cursive;
+	--font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 	@media (prefers-color-scheme: dark) {
 		// COLORS
@@ -75,6 +76,7 @@
 }
 
 @media (prefers-reduced-motion) {
+
 	*,
 	*::before,
 	*::after {
