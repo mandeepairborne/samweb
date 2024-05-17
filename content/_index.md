@@ -127,6 +127,7 @@ primary_color_alpha = "COLOR_CODE"
 - [pyter.at](https://pyter.at)
 - [rbd.gg](https://www.rbd.gg)
 - [rerere.unlogic.co.uk](https://rerere.unlogic.co.uk)
+- [sorcery.nexus](https://sorcery.nexus)
 - [sorg.codeberg.page](https://sorg.codeberg.page)
 - [sungsphinx.codeberg.page](https://sungsphinx.codeberg.page)
 - [treeniks.github.io](https://treeniks.github.io)
@@ -139,6 +140,7 @@ primary_color_alpha = "COLOR_CODE"
 
 - [andreatitolo.com](https://www.andreatitolo.com/credits)
 - [aplos.gxbs.me](https://aplos.gxbs.me)
+- [archaeoramblings.com](https://www.archaeoramblings.com/credits)
 - [oomfie.town](https://oomfie.town/credits)
 
 ## Credits
