@@ -24,8 +24,7 @@ body {
 }
 
 body {
-	// Put footer at the bottom for short pages, such as the 404
-	display: grid;
+	display: grid; // Put footer at the bottom for short pages, such as the 404
 	grid-template-rows: auto minmax(auto, 1fr) auto; // Header, stuff, footer
 	background: var(--bg-color);
 	min-height: 100vh;
