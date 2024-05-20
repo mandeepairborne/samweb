@@ -1,6 +1,6 @@
 :root {
 	// COLORS
-	--bg-color: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), var(--primary-color);
+	--bg-color: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
 	--fg-color: rgba(0, 0, 0, 0.8);
 	--fg-muted-1: rgba(0, 0, 0, 0.05);
 	--fg-muted-2: rgba(0, 0, 0, 0.1);
@@ -52,7 +52,7 @@
 
 	@media (prefers-color-scheme: dark) {
 		// COLORS
-		--bg-color: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), var(--primary-color);
+		--bg-color: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
 		--fg-color: rgb(255, 255, 255);
 		--fg-muted-1: rgba(255, 255, 255, 0.05);
 		--fg-muted-2: rgba(255, 255, 255, 0.1);
