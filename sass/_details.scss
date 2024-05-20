@@ -1,9 +1,0 @@
-details {
-    border-radius: var(--rounded-corner);
-    background-color: var(--fg-muted-1);
-    padding: 1rem;
-
-    &>summary {
-        cursor: pointer;
-    }
-}
