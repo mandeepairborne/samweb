@@ -55,7 +55,7 @@
 			position: absolute;
 			transform: translateY(-300%);
 			z-index: 999;
-			background: var(--bg-color);
+			background: var(--bg-color), var(--primary-color);
 
 			&:focus {
 				transform: translateY(0);
