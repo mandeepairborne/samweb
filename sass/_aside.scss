@@ -1,0 +1,15 @@
+aside {
+    float: right;
+    margin-inline-start: 1rem;
+    box-shadow: var(--edge-highlight);
+    border-radius: var(--rounded-corner);
+    background-color: var(--primary-color-alpha);
+    padding: 1rem;
+    width: 30%;
+
+    @media only screen and (max-width: 720px) {
+        float: none;
+        margin-inline-start: 0;
+        width: 100%;
+    }
+}
