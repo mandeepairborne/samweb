@@ -47,7 +47,7 @@ It is highly recommended to switch from the `main` branch to the lates release:
 
 ```sh
 cd themes/duckquill
-git checkout tags/v1.1.0
+git checkout tags/v2.0.0
 ```
 
 To update the submodule, simply switch to a new tag:
@@ -57,7 +57,7 @@ To update the submodule, simply switch to a new tag:
 ```sh
 git submodule update --remote --merge
 git tag --list
-git checkout tags/v1.1.0
+git checkout tags/v2.0.0
 ```
 
 Then, enable it in your `config.toml`:
