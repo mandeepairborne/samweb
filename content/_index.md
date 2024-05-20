@@ -147,6 +147,18 @@ primary_color_alpha = "COLOR_CODE"
 
 - [Quill image used in the metadata card](https://commons.wikimedia.org/wiki/File:3quills.jpg)
 
+## Tools Used
+
+- [VSCodium](https://vscodium.com) - Free/Libre Open Source Software Binaries of VS Code
+  - [Django](https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-django) - Tera is quite similar to Liquid at places.
+  - [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml) - For `config.toml` basically.
+  - [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) - Awfully pretty theme.
+  - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss) - Not sure if it actually works. ¯\\\_(ツ)_/¯
+  - [Sort CSS](https://marketplace.visualstudio.com/items?itemName=piyushsarkar.sort-css-properties) - A lifesaver for long CSS properties.
+- [Firefox developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) - Best of its kind.
+
+> As for code formatter I use built-in VSCodium one, Prettier is good but I don't like how it tries to make code fit in a very narrow column, this can be changed of course, but built-in formatter does quite decent job so I don't bother doing so.
+
 ## Thanks to
 
 - [Jakub Steiner](https://jimmac.eu) for the [OS Component Website](https://jimmac.github.io/os-component-website), which served as a starting point and inspiration.
