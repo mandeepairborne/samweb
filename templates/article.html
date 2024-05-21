@@ -105,6 +105,8 @@
 
 <p class="dialog-buttons">
 	<a class="inline-button" href="#top">Go to Top</a>
-	<a class="inline-button colored" href="{{ config.extra.issues_url }}">File an Issue</a>
+	{% if config.extra.issues_url %}
+		<a class="inline-button colored" href="{{ config.extra.issues_url }}">File an Issue</a>
+	{% endif %}
 </p>
 {% endblock content %}
