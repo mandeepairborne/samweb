@@ -58,6 +58,10 @@
 					border-bottom: 0.25rem solid var(--primary-color);
 				}
 
+				&:active::before {
+					border-radius: 0.25rem;
+				}
+
 				&::before {
 					display: block;
 					position: absolute;
@@ -65,7 +69,7 @@
 					right: 1.5rem;
 					left: 1.5rem;
 					transition-duration: var(--transition);
-					transition-property: right, left, border-bottom;
+					transition-property: right, left, border-bottom, border-radius;
 					border-bottom: 0.25rem solid var(--fg-muted-2);
 					border-radius: 0 0 0.25rem 0.25rem;
 					content: "";
