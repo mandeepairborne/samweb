@@ -61,8 +61,8 @@
 				&::before {
 					display: block;
 					position: absolute;
+					top: -0.25rem;
 					right: 1.5rem;
-					bottom: -0.25rem;
 					left: 1.5rem;
 					transition-duration: var(--transition);
 					transition-property: right, left, border-bottom;
