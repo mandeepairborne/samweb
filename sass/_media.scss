@@ -4,12 +4,12 @@ img {
 
 	&:not(.no-hover, &[src*="#no-hover"]) {
 		cursor: zoom-in;
-	}
 
-	&:not(.no-hover, &[src*="#no-hover"]):hover {
-		transform: scale(1.1);
-		box-shadow: var(--shadow-raised);
-		border-radius: 0;
+		&:hover {
+			transform: scale(1.1);
+			box-shadow: var(--shadow-raised);
+			border-radius: 0;
+		}
 	}
 }
 
