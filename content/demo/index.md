@@ -110,6 +110,26 @@ end
 - [ ] Coffee
 - [x] Combustible lemons
 
+### Same but interactive
+
+<ul>
+<li><input type="checkbox"> Milk</li>
+<li><input checked="" type="checkbox"> Eggs</li>
+<li><input checked="" type="checkbox"> Flour</li>
+<li><input type="checkbox"> Coffee</li>
+<li><input checked="" type="checkbox"> Combustible lemons</li>
+</ul>
+
+### With radio type
+
+<ul>
+<li><input type="radio" name="test"> Milk</li>
+<li><input type="radio" name="test"> Eggs</li>
+<li><input type="radio" name="test"> Flour</li>
+<li><input checked="" type="radio" name="test"> Coffee</li>
+<li><input type="radio" name="test" disabled=""> Combustible lemons</li>
+</ul>
+
 ## Small image
 
 {{ image(url="https://codeberg.org/Codeberg/Design/raw/branch/main/logo/icon/png/codeberg-logo_icon_blue-64x64.png", alt="Codeberg icon", transparent=true, no_hover=true) }}
