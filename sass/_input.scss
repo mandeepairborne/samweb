@@ -14,6 +14,7 @@ input[type="checkbox"] {
 		display: block;
 		position: absolute;
 		transform: scale(0);
+		opacity: 0;
 		transition-duration: var(--transition);
 		transition-property: transform, opacity;
 		background-color: white;
@@ -56,11 +57,11 @@ input[type="radio"] {
 	border-radius: 50%;
 
 	&::before {
+		top: 0.125rem;
+		left: 0.125rem;
 		border-radius: 50%;
 		width: 0.5rem;
 		height: 0.5rem;
-		top: 0.125rem;
-		left: 0.125rem;
 	}
 }
 
@@ -74,42 +75,10 @@ input[type="checkbox"] {
 		top: -0.125rem;
 		left: -0.125rem;
 		transform-origin: bottom left;
-		opacity: 0;
 		mask-image: $checkmark-icon;
 		mask-size: cover;
 		width: 1rem;
 		height: 1rem;
 		content: "";
-	}
-
-	&:hover {
-		background-color: var(--fg-muted-2);
-	}
-
-	&:checked {
-		border: 0.15rem solid transparent;
-		background-color: var(--primary-color);
-
-		&:disabled {
-			cursor: not-allowed;
-			border: 0.15rem solid transparent;
-			background-color: var(--primary-color-alpha);
-
-			&::before {
-				opacity: 0.8;
-				background-color: var(--fg-color);
-			}
-		}
-
-		&::before {
-			transform: scale(1);
-			opacity: 1;
-		}
-	}
-
-	&:disabled {
-		cursor: not-allowed;
-		border: 0.15rem solid var(--fg-muted-1);
-		background-color: var(--fg-muted-1);
 	}
 }
