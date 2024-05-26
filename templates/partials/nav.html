@@ -4,16 +4,31 @@
 		<a href="#main" id="main-content" tabindex="0">Skip to main content</a>
 		<ul>
 			<li id="home">
-				<a href="{{ get_url(path='/') | safe }}">{{ config.title }}</a>
+				<a href="{{ get_url(path='/') | safe }}"
+					{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path='/') | safe %}
+						class="active"
+					{% endif %}>
+					{{ config.title }}
+				</a>
 			</li>
 			{% for link in config.extra.nav.links %}
 				{%- if link.url is matching('https?://') %}
 					<li>
-						<a href="{{ link.url | safe }}">{{ link.name }}</a>
+						<a href="{{ link.url | safe }}"
+							{% if current_url | default(value='/') | safe == link.url | safe %}
+								class="active"
+							{% endif %}>
+							{{ link.name }}
+						</a>
 					</li>
 				{%- else %}
 					<li>
-						<a href="{{ get_url(path=link.url | safe )}}">{{ link.name }}</a>
+						<a href="{{ get_url(path=link.url | safe )}}"
+							{% if current_url | default(value='/') | safe == get_url(path=link.url) | safe %}
+								class="active"
+							{% endif %}>
+							{{ link.name }}
+						</a>
 					</li>
 				{%- endif %}
 			{% endfor %}

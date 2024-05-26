@@ -32,6 +32,7 @@
 		}
 
 		a {
+			position: relative;
 			transition-duration: var(--transition);
 			transition-property: box-shadow, background-color, color, transform;
 			border-radius: 999px;
@@ -48,6 +49,27 @@
 
 			&:active {
 				transform: scale(var(--active));
+			}
+
+			&.active {
+				&:hover::before {
+					right: 1rem;
+					left: 1rem;
+					border-bottom: 0.25rem solid var(--primary-color);
+				}
+
+				&::before {
+					display: block;
+					position: absolute;
+					right: 1.5rem;
+					bottom: -0.25rem;
+					left: 1.5rem;
+					transition-duration: var(--transition);
+					transition-property: right, left, border-bottom;
+					border-bottom: 0.25rem solid var(--fg-muted-2);
+					border-radius: 999px;
+					content: "";
+				}
 			}
 		}
 
