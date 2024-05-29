@@ -54,3 +54,24 @@ body {
 		}
 	}
 }
+
+:focus-visible {
+	animation: focus-in var(--transition);
+	outline: 0.125rem solid var(--primary-color);
+	outline-offset: 2px;
+}
+
+@supports not selector(:focus-visible) {
+	:focus {
+		animation: focus-in var(--transition);
+		outline: 0.125rem solid var(--primary-color);
+		outline-offset: 2px;
+	}
+}
+
+@keyframes focus-in {
+	from {
+		outline: 0.5rem solid transparent;
+		outline-offset: 0.25rem;
+	}
+}

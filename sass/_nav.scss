@@ -79,12 +79,16 @@
 
 		#main-content {
 			position: absolute;
-			transform: translateY(-300%);
+			transform: translateY(-100%);
+			opacity: 0;
 			z-index: 999;
+			transition-duration: var(--transition);
+			transition-property: transform, opacity;
 			background: var(--bg-color), var(--primary-color);
 
 			&:focus {
 				transform: translateY(0);
+				opacity: 1;
 			}
 		}
 
