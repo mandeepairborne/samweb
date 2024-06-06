@@ -85,6 +85,7 @@
 			transition-duration: var(--transition);
 			transition-property: transform, opacity;
 			background: var(--bg-color), var(--primary-color);
+			pointer-events: none;
 
 			&:focus {
 				transform: translateY(0);
