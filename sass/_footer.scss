@@ -64,17 +64,10 @@
 				}
 
 				i {
-					-webkit-mask-size: cover;
-					display: inline-block;
-					mask-size: cover;
 					transition: background-color var(--transition);
 					background-color: var(--fg-muted-4);
 					width: 1.5rem;
 					height: 1.5rem;
-					font-style: normal;
-					font-variant: normal;
-					line-height: 1;
-					text-rendering: auto;
 				}
 
 				span {
