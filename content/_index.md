@@ -128,6 +128,7 @@ primary_color_alpha = "COLOR_CODE"
 - [rbd.gg](https://www.rbd.gg)
 - [rerere.unlogic.co.uk](https://rerere.unlogic.co.uk)
 - [siddharthsabron.in](https://siddharthsabron.in)
+- [skaven.org](https://skaven.org)
 - [sorcery.nexus](https://sorcery.nexus)
 - [sorg.codeberg.page](https://sorg.codeberg.page)
 - [sungsphinx.codeberg.page](https://sungsphinx.codeberg.page)
