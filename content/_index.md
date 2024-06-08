@@ -108,6 +108,9 @@ primary_color_alpha = "COLOR_CODE"
 
 ## Sites that use Duckquill
 
+<details>
+  <summary>It starts to get long, so click to expand.</summary>
+
 - [agustinramirodiaz.github.io](https://agustinramirodiaz.github.io)
 - [alavi.me](https://alavi.me)
 - [bano.dev](https://bano.dev)
@@ -137,6 +140,8 @@ primary_color_alpha = "COLOR_CODE"
 - [vikramxd.github.io](https://vikramxd.github.io)
 - [zorrn.net](https://www.zorrn.net)
 - Yours? <small>(feel free to [contact me](https://daudix.codeberg.page/about/#contacts) or send a pull request)</small>
+
+</details>
 
 ## Sites that mention Duckquill in credits
 
