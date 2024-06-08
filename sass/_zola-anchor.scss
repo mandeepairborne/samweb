@@ -1,4 +1,17 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    &:hover .zola-anchor {
+        opacity: 1;
+    }
+}
+
 .zola-anchor {
+    opacity: 0;
+    transition: opacity var(--transition);
     margin: 0 0.25em;
 
     &:hover i {
