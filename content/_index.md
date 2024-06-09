@@ -136,7 +136,6 @@ primary_color_alpha = "COLOR_CODE"
 - [sorg.codeberg.page](https://sorg.codeberg.page)
 - [sungsphinx.codeberg.page](https://sungsphinx.codeberg.page)
 - [treeniks.github.io](https://treeniks.github.io)
-- [veeronniecaw.space](https://veeronniecaw.space)
 - [vikramxd.github.io](https://vikramxd.github.io)
 - [zorrn.net](https://www.zorrn.net)
 - Yours? <small>(feel free to [contact me](https://daudix.codeberg.page/about/#contacts) or send a pull request)</small>
@@ -149,6 +148,7 @@ primary_color_alpha = "COLOR_CODE"
 - [aplos.gxbs.me](https://aplos.gxbs.me)
 - [archaeoramblings.com](https://www.archaeoramblings.com/credits)
 - [oomfie.town](https://oomfie.town/credits)
+- [veeronniecaw.space](https://veeronniecaw.space)
 
 ## Credits
 
