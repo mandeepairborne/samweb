@@ -35,42 +35,11 @@
 			{% if config.extra.nav.show_feed %}
 				<li id="feed">
 					<a href="{{ get_url(path=config.feed_filename) | safe }}">
-						<i id="feed-icon" class="icon"></i>
+						<i class="icon"></i>
 						<span>Feed</span>
 					</a>
 				</li>
 			{% endif %}
-			<li id="dropdown">
-				<details>
-					<summary>
-						<i id="menu-icon" class="icon"></i>
-						<span>Menu</span>
-					</summary>
-					<ul>
-						{% for link in config.extra.nav.links %}
-						{%- if link.url is matching('https?://') %}
-							<li>
-								<a href="{{ link.url | safe }}"
-									{% if current_url | default(value='/') | safe == link.url | safe %}
-										class="active"
-									{% endif %}>
-									{{ link.name }}
-								</a>
-							</li>
-						{%- else %}
-							<li>
-								<a href="{{ get_url(path=link.url | safe )}}"
-									{% if current_url | default(value='/') | safe == get_url(path=link.url) | safe %}
-										class="active"
-									{% endif %}>
-									{{ link.name }}
-								</a>
-							</li>
-						{%- endif %}
-					{% endfor %}
-					</ul>
-				</details>
-			</li>
 		</ul>
 	</nav>
 </header>
