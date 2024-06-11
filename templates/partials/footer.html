@@ -35,13 +35,6 @@
 		</p>
 	{% endif %}
 
-	{% if config.extra.footer.show_johnvert %}
-		<details>
-			<summary>Johnvertisement</summary>
-			<iframe id="johnvertisement" src="https://john.citrons.xyz/embed?ref={{ config.extra.footer.johnvert_ref }}" title="Johnvertisement"></iframe>
-		</details>
-	{% endif %}
-
 	{% if config.extra.footer.socials %}
 		<ul id="socials">
 			{% for link in config.extra.footer.socials %}
