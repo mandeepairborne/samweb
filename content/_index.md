@@ -161,6 +161,7 @@ All sources for Duckquill's assets are available [here](https://codeberg.org/dau
 ## Tools Used
 
 - [VSCodium](https://vscodium.com) - Free/Libre Open Source Software Binaries of VS Code
+  - [Capitalize](https://marketplace.visualstudio.com/items?itemName=viablelab.capitalize) - Title capitalization without random websites.
   - [Django](https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-django) - Tera is quite similar to Liquid at places.
   - [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml) - For `config.toml` basically.
   - [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) - Awfully pretty theme.
