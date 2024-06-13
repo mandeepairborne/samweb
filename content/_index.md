@@ -70,7 +70,7 @@ theme = "duckquill"
 
 Duckquill offers some configuration options to make it fit you better; most options have pretty descriptive comments, so it should be easy to understand what they do.
 
-### Custom stylesheets
+### Custom Stylesheets
 
 You can add your own or override existing styles by creating custom stylesheet and adding it in the `config.toml`:
 
@@ -89,7 +89,7 @@ If for some reason overridden class are not respected, try using `!important`. Y
 @use "../themes/duckquill/sass/NEEDED_FILE.scss";
 ```
 
-### Primary color
+### Primary Color
 
 Duckquill respects chosen primary color everywhere, simply change the primary color in `config.toml`:
 
@@ -99,14 +99,14 @@ primary_color = "COLOR_CODE"
 primary_color_alpha = "COLOR_CODE"
 ```
 
-## Test pages
+## Test Pages
 
 - [Demo page](@/demo/index.md)
 - [Cake Party!](@/demo/page.md)
 - [ActivityPub/​Fediverse comments demo](@/demo/comments.md)
 - [Code block demo (needs Zola v0.18.0 and higher)](@/demo/code.md)
 
-## Sites that use Duckquill
+## In the Wild
 
 <details>
   <summary>It starts to get long, so click to expand.</summary>
@@ -142,13 +142,17 @@ primary_color_alpha = "COLOR_CODE"
 
 </details>
 
-## Sites that mention Duckquill in credits
+## In Credits
 
 - [andreatitolo.com](https://www.andreatitolo.com/credits)
 - [aplos.gxbs.me](https://aplos.gxbs.me)
 - [archaeoramblings.com](https://www.archaeoramblings.com/credits)
 - [oomfie.town](https://oomfie.town/credits)
 - [veeronniecaw.space](https://veeronniecaw.space)
+
+## Assets Sources
+
+All sources for Duckquill's assets are available [here](https://codeberg.org/daudix/archive/src/branch/main/duckquill/src) and licensed under CC BY-SA 4.0. The reason for not putting the sources in the same repo as Duckquill itself is simple: I want it to be as small as possible, so that repo cloning is fast and doesn't make the site significantly heavier; this is also why the demo uses remote images instead of local copies.
 
 ## Credits
 
@@ -166,7 +170,7 @@ primary_color_alpha = "COLOR_CODE"
 
 > As for code formatter I use built-in VSCodium one, Prettier is good but I don't like how it tries to make code fit in a very narrow column, this can be changed of course, but built-in formatter does quite decent job so I don't bother doing so.
 
-## Thanks to
+## Thanks To
 
 - [Jakub Steiner](https://jimmac.eu) for the [OS Component Website](https://jimmac.github.io/os-component-website), which served as a starting point and inspiration.
 - [Carl Schwan](https://carlschwan.eu) for the [Mastodon-powered Comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/).
