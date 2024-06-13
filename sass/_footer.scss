@@ -54,7 +54,7 @@
 					box-shadow: var(--edge-highlight);
 					background-color: var(--fg-muted-1);
 
-					i {
+					.icon {
 						background-color: var(--primary-color);
 					}
 				}
@@ -63,7 +63,7 @@
 					transform: scale(var(--active));
 				}
 
-				i {
+				.icon {
 					transition: background-color var(--transition);
 					background-color: var(--fg-muted-4);
 					width: 1.5rem;
