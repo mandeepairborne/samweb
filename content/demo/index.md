@@ -318,10 +318,10 @@ You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>im
 ## Buttons
 
 ```html.j2
-<p class="dialog-buttons">
+<div class="dialog-buttons">
   <a class="inline-button" href="#top">Go to top</a>
   <a href="{{site.issuesurl}}">File an issue</a>
-</p>
+</div>
 ```
 
 > Look at the end of this page xD
