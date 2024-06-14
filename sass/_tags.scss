@@ -5,7 +5,7 @@
 
 	li {
 		display: inline-block;
-		transition: transform var(--transition);
+		transition: var(--transition);
 		margin: 0 0.25rem 0.5rem 0;
 
 		&:active {
@@ -14,8 +14,7 @@
 	}
 
 	.tag {
-		transition-duration: var(--transition);
-		transition-property: background-color, color;
+		transition: var(--transition);
 		box-shadow: var(--edge-highlight);
 		border-radius: 999px;
 		background-color: var(--fg-muted-1);

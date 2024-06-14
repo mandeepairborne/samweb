@@ -45,8 +45,7 @@
 
 			a {
 				display: inline-flex;
-				transition-duration: var(--transition);
-				transition-property: box-shadow, background-color, transform;
+				transition: var(--transition);
 				border-radius: 999px;
 				padding: 0.5rem;
 
@@ -64,7 +63,7 @@
 				}
 
 				.icon {
-					transition: background-color var(--transition);
+					transition: var(--transition);
 					background-color: var(--fg-muted-4);
 					width: 1.5rem;
 					height: 1.5rem;

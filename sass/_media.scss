@@ -1,6 +1,5 @@
 img {
-	transition-duration: var(--transition-longer);
-	transition-property: transform, box-shadow, border-radius;
+	transition: var(--transition-longer);
 
 	&:not(.no-hover, &[src*="#no-hover"]) {
 		cursor: zoom-in;

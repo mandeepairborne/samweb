@@ -44,7 +44,7 @@ section#comments {
 			height: 4rem;
 
 			.avatar {
-				transition-duration: var(--transition);
+				transition: var(--transition);
 				margin: 0;
 				background-size: cover;
 				background-color: var(--fg-muted-1);
@@ -68,8 +68,7 @@ section#comments {
 			font-weight: bold;
 
 			.instance {
-				transition-duration: var(--transition);
-				transition-property: background-color, transform, box-shadow;
+				transition: var(--transition);
 				box-shadow: var(--edge-highlight);
 				border-radius: 999px;
 				background-color: var(--fg-muted-1);
@@ -134,8 +133,7 @@ section#comments {
 			.boosts,
 			.faves {
 				display: inline-block;
-				transition-duration: var(--transition);
-				transition-property: box-shadow, transform, background-color;
+				transition: var(--transition);
 				margin-right: 0.25rem;
 				border-radius: 999px;
 				background-color: transparent;

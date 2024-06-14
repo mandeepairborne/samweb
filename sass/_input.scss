@@ -3,8 +3,7 @@ input[type="checkbox"] {
 	-webkit-appearance: none;
 	position: relative;
 	appearance: none;
-	transition-duration: var(--transition);
-	transition-property: border, background-color;
+	transition: var(--transition);
 	border: 0.15rem solid var(--fg-muted-3);
 	background-color: var(--fg-muted-1);
 	width: 1rem;
@@ -15,8 +14,7 @@ input[type="checkbox"] {
 		position: absolute;
 		transform: scale(0);
 		opacity: 0;
-		transition-duration: var(--transition);
-		transition-property: transform, opacity;
+		transition: var(--transition);
 		background-color: white;
 		content: "";
 	}

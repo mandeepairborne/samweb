@@ -11,7 +11,7 @@ h6 {
 
 .zola-anchor {
     opacity: 0;
-    transition: opacity var(--transition);
+    transition: var(--transition);
     margin: 0 0.25em;
 
     &:hover .icon {
@@ -24,7 +24,7 @@ h6 {
         -webkit-mask-size: cover;
         mask-image: $icon;
         mask-size: cover;
-        transition: background-color var(--transition);
+        transition: var(--transition);
         background-color: var(--fg-muted-4);
         width: 1em;
         height: 1em;
