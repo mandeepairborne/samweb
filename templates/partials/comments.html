@@ -13,31 +13,23 @@
 {% endif %}
 
 {% set id = page.extra.comments.id %}
+{% set post_url = "https://{{ host }}/@{{ username }}/{{ id }}" %}
 
 <section id="comments">
 	{% if config.extra.comments.show_qr %}
-		<img id="qrcode" class="no-hover pixels" alt="QR code to a Mastodon post" src="https://api.qrserver.com/v1/create-qr-code/?data=https://{{ host }}/@{{ username }}/{{ id }}&format=gif" />
+		<img id="qrcode" class="no-hover pixels" alt="QR code to a Mastodon post" src="https://api.qrserver.com/v1/create-qr-code/?data={{ post_url }}&format=gif" />
 	{% endif %}
 
-	<h2>Comments</h2>
-	<p>
-		You can comment on this blog post by publicly replying to this <a href="https://{{ host }}/@{{ username }}/{{ id }}">post</a> using a Mastodon or other ActivityPub/Fediverse account. Known non-private replies are displayed below.
-	</p>
+	<h2>{{ trans(key="comments", default="Comments", lang=lang) }}</h2>
+	<p>{{ trans(key="comments_description", default="You can comment on this blog post by publicly replying to this post using a Mastodon or other ActivityPub/Fediverse account. Known non-private replies are displayed below.", lang=lang) }}</p>
 
 	<p>
-		<a id="load-comments" class="inline-button" onclick="loadComments()" onkeypress="loadComments()" tabindex="0">Load Comments</a>
+		<a id="load-comments" class="inline-button" onclick="loadComments()" onkeypress="loadComments()" tabindex="0">{{ trans(key="load_comments", default="Load Comments", lang=lang) }}</a>
 	</p>
 
 	<div id="comments-wrapper">
 		<noscript>
-			<p>
-				Loading comments relies on JavaScript. Try enabling JavaScript and
-				reloading, or visit
-				<a href="https://{{ host }}/@{{ username }}/{{ id }}">
-					the original post
-				</a>
-				on Mastodon.
-			</p>
+			<p>{{ trans(key="comments_noscript", default="Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit the original post on Mastodon.", lang=lang) }}</p>
 		</noscript>
 	</div>
 	<script type="text/javascript">
@@ -76,7 +68,7 @@
 
 		function loadComments() {
 			let commentsWrapper = document.getElementById("comments-wrapper");
-			document.getElementById("load-comments").innerHTML = "Loading…";
+			document.getElementById("load-comments").innerHTML = "{{ trans(key='comments_loading', default='Loading…', lang=lang) }}";
 			fetch("https://{{ host }}/api/v1/statuses/{{ id }}/context")
 				.then(function (response) {
 					return response.json();

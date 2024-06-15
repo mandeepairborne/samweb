@@ -18,7 +18,7 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 There should be whitespace between paragraphs.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+We recommend including a README, or a file with information about your project.
 
 # Heading 1
 
@@ -33,7 +33,7 @@ This is a normal paragraph following a header. Codeberg is a code hosting platfo
 ### Heading 3
 
 ```js
-// Javascript code with syntax highlighting.
+// Javascript code with syntax highlighting
 var fun = function lang(l) {
   dateformat.i18n = require("./lang/" + l);
   return true;
@@ -82,9 +82,9 @@ end
 ## And an ordered list:
 
 1. Item one
-1. Item two
-1. Item three
-1. Item four
+2. Item two
+3. Item three
+4. Item four
 
 ## And a nested list:
 

@@ -5,7 +5,7 @@
 	<div class="statement-container archive">
 		<strong class="big">
 			<i class="icon"></i>
-			Archived
+			{{ trans(key="archived", default="Archived", lang=lang) }}
 		</strong>
 		{{ page.extra.archive | markdown | safe }}
 	</div>

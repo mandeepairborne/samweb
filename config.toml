@@ -10,6 +10,43 @@ build_search_index = false
 author = "Duck Quack"
 
 taxonomies = [{ name = "tags", feed = true }]
+default_language = "en"
+
+[languages.ru]
+title = "Duckquill"
+description = "Современная, симпатичная и аккуратная тема."
+generate_feed = true
+
+taxonomies = [{ name = "tags", feed = true }]
+
+[languages.ru.translations]
+archived = "Архивировано"
+author = "Автор"
+comments = "Комментарии"
+comments_description = "Вы можете оставить комментарий к этому блог-посту, публично ответив на него с помощью аккаунта Mastodon или другого аккаунта ActivityPub/Fediverse. Известные неприватные ответы отображены ниже."
+comments_loading = "Загрузка…"
+comments_noscript = "Загрузка комментариев зависит от JavaScript. Попробуйте включить JavaScript и перезагрузить, или посетите оригинальный пост на Mastodon."
+disclaimer = "Дисклеймер"
+drafted = "Черновик"
+feed = "Лента"
+file_an_issue = "Отправить Отчет об Ошибке"
+filter_by_tag = "Фильтр по тегам"
+footer_powered_by = "Работает на базе"
+footer_powered_by_and = "и"
+footer_source = "Исходный код веб-сайта"
+go_to_top = "Перейти в Начало"
+load_comments = "Загрузить Комментарии"
+newest_to_oldest = "От новейшего к старейшему"
+page_next = "Следующий"
+page_previous = "Предыдущий"
+posts_in_total = "всего постов"
+posts_with_tag = "Посты с тегом"
+see_all_tags = "Показать все теги"
+skip_to_content = "Перейти к основному содержанию"
+table_of_contents = "Оглавление"
+tags = "Теги"
+tags_in_total = "тегов в общем"
+trigger_warning = "Предупреждение о неожиданности"
 
 [markdown]
 highlight_code = true
@@ -64,17 +101,12 @@ show_feed = true
 # i.e "@/blog/_index.md".
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
-  { url = "@/blog/_index.md", name = "Blog" },
-  { url = "@/demo/index.md", name = "Demo" },
-  { url = "https://codeberg.org/daudix/duckquill", name = "Repo" },
+  { url = "@/blog/_index.md", name = "Blog", name_ru = "Блог" },
+  { url = "@/demo/index.md", name = "Demo", name_ru = "Демо" },
+  { url = "https://codeberg.org/daudix/duckquill", name = "Repo", name_ru = "Репо" },
 ]
 
 [extra.footer]
-# Links used in the footer.
-# For local files use same link format as in Markdown,
-# i.e "@/blog/_index.md".
-# See https://www.getzola.org/documentation/content/linking/#internal-links
-# links = []
 # Social links in the footer.
 # Any URL-encoded SVG can be used as an icon.
 # https://simpleicons.org is recommended source of SVG icons.

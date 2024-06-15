@@ -6,20 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="theme-color" content="{{ config.extra.primary_color }}" />
 	<link rel="canonical" href="{{ current_url | default(value='/') | safe }}" />
-
-	<title>
-		{%- if page.title -%}
-			{{- page.title }} - {{ config.title -}}
-		{%- elif section.title -%}
-			{{- section.title }} - {{ config.title -}}
-		{%- else -%}
-			{{- config.title -}}
-		{%- endif -%}
-	</title>
-
+	<title>{% block title %}{% include "partials/title.html" ignore missing %}{% endblock %}</title>
 	<link rel="stylesheet" type="text/css" href="{{ get_url(path='style.css') }}" />
 	<link rel="stylesheet" type="text/css" href="{{ get_url(path='syntax-theme-dark.css') }}" media="(prefers-color-scheme: dark)" />
 	<link rel="stylesheet" type="text/css" href="{{ get_url(path='syntax-theme-light.css') }}" media="(prefers-color-scheme: light)" />
+
 	{% if config.extra.stylesheets %}
 		{% for stylesheet in config.extra.stylesheets %}
 			<link rel="stylesheet" type="text/css" href="{{ get_url(path=stylesheet) }}" />
@@ -51,6 +42,7 @@
 	{% if config.extra.comments %}
 		<link rel="me" href="https://{{ config.extra.comments.host }}/@{{ config.extra.comments.user }}" />
 	{% endif %}
+
 	{% if config.extra.emoji_favicon %}
 		<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='-.07em' y='.89em' font-size='90'%3E{{ config.extra.emoji_favicon }}%3C/text%3E%3C/svg%3E">
 	{% elif config.extra.animated_favicon %}
@@ -58,10 +50,18 @@
 	{% else %}
 		<link rel="icon" type="image/png" href="{{ get_url(path='favicon.png') }}" />
 	{% endif %}
+
 	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ get_url(path='apple-touch-icon.png') }}" />
+
+	{% if config.generate_feed %}
+		{% block feed -%}
+			<link rel="alternate" type={% if config.feed_filename == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="{{ config.title }}" href="{{ get_url(path=config.feed_filename) | safe }}">
+		{% endblock -%}
+	{% endif %}
+
 	<!-- Open Graph -->
 	<meta property="og:site_name" content="{{ config.title }}" />
-	<meta property="og:title" content="{%- if page.title -%}{{- page.title }} - {{ config.title -}}{%- elif section.title -%}{{- section.title }} - {{ config.title -}}{%- else -%}{{- config.title -}}{%- endif -%}" />
+	<meta property="og:title" content="{% include 'partials/title.html' ignore missing %}" />
 	<meta property="og:url" content="{{ current_url | default(value='/') | safe }}" />
 	<meta property="og:description" content="{{ page.description | default(value=config.description) }}" />
 	<meta property="og:image" content="{{ get_url(path='card.png') }}" />

@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Posts with tag “{{ term.name }}”</h1>
+<h1>{{ trans(key="posts_with_tag", default="Posts with tag", lang=lang) }} “{{ term.name }}”</h1>
 <small>
-	<a class="link-page" href="{{ get_url(path='tags') }}">See all tags</a>
+	<a class="link-page" href="{{ get_url(path='tags', lang=lang) }}">{{ trans(key="see_all_tags", default="See all tags", lang=lang) }}</a>
 	<br />
-	{{ term.pages | length }} posts in total
+	{{ term.pages | length }} {{ trans(key="posts_in_total", default="posts in total", lang=lang) }}
 </small>
 <article>
 	{% for page in term.pages %}
@@ -20,7 +20,7 @@
 					<span>•</span>
 					<ul class="tags">
 						{%-for item in taxon %}
-							<li><a class="tag" href="{{ get_taxonomy_url(kind=name, name=item) }}">{{ item }}</a></li>
+							<li><a class="tag" href="{{ get_taxonomy_url(kind=name, name=item, lang=lang) }}">{{ item }}</a></li>
 						{%- endfor %}
 					</ul>
 				{%- endfor %}

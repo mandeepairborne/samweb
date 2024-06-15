@@ -1,36 +1,18 @@
 <footer id="site-footer">
-	{% if config.extra.footer.links %}
-		<nav>
-			<ul id="links">
-				{% for link in config.extra.footer.links %}
-					{%- if link.url is matching('https?://') %}
-						<li>
-							<a href="{{ link.url | safe }}">{{ link.name }}</a>
-						</li>
-					{%- else %}
-						<li>
-							<a href="{{ get_url(path=link.url | safe )}}">{{ link.name }}</a>
-						</li>
-					{%- endif %}
-				{% endfor %}
-			</ul>
-		</nav>
-	{% endif %}
-
 	{% if config.extra.footer.show_copyright %}
 		<p title="Last built at {{ now() | date(format='%F %a %R') }}">&copy; {{ config.title }}, {{ now() | date(format="%Y") }}</p>
 	{% endif %}
 
 	{% if config.extra.source_url and config.extra.footer.show_source %}
 		<p>
-			<a href="{{ config.extra.source_url | safe }}">Website source</a>
+			<a href="{{ config.extra.source_url }}">{{ trans(key='footer_source', default="Website source", lang=lang) }}</a>
 		</p>
 	{% endif %}
 
 	{% if config.extra.footer.show_powered_by %}
 		<p>
 			<small>
-				Powered by <a href="https://www.getzola.org">Zola</a> and <a href="https://daudix.codeberg.page/duckquill">Duckquill</a>
+				{{ trans(key="footer_powered_by", default="Powered by", lang=lang) }} <a href="https://www.getzola.org">Zola</a> {{ trans(key="footer_powered_by_and", default="and", lang=lang) }} <a href="https://daudix.codeberg.page/duckquill">Duckquill</a>
 			</small>
 		</p>
 	{% endif %}

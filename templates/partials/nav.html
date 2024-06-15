@@ -1,42 +1,54 @@
+{% set current_lang = config.default_language %}
+{% if page %}
+	{% set current_lang = page.lang %}
+{% elif section %}
+	{%- set current_lang = section.lang %}
+{% endif %}
 {% if config.extra.nav.links %}
 <header id="site-nav">
 	<nav>
-		<a href="#main" id="main-content" tabindex="0">Skip to main content</a>
+		<a href="#main" id="main-content" tabindex="0">{{ trans(key="skip_to_content", default="Skip to main content", lang=lang) }}</a>
 		<ul>
 			<li id="home">
-				<a href="{{ get_url(path='/') | safe }}"
-					{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path='/') | safe %}
+				<a href="{{ get_url(path='/', lang=lang) }}"
+					{% if current_url | default(value='/') | trim_end_matches(pat='/') == get_url(path='/') %}
 						class="active"
 					{% endif %}>
 					{{ config.title }}
 				</a>
 			</li>
 			{% for link in config.extra.nav.links %}
+				{% if current_lang == config.default_language %}
+					{% set title = link.name %}
+				{% else %}
+					{% set language_key = 'name_' ~ current_lang %}
+					{% set title = link[language_key] %}
+				{% endif %}
 				{%- if link.url is matching('https?://') %}
 					<li class="link">
-						<a href="{{ link.url | safe }}"
-							{% if current_url | default(value='/') | safe == link.url | safe %}
+						<a href="{{ link.url }}"
+							{% if current_url | default(value='/') == link.url %}
 								class="active"
 							{% endif %}>
-							{{ link.name }}
+							{{ title }}
 						</a>
 					</li>
 				{%- else %}
 					<li class="link">
-						<a href="{{ get_url(path=link.url | safe )}}"
-							{% if current_url | default(value='/') | safe == get_url(path=link.url) | safe %}
+						<a href="{{ get_url(path=link.url, lang=lang)}}"
+							{% if current_url | default(value='/') == get_url(path=link.url, lang=lang) %}
 								class="active"
 							{% endif %}>
-							{{ link.name }}
+							{{ title }}
 						</a>
 					</li>
 				{%- endif %}
 			{% endfor %}
-			{% if config.extra.nav.show_feed %}
+			{% if config.generate_feed and config.extra.nav.show_feed %}
 				<li id="feed">
-					<a href="{{ get_url(path=config.feed_filename) | safe }}">
+					<a href="{{ get_url(path=config.feed_filename) }}">
 						<i class="icon"></i>
-						<span>Feed</span>
+						<span>{{ trans(key="feed", default="Feed", lang=lang) }}</span>
 					</a>
 				</li>
 			{% endif %}
