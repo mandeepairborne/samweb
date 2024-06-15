@@ -19,7 +19,7 @@ Edit a bit of metadata and tweak some of the included graphics and have a blog u
 
 - Pretty, yet lightweight. No JavaScript is used (except for comments, heh).
 - Colors are tinted with the user-selected primary color for a pleasent look.
-- ~50kB in size; take that, 12MB Medium!
+- ~90kB in size; take that, 12MB Medium!
 - Uses system fonts for blazingly fast loading.
 - Mobile friendly, with a proper dark variant.
 - Proper favicon for modern browsers and Apple device icons.
