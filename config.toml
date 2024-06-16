@@ -134,6 +134,11 @@ links = [
   { url = "@/demo/index.md", name = "Demo", name_ru = "Демо" },
   { url = "https://codeberg.org/daudix/duckquill", name = "Repo", name_ru = "Репо" },
 ]
+# List of languages that the website is translated to (comment if there's no additional languages)
+langs = [
+  { code = "en", name = "English" },
+  { code = "ru", name = "Русский" },
+]
 
 [extra.footer]
 # Social links in the footer.

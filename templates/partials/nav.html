@@ -44,6 +44,23 @@
 					</li>
 				{%- endif %}
 			{% endfor %}
+			{% if config.extra.nav.langs %}
+				<li id="dropdown">
+					<details>
+						<summary>
+							<i class="icon"></i>
+							<span>Languages</span>
+						</summary>
+						<ul>
+							{% for language in config.extra.nav.langs %}
+								<li>
+									<a href="{{ get_url(path="/", lang=language.code) }}">{{ language.name }}</a>
+								</li>
+							{% endfor %}
+						</ul>
+					</details>
+				</li>
+			{% endif %}
 			{% if config.generate_feed and config.extra.nav.show_feed %}
 				<li id="feed">
 					<a href="{{ get_url(path=config.feed_filename) }}">
