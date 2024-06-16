@@ -7,7 +7,7 @@
 {% if config.extra.nav.links %}
 <header id="site-nav">
 	<nav>
-		<a href="#main" id="main-content" tabindex="0">{{ trans(key="skip_to_content", default="Skip to main content", lang=lang) }}</a>
+		<a href="#main" id="main-content" tabindex="0">{{ trans(key="skip_to_content", lang=lang) | default(value="Skip to main content") }}</a>
 		<ul>
 			<li id="home">
 				<a href="{{ get_url(path='/', lang=lang) }}"
@@ -48,7 +48,7 @@
 				<li id="feed">
 					<a href="{{ get_url(path=config.feed_filename) }}">
 						<i class="icon"></i>
-						<span>{{ trans(key="feed", default="Feed", lang=lang) }}</span>
+						<span>{{ trans(key="feed", lang=lang) | default(value="Feed") }}</span>
 					</a>
 				</li>
 			{% endif %}

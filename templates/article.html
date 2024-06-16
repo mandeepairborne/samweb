@@ -11,7 +11,7 @@
 			</time>
 			{%- if page.authors %}
 				<span>•</span>
-				<span>{{ trans(key="author", default="Author", lang=lang) }}: {{ page.authors[0] }}</span>
+				<span>{{ trans(key="author", lang=lang) | default(value="Author") }}: {{ page.authors[0] }}</span>
 			{%- endif %}
 			{%- if page.taxonomies %}
 				{%- for name, taxon in page.taxonomies %}
@@ -32,7 +32,7 @@
 		<div class="statement-container archive">
 			<strong class="big">
 				<i class="icon"></i>
-				{{ trans(key="archived", default="Archived", lang=lang) }}
+				{{ trans(key="archived", lang=lang) | default(value="Archived") }}
 			</strong>
 			{{ page.extra.archive | markdown | safe }}
 		</div>
@@ -42,7 +42,7 @@
 		<div class="statement-container trigger">
 			<strong class="big">
 				<i class="icon"></i>
-				{{ trans(key="trigger_warning", default="Trigger Warning", lang=lang) }}
+				{{ trans(key="trigger_warning", lang=lang) | default(value="Trigger Warning") }}
 			</strong>
 			{{ page.extra.trigger | markdown | safe }}
 		</div>
@@ -52,14 +52,14 @@
 		<div class="statement-container disclaimer">
 			<strong class="big">
 				<i class="icon"></i>
-				{{ trans(key="disclaimer", default="Disclaimer", lang=lang) }}
+				{{ trans(key="disclaimer", lang=lang) | default(value="Disclaimer") }}
 			</strong>
 			{{ page.extra.disclaimer | markdown | safe }}
 		</div>
 	{% endif %}
 
 	{% if page.extra.toc %}
-		<h2>{{ trans(key="table_of_contents", default="Table of Contents", lang=lang) }}</h2>
+		<h2>{{ trans(key="table_of_contents", lang=lang) | default(value="Table of Contents") }}</h2>
 		<ul>
 			{% for h1 in page.toc %}
 				<li>
@@ -90,13 +90,13 @@
 	<nav id="post-nav">
 		{% if page.higher %}
 			<a class="post-nav-item post-nav-prev" href="{{ page.higher.permalink }}">
-				<div class="nav-arrow">← {{ trans(key="page_previous", default="Previous", lang=lang) }}</div>
+				<div class="nav-arrow">← {{ trans(key="page_previous", lang=lang) | default(value="Previous") }}</div>
 				<span class="post-title">{{ page.higher.title }}</span>
 			</a>
 		{% endif %}
 		{% if page.lower %}
 			<a class="post-nav-item post-nav-next" href="{{ page.lower.permalink }}">
-				<div class="nav-arrow">{{ trans(key="page_next", default="Next", lang=lang) }} →</div>
+				<div class="nav-arrow">{{ trans(key="page_next", lang=lang) | default(value="Next") }} →</div>
 				<span class="post-title">{{ page.lower.title }}</span>
 			</a>
 		{% endif %}
@@ -104,9 +104,9 @@
 {% endif %}
 
 <div class="dialog-buttons">
-	<a class="inline-button" href="#top">{{ trans(key="go_to_top", default="Go to Top", lang=lang) }}</a>
+	<a class="inline-button" href="#top">{{ trans(key="go_to_top", lang=lang) | default(value="Go to Top") }}</a>
 	{% if config.extra.issues_url %}
-		<a class="inline-button colored" href="{{ config.extra.issues_url }}">{{ trans(key="file_an_issue", default="File an Issue", lang=lang) }}</a>
+		<a class="inline-button colored" href="{{ config.extra.issues_url }}">{{ trans(key="file_an_issue", lang=lang) | default(value="File an Issue") }}</a>
 	{% endif %}
 </div>
 {% endblock content %}

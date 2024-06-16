@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>{{ trans(key="tags", default="Tags", lang=lang) }}</h1>
-<small>{{ terms | length }} {{ trans(key="tags_in_total", default="tags in total", lang=lang) }}</small>
+<h1>{{ trans(key="tags", lang=lang) | default(value="Tags") }}</h1>
+<small>{{ terms | length }} {{ trans(key="tags_in_total", lang=lang) | default(value="tags in total") }}</small>
 <br />
 <small>
 	<ul class="tags">

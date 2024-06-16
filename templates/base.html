@@ -1,12 +1,14 @@
+{% set rtl = ["ar", "arc", "az", "dv", "ff", "he", "ku", "nqo", "fa", "rhg", "syc", "ur"] %}
+
 <!DOCTYPE html>
-<html lang="en">
-{% include "partials/head.html" ignore missing %}
-<body>
-	{% include "partials/nav.html" ignore missing %}
+<html lang="{{ lang }}">
+{% include "partials/head.html" %}
+<body {% if lang in rtl %}dir="rtl"{% endif %}>
+	{% include "partials/nav.html" %}
 	<div id="main" class="container">
 		{% block custom %}{%- endblock -%}
 		{% block content %}{%- endblock -%}
 	</div>
-	{% include "partials/footer.html" ignore missing %}
+	{% include "partials/footer.html" %}
 </body>
 </html>
