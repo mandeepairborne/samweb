@@ -20,16 +20,16 @@
 		<img id="qrcode" class="no-hover pixels" alt="QR code to a Mastodon post" src="https://api.qrserver.com/v1/create-qr-code/?data={{ post_url }}&format=gif" />
 	{% endif %}
 
-	<h2>{{ trans(key="comments", lang=lang) | default(value="Comments") }}</h2>
-	<p>{{ trans(key="comments_description", lang=lang) | default(value="You can comment on this blog post by publicly replying to this post using a Mastodon or other ActivityPub/Fediverse account. Known non-private replies are displayed below.") }}</p>
+	<h2>{{ trans(key="comments", lang=lang) }}</h2>
+	<p>{{ trans(key="comments_description", lang=lang) }}</p>
 
 	<p>
-		<a id="load-comments" class="inline-button" onclick="loadComments()" onkeypress="loadComments()" tabindex="0">{{ trans(key="load_comments", lang=lang) | default(value="Load Comments") }}</a>
+		<a id="load-comments" class="inline-button" onclick="loadComments()" onkeypress="loadComments()" tabindex="0">{{ trans(key="load_comments", lang=lang) }}</a>
 	</p>
 
 	<div id="comments-wrapper">
 		<noscript>
-			<p>{{ trans(key="comments_noscript", lang=lang) | default(value="Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit the original post on Mastodon.") }}</p>
+			<p>{{ trans(key="comments_noscript", lang=lang) }}</p>
 		</noscript>
 	</div>
 	<script type="text/javascript">
@@ -68,7 +68,7 @@
 
 		function loadComments() {
 			let commentsWrapper = document.getElementById("comments-wrapper");
-			document.getElementById("load-comments").innerHTML = "{{ trans(key='comments_loading', lang=lang) | default(value='Loading…') }}";
+			document.getElementById("load-comments").innerHTML = "{{ trans(key='comments_loading', lang=lang) }}";
 			fetch("https://{{ host }}/api/v1/statuses/{{ id }}/context")
 				.then(function (response) {
 					return response.json();

@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>{{ trans(key="posts_with_tag", lang=lang) | default(value="Posts with tag") }} “{{ term.name }}”</h1>
+<h1>{{ trans(key="posts_with_tag", lang=lang) }} “{{ term.name }}”</h1>
 <small>
-	<a class="link-page" href="{{ get_url(path='tags', lang=lang) }}">{{ trans(key="see_all_tags", lang=lang) | default(value="See all tags") }}</a>
+	<a class="link-page" href="{{ get_url(path='tags', lang=lang) }}">{{ trans(key="see_all_tags", lang=lang) }}</a>
 	<br />
-	{{ term.pages | length }} {{ trans(key="posts_in_total", lang=lang) | default(value="posts in total") }}
+	{{ term.pages | length }} {{ trans(key="posts_in_total", lang=lang) }}
 </small>
 <article>
 	{% for page in term.pages %}

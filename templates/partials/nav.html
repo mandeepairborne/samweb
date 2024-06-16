@@ -7,11 +7,11 @@
 {% if config.extra.nav.links %}
 <header id="site-nav">
 	<nav>
-		<a href="#main" id="main-content" tabindex="0">{{ trans(key="skip_to_content", lang=lang) | default(value="Skip to main content") }}</a>
+		<a href="#main" id="main-content" tabindex="0">{{ trans(key="skip_to_content", lang=lang) }}</a>
 		<ul>
 			<li id="home">
-				<a href="{{ get_url(path='/', lang=lang) }}"
-					{% if current_url | default(value='/') | trim_end_matches(pat='/') == get_url(path='/') %}
+				<a href="{{ get_url(path="/", lang=lang) }}"
+					{% if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path="/", lang=lang) | trim_end_matches(pat='/') | safe %}
 						class="active"
 					{% endif %}>
 					{{ config.title }}
@@ -27,7 +27,7 @@
 				{%- if link.url is matching('https?://') %}
 					<li class="link">
 						<a href="{{ link.url }}"
-							{% if current_url | default(value='/') == link.url %}
+							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == link.url | trim_end_matches(pat='/') | safe %}
 								class="active"
 							{% endif %}>
 							{{ title }}
@@ -36,7 +36,7 @@
 				{%- else %}
 					<li class="link">
 						<a href="{{ get_url(path=link.url, lang=lang)}}"
-							{% if current_url | default(value='/') == get_url(path=link.url, lang=lang) %}
+							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url, lang=lang) | trim_end_matches(pat='/') | safe %}
 								class="active"
 							{% endif %}>
 							{{ title }}
@@ -48,7 +48,7 @@
 				<li id="feed">
 					<a href="{{ get_url(path=config.feed_filename) }}">
 						<i class="icon"></i>
-						<span>{{ trans(key="feed", lang=lang) | default(value="Feed") }}</span>
+						<span>{{ trans(key="feed", lang=lang) }}</span>
 					</a>
 				</li>
 			{% endif %}

@@ -5,14 +5,14 @@
 
 	{% if config.extra.source_url and config.extra.footer.show_source %}
 		<p>
-			<a href="{{ config.extra.source_url }}">{{ trans(key='footer_source', lang=lang) | default(value="Website source") }}</a>
+			<a href="{{ config.extra.source_url }}">{{ trans(key='footer_source', lang=lang) }}</a>
 		</p>
 	{% endif %}
 
 	{% if config.extra.footer.show_powered_by %}
 		<p>
 			<small>
-				{{ trans(key="footer_powered_by", lang=lang) | default(value="Powered by") }} <a href="https://www.getzola.org">Zola</a> {{ trans(key="footer_powered_by_and", lang=lang) | default(value="and") }} <a href="https://daudix.codeberg.page/duckquill">Duckquill</a>
+				{{ trans(key="footer_powered_by", lang=lang) }} <a href="https://www.getzola.org">Zola</a> {{ trans(key="footer_powered_by_and", lang=lang) }} <a href="https://daudix.codeberg.page/duckquill">Duckquill</a>
 			</small>
 		</p>
 	{% endif %}

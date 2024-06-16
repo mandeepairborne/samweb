@@ -75,7 +75,7 @@ skip_to_content = "Перейти к основному содержанию"
 table_of_contents = "Оглавление"
 tags = "Теги"
 tags_in_total = "тегов в общем"
-trigger_warning = "Предупреждение о неожиданности"
+trigger_warning = "Предупреждение о Тревоге"
 
 [markdown]
 highlight_code = true
