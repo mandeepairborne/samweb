@@ -148,8 +148,8 @@ links = [
 ]
 # List of languages that the website is translated to (comment if there's no additional languages)
 langs = [
-  { code = "en", name = "English" },
-  { code = "ru", name = "Русский" },
+  { code = "en", name = "🇬🇧 English" },
+  { code = "ru", name = "🇷🇺 Русский" },
 ]
 
 [extra.footer]

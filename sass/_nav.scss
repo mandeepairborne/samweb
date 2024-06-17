@@ -183,8 +183,20 @@
 					}
 				}
 
+				&[open] ul {
+					animation: open var(--transition);
+
+					@keyframes open {
+						from {
+							transform: translate(-50%, 0);
+							opacity: 0;
+						}
+					}
+				}
+
 				ul {
 					-webkit-backdrop-filter: var(--blur);
+					text-wrap: nowrap;
 					position: absolute;
 					left: 50%;
 					transform: translate(-50%, 1rem);
@@ -194,7 +206,6 @@
 					border-radius: calc(var(--rounded-corner) + 0.25rem);
 					background-color: var(--nav-bg);
 					padding: 0.25rem;
-					text-align: center;
 
 					li {
 						width: 100%;
