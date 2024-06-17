@@ -48,6 +48,11 @@ blockquote {
     border-radius: 0.25rem;
     padding: 0 0.75rem;
     color: var(--fg-muted-5);
+
+    body[dir="rtl"] & {
+        border-right: 0.25rem solid var(--primary-color);
+        border-left: unset;
+    }
 }
 
 mark {
@@ -102,6 +107,11 @@ hr {
         background: var(--bg-color), var(--primary-color);
         padding: 0 0.25rem;
         content: "☙❧";
+
+        // An ugly hack to fix mirroring in rtl
+        body[dir="rtl"] & {
+            content: "❧☙";
+        }
     }
 }
 
@@ -121,6 +131,10 @@ aside {
     background-color: var(--primary-color-alpha);
     padding: 1rem;
     width: 30%;
+
+    body[dir="rtl"] & {
+        float: left;
+    }
 
     @media only screen and (max-width: 720px) {
         float: none;

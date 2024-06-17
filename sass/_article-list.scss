@@ -20,6 +20,11 @@
 
 		&:has(.draft-badge, .archive-badge) h3 {
 			margin-right: 7rem;
+
+			body[dir="rtl"] & {
+				margin-right: unset;
+				margin-left: 7rem;
+			}
 		}
 
 		.draft-badge,
@@ -36,6 +41,11 @@
 				vertical-align: -0.125em;
 				width: 1rem;
 				height: 1rem;
+			}
+
+			body[dir="rtl"] & {
+				right: unset;
+				left: 0;
 			}
 		}
 

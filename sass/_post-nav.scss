@@ -18,6 +18,10 @@
 			padding-right: 0;
 			padding-left: 1rem;
 			text-align: right;
+
+			body[dir="rtl"] & {
+				text-align: left;
+			}
 		}
 
 		.nav-arrow {
