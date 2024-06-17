@@ -24,7 +24,9 @@
 	<p>{{ trans(key="comments_description", lang=lang) }}</p>
 
 	<p>
-		<a id="load-comments" class="inline-button" onclick="loadComments()" onkeypress="loadComments()" tabindex="0">{{ trans(key="load_comments", lang=lang) }}</a>
+		<a id="load-comments" class="inline-button" onclick="loadComments()" onkeypress="loadComments()" tabindex="0">
+			{{ trans(key="load_comments", lang=lang) }}
+		</a>
 	</p>
 
 	<div id="comments-wrapper">
@@ -68,7 +70,7 @@
 
 		function loadComments() {
 			let commentsWrapper = document.getElementById("comments-wrapper");
-			document.getElementById("load-comments").innerHTML = "{{ trans(key='comments_loading', lang=lang) }}";
+			document.getElementById("load-comments").innerHTML = "{{ trans(key='comments_loading', lang=lang) }}…";
 			fetch("https://{{ host }}/api/v1/statuses/{{ id }}/context")
 				.then(function (response) {
 					return response.json();
@@ -143,7 +145,7 @@
 							avatar.setAttribute("rel", "external nofollow");
 							avatar.setAttribute(
 								"title",
-								`View profile at @${status.account.username}@${instance}`
+								`{{ trans(key="view_profile", lang=lang) }} @${status.account.username}@${instance}`
 							);
 							avatar.appendChild(avatarPicture);
 
@@ -171,7 +173,7 @@
 							let permalink = document.createElement("a");
 							permalink.setAttribute("href", status.url);
 							permalink.setAttribute("itemprop", "url");
-							permalink.setAttribute("title", `View comment at ${instance}`);
+							permalink.setAttribute("title", `{{ trans(key="view_comment", lang=lang) }} ${instance}`);
 							permalink.setAttribute("rel", "external nofollow");
 							permalink.textContent = new Date(
 								status.created_at
@@ -193,7 +195,7 @@
 							let boosts = document.createElement("a");
 							boosts.className = "boosts";
 							boosts.setAttribute("href", `${status.url}/reblogs`);
-							boosts.setAttribute("title", `Boosts from ${instance}`);
+							boosts.setAttribute("title", `{{ trans(key="boosts_from", lang=lang) }} ${instance}`);
 
 							let boostsIcon = document.createElement("i");
 							boostsIcon.className = "icon";
@@ -204,7 +206,7 @@
 							let faves = document.createElement("a");
 							faves.className = "faves";
 							faves.setAttribute("href", `${status.url}/favourites`);
-							faves.setAttribute("title", `Favorites from ${instance}`);
+							faves.setAttribute("title", `{{ trans(key="faves_from", lang=lang) }} ${instance}`);
 
 							let favesIcon = document.createElement("i");
 							favesIcon.className = "icon";
@@ -229,13 +231,13 @@
 								avatar.classList.add("op");
 								avatar.setAttribute(
 									"title",
-									"Blog post author; " + avatar.getAttribute("title")
+									"{{ trans(key="blog_post_author", lang=lang) }}: " + avatar.getAttribute("title")
 								);
 
 								instanceBadge.classList.add("op");
 								instanceBadge.setAttribute(
 									"title",
-									"Blog post author: " + instanceBadge.getAttribute("title")
+									"{{ trans(key="blog_post_author", lang=lang) }}: " + instanceBadge.getAttribute("title")
 								);
 							}
 
