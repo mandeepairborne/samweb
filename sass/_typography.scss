@@ -49,7 +49,7 @@ blockquote {
 	padding: 0 0.75rem;
 	color: var(--fg-muted-5);
 
-	body[dir="rtl"] & {
+	:root[dir="rtl"] & {
 		border-right: 0.25rem solid var(--primary-color);
 		border-left: unset;
 	}
@@ -109,7 +109,7 @@ hr {
 		content: "☙❧";
 
 		// An ugly hack to fix mirroring in rtl
-		body[dir="rtl"] & {
+		:root[dir="rtl"] & {
 			content: "❧☙";
 		}
 	}
@@ -132,7 +132,7 @@ aside {
 	padding: 1rem;
 	width: 30%;
 
-	body[dir="rtl"] & {
+	:root[dir="rtl"] & {
 		float: left;
 	}
 

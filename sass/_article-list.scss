@@ -21,7 +21,7 @@
 		&:has(.draft-badge, .archive-badge) h3 {
 			margin-right: 7rem;
 
-			body[dir="rtl"] & {
+			:root[dir="rtl"] & {
 				margin-right: unset;
 				margin-left: 7rem;
 			}
@@ -44,7 +44,7 @@
 				height: 1rem;
 			}
 
-			body[dir="rtl"] & {
+			:root[dir="rtl"] & {
 				right: unset;
 				left: 0;
 			}

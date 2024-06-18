@@ -12,7 +12,8 @@
 	height: 0.75rem;
 	content: "";
 
-	body[dir="rtl"] & {
+	:root[dir="rtl"] & {
+		transform: scaleX(-100%);
 		margin-right: 0.25rem;
 		margin-left: unset;
 	}

@@ -2,6 +2,7 @@
 	display: flex;
 
 	.post-nav-item {
+		transition: var(--transition);
 		width: 50%;
 		text-decoration: none;
 
@@ -9,18 +10,43 @@
 			color: var(--primary-color);
 		}
 
-		&:nth-child(2n + 1) {
-			padding-right: 1rem;
-			padding-left: 0;
+		&:active {
+			transform: scale(var(--active));
 		}
 
-		&:nth-child(2n) {
-			padding-right: 0;
-			padding-left: 1rem;
-			text-align: right;
+		&.post-nav-prev {
+			transform-origin: left;
 
-			body[dir="rtl"] & {
-				text-align: left;
+			:root[dir="rtl"] & {
+				transform-origin: right;
+			}
+
+			.nav-arrow::before {
+				content: "← ";
+
+				:root[dir="rtl"] & {
+					content: "→ ";
+				}
+			}
+		}
+
+		&.post-nav-next {
+			transform-origin: right;
+			margin-left: auto;
+			text-align: end;
+
+			:root[dir="rtl"] & {
+				transform-origin: left;
+				margin-right: auto;
+				margin-left: unset;
+			}
+
+			.nav-arrow::after {
+				content: " →";
+
+				:root[dir="rtl"] & {
+					content: " ←";
+				}
 			}
 		}
 

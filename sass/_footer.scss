@@ -29,10 +29,18 @@
 
 				&:first-of-type a {
 					border-radius: 1.125rem 0 0 1.125rem;
+
+					:root[dir="rtl"] & {
+						border-radius: 0 1.125rem 1.125rem 0;
+					}
 				}
 
 				&:last-of-type a {
 					border-radius: 0 1.125rem 1.125rem 0;
+
+					:root[dir="rtl"] & {
+						border-radius: 1.125rem 0 0 1.125rem;
+					}
 				}
 
 				a {
@@ -43,7 +51,7 @@
 
 					&:hover {
 						box-shadow: var(--edge-highlight);
-						border-radius: 1.125rem;
+						border-radius: 1.125rem !important;
 						background-color: var(--primary-color);
 						color: var(--fg-color);
 						text-decoration: none;

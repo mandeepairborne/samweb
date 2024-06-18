@@ -8,7 +8,7 @@
 		width: 125px;
 		height: 125px;
 
-		body[dir="rtl"] & {
+		:root[dir="rtl"] & {
 			float: left;
 			margin: 3rem 1rem 0 0;
 		}
@@ -47,7 +47,7 @@
 				border-radius: 0.25rem;
 				padding-left: 1rem;
 
-				body[dir="rtl"] & {
+				:root[dir="rtl"] & {
 					border-right: 0.25rem solid var(--fg-muted-2);
 					border-left: unset;
 					padding-right: 1rem;

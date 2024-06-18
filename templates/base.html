@@ -1,9 +1,9 @@
 {% set rtl_langs = ["ar", "arc", "az", "dv", "ff", "he", "ku", "nqo", "fa", "rhg", "syc", "ur"] %}
 
 <!DOCTYPE html>
-<html lang="{{ lang }}">
+<html {% if lang in rtl_langs %}dir="rtl"{% endif %} lang="{{ lang }}">
 {% include "partials/head.html" %}
-<body {% if lang in rtl_langs %}dir="rtl"{% endif %}>
+<body>
 	{% include "partials/nav.html" %}
 	<div id="main" class="container">
 		{% block custom %}{%- endblock -%}

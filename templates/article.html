@@ -90,13 +90,13 @@
 	<nav id="post-nav">
 		{% if page.higher %}
 			<a class="post-nav-item post-nav-prev" href="{{ page.higher.permalink }}">
-				<div class="nav-arrow">← {{ trans(key="page_previous", lang=lang) }}</div>
+				<div class="nav-arrow">{{ trans(key="page_previous", lang=lang) }}</div>
 				<span class="post-title">{{ page.higher.title }}</span>
 			</a>
 		{% endif %}
 		{% if page.lower %}
 			<a class="post-nav-item post-nav-next" href="{{ page.lower.permalink }}">
-				<div class="nav-arrow">{{ trans(key="page_next", lang=lang) }} →</div>
+				<div class="nav-arrow">{{ trans(key="page_next", lang=lang) }}</div>
 				<span class="post-title">{{ page.lower.title }}</span>
 			</a>
 		{% endif %}
