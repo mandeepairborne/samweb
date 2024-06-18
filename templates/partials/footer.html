@@ -1,4 +1,38 @@
+{% set current_lang = config.default_language %}
+{% if page %}
+	{% set current_lang = page.lang %}
+{% elif section %}
+	{%- set current_lang = section.lang %}
+{% endif %}
 <footer id="site-footer">
+	{% if config.extra.footer.links %}
+		<nav>
+			<ul>
+				{% for link in config.extra.footer.links %}
+					{% if current_lang == config.default_language %}
+						{% set title = link.name %}
+					{% else %}
+						{% set language_key = 'name_' ~ current_lang %}
+						{% set title = link[language_key] %}
+					{% endif %}
+					{%- if link.url is matching('https?://') %}
+						<li>
+							<a href="{{ link.url }}">
+								{{ title }}
+							</a>
+						</li>
+					{%- else %}
+						<li>
+							<a href="{{ get_url(path=link.url, lang=lang)}}">
+								{{ title }}
+							</a>
+						</li>
+					{%- endif %}
+				{% endfor %}
+			</ul>
+		</nav>
+	{% endif %}
+
 	{% if config.extra.footer.show_copyright %}
 		<p title="Last built at {{ now() | date(format='%F %a %R') }}">
 			&copy; {{ config.title }}, {{ now() | date(format="%Y") }}

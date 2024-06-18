@@ -25,7 +25,7 @@
 					{% set title = link[language_key] %}
 				{% endif %}
 				{%- if link.url is matching('https?://') %}
-					<li class="link">
+					<li>
 						<a href="{{ link.url }}"
 							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == link.url | trim_end_matches(pat='/') | safe %}
 								class="active"
@@ -34,7 +34,7 @@
 						</a>
 					</li>
 				{%- else %}
-					<li class="link">
+					<li>
 						<a href="{{ get_url(path=link.url, lang=lang)}}"
 							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url, lang=lang) | trim_end_matches(pat='/') | safe %}
 								class="active"
