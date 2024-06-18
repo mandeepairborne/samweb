@@ -319,8 +319,8 @@ _Кря-кря!_
 
 ```html.j2
 <div class="dialog-buttons">
-  <a class="inline-button" href="#top">Go to top</a>
-  <a href="{{site.issuesurl}}">File an issue</a>
+  <a class="inline-button" href="#top">Перейти в Начало</a>
+  <a class="inline-button colored external" href="{{ config.extra.issues_url }}">Отправить Отчет об Ошибке</a>
 </div>
 ```
 

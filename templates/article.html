@@ -106,7 +106,7 @@
 <div class="dialog-buttons">
 	<a class="inline-button" href="#top">{{ trans(key="go_to_top", lang=lang) }}</a>
 	{% if config.extra.issues_url %}
-		<a class="inline-button colored" href="{{ config.extra.issues_url }}">{{ trans(key="file_an_issue", lang=lang) }}</a>
+		<a class="inline-button colored external" href="{{ config.extra.issues_url }}">{{ trans(key="file_an_issue", lang=lang) }}</a>
 	{% endif %}
 </div>
 {% endblock content %}
