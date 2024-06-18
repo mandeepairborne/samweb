@@ -25,6 +25,12 @@ section#comments {
 		margin-top: 2rem;
 	}
 
+	.dialog-buttons {
+		justify-content: start;
+		gap: 0.25rem;
+		margin-top: 2rem;
+	}
+
 	.comment {
 		display: grid;
 		grid-template-columns: min-content;
@@ -140,14 +146,14 @@ section#comments {
 		}
 
 		footer {
+			display: flex;
 			grid-area: interactions;
+			gap: 0.25rem;
 			margin-top: 1rem;
 
 			.boosts,
 			.faves {
-				display: inline-block;
 				transition: var(--transition);
-				margin-right: 0.25rem;
 				border-radius: 999px;
 				background-color: transparent;
 				padding: 0.25rem 0.75rem;

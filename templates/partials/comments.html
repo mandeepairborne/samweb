@@ -13,21 +13,23 @@
 {% endif %}
 
 {% set id = page.extra.comments.id %}
-{% set post_url = "https://{{ host }}/@{{ username }}/{{ id }}" %}
 
 <section id="comments">
 	{% if config.extra.comments.show_qr %}
-		<img id="qrcode" class="no-hover pixels" alt="QR code to a Mastodon post" src="https://api.qrserver.com/v1/create-qr-code/?data={{ post_url }}&format=gif" />
+		<img id="qrcode" class="no-hover pixels" alt="QR code to a Mastodon post" src="https://api.qrserver.com/v1/create-qr-code/?data=https://{{ host }}/@{{ username }}/{{ id }}&format=gif" />
 	{% endif %}
 
 	<h2>{{ trans(key="comments", lang=lang) }}</h2>
 	<p>{{ trans(key="comments_description", lang=lang) }}</p>
 
-	<p>
+	<div class="dialog-buttons">
 		<a id="load-comments" class="inline-button" onclick="loadComments()" onkeypress="loadComments()" tabindex="0">
 			{{ trans(key="load_comments", lang=lang) }}
 		</a>
-	</p>
+		<a class="inline-button colored external" href="https://{{ host }}/@{{ username }}/{{ id }}">
+			{{ trans(key="open_post", lang=lang) }}
+		</a>
+	</div>
 
 	<div id="comments-wrapper">
 		<noscript>
