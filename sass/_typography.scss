@@ -76,7 +76,7 @@ kbd {
 
 	// Small nice thingy, keys can be pressed!
 	&:active {
-		transform: translateY(2px);
+		transform: translateY(0.125rem);
 		box-shadow: inset 0 1px 0 var(--fg-muted-2);
 		background-color: var(--fg-muted-3);
 	}

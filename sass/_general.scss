@@ -60,7 +60,7 @@ body {
 :focus-visible {
 	animation: focus-in var(--transition);
 	outline: 0.125rem solid var(--primary-color);
-	outline-offset: 2px;
+	outline-offset: 0.125rem;
 }
 
 // Fallback for older browsers
@@ -68,7 +68,7 @@ body {
 	:focus {
 		animation: focus-in var(--transition);
 		outline: 0.125rem solid var(--primary-color);
-		outline-offset: 2px;
+		outline-offset: 0.125rem;
 	}
 }
 
