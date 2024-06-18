@@ -8,7 +8,6 @@
 
 	button {
 		-webkit-backdrop-filter: var(--blur);
-		display: inline-flex;
 		position: absolute;
 		top: 0.5rem;
 		right: 0.5rem;
@@ -20,6 +19,7 @@
 		border-radius: 50%;
 		background-color: var(--fg-muted-1);
 		padding: 0.5rem;
+		line-height: 0;
 
 		body[dir="rtl"] & {
 			right: unset;

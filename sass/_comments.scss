@@ -1,11 +1,12 @@
 section#comments {
 	#qrcode {
 		float: right;
+		box-sizing: content-box;
 		margin: 3rem 0 0 1rem;
 		background-color: white;
-		padding: 12.5px;
-		width: 150px;
-		height: 150px;
+		padding: 0.75rem;
+		width: 125px;
+		height: 125px;
 
 		body[dir="rtl"] & {
 			float: left;

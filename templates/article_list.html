@@ -6,7 +6,7 @@
 {{ section.description | markdown | safe }}
 
 <small>
-	<a class="link-page" href="{{ get_url(path='tags', lang=lang) }}">{{ trans(key="filter_by_tag", lang=lang) }}</a>
+	<a href="{{ get_url(path='tags', lang=lang) }}">{{ trans(key="filter_by_tag", lang=lang) }}</a>
 	<br />
 	{{ trans(key="newest_to_oldest", lang=lang) }} ↓
 </small>
@@ -14,7 +14,7 @@
 <div id="article-list">
 	{% for page in section.pages %}
 		<article {% if page.draft %}class="draft"{% endif %}>
-			<h3><a class="link-page" href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
+			<h3><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
 			{%- if page.draft %}
 				<span class="draft-badge">
 					<i class="icon"></i>
@@ -32,7 +32,9 @@
 			{%- endif %}
 			{%- if page.date %}
 				<small>
-					<time datetime="{{ page.date | date(format='%+') }}" pubdate>{{- page.date | date(format=config.extra.date_format) -}}</time>
+					<time datetime="{{ page.date | date(format='%+') }}" pubdate>
+						{{- page.date | date(format=config.extra.date_format) -}}
+					</time>
 					{%- if page.authors %}
 						<span>•</span>
 						<span>{{ trans(key="author", lang=lang) }}: {{ page.authors[0] }}</span>

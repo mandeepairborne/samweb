@@ -6,14 +6,14 @@
 			transform: scale(0.95);
 			opacity: 0.6;
 			transition: var(--transition-longer);
-			outline: 2px dashed var(--fg-muted-2);
+			outline: 0.125rem dashed var(--fg-muted-2);
 			outline-offset: 1rem;
 			border-radius: 1rem;
 
 			&:hover {
 				transform: scale(1);
 				opacity: 1;
-				outline: 2px dashed transparent;
+				outline: 0.125rem dashed transparent;
 				outline-offset: 0;
 			}
 		}
@@ -34,8 +34,9 @@
 			right: 0;
 			box-shadow: var(--edge-highlight);
 			border-radius: 999px;
-			padding: 0.25rem 0.75rem;
+			padding: 0.5rem 0.75rem;
 			font-weight: bold;
+			line-height: normal;
 
 			.icon {
 				vertical-align: -0.125em;

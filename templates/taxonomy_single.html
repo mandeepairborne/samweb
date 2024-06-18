@@ -2,30 +2,55 @@
 
 {% block content %}
 <h1>{{ trans(key="posts_with_tag", lang=lang) }} “{{ term.name }}”</h1>
+
 <small>
-	<a class="link-page" href="{{ get_url(path='tags', lang=lang) }}">{{ trans(key="see_all_tags", lang=lang) }}</a>
+	<a href="{{ get_url(path='tags', lang=lang) }}">{{ trans(key="see_all_tags", lang=lang) }}</a>
 	<br />
 	{{ term.pages | length }} {{ trans(key="posts_in_total", lang=lang) }}
 </small>
-<article>
+
+<div id="article-list">
 	{% for page in term.pages %}
-		<h3><a class="link-page" href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
-		{%- if page.description %}
-			<p>{{ page.description }}</p>
-		{%- endif %}
-		<small>
-			<time datetime='{{ page.date | date(format=' %+') }}' pubdate>{{- page.date | date(format=config.extra.date_format) -}}</time>
-			{%- if page.taxonomies %}
-				{%- for name, taxon in page.taxonomies %}
-					<span>•</span>
-					<ul class="tags">
-						{%-for item in taxon %}
-							<li><a class="tag" href="{{ get_taxonomy_url(kind=name, name=item, lang=lang) }}">{{ item }}</a></li>
-						{%- endfor %}
-					</ul>
-				{%- endfor %}
+		<article {% if page.draft %}class="draft"{% endif %}>
+			<h3><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
+			{%- if page.draft %}
+				<span class="draft-badge">
+					<i class="icon"></i>
+					{{ trans(key="drafted", lang=lang) }}
+				</span>
 			{%- endif %}
-		</small>
+			{%- if page.extra.archive %}
+				<span class="archive-badge">
+					<i class="icon"></i>
+					{{ trans(key="archived", lang=lang) }}
+				</span>
+			{%- endif %}
+			{%- if page.description %}
+				{{ page.description | markdown | safe }}
+			{%- endif %}
+			{%- if page.date %}
+				<small>
+					<time datetime="{{ page.date | date(format='%+') }}" pubdate>
+						{{- page.date | date(format=config.extra.date_format) -}}
+					</time>
+					{%- if page.authors %}
+						<span>•</span>
+						<span>{{ trans(key="author", lang=lang) }}: {{ page.authors[0] }}</span>
+					{%- endif %}
+					{%- if page.taxonomies %}
+						{%- for name, taxon in page.taxonomies %}
+							<span>•</span>
+							<ul class="tags">
+								{%-for item in taxon %}
+									<li><a class="tag" href="{{ get_taxonomy_url(kind=name, name=item, lang=lang) }}">{{ item }}</a></li>
+								{%- endfor %}
+							</ul>
+						{%- endfor %}
+					{%- endif %}
+				</small>
+			{%- endif %}
+		</article>
+		<hr>
 	{% endfor %}
-</article>
+</div>
 {% endblock content %}

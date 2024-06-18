@@ -47,7 +47,7 @@ git submodule add https://codeberg.org/daudix/duckquill.git themes/duckquill
 
 ```sh
 cd themes/duckquill
-git checkout tags/v2.1.0
+git checkout tags/v3.0.0
 ```
 
 Чтобы обновить субмодуль, просто переключитесь на новый тег:
@@ -57,7 +57,7 @@ git checkout tags/v2.1.0
 ```sh
 git submodule update --remote --merge
 git tag --list
-git checkout tags/v2.1.0
+git checkout tags/v3.0.0
 ```
 
 Затем включите её в файле `config.toml`:

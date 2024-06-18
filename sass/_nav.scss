@@ -11,23 +11,21 @@
 	max-width: min(var(--container-width), 90%);
 
 	nav {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
 		padding: 0.5rem;
 
 		ul {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
+			align-items: center;
 			gap: 0.25rem;
 			margin: 0;
 			padding: 0;
 		}
 
 		li {
-			display: inline-flex;
+			display: flex;
+			line-height: normal;
 			list-style: none;
 		}
 
@@ -48,7 +46,7 @@
 			position: relative;
 			transition: var(--transition);
 			border-radius: 999px;
-			padding: 0.325rem 0.75rem;
+			padding: 0.5rem 0.75rem;
 			color: var(--fg-muted-4);
 			text-decoration: none;
 
@@ -107,11 +105,11 @@
 
 			&::after {
 				position: absolute;
-				top: 0;
+				top: -0.25rem;
 				right: -0.5rem;
 				background-color: var(--fg-muted-2);
 				width: 1px;
-				height: 110%;
+				height: calc(100% + 0.5rem);
 				content: "";
 
 				body[dir="rtl"] & {
@@ -132,7 +130,7 @@
 
 		#feed a,
 		#dropdown summary {
-			padding: 0.325rem 0.625rem;
+			padding: 0.5rem 0.625rem;
 
 			&:hover .icon {
 				background-color: var(--primary-color);
@@ -208,6 +206,7 @@
 					padding: 0.25rem;
 
 					li {
+						display: flex;
 						width: 100%;
 
 						a {

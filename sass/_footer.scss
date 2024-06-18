@@ -40,11 +40,11 @@
 		padding: 0;
 
 		li {
-			display: inline-flex;
+			line-height: 0;
 			list-style: none;
 
 			a {
-				display: inline-flex;
+				display: block;
 				transition: var(--transition);
 				border-radius: 999px;
 				padding: 0.5rem;

@@ -44,6 +44,7 @@ body {
 // and flash it with primary color when jumping to it
 :target:not(#main) {
 	animation: var(--transition-long) 1s highlight-in-out;
+	transition: all var(--transition-longer), scroll-margin-top 0s;
 	scroll-margin-top: 20vh;
 	color: var(--primary-color);
 	text-shadow: var(--primary-color-alpha) 0 0 4px, var(--primary-color) 0 0 12px;
