@@ -91,6 +91,49 @@ trigger_warning = "Предупреждение о Тревоге"
 view_comment = "Показать комментарий на"
 view_profile = "Показать профиль на"
 
+[languages.ar]
+title = "Duckquill"
+description = "ثيم عصري وجميل ونظيف."
+generate_feed = true
+
+taxonomies = [{ name = "tags", feed = true }]
+
+[languages.ar.translations]
+anchor_link = "رابط الارتباط لـ"
+archived = "الأرشيف"
+author = "الكاتب"
+blog_post_author = "كاتب منشور المدونة"
+boosts_from = "التعزيزات من"
+comments = "التعليقات"
+comments_description = "يمكنك التعليق على منشور المدونة هذا عن طريق الرد علنًا على هذا المنشور باستخدام حساب Mastodon أو حساب آخر على ActivityPub/Fediverse. يتم عرض الردود المعروفة غير الخاصة أدناه."
+comments_loading = "التحميل"
+comments_noscript = "تحميل التعليقات يعتمد على JavaScript. حاول تمكين JavaScript وإعادة التحميل، أو قم بزيارة المنشور الأصلي على Mastodon."
+disclaimer = "إخلاء المسؤولية"
+drafted = "مسودة"
+faves_from = "المفضلة من"
+feed = "موجز"
+file_an_issue = "ملف مشكلة"
+filter_by_tag = "تصفية حسب العلامة"
+footer_powered_by = "مدعوم من"
+footer_powered_by_and = "و"
+footer_source = "مصدر الموقع الإلكتروني"
+go_to_top = "الانتقال إلى الأعلى"
+load_comments = "تحميل التعليقات"
+newest_to_oldest = "من الأحدث إلى الأقدم"
+open_post = "افتح المنشور"
+page_next = "التالي"
+page_previous = "السابق"
+posts_in_total = "الوظائف في المجموع"
+posts_with_tag = "المنشورات ذات العلامة"
+see_all_tags = "انظر جميع العلامات"
+skip_to_content = "تخطي إلى المحتوى الرئيسي"
+table_of_contents = "جدول المحتويات"
+tags = "العلامات"
+tags_in_total = "العلامات في المجموع"
+trigger_warning = "تحذير الزناد"
+view_comment = "عرض التعليق على"
+view_profile = "عرض الملف الشخصي على"
+
 [markdown]
 highlight_code = true
 highlight_theme = "css"
@@ -144,26 +187,27 @@ show_feed = true
 # i.e "@/blog/_index.md".
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
-  { url = "@/blog/_index.md", name = "Blog", name_ru = "Блог" },
-  { url = "@/demo/index.md", name = "Demo", name_ru = "Демо" },
-  { url = "https://codeberg.org/daudix/duckquill", name = "Repo", name_ru = "Репо" },
+  { url = "@/blog/_index.md", name = "Blog", name_ru = "Блог", name_ar = "المدونة" },
+  { url = "@/demo/index.md", name = "Demo", name_ru = "Демо", name_ar = "العرض" },
+  { url = "https://codeberg.org/daudix/duckquill", name = "Repo", name_ru = "Репо", name_ar = "المستودع" },
 ]
 # List of languages that the website is translated to (comment if there's no additional languages)
 langs = [
   { code = "en", name = "🇬🇧 English" },
   { code = "ru", name = "🇷🇺 Русский" },
+  { code = "ar", name = "🇵🇸 العربية" },
 ]
 
 [extra.footer]
 # Links used in the footer.
 # Same as the nav ones.
 links = [
-  { url = "@/blog/_index.md", name = "Blog", name_ru = "Блог" },
-  { url = "@/demo/index.md", name = "Demo", name_ru = "Демо" },
-  { url = "https://codeberg.org/daudix/duckquill", name = "Repo", name_ru = "Репо" },
-  { url = "@/blog/_index.md", name = "Blog", name_ru = "Блог" },
-  { url = "@/demo/index.md", name = "Demo", name_ru = "Демо" },
-  { url = "https://codeberg.org/daudix/duckquill", name = "Repo", name_ru = "Репо" },
+  { url = "@/blog/_index.md", name = "Blog", name_ru = "Блог", name_ar = "المدونة" },
+  { url = "@/demo/index.md", name = "Demo", name_ru = "Демо", name_ar = "العرض" },
+  { url = "https://codeberg.org/daudix/duckquill", name = "Repo", name_ru = "Репо", name_ar = "المستودع" },
+  { url = "@/blog/_index.md", name = "Blog", name_ru = "Блог", name_ar = "المدونة" },
+  { url = "@/demo/index.md", name = "Demo", name_ru = "Демо", name_ar = "العرض" },
+  { url = "https://codeberg.org/daudix/duckquill", name = "Repo", name_ru = "Репо", name_ar = "المستودع" },
 ]
 # Social links in the footer.
 # Any URL-encoded SVG can be used as an icon.

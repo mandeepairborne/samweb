@@ -7,7 +7,7 @@
 	nav {
 		margin: 0 auto 1rem auto;
 		box-shadow: var(--edge-highlight);
-		border-radius: 999px;
+		border-radius: 22px;
 		background-color: var(--fg-muted-1);
 		padding: 0.25rem;
 		width: fit-content;
@@ -27,31 +27,15 @@
 				line-height: normal;
 				list-style: none;
 
-				&:first-of-type a {
-					border-radius: 1.125rem 0 0 1.125rem;
-
-					:root[dir="rtl"] & {
-						border-radius: 0 1.125rem 1.125rem 0;
-					}
-				}
-
-				&:last-of-type a {
-					border-radius: 0 1.125rem 1.125rem 0;
-
-					:root[dir="rtl"] & {
-						border-radius: 1.125rem 0 0 1.125rem;
-					}
-				}
-
 				a {
 					transition: var(--transition);
+					border-radius: 999px;
 					padding: 0.5rem 0.75rem;
 					color: var(--fg-muted-4);
 					text-decoration: none;
 
 					&:hover {
 						box-shadow: var(--edge-highlight);
-						border-radius: 1.125rem !important;
 						background-color: var(--primary-color);
 						color: var(--fg-color);
 						text-decoration: none;
