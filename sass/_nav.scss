@@ -105,11 +105,11 @@
 
 			&::after {
 				position: absolute;
-				top: -0.25rem;
+				top: -0.125rem;
 				right: -0.5rem;
 				background-color: var(--fg-muted-2);
 				width: 1px;
-				height: calc(100% + 0.5rem);
+				height: calc(100% + 0.25rem);
 				content: "";
 
 				body[dir="rtl"] & {
