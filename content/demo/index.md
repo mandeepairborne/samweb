@@ -195,7 +195,7 @@ Variables should be comma-separated and be inside the brackets.
 {{ image(url="https://upload.wikimedia.org/wikipedia/commons/b/b4/JPEG_example_JPG_RIP_100.jpg", url_min="https://upload.wikimedia.org/wikipedia/commons/3/38/JPEG_example_JPG_RIP_010.jpg", alt="The gravestone of J.P.G.", no_hover=true) }}
 <figcaption>Image with compressed version, an alt text, and without zoom on hover</figcaption>
 
-Alternatively, you can append the following url anchors. It can be more handy in some cases, e.g such images will render normally in any Markdown editor, opposed to the Zola shortcodes.
+Alternatively, you can append the following URL anchors. It can be more handy in some cases, e.g such images will render normally in any Markdown editor, opposed to the Zola shortcodes.
 
 - `#full`: Forces image/video to be full-width.
 - `#pixels`: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.
