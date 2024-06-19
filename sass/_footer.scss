@@ -5,12 +5,13 @@
 	text-align: center;
 
 	nav {
-		margin: 0 auto 1rem auto;
+		margin: 0 auto 1rem;
 		box-shadow: var(--edge-highlight);
 		border-radius: 22px;
 		background-color: var(--fg-muted-1);
 		padding: 0.25rem;
 		width: fit-content;
+		max-width: min(var(--container-width), 90%);
 
 		ul {
 			display: flex;
