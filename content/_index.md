@@ -138,7 +138,7 @@ primary_color_alpha = "COLOR_CODE"
 - [treeniks.github.io](https://treeniks.github.io)
 - [vikramxd.github.io](https://vikramxd.github.io)
 - [zorrn.net](https://www.zorrn.net)
-- Yours? <small>(feel free to [contact me](https://daudix.codeberg.page/about/#contacts) or send a pull request)</small>
+- Yours? <small>(feel free to [contact me](https://daudix.codeberg.page/contact/#contacts) or send a pull request)</small>
 
 </details>
 
