@@ -32,7 +32,7 @@
 	{% endif %}
 
 	{% if config.extra.show_copy_button %}
-		<script src="{{ get_url(path='copy-button.js') }}"></script>
+		{% include "partials/copy-button.html" %}
 	{% endif %}
 
 	{% if config.extra.scripts %}

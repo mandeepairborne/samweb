@@ -49,7 +49,7 @@
 					<details>
 						<summary>
 							<i class="icon"></i>
-							<span>Languages</span>
+							<span class="hidden">{{ trans(key="language", lang=lang) }}</span>
 						</summary>
 						<ul>
 							{% for language in config.extra.nav.langs %}
@@ -65,7 +65,7 @@
 				<li id="feed">
 					<a href="{{ get_url(path=config.feed_filename) }}">
 						<i class="icon"></i>
-						<span>{{ trans(key="feed", lang=lang) }}</span>
+						<span class="hidden">{{ trans(key="feed", lang=lang) }}</span>
 					</a>
 				</li>
 			{% endif %}
