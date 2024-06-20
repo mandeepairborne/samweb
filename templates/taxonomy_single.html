@@ -1,12 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>{{ trans(key="posts_with_tag", lang=lang) }} “{{ term.name }}”</h1>
+{% set number_of_posts = term.pages | length %}
+<h1>{{ macros_translate::translate(key="posts_with_tag", default="Posts with tag", language_strings=language_strings) }} “{{ term.name }}”</h1>
 
 <small>
-	<a href="{{ get_url(path='tags', lang=lang) }}">{{ trans(key="see_all_tags", lang=lang) }}</a>
+	<a href="{{ get_url(path='tags', lang=lang) }}">
+		{{ macros_translate::translate(key="see_all_tags", default="See all tags", language_strings=language_strings) }}
+	</a>
 	<br />
-	{{ term.pages | length }} {{ trans(key="posts_in_total", lang=lang) }}
+	{{ term.pages | length }} {{ macros_translate::translate(key="posts_in_total", number=number_of_posts, default="$NUMBER posts in total", language_strings=language_strings) }}
 </small>
 
 <div id="article-list">
@@ -16,13 +19,13 @@
 			{%- if page.draft %}
 				<span class="draft-badge">
 					<i class="icon"></i>
-					{{ trans(key="drafted", lang=lang) }}
+					{{ macros_translate::translate(key="drafted", default="Drafted", language_strings=language_strings) }}
 				</span>
 			{%- endif %}
 			{%- if page.extra.archive %}
 				<span class="archive-badge">
 					<i class="icon"></i>
-					{{ trans(key="archived", lang=lang) }}
+					{{ macros_translate::translate(key="archived", default="Archived", language_strings=language_strings) }}
 				</span>
 			{%- endif %}
 			{%- if page.description %}
@@ -35,7 +38,9 @@
 					</time>
 					{%- if page.authors %}
 						<span>•</span>
-						<span>{{ trans(key="author", lang=lang) }}: {{ page.authors[0] }}</span>
+						<span>
+							{{ macros_translate::translate(key="author", default="Author", language_strings=language_strings) }}: {{ page.authors[0] }}
+						</span>
 					{%- endif %}
 					{%- if page.taxonomies %}
 						{%- for name, taxon in page.taxonomies %}

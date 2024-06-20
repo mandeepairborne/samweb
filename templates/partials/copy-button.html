@@ -16,7 +16,7 @@
 				let span = document.createElement("span");
 				icon.classList.add("icon");
 				span.classList.add("hidden");
-				span.innerHTML = "{{ trans(key='copy_code', lang=lang) }}";
+				span.innerHTML = "{{ macros_translate::translate(key='copy_code', default='Copy code', language_strings=language_strings) }}";
 				button.appendChild(icon);
 				button.appendChild(span);
 				container.appendChild(button);

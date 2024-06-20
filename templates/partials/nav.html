@@ -1,13 +1,9 @@
-{% set current_lang = config.default_language %}
-{% if page %}
-	{% set current_lang = page.lang %}
-{% elif section %}
-	{%- set current_lang = section.lang %}
-{% endif %}
 {% if config.extra.nav.links %}
 <header id="site-nav">
 	<nav>
-		<a href="#main" id="main-content" tabindex="0">{{ trans(key="skip_to_content", lang=lang) }}</a>
+		<a href="#main" id="main-content" tabindex="0">
+			{{ macros_translate::translate(key="skip_to_content", default="Skip to main content", language_strings=language_strings) }}
+		</a>
 		<ul>
 			<li id="home">
 				<a href="{{ get_url(path="/", lang=lang) }}"
@@ -18,19 +14,13 @@
 				</a>
 			</li>
 			{% for link in config.extra.nav.links %}
-				{% if current_lang == config.default_language %}
-					{% set title = link.name %}
-				{% else %}
-					{% set language_key = 'name_' ~ current_lang %}
-					{% set title = link[language_key] %}
-				{% endif %}
 				{%- if link.url is matching('https?://') %}
 					<li>
 						<a href="{{ link.url }}"
 							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == link.url | trim_end_matches(pat='/') | safe %}
 								class="active"
 							{% endif %}>
-							{{ title }}
+							{{ macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) }}
 						</a>
 					</li>
 				{%- else %}
@@ -39,33 +29,21 @@
 							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url, lang=lang) | trim_end_matches(pat='/') | safe %}
 								class="active"
 							{% endif %}>
-							{{ title }}
+							{{ macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) }}
 						</a>
 					</li>
 				{%- endif %}
 			{% endfor %}
-			{% if config.extra.nav.langs %}
-				<li id="dropdown">
-					<details>
-						<summary>
-							<i class="icon"></i>
-							<span class="hidden">{{ trans(key="language", lang=lang) }}</span>
-						</summary>
-						<ul>
-							{% for language in config.extra.nav.langs %}
-								<li>
-									<a href="{{ get_url(path="/", lang=language.code) }}">{{ language.name }}</a>
-								</li>
-							{% endfor %}
-						</ul>
-					</details>
-				</li>
+			{% if config.languages | length > 0 %}
+				{% include "partials/language_switcher.html" %}
 			{% endif %}
 			{% if config.generate_feed and config.extra.nav.show_feed %}
 				<li id="feed">
 					<a href="{{ get_url(path=config.feed_filename) }}">
 						<i class="icon"></i>
-						<span class="hidden">{{ trans(key="feed", lang=lang) }}</span>
+						<span class="hidden">
+							{{ macros_translate::translate(key="feed", default="Feed", language_strings=language_strings) }}
+						</span>
 					</a>
 				</li>
 			{% endif %}

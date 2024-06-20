@@ -1,8 +1,16 @@
-{% set rtl_langs = ["ar", "arc", "az", "dv", "ff", "he", "ku", "nqo", "fa", "rhg", "syc", "ur"] %}
+{% import "macros/translate.html" as macros_translate %}
+
+{% set language_strings = load_data(path="i18n/" ~ lang ~ '.toml', required=false) %}
+{% if not language_strings %}
+    {% set language_strings = load_data(path="themes/tabi/i18n/" ~ lang ~ ".toml", required=false) %}
+{% endif %}
+{% set rtl_languages = ["ar", "arc", "az", "dv", "ff", "he", "ku", "nqo", "fa", "rhg", "syc", "ur"] %}
 
 <!DOCTYPE html>
-<html {% if lang in rtl_langs %}dir="rtl"{% endif %} lang="{{ lang }}">
+<html {% if lang in rtl_languages %}dir="rtl"{% endif %} lang="{{ lang }}">
+
 {% include "partials/head.html" %}
+
 <body>
 	{% include "partials/nav.html" %}
 	<div id="main" class="container">

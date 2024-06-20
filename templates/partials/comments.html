@@ -19,21 +19,27 @@
 		<img id="qrcode" class="no-hover pixels" alt="QR code to a Mastodon post" src="https://api.qrserver.com/v1/create-qr-code/?data=https://{{ host }}/@{{ username }}/{{ id }}&format=gif" />
 	{% endif %}
 
-	<h2>{{ trans(key="comments", lang=lang) }}</h2>
-	<p>{{ trans(key="comments_description", lang=lang) }}</p>
+	<h2>
+		{{ macros_translate::translate(key="comments", default="Comments", language_strings=language_strings) }}
+	</h2>
+	<p>
+		{{ macros_translate::translate(key="comments_description", default="You can comment on this blog post by publicly replying to this post using a Mastodon or other ActivityPub/Fediverse account. Known non-private replies are displayed below.", language_strings=language_strings) }}
+	</p>
 
 	<div class="dialog-buttons">
 		<a id="load-comments" class="inline-button" onclick="loadComments()" onkeypress="loadComments()" tabindex="0">
-			{{ trans(key="load_comments", lang=lang) }}
+			{{ macros_translate::translate(key="load_comments", default="Load Comments", language_strings=language_strings) }}
 		</a>
 		<a class="inline-button colored external" href="https://{{ host }}/@{{ username }}/{{ id }}">
-			{{ trans(key="open_post", lang=lang) }}
+			{{ macros_translate::translate(key="open_post", default="Open Post", language_strings=language_strings) }}
 		</a>
 	</div>
 
 	<div id="comments-wrapper">
 		<noscript>
-			<p>{{ trans(key="comments_noscript", lang=lang) }}</p>
+			<p>
+				{{ macros_translate::translate(key="comments_noscript", default="Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit the original post on Mastodon.", language_strings=language_strings) }}
+			</p>
 		</noscript>
 	</div>
 	<script type="text/javascript">
@@ -72,7 +78,7 @@
 
 		function loadComments() {
 			let commentsWrapper = document.getElementById("comments-wrapper");
-			document.getElementById("load-comments").innerHTML = "{{ trans(key='comments_loading', lang=lang) }}…";
+			document.getElementById("load-comments").innerHTML = "{{ macros_translate::translate(key='comments_loading', default='Loading', language_strings=language_strings) }}…";
 			fetch("https://{{ host }}/api/v1/statuses/{{ id }}/context")
 				.then(function (response) {
 					return response.json();
@@ -147,7 +153,7 @@
 							avatar.setAttribute("rel", "external nofollow");
 							avatar.setAttribute(
 								"title",
-								`{{ trans(key="view_profile", lang=lang) }} @${status.account.username}@${instance}`
+								`{{ macros_translate::translate(key="view_profile", default="View profile at", language_strings=language_strings) }} @${status.account.username}@${instance}`
 							);
 							avatar.appendChild(avatarPicture);
 
@@ -175,7 +181,7 @@
 							let permalink = document.createElement("a");
 							permalink.setAttribute("href", status.url);
 							permalink.setAttribute("itemprop", "url");
-							permalink.setAttribute("title", `{{ trans(key="view_comment", lang=lang) }} ${instance}`);
+							permalink.setAttribute("title", `{{ macros_translate::translate(key="view_comment", default="View comment at", language_strings=language_strings) }} ${instance}`);
 							permalink.setAttribute("rel", "external nofollow");
 							permalink.textContent = new Date(
 								status.created_at
@@ -197,7 +203,7 @@
 							let boosts = document.createElement("a");
 							boosts.className = "boosts";
 							boosts.setAttribute("href", `${status.url}/reblogs`);
-							boosts.setAttribute("title", `{{ trans(key="boosts_from", lang=lang) }} ${instance}`);
+							boosts.setAttribute("title", `{{ macros_translate::translate(key="boosts_from", default="Boosts from", language_strings=language_strings) }} ${instance}`);
 
 							let boostsIcon = document.createElement("i");
 							boostsIcon.className = "icon";
@@ -208,7 +214,7 @@
 							let faves = document.createElement("a");
 							faves.className = "faves";
 							faves.setAttribute("href", `${status.url}/favourites`);
-							faves.setAttribute("title", `{{ trans(key="faves_from", lang=lang) }} ${instance}`);
+							faves.setAttribute("title", `{{ macros_translate::translate(key="faves_from", default="Favorites from", language_strings=language_strings) }} ${instance}`);
 
 							let favesIcon = document.createElement("i");
 							favesIcon.className = "icon";
@@ -233,13 +239,13 @@
 								avatar.classList.add("op");
 								avatar.setAttribute(
 									"title",
-									"{{ trans(key="blog_post_author", lang=lang) }}: " + avatar.getAttribute("title")
+									"{{ macros_translate::translate(key='blog_post_author', default='Blog post author', language_strings=language_strings) }}: " + avatar.getAttribute("title")
 								);
 
 								instanceBadge.classList.add("op");
 								instanceBadge.setAttribute(
 									"title",
-									"{{ trans(key="blog_post_author", lang=lang) }}: " + instanceBadge.getAttribute("title")
+									"{{ macros_translate::translate(key="blog_post_author", default="Blog post author", language_strings=language_strings) }}: " + instanceBadge.getAttribute("title")
 								);
 							}
 

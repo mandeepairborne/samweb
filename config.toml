@@ -2,7 +2,6 @@ title = "Duckquill"
 base_url = "https://daudix.codeberg.page/duckquill"
 description = "Modern, pretty, and clean theme."
 
-default_language = "en"
 compile_sass = true
 minify_html = true
 generate_feed = true
@@ -10,45 +9,13 @@ feed_filename = "atom.xml"
 build_search_index = false
 author = "Duck Quack"
 
-taxonomies = [{ name = "tags", feed = true }]
+# To translate the entire theme, there must be a file with the same ISO 639-1
+# (or IETF BCP 47) Code in the `i18n` folder of your site or the Duckquill theme
+# For example, "i18n/fr.toml" for French or "i18n/zh-Hans.toml" for Simplified Chinese.
+# Otherwise the theme will be in English.
+default_language = "en"
 
-[translations]
-anchor_link = "Anchor link for"
-archived = "Archived"
-author = "Author"
-blog_post_author = "Blog post author"
-boosts_from = "Boosts from"
-comments = "Comments"
-comments_description = "You can comment on this blog post by publicly replying to this post using a Mastodon or other ActivityPub/Fediverse account. Known non-private replies are displayed below."
-comments_loading = "Loading"
-comments_noscript = "Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit the original post on Mastodon."
-copy_code = "Copy code"
-disclaimer = "Disclaimer"
-drafted = "Drafted"
-faves_from = "Favorites from"
-feed = "Feed"
-file_an_issue = "File an Issue"
-filter_by_tag = "Filter by tag"
-footer_powered_by = "Powered by"
-footer_powered_by_and = "and"
-footer_source = "Website source"
-go_to_top = "Go to Top"
-language = "Language"
-load_comments = "Load Comments"
-newest_to_oldest = "From newest to oldest"
-open_post = "Open Post"
-page_next = "Next"
-page_previous = "Previous"
-posts_in_total = "posts in total"
-posts_with_tag = "Posts with tag"
-see_all_tags = "See all tags"
-skip_to_content = "Skip to main content"
-table_of_contents = "Table of Contents"
-tags = "Tags"
-tags_in_total = "tags in total"
-trigger_warning = "Trigger Warning"
-view_comment = "View comment at"
-view_profile = "View profile at"
+taxonomies = [{ name = "tags", feed = true }]
 
 [languages.ru]
 title = "Duckquill"
@@ -57,88 +24,12 @@ generate_feed = true
 
 taxonomies = [{ name = "tags", feed = true }]
 
-[languages.ru.translations]
-anchor_link = "Якорная ссылка для"
-archived = "Архивировано"
-author = "Автор"
-blog_post_author = "Автор блог-поста"
-boosts_from = "Продвижения с"
-comments = "Комментарии"
-comments_description = "Вы можете оставить комментарий к этому блог-посту, публично ответив на него с помощью аккаунта Mastodon или другого аккаунта ActivityPub/Fediverse. Известные неприватные ответы отображены ниже."
-comments_loading = "Загрузка…"
-comments_noscript = "Загрузка комментариев зависит от JavaScript. Попробуйте включить JavaScript и перезагрузить, или посетите оригинальный пост на Mastodon."
-copy_code = "Скопировать код"
-disclaimer = "Дисклеймер"
-drafted = "Черновик"
-faves_from = "Избранное с"
-feed = "Лента"
-file_an_issue = "Отправить Отчет об Ошибке"
-filter_by_tag = "Фильтр по тегам"
-footer_powered_by = "Работает на базе"
-footer_powered_by_and = "и"
-footer_source = "Исходный код веб-сайта"
-go_to_top = "Перейти в Начало"
-language = "Язык"
-load_comments = "Загрузить Комментарии"
-newest_to_oldest = "От новейшего к старейшему"
-open_post = "Открыть Пост"
-page_next = "Следующий"
-page_previous = "Предыдущий"
-posts_in_total = "всего постов"
-posts_with_tag = "Посты с тегом"
-see_all_tags = "Показать все теги"
-skip_to_content = "Перейти к основному содержанию"
-table_of_contents = "Оглавление"
-tags = "Теги"
-tags_in_total = "тегов в общем"
-trigger_warning = "Предупреждение о Тревоге"
-view_comment = "Показать комментарий на"
-view_profile = "Показать профиль на"
-
 [languages.ar]
 title = "Duckquill"
 description = "ثيم عصري وجميل ونظيف."
 generate_feed = true
 
 taxonomies = [{ name = "tags", feed = true }]
-
-[languages.ar.translations]
-anchor_link = "رابط الارتباط لـ"
-archived = "الأرشيف"
-author = "الكاتب"
-blog_post_author = "كاتب منشور المدونة"
-boosts_from = "التعزيزات من"
-comments = "التعليقات"
-comments_description = "يمكنك التعليق على منشور المدونة هذا عن طريق الرد علنًا على هذا المنشور باستخدام حساب Mastodon أو حساب آخر على ActivityPub/Fediverse. يتم عرض الردود المعروفة غير الخاصة أدناه."
-comments_loading = "التحميل"
-comments_noscript = "تحميل التعليقات يعتمد على JavaScript. حاول تمكين JavaScript وإعادة التحميل، أو قم بزيارة المنشور الأصلي على Mastodon."
-copy_code = "نسخ الرمز"
-disclaimer = "إخلاء المسؤولية"
-drafted = "مسودة"
-faves_from = "المفضلة من"
-feed = "موجز"
-file_an_issue = "ملف مشكلة"
-filter_by_tag = "تصفية حسب العلامة"
-footer_powered_by = "مدعوم من"
-footer_powered_by_and = "و"
-footer_source = "مصدر الموقع الإلكتروني"
-go_to_top = "الانتقال إلى الأعلى"
-language = "اللغة"
-load_comments = "تحميل التعليقات"
-newest_to_oldest = "من الأحدث إلى الأقدم"
-open_post = "افتح المنشور"
-page_next = "التالي"
-page_previous = "السابق"
-posts_in_total = "الوظائف في المجموع"
-posts_with_tag = "المنشورات ذات العلامة"
-see_all_tags = "انظر جميع العلامات"
-skip_to_content = "تخطي إلى المحتوى الرئيسي"
-table_of_contents = "جدول المحتويات"
-tags = "العلامات"
-tags_in_total = "العلامات في المجموع"
-trigger_warning = "تحذير الزناد"
-view_comment = "عرض التعليق على"
-view_profile = "عرض الملف الشخصي على"
 
 [markdown]
 highlight_code = true
@@ -193,27 +84,21 @@ show_feed = true
 # i.e "@/blog/_index.md".
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
-  { url = "@/blog/_index.md", name = "Blog", name_ru = "Блог", name_ar = "المدونة" },
-  { url = "@/demo/index.md", name = "Demo", name_ru = "Демо", name_ar = "العرض" },
-  { url = "https://codeberg.org/daudix/duckquill", name = "Repo", name_ru = "Репо", name_ar = "المستودع" },
-]
-# List of languages that the website is translated to (comment if there's no additional languages)
-langs = [
-  { code = "en", name = "🇬🇧 English" },
-  { code = "ru", name = "🇷🇺 Русский" },
-  { code = "ar", name = "🇵🇸 العربية" },
+  { url = "@/blog/_index.md", name = "Blog" },
+  { url = "@/demo/index.md", name = "Demo" },
+  { url = "https://codeberg.org/daudix/duckquill", name = "Repo" },
 ]
 
 [extra.footer]
 # Links used in the footer.
 # Same as the nav ones.
 links = [
-  { url = "@/blog/_index.md", name = "Blog", name_ru = "Блог", name_ar = "المدونة" },
-  { url = "@/demo/index.md", name = "Demo", name_ru = "Демо", name_ar = "العرض" },
-  { url = "https://codeberg.org/daudix/duckquill", name = "Repo", name_ru = "Репо", name_ar = "المستودع" },
-  { url = "@/blog/_index.md", name = "Blog", name_ru = "Блог", name_ar = "المدونة" },
-  { url = "@/demo/index.md", name = "Demo", name_ru = "Демо", name_ar = "العرض" },
-  { url = "https://codeberg.org/daudix/duckquill", name = "Repo", name_ru = "Репо", name_ar = "المستودع" },
+  { url = "@/blog/_index.md", name = "Blog" },
+  { url = "@/demo/index.md", name = "Demo" },
+  { url = "https://codeberg.org/daudix/duckquill", name = "Repo" },
+  { url = "@/blog/_index.md", name = "Blog" },
+  { url = "@/demo/index.md", name = "Demo" },
+  { url = "https://codeberg.org/daudix/duckquill", name = "Repo" },
 ]
 # Social links in the footer.
 # Any URL-encoded SVG can be used as an icon.

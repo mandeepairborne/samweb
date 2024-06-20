@@ -6,16 +6,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="theme-color" content="{{ config.extra.primary_color }}" />
 	<link rel="canonical" href="{{ current_url | default(value='/') | safe }}" />
-	<title>{% block title %}{% include "partials/title.html" %}{% endblock %}</title>
-	<link rel="stylesheet" type="text/css" href="{{ get_url(path='style.css') }}" />
-	<link rel="stylesheet" type="text/css" href="{{ get_url(path='syntax-theme-dark.css') }}" media="(prefers-color-scheme: dark)" />
-	<link rel="stylesheet" type="text/css" href="{{ get_url(path='syntax-theme-light.css') }}" media="(prefers-color-scheme: light)" />
+	<title>{% include "partials/title.html" %}</title>
+	<link rel="stylesheet" href="{{ get_url(path='syntax-theme-dark.css') }}" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" href="{{ get_url(path='syntax-theme-light.css') }}" media="(prefers-color-scheme: light)" />
 
-	{% if config.extra.stylesheets %}
-		{% for stylesheet in config.extra.stylesheets %}
-			<link rel="stylesheet" type="text/css" href="{{ get_url(path=stylesheet) }}" />
-		{% endfor %}
-	{% endif %}
+    {# Define array of CSS files to load. main.css is always loaded. #}
+    {% set stylesheets = [ "style.css" ] %}
+
+    {# Load extra CSS files from config.toml #}
+    {% if config.extra.stylesheets -%}
+        {% set stylesheets = stylesheets | concat(with=config.extra.stylesheets) %}
+    {% endif %}
+
+    {# Load extra CSS files from page metadata #}
+    {% if page.extra.stylesheets %}
+        {% set stylesheets = stylesheets | concat(with=page.extra.stylesheets) %}
+	{% elif section.extra.stylesheets %}
+        {% set stylesheets = stylesheets | concat(with=section.extra.stylesheets) %}
+    {% endif %}
+
+    {# Load all stylesheets #}
+    {%- for stylesheet in stylesheets %}
+        <link rel="stylesheet" href="{{ get_url(path=stylesheet) | safe }}" />
+    {%- endfor %}
 
 	<style type="text/css">
 		:root {
