@@ -4,8 +4,7 @@
 # front of each translation that refers to the person and the other word that refers to the organization
 
 language_name = "العربية"  # Shown in language picker for multi-language sites.
-date_locale = "ar_SA"  # The locale code for time and date formatting.
-full_stop = "."  # Used at the end of a sentence.
+date_locale = "ar-SA"  # The locale code for time and date formatting.
 
 # Menu items.
 # Should match the names in config.extra.nav.links and config.extra.footer.links.
@@ -13,7 +12,6 @@ Blog = "المدونة"
 Demo = "العرض"
 Repo = "المستودع"
 
-anchor_link = "رابط الارتباط لـ"
 archived = "الأرشيف"
 author = "الكاتب"
 blog_post_author = "كاتب منشور المدونة"
@@ -39,13 +37,13 @@ newest_to_oldest = "من الأحدث إلى الأقدم"
 open_post = "افتح المنشور"
 page_next = "التالي"
 page_previous = "السابق"
-posts_in_total = "الوظائف في المجموع"
+posts = "الوظائف في المجموع"
 posts_with_tag = "المنشورات ذات العلامة"
 see_all_tags = "انظر جميع العلامات"
 skip_to_content = "تخطي إلى المحتوى الرئيسي"
 table_of_contents = "جدول المحتويات"
+tags_title = "العلامات"
 tags = "العلامات"
-tags_in_total = "العلامات في المجموع"
 trigger_warning = "تحذير الزناد"
 view_comment = "عرض التعليق على"
 view_profile = "عرض الملف الشخصي على"

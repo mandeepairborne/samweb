@@ -2,8 +2,8 @@
 
 {% block content %}
 {% set number_of_tags = terms | length %}
-<h1>{{ macros_translate::translate(key="tags", default="Tags", language_strings=language_strings) }}</h1>
-<small>{{ terms | length }} {{ macros_translate::translate(key="tags_in_total", number=number_of_tags, default="$NUMBER tags in total", language_strings=language_strings) }}
+<h1>{{ macros_translate::translate(key="tags_title", default="Tags", language_strings=language_strings) }}</h1>
+<small>{{ macros_translate::translate(key="tags", number=number_of_tags, default="$NUMBER tags in total", language_strings=language_strings) }}
 </small>
 <br />
 <ul class="tags">

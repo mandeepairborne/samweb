@@ -9,7 +9,7 @@
 		{{ macros_translate::translate(key="see_all_tags", default="See all tags", language_strings=language_strings) }}
 	</a>
 	<br />
-	{{ term.pages | length }} {{ macros_translate::translate(key="posts_in_total", number=number_of_posts, default="$NUMBER posts in total", language_strings=language_strings) }}
+	{{ macros_translate::translate(key="posts", number=number_of_posts, default="$NUMBER posts", language_strings=language_strings) }}
 </small>
 
 <div id="article-list">

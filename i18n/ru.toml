@@ -1,6 +1,5 @@
 language_name = "Русский"  # Shown in language picker for multi-language sites.
-date_locale = "ru_RU"
-full-stop = "."  # Used at the end of a sentence.
+date_locale = "ru-RU"
 
 # Note on pluralization prefixes:
 # - few_: for numbers ending in 2-4, except 12-14, in genitive singular.
@@ -12,7 +11,6 @@ Blog = "Блог"
 Demo = "Блог"
 Repo = "Репо"
 
-anchor_link = "Якорная ссылка для"
 archived = "Архивировано"
 author = "Автор"
 blog_post_author = "Автор блог-поста"
@@ -38,13 +36,19 @@ newest_to_oldest = "От новейшего к старейшему"
 open_post = "Открыть Пост"
 page_next = "Следующий"
 page_previous = "Предыдущий"
-posts_in_total = "всего постов"
+posts = "$NUMBER постов"
+one_posts = "$NUMBER пост"
+few_posts = "$NUMBER поста"
+many_posts = "$NUMBER постов"
 posts_with_tag = "Посты с тегом"
 see_all_tags = "Показать все теги"
 skip_to_content = "Перейти к основному содержанию"
 table_of_contents = "Оглавление"
-tags = "Теги"
-tags_in_total = "тегов в общем"
+tags_title = "Теги"
+tags = "$NUMBER тегов"
+one_tags = "$NUMBER тег"
+few_tags = "$NUMBER тега"
+many_tags = "$NUMBER тегов"
 trigger_warning = "Предупреждение о Тревоге"
 view_comment = "Показать комментарий на"
 view_profile = "Показать профиль на"
