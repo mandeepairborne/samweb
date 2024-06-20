@@ -1,9 +1,3 @@
-{% set current_lang = config.default_language %}
-{% if page %}
-	{% set current_lang = page.lang %}
-{% elif section %}
-	{%- set current_lang = section.lang %}
-{% endif %}
 <footer id="site-footer">
 	{% if config.extra.footer.links %}
 		<nav>
