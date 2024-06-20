@@ -99,4 +99,18 @@
 		margin: 1rem auto;
 		max-width: min(var(--container-width) + 10rem, 90%);
 	}
+
+	.link {
+		transition: var(--transition);
+		box-shadow: var(--edge-highlight);
+		border-radius: var(--rounded-corner-small);
+		background-color: var(--primary-color-alpha);
+		padding: 0.125rem 0.375rem;
+		text-decoration: none;
+
+		&:hover {
+			background-color: var(--primary-color);
+			color: var(--fg-color);
+		}
+	}
 }
