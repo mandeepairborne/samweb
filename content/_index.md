@@ -70,6 +70,14 @@ theme = "duckquill"
 
 Duckquill offers some configuration options to make it fit you better; most options have pretty descriptive comments, so it should be easy to understand what they do.
 
+### Localization
+
+Duckquill ships with a localization system based on one used in [tabi](https://github.com/welpo/tabi), it's very easy to use and quite flexible at the same time.
+
+To add a translation, create a file in your site's `i18n` directory called `[lang-code].toml`, e.g `ru.toml`. The language code should be ISO 639-1 or IETF BCP 47.
+
+Inside the file, copy-paste one of the existing translations from Duckquill and adapt it to your needs. Make sure to also check [tabi](https://github.com/welpo/tabi/tree/main/i18n) translation files for reference.
+
 ### Custom Stylesheets
 
 You can add your own or override existing styles by creating custom stylesheet and adding it in the `config.toml`:
