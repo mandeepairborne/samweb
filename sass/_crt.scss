@@ -1,6 +1,10 @@
 .crt {
 	margin: 1rem 0 1rem;
-	box-shadow: 0 0 0 1px var(--primary-color-alpha), 0 2px 6px 2px var(--primary-color-alpha), 0 4px 24px 4px var(--primary-color-alpha);
+	box-shadow:
+		var(--edge-highlight),
+		0 0 0 1px var(--primary-color-alpha),
+		0 2px 6px 2px var(--primary-color-alpha),
+		0 4px 24px 4px var(--primary-color-alpha);
 	border-radius: var(--rounded-corner);
 	background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), var(--primary-color);
 
