@@ -71,7 +71,7 @@ source_url = "https://codeberg.org/daudix/duckquill"
 #   "YOUR_SCRIPT.js",
 #   "ALSO_YOUR_SCRIPT.js"
 # ]
-# Whether to display "copy code" button on all code blocks
+# Whether to show "copy code" button on all code blocks
 # that have the language set.
 # See https://www.getzola.org/documentation/content/syntax-highlighting/
 show_copy_button = true
