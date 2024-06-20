@@ -8,9 +8,9 @@
 		animation: flicker 0.25s alternate infinite;
 		margin: unset;
 		box-shadow: unset;
-		background-color: unset;
+		background-color: unset !important;
 		padding: 1rem 1rem;
-		color: var(--primary-color);
+		color: var(--primary-color) !important;
 		text-shadow: var(--primary-color-alpha) 0 0 4px, var(--primary-color) 0 0 12px;
 
 		@keyframes flicker {

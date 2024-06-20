@@ -7,28 +7,31 @@
 	<meta name="theme-color" content="{{ config.extra.primary_color }}" />
 	<link rel="canonical" href="{{ current_url | default(value='/') | safe }}" />
 	<title>{% include "partials/title.html" %}</title>
-	<link rel="stylesheet" href="{{ get_url(path='syntax-theme-dark.css') }}" media="(prefers-color-scheme: dark)" />
-	<link rel="stylesheet" href="{{ get_url(path='syntax-theme-light.css') }}" media="(prefers-color-scheme: light)" />
 
-    {# Define array of CSS files to load. main.css is always loaded. #}
+	{% if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
+		{% if config.markdown.highlight_themes_css | length > 0 %}
+			<link rel="stylesheet" href="{{ get_url(path='syntax-theme-light.css') }}" media="(prefers-color-scheme: light)" />
+			<link rel="stylesheet" href="{{ get_url(path='syntax-theme-dark.css') }}" media="(prefers-color-scheme: dark)" />
+		{% else %}
+			<link rel="stylesheet" href="{{ get_url(path='syntax-theme.css') }}" />
+		{% endif %}
+	{% endif %}
+
     {% set stylesheets = [ "style.css" ] %}
 
-    {# Load extra CSS files from config.toml #}
     {% if config.extra.stylesheets -%}
         {% set stylesheets = stylesheets | concat(with=config.extra.stylesheets) %}
     {% endif %}
 
-    {# Load extra CSS files from page metadata #}
     {% if page.extra.stylesheets %}
         {% set stylesheets = stylesheets | concat(with=page.extra.stylesheets) %}
 	{% elif section.extra.stylesheets %}
         {% set stylesheets = stylesheets | concat(with=section.extra.stylesheets) %}
     {% endif %}
 
-    {# Load all stylesheets #}
-    {%- for stylesheet in stylesheets %}
+    {% for stylesheet in stylesheets %}
         <link rel="stylesheet" href="{{ get_url(path=stylesheet) | safe }}" />
-    {%- endfor %}
+    {% endfor %}
 
 	<style type="text/css">
 		:root {
