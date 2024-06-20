@@ -1,5 +1,11 @@
-language_name = "English"  # Shown in language picker for multi-language sites.
-date_locale = "en-GB"
+# Shown in language picker for multi-language sites
+language_name = "English"
+# Tera date format used for listing posts
+# (post publication date, tag posts list...).
+# Not used in comments, "date_locale" is used instead.
+# See https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html
+date_format = "%d %B %Y"
+date_locale = "en_IE"
 
 # Menu items.
 # Should match the names in config.extra.nav.links and config.extra.footer.links.

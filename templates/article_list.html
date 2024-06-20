@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
+{% set date_format = macros_translate::translate(key="date_format", default="%d %B %Y", language_strings=language_strings) %}
+{% set date_locale = macros_translate::translate(key="date_locale", default="en_IE", language_strings=language_strings) %}
 <h1>{{ section.title }}</h1>
 
 {{ section.description | markdown | safe }}
@@ -35,7 +37,7 @@
 			{%- if page.date %}
 				<small>
 					<time datetime="{{ page.date | date(format='%+') }}" pubdate>
-						{{- page.date | date(format=config.extra.date_format) -}}
+						{{- page.date | date(format=date_format, locale=date_locale) -}}
 					</time>
 					{%- if page.authors %}
 						<span>•</span>

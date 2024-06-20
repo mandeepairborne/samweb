@@ -13,7 +13,7 @@
 {% endif %}
 
 {% set id = page.extra.comments.id %}
-{% set date_locale = macros_translate::translate(key="date_locale", default="en-GB", language_strings=language_strings) %}
+{% set date_locale = macros_translate::translate(key="date_locale", default="en-IE", language_strings=language_strings) | replace(from="_", to="-") %}
 
 <section id="comments">
 	{% if config.extra.comments.show_qr %}

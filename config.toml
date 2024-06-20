@@ -9,10 +9,15 @@ feed_filename = "atom.xml"
 build_search_index = false
 author = "Duck Quack"
 
-# To translate the entire theme, there must be a file with the same ISO 639-1
-# (or IETF BCP 47) Code in the `i18n` folder of your site or the Duckquill theme
+# Based on https://github.com/welpo/tabi
+#
+# To translate the entire theme, there must be a file with the same ISO 639-1 or BCP 47
+# language code in the `i18n` directory of your site or the Duckquill theme.
 # For example, "i18n/fr.toml" for French or "i18n/zh-Hans.toml" for Simplified Chinese.
 # Otherwise the theme will be in English.
+#
+# ISO 639-1: https://localizely.com/iso-639-1-list/
+# BCP 47: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 default_language = "en"
 
 taxonomies = [{ name = "tags", feed = true }]
@@ -51,11 +56,6 @@ primary_color_alpha = "rgba(255, 120, 0, 0.2)"
 emoji_favicon = false
 # Whether the favicon is an animated GIF or not
 animated_favicon = false
-# Tera Date format used when listing posts
-# (post publication date, tag posts list...).
-# Not used in comments.
-# See https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html
-date_format = "%d %B %Y"
 # URL to website's issue tracker
 issues_url = "https://codeberg.org/daudix/duckquill/issues"
 # URL to website's source code
@@ -134,10 +134,6 @@ host = "vmst.io"
 user = "daudix"
 # Whether to show the QR code to Mastodon post
 show_qr = true
-# BCP 47 locale used for comment timestamps;
-# See https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
-# Default: "en-IE"
-# locale = "YOUR_LOCALE"
 
 # GoatCounter analytics; enabled only if present in config.
 [extra.goatcounter]

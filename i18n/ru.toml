@@ -1,5 +1,11 @@
-language_name = "Русский"  # Shown in language picker for multi-language sites.
-date_locale = "ru-RU"
+# Shown in language picker for multi-language sites
+language_name = "Русский"
+# Tera date format used for listing posts
+# (post publication date, tag posts list...).
+# Not used in comments, "date_locale" is used instead.
+# See https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html
+date_format = "%d %B %Y г."
+date_locale = "ru_RU"
 
 # Note on pluralization prefixes:
 # - few_: for numbers ending in 2-4, except 12-14, in genitive singular.

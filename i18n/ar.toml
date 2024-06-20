@@ -1,10 +1,11 @@
-# Hello, the Arabic language has many pronouns and words, and each word indicates a different meaning,
-# unlike the English language, in which, on the other hand, the word can refer to a person and a group.
-# This translation is for individual use, if you are a company or organization, I have put a comment in
-# front of each translation that refers to the person and the other word that refers to the organization
-
-language_name = "العربية"  # Shown in language picker for multi-language sites.
-date_locale = "ar-SA"  # The locale code for time and date formatting.
+# Shown in language picker for multi-language sites
+language_name = "العربية"
+# Tera date format used for listing posts
+# (post publication date, tag posts list...).
+# Not used in comments, "date_locale" is used instead.
+# See https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html
+date_format = "%d %B %Y"
+date_locale = "ar_SA"
 
 # Menu items.
 # Should match the names in config.extra.nav.links and config.extra.footer.links.
