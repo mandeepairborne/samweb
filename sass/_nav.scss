@@ -184,9 +184,9 @@
 						}
 
 						&[open] ul {
-							animation: open var(--transition);
+							animation: dropdown-open var(--transition);
 
-							@keyframes open {
+							@keyframes dropdown-open {
 								from {
 									transform: translate(-50%, 0);
 									opacity: 0;
