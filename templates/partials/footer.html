@@ -35,7 +35,11 @@
 
 	{% if config.extra.footer.show_copyright %}
 		<p title="Last built at {{ now() | date(format='%F %a %R') }}">
-			&copy; {{ config.title }}, {{ now() | date(format="%Y") }}
+			{% if config.extra.footer.copyright %}
+				{{ config.extra.footer.copyright }}
+			{% else %}
+				&copy; {{ config.title }}, {{ now() | date(format="%Y") }}
+			{% endif %}
 		</p>
 	{% endif %}
 

@@ -116,6 +116,8 @@ show_copyright = true
 show_powered_by = true
 # Whether to show link to website source
 show_source = false
+# Custom copyright text
+# copyright = "© Aperture Science Innovators, 1972"
 
 # Based on https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
 #
