@@ -79,7 +79,7 @@
 
 		function loadComments() {
 			let commentsWrapper = document.getElementById("comments-wrapper");
-			document.getElementById("load-comments").innerHTML = "{{ macros_translate::translate(key='comments_loading', default='Loading', language_strings=language_strings) }}…";
+			document.getElementById("load-comments").innerHTML = "{{ macros_translate::translate(key='loading', default='Loading', language_strings=language_strings) }}…";
 			fetch("https://{{ host }}/api/v1/statuses/{{ id }}/context")
 				.then(function (response) {
 					return response.json();
@@ -246,7 +246,7 @@
 								instanceBadge.classList.add("op");
 								instanceBadge.setAttribute(
 									"title",
-									"{{ macros_translate::translate(key="blog_post_author", default="Blog post author", language_strings=language_strings) }}: " + instanceBadge.getAttribute("title")
+									"{{ macros_translate::translate(key='blog_post_author', default='Blog post author', language_strings=language_strings) }}: " + instanceBadge.getAttribute("title")
 								);
 							}
 
