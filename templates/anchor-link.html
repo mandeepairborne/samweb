@@ -1,8 +1,1 @@
-{% import "macros/translate.html" as macros_translate %}
-
-{% set language_strings = load_data(path="i18n/" ~ lang ~ '.toml', required=false) %}
-{% if not language_strings %}
-    {% set language_strings = load_data(path="themes/tabi/i18n/" ~ lang ~ ".toml", required=false) %}
-{% endif %}
-
 <a class="zola-anchor" href="#{{ id }}" aria-label="Anchor link for: {{ id }}"><i class="icon"></i></a>

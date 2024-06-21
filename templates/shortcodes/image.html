@@ -1,4 +1,4 @@
-{% if url_min %}
+{%- if url_min -%}
 	<a href="{{ url }}">
 		<img class="
 			{% if full %}full{% endif %}
@@ -6,16 +6,16 @@
 			{% if transparent %}transparent{% endif %}
 			{% if no_hover %}no-hover{% endif %}
 		"
-		{% if alt %}alt="{{alt}}"{% endif %}
+		{%- if alt -%}alt="{{alt}}"{%- endif -%}
 		src="{{ url_min }}" />
 	</a>
-{% else %}
+{%- else -%}
 	<img class="
 			{% if full %}full{% endif %}
 			{% if pixels %}pixels{% endif %}
 			{% if transparent %}transparent{% endif %}
 			{% if no_hover %}no-hover{% endif %}
 		"
-		{% if alt %}alt="{{alt}}"{% endif %}
+		{%- if alt -%}alt="{{alt}}"{%- endif -%}
 		src="{{ url }}" />
-{% endif %}
+{%- endif -%}

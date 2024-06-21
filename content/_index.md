@@ -119,6 +119,10 @@ primary_color = "COLOR_CODE"
 primary_color_alpha = "COLOR_CODE"
 ```
 
+### Favicon
+
+Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and apple touch icon respectively. For animated favicon you can use APNG with `png` file extension.
+
 ## Test Pages
 
 - [Demo page](@/demo/index.md)

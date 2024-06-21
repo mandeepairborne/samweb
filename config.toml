@@ -3,7 +3,7 @@ base_url = "https://daudix.codeberg.page/duckquill"
 description = "Modern, pretty, and clean theme."
 
 compile_sass = true
-minify_html = true
+minify_html = false
 generate_feed = true
 feed_filename = "atom.xml"
 build_search_index = false
@@ -54,8 +54,6 @@ primary_color_alpha = "rgba(255, 120, 0, 0.2)"
 # Whether to use emoji as a favicon.
 # Replace with an emoji wrapped in quotes.
 emoji_favicon = false
-# Whether the favicon is an animated GIF or not
-animated_favicon = false
 # URL to website's issue tracker
 issues_url = "https://codeberg.org/daudix/duckquill/issues"
 # URL to website's source code
@@ -117,7 +115,7 @@ show_powered_by = true
 # Whether to show link to website source
 show_source = false
 # Custom copyright text
-# copyright = "© Aperture Science Innovators, 1972"
+# copyright = "© *Aperture* **Science** ~~Innovators~~, `1972`"
 
 # Based on https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
 #

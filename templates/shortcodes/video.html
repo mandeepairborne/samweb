@@ -3,5 +3,5 @@
 		{% if pixels %}pixels{% endif %}
 		{% if transparent %}transparent{% endif %}
   	"
-	{% if alt %}alt="{{alt}}"{% endif %}
+	{%- if alt -%}alt="{{alt}}"{%- endif -%}
 	controls src="{{url}}"></video>

@@ -1,4 +1,3 @@
-{% if config.extra.nav.links %}
 <header id="site-nav">
 	<nav>
 		<a href="#main" id="main-content" tabindex="0">
@@ -7,37 +6,37 @@
 		<ul>
 			<li id="home">
 				<a href="{{ get_url(path="/", lang=lang) }}"
-					{% if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path="/", lang=lang) | trim_end_matches(pat='/') | safe %}
+					{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path="/", lang=lang) | trim_end_matches(pat='/') | safe -%}
 						class="active"
-					{% endif %}>
+					{%- endif -%}>
 					{{ config.title }}
 				</a>
 			</li>
-			{% for link in config.extra.nav.links %}
-				{%- if link.url is matching('https?://') %}
+			{%- for link in config.extra.nav.links -%}
+				{%- if link.url is matching('https?://') -%}
 					<li>
 						<a href="{{ link.url }}"
-							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == link.url | trim_end_matches(pat='/') | safe %}
+							{%- if current_url | default(value='/') | trim_end_matches(pat='/') | safe == link.url | trim_end_matches(pat='/') | safe -%}
 								class="active"
-							{% endif %}>
+							{%- endif -%}>
 							{{ macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) }}
 						</a>
 					</li>
-				{%- else %}
+				{%- else -%}
 					<li>
 						<a href="{{ get_url(path=link.url, lang=lang)}}"
-							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url, lang=lang) | trim_end_matches(pat='/') | safe %}
+							{%- if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url, lang=lang) | trim_end_matches(pat='/') | safe -%}
 								class="active"
-							{% endif %}>
+							{%- endif -%}>
 							{{ macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) }}
 						</a>
 					</li>
-				{%- endif %}
-			{% endfor %}
-			{% if config.languages | length > 0 %}
-				{% include "partials/language_switcher.html" %}
-			{% endif %}
-			{% if config.generate_feed and config.extra.nav.show_feed %}
+				{%- endif -%}
+			{%- endfor -%}
+			{%- if config.languages | length > 0 -%}
+				{%- include "partials/language_switcher.html" -%}
+			{%- endif -%}
+			{%- if config.generate_feed and config.extra.nav.show_feed -%}
 				<li id="feed">
 					<a href="{{ get_url(path=config.feed_filename) }}">
 						<i class="icon"></i>
@@ -46,8 +45,7 @@
 						</span>
 					</a>
 				</li>
-			{% endif %}
+			{%- endif -%}
 		</ul>
 	</nav>
 </header>
-{% endif %}

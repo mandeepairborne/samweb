@@ -8,76 +8,74 @@
 	<link rel="canonical" href="{{ current_url | default(value='/') | safe }}" />
 	<title>{% include "partials/title.html" %}</title>
 
-	{% if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
-		{% if config.markdown.highlight_themes_css | length > 0 %}
+	{%- if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
+		{%- if config.markdown.highlight_themes_css | length > 0 %}
 			<link rel="stylesheet" href="{{ get_url(path='syntax-theme-light.css') }}" media="(prefers-color-scheme: light)" />
 			<link rel="stylesheet" href="{{ get_url(path='syntax-theme-dark.css') }}" media="(prefers-color-scheme: dark)" />
-		{% else %}
+		{%- else %}
 			<link rel="stylesheet" href="{{ get_url(path='syntax-theme.css') }}" />
-		{% endif %}
-	{% endif %}
+		{%- endif %}
+	{%- endif %}
 
-    {% set stylesheets = [ "style.css" ] %}
+    {%- set stylesheets = [ "style.css" ] %}
 
-    {% if config.extra.stylesheets -%}
-        {% set stylesheets = stylesheets | concat(with=config.extra.stylesheets) %}
-    {% endif %}
+    {%- if config.extra.stylesheets %}
+        {%- set stylesheets = stylesheets | concat(with=config.extra.stylesheets) %}
+    {%- endif %}
 
-    {% if page.extra.stylesheets %}
-        {% set stylesheets = stylesheets | concat(with=page.extra.stylesheets) %}
-	{% elif section.extra.stylesheets %}
-        {% set stylesheets = stylesheets | concat(with=section.extra.stylesheets) %}
-    {% endif %}
+    {%- if page.extra.stylesheets -%}
+        {%- set stylesheets = stylesheets | concat(with=page.extra.stylesheets) %}
+	{%- elif section.extra.stylesheets %}
+        {%- set stylesheets = stylesheets | concat(with=section.extra.stylesheets) %}
+    {%- endif %}
 
-    {% for stylesheet in stylesheets %}
-        <link rel="stylesheet" href="{{ get_url(path=stylesheet) | safe }}" />
-    {% endfor %}
+    {%- for stylesheet in stylesheets %}
+		<link rel="stylesheet" href="{{ get_url(path=stylesheet) | safe }}" />
+    {%- endfor %}
 
-	<style type="text/css">
-		:root {
-			--primary-color: {{ config.extra.primary_color }};
-			--primary-color-alpha: {{ config.extra.primary_color_alpha }};
-		}
-	</style>
+	<style type="text/css">:root {--primary-color: {{ config.extra.primary_color }}; --primary-color-alpha: {{ config.extra.primary_color_alpha }};}</style>
 
-	{% if config.extra.goatcounter %}
+	{%- if config.extra.goatcounter %}
 		<script data-goatcounter="https://{{ config.extra.goatcounter.user }}.{{ config.extra.goatcounter.host | default(value='goatcounter.com') }}/count" async src="//gc.zgo.at/count.js"></script>
 		<noscript>
 			<img src="https://{{ config.extra.goatcounter.user }}.{{ config.extra.goatcounter.host | default(value='goatcounter.com') }}/count?p={{ current_path | default(value='/') | safe }}" />
 		</noscript>
-	{% endif %}
+	{%- endif %}
 
-	{% if config.extra.show_copy_button %}
-		{% include "partials/copy-button.html" %}
-	{% endif %}
+	{%- if config.extra.show_copy_button %}
+    	{%- set scripts = [ "copy-button.js" ] %}
+	{%- endif %}
 
-	{% if config.extra.scripts %}
-		{% for script in config.extra.scripts %}
-			<script src="{{ get_url(path=script) }}"></script>
-		{% endfor %}
-	{% endif %}
+    {%- if config.extra.scripts %}
+        {%- set scripts = scripts | concat(with=config.extra.scripts) %}
+    {%- endif %}
 
-	{% if config.extra.comments %}
+    {%- if page.extra.scripts %}
+        {%- set scripts = scripts | concat(with=page.extra.scripts) %}
+	{%- elif section.extra.scripts %}
+        {%- set scripts = scripts | concat(with=section.extra.scripts) %}
+    {%- endif %}
+
+    {%- for script in scripts %}
+		<script src="{{ get_url(path=script) | safe }}"></script>
+    {%- endfor %}
+
+	{%- if config.extra.comments %}
 		<link rel="me" href="https://{{ config.extra.comments.host }}/@{{ config.extra.comments.user }}" />
-	{% endif %}
+	{%- endif %}
 
-	{% if config.extra.emoji_favicon %}
+	{%- if config.extra.emoji_favicon %}
 		<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='-.07em' y='.89em' font-size='90'%3E{{ config.extra.emoji_favicon }}%3C/text%3E%3C/svg%3E">
-	{% elif config.extra.animated_favicon %}
-		<link rel="icon" type="image/gif" href="{{ get_url(path='favicon.gif') }}" />
-	{% else %}
+	{%- else %}
 		<link rel="icon" type="image/png" href="{{ get_url(path='favicon.png') }}" />
-	{% endif %}
+	{%- endif %}
 
 	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ get_url(path='apple-touch-icon.png') }}" />
 
-	{% if config.generate_feed %}
-		{% block feed -%}
-			<link rel="alternate" type={% if config.feed_filename == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="{{ config.title }}" href="{{ get_url(path=config.feed_filename) | safe }}" />
-		{% endblock -%}
-	{% endif %}
+	{%- if config.generate_feed %}
+		<link rel="alternate" type={% if config.feed_filename == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="{{ config.title }}" href="{{ get_url(path=config.feed_filename) | safe }}" />
+	{%- endif %}
 
-	<!-- Open Graph -->
 	<meta property="og:site_name" content="{{ config.title }}" />
 	<meta property="og:title" content="{% include 'partials/title.html' %}" />
 	<meta property="og:url" content="{{ current_url | default(value='/') | safe }}" />
