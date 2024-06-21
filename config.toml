@@ -3,7 +3,7 @@ base_url = "https://daudix.codeberg.page/duckquill"
 description = "Modern, pretty, and clean theme."
 
 compile_sass = true
-minify_html = false
+minify_html = true
 generate_feed = true
 feed_filename = "atom.xml"
 build_search_index = false
@@ -51,9 +51,9 @@ smart_punctuation = true
 primary_color = "#ff7800"
 # Same as primary_color, but with 20% opacity
 primary_color_alpha = "rgba(255, 120, 0, 0.2)"
-# Whether to use emoji as a favicon.
-# Replace with an emoji wrapped in quotes.
-emoji_favicon = false
+# Use emoji as a favicon.
+# Only one emoji is being rendered, everyting else is truncated.
+# emoji_favicon = "🦆🪶"
 # URL to website's issue tracker
 issues_url = "https://codeberg.org/daudix/duckquill/issues"
 # URL to website's source code
