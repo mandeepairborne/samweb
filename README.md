@@ -2,7 +2,7 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue)](https://mit-license.org)
 [![status-badge](https://ci.codeberg.org/api/badges/13032/status.svg)](https://ci.codeberg.org/repos/13032)
 
-# [Duckquill](https://daudix.codeberg.page/duckquill/) <img src="logo.png" alt="Logo" width="96" align="right"/>
+# [Duckquill](https://duckquill.daudix.one) <img src="logo.png" alt="Logo" width="96" align="right"/>
 
 Duckquill is a modern, pretty, and clean (and opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
 
@@ -10,7 +10,7 @@ Duckquill is a modern, pretty, and clean (and opinionated) [Zola](https://www.ge
 
 ## Docs
 
-Docs are provided in form of a [live demo](https://daudix.codeberg.page/duckquill).
+Docs are provided in form of a [live demo](https://duckquill.daudix.one).
 
 ## Know your rights
 

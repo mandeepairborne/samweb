@@ -3,7 +3,7 @@ description = "Modern, pretty, and clean theme"
 license = "MIT"
 homepage = "https://codeberg.org/daudix/duckquill"
 min_version = "0.17.2"
-demo = "https://daudix.codeberg.page/duckquill"
+demo = "https://duckquill.daudix.one"
 
 [extra]
 primary_color = "#9a9996"
@@ -11,4 +11,4 @@ primary_color_alpha = "rgba(154, 153, 150, 0.2)"
 
 [author]
 name = "David Lapshin"
-homepage = "https://daudix.codeberg.page"
+homepage = "https://daudix.one"

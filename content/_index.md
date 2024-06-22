@@ -26,7 +26,7 @@ Edit a bit of metadata and tweak some of the included graphics and have a blog u
 - Twitter, Mastodon and other social media meta cards for easy sharing. Try [Share Preview](https://apps.gnome.org/SharePreview/) to test.
 - [Mastodon-powered comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/); comment using compatible ActivityPub server by replying to a Mastodon post.
 
-> Duckquill is made based on needs of [my website](https://daudix.codeberg.page), if you need some feature/configuration that doesn't exist feel free to open an issue or better yet, pull request!
+> Duckquill is made based on needs of [my website](https://daudix.one), if you need some feature/configuration that doesn't exist feel free to open an issue or better yet, pull request!
 
 ## Installation
 
@@ -139,7 +139,7 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and app
 - [alavi.me](https://alavi.me)
 - [bano.dev](https://bano.dev)
 - [blog.pansi21.xyz](https://blog.pansi21.xyz)
-- [daudix.codeberg.page](https://daudix.codeberg.page) <small>(obviously)</small>
+- [daudix.one](https://daudix.one) <small>(obviously)</small>
 - [daveparr.info](https://www.daveparr.info)
 - [digital-horror.com](https://digital-horror.com)
 - [enriquekesslerm.com](https://enriquekesslerm.com)
@@ -163,7 +163,7 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and app
 - [treeniks.github.io](https://treeniks.github.io)
 - [vikramxd.github.io](https://vikramxd.github.io)
 - [zorrn.net](https://www.zorrn.net)
-- Yours? <small>(feel free to [contact me](https://daudix.codeberg.page/find/#contacts) or send a pull request)</small>
+- Yours? <small>(feel free to [contact me](https://daudix.one/find/#contacts) or send a pull request)</small>
 
 </details>
 
