@@ -19,19 +19,6 @@
 		}
 
 		&.draft {
-			opacity: 0.6;
-			transition: var(--transition-longer);
-			outline: 0.125rem dashed var(--fg-muted-4);
-			outline-offset: 1rem;
-			border-radius: var(--rounded-corner);
-			border-top-right-radius: 1.125rem;
-
-			&:hover {
-				opacity: 1;
-				outline: 0.125rem dashed transparent;
-				outline-offset: 0;
-			}
-
 			h3 a {
 				color: var(--fg-muted-4);
 			}
@@ -39,11 +26,6 @@
 			.tags a:hover {
 				background-color: var(--fg-muted-1);
 				color: var(--fg-muted-4);
-			}
-
-			:root[dir="rtl"] & {
-				border-top-right-radius: var(--rounded-corner);
-				border-top-left-radius: 1.125rem;
 			}
 		}
 
