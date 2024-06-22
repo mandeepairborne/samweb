@@ -1,34 +1,143 @@
 #article-list {
+	margin-top: 2rem;
+
 	article {
-		position: relative;
+
+		&.draft,
+		&.archive,
+		&.featured {
+			position: relative;
+
+			h3 {
+				margin-right: 8rem;
+
+				:root[dir="rtl"] & {
+					margin-right: unset;
+					margin-left: 8rem;
+				}
+			}
+		}
 
 		&.draft {
-			transform: scale(0.95);
 			opacity: 0.6;
 			transition: var(--transition-longer);
-			outline: 0.125rem dashed var(--fg-muted-2);
+			outline: 0.125rem dashed var(--fg-muted-4);
 			outline-offset: 1rem;
-			border-radius: 1rem;
+			border-radius: var(--rounded-corner);
+			border-top-right-radius: 1.125rem;
 
 			&:hover {
-				transform: scale(1);
 				opacity: 1;
 				outline: 0.125rem dashed transparent;
 				outline-offset: 0;
 			}
-		}
 
-		&:has(.draft-badge, .archive-badge) h3 {
-			margin-right: 7rem;
+			h3 a {
+				color: var(--fg-muted-4);
+			}
+
+			.tags a:hover {
+				background-color: var(--fg-muted-1);
+				color: var(--fg-muted-4);
+			}
 
 			:root[dir="rtl"] & {
-				margin-right: unset;
-				margin-left: 7rem;
+				border-top-right-radius: var(--rounded-corner);
+				border-top-left-radius: 1.125rem;
+			}
+		}
+
+		&.archive {
+			h3 a {
+				color: var(--purple-fg);
+			}
+
+			.tags a:hover {
+				background-color: var(--purple-bg);
+				color: var(--purple-fg);
+			}
+		}
+
+		&.featured {
+			transition: var(--transition-longer);
+			outline: 0.125rem dashed transparent;
+			outline-offset: 0;
+			box-shadow: var(--edge-highlight);
+			border-radius: var(--rounded-corner);
+			border-top-right-radius: 2.125rem;
+			background-color: var(--faves-bg);
+			padding: 1rem;
+			overflow: hidden;
+
+			&::before {
+				$icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M8 0a1 1 0 0 0-.95.684l-1.448 4.34-4.59-.016C.032 5.004-.371 6.266.43 6.828l3.625 2.555-1.5 4.285c-.317.902.687 1.691 1.492 1.172l4.004-2.594 3.894 2.586c.801.531 1.817-.258 1.5-1.16l-1.504-4.29 3.645-2.577c.789-.563.394-1.809-.574-1.813l-4.66-.015L8.949.69A1 1 0 0 0 8 0m0 0'/%3E%3C/svg%3E");
+				-webkit-mask-image: $icon;
+				-webkit-mask-size: cover;
+				position: absolute;
+				top: 50%;
+				right: -3rem;
+				transform: translateY(-50%) rotate(-10deg);
+				opacity: 0.5;
+				z-index: -1;
+				mask-image: $icon;
+				mask-size: cover;
+				transition: var(--transition-longer);
+				background-color: var(--star-featured);
+				width: 12rem;
+				height: 12rem;
+				content: "";
+
+				:root[dir="rtl"] & {
+					right: unset;
+					left: -3rem;
+					transform: translateY(-50%) rotate(10deg);
+				}
+			}
+
+			&:hover {
+				outline: 0.125rem dashed var(--faves-fg);
+				outline-offset: 0.5rem;
+
+				&::before {
+					transform: translateY(-50%) rotate(62deg) scale(1.5);
+				}
+			}
+
+			h3 {
+				margin-top: unset;
+
+				a {
+					color: var(--faves-fg);
+				}
+			}
+
+			.featured-badge {
+				top: 1rem;
+				right: 1rem;
+
+				:root[dir="rtl"] & {
+					left: 1rem;
+				}
+			}
+
+			.tags a:hover {
+				background-color: var(--faves-bg);
+				color: var(--faves-fg);
+			}
+
+			:root[dir="rtl"] & {
+				border-top-right-radius: var(--rounded-corner);
+				border-top-left-radius: 2.125rem;
+
+				&:hover::before {
+					transform: translateY(-50%) rotate(-62deg) scale(1.5);
+				}
 			}
 		}
 
 		.draft-badge,
-		.archive-badge {
+		.archive-badge,
+		.featured-badge {
 			position: absolute;
 			top: 0;
 			right: 0;
@@ -71,6 +180,18 @@
 				-webkit-mask-image: $icon;
 				mask-image: $icon;
 				background-color: var(--purple-fg);
+			}
+		}
+
+		.featured-badge {
+			background-color: var(--faves-bg);
+			color: var(--faves-fg);
+
+			.icon {
+				$icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M8 0a1 1 0 0 0-.95.684l-1.448 4.34-4.59-.016C.032 5.004-.371 6.266.43 6.828l3.625 2.555-1.5 4.285c-.317.902.687 1.691 1.492 1.172l4.004-2.594 3.894 2.586c.801.531 1.817-.258 1.5-1.16l-1.504-4.29 3.645-2.577c.789-.563.394-1.809-.574-1.813l-4.66-.015L8.949.69A1 1 0 0 0 8 0m0 0'/%3E%3C/svg%3E");
+				-webkit-mask-image: $icon;
+				mask-image: $icon;
+				background-color: var(--faves-fg);
 			}
 		}
 	}

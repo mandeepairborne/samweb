@@ -2,8 +2,18 @@
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: 0.25rem;
+	margin: 0;
 	padding: 0;
 	list-style: none;
+
+	&.inline {
+		margin-left: 0.25rem;
+
+		:root[dir="rtl"] & {
+			margin-right: 0.25rem;
+			margin-left: unset;
+		}
+	}
 
 	li {
 		display: flex;

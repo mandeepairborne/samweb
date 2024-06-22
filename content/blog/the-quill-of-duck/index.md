@@ -7,11 +7,11 @@ updated = "2024-06-21"
 [taxonomies]
 tags = ["Demo", "Test"]
 [extra]
-archive = "This page is, in fact, not archived."
 toc = true
 disclaimer = """
 See [demo](@/demo/index.md) for showcase of all Duckquill possibilities. This page is a demo of a post with title, publication date, tags, disclaimer, table of contents and comments.
 """
+featured = true
 [extra.comments]
 host = "toot.community"
 user = "sungsphinx"

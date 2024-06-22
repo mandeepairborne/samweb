@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-{%- if page.extra.archive -%}
+{%- if page.extra.archive %}
 	<div class="statement-container archive">
 		<strong class="big">
 			<i class="icon"></i>
@@ -9,6 +9,6 @@
 		</strong>
 		{{ page.extra.archive | markdown | safe }}
 	</div>
-{%- endif -%}
+{%- endif %}
 {{ page.content | safe }}
 {% endblock content %}

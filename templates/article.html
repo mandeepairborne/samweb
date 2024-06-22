@@ -11,15 +11,6 @@
 			<time datetime="{{ page.date | date(format=' %+') }}" pubdate>
 				{{ page.date | date(format=date_format, locale=date_locale) }}
 			</time>
-			{%- if page.updated -%}
-				<span>•</span>
-				<time datetime="{{ page.updated | date(format=' %+') }}" pubdate>
-					<span>
-						{{ macros_translate::translate(key="updated", default="Last updated on", language_strings=language_strings) }}
-						{{ page.updated | date(format=date_format, locale=date_locale) }}
-					</span>
-				</time>
-			{%- endif -%}
 			{%- if page.authors -%}
 				<span>•</span>
 				<span>
@@ -29,8 +20,7 @@
 			{%- endif -%}
 			{%- if page.taxonomies -%}
 				{%- for name, taxon in page.taxonomies -%}
-					<span>•</span>
-					<ul class="tags">
+					<ul class="tags inline">
 						{%- for item in taxon -%}
 							<li>
 								<a class="tag" href="{{ get_taxonomy_url(kind=name, name=item, lang=lang) }}">
@@ -42,6 +32,16 @@
 				{%- endfor -%}
 			{%- endif -%}
 		</small>
+		{%- if page.updated -%}
+			<small class="last-updated">
+				<time datetime="{{ page.updated | date(format=' %+') }}" pubdate>
+					<span>
+						{{ macros_translate::translate(key="updated", default="Last updated on", language_strings=language_strings) }}
+						{{ page.updated | date(format=date_format, locale=date_locale) }}
+					</span>
+				</time>
+			</small>
+		{%- endif -%}
 	{%- endif -%}
 
 	{%- if page.extra.archive -%}

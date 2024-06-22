@@ -5,4 +5,6 @@ description = "This is a Duckquill post example, this post has nothing but a bun
 date = 2023-08-31
 [taxonomies]
 tags = ["Demo", "Test"]
+[extra]
+featured = true
 +++
