@@ -35,10 +35,8 @@
 		{%- if page.updated -%}
 			<small class="last-updated">
 				<time datetime="{{ page.updated | date(format=' %+') }}" pubdate>
-					<span>
-						{{ macros_translate::translate(key="updated", default="Last updated on", language_strings=language_strings) }}
-						{{ page.updated | date(format=date_format, locale=date_locale) }}
-					</span>
+					{{ macros_translate::translate(key="updated", default="Last updated on", language_strings=language_strings) }}
+					{{ page.updated | date(format=date_format, locale=date_locale) }}
 				</time>
 			</small>
 		{%- endif -%}
