@@ -24,11 +24,11 @@
 	--active: 0.9;
 	--blur: saturate(180%) blur(0.75rem);
 	--container-width: 720px;
-	--edge-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+	--edge-highlight: inset 0 0.0625rem 0 rgba(255, 255, 255, 0.1);
 	--rounded-corner-small: 0.5rem;
 	--rounded-corner: 0.75rem;
-	--shadow-raised: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 2px 6px 2px rgba(0, 0, 0, 0.14), 0 4px 12px 4px rgba(0, 0, 0, 0.06);
-	--shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
+	--shadow-raised: 0 0 0 0.0625rem rgba(0, 0, 0, 0.06), 0 0.125rem 0.375rem 0.125rem rgba(0, 0, 0, 0.14), 0 0.25rem 0.75rem 0.25rem rgba(0, 0, 0, 0.06);
+	--shadow: 0 0 0 0.0625rem rgba(0, 0, 0, 0.03), 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.07), 0 0.125rem 0.375rem 0.125rem rgba(0, 0, 0, 0.03);
 	--transition-long: 0.8s;
 	--transition-longer: 0.4s;
 	--transition: 0.2s;
