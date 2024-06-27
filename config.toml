@@ -4,8 +4,10 @@ description = "Modern, pretty, and clean theme."
 
 compile_sass = true
 minify_html = true
-generate_feed = true
-feed_filename = "atom.xml"
+generate_feeds = true
+# Only the first file will be used in the navbar feed button,
+# other feeds will still be available in page's head.
+feed_filenames = ["rss.xml", "atom.xml"]
 build_search_index = false
 author = "Duck Quack"
 
@@ -25,14 +27,14 @@ taxonomies = [{ name = "tags", feed = true }]
 [languages.ru]
 title = "Duckquill"
 description = "Современная, симпатичная и аккуратная тема."
-generate_feed = true
+generate_feeds = true
 
 taxonomies = [{ name = "tags", feed = true }]
 
 [languages.ar]
 title = "Duckquill"
 description = "ثيم عصري وجميل ونظيف."
-generate_feed = true
+generate_feeds = true
 
 taxonomies = [{ name = "tags", feed = true }]
 
@@ -91,9 +93,6 @@ links = [
 # Links used in the footer.
 # Same as the nav ones.
 links = [
-  { url = "@/blog/_index.md", name = "Blog" },
-  { url = "@/demo/index.md", name = "Demo" },
-  { url = "https://codeberg.org/daudix/duckquill", name = "Repo" },
   { url = "@/blog/_index.md", name = "Blog" },
   { url = "@/demo/index.md", name = "Demo" },
   { url = "https://codeberg.org/daudix/duckquill", name = "Repo" },

@@ -36,9 +36,9 @@
 			{%- if config.languages | length > 0 %}
 				{%- include "partials/language_switcher.html" %}
 			{%- endif -%}
-			{%- if config.generate_feed and config.extra.nav.show_feed %}
+			{%- if config.generate_feeds and config.extra.nav.show_feed %}
 				<li id="feed">
-					<a href="{{ get_url(path=config.feed_filename) }}">
+					<a href="{{ get_url(path=config.feed_filenames[0]) }}">
 						<i class="icon"></i>
 						<span class="hidden">
 							{{ macros_translate::translate(key="feed", default="Feed", language_strings=language_strings) }}

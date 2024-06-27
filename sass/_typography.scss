@@ -143,10 +143,10 @@ aside {
 }
 
 details {
+	box-shadow: var(--edge-highlight);
 	border-radius: var(--rounded-corner);
 	background-color: var(--fg-muted-1);
 	padding: 1rem;
-	box-shadow: var(--edge-highlight);
 
 	&>summary {
 		cursor: pointer;

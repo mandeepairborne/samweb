@@ -75,8 +75,12 @@
 		<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='-.07em' y='.89em' font-size='90'%3E{{ config.extra.emoji_favicon | truncate(length=1, end='') }}%3C/text%3E%3C/svg%3E">
 	{%- endif %}
 
-	{%- if config.generate_feed %}
-		<link rel="alternate" type={% if config.feed_filename == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="{{ config.title }}" href="{{ get_url(path=config.feed_filename) | safe }}" />
+	{%- if config.generate_feeds and config.feed_filenames %}
+		{%- for feed in config.feed_filenames %}
+			<link rel="alternate" type={% if feed == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="{{ config.title }}" href="{{ get_url(path=feed) | safe }}" />
+		{%- endfor %}
+	{%- elif config.generate_feeds and config.feed_filenames | length > 0 %}
+		<link rel="alternate" type={% if config.feed_filenames[0] == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="{{ config.title }}" href="{{ get_url(path=config.feed_filenames[0]) | safe }}" />
 	{%- endif %}
 
 	<meta property="og:site_name" content="{{ config.title }}" />
