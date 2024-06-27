@@ -11,6 +11,45 @@ video {
 		width: 100%;
 	}
 
+	&.start,
+	&.end,
+	&[src*="#start"],
+	&[src*="#end"] {
+		margin: 0;
+		width: 30%;
+
+		@media only screen and (max-width: 720px) {
+			float: none;
+			margin-inline-start: 0;
+			margin-inline-end: 0;
+			width: 100%;
+		}
+	}
+
+	&.start,
+	&[src*="#start"] {
+		float: left;
+		transform-origin: left;
+		margin-inline-end: 1rem;
+
+		:root[dir="rtl"] & {
+			float: right;
+			transform-origin: right;
+		}
+	}
+
+	&.end,
+	&[src*="#end"] {
+		float: right;
+		transform-origin: right;
+		margin-inline-start: 1rem;
+
+		:root[dir="rtl"] & {
+			float: left;
+			transform-origin: left;
+		}
+	}
+
 	&.pixels,
 	&[src*="#pixels"] {
 		image-rendering: pixelated;
@@ -33,6 +72,23 @@ img {
 			transform: scale(1.1);
 			box-shadow: var(--shadow-raised);
 			border-radius: 0;
+		}
+
+		&.start,
+		&.end,
+		&[src*="#start"],
+		&[src*="#end"] {
+			&:hover {
+				transform: scale(1.6);
+			}
+
+			@media only screen and (max-width: 720px) {
+				transform-origin: unset;
+
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
 		}
 
 		&.transparent,

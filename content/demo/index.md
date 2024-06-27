@@ -178,7 +178,9 @@ Available variables are:
 - `url`: URL to an image.
 - `url_min`: URL to compressed version of an image, original can be opened by clicking on the image.
 - `alt`: Alt text, same as if the text were inside square brackets in Markdown.
-- `full`: Forces image/video to be full-width.
+- `full`: Forces image to be full-width.
+- `start`: Float image to the start of paragraph and scale it down.
+- `end`: Float image to the end of paragraph and scale it down.
 - `pixels`: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.
 - `transparent`: Removes rounded corners and shadow, useful for transparent images.
 - `no_hover`: Removes zoom on hover.
@@ -197,13 +199,20 @@ Variables should be comma-separated and be inside the brackets.
 
 Alternatively, you can append the following URL anchors. It can be more handy in some cases, e.g such images will render normally in any Markdown editor, opposed to the Zola shortcodes.
 
-- `#full`: Forces image/video to be full-width.
+- `#full`: Forces image to be full-width.
+- `#start`: Float image to the start of paragraph and scale it down.
+- `#end`: Float image to the end of paragraph and scale it down.
 - `#pixels`: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.
 - `#transparent`: Removes rounded corners and shadow, useful for transparent images.
 - `#no-hover`: Removes zoom on hover.
 
+\
 ![Toolbx header image](https://containertoolbx.org/assets/toolbx.gif#full#pixels#transparent#no-hover)
 <figcaption>Full-width image with an alt text, pixel-art rendering, no shadow and rounded corners, and no zoom on hover</figcaption>
+
+\
+![1966 Ford Mustang coupe white](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/1966_Ford_Mustang_coupe_white_003.jpg/320px-1966_Ford_Mustang_coupe_white_003.jpg#start)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur.
 
 #### Video
 
