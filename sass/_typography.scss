@@ -30,9 +30,10 @@ small {
 }
 
 abbr[title] {
-	-webkit-text-decoration: underline dotted;
 	cursor: help;
-	text-decoration: underline dotted;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration-thickness: max(1px, 0.0625em);
 }
 
 figcaption {
@@ -84,10 +85,10 @@ kbd {
 a {
 	color: var(--primary-color);
 	font-weight: bold;
+	text-decoration-thickness: max(1px, 0.0625em);
 
 	&:hover {
-		-webkit-text-decoration: underline wavy;
-		text-decoration: underline wavy;
+		text-decoration-style: wavy;
 	}
 }
 
