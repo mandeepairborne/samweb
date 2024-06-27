@@ -149,7 +149,8 @@ details {
 	background-color: var(--fg-muted-1);
 	padding: 1rem;
 
-	&>summary {
+	summary {
 		cursor: pointer;
+		line-height: normal;
 	}
 }
