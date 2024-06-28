@@ -8,7 +8,7 @@ generate_feeds = true
 # Only the first file will be used in the navbar feed button,
 # other feeds will still be available in page's head.
 feed_filenames = ["rss.xml", "atom.xml"]
-build_search_index = false
+build_search_index = true
 author = "Duck Quack"
 
 # Based on https://github.com/welpo/tabi
@@ -24,6 +24,18 @@ default_language = "en"
 
 taxonomies = [{ name = "tags", feed = true }]
 
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "solarized-dark", filename = "syntax-theme-dark.css" },
+  { theme = "solarized-light", filename = "syntax-theme-light.css" },
+]
+smart_punctuation = true
+
+[search]
+index_format = "elasticlunr_javascript"
+
 [languages.ru]
 title = "Duckquill"
 description = "Современная, симпатичная и аккуратная тема."
@@ -37,15 +49,6 @@ description = "ثيم عصري وجميل ونظيف."
 generate_feeds = true
 
 taxonomies = [{ name = "tags", feed = true }]
-
-[markdown]
-highlight_code = true
-highlight_theme = "css"
-highlight_themes_css = [
-  { theme = "solarized-dark", filename = "syntax-theme-dark.css" },
-  { theme = "solarized-light", filename = "syntax-theme-light.css" },
-]
-smart_punctuation = true
 
 [extra]
 # Sets theme and browser theme color.
