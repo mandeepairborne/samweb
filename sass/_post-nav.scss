@@ -18,7 +18,7 @@
 			transform-origin: left;
 			padding-right: 1rem;
 
-			:root[dir="rtl"] & {
+			:root[dir*="rtl"] & {
 				transform-origin: right;
 				padding-right: unset;
 				padding-left: 1rem;
@@ -27,7 +27,7 @@
 			.nav-arrow::before {
 				content: "← ";
 
-				:root[dir="rtl"] & {
+				:root[dir*="rtl"] & {
 					content: "→ ";
 				}
 			}
@@ -39,7 +39,7 @@
 			padding-left: 1rem;
 			text-align: end;
 
-			:root[dir="rtl"] & {
+			:root[dir*="rtl"] & {
 				transform-origin: left;
 				margin-right: auto;
 				margin-left: unset;
@@ -50,7 +50,7 @@
 			.nav-arrow::after {
 				content: " →";
 
-				:root[dir="rtl"] & {
+				:root[dir*="rtl"] & {
 					content: " ←";
 				}
 			}

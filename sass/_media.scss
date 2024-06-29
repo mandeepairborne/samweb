@@ -40,7 +40,7 @@ video {
 		transform-origin: left;
 		margin-inline-end: 1rem;
 
-		:root[dir="rtl"] & {
+		:root[dir*="rtl"] & {
 			float: right;
 			transform-origin: right;
 		}
@@ -52,7 +52,7 @@ video {
 		transform-origin: right;
 		margin-inline-start: 1rem;
 
-		:root[dir="rtl"] & {
+		:root[dir*="rtl"] & {
 			float: left;
 			transform-origin: left;
 		}

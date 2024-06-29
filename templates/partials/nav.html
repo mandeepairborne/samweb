@@ -3,9 +3,13 @@
 		<a href="#main" id="main-content" tabindex="0">
 			{{ macros_translate::translate(key="skip_to_content", default="Skip to main content", language_strings=language_strings) }}
 		</a>
+		<div id="search-container">
+			<input id="search-bar" type="search" placeholder="{{ macros_translate::translate(key='search_for', default='Search for…', language_strings=language_strings) }}">
+			<div id="search-results"></div>
+		</div>
 		<ul>
 			<li id="home">
-				<a href="{{ get_url(path="/", lang=lang) }}"
+				<a href="{{ get_url(path='/', lang=lang) }}"
 					{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path="/", lang=lang) | trim_end_matches(pat='/') | safe -%}
 						class="active"
 					{%- endif -%}>
@@ -33,6 +37,16 @@
 					</li>
 				{%- endif %}
 			{%- endfor -%}
+			{%- if config.build_search_index %}
+				<li id="search">
+					<a onclick="toggleSearch()" onkeypress="toggleSearch()" tabindex="0">
+						<i class="icon"></i>
+						<span class="hidden">
+							{{ macros_translate::translate(key="search", default="Search", language_strings=language_strings) }}
+						</span>
+					</a>
+				</li>
+			{%- endif %}
 			{%- if config.languages | length > 0 %}
 				{%- include "partials/language_switcher.html" %}
 			{%- endif -%}

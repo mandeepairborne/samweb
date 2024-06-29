@@ -34,7 +34,7 @@ highlight_themes_css = [
 smart_punctuation = true
 
 [search]
-index_format = "elasticlunr_javascript"
+index_format = "elasticlunr_json"
 
 [languages.ru]
 title = "Duckquill"

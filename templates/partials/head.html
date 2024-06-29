@@ -46,7 +46,12 @@
 		{%- include "partials/copy_button.html" %}
 	{%- endif %}
 
-	{%- set scripts = [] %}
+	{%- if config.build_search_index %}
+		{%- include "partials/search.html" %}
+		{%- set scripts = ["elasticlunr.min.js"] %}
+	{%- else %}
+		{%- set scripts = [""] %}
+	{%- endif %}
 
 	{%- if config.extra.scripts %}
 		{%- set scripts = config.extra.scripts %}
