@@ -86,7 +86,7 @@
 			}
 
 			h3 {
-				margin-top: unset;
+				margin-top: 0.25rem;
 
 				a {
 					color: var(--faves-fg);
@@ -98,7 +98,8 @@
 				right: 1rem;
 
 				:root[dir="rtl"] & {
-					left: 1rem;
+					right: unset;
+					left: 0.5rem;
 				}
 			}
 
