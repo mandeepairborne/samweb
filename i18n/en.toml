@@ -4,8 +4,8 @@ language_name = "English"
 # (post publication date, tag posts list...).
 # Not used in comments, "date_locale" is used instead.
 # See https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html
-date_format = "%d %B %Y"
-date_locale = "en_IE"
+date_format = "%B %d, %Y"
+date_locale = "en_US"
 
 # Menu items.
 # Should match the names in config.extra.nav.links and config.extra.footer.links.
