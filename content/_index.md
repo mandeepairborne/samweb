@@ -188,11 +188,11 @@ All sources for Duckquill's assets are available [here](https://codeberg.org/dau
 
 - [VSCodium](https://vscodium.com) - Free/Libre Open Source Software Binaries of VS Code
   - [Capitalize](https://marketplace.visualstudio.com/items?itemName=viablelab.capitalize) - Title capitalization without random websites.
-  - [Django](https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-django) - Tera is quite similar to Liquid at places.
   - [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml) - For `config.toml` basically.
   - [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) - Awfully pretty theme.
   - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss) - Not sure if it actually works. ¯\\\_(ツ)_/¯
   - [Sort CSS](https://marketplace.visualstudio.com/items?itemName=piyushsarkar.sort-css-properties) - A lifesaver for long CSS properties.
+  - [Tera](https://marketplace.visualstudio.com/items?itemName=karunamurti.tera) - Tera template engine (the one Zola uses) support.
 - [Firefox developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) - Best of its kind.
 
 As for the code formatter I use built-in VSCodium one. Prettier is good but I don't like how it tries to make code fit in a very narrow column, this can be changed of course, but built-in formatter does it's job so I don't bother doing so.
