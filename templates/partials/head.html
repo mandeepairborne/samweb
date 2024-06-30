@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="description" content="{{ config.description }}" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="theme-color" content="{{ config.extra.primary_color }}" />
+	<meta name="theme-color" content="{{ config.extra.primary_color | default(value='#9a9996') }}" />
 	<link rel="canonical" href="{{ current_url | default(value='/') | safe }}" />
 	<title>{% include "partials/title.html" %}</title>
 
@@ -33,7 +33,7 @@
 		<link rel="stylesheet" href="{{ get_url(path=stylesheet) | safe }}" />
 	{%- endfor %}
 
-	<style type="text/css">:root {--primary-color: {{ config.extra.primary_color }}; --primary-color-alpha: {{ config.extra.primary_color_alpha }};}</style>
+	<style type="text/css">:root {--primary-color: {{ config.extra.primary_color | default(value="#9a9996") }}; --primary-color-alpha: {{ config.extra.primary_color_alpha | default(value="rgba(154, 153, 150, 0.2)") }};}</style>
 
 	{%- if config.extra.goatcounter %}
 		<script data-goatcounter="https://{{ config.extra.goatcounter.user }}.{{ config.extra.goatcounter.host | default(value='goatcounter.com') }}/count" async src="//gc.zgo.at/count.js"></script>
