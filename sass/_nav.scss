@@ -47,7 +47,7 @@
 			backdrop-filter: var(--blur);
 			transition: var(--transition);
 			box-shadow: var(--edge-highlight), 0 0.75rem 1.5rem -1rem rgba(0, 0, 0, 0.5);
-			border-radius: calc(var(--rounded-corner) + 0.5rem);
+			border-radius: 1.625rem;
 			background-color: var(--nav-bg);
 			padding: 0.5rem;
 			width: 100%;
@@ -62,11 +62,12 @@
 			#search-bar {
 				box-shadow: var(--edge-highlight);
 				border: none;
-				border-radius: var(--rounded-corner);
+				border-radius: 999px;
 				background-image: none;
 				background-color: var(--fg-muted-1);
 				padding: 0.5rem 0.75rem;
 				width: 100%;
+				font-size: 1rem;
 
 				&::placeholder {
 					opacity: 1;
@@ -79,7 +80,7 @@
 				flex-direction: column;
 				gap: 0.5rem;
 				margin-top: 0.5rem;
-				border-radius: var(--rounded-corner);
+				border-radius: 1.125rem;
 				max-height: 50vh;
 				overflow: auto;
 
