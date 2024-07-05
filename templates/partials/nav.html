@@ -3,10 +3,6 @@
 		<a href="#main" id="main-content" tabindex="0">
 			{{ macros_translate::translate(key="skip_to_content", default="Skip to main content", language_strings=language_strings) }}
 		</a>
-		<div id="search-container">
-			<input id="search-bar" type="search" placeholder="{{ macros_translate::translate(key='search_for', default='Search for…', language_strings=language_strings) }}">
-			<div id="search-results"></div>
-		</div>
 		<ul>
 			<li id="home">
 				<a href="{{ get_url(path='/', lang=lang) }}"
@@ -62,4 +58,8 @@
 			{%- endif %}
 		</ul>
 	</nav>
+	<div id="search-container">
+		<input id="search-bar" type="search" placeholder="{{ macros_translate::translate(key='search_for', default='Search for…', language_strings=language_strings) }}">
+		<div id="search-results"></div>
+	</div>
 </header>
