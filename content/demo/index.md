@@ -169,6 +169,44 @@ Alright now that the generic (slightly extended) ~~Jekyll~~ Zola demo page have 
 
 Duckquill provides a few useful [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) that simplify some tasks.
 
+#### Alerts
+
+[GitHub-style](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts) alerts. Simply wrap the text of desired alert inside the shortcode to get the desired look.
+
+Available alert types:
+
+- `note`: Useful information that users should know, even when skimming content.
+- `tip`: Helpful advice for doing things better or more easily.
+- `important`: Key information users need to know to achieve their goal.
+- `warning`: Urgent info that needs immediate user attention to avoid problems.
+- `caution`: Advises about risks or negative outcomes of certain actions.
+
+```jinja2
+{%/* alert(note=true) */%}
+-> Alert text <-
+{%/* end */%}
+```
+
+{% alert(note=true) %}
+Useful information that users should know, even when skimming content.
+{% end %}
+
+{% alert(tip=true) %}
+Helpful advice for doing things better or more easily.
+{% end %}
+
+{% alert(important=true) %}
+Key information users need to know to achieve their goal.
+{% end %}
+
+{% alert(warning=true) %}
+Urgent info that needs immediate user attention to avoid problems.
+{% end %}
+
+{% alert(caution=true) %}
+Advises about risks or negative outcomes of certain actions.
+{% end %}
+
 #### Image
 
 By default images come with styling, such as rounded corners and shadow. To fine-tune these, you can use shortcodes with different variable combinations.
