@@ -9,6 +9,11 @@
 	border-radius: 1.625rem;
 	background-color: var(--nav-bg);
 	max-width: min(var(--container-width), 90%);
+	transition: var(--transition);
+
+	&:has(#search-container.active) {
+		border-radius: 1.625rem 1.625rem 0 0;
+	}
 
 	nav {
 		padding: 0.5rem;
@@ -40,13 +45,15 @@
 		#search-container {
 			-webkit-backdrop-filter: var(--blur);
 			position: absolute;
-			top: 0;
+			top: calc(100% - 1rem);
 			left: 0;
 			opacity: 0;
 			z-index: 999;
 			backdrop-filter: var(--blur);
 			transition: var(--transition);
-			box-shadow: var(--edge-highlight), 0 0.75rem 1.5rem -1rem rgba(0, 0, 0, 0.5);
+			box-shadow:
+				// var(--edge-highlight),
+				0 0.75rem 1.5rem -1rem rgba(0, 0, 0, 0.5);
 			border-radius: 1.625rem;
 			background-color: var(--nav-bg);
 			padding: 0.5rem;
@@ -54,9 +61,10 @@
 			pointer-events: none;
 
 			&.active {
-				top: calc(100% + 0.5rem);
+				top: 100%;
 				opacity: 1;
 				pointer-events: unset;
+				border-radius: 0 0 1.625rem 1.625rem;
 			}
 
 			#search-bar {
@@ -134,12 +142,7 @@
 
 				&#home {
 					position: relative;
-					margin-right: 0.625rem;
-
-					:root[dir*="rtl"] & {
-						margin-right: unset;
-						margin-left: 0.625rem;
-					}
+					margin-inline-end: 0.625rem;
 
 					&::after {
 						position: absolute;

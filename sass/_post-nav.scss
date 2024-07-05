@@ -16,12 +16,10 @@
 
 		&.post-nav-prev {
 			transform-origin: left;
-			padding-right: 1rem;
+			padding-inline-end: 1rem;
 
 			:root[dir*="rtl"] & {
 				transform-origin: right;
-				padding-right: unset;
-				padding-left: 1rem;
 			}
 
 			.nav-arrow::before {
@@ -35,16 +33,12 @@
 
 		&.post-nav-next {
 			transform-origin: right;
-			margin-left: auto;
-			padding-left: 1rem;
+			margin-inline-start: auto;
+			padding-inline-start: 1rem;
 			text-align: end;
 
 			:root[dir*="rtl"] & {
 				transform-origin: left;
-				margin-right: auto;
-				margin-left: unset;
-				padding-right: 1rem;
-				padding-left: unset;
 			}
 
 			.nav-arrow::after {

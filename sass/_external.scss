@@ -6,7 +6,7 @@
 	opacity: 0.6;
 	mask-image: $icon;
 	mask-size: cover;
-	margin-left: 0.25rem;
+	margin-inline-start: 0.25rem;
 	background-color: var(--primary-color);
 	width: 0.75em;
 	height: 0.75em;
@@ -14,7 +14,5 @@
 
 	:root[dir*="rtl"] & {
 		transform: scaleX(-100%);
-		margin-right: 0.25rem;
-		margin-left: unset;
 	}
 }

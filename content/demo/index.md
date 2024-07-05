@@ -367,22 +367,6 @@ You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>im
 
 <del>Text deleted</del> <ins>Text added</ins>
 
-## Time
-
-```html
-<time>13:37</time>
-```
-
-<time>13:37</time>
-
-For blinking animation, make the time bold
-
-```html
-<time>**13:37**</time>
-```
-
-<time>**13:37**</time>
-
 ## Progress bar
 
 ```html

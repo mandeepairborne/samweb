@@ -1,13 +1,8 @@
 blockquote {
 	&.note {
-		border-left: 0.25rem solid var(--blue-fg);
+		border-inline-start: 0.25rem solid var(--blue-fg);
 
-		:root[dir*="rtl"] & {
-			border-right: 0.25rem solid var(--blue-fg);
-			border-left: unset;
-		}
-
-		.alert-name {
+		.alert-title {
 			color: var(--blue-fg);
 		}
 
@@ -20,14 +15,9 @@ blockquote {
 	}
 
 	&.tip {
-		border-left: 0.25rem solid var(--green-fg);
+		border-inline-start: 0.25rem solid var(--green-fg);
 
-		:root[dir*="rtl"] & {
-			border-right: 0.25rem solid var(--green-fg);
-			border-left: unset;
-		}
-
-		.alert-name {
+		.alert-title {
 			color: var(--green-fg);
 		}
 
@@ -40,14 +30,9 @@ blockquote {
 	}
 
 	&.important {
-		border-left: 0.25rem solid var(--purple-fg);
+		border-inline-start: 0.25rem solid var(--purple-fg);
 
-		:root[dir*="rtl"] & {
-			border-right: 0.25rem solid var(--purple-fg);
-			border-left: unset;
-		}
-
-		.alert-name {
+		.alert-title {
 			color: var(--purple-fg);
 		}
 
@@ -60,14 +45,9 @@ blockquote {
 	}
 
 	&.warning {
-		border-left: 0.25rem solid var(--yellow-fg);
+		border-inline-start: 0.25rem solid var(--yellow-fg);
 
-		:root[dir*="rtl"] & {
-			border-right: 0.25rem solid var(--yellow-fg);
-			border-left: unset;
-		}
-
-		.alert-name {
+		.alert-title {
 			color: var(--yellow-fg);
 		}
 
@@ -80,14 +60,9 @@ blockquote {
 	}
 
 	&.caution {
-		border-left: 0.25rem solid var(--red-fg);
+		border-inline-start: 0.25rem solid var(--red-fg);
 
-		:root[dir*="rtl"] & {
-			border-right: 0.25rem solid var(--red-fg);
-			border-left: unset;
-		}
-
-		.alert-name {
+		.alert-title {
 			color: var(--red-fg);
 		}
 
@@ -99,9 +74,9 @@ blockquote {
 		}
 	}
 
-	.alert-name {
+	.alert-title {
 		font-weight: bold;
-		margin-bottom: -0.5rem;
+		margin-bottom: -0.75rem;
 	}
 
 	.icon {

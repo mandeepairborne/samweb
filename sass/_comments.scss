@@ -43,16 +43,9 @@
 
 			&.comment-reply {
 				position: relative;
-				border-left: 0.25rem solid var(--fg-muted-2);
+				border-inline-start: 0.25rem solid var(--fg-muted-2);
 				border-radius: 0.25rem;
-				padding-left: 1rem;
-
-				:root[dir*="rtl"] & {
-					border-right: 0.25rem solid var(--fg-muted-2);
-					border-left: unset;
-					padding-right: 1rem;
-					padding-left: unset;
-				}
+				padding-inline-start: 1rem;
 			}
 
 			.avatar-link {

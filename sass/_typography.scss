@@ -45,21 +45,15 @@ figcaption {
 
 blockquote {
 	margin: 0;
-	border-left: 0.25rem solid var(--primary-color);
+	border-inline-start: 0.25rem solid var(--primary-color);
 	border-radius: 0.25rem;
 	padding: 0 0.75rem;
 	color: var(--fg-muted-5);
-
-	:root[dir*="rtl"] & {
-		border-right: 0.25rem solid var(--primary-color);
-		border-left: unset;
-	}
 }
 
 mark,
 del,
 ins,
-time,
 samp,
 q {
 	box-shadow: var(--edge-highlight);
@@ -84,31 +78,6 @@ ins {
 	color: var(--green-fg);
 	text-decoration: underline;
 	text-decoration-thickness: max(1px, 0.0625em);
-}
-
-time {
-	background-color: var(--primary-color-alpha);
-	color: var(--primary-color);
-	font-weight: bold;
-
-	strong {
-		animation: clock-blink 1s infinite;
-		font-weight: bold;
-
-		@keyframes clock-blink {
-			from {
-				color: var(--primary-color);
-			}
-
-			25% {
-				color: var(--primary-color-alpha);
-			}
-
-			50% {
-				color: var(--primary-color);
-			}
-		}
-	}
 }
 
 samp {

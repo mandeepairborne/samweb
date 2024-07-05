@@ -7,12 +7,7 @@
 	list-style: none;
 
 	&.inline {
-		margin-left: 0.25rem;
-
-		:root[dir*="rtl"] & {
-			margin-right: 0.25rem;
-			margin-left: unset;
-		}
+		margin-inline-start: 0.25rem;
 	}
 
 	li {
