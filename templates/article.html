@@ -46,7 +46,7 @@
 		<div class="statement-container archive">
 			<strong class="big">
 				<i class="icon"></i>
-				{{ macros_translate::translate(key="archived", default="Archived", language_strings=language_strings) }}
+				{{- macros_translate::translate(key="archived", default="Archived", language_strings=language_strings) -}}
 			</strong>
 			{{ page.extra.archive | markdown | safe }}
 		</div>
@@ -56,7 +56,7 @@
 		<div class="statement-container trigger">
 			<strong class="big">
 				<i class="icon"></i>
-				{{ macros_translate::translate(key="trigger_warning", default="Trigger Warning", language_strings=language_strings) }}
+				{{- macros_translate::translate(key="trigger_warning", default="Trigger Warning", language_strings=language_strings) -}}
 			</strong>
 			{{ page.extra.trigger | markdown | safe }}
 		</div>
@@ -66,7 +66,7 @@
 		<div class="statement-container disclaimer">
 			<strong class="big">
 				<i class="icon"></i>
-				{{ macros_translate::translate(key="disclaimer", default="Disclaimer", language_strings=language_strings) }}
+				{{-macros_translate::translate(key="disclaimer", default="Disclaimer", language_strings=language_strings) -}}
 			</strong>
 			{{ page.extra.disclaimer | markdown | safe }}
 		</div>
