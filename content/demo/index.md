@@ -359,6 +359,62 @@ To switch the keyboard layout, press <kbd>⌘ Super</kbd> + <kbd>Space</kbd>.
 
 You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>important</mark> that even **bold** is not enough.
 
+## Deleted and Inserted
+
+```html
+<del>Text deleted</del> <ins>Text added</ins>
+```
+
+<del>Text deleted</del> <ins>Text added</ins>
+
+## Time
+
+```html
+<time>13:37</time>
+```
+
+<time>13:37</time>
+
+For blinking animation, make the time bold
+
+```html
+<time>**13:37**</time>
+```
+
+<time>**13:37**</time>
+
+## Progress bar
+
+```html
+<progress value="33" max="100"></progress>
+```
+
+<progress value="33" max="100"></progress>
+
+## Sample Output
+
+```html
+<samp>Sample Output</samp>
+```
+
+<samp>Sample Output</samp>
+
+## Inline Quote
+
+```html
+<q>Inline Quote</q>
+```
+
+Blah blah <q>Inline Quote</q> hmm.
+
+## Grammar Mistakes
+
+```html
+<u>Trying to replicate grammar mistakes</u>
+```
+
+<u>Yeet</u> the <u>sus</u> drip while <u>vibing</u> with the <u>TikTok</u> <u>fam</u> on a cap-free boomerang.
+
 ## External link
 
 ```html
