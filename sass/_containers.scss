@@ -7,11 +7,9 @@
 	position: relative;
 
 	button {
-		-webkit-backdrop-filter: var(--blur);
 		position: absolute;
 		top: 0.5rem;
 		right: 0.5rem;
-		backdrop-filter: var(--blur);
 		transition: var(--transition);
 		cursor: pointer;
 		box-shadow: var(--edge-highlight);
