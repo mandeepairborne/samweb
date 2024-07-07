@@ -27,7 +27,9 @@ Edit a bit of metadata and tweak some of the included graphics and have a blog u
 - Twitter, Mastodon and other social media meta cards for easy sharing. Try [Share Preview](https://apps.gnome.org/SharePreview/) to test.
 - [Mastodon-powered comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/); comment using compatible ActivityPub server by replying to a Mastodon post.
 
-> Duckquill is made based on needs of [my website](https://daudix.one), if you need some feature/configuration that doesn't exist feel free to open an issue or better yet, pull request!
+{% alert(note=true) %}
+Duckquill is made based on needs of [my website](https://daudix.one), if you need some feature/configuration that doesn't exist feel free to open an issue or better yet, pull request!
+{% end %}
 
 ## Installation
 
@@ -44,7 +46,9 @@ git submodule init
 git submodule add https://codeberg.org/daudix/duckquill.git themes/duckquill
 ```
 
-It is highly recommended to switch from the `main` branch to the lates release:
+{% alert(important=true) %}
+It is highly recommended to switch from the `main` branch to the latest release:
+{% end %}
 
 ```sh
 cd themes/duckquill
@@ -53,7 +57,9 @@ git checkout tags/v3.2.1
 
 To update the submodule, simply switch to a new tag:
 
-> **Note:** Check the changelog for all versions that came after the one you are using, there may be some breaking changes that need manual involvement.
+{% alert(tip=true) %}
+Check the changelog for all versions that came after the one you are using, there might be breaking changes that may need manual involvement.
+{% end %}
 
 ```sh
 git submodule update --remote --merge
@@ -83,7 +89,7 @@ Additionally to translating Duckquill, you can also override the English stings 
 
 ### Custom Stylesheets
 
-You can add your own or override existing styles by creating custom stylesheet and adding it in the `config.toml`:
+To add your own or override existing styles, create a custom stylesheet and add it in the `config.toml`:
 
 ```toml
 [extra]
@@ -92,9 +98,9 @@ stylesheets = [
 ]
 ```
 
-Additional stylesheets; expects it to be in the `static` directory. If you are using Sass it will be compiled there anyway.
+Additional stylesheets are expected it to be in the `static` directory. If you are using Sass they will be compiled there by default.
 
-If for some reason overridden class are not respected, try using `!important`. You can import styles from Duckquill using:
+If for some reason overridden style is not respected, try using `!important` (don't use it unless needed ). You can import styles from Duckquill using:
 
 ```scss
 @use "../themes/duckquill/sass/NEEDED_FILE.scss";
@@ -134,7 +140,7 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and app
 ## In the Wild
 
 <details>
-  <summary>It starts to get long, so click to expand.</summary>
+  <summary>This list is starting to get long, so click on it to expand it.</summary>
 
 - [agustinramirodiaz.github.io](https://agustinramirodiaz.github.io)
 - [alavi.me](https://alavi.me)
