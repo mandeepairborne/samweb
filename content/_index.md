@@ -19,7 +19,7 @@ Duckquill is a modern, pretty, and clean (and opinionated) [Zola](https://www.ge
 Edit a bit of metadata and tweak some of the included graphics and have a blog up in minutes!
 
 - Pretty, yet lightweight. No JavaScript is used (except for comments, heh).
-- Colors are tinted with the user-selected primary color for a pleasent look.
+- Colors are tinted with the user-selected primary color for a pleasant look.
 - ~90kB in size; take that, 12MB Medium!
 - Uses system fonts for blazingly fast loading.
 - Mobile friendly, with a proper dark variant.
