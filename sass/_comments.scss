@@ -43,8 +43,8 @@
 
 			&.comment-reply {
 				position: relative;
-				border-inline-start: 0.25rem solid var(--fg-muted-2);
 				border-radius: 0.25rem;
+				border-inline-start: 0.25rem solid var(--fg-muted-2);
 				padding-inline-start: 1rem;
 			}
 
@@ -86,6 +86,7 @@
 					padding: 0.25rem 0.75rem;
 					color: var(--fg-color);
 					font-size: 0.875rem;
+					line-height: normal;
 					text-decoration: none;
 
 					&:hover {
@@ -125,7 +126,6 @@
 
 			time {
 				grid-area: time;
-				color: var(--fg-muted-5);
 				font-size: 0.875rem;
 			}
 
