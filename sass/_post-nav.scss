@@ -9,6 +9,7 @@
 		border-radius: var(--rounded-corner);
 		padding: 1rem 1rem 0.5rem;
 		width: 0;
+		max-width: calc(50% - 0.125rem);
 		text-decoration: none;
 
 		&:hover {
@@ -67,6 +68,7 @@
 
 		.post-nav-item {
 			width: 100%;
+			max-width: 100%;
 		}
 	}
 }
