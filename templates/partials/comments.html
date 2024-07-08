@@ -17,16 +17,16 @@
 
 <section id="comments">
 	{%- if config.extra.comments.show_qr -%}
-		<img id="qrcode" class="no-hover pixels" alt="QR code to a Mastodon post" src="https://api.qrserver.com/v1/create-qr-code/?data=https://{{ host }}/@{{ username }}/{{ id }}&format=gif" />
+		<img id="qrcode" class="no-hover pixels" alt="{{ macros_translate::translate(key='comments_qr', default='QR code to a Mastodon post', language_strings=language_strings) }}" src="https://api.qrserver.com/v1/create-qr-code/?data=https://{{ host }}/@{{ username }}/{{ id }}&format=gif" />
 	{%- endif -%}
 	<h2>{{ macros_translate::translate(key="comments", default="Comments", language_strings=language_strings) }}</h2>
 	<p>{{ macros_translate::translate(key="comments_description", default="You can comment on this blog post by publicly replying to this post using a Mastodon or other ActivityPub/Fediverse account. Known non-private replies are displayed below.", language_strings=language_strings) }}</p>
 	<div class="dialog-buttons">
 		<a id="load-comments" class="inline-button" onclick="loadComments()" onkeypress="loadComments()" tabindex="0">
-			{{ macros_translate::translate(key="load_comments", default="Load Comments", language_strings=language_strings) }}
+			{{- macros_translate::translate(key="load_comments", default="Load Comments", language_strings=language_strings) -}}
 		</a>
 		<a class="inline-button colored external" href="https://{{ host }}/@{{ username }}/{{ id }}">
-			{{ macros_translate::translate(key="open_post", default="Open Post", language_strings=language_strings) }}
+			{{- macros_translate::translate(key="open_post", default="Open Post", language_strings=language_strings) -}}
 		</a>
 	</div>
 	<div id="comments-wrapper">
