@@ -27,7 +27,7 @@ h3 {
 
 small {
 	color: var(--fg-muted-5);
-	font-size: 0.875rem;
+	font-size: 0.875em;
 }
 
 abbr[title] {
@@ -39,7 +39,7 @@ abbr[title] {
 
 figcaption {
 	color: var(--fg-muted-4);
-	font-size: 0.875rem;
+	font-size: 0.875em;
 	text-align: center;
 }
 
@@ -83,7 +83,7 @@ ins {
 samp {
 	background-color: var(--fg-muted-1);
 	color: var(--fg-muted-5);
-	font-size: 0.875rem;
+	font-size: 0.875em;
 }
 
 q {
@@ -121,7 +121,7 @@ kbd {
 	border-radius: var(--rounded-corner-small);
 	background-color: var(--fg-muted-2);
 	padding: 0.125rem 0.375rem;
-	font-size: 0.875rem;
+	font-size: 0.875em;
 	line-height: normal;
 
 	// Small nice thingy, keys can be pressed!

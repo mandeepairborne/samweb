@@ -1,0 +1,18 @@
+#banner {
+	$mask: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
+	-webkit-mask-image: $mask;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	mask-image: $mask;
+	transition: none;
+	margin: 0;
+	user-select: none;
+
+	&.bright {
+		$mask: linear-gradient(rgba(0, 0, 0, 0.3), transparent);
+		-webkit-mask-image: $mask;
+		mask-image: $mask;
+	}
+}

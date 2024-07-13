@@ -4,6 +4,10 @@
 {%- set date_format = macros_translate::translate(key="date_format", default="%B %d, %Y", language_strings=language_strings) -%}
 {%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
 <article>
+	{%- if page.extra.banner -%}
+		<img id="banner" class="full-bleed{% if page.extra.banner_bright %} bright{% endif %}" src="{{ current_url | safe }}{{ page.extra.banner }}" />
+	{%- endif -%}
+
 	<h1>{{ page.title }}</h1>
 
 	{%- if page.date -%}
