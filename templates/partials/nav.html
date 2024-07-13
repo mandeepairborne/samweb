@@ -9,7 +9,7 @@
 					{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path="/", lang=lang) | trim_end_matches(pat='/') | safe -%}
 						class="active"
 					{%- endif -%}>
-					{{ config.title }}
+					{{- config.title -}}
 				</a>
 			</li>
 			{%- for link in config.extra.nav.links %}
@@ -19,7 +19,7 @@
 							{%- if current_url | default(value='/') | trim_end_matches(pat='/') | safe == link.url | trim_end_matches(pat='/') | safe -%}
 								class="active"
 							{%- endif -%}>
-							{{ macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) }}
+							{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
 						</a>
 					</li>
 				{%- else %}
@@ -28,7 +28,7 @@
 							{%- if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url, lang=lang) | trim_end_matches(pat='/') | safe -%}
 								class="active"
 							{%- endif -%}>
-							{{ macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) }}
+							{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
 						</a>
 					</li>
 				{%- endif %}
@@ -38,7 +38,7 @@
 					<a onclick="toggleSearch()" onkeypress="toggleSearch()" tabindex="0">
 						<i class="icon"></i>
 						<span class="hidden">
-							{{ macros_translate::translate(key="search", default="Search", language_strings=language_strings) }}
+							{{- macros_translate::translate(key="search", default="Search", language_strings=language_strings) -}}
 						</span>
 					</a>
 				</li>
@@ -51,7 +51,7 @@
 					<a href="{{ get_url(path=config.feed_filenames[0]) }}">
 						<i class="icon"></i>
 						<span class="hidden">
-							{{ macros_translate::translate(key="feed", default="Feed", language_strings=language_strings) }}
+							{{- macros_translate::translate(key="feed", default="Feed", language_strings=language_strings) -}}
 						</span>
 					</a>
 				</li>

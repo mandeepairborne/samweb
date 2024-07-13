@@ -48,7 +48,7 @@
 			{%- if page.date %}
 				<small>
 					<time datetime="{{ page.date | date(format='%+') }}" pubdate>
-						{{ page.date | date(format=date_format, locale=date_locale) }}
+						{{- page.date | date(format=date_format, locale=date_locale) -}}
 					</time>
 					{%- if page.authors %}
 						<span>•</span>
