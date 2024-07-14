@@ -15,6 +15,9 @@
 				let button = document.createElement("button");
 				let icon = document.createElement("i");
 				let span = document.createElement("span");
+				{%- if config.markdown.highlight_themes_css | length < 1 %}
+					button.classList.add("dark");
+				{%- endif %}
 				icon.classList.add("icon");
 				span.classList.add("hidden");
 				span.innerHTML = "{{ macros_translate::translate(key='copy_code', default='Copy code', language_strings=language_strings) }}";
