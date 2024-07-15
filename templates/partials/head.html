@@ -38,15 +38,6 @@
 			--primary-color: {{ config.extra.primary_color | default(value="#9a9996") }};
 			--primary-color-alpha: {{ config.extra.primary_color_alpha | default(value="rgba(154, 153, 150, 0.2)") }};
 		}
-
-		{%- if config.extra.primary_color_dark %}
-			@media (prefers-color-scheme: dark) {
-				:root {
-					--primary-color: {{ config.extra.primary_color_dark | default(value="#9a9996") }};
-					--primary-color-alpha: {{ config.extra.primary_color_dark_alpha | default(value="rgba(154, 153, 150, 0.2)") }};
-				}
-			}
-		{%- endif %}
 	</style>
 
 	{%- if config.extra.goatcounter %}
