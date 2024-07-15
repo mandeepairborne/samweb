@@ -5,7 +5,9 @@
 {%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
 <article>
 	{%- if page.extra.banner -%}
-		<img id="banner" class="full-bleed" src="{{ current_url | safe }}{{ page.extra.banner }}" />
+		<div id="banner-container">
+			<img id="banner" class="full-bleed" src="{{ current_url | safe }}{{ page.extra.banner }}" />
+		</div>
 	{%- endif -%}
 
 	<h1 {% if page.extra.banner %}class="banner-margin"{%- endif -%}>{{ page.title }}</h1>

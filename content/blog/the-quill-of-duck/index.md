@@ -7,6 +7,7 @@ updated = "2024-06-21"
 [taxonomies]
 tags = ["Demo", "Test"]
 [extra]
+banner = "quill.png#pixels"
 toc = true
 disclaimer = """
 See [demo](@/demo/index.md) for showcase of all Duckquill possibilities. This page is a demo of a post with title, publication date, tags, disclaimer, table of contents and comments.
@@ -17,8 +18,6 @@ host = "toot.community"
 user = "sungsphinx"
 id = "111789185826519979"
 +++
-
-![Quill](quill.png)
 
 ## The what?
 

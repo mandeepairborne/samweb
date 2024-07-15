@@ -1,4 +1,4 @@
-#banner {
+#banner-container {
 	$mask: linear-gradient(black, transparent);
 	-webkit-mask-image: $mask;
 	-webkit-user-select: none;
@@ -7,9 +7,17 @@
 	left: 0;
 	z-index: -1;
 	mask-image: $mask;
-	transition: none;
-	margin: 0;
+	width: 100vw;
+	height: 50vw;
 	user-select: none;
+
+	#banner {
+		position: fixed;
+		top: 0;
+		left: 0;
+		transition: none;
+		margin: 0;
+	}
 }
 
 .banner-margin {
