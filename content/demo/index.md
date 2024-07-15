@@ -370,9 +370,11 @@ You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>im
 ## Progress bar
 
 ```html
+<progress></progress>
 <progress value="33" max="100"></progress>
 ```
 
+<progress></progress>
 <progress value="33" max="100"></progress>
 
 ## Sample Output

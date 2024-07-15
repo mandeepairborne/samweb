@@ -45,8 +45,8 @@ figcaption {
 
 blockquote {
 	margin: 0;
-	border-inline-start: 0.25rem solid var(--primary-color);
 	border-radius: 0.25rem;
+	border-inline-start: 0.25rem solid var(--primary-color);
 	padding: 0 0.75rem;
 	color: var(--fg-muted-5);
 }
@@ -100,14 +100,34 @@ u {
 }
 
 progress {
+	-webkit-appearance: none;
+	appearance: none;
+	box-shadow: var(--edge-highlight);
 	border: none;
 	border-radius: 999px;
 	background-color: var(--fg-muted-1);
+	width: 100%;
 	height: 0.5rem;
 	color: var(--primary-color);
 
-	&::-webkit-progress-bar,
+	&:indeterminate {
+		background-color: var(--fg-muted-1);
+	}
+
+	&:indeterminate::-moz-progress-bar {
+		background-color: transparent;
+	}
+
+	&::-webkit-progress-bar {
+		background-color: transparent;
+	}
+
 	&::-moz-progress-bar {
+		border-radius: 999px;
+		background-color: var(--primary-color);
+	}
+
+	&::-webkit-progress-value {
 		border-radius: 999px;
 		background-color: var(--primary-color);
 	}

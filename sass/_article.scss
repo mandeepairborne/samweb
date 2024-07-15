@@ -1,6 +1,7 @@
 #banner {
 	$mask: linear-gradient(black, transparent);
 	-webkit-mask-image: $mask;
+	-webkit-user-select: none;
 	position: absolute;
 	top: 0;
 	left: 0;
