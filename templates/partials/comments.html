@@ -22,9 +22,9 @@
 	<h2>{{ macros_translate::translate(key="comments", default="Comments", language_strings=language_strings) }}</h2>
 	<p>{{ macros_translate::translate(key="comments_description", default="You can comment on this blog post by publicly replying to this post using a Mastodon or other ActivityPub/Fediverse account. Known non-private replies are displayed below.", language_strings=language_strings) }}</p>
 	<div class="dialog-buttons">
-		<a id="load-comments" class="inline-button" onclick="loadComments()" onkeypress="loadComments()" tabindex="0">
+		<button id="load-comments" class="inline-button" onclick="loadComments()">
 			{{- macros_translate::translate(key="load_comments", default="Load Comments", language_strings=language_strings) -}}
-		</a>
+		</button>
 		<a class="inline-button colored external" href="https://{{ host }}/@{{ username }}/{{ id }}">
 			{{- macros_translate::translate(key="open_post", default="Open Post", language_strings=language_strings) -}}
 		</a>

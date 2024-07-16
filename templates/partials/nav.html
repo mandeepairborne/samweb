@@ -35,12 +35,12 @@
 			{%- endfor -%}
 			{%- if config.build_search_index %}
 				<li id="search">
-					<a onclick="toggleSearch()" onkeypress="toggleSearch()" tabindex="0">
+					<button onclick="toggleSearch()">
 						<i class="icon"></i>
 						<span class="hidden">
 							{{- macros_translate::translate(key="search", default="Search", language_strings=language_strings) -}}
 						</span>
-					</a>
+					</button>
 				</li>
 			{%- endif %}
 			{%- if config.languages | length > 0 %}
@@ -59,7 +59,10 @@
 		</ul>
 	</nav>
 	<div id="search-container">
-		<input id="search-bar" type="search" placeholder="{{ macros_translate::translate(key='search_for', default='Search for…', language_strings=language_strings) }}">
+		<label for="search-bar" class="hidden">
+			{{- macros_translate::translate(key="search", default="Search", language_strings=language_strings) -}}
+		</label>
+		<input id="search-bar" placeholder="{{ macros_translate::translate(key='search_for', default='Search for…', language_strings=language_strings) }}" disabled type="search">
 		<div id="search-results"></div>
 	</div>
 </header>

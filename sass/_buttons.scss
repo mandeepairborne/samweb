@@ -7,14 +7,19 @@
 }
 
 .inline-button {
+	-webkit-appearance: none;
+	appearance: none;
 	transition: var(--transition);
 	cursor: pointer;
 	box-shadow: var(--edge-highlight);
+	border: none;
 	border-radius: var(--rounded-corner);
 	background-color: var(--fg-muted-1);
+	padding: 0.125rem 0.375rem;
 	padding: 0.625rem 1rem;
 	color: var(--fg-color);
-	font-size: 0.9rem;
+	font-weight: bold;
+	font-size: 0.875rem;
 	line-height: normal;
 	text-decoration: none;
 

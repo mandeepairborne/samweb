@@ -191,7 +191,9 @@
 
     function toggleSearch() {
         var searchContainer = document.getElementById("search-container");
+        var searchBar = document.getElementById("search-bar");
         searchContainer.classList.toggle("active");
+        searchBar.toggleAttribute("disabled");
     }
 
     if (document.readyState === "complete" ||
