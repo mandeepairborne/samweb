@@ -100,5 +100,12 @@ img {
 				}
 			}
 		}
+
+		&.transparent,
+		&[src*="#transparent"] {
+			&:hover {
+				box-shadow: none;
+			}
+		}
 	}
 }
