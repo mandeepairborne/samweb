@@ -5,10 +5,10 @@ title = "Demo Page"
 archive = "This page is, in fact, not archived, meaning it will receive content updates."
 trigger = "This page contains blackjack and hookers, and bad jokes such as this one."
 disclaimer = """
-- All tricks in this page are performed by the lab boys, don't try this at home
-- Don't expose yourself to 4000° kelvin
-- Don't take party escort submission position
-- Don't interact with asbestos and moon rocks
+- All tricks in this page are performed by the lab boys, don't try this at home.
+- Don't expose yourself to 4000° kelvin.
+- Don't take party escort submission position.
+- Don't interact with asbestos and moon rocks.
 """
 +++
 
@@ -18,91 +18,81 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 There should be whitespace between paragraphs.
 
-We recommend including a README, or a file with information about your project.
-
 # Heading 1
 
-This is a normal paragraph following a header. Codeberg is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+This is a normal paragraph following a header.
 
 ## Heading 2
 
-> This is a blockquote following a header.
->
-> > When something is important enough, you do it even if the odds are not in your favor.
+> "Original content is original only for a few seconds before getting old"
+> > Rule #21 of the internet
 
 ### Heading 3
 
-```js
-// Javascript code with syntax highlighting
-var fun = function lang(l) {
-  dateformat.i18n = require("./lang/" + l);
-  return true;
-};
+```rust
+let highlight = true;
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+```scss, linenos, linenostart=10, hl_lines=3-4 8-9, hide_lines=2 7
+pre mark {
+
+  display: block;
+
+  color: currentcolor;
+
+}
+
+pre table td:nth-of-type(1) {
+
+  color: #6b6b6b;
+
+  font-style: italic;
+
+}
 ```
 
 #### Heading 4
 
-- This is an unordered list following a header.
-- This is an unordered list following a header.
-- This is an unordered list following a header.
+- Item 1
+- Item 2
+- Item 3
+- `Item 4`
 
 ##### Heading 5
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+1. Perform step #1
+2. Proceed to step #2
+3. Conclude with step #3
 
 ###### Heading 6
 
-| head1        | head two          | three |
-| :----------- | :---------------- | :---- |
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-## There's a horizontal rule below this.
-
----
-
-## Here is an unordered list:
+| Mare         | Rating            | Additional info |
+| :----------- | :---------------- | :-------------- |
+| Fluttershy   | Best pone         | Shy             |
+| Apple Jack   | Good pone         | Honest and nice |
+| Pinke Pie    | Fun pone          | Party Horn!     |
+| Twilight     | Decent pone       | Neeerd          |
+| Rainbow Dash | Annoying pone     | Looks badass    |
+| Rarity       | Mixed pone        | Sometimes nice  |
 
 - Item foo
 - Item bar
 - Item baz
 - Item zip
 
-## And an ordered list:
-
 1. Item one
 2. Item two
 3. Item three
 4. Item four
 
-## And a nested list:
+- Level 1 item
+  - Level 2 item
+  - Level 2 item
+    - Level 3 item
+    - Level 3 item
+- Level 1 item
 
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-## Here are checkboxes:
+***
 
 - [ ] Milk
 - [x] Eggs

@@ -17,7 +17,7 @@
 			<time datetime="{{ page.date | date(format=' %+') }}" pubdate>
 				{{- page.date | date(format=date_format, locale=date_locale) -}}
 			</time>
-			{%- if page.authors -%}
+			{%- if page.authors %}
 				<span>•</span>
 				<span>
 					{{ macros_translate::translate(key="author", default="Author", language_strings=language_strings) }}:

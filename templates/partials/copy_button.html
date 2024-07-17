@@ -6,24 +6,39 @@
 
 		blocks.forEach((block) => {
 			if (navigator.clipboard) {
+				// Code block header title
+				let title = document.createElement("span");
+				let lang = block.getAttribute("data-lang");
+				title.innerHTML = lang;
+
+				// Copy button icon
+				let icon = document.createElement("i");
+				icon.classList.add("icon");
+
+				// Copy button label (for screen readers)
+				let label = document.createElement("span");
+				label.classList.add("hidden");
+				label.innerHTML = "{{ macros_translate::translate(key='copy_code', default='Copy code', language_strings=language_strings) }}";
+
+				// Copy button
+				let button = document.createElement("button");
+				button.appendChild(icon);
+				button.appendChild(label);
+
+				// Code block header
+				let header = document.createElement("div");
+				header.classList.add("header");
+				header.appendChild(button);
+				header.appendChild(title);
+
+				// Container that holds header and the code block itself
 				let container = document.createElement("div");
 				container.classList.add("pre-container");
+				container.appendChild(header);
 
+				// Move code block into the container
 				block.parentNode.insertBefore(container, block);
 				container.appendChild(block);
-
-				let button = document.createElement("button");
-				let icon = document.createElement("i");
-				let span = document.createElement("span");
-				{%- if config.markdown.highlight_themes_css | length < 1 %}
-					button.classList.add("dark");
-				{%- endif %}
-				icon.classList.add("icon");
-				span.classList.add("hidden");
-				span.innerHTML = "{{ macros_translate::translate(key='copy_code', default='Copy code', language_strings=language_strings) }}";
-				button.appendChild(icon);
-				button.appendChild(span);
-				container.appendChild(button);
 
 				button.addEventListener("click", async () => {
 					await copyCode(block, button);
