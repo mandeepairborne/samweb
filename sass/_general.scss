@@ -73,3 +73,8 @@ body {
 		outline-offset: 0.25rem;
 	}
 }
+
+.container {
+	margin: 0 auto;
+	width: min(var(--container-width), 90%);
+}

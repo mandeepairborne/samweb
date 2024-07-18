@@ -207,4 +207,5 @@ As for the code formatter I use built-in VSCodium one. Prettier is good but I do
 - [Carl Schwan](https://carlschwan.eu) for the [Mastodon-powered Comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/).
 - [Jonathan Neal](https://jonneal.dev) for the [normalize.css](https://csstools.github.io/normalize.css/).
 - [Modern Font Stacks](https://modernfontstacks.com) for the system font stack.
+- [TheEvilSkeleton](https://tesk.page) for helping to improve the look and accessibility.
 - Everyone who supported me and said good stuff <3

@@ -41,21 +41,21 @@
 				container.appendChild(block);
 
 				button.addEventListener("click", async () => {
-					await copyCode(block, button);
+					await copyCode(block, header);
 				});
 			}
 		});
 
-		async function copyCode(block, button) {
+		async function copyCode(block, header) {
 			let code = block.querySelector("code");
 			let text = code.innerText;
 
 			await navigator.clipboard.writeText(text);
 
-			button.classList.add("active");
+			header.classList.add("active");
 
 			setTimeout(() => {
-				button.classList.remove("active");
+				header.classList.remove("active");
 			}, 800);
 		}
 	});
