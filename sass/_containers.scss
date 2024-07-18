@@ -34,7 +34,9 @@
 		}
 
 		button {
+			-webkit-appearance: none;
 			float: inline-end;
+			appearance: none;
 			transition: var(--transition);
 			cursor: pointer;
 			border: none;
