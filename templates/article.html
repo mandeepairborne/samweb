@@ -46,35 +46,7 @@
 		{%- endif -%}
 	{%- endif -%}
 
-	{%- if page.extra.archive -%}
-		<div class="statement-container archive">
-			<strong class="big">
-				<i class="icon"></i>
-				{{- macros_translate::translate(key="archived", default="Archived", language_strings=language_strings) -}}
-			</strong>
-			{{ page.extra.archive | markdown | safe }}
-		</div>
-	{%- endif -%}
-
-	{%- if page.extra.trigger -%}
-		<div class="statement-container trigger">
-			<strong class="big">
-				<i class="icon"></i>
-				{{- macros_translate::translate(key="trigger_warning", default="Trigger Warning", language_strings=language_strings) -}}
-			</strong>
-			{{ page.extra.trigger | markdown | safe }}
-		</div>
-	{%- endif -%}
-
-	{%- if page.extra.disclaimer -%}
-		<div class="statement-container disclaimer">
-			<strong class="big">
-				<i class="icon"></i>
-				{{-macros_translate::translate(key="disclaimer", default="Disclaimer", language_strings=language_strings) -}}
-			</strong>
-			{{ page.extra.disclaimer | markdown | safe }}
-		</div>
-	{%- endif -%}
+	{%- include "partials/statements.html" -%}
 
 	{%- if page.extra.toc -%}
 		<h2>{{ macros_translate::translate(key="table_of_contents", default="Table of Contents", language_strings=language_strings) }}</h2>
@@ -100,7 +72,7 @@
 </article>
 
 {%- if page.extra.comments.id -%}
-	{% include "partials/comments.html" ignore missing %}
+	{% include "partials/comments.html" %}
 {%- endif -%}
 
 {%- if page.lower or page.higher -%}

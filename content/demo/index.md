@@ -73,7 +73,7 @@ pre table td:nth-of-type(1) {
 | Pinke Pie    | Fun pone          | Party Horn!     |
 | Twilight     | Decent pone       | Neeerd          |
 | Rainbow Dash | Annoying pone     | Looks badass    |
-| Rarity       | Mixed pone        | Sometimes nice  |
+| Rarity       | Fancy pone        | Sometimes nice  |
 
 - Item foo
 - Item bar
@@ -386,7 +386,7 @@ Blah blah <q>Inline Quote</q> hmm.
 ## Grammar Mistakes
 
 ```html
-<u>Trying to replicate grammar mistakes</u>
+<u>Gmarrar mitsakes</u>
 ```
 
 <u>Yeet</u> the <u>sus</u> drip while <u>vibing</u> with the <u>TikTok</u> <u>fam</u> on a cap-free boomerang.
@@ -408,4 +408,4 @@ Blah blah <q>Inline Quote</q> hmm.
 </div>
 ```
 
-> Look at the end of this page xD
+Look bellow this text XD
