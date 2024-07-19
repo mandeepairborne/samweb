@@ -6,8 +6,8 @@
 	padding: 0;
 	list-style: none;
 
-	&.inline {
-		margin-inline-start: 0.25rem;
+	&.end {
+		float: inline-end;
 	}
 
 	li {

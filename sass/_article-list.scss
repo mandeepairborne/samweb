@@ -2,7 +2,6 @@
 	margin-top: 2rem;
 
 	article {
-
 		&.draft,
 		&.archive,
 		&.featured {
@@ -177,10 +176,6 @@
 				mask-image: $icon;
 				background-color: var(--yellow-fg);
 			}
-		}
-
-		.tags {
-			float: inline-end;
 		}
 	}
 
