@@ -5,9 +5,7 @@
 {%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
 <h1>{{ section.title }}</h1>
 
-{%- if section.description %}
-	{{ section.description | markdown | safe }}
-{%- endif %}
+{{ section.content | safe }}
 
 <small>
 	<a href="{{ get_url(path='tags', lang=lang) }}">
