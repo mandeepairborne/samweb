@@ -1,7 +1,6 @@
 <head>
 	<!-- {{ now() | date(format='%F %a %R') }} -->
 	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="description" content="{{ config.description }}" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="theme-color" content="{{ config.extra.primary_color | default(value='#9a9996') }}" />
@@ -10,10 +9,10 @@
 
 	{%- if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
 		{%- if config.markdown.highlight_themes_css | length > 0 %}
-			<link rel="stylesheet" href="{{ get_url(path='syntax-theme-light.css') }}" media="(prefers-color-scheme: light)" />
-			<link rel="stylesheet" href="{{ get_url(path='syntax-theme-dark.css') }}" media="(prefers-color-scheme: dark)" />
+			<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme-light.css') }}" media="(prefers-color-scheme: light)" />
+			<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme-dark.css') }}" media="(prefers-color-scheme: dark)" />
 		{%- else %}
-			<link rel="stylesheet" href="{{ get_url(path='syntax-theme.css') }}" />
+			<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme.css') }}" />
 		{%- endif %}
 	{%- endif %}
 
@@ -30,10 +29,10 @@
 	{%- endif %}
 
 	{%- for stylesheet in stylesheets %}
-		<link rel="stylesheet" href="{{ get_url(path=stylesheet) | safe }}" />
+		<link type="text/css" rel="stylesheet" href="{{ get_url(path=stylesheet) | safe }}" />
 	{%- endfor %}
 
-	<style>
+	<style type="text/css">
 		:root {
 			--primary-color: {{ config.extra.primary_color | default(value="#9a9996") }};
 			--primary-color-alpha: {{ config.extra.primary_color_alpha | default(value="rgba(154, 153, 150, 0.2)") }};
@@ -41,7 +40,7 @@
 	</style>
 
 	{%- if config.extra.goatcounter %}
-		<script data-goatcounter="https://{{ config.extra.goatcounter.user }}.{{ config.extra.goatcounter.host | default(value='goatcounter.com') }}/count" async src="//gc.zgo.at/count.js"></script>
+		<script type="text/javascript" data-goatcounter="https://{{ config.extra.goatcounter.user }}.{{ config.extra.goatcounter.host | default(value='goatcounter.com') }}/count" async src="//gc.zgo.at/count.js"></script>
 		<noscript>
 			<img src="https://{{ config.extra.goatcounter.user }}.{{ config.extra.goatcounter.host | default(value='goatcounter.com') }}/count?p={{ current_path | default(value='/') | safe }}" />
 		</noscript>
@@ -70,7 +69,7 @@
 
 	{%- if scripts | length > 0 %}
 		{%- for script in scripts %}
-			<script src="{{ get_url(path=script) | safe }}"></script>
+			<script type="text/javascript" src="{{ get_url(path=script) | safe }}"></script>
 		{%- endfor %}
 	{%- endif %}
 
