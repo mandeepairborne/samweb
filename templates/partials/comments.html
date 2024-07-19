@@ -70,7 +70,11 @@
 
 		function loadComments() {
 			let commentsWrapper = document.getElementById("comments-wrapper");
-			document.getElementById("load-comments").innerHTML = "{{ macros_translate::translate(key='loading', default='Loading', language_strings=language_strings) }}…";
+			commentsWrapper.innerHTML = "";
+
+			let loadCommentsButton = document.getElementById("load-comments");
+			loadCommentsButton.innerHTML = "{{ macros_translate::translate(key='loading', default='Loading', language_strings=language_strings) }}…";
+
 			fetch("https://{{ host }}/api/v1/statuses/{{ id }}/context")
 				.then(function (response) {
 					return response.json();
@@ -244,8 +248,7 @@
 							commentsWrapper.innerHTML += comment.outerHTML;
 						});
 					}
-					let loadCommentsButton = document.getElementById("load-comments");
-					loadCommentsButton.remove();
+					loadCommentsButton.innerHTML = "{{ macros_translate::translate(key='reload', default='Reload', language_strings=language_strings) }}";
 				});
 		}
 	</script>
