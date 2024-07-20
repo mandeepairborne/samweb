@@ -1,4 +1,5 @@
 {#- Taken from https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/ -#}
+{#- Attachment code taken from https://github.com/cassidyjames/cassidyjames.github.io/blob/99782788a7e3ba3cc52d6803010873abd1b02b9e/_includes/comments.html#L251-L296 -#}
 
 {%- if page.extra.comments.host -%}
 	{%- set host = page.extra.comments.host -%}
@@ -194,6 +195,51 @@
 							main.setAttribute("itemprop", "text");
 							main.innerHTML = status.content;
 
+							let attachments = status.media_attachments;
+							let SUPPORTED_MEDIA = ["image", "gifv"];
+							let media = document.createElement("div");
+							media.className = "attachments";
+							if (
+								attachments &&
+								Array.isArray(attachments) &&
+								attachments.length > 0
+							) {
+								attachments.forEach((attachment) => {
+									if (SUPPORTED_MEDIA.includes(attachment.type)) {
+
+										let mediaElement;
+										switch (attachment.type) {
+											case "image":
+												mediaElement = document.createElement("img");
+												mediaElement.setAttribute("src", attachment.preview_url);
+
+												if (attachment.description != null) {
+													mediaElement.setAttribute("alt", attachment.description);
+													mediaElement.setAttribute("title", attachment.description);
+												}
+
+												media.appendChild(mediaElement);
+												break;
+
+											case "gifv":
+												mediaElement = document.createElement("video");
+												mediaElement.setAttribute("src", attachment.url);
+												mediaElement.setAttribute("autoplay", "");
+												mediaElement.setAttribute("playsinline", "");
+												mediaElement.setAttribute("loop", "");
+
+												if (attachment.description != null) {
+													mediaElement.setAttribute("aria-title", attachment.description);
+													mediaElement.setAttribute("title", attachment.description);
+												}
+
+												media.appendChild(mediaElement);
+												break;
+										}
+									}
+								});
+							}
+
 							let interactions = document.createElement("footer");
 
 							let boosts = document.createElement("a");
@@ -227,6 +273,13 @@
 							comment.appendChild(header);
 							comment.appendChild(timestamp);
 							comment.appendChild(main);
+							if (
+								attachments &&
+								Array.isArray(attachments) &&
+								attachments.length > 0
+							) {
+								comment.appendChild(media);
+							}
 							comment.appendChild(interactions);
 
 							if (op === true) {

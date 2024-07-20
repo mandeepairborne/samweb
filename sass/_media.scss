@@ -80,6 +80,7 @@ img {
 
 		&:hover {
 			transform: scale(1.1);
+			z-index: 1;
 			box-shadow: var(--shadow-raised);
 			border-radius: 0;
 		}
