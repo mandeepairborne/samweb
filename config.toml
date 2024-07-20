@@ -56,6 +56,10 @@ taxonomies = [{ name = "tags", feed = true }]
 primary_color = "#ff7800"
 # Same as primary_color, but with 20% opacity
 primary_color_alpha = "rgba(255, 120, 0, 0.2)"
+# Ditto but for the dark mode.
+# If not set regular variant will be used.
+primary_color_dark = "#ffa348"
+primary_color_dark_alpha = "rgba(255, 163, 72, 0.2)"
 # Use emoji as a favicon.
 # Only one emoji is being rendered, everything else is truncated.
 # emoji_favicon = "🦆🪶"

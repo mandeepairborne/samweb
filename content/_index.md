@@ -94,13 +94,14 @@ To add your own or override existing styles, create a custom stylesheet and add 
 ```toml
 [extra]
 stylesheets = [
-  "YOUR_STYLE.css"
+  "YOUR_STYLE.css",
+  "ALSO_YOUR_STYLE.css"
 ]
 ```
 
 Additional stylesheets are expected it to be in the `static` directory. If you are using Sass they will be compiled there by default.
 
-If for some reason overridden style is not respected, try using `!important` (don't use it unless needed ). You can import styles from Duckquill using:
+If for some reason overridden style is not respected, try using `!important` (don't use it unless needed). You can import styles from Duckquill using:
 
 ```scss
 @use "../themes/duckquill/sass/NEEDED_FILE.scss";
@@ -111,19 +112,26 @@ You can also load stylesheets per page/section by setting them inside page's fro
 ```toml
 [extra]
 stylesheets = [
-  "YOUR_STYLE.css",
-  "ALSO_YOUR_STYLE.css"
+  "YOUR_PAGE_STYLE.css"
 ]
 ```
 
 ### Primary Color
 
-Duckquill respects chosen primary color everywhere, simply change the primary color in `config.toml`:
+Duckquill respects chosen primary color everywhere. To use your own, simply change the primary color in `config.toml`:
 
 ```toml
 [extra]
-primary_color = "COLOR_CODE"
-primary_color_alpha = "COLOR_CODE"
+primary_color = "#3584e4"
+primary_color_alpha = "rgba(53, 132, 228, 0.2)"
+```
+
+Additionally, you can set a separate color for dark mode:
+
+```toml
+[extra]
+primary_color_dark = "#ff7800"
+primary_color_dark_alpha = "rgba(255, 120, 0, 0.2)"
 ```
 
 ### Favicon
