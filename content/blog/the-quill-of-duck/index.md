@@ -23,6 +23,10 @@ user = "sungsphinx"
 id = "111789185826519979"
 +++
 
+{% alert(tip=true) %}
+Recommended banner dimensions are 2:1 aspect ratio and 1920x960 resolution.
+{% end %}
+
 ## The what?
 
 This is a Duckquill post example, this post has nothing but a bunch of text and random formatting, acting like a demo.
