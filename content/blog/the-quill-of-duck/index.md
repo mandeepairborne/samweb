@@ -9,8 +9,12 @@ tags = ["Demo", "Test"]
 [extra]
 banner = "quill.png#pixels"
 toc = true
+trigger = "This page contains blackjack and hookers, and bad jokes such as this one."
 disclaimer = """
-See [demo](@/demo/index.md) for showcase of all Duckquill possibilities. This page is a demo of a post with title, publication date, tags, disclaimer, table of contents and comments.
+- All tricks in this page are performed by the lab boys, don't try this at home.
+- Don't expose yourself to 4000° kelvin.
+- Don't take party escort submission position.
+- Don't interact with asbestos and moon rocks.
 """
 featured = true
 [extra.comments]

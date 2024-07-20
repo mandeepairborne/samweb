@@ -1,5 +1,5 @@
 .tags {
-	display: inline-flex;
+	display: flex;
 	flex-wrap: wrap;
 	gap: 0.25rem;
 	margin: 0;
@@ -11,7 +11,7 @@
 	}
 
 	li {
-		display: flex;
+		display: inline-flex;
 		transition: var(--transition);
 		line-height: normal;
 

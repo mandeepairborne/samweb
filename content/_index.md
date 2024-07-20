@@ -133,9 +133,6 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and app
 ## Test Pages
 
 - [Demo page](@/demo/index.md)
-- [Cake Party!](@/demo/page.md)
-- [ActivityPub/​Fediverse comments demo](@/demo/comments.md)
-- [Code block demo (needs Zola v0.18.0 and higher)](@/demo/code.md)
 
 ## In the Wild
 

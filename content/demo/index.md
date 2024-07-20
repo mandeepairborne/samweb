@@ -1,33 +1,70 @@
 +++
-template = "article.html"
 title = "Demo Page"
-[extra]
-archive = "This page is, in fact, not archived, meaning it will receive content updates."
-trigger = "This page contains blackjack and hookers, and bad jokes such as this one."
-disclaimer = """
-- All tricks in this page are performed by the lab boys, don't try this at home.
-- Don't expose yourself to 4000° kelvin.
-- Don't take party escort submission position.
-- Don't interact with asbestos and moon rocks.
-"""
 +++
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Demo Page
+
+{% alert(note=true) %}
+This is a demo of most of the components, but some of them are only accessible on specific pages. If you wish to see them, follow one of these:
+
+- [Blog Demo](@/blog/_index.md)
+- [Post Demo](@/blog/the-quill-of-duck/index.md)
+{% end %}
+
+## Markdown
+
+Text can be **bold**, *italic*, ~~strikethrough~~, and ***~~all at the same time~~***.
 
 [Link to another page](@/demo/page.md).
 
 There should be whitespace between paragraphs.
 
 # Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+
 
 This is a normal paragraph following a header.
 
-## Heading 2
+😭😂🥺🤣❤️✨🙏😍🥰😊
+
+```
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
 
 > "Original content is original only for a few seconds before getting old"
 > > Rule #21 of the internet
 
-### Heading 3
+- Item 1
+- Item 2
+  - Item 2.1
+  - Item 2.2
+- Item 3
+- `Item 4`
+
+1. Perform step #1
+2. Proceed to step #2
+3. Conclude with step #3
+
+- [ ] Milk
+- [x] Eggs
+- [x] Flour
+- [ ] Coffee
+- [x] Combustible lemons
+
+![Indian Runner Ducks](https://upload.wikimedia.org/wikipedia/commons/1/14/COLLECTIE_TROPENMUSEUM_Eenden_in_een_sawa_TMnr_60032098_%28cropped%29.jpg)
+
+| Mare         | Rating            | Additional info  |
+| :----------- | :---------------- | :---------------  |
+| Fluttershy   | Best pone         | Shy and adorable |
+| Apple Jack   | Good pone         | Honest and nice  |
+| Pinke Pie    | Fun pone          | Party Horn!      |
+| Twilight     | Decent pone       | Neeerd           |
+| Rainbow Dash | Annoying pone     | Looks badass     |
+| Rarity       | Fancy pone        | Sometimes nice   |
 
 ```rust
 let highlight = true;
@@ -51,113 +88,13 @@ pre table td:nth-of-type(1) {
 }
 ```
 
-#### Heading 4
-
-- Item 1
-- Item 2
-- Item 3
-- `Item 4`
-
-##### Heading 5
-
-1. Perform step #1
-2. Proceed to step #2
-3. Conclude with step #3
-
-###### Heading 6
-
-| Mare         | Rating            | Additional info |
-| :----------- | :---------------- | :-------------- |
-| Fluttershy   | Best pone         | Shy             |
-| Apple Jack   | Good pone         | Honest and nice |
-| Pinke Pie    | Fun pone          | Party Horn!     |
-| Twilight     | Decent pone       | Neeerd          |
-| Rainbow Dash | Annoying pone     | Looks badass    |
-| Rarity       | Fancy pone        | Sometimes nice  |
-
-- Item foo
-- Item bar
-- Item baz
-- Item zip
-
-1. Item one
-2. Item two
-3. Item three
-4. Item four
-
-- Level 1 item
-  - Level 2 item
-  - Level 2 item
-    - Level 3 item
-    - Level 3 item
-- Level 1 item
-
 ***
-
-- [ ] Milk
-- [x] Eggs
-- [x] Flour
-- [ ] Coffee
-- [x] Combustible lemons
-
-### Same but interactive
-
-<ul>
-<li><input type="checkbox"> Milk</li>
-<li><input checked="" type="checkbox"> Eggs</li>
-<li><input checked="" type="checkbox"> Flour</li>
-<li><input type="checkbox"> Coffee</li>
-<li><input checked="" type="checkbox"> Combustible lemons</li>
-</ul>
-
-### With radio type
-
-<ul>
-<li><input type="radio" name="test"> Milk</li>
-<li><input type="radio" name="test"> Eggs</li>
-<li><input type="radio" name="test"> Flour</li>
-<li><input checked="" type="radio" name="test"> Coffee</li>
-<li><input type="radio" name="test" disabled=""> Combustible lemons</li>
-</ul>
-
-## Small image
-
-{{ image(url="https://codeberg.org/Codeberg/Design/raw/branch/main/logo/icon/png/codeberg-logo_icon_blue-64x64.png", alt="Codeberg icon", transparent=true, no_hover=true) }}
-
-## Large image
-
-{{ image(url="https://codeberg.org/Codeberg/Design/raw/branch/main/logo/horizontal/png/codeberg-logo_horizontal_blue-850x250.png", alt="Codeberg horizontal", transparent=true, no_hover=true) }}
-
-## Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
 
 ## Extra
 
-Alright now that the generic (slightly extended) ~~Jekyll~~ Zola demo page have ended, we can get to the custom stuff, which believe me, is neat.
-
-😭😂🥺🤣❤️✨🙏😍🥰😊
-
 ### Shortcodes
 
-Duckquill provides a few useful [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) that simplify some tasks.
+Duckquill provides a few useful [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) that simplify some tasks. The can be used on all pages.
 
 #### Alerts
 
@@ -197,9 +134,9 @@ Urgent info that needs immediate user attention to avoid problems.
 Advises about risks or negative outcomes of certain actions.
 {% end %}
 
-#### Image
+#### Images and Videos
 
-By default images come with styling, such as rounded corners and shadow. To fine-tune these, you can use shortcodes with different variable combinations.
+By default images and videos come with some generic styling, such as rounded corners and shadow. To fine-tune these, you can use shortcodes with different variable combinations.
 
 Available variables are:
 
@@ -213,8 +150,6 @@ Available variables are:
 - `pixels`: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.
 - `transparent`: Removes rounded corners and shadow, useful for transparent images.
 - `no_hover`: Removes zoom on hover.
-
-Variables should be comma-separated and be inside the brackets.
 
 ```jinja2
 {{/* image(url="image.png", alt="This is an image" no_hover=true) */}}
@@ -247,9 +182,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \
 [![Picture of the magnificent lej da staz just before sunrise in october](https://images.unsplash.com/photo-1635410773896-da585e1fe138?q=80&w=2063&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D#full-bleed)](https://unsplash.com/photos/a-mountain-lake-surrounded-by-trees-and-snow-CqTOTZh5vrs)
 
-#### Video
-
-Same as images, but with a few differences: `no_hover` and `url_min` are not available.
+For videos it's all the same except for a few differences: `no_hover` and `url_min` variables are not available.
 
 ```jinja2
 {{/* video(url="video.webm", alt="This is a video") */}}
@@ -295,38 +228,109 @@ Alright, this one doesn't simplify anything, it just adds a CRT-like effect arou
 
 {% end %}
 
-## Captions
+### Description List (`<dl>`)
 
-Media can have additional text description using the `<figcaption>` HTML tag directly under it.
-
-```markdown
-![The Office](https://i.ibb.co/MPDJRsT/ImMAXM3.png)
-<figcaption>The image caption</figcaption>
+```html
+<dl>
+<dt>Something</dt>
+<dd>And its description</dd>
+</dl>
 ```
 
-![The Office](https://i.ibb.co/MPDJRsT/ImMAXM3.png)
-<figcaption>The Office where Stanley works, it has yellow floor and beige walls</figcaption>
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
 
-## Accordion
+### Form Input (`<input>`)
+
+```html
+<input type="checkbox" /><label>Checkbox</label>
+```
+
+<ul>
+<li><input type="checkbox" /><label>&nbsp;Milk</label></li>
+<li><input type="checkbox" /><label>&nbsp;Eggs</label></li>
+<li><input type="checkbox" /><label>&nbsp;Flour</label></li>
+<li><input type="checkbox" checked /><label>&nbsp;Coffee</label></li>
+<li><input type="checkbox" disabled /><label>&nbsp;Combustible lemons</label></li>
+</ul>
+
+With `radio` type:
+
+```html
+<input type="radio" name="test" /><label>Radio</label>
+```
+
+<ul>
+<li><input type="radio" name="test" /><label>&nbsp;Milk</label></li>
+<li><input type="radio" name="test" /><label>&nbsp;Eggs</label></li>
+<li><input type="radio" name="test" /><label>&nbsp;Flour</label></li>
+<li><input type="radio" name="test" checked /><label>&nbsp;Coffee</label></li>
+<li><input type="radio" name="test" disabled /><label>&nbsp;Combustible lemons</label></li>
+</ul>
+
+### Figure Captions (`<figcaption>`)
+
+```markdown
+<figure>
+  -> Whatever content <-
+  <figcaption>Caption of content above</figcaption>
+</figure>
+```
+
+<figure>
+
+  ![The Office](https://i.ibb.co/MPDJRsT/ImMAXM3.png)
+  <figcaption>The Office where Stanley works, it has yellow floor and beige walls</figcaption>
+</figure>
+
+### Accordion (`<details>`)
+
+```markdown
+<details>
+  <summary>Accordion title</summary>
+  -> Contents here <-
+</details>
+```
 
 <details>
-  <summary>I can be a spoiler, I can be a long text, I could be anything.</summary>
+  <summary>Reveal accordion</summary>
 
-_Quack-quack!_
-
-![Cute duck](https://i.ibb.co/x5Wd5dm/EEVSKgV.jpg)
+  Get it? I know, it's an awful pun.
+  ![Piano Accordeon](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/PianoAccordeon.jpg/916px-PianoAccordeon.jpg)
 
 </details>
 
-## Small
+### Side Comment (`<small>`)
+
+```html
+<small>Small, cute text that doesn't catch attention.</small>
+```
 
 <small>Small, cute text that doesn't catch attention.</small>
 
-## Abbreviation
+### Abbreviation (`<abbr>`)
+
+```html
+<abbr title="American Standard Code for Information Interchange">ASCII</abbr>
+```
 
 The <abbr title="American Standard Code for Information Interchange">ASCII</abbr> art are awesome!
 
-## Aside
+### Aside (`<aside>`)
+
+```html
+<aside>
+-> Contents here <-
+</aside>
+```
 
 <aside>
 Quill and a parchment
@@ -337,27 +341,31 @@ A quill is a writing tool made from a moulted flight feather (preferably a prima
 
 As with the earlier reed pen (and later dip pen), a quill has no internal ink reservoir and therefore needs to periodically be dipped into an inkwell during writing. The hand-cut goose quill is rarely used as a calligraphy tool anymore because many papers are now derived from wood pulp and would quickly wear a quill down. However it is still the tool of choice for a few scribes who have noted that quills provide an unmatched sharp stroke as well as greater flexibility than a steel pen.
 
-## Keyboard shortcut
+### Keyboard Input (`<kbd>`)
 
 ```html
-<kbd>⌘ Super</kbd> + <kbd>Space</kbd>
+<kbd>⌘ Command</kbd>.
 ```
 
 To switch the keyboard layout, press <kbd>⌘ Super</kbd> + <kbd>Space</kbd>.
 
-## Highlighted
+### Mark Text (`<mark>`)
+
+```html
+<mark>Marked text</mark>
+```
 
 You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>important</mark> that even **bold** is not enough.
 
-## Deleted and Inserted
+### Deleted and Inserted Text (`<del>` and `<ins>`)
 
 ```html
-<del>Text deleted</del> <ins>Text added</ins>
+<del>Something deleted</del> <ins>Something added</ins>
 ```
 
 <del>Text deleted</del> <ins>Text added</ins>
 
-## Progress bar
+### Progress Indicator (`<progress>`)
 
 ```html
 <progress></progress>
@@ -367,7 +375,7 @@ You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>im
 <progress></progress>
 <progress value="33" max="100"></progress>
 
-## Sample Output
+### Sample Output (`<samp>`)
 
 ```html
 <samp>Sample Output</samp>
@@ -375,15 +383,15 @@ You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>im
 
 <samp>Sample Output</samp>
 
-## Inline Quote
+### Inline Quotation (`<q>`)
 
 ```html
-<q>Inline Quote</q>
+<q>Someone said something</q>
 ```
 
 Blah blah <q>Inline Quote</q> hmm.
 
-## Grammar Mistakes
+### Unarticulated Annotation (`<u>`)
 
 ```html
 <u>Gmarrar mitsakes</u>
@@ -391,21 +399,24 @@ Blah blah <q>Inline Quote</q> hmm.
 
 <u>Yeet</u> the <u>sus</u> drip while <u>vibing</u> with the <u>TikTok</u> <u>fam</u> on a cap-free boomerang.
 
-## External link
+### External Links
 
 ```html
-<a class="external" href="https://example.org">Link to site</a>
+<a class="external" href="https://example.org">External link</a>
 ```
 
 <a class="external" href="https://example.org">Link to site</a>
 
-## Buttons
+### Buttons Dialog
 
 ```html.j2
 <div class="dialog-buttons">
   <a class="inline-button" href="#top">Go to Top</a>
-  <a class="inline-button colored external" href="{{ config.extra.issues_url }}">File an Issue</a>
+  <a class="inline-button colored external" href="https://example.org">Example</a>
 </div>
 ```
 
-Look bellow this text XD
+<div class="dialog-buttons">
+  <a class="inline-button" href="#top">Go to Top</a>
+  <a class="inline-button colored external" href="https://example.org">Example</a>
+</div>
