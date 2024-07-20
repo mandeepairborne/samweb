@@ -12,18 +12,6 @@
 
 	<h1 {% if page.extra.banner %}class="banner-margin"{%- endif -%}>{{ page.title }}</h1>
 
-	{%- if page.taxonomies -%}
-		{%- for name, taxon in page.taxonomies -%}
-			<ul class="tags end">
-				{%- for item in taxon -%}
-					<li>
-						<a class="tag" href="{{ get_taxonomy_url(kind=name, name=item, lang=lang) }}">{{ item }}</a>
-					</li>
-				{%- endfor -%}
-			</ul>
-		{%- endfor -%}
-	{%- endif -%}
-
 	{%- if page.date -%}
 		<small>
 			<time datetime="{{ page.date | date(format=' %+') }}" pubdate>
@@ -39,6 +27,17 @@
 			{%- endif -%}
 			{%- if page.authors -%}
 				<span> • {% include "partials/authors.html" -%}</span>
+			{%- endif -%}
+
+			{%- if config.extra.show_read_time -%}
+				{%- set words = page.content | striptags | safe | wordcount -%}
+				{%- set words_per_minute = config.extra.words_per_minute | default(value=200) -%}
+				{%- set number_of_minutes = words / words_per_minute | round -%}
+				{%- if number_of_minutes == 0 -%}
+					{%- set number_of_minutes = 1 -%}
+				{%- endif -%}
+					<span> • </span>
+					<span>{{ macros_translate::translate(key="minutes_read", number=number_of_minutes, default="$NUMBER minute read", language_strings=language_strings) }}</span>
 			{%- endif -%}
 		</small>
 	{%- endif -%}

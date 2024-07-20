@@ -82,6 +82,10 @@ source_url = "https://codeberg.org/daudix/duckquill"
 # that have the language set.
 # See https://www.getzola.org/documentation/content/syntax-highlighting/
 show_copy_button = true
+# Whether to show estimated read time in posts.
+# Calculated using the simple math: number of words ÷ words per minute.
+show_read_time = true
+# words_per_minute = "200"
 
 [extra.nav]
 # Whether to show Atom/RSS feed button in the nav
