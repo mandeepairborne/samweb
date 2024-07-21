@@ -72,19 +72,14 @@ let highlight = true;
 
 ```scss, linenos, linenostart=10, hl_lines=3-4 8-9, hide_lines=2 7
 pre mark {
-
+  // If you want your highlights to take the full width
   display: block;
-
   color: currentcolor;
-
 }
-
 pre table td:nth-of-type(1) {
-
+  // Select a colour matching your theme
   color: #6b6b6b;
-
   font-style: italic;
-
 }
 ```
 

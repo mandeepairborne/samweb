@@ -24,9 +24,28 @@ pre {
 	overflow: auto;
 	line-height: normal;
 
-	table td {
-		border: none;
-		padding: 0;
+	table {
+		box-shadow: none;
+		border-radius: 0;
+		background-color: unset;
+		table-layout: auto;
+		overflow: hidden;
+
+		tr {
+			&:nth-child(even) {
+				background-color: unset;
+			}
+
+			th,
+			td {
+				padding: 0;
+			}
+
+			th {
+				background-color: unset;
+				font-weight: normal;
+			}
+		}
 	}
 
 	// The line number cells
@@ -44,21 +63,6 @@ pre {
 		background-color: var(--fg-muted-1);
 		padding: 0; // Unset mark padding
 		color: var(--fg-color); // Unset mark color from primary color to text color
-	}
-
-	table {
-		box-shadow: none;
-		border-radius: 0;
-		border-collapse: collapse;
-		width: 100%;
-		table-layout: auto;
-		overflow: auto;
-
-		tr {
-			&:nth-child(even) {
-				background-color: unset;
-			}
-		}
 	}
 
 	// The line numbers already provide some kind of left/right padding

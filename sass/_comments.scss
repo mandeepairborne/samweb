@@ -101,7 +101,7 @@
 
 					&.op {
 						box-shadow: none;
-						background-color: transparent;
+						background-color: unset;
 						color: var(--primary-color);
 
 						&:hover {
@@ -162,7 +162,7 @@
 				.faves {
 					transition: var(--transition);
 					border-radius: 999px;
-					background-color: transparent;
+					background-color: unset;
 					padding: 0.25rem 0.75rem;
 					font-variant-numeric: tabular-nums;
 					text-decoration: none;
