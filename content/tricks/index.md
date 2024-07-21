@@ -6,6 +6,16 @@ title = "Tricks"
 
 Several lesser known Duckquill thingies.
 
+## Table of Contents
+
+- [Styling](#styling)
+  - [Navbar](#navbar)
+  - [Headings](#headings)
+  - [Strikethrough](#strikethrough)
+  - [Edge Highlights](#edge-highlights)
+  - [Horizontal Rules](#horizontal-rules)
+  - [Background Image](#background-image)
+
 ## Styling
 
 Duckquill is pretty easy to restyle with just a few lines of SCSS in the [appropriate location](@/_index.md#custom-stylesheets). Let's see some examples.
