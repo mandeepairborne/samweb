@@ -196,7 +196,7 @@
 							main.innerHTML = status.content;
 
 							let attachments = status.media_attachments;
-							let SUPPORTED_MEDIA = ["image", "gifv"];
+							let SUPPORTED_MEDIA = ["image", "video", "gifv", "audio"];
 							let media = document.createElement("div");
 							media.className = "attachments";
 							if (
@@ -221,12 +221,38 @@
 												media.appendChild(mediaElement);
 												break;
 
+											case "video":
+												mediaElement = document.createElement("video");
+												mediaElement.setAttribute("src", attachment.url);
+												mediaElement.setAttribute("controls", "");
+
+												if (attachment.description != null) {
+													mediaElement.setAttribute("aria-title", attachment.description);
+													mediaElement.setAttribute("title", attachment.description);
+												}
+
+												media.appendChild(mediaElement);
+												break;
+
 											case "gifv":
 												mediaElement = document.createElement("video");
 												mediaElement.setAttribute("src", attachment.url);
 												mediaElement.setAttribute("autoplay", "");
 												mediaElement.setAttribute("playsinline", "");
 												mediaElement.setAttribute("loop", "");
+
+												if (attachment.description != null) {
+													mediaElement.setAttribute("aria-title", attachment.description);
+													mediaElement.setAttribute("title", attachment.description);
+												}
+
+												media.appendChild(mediaElement);
+												break;
+
+											case "audio":
+												mediaElement = document.createElement("audio");
+												mediaElement.setAttribute("src", attachment.url);
+												mediaElement.setAttribute("controls", "");
 
 												if (attachment.description != null) {
 													mediaElement.setAttribute("aria-title", attachment.description);
