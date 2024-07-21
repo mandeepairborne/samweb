@@ -156,7 +156,7 @@
 					cursor: pointer;
 					border: none;
 					border-radius: 999px;
-					background-color: unset;
+					background-color: transparent;
 					font-weight: bold;
 					font-size: 1rem;
 
@@ -184,15 +184,15 @@
 				&#language-switcher {
 					details {
 						position: relative;
-						box-shadow: unset;
-						border-radius: unset;
-						background-color: unset;
+						box-shadow: none;
+						border-radius: 0;
+						background-color: transparent;
 						padding: 0;
 
 						summary {
 							transition: var(--transition);
 							border-radius: 999px;
-							background-color: unset;
+							background-color: transparent;
 							color: var(--fg-muted-4);
 							list-style: none;
 
@@ -261,7 +261,7 @@
 			opacity: 1;
 			padding: 0 0.5rem 0.5rem;
 			height: 2.75rem;
-			pointer-events: unset;
+			pointer-events: all;
 		}
 
 		#search-bar {

@@ -119,8 +119,8 @@ The default strikethrough style is too much for you? Let's sort this out:
 ```scss
 del {
     box-shadow: none;
-    border-radius: unset;
-    background-color: unset;
+    border-radius: 0;
+    background-color: transparent;
     padding: 0;
     color: inherit;
 }

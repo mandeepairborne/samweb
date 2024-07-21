@@ -27,13 +27,13 @@ pre {
 	table {
 		box-shadow: none;
 		border-radius: 0;
-		background-color: unset;
+		background-color: transparent;
 		table-layout: auto;
 		overflow: hidden;
 
 		tr {
 			&:nth-child(even) {
-				background-color: unset;
+				background-color: transparent;
 			}
 
 			th,
@@ -42,7 +42,7 @@ pre {
 			}
 
 			th {
-				background-color: unset;
+				background-color: transparent;
 				font-weight: normal;
 			}
 		}

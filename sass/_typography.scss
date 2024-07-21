@@ -115,11 +115,11 @@ progress {
 	}
 
 	&:indeterminate::-moz-progress-bar {
-		background-color: unset;
+		background-color: transparent;
 	}
 
 	&::-webkit-progress-bar {
-		background-color: unset;
+		background-color: transparent;
 	}
 
 	&::-moz-progress-bar {

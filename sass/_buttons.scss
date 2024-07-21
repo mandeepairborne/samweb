@@ -34,7 +34,7 @@
 
 	&.colored {
 		box-shadow: none;
-		background-color: unset;
+		background-color: transparent;
 		color: var(--primary-color);
 
 		&:hover {

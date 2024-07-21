@@ -4,6 +4,7 @@ video {
 	margin: 1rem auto;
 	box-shadow: var(--edge-highlight), var(--shadow);
 	border-radius: var(--rounded-corner);
+	background-color: var(--fg-muted-1);
 	max-width: 100%;
 
 	&.full,
@@ -69,6 +70,7 @@ video {
 	&[src*="#full-bleed"] {
 		box-shadow: none;
 		border-radius: 0;
+		background-color: transparent;
 	}
 }
 
@@ -94,7 +96,7 @@ img {
 			}
 
 			@media only screen and (max-width: 720px) {
-				transform-origin: unset;
+				transform-origin: center;
 
 				&:hover {
 					transform: scale(1.1);
