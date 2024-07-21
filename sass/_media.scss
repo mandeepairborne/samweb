@@ -2,7 +2,7 @@ img,
 video {
 	display: block;
 	margin: 1rem auto;
-	box-shadow: var(--shadow);
+	box-shadow: var(--edge-highlight), var(--shadow);
 	border-radius: var(--rounded-corner);
 	max-width: 100%;
 
