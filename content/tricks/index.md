@@ -71,7 +71,7 @@ Or you can make it sticked to top:
 
 Default headings might not fit your taste, that's understandable. Good thing that we can ~~make them boring~~ fix them:
 
-![boring headings](https://files.catbox.moe/gwa9cc.png)
+![boring headings](https://files.catbox.moe/6ok740.png)
 
 ```scss
 h1,
@@ -80,12 +80,34 @@ h3,
 h4,
 h5,
 h6 {
+    margin: 2rem 0 1rem;
     font-weight: bold;
-    font-family: var(--font-system-ui);
+    font-family: var(--font-system-ui)
 }
 
 h1 {
     font-weight: 900;
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
+
+h6 {
+	font-size: 0.75rem;
 }
 ```
 
