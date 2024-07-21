@@ -80,7 +80,6 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 2rem 0 1rem;
     font-weight: bold;
     font-family: var(--font-system-ui)
 }
