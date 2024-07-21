@@ -290,7 +290,7 @@
 			gap: 0.5rem;
 			backdrop-filter: var(--blur);
 			box-shadow: var(--edge-highlight), 0 0.75rem 1.5rem -1rem rgba(0, 0, 0, 0.5);
-			border-radius: 1.125rem;
+			border-radius: calc(var(--rounded-corner) + 0.5rem);
 			background-color: var(--nav-bg);
 			padding: 0.5rem;
 			width: 100%;

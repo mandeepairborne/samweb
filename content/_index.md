@@ -138,10 +138,6 @@ primary_color_dark_alpha = "rgba(255, 120, 0, 0.2)"
 
 Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and apple touch icon respectively. For animated favicon you can use APNG with `png` file extension.
 
-## Test Pages
-
-- [Demo page](@/demo/index.md)
-
 ## In the Wild
 
 <details>
