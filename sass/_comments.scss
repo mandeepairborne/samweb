@@ -133,8 +133,13 @@
 
 			main {
 				grid-area: post;
+				margin-top: 1rem;
 
-				p:last-child {
+				:first-child {
+					margin-top: 0;
+				}
+
+				:last-child {
 					margin-bottom: 0;
 				}
 			}
