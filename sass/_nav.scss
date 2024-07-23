@@ -319,11 +319,11 @@
 
 				div {
 					margin-top: 0.5rem;
-					border-top: 0.0625rem solid var(--fg-muted-2);
+					border-top: max(1px, 0.0625rem) solid var(--fg-muted-2);
 					padding-top: 0.25rem;
 					color: var(--fg-muted-5);
 
-					b {
+					strong {
 						color: var(--fg-color);
 					}
 				}

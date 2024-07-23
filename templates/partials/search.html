@@ -109,15 +109,15 @@
                 startIndex = word[2];
             }
 
-            // add <em/> around search terms
+            // add <strong> around search terms
             if (word[1] === TERM_WEIGHT) {
-                teaser.push("<b>");
+                teaser.push("<strong>");
             }
             startIndex = word[2] + word[0].length;
             teaser.push(body.substring(word[2], startIndex));
 
             if (word[1] === TERM_WEIGHT) {
-                teaser.push("</b>");
+                teaser.push("</strong>");
             }
         }
         teaser.push("…");
