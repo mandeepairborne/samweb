@@ -28,7 +28,7 @@
 			background-color: var(--nav-bg);
 			padding: 0.5rem 0.75rem;
 			pointer-events: none;
-			line-height: normal;
+			line-height: 1.25;
 			text-decoration: none;
 
 			&:focus {
@@ -48,7 +48,7 @@
 
 			li {
 				display: flex;
-				line-height: normal;
+				line-height: 1.25;
 				list-style: none;
 
 				&#home {
@@ -100,6 +100,7 @@
 					border-radius: 999px;
 					padding: 0.5rem 0.75rem;
 					color: var(--fg-muted-4);
+					line-height: 1.25;
 					text-decoration: none;
 
 					&:hover {
@@ -306,7 +307,7 @@
 				padding: 0.5rem;
 
 				a {
-					line-height: normal;
+					line-height: 1.25;
 
 					&::after {
 						content: " →";

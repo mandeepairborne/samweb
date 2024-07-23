@@ -13,7 +13,7 @@
 	li {
 		display: inline-flex;
 		transition: var(--transition);
-		line-height: normal;
+		line-height: 1.25;
 
 		&:active {
 			transform: scale(var(--active));
