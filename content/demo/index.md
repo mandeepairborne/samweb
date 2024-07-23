@@ -61,7 +61,7 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 | :----------- | :---------------- | :---------------  |
 | Fluttershy   | Best pone         | Shy and adorable |
 | Apple Jack   | Good pone         | Honest and nice  |
-| Pinke Pie    | Fun pone          | Party Horn!      |
+| Pinkie Pie   | Fun pone          | Party horn!      |
 | Twilight     | Decent pone       | Neeerd           |
 | Rainbow Dash | Annoying pone     | Looks badass     |
 | Rarity       | Fancy pone        | Sometimes nice   |
