@@ -26,7 +26,6 @@ There should be whitespace between paragraphs.
 ##### Heading 5
 ###### Heading 6
 
-
 This is a normal paragraph following a header.
 
 😭😂🥺🤣❤️✨🙏😍🥰😊
