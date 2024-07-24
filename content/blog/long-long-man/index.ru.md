@@ -1,1 +1,1 @@
-/var/home/daudix/Projects/duckquill/content/blog/long-long-man/index.md
+index.md

@@ -1,1 +1,1 @@
-/var/home/daudix/Projects/duckquill/content/blog/lorem/index.md
+index.md

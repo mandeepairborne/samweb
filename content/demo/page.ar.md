@@ -1,1 +1,1 @@
-/var/home/daudix/Projects/duckquill/content/demo/page.md
+page.md

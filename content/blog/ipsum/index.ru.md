@@ -1,1 +1,1 @@
-/var/home/daudix/Projects/duckquill/content/blog/ipsum/index.md
+index.md
