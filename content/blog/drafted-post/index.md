@@ -1,6 +1,6 @@
 +++
 authors = ["John Draft"]
-title = "Drafty draft"
+title = "Drafty Draft"
 description = "Drafted post, very drafty."
 date = 2024-04-29
 draft = true

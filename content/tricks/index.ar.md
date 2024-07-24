@@ -1,5 +1,1 @@
-+++
-title = "Tricks (العربية)"
-+++
-
-# Tricks (العربية)
+/var/home/daudix/Projects/duckquill/content/tricks/index.md

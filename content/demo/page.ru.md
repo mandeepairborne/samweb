@@ -1,5 +1,1 @@
-+++
-title = "Cake Party (Русский)"
-+++
-
-# Welcome to the cake party (Русский)
+/var/home/daudix/Projects/duckquill/content/demo/page.md

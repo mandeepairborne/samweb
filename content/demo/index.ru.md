@@ -1,3 +1,1 @@
-+++
-title = "Demo Page (Русский)"
-+++
+/var/home/daudix/Projects/duckquill/content/demo/index.md

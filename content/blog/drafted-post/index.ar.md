@@ -1,11 +1,1 @@
-+++
-authors = ["John Draft (العربية)"]
-title = "Drafty draft"
-description = "Drafted post, very drafty."
-date = 2024-04-29
-draft = true
-[taxonomies]
-tags = ["Draft"]
-[extra]
-toc = false
-+++
+/var/home/daudix/Projects/duckquill/content/blog/drafted-post/index.md

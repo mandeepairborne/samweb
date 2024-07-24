@@ -1,5 +1,1 @@
-+++
-title = "Tricks (Русский)"
-+++
-
-# Tricks (Русский)
+/var/home/daudix/Projects/duckquill/content/tricks/index.md
