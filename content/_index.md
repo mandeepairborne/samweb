@@ -211,5 +211,5 @@ As for the code formatter I use built-in VSCodium one. Prettier is good but I do
 - [GNOME design team](https://gitlab.gnome.org/Teams/Design) for the [icon development kit](https://gitlab.gnome.org/Teams/Design/icon-development-kit)
 - [Modern Font Stacks](https://modernfontstacks.com) for the system font stack.
 - [TheEvilSkeleton](https://tesk.page) for helping to improve the look and accessibility.
-- [Dexter Reed](https://sungsphinx.codeberg.page) for being the first Duckquill user, preventing Duckquill from being axed.
+- [Dexter Reed](https://sungsphinx.codeberg.page) for being the first Duckquill user, preventing it from being axed.
 - Everyone who supported me and said good stuff <3
