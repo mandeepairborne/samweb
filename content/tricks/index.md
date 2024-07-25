@@ -6,6 +6,8 @@ title = "Tricks"
 
 Several lesser known Duckquill thingies.
 
+<small>If you have some, please consider sharing them here.</small>
+
 ## Table of Contents
 
 - [Styling](#styling)
