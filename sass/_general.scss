@@ -71,3 +71,12 @@ body {
 	margin: 0 auto;
 	width: min(var(--container-width), 90%);
 }
+
+@media (prefers-reduced-motion) {
+	*,
+	*::before,
+	*::after {
+		animation: none !important;
+		transition: none !important;
+	}
+}

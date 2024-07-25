@@ -76,12 +76,3 @@
 		color-scheme: dark;
 	}
 }
-
-@media (prefers-reduced-motion) {
-	*,
-	*::before,
-	*::after {
-		animation: none !important;
-		transition: none !important;
-	}
-}
