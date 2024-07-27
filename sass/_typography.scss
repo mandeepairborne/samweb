@@ -167,14 +167,14 @@ hr {
 	border: none;
 	border-top: 0.1875rem double var(--fg-muted-2);
 	overflow: visible;
-	color: var(--fg-muted-4);
-	font-size: 1.5rem;
 	text-align: center;
 
 	&::after {
 		position: relative;
 		top: -1.5rem;
 		content: "☙❧";
+		color: var(--fg-muted-4);
+		font-size: 1.5rem;
 
 		// An ugly hack to fix mirroring in rtl
 		:root[dir*="rtl"] & {
