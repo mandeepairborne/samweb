@@ -174,8 +174,6 @@ hr {
 	&::after {
 		position: relative;
 		top: -1.5rem;
-		background: var(--bg-color), var(--primary-color);
-		padding: 0 0.25rem;
 		content: "☙❧";
 
 		// An ugly hack to fix mirroring in rtl
