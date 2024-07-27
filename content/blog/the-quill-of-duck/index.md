@@ -44,8 +44,11 @@ This is the story of a man named _Stanley_.
 
 _Stanley_ worked for a company in a big building where he was Employee `#427`.
 
+<figure>
+
 ![The Office](the-office.webp)
 <figcaption>The Office where Stanley works, it has yellow floor and beige walls</figcaption>
+</figure>
 
 Employee `#427`'s job was simple: he sat at his desk in Room `427` and he pushed buttons on a keyboard.
 

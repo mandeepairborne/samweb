@@ -149,11 +149,15 @@ Available variables are:
 {{/* image(url="image.png", alt="This is an image" no_hover=true) */}}
 ```
 
+<figure>
 {{ image(url="https://i1.theportalwiki.net/img/2/23/Ashpd_blueprint.jpg", alt="Portal Gun blueprint", no_hover=true) }}
 <figcaption>Image with an alt text and without zoom on hover</figcaption>
+</figure>
 
+<figure>
 {{ image(url="https://upload.wikimedia.org/wikipedia/commons/b/b4/JPEG_example_JPG_RIP_100.jpg", url_min="https://upload.wikimedia.org/wikipedia/commons/3/38/JPEG_example_JPG_RIP_010.jpg", alt="The gravestone of J.P.G.", no_hover=true) }}
 <figcaption>Image with compressed version, an alt text, and without zoom on hover</figcaption>
+</figure>
 
 Alternatively, you can append the following URL anchors. It can be more handy in some cases, e.g such images will render normally in any Markdown editor, opposed to the Zola shortcodes.
 
@@ -165,11 +169,15 @@ Alternatively, you can append the following URL anchors. It can be more handy in
 - `#transparent`: Removes rounded corners and shadow, useful for transparent images.
 - `#no-hover`: Removes zoom on hover.
 
-\
+<br />
+<figure>
+
 ![Toolbx header image](https://containertoolbx.org/assets/toolbx.gif#full#pixels#transparent#no-hover)
 <figcaption>Full-width image with an alt text, pixel-art rendering, no shadow and rounded corners, and no zoom on hover</figcaption>
+</figure>
 
-\
+<br />
+
 ![1966 Ford Mustang coupe white](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/1966_Ford_Mustang_coupe_white_003.jpg/320px-1966_Ford_Mustang_coupe_white_003.jpg#start)
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur.
 
@@ -182,8 +190,10 @@ For videos it's all the same except for a few differences: `no_hover` and `url_m
 {{/* video(url="video.webm", alt="This is a video") */}}
 ```
 
+<figure>
 {{ video(url="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm", alt="Red flower wakes up") }}
 <figcaption>WebM video example from MDN</figcaption>
+</figure>
 
 #### CRT
 
