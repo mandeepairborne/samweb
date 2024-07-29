@@ -61,6 +61,10 @@
 				img.setAttribute("src", escapeHtml(emoji.static_url));
 				img.setAttribute("alt", `:${emoji.shortcode}:`);
 				img.setAttribute("title", `:${emoji.shortcode}:`);
+				{%- if config.markdown.lazy_async_image -%}
+					img.setAttribute("decoding", "async");
+					img.setAttribute("loading", "lazy");
+				{%- endif -%}
 
 				picture.appendChild(source);
 				picture.appendChild(img);
@@ -141,6 +145,10 @@
 								"alt",
 								`@${status.account.username}@${instance} avatar`
 							);
+							{%- if config.markdown.lazy_async_image -%}
+								avatarImg.setAttribute("decoding", "async");
+								avatarImg.setAttribute("loading", "lazy");
+							{%- endif -%}
 
 							let avatarPicture = document.createElement("picture");
 							avatarPicture.appendChild(avatarSource);
@@ -219,6 +227,11 @@
 													mediaElement.setAttribute("alt", attachment.description);
 													mediaElement.setAttribute("title", attachment.description);
 												}
+
+												{%- if config.markdown.lazy_async_image -%}
+													mediaElement.setAttribute("decoding", "async");
+													mediaElement.setAttribute("loading", "lazy");
+												{%- endif -%}
 
 												media.appendChild(mediaElement);
 												break;
