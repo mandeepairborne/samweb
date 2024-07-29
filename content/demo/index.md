@@ -308,7 +308,7 @@ With `radio` type:
   <summary>Reveal accordion</summary>
 
   Get it? I know, it's an awful pun.
-  ![Piano Accordion](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/PianoAccordeon.jpg/916px-PianoAccordeon.jpg)
+  ![Piano Accordion](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/PianoAccordeon.jpg/916px-PianoAccordeon.jpg#transparent#no-hover)
 
 </details>
 
