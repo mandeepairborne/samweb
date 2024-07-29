@@ -1,3 +1,4 @@
+{% import "macros/rel_attributes.html" as macros_rel_attributes %}
 {% import "macros/translate.html" as macros_translate %}
 
 {%- set language_strings = load_data(path="i18n/" ~ lang ~ '.toml', required=false) -%}

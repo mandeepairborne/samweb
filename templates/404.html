@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+{%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 <picture>
 	<source srcset="{{ get_url(path='404.png') }}" media="(prefers-reduced-motion: reduce)"></source>
 	<img id="not-found" class="pixels transparent no-hover" alt="404" src="{{ get_url(path='404.gif') }}">
@@ -13,7 +14,7 @@
 <div class="dialog-buttons">
 	<button class="inline-button" onclick="window.history.go(-1)">Go Back</button>
 	{%- if config.extra.issues_url %}
-		<a class="inline-button colored external" href="{{ config.extra.issues_url }}">File an Issue</a>
+		<a class="inline-button colored external" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}">File an Issue</a>
 	{%- endif %}
 </div>
 {% endblock content %}

@@ -3,6 +3,7 @@
 {% block content %}
 {%- set date_format = macros_translate::translate(key="date_format", default="%B %d, %Y", language_strings=language_strings) -%}
 {%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
+{%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 <article>
 	{%- if page.extra.banner -%}
 		<div id="banner-container">
@@ -92,7 +93,7 @@
 <div class="dialog-buttons">
 	<a class="inline-button" href="#top">{{ macros_translate::translate(key="go_to_top", default="Go to Top", language_strings=language_strings) }}</a>
 	{%- if config.extra.issues_url -%}
-		<a class="inline-button colored external" href="{{ config.extra.issues_url }}">
+		<a class="inline-button colored external" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}">
 			{{- macros_translate::translate(key="file_an_issue", default="File an Issue", language_strings=language_strings) -}}
 		</a>
 	{%- endif -%}

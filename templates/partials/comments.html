@@ -1,6 +1,8 @@
 {#- Taken from https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/ -#}
 {#- Attachment code taken from https://github.com/cassidyjames/cassidyjames.github.io/blob/99782788a7e3ba3cc52d6803010873abd1b02b9e/_includes/comments.html#L251-L296 -#}
 
+{%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
+
 {%- if page.extra.comments.host -%}
 	{%- set host = page.extra.comments.host -%}
 {%- else -%}
@@ -26,7 +28,7 @@
 		<button id="load-comments" class="inline-button" onclick="loadComments()">
 			{{- macros_translate::translate(key="load_comments", default="Load Comments", language_strings=language_strings) -}}
 		</button>
-		<a class="inline-button colored external" href="https://{{ host }}/@{{ username }}/{{ id }}">
+		<a class="inline-button colored external" href="https://{{ host }}/@{{ username }}/{{ id }}" rel="{{ rel_attributes }}">
 			{{- macros_translate::translate(key="open_post", default="Open Post", language_strings=language_strings) -}}
 		</a>
 	</div>
@@ -147,7 +149,7 @@
 							let avatar = document.createElement("a");
 							avatar.className = "avatar-link";
 							avatar.setAttribute("href", status.account.url);
-							avatar.setAttribute("rel", "external nofollow");
+							avatar.setAttribute("rel", "{{ rel_attributes }}");
 							avatar.setAttribute(
 								"title",
 								`{{ macros_translate::translate(key="view_profile", default="View profile at", language_strings=language_strings) }} @${status.account.username}@${instance}`
@@ -161,7 +163,7 @@
 								"title",
 								`@${status.account.username}@${instance}`
 							);
-							instanceBadge.setAttribute("rel", "external nofollow");
+							instanceBadge.setAttribute("rel", "{{ rel_attributes }}");
 							instanceBadge.textContent = instance;
 
 							let display = document.createElement("span");
@@ -179,7 +181,7 @@
 							permalink.setAttribute("href", status.url);
 							permalink.setAttribute("itemprop", "url");
 							permalink.setAttribute("title", `{{ macros_translate::translate(key="view_comment", default="View comment at", language_strings=language_strings) }} ${instance}`);
-							permalink.setAttribute("rel", "external nofollow");
+							permalink.setAttribute("rel", "{{ rel_attributes }}");
 							permalink.textContent = new Date(
 								status.created_at
 							).toLocaleString("{{ date_locale }}", {
