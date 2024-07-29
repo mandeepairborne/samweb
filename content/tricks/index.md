@@ -26,7 +26,7 @@ Duckquill is pretty easy to restyle with just a few lines of SCSS in the [approp
 
 You can make navbar have more classic look:
 
-![clasic navabr](https://files.catbox.moe/udj332.png)
+![classic navabr](https://files.catbox.moe/udj332.png)
 
 ```scss
 #site-nav {
