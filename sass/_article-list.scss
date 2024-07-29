@@ -2,6 +2,7 @@
 	margin-top: 2rem;
 
 	article {
+
 		&.draft,
 		&.archive,
 		&.featured {
@@ -40,8 +41,8 @@
 			outline-offset: 0;
 			box-shadow: var(--edge-highlight);
 			border-radius: var(--rounded-corner);
-			border-top-right-radius: 2.125rem;
-			border-bottom-right-radius: 1.8125rem;
+			border-start-end-radius: 2.125rem;
+			border-end-end-radius: 1.8125rem;
 			background-color: var(--yellow-bg);
 			padding: 1rem;
 			overflow: hidden;
@@ -103,16 +104,8 @@
 				color: var(--yellow-fg);
 			}
 
-			:root[dir*="rtl"] & {
-				border-top-right-radius: var(--rounded-corner);
-				border-top-left-radius: 2.125rem;
-				border-bottom-right-radius: var(--rounded-corner);
-				border-bottom-left-radius: 1.8125rem;
-
-
-				&:hover::before {
-					transform: translateY(-50%) rotate(-62deg) scale(1.5);
-				}
+			:root[dir*="rtl"] &:hover::before {
+				transform: translateY(-50%) rotate(-62deg) scale(1.5);
 			}
 		}
 
