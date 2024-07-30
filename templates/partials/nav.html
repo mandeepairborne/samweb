@@ -37,7 +37,7 @@
 			{%- endfor -%}
 			{%- if config.build_search_index %}
 				<li id="search">
-					<button onclick="toggleSearch()">
+					<button onclick="toggleSearch()" title="{{ macros_translate::translate(key='search', default='Search', language_strings=language_strings) }}">
 						<i class="icon"></i>
 						<span class="hidden">
 							{{- macros_translate::translate(key="search", default="Search", language_strings=language_strings) -}}
@@ -50,7 +50,7 @@
 			{%- endif -%}
 			{%- if config.generate_feeds and config.extra.nav.show_feed %}
 				<li id="feed">
-					<a href="{{ get_url(path=config.feed_filenames[0]) }}">
+					<a href="{{ get_url(path=config.feed_filenames[0]) }}" title="{{ macros_translate::translate(key='feed', default='Feed', language_strings=language_strings) }}">
 						<i class="icon"></i>
 						<span class="hidden">
 							{{- macros_translate::translate(key="feed", default="Feed", language_strings=language_strings) -}}
