@@ -39,9 +39,6 @@
 				<li id="search">
 					<button onclick="toggleSearch()" title="{{ macros_translate::translate(key='search', default='Search', language_strings=language_strings) }}">
 						<i class="icon"></i>
-						<span class="hidden">
-							{{- macros_translate::translate(key="search", default="Search", language_strings=language_strings) -}}
-						</span>
 					</button>
 				</li>
 			{%- endif %}
@@ -52,9 +49,6 @@
 				<li id="feed">
 					<a href="{{ get_url(path=config.feed_filenames[0]) }}" title="{{ macros_translate::translate(key='feed', default='Feed', language_strings=language_strings) }}">
 						<i class="icon"></i>
-						<span class="hidden">
-							{{- macros_translate::translate(key="feed", default="Feed", language_strings=language_strings) -}}
-						</span>
 					</a>
 				</li>
 			{%- endif %}

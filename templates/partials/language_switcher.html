@@ -4,9 +4,6 @@
     <details>
         <summary title="{{ macros_translate::translate(key='language', default='Language', language_strings=language_strings) }}">
             <i class="icon"></i>
-            <span class="hidden">
-                {{- macros_translate::translate(key="language", default="Language", language_strings=language_strings) -}}
-            </span>
         </summary>
         <ul>
             {%- for lcode, ldetails in config.languages -%}
