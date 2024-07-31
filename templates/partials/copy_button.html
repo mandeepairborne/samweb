@@ -15,15 +15,10 @@
 				let icon = document.createElement("i");
 				icon.classList.add("icon");
 
-				// Copy button label (for screen readers)
-				let label = document.createElement("span");
-				label.classList.add("hidden");
-				label.innerHTML = "{{ macros_translate::translate(key='copy_code', default='Copy code', language_strings=language_strings) }}";
-
 				// Copy button
 				let button = document.createElement("button");
+				button.setAttribute("title", "{{ macros_translate::translate(key='copy_code', default='Copy code', language_strings=language_strings) }}")
 				button.appendChild(icon);
-				button.appendChild(label);
 
 				// Code block header
 				let header = document.createElement("div");
