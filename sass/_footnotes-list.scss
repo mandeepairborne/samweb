@@ -25,12 +25,17 @@
 		}
 	}
 
-	a + a[href*="#fr-"] {
+	a + a[href*="#fr-"],
+	li:target a[href*="#fr-"] {
 		opacity: 0.6;
 		background-color: var(--primary-color);
 
 		&:hover {
 			opacity: 1;
 		}
+	}
+
+	li:target a[href*="#fr-"] {
+		text-shadow: none;
 	}
 }
