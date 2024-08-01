@@ -17,7 +17,7 @@ Text can be **bold**, *italic*, ~~strikethrough~~, and ***~~all at the same time
 
 [Link to another page](@/demo/page.md).
 
-There should be whitespace between paragraphs.
+There should be whitespace between paragraphs[^1].
 
 # Heading 1
 ## Heading 2
@@ -26,7 +26,7 @@ There should be whitespace between paragraphs.
 ##### Heading 5
 ###### Heading 6
 
-This is a normal paragraph following a header.
+This is a normal paragraph[^2] following a header.
 
 😭😂🥺🤣❤️✨🙏😍🥰😊
 
@@ -424,3 +424,6 @@ Blah blah <q>Inline Quote</q> hmm.
   <a class="inline-button" href="#top">Go to Top</a>
   <a class="inline-button colored external" href="https://example.org">Example</a>
 </div>
+
+[^1]: Footnote
+[^2]: [Footnote (link)](https://example.org)

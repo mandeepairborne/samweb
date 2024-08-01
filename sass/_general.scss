@@ -30,7 +30,7 @@ body {
 	min-height: 100vh;
 	color: var(--fg-color);
 	line-height: 1.6;
-	font-family: var(--font-system-ui);
+	font-family: var(--font-system-ui), var(--font-emoji);
 }
 
 // Style text selection to use primary color
