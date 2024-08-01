@@ -12,7 +12,7 @@ input[type="checkbox"] {
 	&::before {
 		display: block;
 		position: absolute;
-		transform: scale(0);
+		transform: scale(0.5);
 		opacity: 0;
 		transition: var(--transition);
 		background-color: white;
