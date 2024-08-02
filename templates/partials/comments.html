@@ -20,7 +20,7 @@
 
 <section id="comments">
 	{%- if config.extra.comments.show_qr -%}
-		<img id="qrcode" class="no-hover pixels" title="{{ macros_translate::translate(key='comments_qr', default='QR code to a Mastodon post', language_strings=language_strings) }}" src="https://api.qrserver.com/v1/create-qr-code/?data=https://{{ host }}/@{{ username }}/{{ id }}&format=gif" />
+		<img id="qrcode" class="no-hover pixels" title="{{ macros_translate::translate(key='comments_qr', default='QR code to a Mastodon post', language_strings=language_strings) }}" {%- if config.markdown.lazy_async_image -%}decoding="async" loading="lazy"{%- endif -%} src="https://api.qrserver.com/v1/create-qr-code/?data=https://{{ host }}/@{{ username }}/{{ id }}&format=gif" />
 	{%- endif -%}
 	<h2>{{ macros_translate::translate(key="comments", default="Comments", language_strings=language_strings) }}</h2>
 	<p>{{ macros_translate::translate(key="comments_description", default="You can comment on this blog post by publicly replying to this post using a Mastodon or other ActivityPub/Fediverse account. Known non-private replies are displayed below.", language_strings=language_strings) }}</p>
