@@ -1,10 +1,10 @@
 +++
-authors = ["Long Long Man"]
+authors = ["Looong Looong Man", "Antidisestablishmentarianism"]
 title = "Loooooong Loooooong Loooooong Loooooong Loooooong Man"
-description = "Veeery, veeery looong man."
+description = "Pneumonoultramicroscopicsilicovolcanoconiosis supercalifragilisticexpialidocious pseudopseudohypoparathyroidism."
 date = 2017-01-01
 [taxonomies]
-tags = ["Draft"]
+tags = ["Honorificabilitudinitatibus"]
 [extra]
 toc = false
 archive = "This page is, in fact, not archived."
