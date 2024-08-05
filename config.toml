@@ -32,7 +32,6 @@ highlight_themes_css = [
   { theme = "solarized-light", filename = "syntax-theme-light.css" },
 ]
 smart_punctuation = true
-lazy_async_image = true
 bottom_footnotes = true
 
 [search]
