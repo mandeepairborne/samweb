@@ -54,11 +54,13 @@
 			{%- endif %}
 		</ul>
 	</nav>
-	<div id="search-container">
-		<label for="search-bar" class="hidden">
-			{{- macros_translate::translate(key="search", default="Search", language_strings=language_strings) -}}
-		</label>
-		<input id="search-bar" placeholder="{{ macros_translate::translate(key='search_for', default='Search for', language_strings=language_strings) }}…" autocomplete="off" type="search" disabled>
-		<div id="search-results"></div>
-	</div>
+	{%- if config.build_search_index %}
+		<div id="search-container">
+			<label for="search-bar" class="hidden">
+				{{- macros_translate::translate(key="search", default="Search", language_strings=language_strings) -}}
+			</label>
+			<input id="search-bar" placeholder="{{ macros_translate::translate(key='search_for', default='Search for', language_strings=language_strings) }}…" autocomplete="off" type="search" disabled>
+			<div id="search-results"></div>
+		</div>
+	{%- endif %}
 </header>
