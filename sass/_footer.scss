@@ -54,7 +54,7 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 0.5rem;
-		margin: 1rem 0 0;
+		margin-block-start: 1rem;
 		padding: 0;
 
 		li {
@@ -96,6 +96,7 @@
 
 	p {
 		margin: 1rem auto;
+		line-height: 1.25;
 	}
 
 	.link {
