@@ -145,22 +145,27 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and app
 
 - [agustinramirodiaz.github.io](https://agustinramirodiaz.github.io)
 - [alavi.me](https://alavi.me)
+- [amritcodes.xyz](https://amritcodes.xyz)
 - [bano.dev](https://bano.dev)
 - [blog.pansi21.xyz](https://blog.pansi21.xyz)
 - [daudix.one](https://daudix.one) <small>(obviously)</small>
 - [daveparr.info](https://www.daveparr.info)
+- [davepoltorak.com](https://davepoltorak.com)
 - [digital-horror.com](https://digital-horror.com)
 - [enriquekesslerm.com](https://enriquekesslerm.com)
 - [gregorni.gitlab.io](https://gregorni.gitlab.io)
-- [licu.dev](https://licu.dev)
+- [ikergimenez.neocities.org](https://ikergimenez.neocities.org)
 - [luciengheerbrant.com](https://luciengheerbrant.com)
 - [lukoktonos.com](http://www.lukoktonos.com)
 - [mourelask.xyz](https://mourelask.xyz)
 - [nbenedek.me](https://nbenedek.me)
+- [nezumi.party](https://nezumi.party)
 - [orzklv.uz](https://orzklv.uz)
+- [penandink.work](https://penandink.work)
 - [pyter.at](https://pyter.at)
 - [rbd.gg](https://www.rbd.gg)
 - [rerere.unlogic.co.uk](https://rerere.unlogic.co.uk)
+- [rossjr.dev](https://rossjr.dev)
 - [siddharthsabron.in](https://siddharthsabron.in)
 - [skaven.org](https://skaven.org)
 - [sorcery.nexus](https://sorcery.nexus)
@@ -168,7 +173,6 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and app
 - [sungsphinx.codeberg.page](https://sungsphinx.codeberg.page)
 - [treeniks.github.io](https://treeniks.github.io)
 - [vikramxd.github.io](https://vikramxd.github.io)
-- [zorrn.net](https://www.zorrn.net)
 - Yours? <small>(feel free to [contact me](https://daudix.one/find/#contacts) or send a pull request)</small>
 
 </details>
