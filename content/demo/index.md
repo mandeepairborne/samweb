@@ -483,7 +483,7 @@ Blah blah <q>Inline Quote</q> hmm.
   #color-picker-container {
     -webkit-backdrop-filter: var(--blur);
     position: fixed;
-    bottom: 0;
+    bottom: 1rem;
     left: 0;
     transform: translateX(calc(-100% + 1rem));
     z-index: 1;
@@ -491,6 +491,7 @@ Blah blah <q>Inline Quote</q> hmm.
     transition: var(--transition);
     box-shadow: var(--edge-highlight);
     border-start-end-radius: var(--rounded-corner);
+    border-end-end-radius: var(--rounded-corner);
     background-color: var(--nav-bg);
     padding: 0.5rem;
   }
