@@ -11,6 +11,82 @@ This is a demo of most of the components, but some of them are only accessible o
 - [Post Demo](@/blog/the-quill-of-duck/index.md)
 {% end %}
 
+<!-- For the demo purposes only -->
+<div id="color-picker-container">
+<label for="color-picker">Primary color:</label>
+<input id="color-picker" type="color" />
+</div>
+
+<style>
+  #color-picker-container {
+      -webkit-backdrop-filter: var(--blur);
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      transform: translateX(calc(-100% + 1rem));
+      z-index: 1;
+      backdrop-filter: var(--blur);
+      transition: var(--transition);
+      box-shadow: var(--edge-highlight);
+      border-start-end-radius: var(--rounded-corner);
+      background-color: var(--nav-bg);
+      padding: 0.5rem;
+  }
+
+  #color-picker-container:hover {
+      transform: none;
+  }
+
+  #color-picker-container label {
+      margin-inline-end: 0.25rem;
+      color: var(--fg-muted-4);
+      font-weight: bold;
+  }
+
+  :root[dir*="rtl"] #color-picker-container {
+      right: 0;
+      left: unset;
+      transform: translateX(calc(100% - 1rem));
+  }
+
+  :root[dir*="rtl"] #color-picker-container:hover {
+      transform: none;
+  }
+</style>
+
+<script>
+  let colorPicker;
+  const defaultColor = window.getComputedStyle(document.documentElement).getPropertyValue("--primary-color");
+  console.log(defaultColor);
+
+  window.addEventListener("load", startup, false);
+
+  function hexToRGB(hex, alpha) {
+    var r = parseInt(hex.slice(1, 3), 16),
+      g = parseInt(hex.slice(3, 5), 16),
+      b = parseInt(hex.slice(5, 7), 16);
+
+    if (alpha) {
+      return "rgba(" + r + ", " + g + ", " + b + ", " + alpha + ")";
+    } else {
+      return "rgb(" + r + ", " + g + ", " + b + ")";
+    }
+  }
+
+  function startup() {
+    colorPicker = document.querySelector("#color-picker");
+    colorPicker.value = defaultColor;
+    colorPicker.addEventListener("input", update, false);
+    colorPicker.select();
+  }
+
+  function update(event) {
+    document.documentElement.style.setProperty('--primary-color', event.target.value);
+    document.documentElement.style.setProperty('--primary-color-alpha', hexToRGB(event.target.value, 0.2));
+  }
+</script>
+<!-- End -->
+
 ## Markdown
 
 Text can be **bold**, *italic*, ~~strikethrough~~, and ***~~all at the same time~~***.
