@@ -331,30 +331,75 @@ Alright, this one doesn't simplify anything, it just adds a CRT-like effect arou
 ### Form Input (`<input>`)
 
 ```html
-<input type="checkbox" /><label>Checkbox</label>
+<input type="checkbox" />
+<label>Checkbox</label>
 ```
 
 <ul>
-<li><input type="checkbox" /><label>&nbsp;Milk</label></li>
-<li><input type="checkbox" /><label>&nbsp;Eggs</label></li>
-<li><input type="checkbox" /><label>&nbsp;Flour</label></li>
-<li><input type="checkbox" checked /><label>&nbsp;Coffee</label></li>
-<li><input type="checkbox" disabled /><label>&nbsp;Combustible lemons</label></li>
+  <li>
+    <input type="checkbox" />
+    <label>&nbsp;Milk</label>
+  </li>
+  <li>
+    <input type="checkbox" />
+    <label>&nbsp;Eggs</label>
+  </li>
+  <li>
+    <input type="checkbox" />
+    <label>&nbsp;Flour</label>
+  </li>
+  <li>
+    <input type="checkbox" checked />
+    <label>&nbsp;Coffee</label>
+  </li>
+  <li>
+    <input type="checkbox" disabled />
+    <label>&nbsp;Combustible lemons</label>
+  </li>
 </ul>
 
 With `radio` type:
 
 ```html
-<input type="radio" name="test" /><label>Radio</label>
+<input type="radio" name="test" />
+<label>Radio</label>
 ```
 
 <ul>
-<li><input type="radio" name="test" /><label>&nbsp;Milk</label></li>
-<li><input type="radio" name="test" /><label>&nbsp;Eggs</label></li>
-<li><input type="radio" name="test" /><label>&nbsp;Flour</label></li>
-<li><input type="radio" name="test" checked /><label>&nbsp;Coffee</label></li>
-<li><input type="radio" name="test" disabled /><label>&nbsp;Combustible lemons</label></li>
+  <li>
+    <input type="radio" name="test" />
+    <label>&nbsp;Milk</label>
+  </li>
+  <li>
+    <input type="radio" name="test" />
+    <label>&nbsp;Eggs</label>
+  </li>
+  <li>
+    <input type="radio" name="test" />
+    <label>&nbsp;Flour</label>
+  </li>
+  <li>
+    <input type="radio" name="test" checked />
+    <label>&nbsp;Coffee</label>
+  </li>
+  <li>
+    <input type="radio" name="test" disabled />
+    <label>&nbsp;Combustible lemons</label>
+  </li>
 </ul>
+
+With `color` type:
+
+```html
+<label>Color:</label>
+<input type="color" value="#000000" />
+```
+
+<label for="color">Color:</label>
+<input id="color" type="color" value="#b57edc" />
+
+<label for="color">Disabled:</label>
+<input id="color" type="color" value="#b57edc" disabled />
 
 ### Figure Captions (`<figcaption>`)
 
