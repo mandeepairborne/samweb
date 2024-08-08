@@ -30,6 +30,14 @@
 		gap: 2rem;
 		margin-top: 2rem;
 
+		#comments-status {
+			margin-block-start: 0;
+			color: var(--fg-muted-4);
+			font-weight: bold;
+			font-size: 1.5em;
+			text-align: center;
+		}
+
 		.comment {
 			display: grid;
 			grid-template-columns: min-content;

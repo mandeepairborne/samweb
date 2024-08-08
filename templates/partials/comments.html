@@ -342,6 +342,14 @@
 							commentsWrapper.innerHTML += comment.outerHTML;
 						});
 					}
+
+					else {
+						var statusText = document.createElement("p");
+						statusText.innerHTML = "{{ macros_translate::translate(key='no_comments', default='No comments yet :/', language_strings=language_strings) }}";
+						statusText.setAttribute("id", "comments-status");
+						commentsWrapper.appendChild(statusText);
+					}
+
 					loadCommentsButton.innerHTML = "{{ macros_translate::translate(key='reload', default='Reload', language_strings=language_strings) }}";
 				});
 		}
