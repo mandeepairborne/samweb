@@ -517,7 +517,7 @@ Blah blah <q>Inline Quote</q> hmm.
   }
 </style>
 
-<script>
+<script type="text/javascript">
   let colorPicker;
   const defaultColor = window.getComputedStyle(document.documentElement).getPropertyValue("--primary-color");
   console.log(defaultColor);
