@@ -114,3 +114,37 @@ input[type="color"] {
 		border-radius: calc(var(--rounded-corner-small) / 2);
 	}
 }
+
+input[type="range"] {
+	-webkit-appearance: none;
+	appearance: none;
+	transition: var(--transition);
+	box-shadow: var(--edge-highlight);
+	border-radius: 999px;
+	background: var(--primary-color);
+	width: 100%;
+	height: 0.5rem;
+
+	&::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		cursor: pointer;
+		box-shadow: var(--shadow);
+		border-radius: 999px;
+		background: white;
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+
+	&::-moz-range-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		cursor: pointer;
+		box-shadow: var(--shadow);
+		border: none;
+		border-radius: 999px;
+		background: white;
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+}

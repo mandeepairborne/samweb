@@ -325,6 +325,23 @@ With `color` type:
 <label for="color">Disabled:</label>
 <input id="color" type="color" value="#b57edc" disabled />
 
+With `range` type:
+
+<input type="range" min="1" max="100" value="33" id="range">
+<!-- For the demo purposes only -->
+<small id="range-value"></small>
+
+<script type="text/javascript">
+  var slider = document.getElementById("range");
+  var output = document.getElementById("range-value");
+  output.innerHTML = slider.value;
+
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+</script>
+<!-- End -->
+
 ### Figure Captions (`<figcaption>`)
 
 ```markdown
