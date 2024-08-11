@@ -171,10 +171,10 @@ hr {
 
 	&::after {
 		position: relative;
-		top: -1.5rem;
+		top: -1.75rem;
 		content: "☙❧";
 		color: var(--fg-muted-4);
-		font-size: 1.5rem;
+		font-size: 2rem;
 
 		// An ugly hack to fix mirroring in rtl
 		:root[dir*="rtl"] & {
