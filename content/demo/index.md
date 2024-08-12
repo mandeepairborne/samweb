@@ -327,7 +327,11 @@ With `color` type:
 
 With `range` type:
 
-<input type="range" min="1" max="100" value="33" id="range">
+```html
+<input type="range" max="100" value="33">
+```
+
+<input type="range" max="100" value="33" id="range">
 <!-- For the demo purposes only -->
 <small id="range-value"></small>
 
