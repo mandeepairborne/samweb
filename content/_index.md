@@ -158,6 +158,7 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and app
 - [luciengheerbrant.com](https://luciengheerbrant.com)
 - [lukoktonos.com](http://www.lukoktonos.com)
 - [mourelask.xyz](https://mourelask.xyz)
+- [muelsyse.codeberg.page](https://muelsyse.codeberg.page)
 - [nbenedek.me](https://nbenedek.me)
 - [nezumi.party](https://nezumi.party)
 - [orzklv.uz](https://orzklv.uz)
