@@ -54,7 +54,7 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 - [ ] Coffee
 - [x] Combustible lemons
 
-![Indian Runner Ducks](https://upload.wikimedia.org/wikipedia/commons/1/14/COLLECTIE_TROPENMUSEUM_Eenden_in_een_sawa_TMnr_60032098_%28cropped%29.jpg)
+![Male mallard duck](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Male_mallard_duck_2.jpg/800px-Male_mallard_duck_2.jpg)
 
 | Mare         | Rating            | Additional info  |
 | :----------- | :---------------- | :---------------  |
@@ -193,6 +193,11 @@ For videos it's all the same except for a few differences: `no_hover` and `url_m
 <figure>
 {{ video(url="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm", alt="Red flower wakes up") }}
 <figcaption>WebM video example from MDN</figcaption>
+</figure>
+
+<figure>
+{{ video(url="https://upload.wikimedia.org/wikipedia/commons/transcoded/0/0e/Duckling_preening_%2881313%29.webm/Duckling_preening_%2881313%29.webm.720p.vp9.webm", alt="Duckling preening", full_bleed=true) }}
+<figcaption>Duckling preening</figcaption>
 </figure>
 
 #### CRT
