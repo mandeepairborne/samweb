@@ -35,13 +35,13 @@ Duckquill is made based on needs of [my website](https://daudix.one), if you nee
 
 First, download this theme to your `themes` directory:
 
-```sh
+```bash
 git clone https://codeberg.org/daudix/duckquill.git themes/duckquill
 ```
 
 ...or add as submodule for easy updating (recommended if you already have git setup on site):
 
-```sh
+```bash
 git submodule init
 git submodule add https://codeberg.org/daudix/duckquill.git themes/duckquill
 ```
@@ -50,7 +50,7 @@ git submodule add https://codeberg.org/daudix/duckquill.git themes/duckquill
 It is highly recommended to switch from the `main` branch to the latest release:
 {% end %}
 
-```sh
+```bash
 cd themes/duckquill
 git checkout tags/v4.2.1
 ```
@@ -61,7 +61,7 @@ To update the submodule, simply switch to a new tag:
 Check the changelog for all versions that came after the one you are using, there might be breaking changes that may need manual involvement.
 {% end %}
 
-```sh
+```bash
 git submodule update --remote --merge
 git tag --list
 git checkout tags/v4.2.1
