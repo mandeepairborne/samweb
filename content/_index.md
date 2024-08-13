@@ -161,6 +161,7 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and app
 - [muelsyse.codeberg.page](https://muelsyse.codeberg.page)
 - [nbenedek.me](https://nbenedek.me)
 - [nezumi.party](https://nezumi.party)
+- [nutn-isc.gitlab.io](https://nutn-isc.gitlab.io/nutn-isc-website/)
 - [orzklv.uz](https://orzklv.uz)
 - [penandink.work](https://penandink.work)
 - [pyter.at](https://pyter.at)
