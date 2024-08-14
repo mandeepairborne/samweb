@@ -42,6 +42,7 @@
 		:root {
 			--primary-color: {{ config.extra.primary_color | default(value="#6f8396") }};
 			--primary-color-alpha: {{ config.extra.primary_color_alpha | default(value="rgba(111, 131, 150, 0.2)") }};
+			--contrast-color: {% if config.extra.fix_contrast %}rgba(0, 0, 0, 0.8){% else %}#fff{% endif %};
 		}
 
 		{%- if config.extra.primary_color_dark %}
@@ -49,6 +50,7 @@
 				:root {
 					--primary-color: {{ config.extra.primary_color_dark }};
 					--primary-color-alpha: {{ config.extra.primary_color_dark_alpha }};
+					--contrast-color: {% if config.extra.fix_contrast_dark %}rgba(0, 0, 0, 0.8){% else %}#fff{% endif %};
 				}
 			}
 		{%- endif %}

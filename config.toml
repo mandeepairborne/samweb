@@ -61,6 +61,11 @@ primary_color_alpha = "rgba(255, 120, 0, 0.2)"
 # If not set regular variant will be used.
 primary_color_dark = "#ffa348"
 primary_color_dark_alpha = "rgba(255, 163, 72, 0.2)"
+# Whether to fix low contrast in text selection, checkboxes, etc.
+# Use only if the default doesn't provide enough contrast, e.g. the primary color is set to yellow.
+# fix_contrast = true
+# Ditto but for the dark mode.
+fix_contrast_dark = true
 # Use emoji as a favicon.
 # Only one emoji is being rendered, everything else is truncated.
 # emoji_favicon = "🦆🪶"

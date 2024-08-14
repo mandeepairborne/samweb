@@ -16,7 +16,7 @@ input[type="color"] {
 		transform: scale(0.5);
 		opacity: 0;
 		transition: var(--transition);
-		background-color: white;
+		background-color: var(--contrast-color);
 		content: "";
 	}
 
@@ -131,7 +131,7 @@ input[type="range"] {
 		cursor: pointer;
 		box-shadow: var(--shadow);
 		border-radius: 999px;
-		background: white;
+		background-color: white;
 		width: 1.5rem;
 		height: 1.5rem;
 	}
@@ -143,7 +143,7 @@ input[type="range"] {
 		box-shadow: var(--shadow);
 		border: none;
 		border-radius: 999px;
-		background: white;
+		background-color: white;
 		width: 1.5rem;
 		height: 1.5rem;
 	}
