@@ -1,3 +1,10 @@
+// Layout Debugging
+// *,
+// *::before,
+// *::after {
+// 	outline: solid 0.0625rem var(--primary-color);
+// }
+
 * {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
