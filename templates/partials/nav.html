@@ -79,6 +79,13 @@
 					</a>
 				</li>
 			{%- endif %}
+			{%- if config.extra.source_url and config.extra.nav.show_repo %}
+				<li id="repo">
+					<a href="{{ config.extra.source_url }}" title="{{ macros_translate::translate(key='repo', default='Repository', language_strings=language_strings) }}">
+						<i class="icon"></i>
+					</a>
+				</li>
+			{%- endif %}
 		</ul>
 	</nav>
 	{%- if config.build_search_index %}
