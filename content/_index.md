@@ -173,6 +173,7 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and app
 - [sorcery.nexus](https://sorcery.nexus)
 - [sorg.codeberg.page](https://sorg.codeberg.page)
 - [sungsphinx.codeberg.page](https://sungsphinx.codeberg.page)
+- [tmblog.pages.dev](https://tmblog.pages.dev)
 - [treeniks.github.io](https://treeniks.github.io)
 - [vikramxd.github.io](https://vikramxd.github.io)
 - Yours? <small>(feel free to [contact me](https://daudix.one/find/#contacts) or send a pull request)</small>
