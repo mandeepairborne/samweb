@@ -11,6 +11,7 @@
 					{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path="/", lang=lang) | trim_end_matches(pat='/') | safe -%}
 						class="active"
 					{%- endif -%}>
+					<i class="icon"></i>
 					{{- config.title -}}
 				</a>
 			</li>
