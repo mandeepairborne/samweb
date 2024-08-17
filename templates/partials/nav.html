@@ -46,6 +46,32 @@
 			{%- if config.languages | length > 0 %}
 				{%- include "partials/language_switcher.html" %}
 			{%- endif -%}
+			{%- if config.extra.nav.show_theme_switcher  %}
+				<li id="theme-switcher">
+					<details>
+						<summary title="{{ macros_translate::translate(key='theme', default='Theme', language_strings=language_strings) }}">
+							<i class="icon"></i>
+						</summary>
+						<ul>
+							<li>
+								<button id="theme-light" onclick="switchTheme('light')" title="{{ macros_translate::translate(key='theme_light', default='Switch to light theme', language_strings=language_strings) }}">
+									<i class="icon"></i>
+								</button>
+							</li>
+							<li>
+								<button id="theme-dark" onclick="switchTheme('dark')" title="{{ macros_translate::translate(key='theme_dark', default='Switch to dark theme', language_strings=language_strings) }}">
+									<i class="icon"></i>
+								</button>
+							</li>
+							<li>
+								<button id="theme-system" onclick="switchTheme('system')" title="{{ macros_translate::translate(key='theme_system', default='Use system theme', language_strings=language_strings) }}">
+									<i class="icon"></i>
+								</button>
+							</li>
+						</ul>
+					</details>
+				</li>
+			{%- endif %}
 			{%- if config.generate_feeds and config.extra.nav.show_feed %}
 				<li id="feed">
 					<a href="{{ get_url(path=config.feed_filenames[0]) }}" title="{{ macros_translate::translate(key='feed', default='Feed', language_strings=language_strings) }}">

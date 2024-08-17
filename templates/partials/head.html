@@ -46,8 +46,14 @@
 		}
 
 		{%- if config.extra.primary_color_dark %}
+			[data-theme="dark"] {
+				--primary-color: {{ config.extra.primary_color_dark }};
+				--primary-color-alpha: {{ config.extra.primary_color_dark_alpha }};
+				--contrast-color: {% if config.extra.fix_contrast_dark %}rgba(0, 0, 0, 0.8){% else %}#fff{% endif %};
+			}
+
 			@media (prefers-color-scheme: dark) {
-				:root {
+				:root:not([data-theme="light"]) {
 					--primary-color: {{ config.extra.primary_color_dark }};
 					--primary-color-alpha: {{ config.extra.primary_color_dark_alpha }};
 					--contrast-color: {% if config.extra.fix_contrast_dark %}rgba(0, 0, 0, 0.8){% else %}#fff{% endif %};
@@ -83,15 +89,19 @@
 		{%- include "partials/copy_button.html" %}
 	{%- endif %}
 
+	{%- set scripts = [] %}
+
 	{%- if config.build_search_index %}
 		{%- include "partials/search.html" %}
-		{%- set scripts = ["elasticlunr.min.js"] %}
-	{%- else %}
-		{%- set scripts = [""] %}
+		{%- set scripts = scripts | concat(with=["elasticlunr.min.js"]) %}
+	{%- endif %}
+
+	{%- if config.extra.nav.show_theme_switcher %}
+		{%- set scripts = scripts | concat(with=["theme-switcher.js"]) %}
 	{%- endif %}
 
 	{%- if config.extra.scripts %}
-		{%- set scripts = config.extra.scripts %}
+		{%- set scripts = scripts | concat(with=config.extra.scripts) %}
 	{%- endif %}
 
 	{%- if page.extra.scripts %}

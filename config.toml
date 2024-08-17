@@ -52,6 +52,10 @@ generate_feeds = true
 taxonomies = [{ name = "tags", feed = true }]
 
 [extra]
+# Which theme should be used by default (light/dark).
+# Strongly recommended to use this only with the manual theme switcher enabled,
+# it's important for a11y.
+# default_theme = "dark"
 # Sets theme and browser theme color.
 # See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
 primary_color = "#ff7800"
@@ -96,6 +100,8 @@ show_read_time = true
 [extra.nav]
 # Whether to show Atom/RSS feed button in the nav
 show_feed = true
+# Whether to show manual theme switcher in the nav
+show_theme_switcher = true
 # Links used in the nav.
 # For local files use same link format as in Markdown,
 # i.e "@/blog/_index.md".
