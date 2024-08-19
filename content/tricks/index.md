@@ -26,7 +26,7 @@ Duckquill is pretty easy to restyle with just a few lines of SCSS in the [approp
 
 You can make navbar have more classic look:
 
-![classic navabr](https://files.catbox.moe/udj332.png)
+![classic navabr](https://files.catbox.moe/wd9nal.png)
 
 ```scss
 #site-nav {
@@ -43,11 +43,16 @@ You can make navbar have more classic look:
         width: min(var(--container-width), 90%);
     }
 
-    nav ul li a,
-    nav ul li#search button,
-    nav ul li#language-switcher details summary {
-        border-radius: var(--rounded-corner);
+    nav ul li {
+        a,
+        &#search button,
+        &#language-switcher details summary,
+        &#theme-switcher details summary {
+            border-radius: var(--rounded-corner);
+        }
+
     }
+
     #search-container {
         #search-bar {
             border-radius: var(--rounded-corner);
@@ -56,16 +61,32 @@ You can make navbar have more classic look:
 }
 ```
 
-Or you can make it sticked to top:
+Or you can make it sticked to top but not full-width:
 
-![sticked navabr](https://files.catbox.moe/wkweqh.png)
+![sticked navabr](https://files.catbox.moe/vr62lb.png)
 
 ```scss
 #site-nav {
     top: 0;
     margin-top: 0;
     box-shadow: 0 0.75rem 1.5rem -1rem rgba(0, 0, 0, 0.5);
-    border-radius: 0 0 1.625rem 1.625rem;
+    border-radius: 0 0 calc(var(--rounded-corner) + 0.5rem) calc(var(--rounded-corner) + 0.5rem);
+
+    nav ul li {
+        a,
+        &#search button,
+        &#language-switcher details summary,
+        &#theme-switcher details summary {
+            border-radius: var(--rounded-corner);
+        }
+
+    }
+
+    #search-container {
+        #search-bar {
+            border-radius: var(--rounded-corner);
+        }
+    }
 }
 ```
 
