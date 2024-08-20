@@ -88,7 +88,7 @@ pre table td:nth-of-type(1) {
 
 ### Shortcodes
 
-Duckquill provides a few useful [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) that simplify some tasks. The can be used on all pages.
+Duckquill provides a few useful [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) that simplify some tasks. They can be used on all pages.
 
 #### Alerts
 
@@ -142,7 +142,7 @@ Available variables are:
 - `start`: Float image to the start of paragraph and scale it down.
 - `end`: Float image to the end of paragraph and scale it down.
 - `pixels`: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.
-- `transparent`: Removes rounded corners and shadow, useful for transparent images.
+- `transparent`: Removes rounded corners and shadow, useful for images with transparency.
 - `no_hover`: Removes zoom on hover.
 
 ```jinja2
@@ -159,14 +159,14 @@ Available variables are:
 <figcaption>Image with compressed version, an alt text, and without zoom on hover</figcaption>
 </figure>
 
-Alternatively, you can append the following URL anchors. It can be more handy in some cases, e.g such images will render normally in any Markdown editor, opposed to the Zola shortcodes.
+Alternatively, you can append the following URL anchors. It can be more handy in some cases, e.g. such images will render normally in any Markdown editor, opposed to the Zola shortcodes.
 
 - `#full`: Forces image to be full-width.
 - `#full-bleed`: Forces image to fill all the available screen width. Removes shadow, rounded corners and zoom on hover.
 - `#start`: Float image to the start of paragraph and scale it down.
 - `#end`: Float image to the end of paragraph and scale it down.
 - `#pixels`: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.
-- `#transparent`: Removes rounded corners and shadow, useful for transparent images.
+- `#transparent`: Removes rounded corners and shadow, useful for images with transparency.
 - `#no-hover`: Removes zoom on hover.
 
 <br />

@@ -106,7 +106,7 @@ show_theme_switcher = true
 show_repo = true
 # Links used in the nav.
 # For local files use same link format as in Markdown,
-# i.e "@/blog/_index.md".
+# i.e. "@/blog/_index.md".
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
   { url = "@/blog/_index.md", name = "Blog" },
