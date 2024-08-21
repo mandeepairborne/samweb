@@ -147,6 +147,7 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and app
 - [alavi.me](https://alavi.me)
 - [amritcodes.xyz](https://amritcodes.xyz)
 - [bano.dev](https://bano.dev)
+- [benjaminandre.be](https://benjaminandre.be)
 - [blog.pansi21.xyz](https://blog.pansi21.xyz)
 - [daudix.one](https://daudix.one) <small>(obviously)</small>
 - [daveparr.info](https://www.daveparr.info)
@@ -161,6 +162,7 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and app
 - [muelsyse.codeberg.page](https://muelsyse.codeberg.page)
 - [nbenedek.me](https://nbenedek.me)
 - [nezumi.party](https://nezumi.party)
+- [nisf.be](https://nisf.be)
 - [nutn-isc.gitlab.io](https://nutn-isc.gitlab.io/nutn-isc-website/)
 - [orzklv.uz](https://orzklv.uz)
 - [penandink.work](https://penandink.work)
