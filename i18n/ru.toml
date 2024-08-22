@@ -16,7 +16,6 @@ date_locale = "ru_RU"
 Blog = "Блог"
 Demo = "Демо"
 Tricks = "Трюки"
-Repo = "Репо"
 
 all_tags = "Показать все теги"
 archived = "Архив"

@@ -12,7 +12,6 @@ date_locale = "en_US"
 Blog = "Blog"
 Demo = "Demo"
 Tricks = "Tricks"
-Repo = "Repo"
 
 all_tags = "See all tags"
 archived = "Archived"
