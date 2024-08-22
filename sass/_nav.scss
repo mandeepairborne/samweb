@@ -101,6 +101,7 @@
 						}
 
 						&.active {
+							box-shadow: var(--edge-highlight);
 							background-color: var(--primary-color-alpha);
 							color: var(--primary-color);
 
