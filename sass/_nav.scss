@@ -57,7 +57,7 @@
 
 				@media only screen and (max-width: 480px) {
 					&:not(#search, #language-switcher, #theme-switcher, #feed, #repo) {
-						width: 100%;
+						flex: 0 0 100%;
 					}
 				}
 
@@ -158,17 +158,14 @@
 
 				a {
 					position: relative;
+					flex: 1;
 					transition: var(--transition);
 					border-radius: 999px;
 					padding: 0.5rem 0.75rem;
 					color: var(--fg-muted-4);
 					line-height: 1.25;
+					text-align: center;
 					text-decoration: none;
-
-					@media only screen and (max-width: 480px) {
-						width: 100%;
-						text-align: center;
-					}
 
 					&:hover {
 						text-decoration: none;
