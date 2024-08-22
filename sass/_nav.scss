@@ -56,7 +56,7 @@
 				list-style: none;
 
 				@media only screen and (max-width: 480px) {
-					&:not(#search, #language-switcher, #theme-switcher, #feed, #repo) {
+					&:not(#search, #language-switcher, #theme-switcher, #theme-switcher li, #feed, #repo) {
 						flex: 0 0 100%;
 					}
 				}
