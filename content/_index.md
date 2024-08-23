@@ -123,7 +123,7 @@ Duckquill respects chosen primary color everywhere. To use your own, simply chan
 ```toml
 [extra]
 primary_color = "#3584e4"
-primary_color_alpha = "rgba(53, 132, 228, 0.2)"
+primary_color_alpha = "rgb(53 132 228 / 0.2)"
 ```
 
 Additionally, you can set a separate color for dark mode:
@@ -131,7 +131,7 @@ Additionally, you can set a separate color for dark mode:
 ```toml
 [extra]
 primary_color_dark = "#ff7800"
-primary_color_dark_alpha = "rgba(255, 120, 0, 0.2)"
+primary_color_dark_alpha = "rgb(255 120 0 / 0.2)"
 ```
 
 ### Favicon

@@ -3,9 +3,9 @@
 	<meta charset="UTF-8" />
 	<meta name="description" content="{{ config.description }}" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="theme-color" content="{{ config.extra.primary_color | default(value='#9a9996') }}" />
+	<meta name="theme-color" content="{{ config.extra.primary_color | default(value='#9a9996' | safe) | safe }}" />
 	{%- if config.extra.primary_color_dark %}
-		<meta name="theme-color" content="{{ config.extra.primary_color_dark }}" media="(prefers-color-scheme:dark)" />
+		<meta name="theme-color" content="{{ config.extra.primary_color_dark | safe }}" media="(prefers-color-scheme:dark)" />
 	{%- endif %}
 	<title>{% include "partials/title.html" %}</title>
 	<link rel="canonical" href="{{ current_url | default(value='/') | safe }}" />
@@ -40,23 +40,23 @@
 
 	<style type="text/css">
 		:root {
-			--primary-color: {{ config.extra.primary_color | default(value="#6f8396") }};
-			--primary-color-alpha: {{ config.extra.primary_color_alpha | default(value="rgba(111, 131, 150, 0.2)") }};
-			--contrast-color: {% if config.extra.fix_contrast %}rgba(0, 0, 0, 0.8){% else %}#fff{% endif %};
+			--primary-color: {{ config.extra.primary_color | default(value="#6f8396" | safe) | safe }};
+			--primary-color-alpha: {{ config.extra.primary_color_alpha | default(value="rgb(111 131 150 / 0.2)" | safe) | safe }};
+			--contrast-color: {% if config.extra.fix_contrast %}rgb(0 0 0 / 0.8){% else %}#fff{% endif %};
 		}
 
 		{%- if config.extra.primary_color_dark %}
 			[data-theme="dark"] {
-				--primary-color: {{ config.extra.primary_color_dark }};
-				--primary-color-alpha: {{ config.extra.primary_color_dark_alpha }};
-				--contrast-color: {% if config.extra.fix_contrast_dark %}rgba(0, 0, 0, 0.8){% else %}#fff{% endif %};
+				--primary-color: {{ config.extra.primary_color_dark | safe }};
+				--primary-color-alpha: {{ config.extra.primary_color_dark_alpha | safe }};
+				--contrast-color: {% if config.extra.fix_contrast_dark %}rgb(0 0 0 / 0.8){% else %}#fff{% endif %};
 			}
 
 			@media (prefers-color-scheme: dark) {
 				:root:not([data-theme="light"]) {
-					--primary-color: {{ config.extra.primary_color_dark }};
-					--primary-color-alpha: {{ config.extra.primary_color_dark_alpha }};
-					--contrast-color: {% if config.extra.fix_contrast_dark %}rgba(0, 0, 0, 0.8){% else %}#fff{% endif %};
+					--primary-color: {{ config.extra.primary_color_dark | safe }};
+					--primary-color-alpha: {{ config.extra.primary_color_dark_alpha | safe }};
+					--contrast-color: {% if config.extra.fix_contrast_dark %}rgb(0 0 0 / 0.8){% else %}#fff{% endif %};
 				}
 			}
 		{%- endif %}

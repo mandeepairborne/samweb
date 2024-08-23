@@ -5,7 +5,9 @@
 	z-index: 999;
 	backdrop-filter: var(--blur);
 	margin: 1rem auto;
-	box-shadow: var(--edge-highlight), 0 0.75rem 1.5rem -1rem rgba(0, 0, 0, 0.5);
+	box-shadow:
+		var(--edge-highlight),
+		0 0.75rem 1.5rem -1rem rgb(0 0 0 / 0.5);
 	border-radius: 1.625rem;
 	background-color: var(--nav-bg);
 	max-width: 90%;
@@ -27,7 +29,9 @@
 			z-index: 999;
 			backdrop-filter: var(--blur);
 			transition: var(--transition);
-			box-shadow: var(--edge-highlight), 0 0.75rem 1.5rem -1rem rgba(0, 0, 0, 0.5);
+			box-shadow:
+				var(--edge-highlight),
+				0 0.75rem 1.5rem -1rem rgb(0 0 0 / 0.5);
 			border-radius: 999px;
 			background-color: var(--nav-bg);
 			padding: 0.5rem 0.75rem;
@@ -56,7 +60,14 @@
 				list-style: none;
 
 				@media only screen and (max-width: 480px) {
-					&:not(#search, #language-switcher, #theme-switcher, #theme-switcher li, #feed, #repo) {
+					&:not(
+							#search,
+							#language-switcher,
+							#theme-switcher,
+							#theme-switcher li,
+							#feed,
+							#repo
+						) {
 						flex: 0 0 100%;
 					}
 				}
@@ -190,7 +201,8 @@
 								right: unset;
 								bottom: 0.25rem;
 								left: -0.5rem;
-								border-inline-end: 0.25rem solid var(--fg-muted-2);
+								border-inline-end: 0.25rem solid
+									var(--fg-muted-2);
 								border-block-end: none;
 								border-start-end-radius: 0.25rem;
 								border-end-start-radius: 0;
@@ -213,7 +225,8 @@
 								right: unset;
 								bottom: 0;
 								left: -0.5rem;
-								border-inline-end: 0.25rem solid var(--primary-color);
+								border-inline-end: 0.25rem solid
+									var(--primary-color);
 								border-block-end: none;
 								content: "";
 
@@ -329,7 +342,9 @@
 						transform: translate(-50%, 1rem);
 						z-index: 1;
 						backdrop-filter: var(--blur);
-						box-shadow: var(--edge-highlight), 0 0.75rem 1.5rem -1rem rgba(0, 0, 0, 0.5);
+						box-shadow:
+							var(--edge-highlight),
+							0 0.75rem 1.5rem -1rem rgb(0 0 0 / 0.5);
 						background-color: var(--nav-bg);
 						padding: 0.25rem;
 
@@ -355,7 +370,9 @@
 						}
 
 						ul {
-							border-radius: calc(var(--rounded-corner) + 0.25rem);
+							border-radius: calc(
+								var(--rounded-corner) + 0.25rem
+							);
 						}
 					}
 				}
@@ -473,7 +490,9 @@
 			flex-direction: column;
 			gap: 0.5rem;
 			backdrop-filter: var(--blur);
-			box-shadow: var(--edge-highlight), 0 0.75rem 1.5rem -1rem rgba(0, 0, 0, 0.5);
+			box-shadow:
+				var(--edge-highlight),
+				0 0.75rem 1.5rem -1rem rgb(0 0 0 / 0.5);
 			border-radius: calc(var(--rounded-corner) + 0.5rem);
 			background-color: var(--nav-bg);
 			padding: 0.5rem;

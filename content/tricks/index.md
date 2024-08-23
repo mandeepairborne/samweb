@@ -32,7 +32,7 @@ You can make navbar have more classic look:
 #site-nav {
     top: 0;
     margin-top: 0;
-    box-shadow: 0 0.75rem 1.5rem -1rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.75rem 1.5rem -1rem rgb(0 0 0 / 0.5);
     border-radius: 0;
     width: 100%;
     max-width: 100%;
@@ -69,7 +69,7 @@ Or you can make it sticked to top but not full-width:
 #site-nav {
     top: 0;
     margin-top: 0;
-    box-shadow: 0 0.75rem 1.5rem -1rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.75rem 1.5rem -1rem rgb(0 0 0 / 0.5);
     border-radius: 0 0 calc(var(--rounded-corner) + 0.5rem) calc(var(--rounded-corner) + 0.5rem);
 
     nav ul li {
@@ -192,10 +192,10 @@ Most of the time contrast should be okay, but what if it's not? Simply adjust th
 
 ```scss
 :root {
-    --bg-color: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    --bg-color: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
 
     @media (prefers-color-scheme: dark) {
-        --bg-color: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+        --bg-color: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
     }
 }
 ```
