@@ -100,6 +100,10 @@
 		{%- set scripts = scripts | concat(with=["theme-switcher.js"]) %}
 	{%- endif %}
 
+	{%- if config.show_theme_switcher or config.languages | length > 0 %}
+		{%- set scripts = scripts | concat(with=["details.js"]) %}
+	{%- endif %}
+
 	{%- if config.extra.scripts %}
 		{%- set scripts = scripts | concat(with=config.extra.scripts) %}
 	{%- endif %}
