@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [4.6.0] - 2024-08-23
+## [v4.6.0] - 2024-08-23
 
 ### Added
 
@@ -25,7 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix the Feed button in multilingual sites.
 - Remove left/right margins from `<figure>`.
 
-## [4.5.0] - 2024-08-18
+## [v4.5.0] - 2024-08-18
 
 ### Added
 
@@ -35,7 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Improve adaptivity of footer on mobile.
 
-## [4.4.0] - 2024-08-17
+## [v4.4.0] - 2024-08-17
 
 ### Added
 
@@ -49,7 +49,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Improve adaptivity of navbar on mobile.
 - Use `--contrast-color` for footer's "Powered by" links.
 
-## [4.3.0] - 2024-08-15
+## [v4.3.0] - 2024-08-15
 
 ### Added
 
@@ -70,13 +70,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix line height in footer.
 - Fix text color in search bar using User Agent color.
 
-## [4.2.1] - 2024-08-06
+## [v4.2.1] - 2024-08-06
 
 ### Fixed
 
 - Fix phantom search bar causing spaces on the sides of short navbars, even when search is disabled.
 
-## [4.2.0] - 2024-08-06
+## [v4.2.0] - 2024-08-06
 
 ### Added
 
@@ -114,7 +114,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix search bar getting stuck in the disabled state after reloading page with it being open.
 - Replace leftover tabi paths with Duckquill.
 
-## [4.1.0] - 2024-07-22
+## [v4.1.0] - 2024-07-22
 
 ### Added
 
@@ -136,7 +136,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Fix code blocks with complex settings.
 
-## [4.0.0] - 2024-07-20
+## [v4.0.0] - 2024-07-20
 
 ### Added
 
@@ -181,7 +181,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Trim whitespace in more places.
 - Use button element instead of anchors, fixes keyboard navigation and other issues.
 
-## [3.2.1] - 2024-06-30
+## [v3.2.1] - 2024-06-30
 
 ### Changed
 
@@ -194,7 +194,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add missing translation keys for search.
 
-## [3.2.0] - 2024-06-30
+## [v3.2.0] - 2024-06-30
 
 ### Added
 
@@ -211,7 +211,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Replace all `px` values with `rem` for better responsiveness. E.g the whole UI can be scaled by just changing HTML font size.
 - Tone down the inline code element and checkbox outline.
 
-## [3.1.0] - 2024-06-27
+## [v3.1.0] - 2024-06-27
 
 ### Added
 
@@ -240,7 +240,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Prevent previous/next post buttons' text being too close to each other.
 
-## [3.0.0] - 2024-06-20
+## [v3.0.0] - 2024-06-20
 
 ### Added
 
@@ -277,7 +277,7 @@ with `date_format` and `date_locale` inside translation files.
 - Fix images with `transparent` class having shadow on hover.
 - Fix the anchor link not being keyboard-accessible.
 
-## [2.1.0] - 2024-06-13
+## [v2.1.0] - 2024-06-13
 
 ### Added
 
@@ -308,7 +308,7 @@ with `date_format` and `date_locale` inside translation files.
 - Fix active state transition for footer socials.
 - Fix the verified checkmark in comments render as emoji.
 
-## [2.0.0] - 2024-05-20
+## [v2.0.0] - 2024-05-20
 
 ### Added
 
@@ -351,7 +351,7 @@ with `date_format` and `date_locale` inside translation files.
 - Fix long post title sneaking under the archived/drafted post badge.
 - Fix the image shortcode having the source link not working.
 
-## [1.1.0] - 2024-04-29
+## [v1.1.0] - 2024-04-29
 
 ### Added
 
@@ -382,7 +382,7 @@ with `date_format` and `date_locale` inside translation files.
 - Fix code blocks having every other line being darker in some complex cases.
 - Fix emoji favicon being cut-off.
 
-## [1.0.1] - 2024-04-05
+## [v1.0.1] - 2024-04-05
 
 ### Changed
 
@@ -398,6 +398,6 @@ with `date_format` and `date_locale` inside translation files.
 - Fix capitalization of buttons.
 - Revert 2006d69bd4 since it broke "Go to Top" among others.
 
-[1.0.0] - 2024-04-03
+## [v1.0.0] - 2024-04-03
 
 Initial release.
