@@ -112,6 +112,11 @@ links = [
 	{ url = "@/blog/_index.md", name = "Blog" },
 	{ url = "@/demo/index.md", name = "Demo" },
 	{ url = "@/tricks/index.md", name = "Tricks" },
+	{ name = "Menu" , sublinks = [
+		{ url = "@/blog/_index.md", name = "Blog" },
+		{ url = "@/demo/index.md", name = "Demo" },
+		{ url = "@/tricks/index.md", name = "Tricks" },
+  	]},
 ]
 
 [extra.footer]
