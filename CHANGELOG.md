@@ -1,0 +1,403 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## [4.6.0] - 2024-08-23
+
+### Added
+
+- Add missing "By $AUTHOR" string to i18n files.
+- Add missing edge highlight to home button.
+- Utilize flex power for navbar adaptivity.
+
+### Changed
+
+- Change theme switcher icon depending on currently selected mode.
+- Update "Tricks" page to reflect the recent navabr changes.
+
+### Fixed
+
+- Fix the Feed button in multilingual sites.
+- Remove left/right margins from `<figure>`.
+
+## [4.5.0] - 2024-08-18
+
+### Added
+
+- Add manual light/dark mode switcher.
+
+### Changed
+
+- Improve adaptivity of footer on mobile.
+
+## [4.4.0] - 2024-08-17
+
+### Added
+
+- Add home icon to the home button.
+- Add top/bottom margin to inline images on mobile.
+- Add unique active style for home button.
+
+### Changed
+
+- Greatly optimize and simplify CRT styles
+- Improve adaptivity of navbar on mobile.
+- Use `--contrast-color` for footer's "Powered by" links.
+
+## [4.3.0] - 2024-08-15
+
+### Added
+
+- Add temporary `extra.fix_contrast` and `extra.fix_contrast_dark` config variables for cases where default white color doesn't provide enough contrast, e.g. in text selection and checkboxes.
+- Show status when there are no comments to load.
+- Add styling for the color picker element.
+- Add styling for the slider element.
+
+### Changed
+
+- Allow custom styles to override primary color
+- Increase fleuron size
+- Make post tags wrap properly on mobile.
+
+### Fixed
+
+- Fix `full_bleed` image/video shortcode variable.
+- Fix line height in footer.
+- Fix text color in search bar using User Agent color.
+
+## [4.2.1] - 2024-08-06
+
+### Fixed
+
+- Fix phantom search bar causing spaces on the sides of short navbars, even when search is disabled.
+
+## [4.2.0] - 2024-08-06
+
+### Added
+
+- Add fallback styling for code blocks if no syntax highlighting theme is specified.
+- Add support for Zola's `config.markdown.bottom_footnotes` config variable.
+- Add support for Zola's `external_links_target_blank`, `external_links_no_follow`, and `external_links_no_referrer` config variables.
+- Add support for Zola's `lazy_async_image` config variable.
+- Add title to "Copy code" button.
+- Add title to comments QR code.
+- Add titles to buttons without visible text.
+
+### Changed
+
+- Allow archiving pages without reasoning.
+- Allow external link icon to grow past the default size.
+- Change default primary color to slate.
+- Change padding of various elements to be pixel-perfect.
+- Don't set background on horizontal rule's fleuron.
+- Give comment author's instance badge some space to breathe.
+- Increase spacing between comment timestamp and its contents.
+- Make checkbox animation smoother.
+- Remove bottom margin from the last element inside `<details>`
+- Replace language-specific pages with symlinks (only affects Duckquill demo).
+- Use checkmark icon for verified instance badge instead of a Unicode glyph.
+- Use RTL-friendly border radius properties.
+
+### Removed
+
+- Remove focused heading animation, since it was rather distracting.
+
+### Fixed
+
+- Fix broken line height in Arabic.
+- Fix height of previous/next post navigation buttons.
+- Fix search bar getting stuck in the disabled state after reloading page with it being open.
+- Replace leftover tabi paths with Duckquill.
+
+## [4.1.0] - 2024-07-22
+
+### Added
+
+- Add "Tricks" page with some useful tips and tricks.
+- Add estimated read time counter to articles.
+- Allow setting different primary color for dark mode.
+- Support image/video/gif/audio attachments in comments.
+
+### Changed
+
+- Reduce top margin of headings.
+- Replace weird `unset` CSS keyword with values that make more sense.
+
+### Removed
+
+- Remove tags from the article.
+
+### Fixed
+
+- Fix code blocks with complex settings.
+
+## [4.0.0] - 2024-07-20
+
+### Added
+
+- Add comments reloading.
+- Add GitHub-style alerts.
+- Add localization to comments QR code alt text.
+- Add minimal size for separator between home button and other links in navabr.
+- Add post banners.
+- Style more HTML elements.
+
+### Changed
+
+- **[BREAKING]** Remove description variable from `article_list.html`; simply copy-paste it outside of front matter.
+- **[BREAKING]** Some CSS variables were renamed.
+- **[BREAKING]** Some translation strings were renamed.
+- Allow all statements on regular pages; not just archive.
+- Allow navbar/footer to grow past container width.
+- Change default locale to `en_US`.
+- Countless minor style tweaks
+- Decrease margin between icon and statement heading.
+- Display all post authors and not only first one.
+- Float tags to the right in the post card and post itself.
+- Make margins/paddings RTL-friendly.
+- Make search bar visually part of the navbar.
+- Rename some color variables.
+- Revamp copy button; instead of putting it on top of the code block, use a header with code language and copy button. It also has a nice copy animation.
+- Revamp the next/previous post nav.
+- Rewrite the demo.
+- Update icons.
+- Use `:root` instead of `html` in CSS.
+- Use margins instead of untrimmed spaces.
+- Vertically center custom emojis in comments.
+
+### Fixed
+
+- Disable search input until it's open; prevents ability to write inside it while it's closed.
+- Fix height of instance badge in comments.
+- Fix shadow on hover with transparent images.
+- Fix variety of a11y issues.
+- Improve compatibility with WebKit (Safari, Epiphany).
+- Make Duckquill more XHTML5 compliant (in theory).
+- Trim whitespace in more places.
+- Use button element instead of anchors, fixes keyboard navigation and other issues.
+
+## [3.2.1] - 2024-06-30
+
+### Changed
+
+- Make statement headings use normal line height.
+- Replace Django VSCode extension with Tera in "Tools Used".
+- Omit old-style type attributes (`type="text/css"`).
+- Make search bar pill shaped and same size as navbar.
+
+### Fixed
+
+- Add missing translation keys for search.
+
+## [3.2.0] - 2024-06-30
+
+### Added
+
+- Add search functionality.
+- Allow floating images to the start/end of a paragraph.
+- Allow making images full-bleed, useful for article banners.
+- Make accordion slimmer.
+- Make headings slimmer.
+
+### Changed
+
+- **[BREAKING]** Raise the minimal Zola version to v0.19.0
+- Make link underlines consistent across browsers.
+- Replace all `px` values with `rem` for better responsiveness. E.g the whole UI can be scaled by just changing HTML font size.
+- Tone down the inline code element and checkbox outline.
+
+## [3.1.0] - 2024-06-27
+
+### Added
+
+- **[BREAKING]** Add support for multiple feeds introduced in Zola v0.19 (breaks support with Zola v0.18 and lower)
+- Allow making posts featured.
+- Support Zola's `updated` frontmatter variable.
+- Support Markdown in copyright text.
+- Add language meta tag.
+
+### Changed
+
+- Recolor headings of drafted and archived posts in posts list.
+- Recolor links in the statements.
+- Make inline code smaller to better match height of regular text.
+- Add edge highlight to `details`.
+- Don't use `span` for post edit time.
+- Improve favicon and scripts loading logic.
+- Simplify design of drafted posts.
+- Use default line height for headings.
+
+### Removed
+
+- **[BREAKING]** Get rid of the `config.extra.animated_favicon` variable in favor of APNG animated favicon if needed.
+
+### Fixed
+
+- Prevent previous/next post buttons' text being too close to each other.
+
+## [3.0.0] - 2024-06-20
+
+### Added
+
+- Add i18n support.
+- Add "open post" button to comments.
+- Add external link icon to buttons that lead to external sites.
+- Add language switcher menu in the navbar (enabled automatically if site is availabe in more than one language).
+- Allow adding per-page/section stylesheets via the `extra.stylesheets` variable.
+- Allow setting custom copyright text via the new `config.extra.footer.copyright` config variable.
+- Button-like style for footer's "Powered by" links.
+- Smart syntax highlighting theme loading.
+
+### Changed
+
+- Make footer background-less.
+- Change the look and structure of footer links.
+- Make dialog buttons use `div` element instead of `p`.
+- Make styles more consistent and adaptive (replace some pixel-based values with rem).
+- Make styles work with RTL languages.
+- Rewrite additional stylesheets loading logic.
+- Simplify some unnecessarily complex styles.
+- Transition properties have been simplified. The previous approach didn't have any benefits but did cause pain.
+- Tweak padding and spacing of elements; now everything should be pixel-perfect and more well-spaced.
+
+### Removed
+
+- Remove some leftover code.
+- **[BREAKING]** Get rid of `config.extra.date_format` and `config.extra.comments.locale` and replace it
+with `date_format` and `date_locale` inside translation files.
+
+### Fixed
+
+- Add missing labels to some elements.
+- Fix images with `transparent` class having shadow on hover.
+- Fix the anchor link not being keyboard-accessible.
+
+## [2.1.0] - 2024-06-13
+
+### Added
+
+- Add active navbar link indicator.
+- Add background color to tables.
+- Add custom focus indicator.
+- Add pretty text wrap.
+- Add section pointing out to Duckquill assets source.
+- Add section with tools used to create Duckquill.
+- Style checkboxes and radios.
+- 
+
+### Changed
+
+- **[BREAKING]** Decouple `--primary-color` tint from `--bg-color`.
+- **[BREAKING]** Drop support for johnvertisements as it's out of scope and can be added back easily.
+- Improve a11y and keyboard navigation.
+- Make `source_url` and `issues_url` config variables optional and adapt content if they're not set.
+- Make active header animation less annoying (don't animate to bold).
+- Make blockquotes rounded again.
+- Update the metadata card.
+- Use `article` element in `article.html`.
+- Use CSS masks instead of putting SVGs directly into templates.
+
+### Fixed
+
+- Fix "Skip to main content" button preventing clicking on the navbar items on mobile.
+- Fix active state transition for footer socials.
+- Fix the verified checkmark in comments render as emoji.
+
+## [2.0.0] - 2024-05-20
+
+### Added
+
+- Add [EditorConfig](https://editorconfig.org) (again).
+- Add ability to style images via the URL.
+- Add default value for the comments locale setting.
+- Add emoji "font" and use it on body.
+- Add optional copy code button.
+- Add optional Goatcounter analytics support.
+- Add top margin to [Johnvertisement](https://john.citrons.xyz).
+- Add proper support for heading anchors.
+- Add support for links and socials in footer.
+
+### Changed
+
+- **[BREAKING]** Initial Sass refactoring.
+- **[BREAKING]** Remove the unused `--transition-bezier` CSS variable.
+- **[BREAKING]** Rename `--content-width` CSS variable to `--container-width`
+- **[BREAKING]** Rename `blog.html` and `blog_list.html` templates to `article.html` and `article_list.html` respectively.
+- Adjust line height of headings.
+- Change disclaimer heading from plural to singular.
+- Fancier horizontal rule.
+- Improve the look of drafted post entries.
+- Make more elements respect root `font-size`.
+- Make the navbar non-mandatory (useful for single-page websites).
+- More fail-proof "reduced motion" setting.
+- Move `prefers-reduced-motion` media query outside of the `:root`.
+- Only target needed elements for transitioning.
+- Provide all fonts from [Modern Font Stacks](https://modernfontstacks.com) (don't worry, these are just system font names).
+- Simplify `bg-color` variable.
+- Tweak active header animation.
+- Tweak heading sizes.
+
+### Removed
+
+- **[BREAKING]** Get rid of page/site links and replace with `external` class.
+
+### Fixed
+
+- Fix long post title sneaking under the archived/drafted post badge.
+- Fix the image shortcode having the source link not working.
+
+## [1.1.0] - 2024-04-29
+
+### Added
+
+- Add drafted and archived badges in the blog list.
+- Add Duckquill version to the stylesheet.
+- Add some bare-bones configuration in `theme.toml` (fixes failing build with empty user config).
+- Introduce a new configuration variable, `extra.comments.locale`; used for defining comment timestamp locale.
+
+### Changed
+
+- Change archived icon from warning to archive.
+- Change trigger warning/disclaimer warning icon to bigger, filled one.
+- Get rid of transparency and roundness in apple-touch-icon (as recommended by Apple).
+- Improve code comments in the config.
+- Remove ellipsis form the "Load Comments" button in the comments section.
+- Update copyright year.
+- Update project logo, favicon and metadata card.
+- Use [normalize.css](https://github.com/csstools/normalize.css) by csstools.
+- Use `get_url` for code highlighting stylesheets.
+
+### Removed
+
+- **[BREAKING]** Remove support for per-page/section emoji favicon.
+
+### Fixed
+
+- Fix code block "mark" element having an edge highlight.
+- Fix code blocks having every other line being darker in some complex cases.
+- Fix emoji favicon being cut-off.
+
+## [1.0.1] - 2024-04-05
+
+### Changed
+
+- Improve comment interactions animation and color (now same as in [Tuba](https://tuba.geopjr.dev)).
+- Use warning icon for statements instead of Unicode glyph, this should make it look better no matter what font the system uses (archived, trigger warning, disclaimer).
+- Use button style for issue reporting link on 404.
+- Make blockquote corners sharp.
+- Switch from milliseconds to seconds for transitions and animations.
+- Rewrite README; based on [libreivan's one](https://codeberg.org/libreivan/libreivan.com/src/branch/main/README.md)
+
+### Fixed
+
+- Fix capitalization of buttons.
+- Revert 2006d69bd4 since it broke "Go to Top" among others.
+
+[1.0.0] - 2024-04-03
+
+Initial release.
