@@ -53,10 +53,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add temporary `extra.fix_contrast` and `extra.fix_contrast_dark` config variables for cases where default white color doesn't provide enough contrast, e.g. in text selection and checkboxes.
-- Show status when there are no comments to load.
 - Add styling for the color picker element.
 - Add styling for the slider element.
+- Add temporary `extra.fix_contrast` and `extra.fix_contrast_dark` config variables for cases where default white color doesn't provide enough contrast, e.g. in text selection and checkboxes.
+- Show status when there are no comments to load.
 
 ### Changed
 
@@ -185,10 +185,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Make statement headings use normal line height.
-- Replace Django VSCode extension with Tera in "Tools Used".
-- Omit old-style type attributes (`type="text/css"`).
 - Make search bar pill shaped and same size as navbar.
+- Make statement headings use normal line height.
+- Omit old-style type attributes (`type="text/css"`).
+- Replace Django VSCode extension with Tera in "Tools Used".
 
 ### Fixed
 
@@ -216,19 +216,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - **[BREAKING]** Add support for multiple feeds introduced in Zola v0.19 (breaks support with Zola v0.18 and lower)
-- Allow making posts featured.
-- Support Zola's `updated` frontmatter variable.
-- Support Markdown in copyright text.
 - Add language meta tag.
+- Allow making posts featured.
+- Support Markdown in copyright text.
+- Support Zola's `updated` frontmatter variable.
 
 ### Changed
 
-- Recolor headings of drafted and archived posts in posts list.
-- Recolor links in the statements.
-- Make inline code smaller to better match height of regular text.
 - Add edge highlight to `details`.
 - Don't use `span` for post edit time.
 - Improve favicon and scripts loading logic.
+- Make inline code smaller to better match height of regular text.
+- Recolor headings of drafted and archived posts in posts list.
+- Recolor links in the statements.
 - Simplify design of drafted posts.
 - Use default line height for headings.
 
@@ -244,9 +244,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add i18n support.
 - Add "open post" button to comments.
 - Add external link icon to buttons that lead to external sites.
+- Add i18n support.
 - Add language switcher menu in the navbar (enabled automatically if site is availabe in more than one language).
 - Allow adding per-page/section stylesheets via the `extra.stylesheets` variable.
 - Allow setting custom copyright text via the new `config.extra.footer.copyright` config variable.
@@ -255,9 +255,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Make footer background-less.
 - Change the look and structure of footer links.
 - Make dialog buttons use `div` element instead of `p`.
+- Make footer background-less.
 - Make styles more consistent and adaptive (replace some pixel-based values with rem).
 - Make styles work with RTL languages.
 - Rewrite additional stylesheets loading logic.
@@ -267,8 +267,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
-- Remove some leftover code.
 - **[BREAKING]** Get rid of `config.extra.date_format` and `config.extra.comments.locale` and replace it
+- Remove some leftover code.
 with `date_format` and `date_locale` inside translation files.
 
 ### Fixed
@@ -288,7 +288,6 @@ with `date_format` and `date_locale` inside translation files.
 - Add section pointing out to Duckquill assets source.
 - Add section with tools used to create Duckquill.
 - Style checkboxes and radios.
-- 
 
 ### Changed
 
@@ -318,9 +317,9 @@ with `date_format` and `date_locale` inside translation files.
 - Add emoji "font" and use it on body.
 - Add optional copy code button.
 - Add optional Goatcounter analytics support.
-- Add top margin to [Johnvertisement](https://john.citrons.xyz).
 - Add proper support for heading anchors.
 - Add support for links and socials in footer.
+- Add top margin to [Johnvertisement](https://john.citrons.xyz).
 
 ### Changed
 
@@ -387,17 +386,17 @@ with `date_format` and `date_locale` inside translation files.
 ### Changed
 
 - Improve comment interactions animation and color (now same as in [Tuba](https://tuba.geopjr.dev)).
-- Use warning icon for statements instead of Unicode glyph, this should make it look better no matter what font the system uses (archived, trigger warning, disclaimer).
-- Use button style for issue reporting link on 404.
 - Make blockquote corners sharp.
-- Switch from milliseconds to seconds for transitions and animations.
 - Rewrite README; based on [libreivan's one](https://codeberg.org/libreivan/libreivan.com/src/branch/main/README.md)
+- Switch from milliseconds to seconds for transitions and animations.
+- Use button style for issue reporting link on 404.
+- Use warning icon for statements instead of Unicode glyph, this should make it look better no matter what font the system uses (archived, trigger warning, disclaimer).
 
 ### Fixed
 
 - Fix capitalization of buttons.
 - Revert 2006d69bd4 since it broke "Go to Top" among others.
 
-## [v1.0.0](https://codeberg.org/daudix/duckquill/compare/940c84f4ee...v1.0.0) - 2024-04-03
+## [1.0.0](https://codeberg.org/daudix/duckquill/compare/940c84f4ee...v1.0.0) - 2024-04-03
 
 Initial release.
