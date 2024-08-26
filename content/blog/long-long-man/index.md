@@ -6,8 +6,7 @@ date = 2017-01-01
 [taxonomies]
 tags = ["Honorificabilitudinitatibus"]
 [extra]
-toc = false
-archive = "This page is, in fact, not archived."
+featured = true
 +++
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut postea.

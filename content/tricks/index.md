@@ -31,7 +31,7 @@ You can make navbar have more classic look:
 ```scss
 #site-nav {
     top: 0;
-    margin-top: 0;
+    margin-block-start: 0;
     box-shadow: 0 0.75rem 1.5rem -1rem rgb(0 0 0 / 0.5);
     border-radius: 0;
     width: 100%;
@@ -68,7 +68,7 @@ Or you can make it sticked to top but not full-width:
 ```scss
 #site-nav {
     top: 0;
-    margin-top: 0;
+    margin-block-start: 0;
     box-shadow: 0 0.75rem 1.5rem -1rem rgb(0 0 0 / 0.5);
     border-radius: 0 0 calc(var(--rounded-corner) + 0.5rem) calc(var(--rounded-corner) + 0.5rem);
 
@@ -167,7 +167,7 @@ Don't like that fancy horizontal rule? Let's make it more modern:
 
 ```scss
 hr {
-    border-top: 0.25rem solid var(--fg-muted-2);
+    border-block-start: 0.25rem solid var(--fg-muted-2);
     width: 50%;
 
     &::after {

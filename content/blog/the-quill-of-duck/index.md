@@ -16,7 +16,6 @@ disclaimer = """
 - Don't take party escort submission position.
 - Don't interact with asbestos and moon rocks.
 """
-featured = true
 [extra.comments]
 host = "toot.community"
 user = "sungsphinx"

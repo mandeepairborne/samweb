@@ -14,8 +14,8 @@ video {
 
 	&.full-bleed,
 	&[src*="#full-bleed"] {
-		margin-right: calc((-100vw + 100%) / 2);
-		margin-left: calc((-100vw + 100%) / 2);
+		margin-inline-start: calc((-100vw + 100%) / 2);
+		margin-inline-end: calc((-100vw + 100%) / 2);
 		width: 100vw;
 		max-width: 100vw;
 	}

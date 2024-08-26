@@ -165,7 +165,7 @@ a {
 hr {
 	margin: 2rem auto;
 	border: none;
-	border-top: 0.1875rem double var(--fg-muted-2);
+	border-block-start: 0.1875rem double var(--fg-muted-2);
 	overflow: visible;
 	text-align: center;
 
@@ -188,7 +188,7 @@ dt {
 }
 
 dd {
-	margin-bottom: 1rem;
+	margin-block-end: 1rem;
 }
 
 aside {
