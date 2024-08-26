@@ -239,6 +239,35 @@ Alright, this one doesn't simplify anything, it just adds a CRT-like effect arou
 
 There's also a `cursor` class that you can add to a span with e.g. `█` character to simulate the terminal cursor. It doesn't work from inside Markdown code blocks though.
 
+#### YouTube
+
+Allows to embed a YouTube video using youtube-nocookie.
+
+Available variables are:
+
+- `autoplay`: Whether the video should autoplay.
+- `start`: On which second video should start.
+
+```jinja2
+{{/* youtube(id="0Da8ZhKcNKQ") */}}
+```
+
+{{ youtube(id="0Da8ZhKcNKQ") }}
+
+#### Vimeo
+
+Allows to embed a Vimeo video.
+
+Available variables are:
+
+- `autoplay`: Whether the video should autoplay.
+
+```jinja2
+{{/* vimeo(id="869483483") */}}
+```
+
+{{ vimeo(id="869483483") }}
+
 ### Description List (`<dl>`)
 
 ```html
