@@ -247,7 +247,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add "open post" button to comments.
 - Add external link icon to buttons that lead to external sites.
 - Add i18n support.
-- Add language switcher menu in the navbar (enabled automatically if site is availabe in more than one language).
+- Add language switcher menu in the navbar (enabled automatically if site is available in more than one language).
 - Allow adding per-page/section stylesheets via the `extra.stylesheets` variable.
 - Allow setting custom copyright text via the new `config.extra.footer.copyright` config variable.
 - Button-like style for footer's "Powered by" links.
