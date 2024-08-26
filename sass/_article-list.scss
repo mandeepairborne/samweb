@@ -42,6 +42,40 @@
 			}
 		}
 
+		&.draft,
+		&.archive,
+		&.featured,
+		&.hot,
+		&.poor {
+			&::before {
+				-webkit-mask-size: cover;
+				position: absolute;
+				top: 50%;
+				right: -3rem;
+				transform: translateY(-50%);
+				opacity: 0.5;
+				z-index: -1;
+				mask-size: cover;
+				transition: var(--transition-longer);
+				width: 12rem;
+				height: 12rem;
+				content: "";
+
+				:root[dir*="rtl"] & {
+					right: unset;
+					left: -3rem;
+				}
+			}
+
+			&:hover::before {
+				transform: translateY(-50%) rotate(-10deg) scale(1.5);
+			}
+
+			:root[dir*="rtl"] &:hover::before {
+				transform: translateY(-50%) rotate(10deg) scale(1.5);
+			}
+		}
+
 		&.draft {
 			--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M12.277.832c-.578.008-1.168.23-1.691.754l-9 9A2 2 0 0 0 1 12v3h3c.531 0 1.04-.21 1.414-.586l9-9c1.79-1.789.082-4.39-1.89-4.57-.083-.012-.165-.012-.247-.012M10.5 4.437 11.563 5.5 4.5 12.563 3.438 11.5zm0 0'/%3E%3C/svg%3E");
 			background-color: var(--fg-muted-1);
@@ -54,10 +88,6 @@
 
 			&:hover {
 				outline-color: var(--fg-muted-4);
-
-				&::before {
-					transform: translateY(-50%) rotate(-10deg) scale(1.5);
-				}
 			}
 
 			h3 a {
@@ -88,10 +118,6 @@
 
 			&:hover {
 				outline-color: var(--purple-fg);
-
-				&::before {
-					transform: translateY(-50%) rotate(-10deg) scale(1.5);
-				}
 			}
 
 			h3 a {
@@ -125,6 +151,10 @@
 				&::before {
 					transform: translateY(-50%) rotate(62deg) scale(1.5);
 				}
+
+				:root[dir*="rtl"] &::before {
+					transform: translateY(-50%) rotate(-62deg) scale(1.5);
+				}
 			}
 
 			h3 a {
@@ -155,10 +185,6 @@
 
 			&:hover {
 				outline-color: var(--red-fg);
-
-				&::before {
-					transform: translateY(-50%) rotate(-10deg) scale(1.5);
-				}
 			}
 
 			h3 a {
@@ -188,10 +214,6 @@
 
 			&:hover {
 				outline-color: var(--brown-fg);
-
-				&::before {
-					transform: translateY(-50%) rotate(-10deg) scale(1.5);
-				}
 			}
 
 			h3 a {
@@ -206,36 +228,6 @@
 					background-color: var(--brown-fg);
 					color: var(--fg-contrast);
 				}
-			}
-		}
-
-		&.draft,
-		&.archive,
-		&.featured,
-		&.hot,
-		&.poor {
-			&::before {
-				-webkit-mask-size: cover;
-				position: absolute;
-				top: 50%;
-				right: -3rem;
-				transform: translateY(-50%);
-				opacity: 0.5;
-				z-index: -1;
-				mask-size: cover;
-				transition: var(--transition-longer);
-				width: 12rem;
-				height: 12rem;
-				content: "";
-
-				:root[dir*="rtl"] & {
-					right: unset;
-					left: -3rem;
-				}
-			}
-
-			:root[dir*="rtl"] &:hover::before {
-				transform: translateY(-50%) rotate(-62deg) scale(1.5);
 			}
 		}
 
