@@ -7,7 +7,7 @@ updated = "2024-06-21"
 [taxonomies]
 tags = ["Demo", "Test"]
 [extra]
-banner = "quill.png#pixels"
+banner = "blog/the-quill-of-duck/quill.png"
 toc = true
 trigger = "This page contains blackjack and hookers, and bad jokes such as this one."
 disclaimer = """
@@ -25,6 +25,10 @@ id = "111789185826519979"
 {% alert(tip=true) %}
 Recommended banner dimensions are 2:1 aspect ratio and 1920x960 resolution.  
 Other sizes will also work, but will be cut off at the bottom/won't be high enough.
+{% end %}
+
+{% alert(note=true) %}
+The path to the banner should be the same as the resulting path to the post, e.g. `blog/the-quill-of-duck/quill.png`. If the folder name has a timestamp, remove it. You can simply open the post in your browser and copy the path from the URL.
 {% end %}
 
 ## The what?

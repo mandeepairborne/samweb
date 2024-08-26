@@ -7,7 +7,7 @@
 <article>
 	{%- if page.extra.banner -%}
 		<div id="banner-container">
-			<img id="banner" class="full-bleed" src="{{ current_url | safe }}{{ page.extra.banner }}" {%- if config.markdown.lazy_async_image -%}decoding="async" loading="lazy"{%- endif -%} />
+			<img id="banner" class="full-bleed{% if page.extra.banner_pixels %} pixels{% endif %}" src="{{ get_url(path=page.extra.banner, lang=lang)}}" {% if config.markdown.lazy_async_image %}decoding="async" loading="lazy"{% endif %} />
 		</div>
 	{%- endif -%}
 
@@ -15,13 +15,13 @@
 
 	{%- if page.date -%}
 		<small>
-			<time datetime="{{ page.date | date(format=' %+') }}" pubdate>
+			<time datetime="{{ page.date | date(format=' %+') }}">
 				{{- macros_translate::translate(key="published", default="Published on", language_strings=language_strings) }}
 				{{ page.date | date(format=date_format, locale=date_locale) -}}
 			</time>
 			{%- if page.updated -%}
 				<span> • </span>
-				<time datetime="{{ page.updated | date(format=' %+') }}" pubdate>
+				<time datetime="{{ page.updated | date(format=' %+') }}">
 					{{- macros_translate::translate(key="updated", default="Updated on", language_strings=language_strings) }}
 					{{ page.updated | date(format=date_format, locale=date_locale) -}}
 				</time>
