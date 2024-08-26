@@ -26,10 +26,10 @@
 						{{- macros_translate::translate(key="archived", default="Archived", language_strings=language_strings) -}}
 					</span>
 				{%- endif %}
-				{%- if page.extra.poor %}
-					<span class="poor-badge">
+				{%- if page.extra.featured %}
+					<span class="featured-badge">
 						<i class="icon"></i>
-						{{- macros_translate::translate(key="poor", default="Poor", language_strings=language_strings) -}}
+						{{- macros_translate::translate(key="featured", default="Featured", language_strings=language_strings) -}}
 					</span>
 				{%- endif %}
 				{%- if page.extra.hot %}
@@ -38,10 +38,10 @@
 						{{- macros_translate::translate(key="hot", default="Hot", language_strings=language_strings) -}}
 					</span>
 				{%- endif %}
-				{%- if page.extra.featured %}
-					<span class="featured-badge">
+				{%- if page.extra.poor %}
+					<span class="poor-badge">
 						<i class="icon"></i>
-						{{- macros_translate::translate(key="featured", default="Featured", language_strings=language_strings) -}}
+						{{- macros_translate::translate(key="poor", default="Poor", language_strings=language_strings) -}}
 					</span>
 				{%- endif %}
 			</div>
