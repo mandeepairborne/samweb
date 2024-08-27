@@ -5,31 +5,58 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v4.6.0...main)
+## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v4.7.0...main)
+
+## [4.7.0](https://codeberg.org/daudix/duckquill/compare/v4.6.0...v4.7.0) - 2024-08-27
+
+### Added
+
+- Add CHANGELOG.md (#60).
+- Add hot/poor article types (#58).
+- Add metadata card generation from post banner if present (#51).
+- Add navbar menus (#56).
+- Add simple variable overrides for stylesheets (#55).
+- Add Vimeo embed shortcode.
+- Add YouTube embed shortcode (#57).
+
+### Changed
+
+- Don't duplicate icons in the resulting CSS.
+- Move article list to a partial.
+- Rewrite `_nav.scss`.
+- Use flex for post heading/badge (#53).
+- Use modern RGB format (#54).
+- Use page/section description instead of config if available (#50).
+
+### Fixed
+
+- Close all other navbar dropdowns when different one opens (#59).
+- New active navbar item indication that doesn't escape navbar on mobile (#62).
+- Prevent navbar from obfuscating post banner on mobile (#61).
 
 ## [4.6.0](https://codeberg.org/daudix/duckquill/compare/v4.5.0...v4.6.0) - 2024-08-23
 
 ### Added
 
-- Add missing "By $AUTHOR" string to i18n files.
+- Add missing "By $AUTHOR" string to i18n files (#52).
 - Add missing edge highlight to home button.
 - Utilize flex power for navbar adaptivity.
 
 ### Changed
 
-- Change theme switcher icon depending on currently selected mode.
+- Change theme switcher icon depending on currently selected mode (#48).
 - Update "Tricks" page to reflect the recent navabr changes.
 
 ### Fixed
 
-- Fix the Feed button in multilingual sites.
+- Fix the Feed button in multilingual sites (https://codeberg.org/muelsyse/pages/issues/12).
 - Remove left/right margins from `<figure>`.
 
 ## [4.5.0](https://codeberg.org/daudix/duckquill/compare/v4.4.0...v4.5.0) - 2024-08-18
 
 ### Added
 
-- Add manual light/dark mode switcher.
+- Add manual light/dark mode switcher (#5).
 
 ### Changed
 
@@ -40,12 +67,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add home icon to the home button.
-- Add top/bottom margin to inline images on mobile.
+- Add top/bottom margin to inline images on mobile (#46).
 - Add unique active style for home button.
 
 ### Changed
 
-- Greatly optimize and simplify CRT styles
+- Greatly optimize and simplify CRT styles.
 - Improve adaptivity of navbar on mobile.
 - Use `--contrast-color` for footer's "Powered by" links.
 
@@ -55,13 +82,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add styling for the color picker element.
 - Add styling for the slider element.
-- Add temporary `extra.fix_contrast` and `extra.fix_contrast_dark` config variables for cases where default white color doesn't provide enough contrast, e.g. in text selection and checkboxes.
+- Add temporary `extra.fix_contrast` and `extra.fix_contrast_dark` config variables for cases where default white color doesn't provide enough contrast, e.g. in text selection and checkboxes (#43).
 - Show status when there are no comments to load.
 
 ### Changed
 
-- Allow custom styles to override primary color
-- Increase fleuron size
+- Allow custom styles to override primary color.
+- Increase fleuron size.
 - Make post tags wrap properly on mobile.
 
 ### Fixed
@@ -118,8 +145,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add "Tricks" page with some useful tips and tricks.
-- Add estimated read time counter to articles.
+- Add "Tricks" page with some useful tips and tricks (#28).
+- Add estimated read time counter to articles (#36).
 - Allow setting different primary color for dark mode.
 - Support image/video/gif/audio attachments in comments.
 
@@ -155,7 +182,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Allow all statements on regular pages; not just archive.
 - Allow navbar/footer to grow past container width.
 - Change default locale to `en_US`.
-- Countless minor style tweaks
+- Countless minor style tweaks.
 - Decrease margin between icon and statement heading.
 - Display all post authors and not only first one.
 - Float tags to the right in the post card and post itself.
@@ -164,7 +191,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Rename some color variables.
 - Revamp copy button; instead of putting it on top of the code block, use a header with code language and copy button. It also has a nice copy animation.
 - Revamp the next/previous post nav.
-- Rewrite the demo.
+- Rewrite the demo (#27).
 - Update icons.
 - Use `:root` instead of `html` in CSS.
 - Use margins instead of untrimmed spaces.
@@ -198,7 +225,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add search functionality.
+- Add search functionality (#26).
 - Allow floating images to the start/end of a paragraph.
 - Allow making images full-bleed, useful for article banners.
 - Make accordion slimmer.
@@ -206,7 +233,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- **[BREAKING]** Raise the minimal Zola version to v0.19.0
+- **[BREAKING]** Raise the minimal Zola version to v0.19.0.
 - Make link underlines consistent across browsers.
 - Replace all `px` values with `rem` for better responsiveness. E.g the whole UI can be scaled by just changing HTML font size.
 - Tone down the inline code element and checkbox outline.
@@ -215,11 +242,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- **[BREAKING]** Add support for multiple feeds introduced in Zola v0.19 (breaks support with Zola v0.18 and lower)
+- **[BREAKING]** Add support for multiple feeds introduced in Zola v0.19 (breaks support with Zola v0.18 and lower).
 - Add language meta tag.
 - Allow making posts featured.
 - Support Markdown in copyright text.
-- Support Zola's `updated` frontmatter variable.
+- Support Zola's `updated` front matter variable.
 
 ### Changed
 
@@ -246,7 +273,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add "open post" button to comments.
 - Add external link icon to buttons that lead to external sites.
-- Add i18n support.
+- Add i18n support (#24).
 - Add language switcher menu in the navbar (enabled automatically if site is available in more than one language).
 - Allow adding per-page/section stylesheets via the `extra.stylesheets` variable.
 - Allow setting custom copyright text via the new `config.extra.footer.copyright` config variable.
@@ -325,7 +352,7 @@ with `date_format` and `date_locale` inside translation files.
 
 - **[BREAKING]** Initial Sass refactoring.
 - **[BREAKING]** Remove the unused `--transition-bezier` CSS variable.
-- **[BREAKING]** Rename `--content-width` CSS variable to `--container-width`
+- **[BREAKING]** Rename `--content-width` CSS variable to `--container-width`.
 - **[BREAKING]** Rename `blog.html` and `blog_list.html` templates to `article.html` and `article_list.html` respectively.
 - Adjust line height of headings.
 - Change disclaimer heading from plural to singular.
@@ -347,7 +374,7 @@ with `date_format` and `date_locale` inside translation files.
 
 ### Fixed
 
-- Fix long post title sneaking under the archived/drafted post badge.
+- Fix long post title sneaking under the archived/drafted post badge (#23).
 - Fix the image shortcode having the source link not working.
 
 ## [1.1.0](https://codeberg.org/daudix/duckquill/compare/v1.0.1...v1.1.0) - 2024-04-29
@@ -377,7 +404,7 @@ with `date_format` and `date_locale` inside translation files.
 
 ### Fixed
 
-- Fix code block "mark" element having an edge highlight.
+- Fix code block `mark` element having an edge highlight.
 - Fix code blocks having every other line being darker in some complex cases.
 - Fix emoji favicon being cut-off.
 
