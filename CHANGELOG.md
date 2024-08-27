@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Don't duplicate icons in the resulting CSS.
 - Move article list to a partial.
+- Refreshed look of articles in the article list.
 - Rewrite `_nav.scss`.
 - Use flex for post heading/badge (#53).
 - Use modern RGB format (#54).
