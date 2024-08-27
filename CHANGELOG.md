@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Don't duplicate icons in the resulting CSS.
 - Move article list to a partial.
+- Reduce nesting depth in `_footer.scss`
 - Refreshed look of articles in the article list.
 - Rewrite `_nav.scss`.
 - Use flex for post heading/badge (#53).
