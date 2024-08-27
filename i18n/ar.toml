@@ -12,6 +12,7 @@ date_locale = "ar_SA"
 Blog = "المدونة"
 Demo = "العرض"
 Tricks = "الحيل"
+Coffee = "القهوة"
 
 all_tags = "انظر جميع العلامات"
 archived = "الأرشيف"
