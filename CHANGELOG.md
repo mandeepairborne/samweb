@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Don't duplicate icons in the resulting CSS.
+- Hide CRTs from screen readers (#64).
 - Move article list to a partial.
 - Reduce nesting depth in `_footer.scss`
 - Refreshed look of articles in the article list.
