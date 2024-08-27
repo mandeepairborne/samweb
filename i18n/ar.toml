@@ -9,6 +9,7 @@ date_locale = "ar_SA"
 
 # Menu items.
 # Should match the names in config.extra.nav.links and config.extra.footer.links.
+Links = "الروابط"
 Blog = "المدونة"
 Demo = "العرض"
 Tricks = "الحيل"
