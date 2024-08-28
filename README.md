@@ -37,4 +37,4 @@ There are several ways to contribute to this project:
 
 When making any sort of contribution, please make sure to follow [Forgejo's Code of Conduct](https://codeberg.org/forgejo/code-of-conduct). If you don't have the time to read it, just know that all you have to do is be nice, and you'll be just fine.
 
-*</> with <3 by [daudix](https://daudix.codeberg.page) | README based on [libreivan's](https://codeberg.org/libreivan/libreivan.com)*
+*</> with <3 by [daudix](https://daudix.one) | README based on [libreivan's](https://codeberg.org/libreivan/libreivan.com)*
