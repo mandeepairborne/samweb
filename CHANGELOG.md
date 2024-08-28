@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v4.7.0...main)
 
+## [4.7.1](https://codeberg.org/daudix/duckquill/compare/v4.7.0...v4.7.1) - 2024-08-28
+
+### Changed
+
+- Don't use `safe` on `primary_color` default variables since they don't need it.
+- Make commented-out config variables easier to find.
+
+### Fixed
+
+- Don't wrap sentences in navbar dropdowns.
+
 ## [4.7.0](https://codeberg.org/daudix/duckquill/compare/v4.6.0...v4.7.0) - 2024-08-27
 
 ### Added

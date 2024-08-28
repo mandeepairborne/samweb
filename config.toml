@@ -55,7 +55,9 @@ taxonomies = [{ name = "tags", feed = true }]
 # Which theme should be used by default (light/dark).
 # Strongly recommended to use this only with the manual theme switcher enabled,
 # it's important for a11y.
+#
 # default_theme = "dark"
+#
 # Sets theme and browser theme color.
 # See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
 primary_color = "#ff7800"
@@ -67,27 +69,35 @@ primary_color_dark = "#ffa348"
 primary_color_dark_alpha = "rgb(255 163 72 / 0.2)"
 # Whether to fix low contrast in text selection, checkboxes, etc.
 # Use only if the default doesn't provide enough contrast, e.g. the primary color is set to yellow.
+#
 # fix_contrast = true
+#
 # Ditto but for the dark mode.
 fix_contrast_dark = true
 # Use emoji as a favicon.
 # Only one emoji is being rendered, everything else is truncated.
+#
 # emoji_favicon = "🦆🪶"
+#
 # URL to website's issue tracker
 issues_url = "https://codeberg.org/daudix/duckquill/issues"
 # URL to website's source code
 source_url = "https://codeberg.org/daudix/duckquill"
 # Additional CSS stylesheets; expects them to be in the "./static/" directory.
 # If you are using Sass it will be generated there automatically.
+#
 # stylesheets = [
 #   "YOUR_STYLE.css",
 #   "ALSO_YOUR_STYLE.css"
 # ]
+#
 # Additional JavaScript scripts; expects them to be in the "./static/" directory.
+#
 # scripts = [
 #   "YOUR_SCRIPT.js",
 #   "ALSO_YOUR_SCRIPT.js"
 # ]
+#
 # Whether to show "copy code" button on all code blocks
 # that have the language set.
 # See https://www.getzola.org/documentation/content/syntax-highlighting/
@@ -143,6 +153,7 @@ show_powered_by = true
 # Whether to show link to website source
 show_source = false
 # Custom copyright text
+#
 # copyright = "© *Aperture* **Science** ~~Innovators~~, `1972`"
 
 # Based on https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
@@ -164,6 +175,8 @@ show_qr = true
 # GoatCounter analytics; enabled only if present in config.
 [extra.goatcounter]
 # Your GoatCounter server; goatcounter.com is used by default.
+#
 # host = "YOUR_SERVER"
+#
 # Your GoatCounter username
 user = "duckquill"
