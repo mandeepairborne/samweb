@@ -86,6 +86,14 @@ pre table td:nth-of-type(1) {
 
 ## Extra
 
+### KaTeX
+
+Duckquill can render LaTeX using the [KaTeX](https://katex.org) library. It can be enabled using the `extra.katex` config variable.
+
+$$\relax f(x) = \int_{-\infty}^\infty
+    \hat{f}(\xi)\,e^{2 \pi i \xi x}
+    \,d\xi$$
+
 ### Shortcodes
 
 Duckquill provides a few useful [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) that simplify some tasks. They can be used on all pages.

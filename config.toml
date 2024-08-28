@@ -105,7 +105,12 @@ show_copy_button = true
 # Whether to show estimated read time in posts.
 # Calculated using the simple math: number of words ÷ words per minute.
 show_read_time = true
+#
 # words_per_minute = "200"
+#
+# Whether to enable the KaTeX library for rendering LaTeX.
+# Note: This will make your page significantly heavier.
+katex = true
 
 [extra.nav]
 # Whether to show the Atom/RSS feed button in the nav
