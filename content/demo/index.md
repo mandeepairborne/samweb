@@ -90,9 +90,11 @@ pre table td:nth-of-type(1) {
 
 Duckquill can render LaTeX using the [KaTeX](https://katex.org) library. It can be enabled using the `extra.katex` config variable.
 
-$$\relax f(x) = \int_{-\infty}^\infty
-    \hat{f}(\xi)\,e^{2 \pi i \xi x}
-    \,d\xi$$
+```latex
+$$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi)\,e^{2 \pi i \xi x}\,d\xi$$
+```
+
+$$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi)\,e^{2 \pi i \xi x}\,d\xi$$
 
 ### Shortcodes
 
