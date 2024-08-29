@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add separator between article description and details.
 
+### Removed
+
+- Remove goatcounter noscript tracking pixel from head.
+
 ### Fixed
 
 - Fix missing margin between article card heading and its details if no description is set (#68).
