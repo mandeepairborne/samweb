@@ -612,7 +612,9 @@ Blah blah <q>Inline Quote</q> hmm.
 
   function update(event) {
     document.documentElement.style.setProperty('--primary-color', event.target.value);
+    console.log(event.target.value);
     document.documentElement.style.setProperty('--primary-color-alpha', hexToRGB(event.target.value, 0.2));
+    console.log(hexToRGB(event.target.value, 0.2));
   }
 </script>
 <!-- End -->
