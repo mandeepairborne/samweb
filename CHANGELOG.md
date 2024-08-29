@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v4.7.1...main)
 
+## [4.8.0](https://codeberg.org/daudix/duckquill/compare/v4.7.1...v4.8.0)
+
 ### Added
 
 - Add a separator between the article description and details.
@@ -17,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Make button hover styles consistent across all buttons.
+- Make navbar modifications also affect menu buttons (#69, nice).
 
 ### Removed
 
