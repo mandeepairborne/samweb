@@ -96,6 +96,12 @@ $$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi)\,e^{2 \pi i \xi x}\,d\xi$$
 
 $$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi)\,e^{2 \pi i \xi x}\,d\xi$$
 
+```latex
+$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi)\,e^{2 \pi i \xi x}\,d\xi$
+```
+
+$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi)\,e^{2 \pi i \xi x}\,d\xi$
+
 ### Shortcodes
 
 Duckquill provides a few useful [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) that simplify some tasks. They can be used on all pages.
@@ -587,7 +593,7 @@ Blah blah <q>Inline Quote</q> hmm.
 <script type="text/javascript">
   let colorPicker;
   const defaultColor = window.getComputedStyle(document.documentElement).getPropertyValue("--primary-color");
-  console.log(defaultColor);
+  console.log("Default Color: " + defaultColor);
 
   window.addEventListener("load", startup, false);
 
@@ -611,10 +617,10 @@ Blah blah <q>Inline Quote</q> hmm.
   }
 
   function update(event) {
+    console.log("Primary Color: " + event.target.value);
+    console.log("Primary Color Alpha: " + hexToRGB(event.target.value, 0.2));
     document.documentElement.style.setProperty('--primary-color', event.target.value);
-    console.log(event.target.value);
     document.documentElement.style.setProperty('--primary-color-alpha', hexToRGB(event.target.value, 0.2));
-    console.log(hexToRGB(event.target.value, 0.2));
   }
 </script>
 <!-- End -->
