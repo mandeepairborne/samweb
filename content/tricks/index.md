@@ -45,6 +45,7 @@ You can make navbar have more classic look:
 
     nav ul li {
         a,
+        summary,
         &#search button,
         &#language-switcher details summary,
         &#theme-switcher details summary {
@@ -74,6 +75,7 @@ Or you can make it sticked to top but not full-width:
 
     nav ul li {
         a,
+        summary,
         &#search button,
         &#language-switcher details summary,
         &#theme-switcher details summary {
