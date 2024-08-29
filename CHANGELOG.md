@@ -9,19 +9,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add optional LaTeX rendering using the KaTeX library (#65).
+- Add a separator between the article description and details.
+- Highlight the button of the currently selected theme in the theme switcher.
+- Indicate active navbar items for footer links.
+- Support optional LaTeX rendering using the KaTeX library (#65).
 
 ### Changed
 
-- Add separator between article description and details.
+- Make button hover styles consistent across all buttons.
 
 ### Removed
 
-- Remove goatcounter noscript tracking pixel from head.
+- Remove GoatCounter `noscript` tracking pixel from the `<head>` section.
 
 ### Fixed
 
-- Fix missing margin between article card heading and its details if no description is set (#68).
+- Fix missing margin between the article card heading and its details when no description is set (#68).
 - Fix tags not floating to the end of the article card.
 
 ## [4.7.1](https://codeberg.org/daudix/duckquill/compare/v4.7.0...v4.7.1) - 2024-08-28

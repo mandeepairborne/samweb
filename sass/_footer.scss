@@ -42,11 +42,20 @@
 			text-align: center;
 			text-decoration: none;
 
+			&.active {
+				background-color: var(--primary-color-alpha);
+				color: var(--primary-color);
+
+				&:hover {
+					background-color: var(--primary-color);
+					color: var(--contrast-color);
+				}
+			}
+
 			&:hover {
 				box-shadow: var(--edge-highlight);
-				background-color: var(--primary-color);
-				color: var(--contrast-color);
-				text-decoration: none;
+				background-color: var(--fg-muted-1);
+				color: var(--fg-muted-5);
 			}
 
 			&:active {
@@ -79,7 +88,7 @@
 				background-color: var(--fg-muted-1);
 
 				.icon {
-					background-color: var(--primary-color);
+					background-color: var(--fg-muted-5);
 				}
 			}
 

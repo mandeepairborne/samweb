@@ -1,6 +1,3 @@
-// Initial code taken from https://github.com/welpo/tabi/blob/6ba0e541046b1f0b33fa177d5569cebe9d76bf4c/static/js/initializeTheme.js
-// and https://github.com/welpo/tabi/blob/6ba0e541046b1f0b33fa177d5569cebe9d76bf4c/static/js/themeSwitcher.js
-
 // Theme Initialization
 (function () {
 	// Get the default theme from the HTML data-theme attribute.
@@ -44,6 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		// Update icon class based on the selected theme.
 		updateIconClass(theme);
+
+		// Update the active button based on the selected theme.
+		updateActiveButton(theme);
 	}
 
 	function resetTheme() {
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 	function updateIconClass(theme) {
-		const iconElement = document.querySelector("#theme-switcher summary i.icon");
+		const iconElement = document.querySelector("#theme-switcher summary .icon");
 
 		// Remove any existing theme classes
 		iconElement.classList.remove("light", "dark");
@@ -73,9 +73,23 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 
+	function updateActiveButton(theme) {
+		// Remove .active class from all buttons
+		document.querySelectorAll('#theme-switcher button').forEach(button => {
+			button.classList.remove('active');
+		});
+
+		// Add .active class to the button corresponding to the current theme
+		const activeButton = document.querySelector(`#theme-${theme}`);
+		if (activeButton) {
+			activeButton.classList.add('active');
+		}
+	}
+
 	// Update icon class on page load based on current theme
 	const currentTheme = localStorage.getItem("theme") || window.defaultTheme || "system";
 	updateIconClass(currentTheme);
+	updateActiveButton(currentTheme);
 
 	// Make the switchTheme function accessible globally
 	window.switchTheme = switchTheme;

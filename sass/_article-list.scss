@@ -91,7 +91,7 @@
 			}
 
 			&:hover {
-				outline-color: var(--fg-muted-4);
+				outline-color: var(--fg-muted-5);
 			}
 
 			h3 a {
@@ -100,10 +100,10 @@
 
 			.tags a {
 				background-color: var(--fg-muted-1);
-				color: var(--fg-muted-4);
+				color: var(--fg-muted-5);
 
 				&:hover {
-					background-color: var(--fg-muted-4);
+					background-color: var(--fg-muted-5);
 					color: var(--fg-contrast);
 				}
 			}
@@ -264,12 +264,12 @@
 
 		.draft-badge {
 			background-color: var(--fg-muted-1);
-			color: var(--fg-muted-4);
+			color: var(--fg-muted-5);
 
 			.icon {
 				-webkit-mask-image: var(--icon);
 				mask-image: var(--icon);
-				background-color: var(--fg-muted-4);
+				background-color: var(--fg-muted-5);
 			}
 		}
 
