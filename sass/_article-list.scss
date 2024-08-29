@@ -321,10 +321,15 @@
 			display: flex;
 			flex-wrap: nowrap;
 			justify-content: space-between;
+			align-items: center;
 			gap: 0.25rem;
 			margin-block-start: 1rem;
 			border-block-start: max(1px, 0.0625rem) solid var(--fg-muted-2);
 			padding-block-start: 0.5rem;
+
+			small {
+				line-height: 1.25;
+			}
 		}
 	}
 }
