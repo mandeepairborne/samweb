@@ -32,13 +32,17 @@
 			margin: 0;
 		}
 
-		.tags a {
-			background-color: var(--primary-color-alpha);
-			color: var(--primary-color);
+		.tags {
+			justify-content: flex-end;
 
-			&:hover {
-				background-color: var(--primary-color);
-				color: var(--contrast-color);
+			a {
+				background-color: var(--primary-color-alpha);
+				color: var(--primary-color);
+	
+				&:hover {
+					background-color: var(--primary-color);
+					color: var(--contrast-color);
+				}
 			}
 		}
 
@@ -236,7 +240,7 @@
 		.featured-badge,
 		.hot-badge,
 		.poor-badge {
-			display: block;
+			display: inline-block;
 			box-shadow: var(--edge-highlight);
 			border-radius: 999px;
 			padding: 0.5rem 0.75rem;
@@ -315,9 +319,12 @@
 
 		.details {
 			display: flex;
-			flex-wrap: wrap;
+			flex-wrap: nowrap;
 			justify-content: space-between;
 			gap: 0.25rem;
+			margin-block-start: 1rem;
+			border-block-start: max(1px, 0.0625rem) solid var(--fg-muted-2);
+			padding-block-start: 0.5rem;
 		}
 	}
 }

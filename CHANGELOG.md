@@ -7,7 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v4.7.1...main)
 
-- Add optional LaTeX rendering using the KaTeX library.
+### Added
+
+- Add optional LaTeX rendering using the KaTeX library (#65).
+
+### Changed
+
+- Add separator between article description and details.
+
+### Fixed
+
+- Fix missing margin between article card heading and its details if no description is set (#68).
+- Fix tags not floating to the end of the article card.
 
 ## [4.7.1](https://codeberg.org/daudix/duckquill/compare/v4.7.0...v4.7.1) - 2024-08-28
 

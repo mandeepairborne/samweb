@@ -127,7 +127,7 @@
     function formatSearchResultItem(item, terms) {
         return '<div class="item">'
             + `<a href="${item.ref}">${item.doc.title}</a>`
-            + `<div>${makeTeaser(item.doc.body, terms)}</div>`
+            + `<span>${makeTeaser(item.doc.body, terms)}</span>`
             + '</div>';
     }
 
