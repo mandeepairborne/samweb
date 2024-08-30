@@ -19,6 +19,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add margin between comment author name and timestamp.
 - Make comment timestamp more subtle.
+- Reduce the target heading transition time.
+- Reduce top margin of the target heading.
 - Set socials icons as CSS variables and not inline styles.
 - Tweak padding of verified instance badge.
 - Use more fitting cursors in some contexts.

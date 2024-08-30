@@ -49,8 +49,8 @@ body {
 // Make focused anchor not get covered by nav,
 // and flash it with primary color when jumping to it
 :target:not(#main) {
-	transition: all var(--transition-longer), scroll-margin-block-start 0s;
-	scroll-margin-block-start: 20vh;
+	transition: all var(--transition), scroll-margin-block-start 0s;
+	scroll-margin-block-start: 15vh;
 	color: var(--primary-color);
 	text-shadow: var(--primary-color-alpha) 0 0 0.25rem, var(--primary-color) 0 0 0.75rem;
 }
