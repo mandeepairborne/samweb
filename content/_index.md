@@ -155,6 +155,7 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and app
 - [enriquekesslerm.com](https://enriquekesslerm.com)
 - [gregorni.gitlab.io](https://gregorni.gitlab.io)
 - [ikergimenez.neocities.org](https://ikergimenez.neocities.org)
+- [kaipeacock.com](https://kaipeacock.com)
 - [luciengheerbrant.com](https://luciengheerbrant.com)
 - [lukoktonos.com](http://www.lukoktonos.com)
 - [mourelask.xyz](https://mourelask.xyz)

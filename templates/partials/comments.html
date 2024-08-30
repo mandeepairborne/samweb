@@ -81,6 +81,7 @@
 
 			let loadCommentsButton = document.getElementById("load-comments");
 			loadCommentsButton.innerHTML = "{{ macros_translate::translate(key='loading', default='Loading', language_strings=language_strings) }}…";
+			loadCommentsButton.disabled = true;
 
 			fetch("https://{{ host }}/api/v1/statuses/{{ id }}/context")
 				.then(function (response) {
@@ -200,6 +201,7 @@
 							let timestamp = document.createElement("time");
 							timestamp.setAttribute("datetime", status.created_at);
 							timestamp.appendChild(permalink);
+							permalink.classList.add("external");
 
 							let main = document.createElement("main");
 							main.setAttribute("itemprop", "text");
@@ -351,6 +353,12 @@
 					}
 
 					loadCommentsButton.innerHTML = "{{ macros_translate::translate(key='reload', default='Reload', language_strings=language_strings) }}";
+				})
+				.catch(function (error) {
+					console.error('Error loading comments:', error);
+				})
+				.finally(function () {
+					loadCommentsButton.disabled = false;
 				});
 		}
 	</script>

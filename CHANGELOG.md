@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v4.7.1...main)
 
+### Added
+
+- Add `external` class to comment timestamp.
+- Add hover state to slider thumb.
+- Add loading animation to "Load Comments" button.
+- Add zoom-on-hover to custom comment emojis.
+- Style mentions and hashtags.
+
+### Changed
+
+- Add margin between comment author name and timestamp.
+- Make comment timestamp more subtle.
+- Set socials icons as CSS variables and not inline styles.
+- Tweak padding of verified instance badge.
+- Use more fitting cursors in some contexts.
+
 ## [4.8.0](https://codeberg.org/daudix/duckquill/compare/v4.7.1...v4.8.0)
 
 ### Added

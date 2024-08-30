@@ -97,6 +97,8 @@
 			}
 
 			.icon {
+				-webkit-mask-image: var(--icon);
+				mask-image: var(--icon);
 				transition: var(--transition);
 				background-color: var(--fg-muted-4);
 				width: 1.5rem;

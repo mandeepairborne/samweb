@@ -17,6 +17,17 @@ disclaimer = """
 - Don't interact with asbestos and moon rocks.
 """
 [extra.comments]
+# Long thread with image
+#
+# host = "mastodon.social"
+# user = "brownpau"
+# id = "104529877688537579"
+#
+# Thread with multiple images per post
+#
+# host = "mastodon.blaede.family"
+# user = "cassidy"
+# id = "112774854109302186"
 host = "toot.community"
 user = "sungsphinx"
 id = "111789185826519979"

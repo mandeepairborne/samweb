@@ -5,6 +5,7 @@ input[type="color"] {
 	position: relative;
 	appearance: none;
 	transition: var(--transition);
+	cursor: pointer;
 	border: 0.15rem solid var(--fg-muted-2);
 	background-color: var(--fg-muted-1);
 	width: 1rem;
@@ -119,6 +120,7 @@ input[type="range"] {
 	-webkit-appearance: none;
 	appearance: none;
 	transition: var(--transition);
+	cursor: pointer;
 	box-shadow: var(--edge-highlight);
 	border-radius: 999px;
 	background: var(--primary-color);
@@ -128,23 +130,42 @@ input[type="range"] {
 	&::-webkit-slider-thumb {
 		-webkit-appearance: none;
 		appearance: none;
-		cursor: pointer;
+		transition: var(--transition);
+		cursor: grab;
 		box-shadow: var(--shadow);
 		border-radius: 999px;
 		background-color: white;
 		width: 1.5rem;
 		height: 1.5rem;
+
+		&:hover {
+			transform: scale(1.1);
+			box-shadow: var(--shadow-raised);
+		}
+
+		&:active {
+			cursor: grabbing;
+		}
 	}
 
 	&::-moz-range-thumb {
-		-webkit-appearance: none;
 		appearance: none;
-		cursor: pointer;
+		transition: var(--transition);
+		cursor: grab;
 		box-shadow: var(--shadow);
 		border: none;
 		border-radius: 999px;
 		background-color: white;
 		width: 1.5rem;
 		height: 1.5rem;
+
+		&:hover {
+			transform: scale(1.1);
+			box-shadow: var(--shadow-raised);
+		}
+
+		&:active {
+			cursor: grabbing;
+		}
 	}
 }
