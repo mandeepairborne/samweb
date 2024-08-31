@@ -130,20 +130,23 @@ input[type="range"] {
 	&::-webkit-slider-thumb {
 		-webkit-appearance: none;
 		appearance: none;
+		filter: brightness(0.9);
 		transition: var(--transition);
 		cursor: grab;
 		box-shadow: var(--shadow);
 		border-radius: 999px;
-		background-color: white;
+		background-color: hsl(0, 0%, 90%);
 		width: 1.5rem;
 		height: 1.5rem;
 
 		&:hover {
 			transform: scale(1.1);
 			box-shadow: var(--shadow-raised);
+			background-color: white;
 		}
 
 		&:active {
+			transform: scale(var(--active));
 			cursor: grabbing;
 		}
 	}
@@ -155,16 +158,18 @@ input[type="range"] {
 		box-shadow: var(--shadow);
 		border: none;
 		border-radius: 999px;
-		background-color: white;
+		background-color: hsl(0, 0%, 90%);
 		width: 1.5rem;
 		height: 1.5rem;
 
 		&:hover {
 			transform: scale(1.1);
 			box-shadow: var(--shadow-raised);
+			background-color: white;
 		}
 
 		&:active {
+			transform: scale(var(--active));
 			cursor: grabbing;
 		}
 	}

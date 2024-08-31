@@ -33,6 +33,10 @@
 		&:hover {
 			opacity: 1;
 		}
+
+		&:active {
+			transform: scale(var(--active));
+		}
 	}
 
 	li:target a[href*="#fr-"] {

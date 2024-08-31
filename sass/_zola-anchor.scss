@@ -10,12 +10,17 @@ h6 {
 }
 
 .zola-anchor {
+	display: inline-block;
 	opacity: 0;
 	transition: var(--transition);
 	margin: 0 0.25em;
 
 	&:hover .icon {
 		background-color: var(--primary-color);
+	}
+
+	&:active {
+		transform: scale(var(--active));
 	}
 
 	&:focus-visible {

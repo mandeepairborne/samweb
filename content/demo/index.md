@@ -548,9 +548,23 @@ Blah blah <q>Inline Quote</q> hmm.
 
 <!-- For the demo purposes only -->
 <div id="color-picker-container">
-<label for="color-picker">Primary color:</label>
-<input id="color-picker" type="color" />
+  <small>Primary color:</small>
+  <br />
+  <input id="color-picker-light" type="color" value="#ff7800" />
+  <label for="color-picker-light">&nbsp;Light theme</label>
+  <br />
+  <input id="color-picker-dark" type="color" value="#ffa348" />
+  <label for="color-picker-dark">&nbsp;Dark theme</label>
+  <br />
+  <small>Fix contrast for:</small>
+  <br />
+  <input id="contrast-color-light" type="checkbox" />
+  <label for="contrast-color-light">&nbsp;Light theme</label>
+  <br />
+  <input id="contrast-color-dark" type="checkbox" checked />
+  <label for="contrast-color-dark">&nbsp;Dark theme</label>
 </div>
+
 
 <style>
   #color-picker-container {
@@ -564,7 +578,6 @@ Blah blah <q>Inline Quote</q> hmm.
     transition: var(--transition);
     box-shadow: var(--edge-highlight);
     border-start-end-radius: var(--rounded-corner);
-    border-end-end-radius: var(--rounded-corner);
     background-color: var(--nav-bg);
     padding: 0.5rem;
   }
@@ -591,36 +604,113 @@ Blah blah <q>Inline Quote</q> hmm.
 </style>
 
 <script type="text/javascript">
-  let colorPicker;
-  const defaultColor = window.getComputedStyle(document.documentElement).getPropertyValue("--primary-color");
-  console.log("Default Color: " + defaultColor);
+  const colorPickerLight = document.querySelector("#color-picker-light");
+  const colorPickerDark = document.querySelector("#color-picker-dark");
+  const contrastCheckboxLight = document.querySelector("#contrast-color-light");
+  const contrastCheckboxDark = document.querySelector("#contrast-color-dark");
 
-  window.addEventListener("load", startup, false);
+  colorPickerLight.value = "#ff7800";
+  colorPickerDark.value = "#ffa348";
 
-  function hexToRGB(hex, alpha) {
-    var r = parseInt(hex.slice(1, 3), 16),
-      g = parseInt(hex.slice(3, 5), 16),
-      b = parseInt(hex.slice(5, 7), 16);
+  colorPickerLight.addEventListener("input", function () {
+    updateStyles(colorPickerLight.value, colorPickerDark.value, contrastCheckboxLight.checked, contrastCheckboxDark.checked);
+  });
 
-    if (alpha) {
-      return "rgb(" + r + " " + g + " " + b + " / " + alpha + ")";
-    } else {
-      return "rgb(" + r + " " + g + " " + b + ")";
+  colorPickerDark.addEventListener("input", function () {
+    updateStyles(colorPickerLight.value, colorPickerDark.value, contrastCheckboxLight.checked, contrastCheckboxDark.checked);
+  });
+
+  contrastCheckboxLight.addEventListener("change", function () {
+    updateStyles(colorPickerLight.value, colorPickerDark.value, contrastCheckboxLight.checked, contrastCheckboxDark.checked);
+  });
+
+  contrastCheckboxDark.addEventListener("change", function () {
+    updateStyles(colorPickerLight.value, colorPickerDark.value, contrastCheckboxLight.checked, contrastCheckboxDark.checked);
+  });
+
+  function hexToRGBA(hex, alpha) {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  }
+
+  function updateStyles(primaryColorLight, primaryColorDark, contrastColorLight, contrastColorDark) {
+    let styleElement = document.getElementById("dynamic-styles");
+
+    if (!styleElement) {
+      styleElement = document.createElement("style");
+      styleElement.id = "dynamic-styles";
+      document.head.appendChild(styleElement);
     }
-  }
 
-  function startup() {
-    colorPicker = document.querySelector("#color-picker");
-    colorPicker.value = defaultColor;
-    colorPicker.addEventListener("input", update, false);
-    colorPicker.select();
-  }
+    const primaryColorLightAlpha = hexToRGBA(primaryColorLight, 0.2);
+    const primaryColorDarkAlpha = hexToRGBA(primaryColorDark, 0.2);
 
-  function update(event) {
-    console.log("Primary Color: " + event.target.value);
-    console.log("Primary Color Alpha: " + hexToRGB(event.target.value, 0.2));
-    document.documentElement.style.setProperty('--primary-color', event.target.value);
-    document.documentElement.style.setProperty('--primary-color-alpha', hexToRGB(event.target.value, 0.2));
+    let styles = "";
+
+    styles += `
+        :root {
+          --primary-color: ${primaryColorLight};
+          --primary-color-alpha: ${primaryColorLightAlpha};
+        }
+      `;
+
+    styles += `
+        [data-theme="dark"] {
+          --primary-color: ${primaryColorDark};
+          --primary-color-alpha: ${primaryColorDarkAlpha};
+        }
+    
+        @media (prefers-color-scheme: dark) {
+          :root:not([data-theme="light"]) {
+            --primary-color: ${primaryColorDark};
+            --primary-color-alpha: ${primaryColorDarkAlpha};
+          }
+        }
+      `;
+
+    if (contrastColorLight) {
+      styles += `
+          :root {
+            --contrast-color: rgb(0 0 0 / 0.8);
+          }
+        `;
+    } else {
+      styles += `
+          :root {
+            --contrast-color: #fff;
+          }
+        `;
+    }
+
+    if (contrastColorDark) {
+      styles += `
+          [data-theme="dark"] {
+            --contrast-color: rgb(0 0 0 / 0.8);
+          }
+    
+          @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) {
+              --contrast-color: rgb(0 0 0 / 0.8);
+            }
+          }
+        `;
+    } else {
+      styles += `
+          [data-theme="dark"] {
+            --contrast-color: #fff;
+          }
+    
+          @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) {
+              --contrast-color: #fff;
+            }
+          }
+        `;
+    }
+
+    styleElement.textContent = styles;
   }
 </script>
 <!-- End -->

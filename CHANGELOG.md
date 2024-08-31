@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add `external` class to comment timestamp.
 - Add active state to footer's "Powered by" links.
+- Add active state to footnotes' go back button.
+- Add active state to slider thumb.
 - Add hover state to slider thumb.
 - Add loading animation to "Load Comments" button.
 - Add zoom-on-hover to custom comment emojis.
