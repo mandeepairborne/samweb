@@ -53,23 +53,29 @@ taxonomies = [{ name = "tags", feed = true }]
 
 [extra]
 # Which theme should be used by default (light/dark).
-# Strongly recommended to use this only with the manual theme switcher enabled,
-# it's important for a11y.
 #
 # default_theme = "dark"
 #
 # Sets theme and browser theme color.
 # See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
 primary_color = "#ff7800"
-# Ditto but for the dark mode.
+# Ditto but for the dark theme.
 # If not set regular variant will be used.
 primary_color_dark = "#ffa348"
+# Sets the opacity used for most colors.
+#
+# color_opacity = "0.1"
+#
+# Ditto but for the dark theme.
+#
+# color_opacity_dark = "0.1"
+#
 # Whether to fix low contrast in text selection, checkboxes, etc.
 # Use only if the default doesn't provide enough contrast, e.g. the primary color is set to yellow.
 #
 # fix_contrast = true
 #
-# Ditto but for the dark mode.
+# Ditto but for the dark theme.
 fix_contrast_dark = true
 # Use emoji as a favicon.
 # Only one emoji is being rendered, everything else is truncated.

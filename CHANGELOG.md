@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add `--disabled` CSS variable for setting opacity of disabled elements.
+- Add `--hover` CSS variable for setting zoom on hover.
+- Add `config.extra.color_opacity` and `config.extra.color_opacity_dark` config variables to set global color opacity used by `-bg` colors and `--primary-color-alpha`.
 - Add `external` class to comment timestamp.
 - Add active state to footer's "Powered by" links.
 - Add active state to footnotes' go back button.
@@ -20,13 +23,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- **[BREAKING]** Change the `--active` CSS variable to include `scale()` as well.
 - Add margin between comment author name and timestamp.
 - Make comment timestamp more subtle.
 - Reduce the target heading transition time.
 - Reduce top margin of the target heading.
 - Set socials icons as CSS variables and not inline styles.
+- Show theme switcher if `config.extra.default_theme` is set, even if `config.extra.nav.show_theme_switcher` is not.
 - Tweak padding of verified instance badge.
 - Use more fitting cursors in some contexts.
+- Use relative colors for `-bg` color variants.
+
+### Removed
+
+- **[BREAKING]** Remove the `config.extra.primary_color_alpha` and `config.extra.primary_color_alpha_dark` config variables; they're now automatically generated from the primary color.
+
+### Fixed
+
+- `config.extra.fix_contrast_dark` should now work even if `config.extra.primary_color_dark` is not set.
 
 ## [4.8.0](https://codeberg.org/daudix/duckquill/compare/v4.7.1...v4.8.0)
 
