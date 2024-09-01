@@ -61,12 +61,9 @@ taxonomies = [{ name = "tags", feed = true }]
 # Sets theme and browser theme color.
 # See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
 primary_color = "#ff7800"
-# Same as primary_color, but with 20% opacity
-primary_color_alpha = "rgb(255 120 0 / 0.2)"
 # Ditto but for the dark mode.
 # If not set regular variant will be used.
 primary_color_dark = "#ffa348"
-primary_color_dark_alpha = "rgb(255 163 72 / 0.2)"
 # Whether to fix low contrast in text selection, checkboxes, etc.
 # Use only if the default doesn't provide enough contrast, e.g. the primary color is set to yellow.
 #

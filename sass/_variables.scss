@@ -43,6 +43,7 @@
 
 	@else {
 		// COLORS
+		--primary-color-alpha: rgb(from var(--primary-color) r g b / 0.1);
 		--bg-color: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
 		--fg-color: rgb(0 0 0 / 0.8);
 		--fg-muted-1: rgb(0 0 0 / 0.05);
@@ -66,7 +67,9 @@
 		--yellow-fg: rgb(156 110 3);
 
 		// VARIABLES
-		--active: 0.9;
+		--disabled: 0.6;
+		--hover: scale(1.1);
+		--active: scale(0.9);
 		--blur: saturate(180%) blur(0.75rem);
 		--container-width: 720px;
 		--edge-highlight: inset 0 0.0625rem 0 rgb(255 255 255 / 0.1);

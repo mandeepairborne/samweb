@@ -3,7 +3,7 @@
 	-webkit-mask-image: var(--icon);
 	-webkit-mask-size: cover;
 	display: inline-block;
-	opacity: 0.6;
+	opacity: var(--disabled);
 	mask-image: var(--icon);
 	mask-size: cover;
 	margin-inline-start: 0.25rem;

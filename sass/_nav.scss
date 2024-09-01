@@ -187,7 +187,7 @@
 			}
 
 			&:active {
-				transform: scale(var(--active));
+				transform: var(--active);
 			}
 		}
 

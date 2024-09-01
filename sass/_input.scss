@@ -47,9 +47,12 @@ input[type="color"] {
 	}
 
 	&:disabled {
+		opacity: var(--disabled);
 		cursor: not-allowed;
-		border: 0.15rem solid var(--fg-muted-1);
-		background-color: var(--fg-muted-1);
+
+		&:hover {
+			background-color: var(--fg-muted-1);
+		}
 	}
 }
 
@@ -118,7 +121,6 @@ input[type="checkbox"] {
 
 		&:disabled {
 			&::before {
-				opacity: 0.6;
 				box-shadow: none;
 			}
 		}
@@ -133,11 +135,6 @@ input[type="color"] {
 	padding: 0.25rem;
 	width: 3rem;
 	height: 2rem;
-
-	&:disabled {
-		opacity: 0.6;
-		border: none;
-	}
 
 	&::-moz-color-swatch {
 		border: none;
@@ -177,7 +174,7 @@ input[type="range"] {
 		height: 1.5rem;
 
 		&:active {
-			transform: scale(var(--active));
+			transform: var(--active);
 			cursor: grabbing;
 		}
 	}
@@ -194,7 +191,7 @@ input[type="range"] {
 		height: 1.5rem;
 
 		&:active {
-			transform: scale(var(--active));
+			transform: var(--active);
 			cursor: grabbing;
 		}
 	}

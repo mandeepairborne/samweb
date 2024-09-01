@@ -27,7 +27,7 @@
 
 	a + a[href*="#fr-"],
 	li:target a[href*="#fr-"] {
-		opacity: 0.6;
+		opacity: var(--disabled);
 		background-color: var(--primary-color);
 
 		&:hover {
@@ -35,7 +35,7 @@
 		}
 
 		&:active {
-			transform: scale(var(--active));
+			transform: var(--active);
 		}
 	}
 

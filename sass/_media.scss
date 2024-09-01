@@ -83,7 +83,7 @@ img {
 		cursor: zoom-in;
 
 		&:hover {
-			transform: scale(1.1);
+			transform: var(--hover);
 			z-index: 1;
 			box-shadow: var(--edge-highlight), var(--shadow-raised);
 			border-radius: 0;
@@ -101,7 +101,7 @@ img {
 				transform-origin: center;
 
 				&:hover {
-					transform: scale(1.1);
+					transform: var(--hover);
 				}
 			}
 		}
