@@ -17,7 +17,7 @@
 @include theme-variables using ($theme) {
 	@if $theme =="dark" {
 		// COLORS
-		--bg-color: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
+		--bg-color: color-mix(in srgb, var(--primary-color) 10%, black);
 		--fg-color: rgb(255 255 255);
 		--fg-muted-1: rgb(255 255 255 / 0.05);
 		--fg-muted-2: rgb(255 255 255 / 0.1);
@@ -37,7 +37,7 @@
 
 	@else {
 		// COLORS
-		--bg-color: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
+		--bg-color: color-mix(in srgb, var(--primary-color) 20%, white);
 		--blue-bg: rgb(from var(--blue-fg) r g b / var(--color-opacity));
 		--blue-fg: rgb(53 132 228);
 		--brown-bg: rgb(from var(--brown-fg) r g b / var(--color-opacity));
@@ -63,6 +63,7 @@
 		// VARIABLES
 		--active: scale(0.9);
 		--blur: saturate(180%) blur(0.75rem);
+		--color-opacity: 0.1;
 		--container-width: 720px;
 		--disabled: 0.6;
 		--edge-highlight: inset 0 0.0625rem 0 rgb(255 255 255 / 0.1);

@@ -9,9 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add `--color-opacity` CSS variable for setting global color opacity.
 - Add `--disabled` CSS variable for setting opacity of disabled elements.
 - Add `--hover` CSS variable for setting zoom on hover.
-- Add `config.extra.color_opacity` and `config.extra.color_opacity_dark` config variables to set global color opacity used by `-bg` colors and `--primary-color-alpha`.
 - Add `external` class to comment timestamp.
 - Add active state to footer's "Powered by" links.
 - Add active state to footnotes' go back button.
@@ -24,7 +24,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - **[BREAKING]** Change the `--active` CSS variable to include `scale()` as well.
+- **[BREAKING]** Change the way `--bg-color` works. See [Tricks](https://duckquill.daudix.one/tricks/#background-image) page to see how to make background images work.
 - Add margin between comment author name and timestamp.
+- Add missing edge highlight to active footer navbar links.
 - Make comment timestamp more subtle.
 - Reduce the target heading transition time.
 - Reduce top margin of the target heading.

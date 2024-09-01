@@ -42,7 +42,6 @@
 		:root {
 			--primary-color: {{ config.extra.primary_color | default(value="#6f8396") | safe }};
 			--contrast-color: {% if config.extra.fix_contrast %}rgb(0 0 0 / 0.8){% else %}#fff{% endif %};
-			--color-opacity: {{ config.extra.color_opacity | default(value="0.1") }};
 		}
 
 		{%- if config.extra.primary_color_dark %}
@@ -65,18 +64,6 @@
 			@media (prefers-color-scheme: dark) {
 				:root:not([data-theme="light"]) {
 					--contrast-color: rgb(0 0 0 / 0.8);
-				}
-			}
-		{%- endif %}
-
-		{%- if config.extra.color_opacity_dark %}
-			[data-theme="dark"] {
-				--color-opacity: {{ config.extra.color_opacity_dark | default(value="0.1") }};
-			}
-
-			@media (prefers-color-scheme: dark) {
-				:root:not([data-theme="light"]) {
-					--color-opacity: {{ config.extra.color_opacity_dark | default(value="0.1") }};
 				}
 			}
 		{%- endif %}

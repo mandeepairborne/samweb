@@ -586,16 +586,6 @@ Blah blah <q>Inline Quote</q> hmm.
   <input id="color-picker-dark" type="color" value="#ffa348" />
   <label for="color-picker-dark">Dark theme</label>
   <br />
-  <small>Color opacity:</small>
-  <br />
-  <small id="opacity-light-value">0.1</small>
-  <input type="range" id="opacity-light" min="0.1" max="0.9" step="0.1" value="0.1">
-  <label for="opacity-light">Light theme</label>
-  <br />
-  <small id="opacity-dark-value">0.1</small>
-  <input type="range" id="opacity-dark" min="0.1" max="0.9" step="0.1" value="0.1">
-  <label for="opacity-dark">Dark theme</label>
-  <br />
   <small>Fix contrast:</small>
   <br />
   <input id="contrast-color-light" type="checkbox" />
@@ -645,22 +635,8 @@ Blah blah <q>Inline Quote</q> hmm.
   #color-picker-light,
   #color-picker-dark,
   #contrast-color-light,
-  #contrast-color-dark,
-  #opacity-light-value,
-  #opacity-dark-value,
-  #opacity-light,
-  #opacity-dark {
+  #contrast-color-dark {
     margin-inline-end: 0.25rem;
-  }
-
-  #opacity-light,
-  #opacity-dark {
-    width: 8rem;
-  }
-
-  #opacity-light-value,
-  #opacity-dark-value {
-    font-variant-numeric: tabular-nums;
   }
 </style>
 
@@ -669,25 +645,14 @@ Blah blah <q>Inline Quote</q> hmm.
   const colorPickerDark = document.querySelector("#color-picker-dark");
   const contrastCheckboxLight = document.querySelector("#contrast-color-light");
   const contrastCheckboxDark = document.querySelector("#contrast-color-dark");
-  const opacityInputLight = document.querySelector("#opacity-light");
-  const opacityInputDark = document.querySelector("#opacity-dark");
-  const opacityValueLight = document.querySelector("#opacity-light-value");
-  const opacityValueDark = document.querySelector("#opacity-dark-value");
 
   let primaryColorLight = colorPickerLight.value;
   let primaryColorDark = colorPickerDark.value;
-  let opacityLight = opacityInputLight.value;
-  let opacityDark = opacityInputDark.value;
-
-  opacityValueLight.textContent = opacityLight;
-  opacityValueDark.textContent = opacityDark;
 
   colorPickerLight.addEventListener("input", updatePrimaryColorLight);
   colorPickerDark.addEventListener("input", updatePrimaryColorDark);
   contrastCheckboxLight.addEventListener("change", updateStyles);
   contrastCheckboxDark.addEventListener("change", updateStyles);
-  opacityInputLight.addEventListener("input", updateOpacityLight);
-  opacityInputDark.addEventListener("input", updateOpacityDark);
 
   function updatePrimaryColorLight() {
     primaryColorLight = colorPickerLight.value;
@@ -696,18 +661,6 @@ Blah blah <q>Inline Quote</q> hmm.
 
   function updatePrimaryColorDark() {
     primaryColorDark = colorPickerDark.value;
-    updateStyles();
-  }
-
-  function updateOpacityLight() {
-    opacityLight = opacityInputLight.value;
-    opacityValueLight.textContent = opacityLight;
-    updateStyles();
-  }
-
-  function updateOpacityDark() {
-    opacityDark = opacityInputDark.value;
-    opacityValueDark.textContent = opacityDark;
     updateStyles();
   }
 
@@ -726,16 +679,13 @@ Blah blah <q>Inline Quote</q> hmm.
     let styles = `
       :root {
         --primary-color: ${primaryColorLight};
-        --color-opacity: ${opacityLight};
       }
       [data-theme="dark"] {
         --primary-color: ${primaryColorDark};
-        --color-opacity: ${opacityDark};
       }
       @media (prefers-color-scheme: dark) {
         :root:not([data-theme="light"]) {
           --primary-color: ${primaryColorDark};
-          --color-opacity: ${opacityDark};
         }
       }
     `;

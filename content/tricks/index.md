@@ -24,7 +24,7 @@ Duckquill is pretty easy to restyle with just a few lines of SCSS in the [approp
 
 ### Navbar
 
-You can make navbar have more classic look:
+You can make navbar have more traditional look:
 
 ![classic navabr](https://files.catbox.moe/wd9nal.png)
 
@@ -94,7 +94,7 @@ Or you can make it sticked to top but not full-width:
 
 ### Headings
 
-Default headings might not fit your taste, that's understandable. Good thing that we can ~~make them boring~~ fix them:
+Default headings might not fit your taste, that's understandable. Good thing is that we can ~~make them boring~~ fix them:
 
 ![boring headings](https://files.catbox.moe/6ok740.png)
 
@@ -111,33 +111,33 @@ h6 {
 
 h1 {
     font-weight: 900;
-	font-size: 3rem;
+    font-size: 3rem;
 }
 
 h2 {
-	font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 h3 {
-	font-size: 2rem;
+    font-size: 2rem;
 }
 
 h4 {
-	font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 h5 {
-	font-size: 1rem;
+    font-size: 1rem;
 }
 
 h6 {
-	font-size: 0.75rem;
+    font-size: 0.75rem;
 }
 ```
 
 ### Strikethrough
 
-The default strikethrough style is too much for you? Let's sort this out:
+The default strikethrough style is too much? Let's sort this out:
 
 ![plain strikethrough](https://files.catbox.moe/y2tbwm.png)
 
@@ -153,11 +153,15 @@ del {
 
 ### Edge Highlights
 
-Hate the skeuomorphic edge highlight on all semi-transparent elements? It's easy to get rid of them:
+Hate the skeuomorphic edge highlight on all semi-transparent elements? Let's get rid of them:
 
 ```scss
-:root {
-    --edge-highlight: 0 0 0 transparent;
+@import "../themes/duckquill/sass/_variables.scss";
+
+@include theme-variables using ($theme) {
+    @else {
+        --edge-highlight: 0 0 0 transparent;
+    }
 }
 ```
 
@@ -180,24 +184,26 @@ hr {
 
 ### Background Image
 
-Want to set some nice image as a background? I got you covered:
+Want to set some nice image as a background? We got you covered:
 
 ![background image](https://files.catbox.moe/kgrgqr.png)
 
 ```scss
+@import "../themes/duckquill/sass/_variables.scss";
+
+@include theme-variables using ($theme) {
+    @if $theme =="dark" {
+        --bg-color: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
+    }
+
+    @else {
+        --bg-color: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
+    }
+}
+
 body {
     background: var(--bg-color), center / cover no-repeat fixed url("https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 ```
 
-Most of the time contrast should be okay, but what if it's not? Simply adjust the opacity of `--bg-color` to your needs:
-
-```scss
-:root {
-    --bg-color: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
-
-    @media (prefers-color-scheme: dark) {
-        --bg-color: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
-    }
-}
-```
+Most of the time contrast should be okay, but what if it's not? Simply adjust the opacity of `--bg-color` based on your needs.
