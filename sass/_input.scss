@@ -94,6 +94,17 @@ input[type="checkbox"] {
 		width: 2.5rem;
 		height: 1.5rem;
 
+		&.big {
+			vertical-align: -0.625rem;
+			width: 3rem;
+			height: 2rem;
+
+			&::before {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+		}
+
 		&::before {
 			-webkit-mask-image: none;
 			top: 0.25rem;

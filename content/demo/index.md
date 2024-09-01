@@ -364,6 +364,36 @@ With `switch` class:
   </li>
 </ul>
 
+With `switch` and `big` classes:
+
+```html
+<input class="switch big" type="checkbox" />
+<label>Checkbox</label>
+```
+
+<ul>
+  <li>
+    <input class="switch big" type="checkbox" />
+    <label>&nbsp;Milk</label>
+  </li>
+  <li>
+    <input class="switch big" type="checkbox" />
+    <label>&nbsp;Eggs</label>
+  </li>
+  <li>
+    <input class="switch big" type="checkbox" />
+    <label>&nbsp;Flour</label>
+  </li>
+  <li>
+    <input class="switch big" type="checkbox" checked />
+    <label>&nbsp;Coffee</label>
+  </li>
+  <li>
+    <input class="switch big" type="checkbox" disabled />
+    <label>&nbsp;Combustible lemons</label>
+  </li>
+</ul>
+
 With `radio` type:
 
 ```html
