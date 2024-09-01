@@ -334,6 +334,36 @@ Available variables are:
   </li>
 </ul>
 
+With `switch` class:
+
+```html
+<input class="switch" type="checkbox" />
+<label>Checkbox</label>
+```
+
+<ul>
+  <li>
+    <input class="switch" type="checkbox" />
+    <label>&nbsp;Milk</label>
+  </li>
+  <li>
+    <input class="switch" type="checkbox" />
+    <label>&nbsp;Eggs</label>
+  </li>
+  <li>
+    <input class="switch" type="checkbox" />
+    <label>&nbsp;Flour</label>
+  </li>
+  <li>
+    <input class="switch" type="checkbox" checked />
+    <label>&nbsp;Coffee</label>
+  </li>
+  <li>
+    <input class="switch" type="checkbox" disabled />
+    <label>&nbsp;Combustible lemons</label>
+  </li>
+</ul>
+
 With `radio` type:
 
 ```html
