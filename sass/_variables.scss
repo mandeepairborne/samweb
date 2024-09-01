@@ -15,7 +15,7 @@
 }
 
 @include theme-variables using ($theme) {
-	@if $theme =="dark" {
+	@if $theme == "dark" {
 		// COLORS
 		--bg-color: color-mix(in srgb, var(--primary-color) 10%, black);
 		--fg-color: rgb(255 255 255);

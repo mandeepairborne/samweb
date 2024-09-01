@@ -159,7 +159,7 @@ Hate the skeuomorphic edge highlight on all semi-transparent elements? Let's get
 @import "../themes/duckquill/sass/_variables.scss";
 
 @include theme-variables using ($theme) {
-    @else {
+    @if $theme == "light" {
         --edge-highlight: 0 0 0 transparent;
     }
 }
@@ -192,7 +192,7 @@ Want to set some nice image as a background? We got you covered:
 @import "../themes/duckquill/sass/_variables.scss";
 
 @include theme-variables using ($theme) {
-    @if $theme =="dark" {
+    @if $theme == "dark" {
         --bg-color: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
     }
 
