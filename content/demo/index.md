@@ -618,10 +618,10 @@ Blah blah <q>Inline Quote</q> hmm.
   <br />
   <small>Fix contrast:</small>
   <br />
-  <input id="contrast-color-light" type="checkbox" />
+  <input id="contrast-color-light" class="switch" type="checkbox" />
   <label for="contrast-color-light">Light theme</label>
   <br />
-  <input id="contrast-color-dark" type="checkbox" checked />
+  <input id="contrast-color-dark" class="switch" type="checkbox" checked />
   <label for="contrast-color-dark">Dark theme</label>
 </div>
 
