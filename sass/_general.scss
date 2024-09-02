@@ -84,11 +84,10 @@ body {
 }
 
 @media (prefers-reduced-motion) {
-
 	*,
 	*::before,
 	*::after {
-		animation: none !important;
-		transition: none !important;
+		animation-duration: 0s !important;
+		transition-duration: 0s !important;
 	}
 }
