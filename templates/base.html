@@ -11,6 +11,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" {% if lang in rtl_languages %}dir="rtl"{% endif %} lang="{{ lang }}" {% if config.extra.default_theme %}data-theme="{{config.extra.default_theme}}"{% endif %}>
 {% include "partials/head.html" %}
 <body>
+{% block body %}
 	{%- if config.extra.nav.links %}
 		{% include "partials/nav.html" %}
 	{%- endif %}
@@ -19,5 +20,6 @@
 		{% block content %}{% endblock %}
 	</div>
 	{% include "partials/footer.html" %}
+{% endblock %}
 </body>
 </html>
