@@ -19,7 +19,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add loading animation to "Load Comments" button.
 - Add special `switch` class for checkboxes (#70).
 - Add zoom-on-hover to custom comment emojis.
-- Style mentions and hashtags.
+- Return the scrollbar styling.
+- Style mentions and hashtags in comments.
 
 ### Changed
 
@@ -27,6 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **[BREAKING]** Change the way `--bg-color` works. See [Tricks](https://duckquill.daudix.one/tricks/#background-image) page to see how to make background images work.
 - Add margin between comment author name and timestamp.
 - Add missing edge highlight to active footer navbar links.
+- Allow overriding the `body` block of `base.html.
 - Make comment timestamp more subtle.
 - Make the copy button inactive after it is pressed until the animation is complete.
 - Reduce the target heading transition time.
