@@ -39,24 +39,22 @@ video {
 
 	&.start,
 	&[src*="#start"] {
-		float: left;
+		float: inline-start;
 		transform-origin: left;
 		margin-inline-end: 1rem;
 
 		:root[dir*="rtl"] & {
-			float: right;
 			transform-origin: right;
 		}
 	}
 
 	&.end,
 	&[src*="#end"] {
-		float: right;
+		float: inline-end;
 		transform-origin: right;
 		margin-inline-start: 1rem;
 
 		:root[dir*="rtl"] & {
-			float: left;
 			transform-origin: left;
 		}
 	}

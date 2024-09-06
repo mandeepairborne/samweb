@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add active state to footer's "Powered by" links.
 - Add active state to footnotes' go back button.
 - Add active state to slider thumb.
+- Add hover style to comments QR code for easier scanning.
 - Add loading animation to "Load Comments" button.
 - Add special `switch` class for checkboxes (#70).
 - Add zoom-on-hover to custom comment emojis.
