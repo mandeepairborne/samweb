@@ -69,4 +69,4 @@ Function name: getPluralizationKey -#}
         {%- set translated_text = translated_text | replace(from="$NUMBER", to=number | as_str) -%}
     {%- endif -%}
     {{- translated_text -}}
-{% endmacro %}
+{% endmacro translate %}
