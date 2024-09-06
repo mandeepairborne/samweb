@@ -33,6 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Make the copy button inactive after it is pressed until the animation is complete.
 - Reduce the target heading transition time.
 - Reduce top margin of the target heading.
+- Remove bottom margin of `:last-child` and not `:last-of-type`.
 - Set animation/transition duration to 0s with `prefers-reduced-motion' instead of removing them altogether.
 - Set socials icons as CSS variables and not inline styles.
 - Show theme switcher if `config.extra.default_theme` is set, even if `config.extra.nav.show_theme_switcher` is not.
