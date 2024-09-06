@@ -39,6 +39,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Show theme switcher if `config.extra.default_theme` is set, even if `config.extra.nav.show_theme_switcher` is not.
 - Tweak padding of verified instance badge.
 - Use more fitting cursors in some contexts.
+- Use PNG instead of GIF for comments QR code to reduce download size.
 - Use relative colors for `-bg` color variants.
 
 ### Removed
