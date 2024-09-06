@@ -193,17 +193,17 @@ Want to set some nice image as a background? We got you covered:
 
 @include theme-variables using ($theme) {
     @if $theme == "dark" {
-        --bg-color: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
+        --bg-overlay: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
     }
 
     @else {
-        --bg-color: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
+        --bg-overlay: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
     }
 }
 
 body {
-    background: var(--bg-color), center / cover no-repeat fixed url("https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background: var(--bg-overlay), center / cover no-repeat fixed url("https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 ```
 
-Most of the time contrast should be okay, but what if it's not? Simply adjust the opacity of `--bg-color` based on your needs.
+Most of the time contrast should be okay, but what if it's not? Simply adjust the opacity of `--bg-overlay` based on your needs.
