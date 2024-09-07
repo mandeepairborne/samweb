@@ -7,7 +7,7 @@ updated = "2024-06-21"
 [taxonomies]
 tags = ["Demo", "Test"]
 [extra]
-banner = "quill.png"
+banner = "banner.webp"
 toc = true
 trigger = "This page contains blackjack and hookers, and bad jokes such as this one."
 disclaimer = """
