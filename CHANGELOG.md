@@ -51,6 +51,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - `config.extra.fix_contrast_dark` should now work even if `config.extra.primary_color_dark` is not set.
+- Don't add `::before` pseudo element to color pickers.
 
 ## [4.8.0](https://codeberg.org/daudix/duckquill/compare/v4.7.1...v4.8.0)
 

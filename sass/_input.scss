@@ -11,6 +11,22 @@ input[type="color"] {
 	width: 1rem;
 	height: 1rem;
 
+	&:hover {
+		background-color: var(--fg-muted-2);
+	}
+
+	&:disabled {
+		opacity: var(--disabled);
+		cursor: not-allowed;
+
+		&:hover {
+			background-color: var(--fg-muted-1);
+		}
+	}
+}
+
+input[type="radio"],
+input[type="checkbox"] {
 	&::before {
 		display: block;
 		position: absolute;
@@ -19,10 +35,6 @@ input[type="color"] {
 		transition: var(--transition);
 		background-color: var(--contrast-color);
 		content: "";
-	}
-
-	&:hover {
-		background-color: var(--fg-muted-2);
 	}
 
 	&:checked {
@@ -43,15 +55,6 @@ input[type="color"] {
 		&::before {
 			transform: scale(1);
 			opacity: 1;
-		}
-	}
-
-	&:disabled {
-		opacity: var(--disabled);
-		cursor: not-allowed;
-
-		&:hover {
-			background-color: var(--fg-muted-1);
 		}
 	}
 }
