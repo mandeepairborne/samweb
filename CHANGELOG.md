@@ -30,6 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add margin between comment author name and timestamp.
 - Add missing edge highlight to active footer navbar links.
 - Allow overriding the `body` block of `base.html.
+- Change the way 404 image is resized (#74).
 - Make comment timestamp more subtle.
 - Make the copy button inactive after it is pressed until the animation is complete.
 - Reduce the target heading transition time.
