@@ -27,12 +27,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **[BREAKING]** Change the `--active` CSS variable to include `scale()` as well.
 - **[BREAKING]** Change the way `--bg-color` works. See [Tricks](https://duckquill.daudix.one/tricks/#background-image) page to see how to make background images work.
+- Add `h1` with page/section title by default.
 - Add margin between comment author name and timestamp.
 - Add missing edge highlight to active footer navbar links.
+- Allow enabling table of contents on all pages and sections except for the homepage.
 - Allow overriding the `body` block of `base.html.
+- Allow statements on all sections except for the homepage.
 - Change the way 404 image is resized (#74).
 - Make comment timestamp more subtle.
 - Make the copy button inactive after it is pressed until the animation is complete.
+- Move table of contents code to a partial.
 - Reduce the target heading transition time.
 - Reduce top margin of the target heading.
 - Remove bottom margin of `:last-child` and not `:last-of-type`.
@@ -43,6 +47,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Use more fitting cursors in some contexts.
 - Use PNG instead of GIF for comments QR code to reduce download size.
 - Use relative colors for `-bg` color variants.
+- Rewrite the homepage (#75).
 
 ### Removed
 
@@ -52,6 +57,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `config.extra.fix_contrast_dark` should now work even if `config.extra.primary_color_dark` is not set.
 - Don't add `::before` pseudo element to color pickers.
+- Load auto-menu-close script if navbar sublinks are present.
 
 ## [4.8.0](https://codeberg.org/daudix/duckquill/compare/v4.7.1...v4.8.0)
 

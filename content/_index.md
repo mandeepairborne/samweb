@@ -14,36 +14,54 @@ jgs~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~
 
 # Duckquill
 
-Duckquill is a modern, pretty, and clean (and opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
+Duckquill is an opinionated, modern, pretty, and clean [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the necessary options for comfortable writing, while keeping the balance of simplicity.
 
-Edit a bit of metadata and tweak some of the included graphics and have a blog up in minutes!
+With it, you can change some configuration variables, tweak some of the included graphics, and have a nice blog up in minutes!
 
-- Pretty, yet lightweight. No JavaScript is used by default.
-- Colors are tinted with the user-selected primary color for a pleasant look.
-- ~90kB in size; take that, 12MB Medium!
-- Uses system fonts for blazingly fast loading.
-- Mobile friendly, with a proper dark variant.
-- Proper favicon for modern browsers and Apple device icons.
-- Twitter, Mastodon and other social media meta cards for easy sharing. Try [Share Preview](https://apps.gnome.org/SharePreview/) to test.
-- [Mastodon-powered comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/); comment using compatible ActivityPub server by replying to a Mastodon post.
+Some of the features Duckquill has to offer:
+
+- Cute and informative social media cards for Discourse, Facebook, LinkedIn, Mastodon and more.
+- [Mastodon-powered comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/); comment under a post by using your Mastodon account.
+- Lightweight by default, powerful when needed; no JavaScript is used by default.
+- Privacy respecting analytics using [GoatCounter](https://www.goatcounter.com), with support for self-hosting.
+- Estimated read time of the post; put away those with short attention spans.
+- Light/dark/system theme switcher (for some reason everyone likes these).
+- Everything is tinted with the user-defined accent color for a pleasant look.
+- GitHub-style alerts. Yes, they're pretty, but don't overuse them. 
+- Post banners; they're even used in the social media cards!
+- YouTube/Vimeo shortcodes for easy video embedding.
+- Tiny by default; only ~100kB. Take that, 5MB Medium!
+- Customizable copyright text; you Better Quack Soul!
+- Image styling via URL. Yes, you read that right.
+- Useless CRT style that everyone seems to like.
+- KaTeX; use some complex math and whatnot.
+- Fully localizeable, worry not, [it's pretty easy](#localization).
+- Social links in the footer, with special styling.
+- Emoji favicon if you're lazy to draw one.
+- Copy button for code blocks.
+- Search functionality.
 
 {% alert(note=true) %}
-Duckquill is made based on needs of [my website](https://daudix.one), if you need some feature/configuration that doesn't exist feel free to open an issue or better yet, pull request!
+Although Duckquill is made based on the needs of [my website](https://daudix.one), I am very open to feature requests as long as they are somewhat useful to others, so if you need a feature/configuration that does not exist, feel free to open an issue, or better yet, a pull request!
+{% end %}
+
+{% alert(tip=true) %}
+If you use Duckquill and enjoy it, or just like my work, please consider [buying me a coffee](https://daudix.one/coffee/), it would mean the world to me ^^.
 {% end %}
 
 ## Installation
 
-First, download this theme to your `themes` directory:
-
-```bash
-git clone https://codeberg.org/daudix/duckquill.git themes/duckquill
-```
-
-...or add as submodule for easy updating (recommended if you already have git setup on site):
+First, if you already have Git setup, add this theme as a submodule:
 
 ```bash
 git submodule init
 git submodule add https://codeberg.org/daudix/duckquill.git themes/duckquill
+```
+
+Otherwise, simply clone it to your `themes` directory:
+
+```bash
+git clone https://codeberg.org/daudix/duckquill.git themes/duckquill
 ```
 
 {% alert(important=true) %}
@@ -55,33 +73,57 @@ cd themes/duckquill
 git checkout tags/v4.8.0
 ```
 
-To update the submodule, simply switch to a new tag:
-
-{% alert(tip=true) %}
-Check the changelog for all versions that came after the one you are using, there might be breaking changes that may need manual involvement.
-{% end %}
-
-```bash
-git submodule update --remote --merge
-git tag --list
-git checkout tags/v4.8.0
-```
-
 Then, enable it in your `config.toml`:
 
 ```toml
 theme = "duckquill"
 ```
 
+To update the theme, simply switch to a new tag:
+
+```bash
+git submodule update --remote --merge
+cd themes/duckquill
+git checkout tags/v4.8.0
+```
+
+{% alert(important=true) %}
+Check the changelog for all versions after the one you are using; there may be breaking changes that require manual involvement.
+{% end %}
+
 ## Options
 
 Duckquill offers some configuration options to make it fit you better; most options have pretty descriptive comments, so it should be easy to understand what they do.
+
+## Front Matter
+
+Duckquill has some [front matter](https://www.getzola.org/documentation/content/page/#front-matter) variables that you can use by setting them in the `[extra]` section:
+
+### Global
+
+- `archive`: Make the post visually stand out in the post list. Also accepts message as a value.
+- `trigger`: Displays a trigger warning message.
+- `disclaimer`: Displays a disclaimer message.
+- `toc`: Enables table of contents. Only first 2 levels of headings are listed.
+
+### Blog post specific:
+
+- `banner`: Filename of the [colocated](https://www.getzola.org/documentation/content/overview/#asset-colocation) banner image. Recommended dimensions are 2:1 aspect ratio and 1920x960 resolution.
+- `featured`: Make the post visually stand out in the post list.
+- `hot`: Ditto.
+- `poor`: Ditto...
+
+In `[extra.comments]` section:
+
+- `host`: The Mastodon server on which the post was posted.
+- `user`: The username of the poster.
+- `id`: ID of the post; the one in the URL.
 
 ### Localization
 
 Duckquill ships with a localization system based on one used in [tabi](https://github.com/welpo/tabi), it's very easy to use and quite flexible at the same time.
 
-To add a translation, simply create a file in your site's `i18n` directory called `[lang-code].toml`, e.g `fr.toml`. The language code should be [ISO 639-1](https://localizely.com/iso-639-1-list/) or [BCP 47](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
+To add a translation, simply create a file in your site's `i18n` directory called `LANG_CODE.toml`, e.g `fr.toml`. The language code should be either [ISO 639-1](https://localizely.com/iso-639-1-list/) or [BCP 47](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
 
 Inside that file, copy-paste one of the existing translations from Duckquill and adapt it to your needs. You can also check [tabi](https://github.com/welpo/tabi/tree/main/i18n) translation files for reference.
 
@@ -134,7 +176,7 @@ primary_color_dark = "#ff7800"
 
 ### Favicon
 
-Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and apple touch icon respectively. For animated favicon you can use APNG with `png` file extension.
+Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and Apple Touch Icon respectively. For animated favicon you can use APNG with the `png` file extension.
 
 ## In the Wild
 

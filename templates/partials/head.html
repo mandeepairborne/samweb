@@ -122,7 +122,7 @@
 		{%- set scripts = scripts | concat(with=["theme-switcher.js"]) %}
 	{%- endif %}
 
-	{%- if config.show_theme_switcher or config.languages | length > 0 %}
+	{%- if config.extra.nav.links.sublinks or config.languages | length > 0 or config.extra.nav.show_theme_switcher %}
 		{%- set scripts = scripts | concat(with=["details.js"]) %}
 	{%- endif %}
 
