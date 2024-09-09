@@ -1,6 +1,6 @@
 title = "Duckquill"
 base_url = "https://duckquill.daudix.one"
-description = "Modern, pretty, and clean theme."
+description = "Opinionated, modern, pretty, and clean Zola theme."
 
 compile_sass = true
 minify_html = true
@@ -37,16 +37,23 @@ bottom_footnotes = true
 [search]
 index_format = "elasticlunr_json"
 
-[languages.ru]
+[languages.ar]
 title = "Duckquill"
-description = "Современная, симпатичная и аккуратная тема."
+description = "سمة زولا العصرية والحديثة والجميلة والنظيفة."
 generate_feeds = true
 
 taxonomies = [{ name = "tags", feed = true }]
 
-[languages.ar]
+[languages.ms]
 title = "Duckquill"
-description = "ثيم عصري وجميل ونظيف."
+description = "Tema Zola yang berpandangan, moden, cantik dan bersih."
+generate_feeds = true
+
+taxonomies = [{ name = "tags", feed = true }]
+
+[languages.ru]
+title = "Duckquill"
+description = "Мнимая, современная, симпатичная, и аккуратная тема Zola."
 generate_feeds = true
 
 taxonomies = [{ name = "tags", feed = true }]
