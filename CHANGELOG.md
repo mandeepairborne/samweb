@@ -47,6 +47,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Use PNG instead of GIF for comments QR code to reduce download size.
 - Use relative colors for `-bg` color variants.
 - Rewrite the homepage (#75).
+- Improved CRT style, now looks a lot more like [cool-retro-term](https://github.com/Swordfish90/cool-retro-term).
 
 ### Removed
 
