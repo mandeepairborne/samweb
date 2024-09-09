@@ -85,6 +85,7 @@ img {
 			z-index: 1;
 			box-shadow: var(--edge-highlight), var(--shadow-raised);
 			border-radius: 0;
+			position: relative;
 		}
 
 		&.start,

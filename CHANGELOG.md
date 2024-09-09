@@ -57,6 +57,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `config.extra.fix_contrast_dark` should now work even if `config.extra.primary_color_dark` is not set.
 - Don't add `::before` pseudo element to color pickers.
+- Fix images being covered by other images in some scenarios.
 - Load auto-menu-close script if navbar sublinks are present.
 
 ## [4.8.0](https://codeberg.org/daudix/duckquill/compare/v4.7.1...v4.8.0)

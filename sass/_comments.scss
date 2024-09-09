@@ -38,8 +38,8 @@
 		margin-block-start: 2rem;
 
 		#load-comments {
-			--shine: rgb(from var(--primary-color) r g b / calc(var(--color-opacity) * 2));
-			background-image: linear-gradient(to right, var(--fg-muted-1) 50%, var(--shine) 75%, var(--fg-muted-1) 100%);
+			--shimmer: rgb(from var(--primary-color) r g b / calc(var(--color-opacity) * 2));
+			background-image: linear-gradient(to right, var(--fg-muted-1) 50%, var(--shimmer) 75%, var(--fg-muted-1) 100%);
 			background-size: 200%;
 			background-color: transparent;
 
