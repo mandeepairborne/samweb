@@ -35,21 +35,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Allow overriding the `body` block of `base.html.
 - Allow statements on all sections except for the homepage.
 - Change the way 404 image is resized (#74).
+- Improved CRT style, now looks a lot more like [cool-retro-term](https://github.com/Swordfish90/cool-retro-term).
 - Make comment timestamp more subtle.
 - Make the copy button inactive after it is pressed until the animation is complete.
 - Move table of contents code to a partial.
+- Only allow `external` class on links.
 - Reduce the target heading transition time.
 - Reduce top margin of the target heading.
 - Remove bottom margin of `:last-child` and not `:last-of-type`.
+- Rewrite the homepage (#75).
 - Set animation/transition duration to 0s with `prefers-reduced-motion' instead of removing them altogether.
 - Set socials icons as CSS variables and not inline styles.
 - Show theme switcher if `config.extra.default_theme` is set, even if `config.extra.nav.show_theme_switcher` is not.
+- Tweak `kbd` styling.
 - Tweak padding of verified instance badge.
 - Use more fitting cursors in some contexts.
 - Use PNG instead of GIF for comments QR code to reduce download size.
 - Use relative colors for `-bg` color variants.
-- Rewrite the homepage (#75).
-- Improved CRT style, now looks a lot more like [cool-retro-term](https://github.com/Swordfish90/cool-retro-term).
 
 ### Removed
 
