@@ -288,6 +288,13 @@
 												media.appendChild(mediaElement);
 												break;
 										}
+
+										let mediaLink = document.createElement("a");
+										mediaLink.setAttribute("href", attachment.url);
+										mediaLink.setAttribute("rel", "{{ rel_attributes }}");
+										mediaLink.appendChild(mediaElement);
+								
+										media.appendChild(mediaLink);
 									}
 								});
 							}

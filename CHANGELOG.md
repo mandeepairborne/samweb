@@ -13,11 +13,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `--disabled` CSS variable for setting opacity of disabled elements.
 - Add `--hover` CSS variable for setting zoom on hover.
 - Add `external` class to comment timestamp.
+- Add `h1` with page/section title by default.
 - Add active state to footer's "Powered by" links.
 - Add active state to footnotes' go back button.
 - Add active state to slider thumb.
 - Add fading on top/bottom of the search results container.
 - Add loading animation to "Load Comments" button.
+- Add margin between comment author name and timestamp.
+- Add missing edge highlight to active footer navbar links.
 - Add special `switch` class for checkboxes (#70).
 - Add spoiler styles.
 - Add zoom-on-hover to custom comment emojis.
@@ -28,10 +31,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **[BREAKING]** Change the `--active` CSS variable to include `scale()` as well.
 - **[BREAKING]** Change the way `--bg-color` works. See [Tricks](https://duckquill.daudix.one/tricks/#background-image) page to see how to make background images work.
-- Add `h1` with page/section title by default.
-- Add margin between comment author name and timestamp.
-- Add missing edge highlight to active footer navbar links.
 - Allow enabling table of contents on all pages and sections except for the homepage.
+- Allow opening original comment attachment by clicking on it.
 - Allow overriding the `body` block of `base.html.
 - Allow statements on all sections except for the homepage.
 - Change the way 404 image is resized (#74).

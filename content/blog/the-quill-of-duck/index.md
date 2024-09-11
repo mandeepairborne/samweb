@@ -28,6 +28,12 @@ disclaimer = """
 # host = "mastodon.blaede.family"
 # user = "cassidy"
 # id = "112774854109302186"
+#
+# Post on GoToSocial
+#
+# host = "alpha.polymaths.social"
+# user = "orbitalmartian"
+# id = "01J7ETKJ19FGBDQGS1ZWZ3KEPP"
 host = "toot.community"
 user = "sungsphinx"
 id = "111789185826519979"
