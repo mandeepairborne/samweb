@@ -57,13 +57,14 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 [![Male mallard duck](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Male_mallard_duck_2.jpg/800px-Male_mallard_duck_2.jpg)](https://upload.wikimedia.org/wikipedia/commons/2/24/Male_mallard_duck_2.jpg)
 
 | Mare         | Rating            | Additional info  |
-| :----------- | :---------------- | :---------------  |
+| :----------- | :---------------- | :--------------- |
 | Fluttershy   | Best pone         | Shy and adorable |
 | Apple Jack   | Good pone         | Honest and nice  |
-| Pinkie Pie   | Fun pone          | Party horn!      |
-| Twilight     | Decent pone       | Neeerd           |
-| Rainbow Dash | Annoying pone     | Looks badass     |
-| Rarity       | Fancy pone        | Sometimes nice   |
+| Pinkie Pie   | Fun pone          | Parties and ADHD |
+| Twilight     | Main pone         | Neeerd           |
+| Rainbow Dash | Yes               | Looks badass     |
+| Rarity       | Fancy pone        | Generous         |
+| Derpy Hooves | *M u f f i n s*   | [REDACTED]       |
 
 ```rust
 let highlight = true;
