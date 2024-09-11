@@ -411,23 +411,29 @@
 		}
 	}
 
-	#search-results {
+	#search-results-container {
 		-webkit-backdrop-filter: var(--blur);
-		display: none;
+		display: flex;
 		position: absolute;
 		top: calc(100% + 0.5rem);
 		left: 0;
-		flex-direction: column;
-		gap: 0.5rem;
 		backdrop-filter: var(--blur);
-		box-shadow:
-			var(--edge-highlight),
-			0 0.75rem 1.5rem -1rem rgb(0 0 0 / 0.5);
+		box-shadow: var(--edge-highlight), 0 0.75rem 1.5rem -1rem rgb(0 0 0 / 0.5);
 		border-radius: calc(var(--rounded-corner) + 0.5rem);
 		background-color: var(--nav-bg);
-		padding: 0.5rem;
 		width: 100%;
 		max-height: 50vh;
+	}
+
+	#search-results {
+		--mask: linear-gradient(to bottom, transparent, black 1rem, black calc(100% - 1rem), transparent);
+		-webkit-mask-image: var(--mask);
+		display: none;
+		flex: 1;
+		flex-direction: column;
+		gap: 0.5rem;
+		mask-image: var(--mask);
+		padding: 0.5rem;
 		overflow: auto;
 
 		.item {
