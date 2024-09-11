@@ -57,7 +57,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
-- **[BREAKING]** Remove the `config.extra.primary_color_alpha` and `config.extra.primary_color_alpha_dark` config variables; they're now automatically generated from the primary color.
+- Remove the `config.extra.primary_color_alpha` and `config.extra.primary_color_alpha_dark` config variables; they're now automatically generated from the primary color.
 
 ### Fixed
 
