@@ -53,6 +53,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Use more fitting cursors in some contexts.
 - Use PNG instead of GIF for comments QR code to reduce download size.
 - Use relative colors for `-bg` color variants.
+- Use separator `div` instead of `::after` on the home button.
 
 ### Removed
 
