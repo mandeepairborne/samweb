@@ -25,8 +25,8 @@ Some of the features Duckquill has to offer:
 - Lightweight by default, powerful when needed; no JavaScript is used by default.
 - Privacy respecting analytics using [GoatCounter](https://www.goatcounter.com), with support for self-hosting.
 - Estimated read time of the post; put away those with short attention spans.
+- Everything is tinted with the user-defined primary color for a pleasant look.
 - Light/dark/system theme switcher (for some reason everyone likes these).
-- Everything is tinted with the user-defined accent color for a pleasant look.
 - GitHub-style alerts. Yes, they're pretty, but don't overuse them. 
 - Post banners; they're even used in the social media cards!
 - YouTube/Vimeo shortcodes for easy video embedding.
@@ -34,9 +34,9 @@ Some of the features Duckquill has to offer:
 - Customizable copyright text; you Better Quack Soul!
 - Image styling via URL. Yes, you read that right.
 - Useless CRT style that everyone seems to like.
-- KaTeX; use some complex math and whatnot.
 - Fully localizeable, worry not, [it's pretty easy](#localization).
 - Social links in the footer, with special styling.
+- LaTeX markup support via the [KaTeX](https://katex.org) library.
 - Emoji favicon if you're lazy to draw one.
 - Copy button for code blocks.
 - Search functionality.
