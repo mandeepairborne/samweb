@@ -613,6 +613,8 @@ When set on an image:
 
 <img class="spoiler" src="https://i1.theportalwiki.net/img/2/23/Ashpd_blueprint.jpg" />
 
+URL anchor `#spoiler` can be used for this as well.
+
 With `solid` class:
 
 ```html
@@ -620,6 +622,8 @@ With `solid` class:
 ```
 
 <img class="spoiler solid" src="https://i1.theportalwiki.net/img/2/23/Ashpd_blueprint.jpg" />
+
+URL anchor `#solid` can be used for this as well.
 
 ### Buttons Dialog
 

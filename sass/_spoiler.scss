@@ -1,4 +1,4 @@
-.spoiler {
+span.spoiler {
 	filter: blur(0.25rem);
 	transition: var(--transition);
 
@@ -21,11 +21,11 @@
 	}
 }
 
-img.spoiler {
+img.spoiler,
+img[src*="#spoiler"] {
 	opacity: var(--disabled);
 	clip-path: inset(0% 0% 0% 0% round var(--rounded-corner));
 	filter: blur(1rem);
-	transition: var(--transition-longer);
 
 	&:hover,
 	&:active {
@@ -34,11 +34,11 @@ img.spoiler {
 		filter: none;
 	}
 
-	&.solid {
+	&.solid,
+	&[src*="#solid"] {
 		clip-path: none;
 		filter: brightness(0%);
 		box-shadow: none;
-		border-radius: var(--rounded-corner);
 
 		&:hover,
 		&:active {
