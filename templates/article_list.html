@@ -7,13 +7,20 @@
 
 {{ section.content | safe }}
 
-<small>
-	<a href="{{ get_url(path='tags', lang=lang) }}">
-		{{ macros_translate::translate(key="filter_by_tag", default="Filter by tag", language_strings=language_strings) }}
-	</a>
-	<br />
-	{{ macros_translate::translate(key="newest_to_oldest", default="From newest to oldest", language_strings=language_strings) }} ↓
-</small>
+<p>
+	{%- if config.taxonomies | length > 0 -%}
+		<small>
+			<a href="{{ get_url(path='tags', lang=lang) }}">
+				{{ macros_translate::translate(key="filter_by_tag", default="Filter by tag", language_strings=language_strings) }}
+			</a>
+		</small>
+		<br />
+	{%- endif %}
+
+	<small>
+		{{ macros_translate::translate(key="newest_to_oldest", default="From newest to oldest", language_strings=language_strings) }} ↓
+	</small>
+</p>
 
 {% include "partials/articles.html" %}
 {% endblock content %}

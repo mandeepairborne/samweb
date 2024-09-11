@@ -67,6 +67,14 @@
 				}
 			}
 		{%- endif %}
+
+		{%- if config.extra.debug_layout -%}
+			*,
+			*::before,
+			*::after {
+				outline: solid 1px var(--primary-color);
+			}
+		{%- endif -%}
 	</style>
 
 	{%- set stylesheets = [ "style.css" ] %}

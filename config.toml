@@ -113,6 +113,8 @@ show_read_time = true
 # Whether to enable the KaTeX library for rendering LaTeX.
 # Note: This will make your page significantly heavier.
 katex = true
+# Display outlines around all elements for debugging purposes
+# debug_layout = true
 
 [extra.nav]
 # Whether to show the Atom/RSS feed button in the nav
@@ -126,11 +128,11 @@ show_repo = true
 # i.e. "@/blog/_index.md".
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
-	{ name = "Links" , sublinks = [
+	{ name = "Links", sublinks = [
 		{ url = "@/blog/_index.md", name = "Blog" },
 		{ url = "@/demo/index.md", name = "Demo" },
 		{ url = "@/tricks/index.md", name = "Tricks" },
-  	]},
+	] },
 	{ url = "https://daudix.one/coffee/", name = "Coffee" },
 ]
 
