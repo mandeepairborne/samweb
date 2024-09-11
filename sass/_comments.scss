@@ -34,9 +34,9 @@
 			&:disabled {
 				animation: loading-fill var(--transition-long) ease-in-out alternate infinite;
 				transition: none;
-				cursor: not-allowed;
 
 				&:hover {
+					cursor: not-allowed;
 					background-color: transparent;
 					color: var(--fg-muted-5);
 				}
@@ -181,12 +181,12 @@
 				display: inline-block;
 				vertical-align: middle;
 				transition: var(--transition);
-				cursor: zoom-in;
 				width: 1.5em;
 				height: 1.5em;
 
 				&:hover {
 					transform: scale(2);
+					cursor: zoom-in;
 				}
 			}
 

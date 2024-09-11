@@ -54,7 +54,7 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 - [ ] Coffee
 - [x] Combustible lemons
 
-![Male mallard duck](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Male_mallard_duck_2.jpg/800px-Male_mallard_duck_2.jpg)
+[![Male mallard duck](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Male_mallard_duck_2.jpg/800px-Male_mallard_duck_2.jpg)](https://upload.wikimedia.org/wikipedia/commons/2/24/Male_mallard_duck_2.jpg)
 
 | Mare         | Rating            | Additional info  |
 | :----------- | :---------------- | :---------------  |

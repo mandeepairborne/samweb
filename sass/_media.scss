@@ -77,15 +77,14 @@ video {
 img {
 	transition: var(--transition-longer);
 
-	&:not(.no-hover, .full-bleed, &[src*="#no-hover"], &[src*="#full-bleed"]) {
-		cursor: zoom-in;
-
+	&:not(.no-hover, .full-bleed, [src*="#no-hover"], [src*="#full-bleed"]) {
 		&:hover {
+			position: relative;
 			transform: var(--hover);
 			z-index: 1;
+			cursor: zoom-in;
 			box-shadow: var(--edge-highlight), var(--shadow-raised);
 			border-radius: 0;
-			position: relative;
 		}
 
 		&.start,
@@ -112,4 +111,8 @@ img {
 			}
 		}
 	}
+}
+
+a img:not(.no-hover, .full-bleed, [src*="#no-hover"], [src*="#full-bleed"]):hover {
+	cursor: pointer;
 }
