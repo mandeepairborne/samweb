@@ -101,7 +101,7 @@ Duckquill has some [front matter](https://www.getzola.org/documentation/content/
 
 ### Global
 
-- `archive`: Make the post visually stand out in the post list. Also accepts message as a value.
+- `archive`: Displays an archived message.
 - `trigger`: Displays a trigger warning message.
 - `disclaimer`: Displays a disclaimer message.
 - `toc`: Enables table of contents. Only first 2 levels of headings are listed.
@@ -109,9 +109,10 @@ Duckquill has some [front matter](https://www.getzola.org/documentation/content/
 ### Blog post specific:
 
 - `banner`: Filename of the [colocated](https://www.getzola.org/documentation/content/overview/#asset-colocation) banner image. Recommended dimensions are 2:1 aspect ratio and 1920x960 resolution.
-- `featured`: Make the post visually stand out in the post list.
+- `archived`: Make the post visually stand out in the post list. Also accepts message as a value.
+- `featured`: Ditto but doesn't accept message as a value.
 - `hot`: Ditto.
-- `poor`: Ditto...
+- `poor`: Ditto.
 
 In `[extra.comments]` section:
 
@@ -241,7 +242,6 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and App
 - [aplos.gxbs.me](https://aplos.gxbs.me)
 - [archaeoramblings.com](https://www.archaeoramblings.com/credits)
 - [oomfie.town](https://oomfie.town/credits)
-- [veeronniecaw.space](https://veeronniecaw.space)
 
 ## Assets Sources
 
