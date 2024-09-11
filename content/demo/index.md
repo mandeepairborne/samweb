@@ -589,6 +589,38 @@ Blah blah <q>Inline Quote</q> hmm.
 
 <a class="external" href="https://example.org">Link to site</a>
 
+### Spoilers
+
+```html
+<span class="spoiler">Some spoiler</span>
+```
+
+You know, <span class="spoiler">Duckquill is a pretty dumb name.</span> I know, crazy.
+
+With `solid` class:
+
+```html
+<span class="spoiler solid">Some spoiler</span>
+```
+
+You know, <span class="spoiler solid">Duckquill is a pretty dumb name.</span> I know, crazy.
+
+When set on an image:
+
+```html
+<img class="spoiler" src="https://example.org/image.jpg" />
+```
+
+<img class="spoiler" src="https://i1.theportalwiki.net/img/2/23/Ashpd_blueprint.jpg" />
+
+With `solid` class:
+
+```html
+<img class="spoiler solid" src="https://example.org/image.jpg" />
+```
+
+<img class="spoiler solid" src="https://i1.theportalwiki.net/img/2/23/Ashpd_blueprint.jpg" />
+
 ### Buttons Dialog
 
 ```html.j2

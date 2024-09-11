@@ -1,0 +1,48 @@
+.spoiler {
+	filter: blur(0.25rem);
+	transition: var(--transition);
+
+	&:hover,
+	&:active {
+		filter: none;
+	}
+
+	&.solid {
+		filter: none;
+		border-radius: var(--rounded-corner-small);
+		background-color: var(--fg-muted-5);
+		color: transparent;
+
+		&:hover,
+		&:active {
+			background-color: transparent;
+			color: inherit;
+		}
+	}
+}
+
+img.spoiler {
+	opacity: var(--disabled);
+	clip-path: inset(0% 0% 0% 0% round var(--rounded-corner));
+	filter: blur(1rem);
+	transition: var(--transition-longer);
+
+	&:hover,
+	&:active {
+		opacity: 1;
+		clip-path: inset(-1rem -1rem -1rem -1rem round 0);
+		filter: none;
+	}
+
+	&.solid {
+		clip-path: none;
+		filter: brightness(0%);
+		box-shadow: none;
+		border-radius: var(--rounded-corner);
+
+		&:hover,
+		&:active {
+			filter: none;
+		}
+	}
+}

@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add fading on top/bottom of the search results container.
 - Add loading animation to "Load Comments" button.
 - Add special `switch` class for checkboxes (#70).
+- Add spoiler styles.
 - Add zoom-on-hover to custom comment emojis.
 - Return the scrollbar styling.
 - Style mentions and hashtags in comments.
