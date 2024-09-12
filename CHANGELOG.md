@@ -31,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **[BREAKING]** Change the `--active` CSS variable to include `scale()` as well.
 - **[BREAKING]** Change the way `--bg-color` works. See [Tricks](https://duckquill.daudix.one/tricks/#background-image) page to see how to make background images work.
+- **[BREAKING]** Rename `config.extra.stylesheets` to `config.extra.styles`.
 - Allow enabling table of contents on all pages and sections except for the homepage.
 - Allow opening original comment attachment by clicking on it.
 - Allow overriding the `body` block of `base.html.

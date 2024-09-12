@@ -18,7 +18,7 @@ Several lesser known Duckquill thingies.
 
 ## Styling
 
-Duckquill is pretty easy to restyle with just a few lines of SCSS in the [appropriate location](@/_index.md#custom-stylesheets). Let's see some examples.
+Duckquill is pretty easy to restyle with just a few lines of SCSS in the [appropriate location](@/_index.md#custom-styles). Let's see some examples.
 
 ### Navbar
 

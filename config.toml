@@ -85,10 +85,10 @@ fix_contrast_dark = true
 issues_url = "https://codeberg.org/daudix/duckquill/issues"
 # URL to website's source code
 source_url = "https://codeberg.org/daudix/duckquill"
-# Additional CSS stylesheets; expects them to be in the "./static/" directory.
+# Additional CSS styles; expects them to be in the "./static/" directory.
 # If you are using Sass it will be generated there automatically.
 #
-# stylesheets = [
+# styles = [
 #   "YOUR_STYLE.css",
 #   "ALSO_YOUR_STYLE.css"
 # ]

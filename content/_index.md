@@ -130,19 +130,19 @@ Inside that file, copy-paste one of the existing translations from Duckquill and
 
 Additionally to translating Duckquill, you can also override the English stings by copy-pasting `en.toml` from Duckquill to the `i18n` directory of your website and adjusting the values to your liking.
 
-### Custom Stylesheets
+### Custom Styles
 
-To add your own or override existing styles, create a custom stylesheet and add it in the `config.toml`:
+To add your own or override existing styles, create a custom style and add it in the `config.toml`:
 
 ```toml
 [extra]
-stylesheets = [
+styles = [
   "YOUR_STYLE.css",
   "ALSO_YOUR_STYLE.css"
 ]
 ```
 
-Additional stylesheets are expected it to be in the `static` directory. If you are using Sass they will be compiled there by default.
+Additional styles are expected it to be in the `static` directory. If you are using Sass they will be compiled there by default.
 
 If for some reason overridden style is not respected, try using `!important` (don't use it unless needed). You can import styles from Duckquill using:
 
@@ -150,11 +150,11 @@ If for some reason overridden style is not respected, try using `!important` (do
 @use "../themes/duckquill/sass/NEEDED_FILE.scss";
 ```
 
-You can also load stylesheets per page/section by setting them inside page's front matter:
+You can also load styles per page/section by setting them inside page's front matter:
 
 ```toml
 [extra]
-stylesheets = [
+styles = [
   "YOUR_PAGE_STYLE.css"
 ]
 ```
