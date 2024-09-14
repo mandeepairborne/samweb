@@ -21,14 +21,14 @@
 		user-select: none;
 
 		&:hover {
-			background-color: var(--primary-color);
+			background-color: var(--accent-color);
 		}
 	}
 
 	a + a[href*="#fr-"],
 	li:target a[href*="#fr-"] {
 		opacity: var(--disabled);
-		background-color: var(--primary-color);
+		background-color: var(--accent-color);
 
 		&:hover {
 			opacity: 1;

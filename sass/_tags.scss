@@ -28,13 +28,13 @@
 		white-space: nowrap;
 
 		&:hover {
-			background-color: var(--primary-color-alpha);
-			color: var(--primary-color);
+			background-color: var(--accent-color-alpha);
+			color: var(--accent-color);
 			text-decoration: none;
 
 			.count {
-				background-color: var(--primary-color-alpha);
-				color: var(--primary-color);
+				background-color: var(--accent-color-alpha);
+				color: var(--accent-color);
 			}
 		}
 

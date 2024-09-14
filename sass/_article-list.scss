@@ -14,12 +14,12 @@
 		border-radius: var(--rounded-corner);
 		border-start-end-radius: 2.125rem;
 		border-end-end-radius: 1.8125rem;
-		background-color: var(--primary-color-alpha);
+		background-color: var(--accent-color-alpha);
 		padding: 1rem;
 		overflow: hidden;
 
 		&:hover {
-			outline-color: var(--primary-color);
+			outline-color: var(--accent-color);
 			outline-offset: 0.5rem;
 		}
 
@@ -36,11 +36,11 @@
 			justify-content: flex-end;
 
 			a {
-				background-color: var(--primary-color-alpha);
-				color: var(--primary-color);
+				background-color: var(--accent-color-alpha);
+				color: var(--accent-color);
 	
 				&:hover {
-					background-color: var(--primary-color);
+					background-color: var(--accent-color);
 					color: var(--contrast-color);
 				}
 			}

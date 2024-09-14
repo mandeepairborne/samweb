@@ -25,8 +25,8 @@ Some of the features Duckquill has to offer:
 - Lightweight by default, powerful when needed; no JavaScript is used by default.
 - Privacy respecting analytics using [GoatCounter](https://www.goatcounter.com), with support for self-hosting.
 - Estimated read time of the post; put away those with short attention spans.
-- Everything is tinted with the user-defined primary color for a pleasant look.
 - Light/dark/system theme switcher (for some reason everyone likes these).
+- Everything is tinted with the user-defined accent color for a pleasant look.
 - GitHub-style alerts. Yes, they're pretty, but don't overuse them. 
 - Post banners; they're even used in the social media cards!
 - YouTube/Vimeo shortcodes for easy video embedding.
@@ -159,20 +159,20 @@ styles = [
 ]
 ```
 
-### Primary Color
+### Accent Color
 
-Duckquill respects chosen primary color everywhere. To use your own, simply change the primary color in `config.toml`:
+Duckquill respects chosen accent color everywhere. To use your own, simply change it in `config.toml`:
 
 ```toml
 [extra]
-primary_color = "#3584e4"
+accent_color = "#3584e4"
 ```
 
 Additionally, you can set a separate color for dark mode:
 
 ```toml
 [extra]
-primary_color_dark = "#ff7800"
+accent_color_dark = "#ff7800"
 ```
 
 ### Favicon

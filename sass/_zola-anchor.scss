@@ -16,7 +16,7 @@ h6 {
 	margin: 0 0.25em;
 
 	&:hover .icon {
-		background-color: var(--primary-color);
+		background-color: var(--accent-color);
 	}
 
 	&:active {
@@ -41,5 +41,5 @@ h6 {
 }
 
 :target .zola-anchor .icon {
-	background-color: var(--primary-color-alpha);
+	background-color: var(--accent-color-alpha);
 }

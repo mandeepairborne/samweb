@@ -44,11 +44,11 @@ button.inline-button {
 	&.colored {
 		box-shadow: none;
 		background-color: transparent;
-		color: var(--primary-color);
+		color: var(--accent-color);
 
 		&:hover {
 			box-shadow: var(--edge-highlight);
-			background-color: var(--primary-color-alpha);
+			background-color: var(--accent-color-alpha);
 		}
 	}
 }

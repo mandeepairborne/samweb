@@ -17,7 +17,7 @@
 @include theme-variables using ($theme) {
 	@if $theme == "dark" {
 		// COLORS
-		--bg-color: color-mix(in srgb, var(--primary-color) 10%, black);
+		--bg-color: color-mix(in srgb, var(--accent-color) 10%, black);
 		--fg-color: rgb(255 255 255);
 		--fg-muted-1: rgb(255 255 255 / 0.05);
 		--fg-muted-2: rgb(255 255 255 / 0.1);
@@ -37,7 +37,7 @@
 
 	@else {
 		// COLORS
-		--bg-color: color-mix(in srgb, var(--primary-color) 20%, white);
+		--bg-color: color-mix(in srgb, var(--accent-color) 20%, white);
 		--blue-bg: rgb(from var(--blue-fg) r g b / var(--color-opacity));
 		--blue-fg: rgb(53 132 228);
 		--brown-bg: rgb(from var(--brown-fg) r g b / var(--color-opacity));
@@ -52,7 +52,7 @@
 		--green-bg: rgb(from var(--green-fg) r g b / var(--color-opacity));
 		--green-fg: rgb(38 162 105);
 		--nav-bg: rgb(242 242 242 / 0.7);
-		--primary-color-alpha: rgb(from var(--primary-color) r g b / var(--color-opacity));
+		--accent-color-alpha: rgb(from var(--accent-color) r g b / var(--color-opacity));
 		--purple-bg: rgb(from var(--purple-fg) r g b / var(--color-opacity));
 		--purple-fg: rgb(145 65 172);
 		--red-bg: rgb(from var(--red-fg) r g b / var(--color-opacity));

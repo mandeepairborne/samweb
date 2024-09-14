@@ -30,8 +30,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - **[BREAKING]** Change the `--active` CSS variable to include `scale()` as well.
-- **[BREAKING]** Change the way `--bg-color` works. See [Tricks](https://duckquill.daudix.one/tricks/#background-image) page to see how to make background images work.
-- **[BREAKING]** Rename `config.extra.stylesheets` to `config.extra.styles`.
+- **[BREAKING]** Change the way `--bg-color` CSS variable works. See [Tricks](https://duckquill.daudix.one/tricks/#background-image) page to see how to make background images work.
+- **[BREAKING]** Rename `--primary-color` CSS variable to `--accent-color`.
+- **[BREAKING]** Rename `config.extra.nav.links.sublinks` to `config.extra.nav.links.menu`
+- **[BREAKING]** Rename `config.extra.primary_color` and `config.extra.primary_color_dark` config variables to `config.extra.accent_color` and `config.extra.accent_color_dark`.
+- **[BREAKING]** Rename `config.extra.stylesheets` to `config.extra.styles`. Front matter variables are renamed as well.
 - Allow enabling table of contents on all pages and sections except for the homepage.
 - Allow opening original comment attachment by clicking on it.
 - Allow overriding the `body` block of `base.html.

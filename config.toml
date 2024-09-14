@@ -65,12 +65,12 @@ taxonomies = [{ name = "tags", feed = true }]
 #
 # Sets theme and browser theme color.
 # See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
-primary_color = "#ff7800"
+accent_color = "#ff7800"
 # Ditto but for the dark theme.
 # If not set regular variant will be used.
-primary_color_dark = "#ffa348"
+accent_color_dark = "#ffa348"
 # Whether to fix low contrast in text selection, checkboxes, etc.
-# Use only if the default doesn't provide enough contrast, e.g. the primary color is set to yellow.
+# Use only if the default doesn't provide enough contrast, e.g. the accent color is set to yellow.
 #
 # fix_contrast = true
 #
@@ -128,7 +128,7 @@ show_repo = true
 # i.e. "@/blog/_index.md".
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
-	{ name = "Links", sublinks = [
+	{ name = "Links", menu = [
 		{ url = "@/blog/_index.md", name = "Blog" },
 		{ url = "@/demo/index.md", name = "Demo" },
 		{ url = "@/tricks/index.md", name = "Tricks" },

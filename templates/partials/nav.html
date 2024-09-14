@@ -17,7 +17,7 @@
 			</li>
 			<div class="divider"></div>
 			{%- for link in config.extra.nav.links %}
-				{%- if link.sublinks and link.sublinks | length > 0 -%}
+				{%- if link.menu and link.menu | length > 0 -%}
 					<li>
 						<details>
 							<summary>
@@ -25,23 +25,23 @@
 								{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
 							</summary>
 							<ul>
-								{%- for sublink in link.sublinks -%}
-									{%- if sublink.url is matching('https?://') %}
+								{%- for link in link.menu -%}
+									{%- if link.url is matching('https?://') %}
 										<li>
-											<a href="{{ sublink.url }}" rel="{{ rel_attributes }}"
-												{%- if current_url | default(value='/') | trim_end_matches(pat='/') | safe == sublink.url | trim_end_matches(pat='/') | safe -%}
+											<a href="{{ link.url }}" rel="{{ rel_attributes }}"
+												{%- if current_url | default(value='/') | trim_end_matches(pat='/') | safe == link.url | trim_end_matches(pat='/') | safe -%}
 													class="active"
 												{%- endif -%}>
-												{{- macros_translate::translate(key=sublink.name, default=sublink.name, language_strings=language_strings) -}}
+												{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
 											</a>
 										</li>
 									{%- else %}
 										<li>
-											<a href="{{ get_url(path=sublink.url, lang=lang)}}"
-												{%- if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=sublink.url, lang=lang) | trim_end_matches(pat='/') | safe -%}
+											<a href="{{ get_url(path=link.url, lang=lang)}}"
+												{%- if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url, lang=lang) | trim_end_matches(pat='/') | safe -%}
 													class="active"
 												{%- endif -%}>
-												{{- macros_translate::translate(key=sublink.name, default=sublink.name, language_strings=language_strings) -}}
+												{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
 											</a>
 										</li>
 									{%- endif %}

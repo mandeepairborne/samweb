@@ -14,10 +14,10 @@
 
 		&:hover {
 			box-shadow: var(--edge-highlight);
-			background-color: var(--primary-color-alpha);
+			background-color: var(--accent-color-alpha);
 
 			.post-title {
-				color: var(--primary-color);
+				color: var(--accent-color);
 			}
 		}
 

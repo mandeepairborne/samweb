@@ -82,11 +82,11 @@
 
 		a.active {
 			box-shadow: var(--edge-highlight);
-			background-color: var(--primary-color-alpha);
-			color: var(--primary-color);
+			background-color: var(--accent-color-alpha);
+			color: var(--accent-color);
 
 			&:hover {
-				background-color: var(--primary-color);
+				background-color: var(--accent-color);
 				color: var(--contrast-color);
 
 				.icon {
@@ -95,7 +95,7 @@
 			}
 
 			.icon {
-				background-color: var(--primary-color);
+				background-color: var(--accent-color);
 			}
 		}
 
@@ -112,7 +112,7 @@
 			}
 
 			&.active {
-				color: var(--primary-color);
+				color: var(--accent-color);
 
 				&:hover {
 					color: var(--contrast-color);
@@ -123,7 +123,7 @@
 				}
 
 				.icon {
-					background-color: var(--primary-color);
+					background-color: var(--accent-color);
 				}
 			}
 
@@ -317,14 +317,14 @@
 			}
 
 			.active {
-				background-color: var(--primary-color-alpha);
+				background-color: var(--accent-color-alpha);
 
 				.icon {
-					background-color: var(--primary-color);
+					background-color: var(--accent-color);
 				}
 
 				&:hover {
-					background-color: var(--primary-color);
+					background-color: var(--accent-color);
 
 					.icon {
 						background-color: var(--contrast-color);

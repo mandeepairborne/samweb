@@ -49,7 +49,7 @@ figcaption {
 blockquote {
 	margin: 0;
 	border-radius: 0.25rem;
-	border-inline-start: 0.25rem solid var(--primary-color);
+	border-inline-start: 0.25rem solid var(--accent-color);
 	padding: 0 0.75rem;
 	color: var(--fg-muted-5);
 }
@@ -65,8 +65,8 @@ q {
 }
 
 mark {
-	background-color: var(--primary-color-alpha);
-	color: var(--primary-color);
+	background-color: var(--accent-color-alpha);
+	color: var(--accent-color);
 }
 
 del {
@@ -111,7 +111,7 @@ progress {
 	background-color: var(--fg-muted-1);
 	width: 100%;
 	height: 0.5rem;
-	color: var(--primary-color);
+	color: var(--accent-color);
 
 	&:indeterminate {
 		background-color: var(--fg-muted-1);
@@ -127,12 +127,12 @@ progress {
 
 	&::-moz-progress-bar {
 		border-radius: 999px;
-		background-color: var(--primary-color);
+		background-color: var(--accent-color);
 	}
 
 	&::-webkit-progress-value {
 		border-radius: 999px;
-		background-color: var(--primary-color);
+		background-color: var(--accent-color);
 	}
 }
 
@@ -159,7 +159,7 @@ kbd {
 }
 
 a {
-	color: var(--primary-color);
+	color: var(--accent-color);
 	font-weight: bold;
 	text-decoration-thickness: max(1px, 0.0625em);
 
@@ -202,7 +202,7 @@ aside {
 	margin-inline-start: 1rem;
 	box-shadow: var(--edge-highlight);
 	border-radius: var(--rounded-corner);
-	background-color: var(--primary-color-alpha);
+	background-color: var(--accent-color-alpha);
 	padding: 1rem;
 	width: 30%;
 

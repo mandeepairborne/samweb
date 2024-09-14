@@ -645,7 +645,7 @@ URL anchor `#solid` can be used for this as well.
 
 <!-- For the demo purposes only -->
 <div id="color-picker-container">
-  <small>Primary color:</small>
+  <small>Accent color:</small>
   <br />
   <input id="color-picker-light" type="color" value="#ff7800" />
   <label for="color-picker-light">Light theme</label>
@@ -713,21 +713,21 @@ URL anchor `#solid` can be used for this as well.
   const contrastCheckboxLight = document.querySelector("#contrast-color-light");
   const contrastCheckboxDark = document.querySelector("#contrast-color-dark");
 
-  let primaryColorLight = colorPickerLight.value;
-  let primaryColorDark = colorPickerDark.value;
+  let accentColorLight = colorPickerLight.value;
+  let accentColorDark = colorPickerDark.value;
 
-  colorPickerLight.addEventListener("input", updatePrimaryColorLight);
-  colorPickerDark.addEventListener("input", updatePrimaryColorDark);
+  colorPickerLight.addEventListener("input", updateAccentColorLight);
+  colorPickerDark.addEventListener("input", updateAccentColorDark);
   contrastCheckboxLight.addEventListener("change", updateStyles);
   contrastCheckboxDark.addEventListener("change", updateStyles);
 
-  function updatePrimaryColorLight() {
-    primaryColorLight = colorPickerLight.value;
+  function updateAccentColorLight() {
+    accentColorLight = colorPickerLight.value;
     updateStyles();
   }
 
-  function updatePrimaryColorDark() {
-    primaryColorDark = colorPickerDark.value;
+  function updateAccentColorDark() {
+    accentColorDark = colorPickerDark.value;
     updateStyles();
   }
 
@@ -745,14 +745,14 @@ URL anchor `#solid` can be used for this as well.
 
     let styles = `
       :root {
-        --primary-color: ${primaryColorLight};
+        --accent-color: ${accentColorLight};
       }
       [data-theme="dark"] {
-        --primary-color: ${primaryColorDark};
+        --accent-color: ${accentColorDark};
       }
       @media (prefers-color-scheme: dark) {
         :root:not([data-theme="light"]) {
-          --primary-color: ${primaryColorDark};
+          --accent-color: ${accentColorDark};
         }
       }
     `;

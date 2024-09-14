@@ -4,8 +4,8 @@
 
 :root {
 	scroll-behavior: smooth;
-	scrollbar-color: var(--primary-color) transparent;
-	accent-color: var(--primary-color);
+	scrollbar-color: var(--accent-color) transparent;
+	accent-color: var(--accent-color);
 	font-size: 16px;
 
 	// Smaller font size on mobile
@@ -27,25 +27,25 @@ body {
 	overflow-wrap: break-word;
 }
 
-// Style text selection to use primary color
+// Style text selection to use accent color
 ::selection {
-	background-color: var(--primary-color);
+	background-color: var(--accent-color);
 	color: var(--contrast-color);
 }
 
 // Make focused anchor not get covered by nav,
-// and flash it with primary color when jumping to it
+// and flash it with accent color when jumping to it
 :target:not(#main) {
 	transition: all var(--transition), scroll-margin-block-start 0s;
 	scroll-margin-block-start: 15vh;
-	color: var(--primary-color);
-	text-shadow: var(--primary-color-alpha) 0 0 0.25rem, var(--primary-color) 0 0 0.75rem;
+	color: var(--accent-color);
+	text-shadow: var(--accent-color-alpha) 0 0 0.25rem, var(--accent-color) 0 0 0.75rem;
 }
 
 // Custom focus indicator
 :focus-visible {
 	animation: focus-in var(--transition);
-	outline: 0.125rem solid var(--primary-color);
+	outline: 0.125rem solid var(--accent-color);
 	outline-offset: 0.125rem;
 }
 
@@ -53,7 +53,7 @@ body {
 @supports not selector(:focus-visible) {
 	:focus {
 		animation: focus-in var(--transition);
-		outline: 0.125rem solid var(--primary-color);
+		outline: 0.125rem solid var(--accent-color);
 		outline-offset: 0.125rem;
 	}
 }

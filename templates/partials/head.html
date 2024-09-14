@@ -3,9 +3,9 @@
 	<meta charset="UTF-8" />
 	<meta name="description" content="{{ config.description }}" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="theme-color" content="{{ config.extra.primary_color | default(value='#9a9996') | safe }}" />
-	{%- if config.extra.primary_color_dark %}
-		<meta name="theme-color" content="{{ config.extra.primary_color_dark | safe }}" media="(prefers-color-scheme:dark)" />
+	<meta name="theme-color" content="{{ config.extra.accent_color | default(value='#9a9996') | safe }}" />
+	{%- if config.extra.accent_color_dark %}
+		<meta name="theme-color" content="{{ config.extra.accent_color_dark | safe }}" media="(prefers-color-scheme:dark)" />
 	{%- endif %}
 	<title>{% include "partials/title.html" %}</title>
 	<link rel="canonical" href="{{ current_url | default(value='/') | safe }}" />
@@ -40,18 +40,18 @@
 
 	<style type="text/css">
 		:root {
-			--primary-color: {{ config.extra.primary_color | default(value="#6f8396") | safe }};
+			--accent-color: {{ config.extra.accent_color | default(value="#6f8396") | safe }};
 			--contrast-color: {% if config.extra.fix_contrast %}rgb(0 0 0 / 0.8){% else %}#fff{% endif %};
 		}
 
-		{%- if config.extra.primary_color_dark %}
+		{%- if config.extra.accent_color_dark %}
 			[data-theme="dark"] {
-				--primary-color: {{ config.extra.primary_color_dark | safe }};
+				--accent-color: {{ config.extra.accent_color_dark | safe }};
 			}
 
 			@media (prefers-color-scheme: dark) {
 				:root:not([data-theme="light"]) {
-					--primary-color: {{ config.extra.primary_color_dark | safe }};
+					--accent-color: {{ config.extra.accent_color_dark | safe }};
 				}
 			}
 		{%- endif %}
@@ -72,7 +72,7 @@
 			*,
 			*::before,
 			*::after {
-				outline: solid 1px var(--primary-color);
+				outline: solid 1px var(--accent-color);
 			}
 		{%- endif -%}
 	</style>
@@ -130,7 +130,7 @@
 		{%- set scripts = scripts | concat(with=["theme-switcher.js"]) %}
 	{%- endif %}
 
-	{%- if config.extra.nav.links.sublinks or config.languages | length > 0 or config.extra.nav.show_theme_switcher %}
+	{%- if config.extra.nav.links.menu or config.languages | length > 0 or config.extra.nav.show_theme_switcher %}
 		{%- set scripts = scripts | concat(with=["details.js"]) %}
 	{%- endif %}
 
