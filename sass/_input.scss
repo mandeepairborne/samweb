@@ -16,7 +16,7 @@ input[type="color"] {
 	}
 
 	&:disabled {
-		opacity: var(--disabled);
+		opacity: var(--disabled-opacity);
 
 		&:hover {
 			cursor: not-allowed;

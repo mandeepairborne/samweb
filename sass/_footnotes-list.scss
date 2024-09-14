@@ -27,7 +27,7 @@
 
 	a + a[href*="#fr-"],
 	li:target a[href*="#fr-"] {
-		opacity: var(--disabled);
+		opacity: var(--dim-opacity);
 		background-color: var(--accent-color);
 
 		&:hover {

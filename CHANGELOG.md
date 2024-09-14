@@ -10,7 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add `--color-opacity` CSS variable for setting global color opacity.
-- Add `--disabled` CSS variable for setting opacity of disabled elements.
+- Add `--dim-opacity` CSS variable for setting opacity of dimmed elements.
+- Add `--disabled-opacity` CSS variable for setting opacity of disabled elements.
 - Add `--hover` CSS variable for setting zoom on hover.
 - Add `external` class to comment timestamp.
 - Add `h1` with page/section title by default.

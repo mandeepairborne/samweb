@@ -3,7 +3,7 @@ a.external::after {
 	-webkit-mask-image: var(--icon);
 	-webkit-mask-size: cover;
 	display: inline-block;
-	opacity: var(--disabled);
+	opacity: var(--dim-opacity);
 	mask-image: var(--icon);
 	mask-size: cover;
 	margin-inline-start: 0.25rem;
