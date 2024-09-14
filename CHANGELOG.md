@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add active state to footer's "Powered by" links.
 - Add active state to footnotes' go back button.
 - Add active state to slider thumb.
+- Add Bahasa Melayu translation (#78).
 - Add fading on top/bottom of the search results container.
 - Add loading animation to "Load Comments" button.
 - Add margin between comment author name and timestamp.
@@ -26,6 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add zoom-on-hover to custom comment emojis.
 - Return the scrollbar styling.
 - Style mentions and hashtags in comments.
+- Turn "Feed" button to a dropdown if multiple feeds are avaiable (#72).
 
 ### Changed
 
