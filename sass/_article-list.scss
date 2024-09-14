@@ -52,7 +52,6 @@
 		&.hot,
 		&.poor {
 			&::before {
-				-webkit-mask-size: cover;
 				position: absolute;
 				top: 50%;
 				right: -3rem;
@@ -85,7 +84,6 @@
 			background-color: var(--fg-muted-1);
 
 			&::before {
-				-webkit-mask-image: var(--icon);
 				mask-image: var(--icon);
 				background-color: var(--fg-muted-1);
 			}
@@ -115,7 +113,6 @@
 			background-color: var(--purple-bg);
 
 			&::before {
-				-webkit-mask-image: var(--icon);
 				mask-image: var(--icon);
 				background-color: var(--purple-bg);
 			}
@@ -144,7 +141,6 @@
 			background-color: var(--yellow-bg);
 
 			&::before {
-				-webkit-mask-image: var(--icon);
 				mask-image: var(--icon);
 				background-color: var(--yellow-bg);
 			}
@@ -182,7 +178,6 @@
 			background-color: var(--red-bg);
 
 			&::before {
-				-webkit-mask-image: var(--icon);
 				mask-image: var(--icon);
 				background-color: var(--red-bg);
 			}
@@ -211,7 +206,6 @@
 			background-color: var(--brown-bg);
 
 			&::before {
-				-webkit-mask-image: var(--icon);
 				mask-image: var(--icon);
 				background-color: var(--brown-bg);
 			}
@@ -267,7 +261,6 @@
 			color: var(--fg-muted-5);
 
 			.icon {
-				-webkit-mask-image: var(--icon);
 				mask-image: var(--icon);
 				background-color: var(--fg-muted-5);
 			}
@@ -278,7 +271,6 @@
 			color: var(--purple-fg);
 
 			.icon {
-				-webkit-mask-image: var(--icon);
 				mask-image: var(--icon);
 				background-color: var(--purple-fg);
 			}
@@ -289,7 +281,6 @@
 			color: var(--yellow-fg);
 
 			.icon {
-				-webkit-mask-image: var(--icon);
 				mask-image: var(--icon);
 				background-color: var(--yellow-fg);
 			}
@@ -300,7 +291,6 @@
 			color: var(--red-fg);
 
 			.icon {
-				-webkit-mask-image: var(--icon);
 				mask-image: var(--icon);
 				background-color: var(--red-fg);
 			}
@@ -311,7 +301,6 @@
 			color: var(--brown-fg);
 
 			.icon {
-				-webkit-mask-image: var(--icon);
 				mask-image: var(--icon);
 				background-color: var(--brown-fg);
 			}

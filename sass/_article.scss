@@ -1,12 +1,10 @@
 #banner-container {
-	--mask: linear-gradient(black, transparent);
-	-webkit-mask-image: var(--mask);
 	-webkit-user-select: none;
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: -1;
-	mask-image: var(--mask);
+	mask-image: linear-gradient(black, transparent);
 	width: 100vw;
 	height: 50vw; // hack to keep the aspect ratio 2:1
 	user-select: none;
