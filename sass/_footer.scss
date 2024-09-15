@@ -84,14 +84,12 @@
 			transition: var(--transition);
 			border-radius: 999px;
 			padding: 0.5rem;
+			color: var(--fg-muted-4);
 
 			&:hover {
 				box-shadow: var(--edge-highlight);
 				background-color: var(--fg-muted-1);
-
-				.icon {
-					background-color: var(--fg-muted-5);
-				}
+				color: var(--fg-muted-5);
 			}
 
 			&:active {
@@ -101,7 +99,6 @@
 			.icon {
 				mask-image: var(--icon);
 				transition: var(--transition);
-				background-color: var(--fg-muted-4);
 				width: 1.5rem;
 				height: 1.5rem;
 			}

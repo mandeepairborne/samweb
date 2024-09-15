@@ -30,6 +30,25 @@
 
 		h3 {
 			margin: 0;
+
+			a:hover::after {
+				transform: none;
+				opacity: 1;
+			}
+
+			a::after {
+				display: inline-block;
+				vertical-align: -0.0625em;
+				transform: translateX(-0.25rem);
+				opacity: 0;
+				mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='m5.707 1.293 6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 1 1-1.414-1.414L9.586 8 4.293 2.707a1 1 0 1 1 1.414-1.414m0 0'/%3E%3C/svg%3E");
+				transition: var(--transition);
+				margin-inline-start: 0.25rem;
+				background-color: currentColor;
+				width: 1rem;
+				height: 1rem;
+				content: "";
+			}
 		}
 
 		.tags {
@@ -261,7 +280,6 @@
 
 			.icon {
 				mask-image: var(--icon);
-				background-color: var(--fg-muted-5);
 			}
 		}
 
@@ -271,7 +289,6 @@
 
 			.icon {
 				mask-image: var(--icon);
-				background-color: var(--purple-fg);
 			}
 		}
 
@@ -281,7 +298,6 @@
 
 			.icon {
 				mask-image: var(--icon);
-				background-color: var(--yellow-fg);
 			}
 		}
 
@@ -291,7 +307,6 @@
 
 			.icon {
 				mask-image: var(--icon);
-				background-color: var(--red-fg);
 			}
 		}
 
@@ -301,7 +316,6 @@
 
 			.icon {
 				mask-image: var(--icon);
-				background-color: var(--brown-fg);
 			}
 		}
 
