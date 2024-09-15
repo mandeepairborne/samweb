@@ -11,4 +11,14 @@ iframe {
 	&.vimeo-embed {
 		aspect-ratio: 16 / 9;
 	}
+
+	&:fullscreen {
+		box-shadow: none;
+		border-radius: 0;
+	}
+
+	&:-webkit-full-screen {
+		box-shadow: none;
+		border-radius: 0;
+	}
 }

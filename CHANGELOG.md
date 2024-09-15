@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `--dim-opacity` CSS variable for setting opacity of dimmed elements.
 - Add `--disabled-opacity` CSS variable for setting opacity of disabled elements.
 - Add `--hover` CSS variable for setting zoom on hover.
+- Add `--shadow-glass` CSS variable for setting shadow for glass-like elements.
 - Add `config.extra.bundled_fonts` config variable to use custom fonts instead of system.
 - Add `external` class to comment timestamp.
 - Add `h1` with page/section title by default.
@@ -80,6 +81,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Don't add `::before` pseudo element to color pickers.
 - Fix images being covered by other images in some scenarios.
 - Load auto-menu-close script if navbar sublinks are present.
+- Fix videos and iframes having rounded corners and edge highlight in fullscreen.
 
 ## [4.8.0](https://codeberg.org/daudix/duckquill/compare/v4.7.1...v4.8.0)
 
