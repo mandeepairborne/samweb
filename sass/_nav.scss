@@ -146,8 +146,8 @@
 		}
 
 		.circle {
-			padding: 0.5rem 0.625rem;
-			line-height: normal;
+			padding: 0.625rem 0.625rem;
+			line-height: 0;
 
 			&::before {
 				display: none;
@@ -168,7 +168,7 @@
 			border: none;
 			border-radius: 999px;
 			background-color: transparent;
-			font-size: 1rem;
+			font-size: var(--font-size-medium);
 		}
 
 		details {
@@ -314,7 +314,7 @@
 		padding: 0.5rem 0.75rem;
 		width: 100%;
 		color: inherit;
-		font-size: 1rem;
+		font-size: var(--font-size-medium);
 
 		&::placeholder {
 			opacity: 1;

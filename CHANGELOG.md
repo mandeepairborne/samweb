@@ -42,11 +42,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **[BREAKING]** Rename `config.extra.nav.links.sublinks` to `config.extra.nav.links.menu`
 - **[BREAKING]** Rename `config.extra.primary_color` and `config.extra.primary_color_dark` config variables to `config.extra.accent_color` and `config.extra.accent_color_dark`.
 - **[BREAKING]** Rename `config.extra.stylesheets` to `config.extra.styles`. Front matter variables are renamed as well.
+- Add font size variables for consistent typography.
 - Allow enabling table of contents on all pages and sections except for the homepage.
 - Allow opening original comment attachment by clicking on it.
 - Allow overriding the `body` block of `base.html.
 - Allow statements on all sections except for the homepage.
-- Change font sizes to [absolute sizes](https://developer.mozilla.org/en-US/docs/Web/CSS/absolute-size).
 - Change the way 404 image is resized (#74).
 - Improved CRT style, now looks a lot more like [cool-retro-term](https://github.com/Swordfish90/cool-retro-term).
 - Make comment timestamp more subtle.
@@ -62,7 +62,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Set socials icons as CSS variables and not inline styles.
 - Show theme switcher if `config.extra.default_theme` is set, even if `config.extra.nav.show_theme_switcher` is not.
 - Tweak `kbd` styling.
-- Tweak margins instead of relying on `line-height`.
 - Tweak padding of verified instance badge.
 - Use more fitting cursors in some contexts.
 - Use PNG instead of GIF for comments QR code to reduce download size.

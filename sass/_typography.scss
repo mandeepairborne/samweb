@@ -8,37 +8,38 @@ h6 {
 	text-wrap: balance;
 	margin: 2rem 0 1rem;
 	font-weight: lighter;
+	line-height: 1;
 	font-family: var(--font-antique);
 	letter-spacing: -0.05em;
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: var(--font-size-xxx-large);
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: var(--font-size-xx-large);
 }
 
 h3 {
-	font-size: 1.5rem;
+	font-size: var(--font-size-x-large);
 }
 
 h4 {
-	font-size: 1.25rem;
+	font-size: var(--font-size-large);
 }
 
 h5 {
-	font-size: 1rem;
+	font-size: var(--font-size-medium);
 }
 
 h6 {
-	font-size: 0.75rem;
+	font-size: var(--font-size-small);
 }
 
 small {
 	color: var(--fg-muted-5);
-	font-size: smaller;
+	font-size: var(--font-size-small-em);
 }
 
 abbr[title] {
@@ -50,7 +51,7 @@ abbr[title] {
 
 figcaption {
 	color: var(--fg-muted-4);
-	font-size: smaller;
+	font-size: var(--font-size-small-em);
 	text-align: center;
 }
 
@@ -94,7 +95,7 @@ ins {
 samp {
 	background-color: var(--fg-muted-1);
 	color: var(--fg-muted-5);
-	font-size: smaller;
+	font-size: var(--font-size-small-em);
 }
 
 q {
@@ -151,7 +152,7 @@ kbd {
 	border-radius: var(--rounded-corner-small);
 	background-color: var(--fg-muted-1);
 	padding: 0.125rem 0.375rem;
-	font-size: smaller;
+	font-size: var(--font-size-small-em);
 
 	// Small nice thingy, keys can be pressed!
 	&:active {
@@ -183,7 +184,7 @@ hr {
 		top: -1.75rem;
 		content: "☙❧";
 		color: var(--fg-muted-4);
-		font-size: 2rem;
+		font-size: var(--font-size-xx-large);
 
 		// An ugly hack to fix mirroring in rtl
 		:root[dir*="rtl"] & {
