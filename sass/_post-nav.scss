@@ -8,6 +8,7 @@
 		transition: var(--transition);
 		border-radius: var(--rounded-corner);
 		padding: 1rem;
+		padding-block-end: 0.75rem;
 		width: 0;
 		max-width: calc(50% - 0.125rem);
 		text-decoration: none;
@@ -60,7 +61,6 @@
 			color: var(--fg-color);
 			text-overflow: ellipsis;
 			white-space: nowrap;
-			line-height: 1;
 		}
 	}
 
