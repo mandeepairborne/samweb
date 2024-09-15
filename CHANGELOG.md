@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `--dim-opacity` CSS variable for setting opacity of dimmed elements.
 - Add `--disabled-opacity` CSS variable for setting opacity of disabled elements.
 - Add `--hover` CSS variable for setting zoom on hover.
+- Add `config.extra.bundled_fonts` config variable to use custom fonts instead of system.
 - Add `external` class to comment timestamp.
 - Add `h1` with page/section title by default.
 - Add active state to footer's "Powered by" links.
@@ -42,6 +43,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Allow opening original comment attachment by clicking on it.
 - Allow overriding the `body` block of `base.html.
 - Allow statements on all sections except for the homepage.
+- Change font sizes to [absolute sizes](https://developer.mozilla.org/en-US/docs/Web/CSS/absolute-size).
 - Change the way 404 image is resized (#74).
 - Improved CRT style, now looks a lot more like [cool-retro-term](https://github.com/Swordfish90/cool-retro-term).
 - Make comment timestamp more subtle.
@@ -51,11 +53,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Reduce the target heading transition time.
 - Reduce top margin of the target heading.
 - Remove bottom margin of `:last-child` and not `:last-of-type`.
+- Remove legacy KaTeX font variants.
 - Rewrite the homepage (#75).
 - Set animation/transition duration to 0s with `prefers-reduced-motion' instead of removing them altogether.
 - Set socials icons as CSS variables and not inline styles.
 - Show theme switcher if `config.extra.default_theme` is set, even if `config.extra.nav.show_theme_switcher` is not.
 - Tweak `kbd` styling.
+- Tweak margins instead of relying on `line-height`.
 - Tweak padding of verified instance badge.
 - Use more fitting cursors in some contexts.
 - Use PNG instead of GIF for comments QR code to reduce download size.

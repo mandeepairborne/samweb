@@ -73,6 +73,7 @@
 {%- endif -%}
 
 <div class="dialog-buttons">
+	{# <a class="no-hover inline-button colored external" href="https://shareopenly.org/share/?url={{ page.permalink }}&text={{ page.description | urlencode }}">{{ macros_translate::translate(key="share", default="Share", language_strings=language_strings) }}</a> #}
 	<a class="inline-button" href="#top">{{ macros_translate::translate(key="go_to_top", default="Go to Top", language_strings=language_strings) }}</a>
 	{%- if config.extra.issues_url -%}
 		<a class="inline-button colored external" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}">

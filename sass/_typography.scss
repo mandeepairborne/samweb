@@ -8,7 +8,6 @@ h6 {
 	text-wrap: balance;
 	margin: 2rem 0 1rem;
 	font-weight: lighter;
-	line-height: 1.25;
 	font-family: var(--font-antique);
 	letter-spacing: -0.05em;
 }
@@ -25,9 +24,21 @@ h3 {
 	font-size: 1.5rem;
 }
 
+h4 {
+	font-size: 1.25rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
+
+h6 {
+	font-size: 0.75rem;
+}
+
 small {
 	color: var(--fg-muted-5);
-	font-size: 0.875em;
+	font-size: smaller;
 }
 
 abbr[title] {
@@ -42,7 +53,7 @@ abbr[title] {
 
 figcaption {
 	color: var(--fg-muted-4);
-	font-size: 0.875em;
+	font-size: smaller;
 	text-align: center;
 }
 
@@ -86,7 +97,7 @@ ins {
 samp {
 	background-color: var(--fg-muted-1);
 	color: var(--fg-muted-5);
-	font-size: 0.875em;
+	font-size: smaller;
 }
 
 q {
@@ -141,9 +152,8 @@ kbd {
 	box-shadow: var(--edge-highlight), inset 0 -0.125rem 0 var(--fg-muted-2);
 	border-radius: var(--rounded-corner-small);
 	background-color: var(--fg-muted-1);
-	padding: 0.25rem 0.375rem;
-	font-size: 0.875em;
-	line-height: 1;
+	padding: 0.125rem 0.375rem;
+	font-size: smaller;
 
 	&:hover {
 		cursor: pointer;
@@ -193,6 +203,7 @@ dt {
 }
 
 dd {
+	margin-inline-start: 1.5rem;
 	margin-block-end: 1rem;
 }
 
@@ -222,12 +233,8 @@ details {
 	background-color: var(--fg-muted-1);
 	padding: 1rem;
 
-	summary {
-		line-height: 1.25;
-
-		&:hover {
-			cursor: pointer;
-		}
+	summary:hover {
+		cursor: pointer;
 	}
 
 	:last-child {
@@ -237,4 +244,19 @@ details {
 
 figure {
 	margin-inline: 0;
+}
+
+ol,
+ul {
+	padding-inline-start: 1.5rem;
+}
+
+li {
+	margin: 0.125rem 0;
+	padding-inline-start: 0.25rem;
+
+	&::marker {
+		color: var(--accent-color);
+		font-weight: bold;
+	}
 }

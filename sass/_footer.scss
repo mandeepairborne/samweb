@@ -24,7 +24,8 @@
 
 		li {
 			display: flex;
-			line-height: 1.25;
+			margin: 0;
+			padding: 0;
 			list-style: none;
 
 			@media only screen and (max-width: 480px) {
@@ -36,9 +37,8 @@
 			flex: 1;
 			transition: var(--transition);
 			border-radius: 999px;
-			padding: 0.5rem 0.75rem;
+			padding: 0.375rem 0.75rem;
 			color: var(--fg-muted-4);
-			line-height: 1.25;
 			text-align: center;
 			text-decoration: none;
 
@@ -74,7 +74,8 @@
 		padding: 0;
 
 		li {
-			line-height: 0;
+			margin: 0;
+			padding: 0;
 			list-style: none;
 		}
 
@@ -113,7 +114,6 @@
 
 	p {
 		margin: 1rem auto;
-		line-height: 1.25;
 	}
 
 	.link {

@@ -79,6 +79,10 @@
 
 	{%- set styles = [ "style.css" ] %}
 
+	{%- if config.extra.bundled_fonts %}
+		{%- set styles = styles | concat(with=["fonts.css"]) %}
+	{%- endif %}
+
 	{%- if config.extra.katex %}
 		{%- set styles = styles | concat(with=["katex.css"]) %}
 	{%- endif %}

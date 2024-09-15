@@ -171,8 +171,12 @@ Don't like that fancy horizontal rule? Let's make it more modern:
 
 ```scss
 hr {
-    border-block-start: 0.25rem solid var(--fg-muted-2);
-    width: 50%;
+	box-shadow: var(--edge-highlight);
+	border: none;
+	border-radius: 999px;
+	background-color: var(--fg-muted-2);
+	width: 50%;
+	height: 0.25rem;
 
     &::after {
         display: none;

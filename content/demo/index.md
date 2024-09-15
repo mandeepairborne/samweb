@@ -505,7 +505,7 @@ With `range` type:
 <abbr title="American Standard Code for Information Interchange">ASCII</abbr>
 ```
 
-The <abbr title="American Standard Code for Information Interchange">ASCII</abbr> art are awesome!
+The <abbr title="American Standard Code for Information Interchange">ASCII</abbr> art is awesome!
 
 ### Aside (`<aside>`)
 
