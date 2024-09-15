@@ -78,11 +78,12 @@ img {
 	transition: var(--transition-longer);
 
 	&:not(.no-hover, .full-bleed, [src*="#no-hover"], [src*="#full-bleed"]) {
+		cursor: zoom-in;
+
 		&:hover {
 			position: relative;
 			transform: var(--hover);
 			z-index: 1;
-			cursor: zoom-in;
 			box-shadow: var(--edge-highlight), var(--shadow-raised);
 			border-radius: 0;
 		}
@@ -113,6 +114,6 @@ img {
 	}
 }
 
-a img:not(.no-hover, .full-bleed, [src*="#no-hover"], [src*="#full-bleed"]):hover {
+a img:not(.no-hover, .full-bleed, [src*="#no-hover"], [src*="#full-bleed"]) {
 	cursor: pointer;
 }

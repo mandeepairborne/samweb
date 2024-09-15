@@ -24,10 +24,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add loading animation to "Load Comments" button.
 - Add margin between comment author name and timestamp.
 - Add missing edge highlight to active footer navbar links.
+- Add open animation to `details`.
 - Add special `switch` class for checkboxes (#70).
 - Add spoiler styles.
 - Add zoom-on-hover to custom comment emojis.
 - Return the scrollbar styling.
+- Show arrow after article heading in article list on hover.
+- Style `details` arrow.
 - Style mentions and hashtags in comments.
 - Turn "Feed" button to a dropdown if multiple feeds are avaiable (#72).
 
@@ -65,6 +68,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Use PNG instead of GIF for comments QR code to reduce download size.
 - Use relative colors for `-bg` color variants.
 - Use separator `div` instead of `::after` on the home button.
+- Use the current text color for icons instead of explicitly setting their color.
 
 ### Removed
 

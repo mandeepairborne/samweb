@@ -164,15 +164,11 @@
 		button {
 			appearance: none;
 			transition: var(--transition);
+			cursor: pointer;
 			border: none;
 			border-radius: 999px;
 			background-color: transparent;
-			font-weight: bold;
 			font-size: 1rem;
-
-			&:hover {
-				cursor: pointer;
-			}
 		}
 
 		details {

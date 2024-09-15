@@ -11,11 +11,8 @@ a.inline-button {
 
 button.inline-button {
 	appearance: none;
+	cursor: pointer;
 	border: none;
-
-	&:hover {
-		cursor: pointer;
-	}
 }
 
 a.inline-button,
