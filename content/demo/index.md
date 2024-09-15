@@ -679,7 +679,7 @@ URL anchor `#solid` can be used for this as well.
     z-index: 1;
     backdrop-filter: var(--blur);
     transition: var(--transition);
-    box-shadow: var(--edge-highlight);
+    box-shadow: var(--edge-highlight), var(--shadow-glass);
     border-start-end-radius: var(--rounded-corner);
     border-end-end-radius: var(--rounded-corner);
     background-color: var(--nav-bg);
