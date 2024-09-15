@@ -33,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Show arrow after article heading in article list on hover.
 - Style `details` arrow.
 - Style mentions and hashtags in comments.
-- Turn "Feed" button to a dropdown if multiple feeds are avaiable (#72).
+- Turn "Feed" button to a dropdown if multiple feeds are available (#72).
 
 ### Changed
 
