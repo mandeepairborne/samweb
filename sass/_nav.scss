@@ -189,6 +189,15 @@
 						opacity: 0;
 					}
 				}
+
+				@media only screen and (max-width: 480px) {
+					@keyframes dropdown-open {
+						from {
+							transform: translate(-50%, -0.5rem);
+							opacity: 0;
+						}
+					}
+				}
 			}
 
 			ul {
