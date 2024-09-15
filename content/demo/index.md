@@ -192,6 +192,8 @@ Alternatively, you can append the following URL anchors. It can be more handy in
 - `#pixels`: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.
 - `#transparent`: Removes rounded corners and shadow, useful for images with transparency.
 - `#no-hover`: Removes zoom on hover.
+- `#spoiler`: Blurs image until hovered over/pressed on, useful for plot rich game screenshots.
+- `#spoiler` with `#solid`: Ditto, but makes the image completely hidden.
 
 <br />
 <figure>
@@ -612,26 +614,6 @@ With `solid` class:
 ```
 
 You know, <span class="spoiler solid">Duckquill is a pretty dumb name.</span> I know, crazy.
-
-When set on an image:
-
-```html
-<img class="spoiler" src="https://example.org/image.jpg" />
-```
-
-<img class="spoiler" src="https://i1.theportalwiki.net/img/2/23/Ashpd_blueprint.jpg" />
-
-URL anchor `#spoiler` can be used for this as well.
-
-With `solid` class:
-
-```html
-<img class="spoiler solid" src="https://example.org/image.jpg" />
-```
-
-<img class="spoiler solid" src="https://i1.theportalwiki.net/img/2/23/Ashpd_blueprint.jpg" />
-
-URL anchor `#solid` can be used for this as well.
 
 ### Buttons Dialog
 
