@@ -73,21 +73,16 @@
 		&.poor {
 			&::before {
 				position: absolute;
-				top: 50%;
-				right: -3rem;
 				transform: translateY(-50%);
 				opacity: 0.5;
 				z-index: -1;
 				mask-size: cover;
 				transition: var(--transition-longer);
+				inset-block-start: 50%;
+				inset-inline-end: -3rem;
 				width: 12rem;
 				height: 12rem;
 				content: "";
-
-				:root[dir*="rtl"] & {
-					right: unset;
-					left: -3rem;
-				}
 			}
 
 			&:hover::before {
@@ -267,11 +262,6 @@
 				margin-inline-end: 0.25rem;
 				width: 1rem;
 				height: 1rem;
-			}
-
-			:root[dir*="rtl"] & {
-				right: unset;
-				left: 0;
 			}
 		}
 

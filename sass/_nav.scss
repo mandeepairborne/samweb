@@ -1,10 +1,10 @@
 #site-nav {
 	-webkit-backdrop-filter: var(--blur);
 	position: sticky;
-	top: 1rem;
 	z-index: 999;
 	backdrop-filter: var(--blur);
 	margin: 1rem auto;
+	inset-block-start: 1rem;
 	box-shadow: var(--edge-highlight), var(--shadow-glass);
 	border-radius: 1.625rem;
 	background-color: var(--nav-bg);
@@ -20,13 +20,13 @@
 		#main-content {
 			-webkit-backdrop-filter: var(--blur);
 			position: absolute;
-			top: 0;
 			left: 50%;
 			transform: translateX(-50%);
 			opacity: 0;
 			z-index: 999;
 			backdrop-filter: var(--blur);
 			transition: var(--transition);
+			inset-block-start: 0;
 			box-shadow:
 				var(--edge-highlight),
 				var(--shadow-glass);
@@ -37,8 +37,8 @@
 			text-decoration: none;
 
 			&:focus {
-				top: calc(100% + 0.5rem);
 				opacity: 1;
+				inset-block-start: calc(100% + 0.5rem);
 			}
 		}
 
@@ -335,9 +335,9 @@
 		-webkit-backdrop-filter: var(--blur);
 		display: flex;
 		position: absolute;
-		top: calc(100% + 0.5rem);
-		left: 0;
 		backdrop-filter: var(--blur);
+		inset-block-start: calc(100% + 0.5rem);
+		inset-inline-start: 0;
 		box-shadow: var(--edge-highlight), var(--shadow-glass);
 		border-radius: calc(var(--rounded-corner) + 0.5rem);
 		background-color: var(--nav-bg);

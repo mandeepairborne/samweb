@@ -181,7 +181,7 @@ hr {
 
 	&::after {
 		position: relative;
-		top: -1.75rem;
+		inset-block-start: -1.75rem;
 		content: "☙❧";
 		color: var(--fg-muted-4);
 		font-size: var(--font-size-xx-large);

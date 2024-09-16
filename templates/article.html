@@ -72,13 +72,21 @@
 	</nav>
 {%- endif -%}
 
-<div class="dialog-buttons">
-	{# <a class="no-hover inline-button colored external" href="https://shareopenly.org/share/?url={{ page.permalink }}&text={{ page.description | urlencode }}">{{ macros_translate::translate(key="share", default="Share", language_strings=language_strings) }}</a> #}
-	<a class="inline-button" href="#top">{{ macros_translate::translate(key="go_to_top", default="Go to Top", language_strings=language_strings) }}</a>
+<div id="floating-buttons">
+	{%- if page.extra.toc -%}
+		<details id="toc">
+			<summary title="{{ macros_translate::translate(key='table_of_contents', default='Table of Contents', language_strings=language_strings) }}"><i class="icon"></i></summary>
+			<div>
+				{%- include "partials/toc.html" -%}
+			</div>
+		</details>
+	{%- endif -%}
+	<a id="go-to-top" href="#top" title="{{ macros_translate::translate(key='go_to_top', default='Go to Top', language_strings=language_strings) }}"><i class="icon"></i></a>
+	{%- if config.extra.show_share_button -%}
+		<a id="share" href="https://shareopenly.org/share/?url={{ page.permalink }}&text={{ page.description | urlencode }}" rel="{{ rel_attributes }}" title="{{ macros_translate::translate(key='share', default='Share', language_strings=language_strings) }}"><i class="icon"></i></a>
+	{%- endif -%}
 	{%- if config.extra.issues_url -%}
-		<a class="inline-button colored external" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}">
-			{{- macros_translate::translate(key="file_an_issue", default="File an Issue", language_strings=language_strings) -}}
-		</a>
+		<a id="issue" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}" title="{{ macros_translate::translate(key='file_an_issue', default='File an Issue', language_strings=language_strings) }}"><i class="icon"></i></a>
 	{%- endif -%}
 </div>
 {% endblock content %}

@@ -28,8 +28,8 @@ You can make navbar have more traditional look:
 
 ```scss
 #site-nav {
-    top: 0;
     margin-block-start: 0;
+    inset-block-start: 0;
     box-shadow: var(--shadow-glass);
     border-radius: 0;
     width: 100%;
@@ -66,8 +66,8 @@ Or you can make it sticked to top but not full-width:
 
 ```scss
 #site-nav {
-    top: 0;
     margin-block-start: 0;
+    inset-block-start: 0;
     box-shadow: var(--shadow-glass);
     border-radius: 0 0 calc(var(--rounded-corner) + 0.5rem) calc(var(--rounded-corner) + 0.5rem);
 

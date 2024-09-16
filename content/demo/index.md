@@ -655,12 +655,12 @@ You know, <span class="spoiler solid">Duckquill is a pretty dumb name.</span> I 
   #color-picker-container {
     -webkit-backdrop-filter: var(--blur);
     position: fixed;
-    bottom: 1rem;
-    left: 0;
     transform: translateX(calc(-100% + 1rem));
     z-index: 1;
     backdrop-filter: var(--blur);
     transition: var(--transition);
+    inset-block-end: 1rem;
+    inset-inline-start: 0;
     box-shadow: var(--edge-highlight), var(--shadow-glass);
     border-start-end-radius: var(--rounded-corner);
     border-end-end-radius: var(--rounded-corner);
@@ -679,8 +679,6 @@ You know, <span class="spoiler solid">Duckquill is a pretty dumb name.</span> I 
   }
 
   :root[dir*="rtl"] #color-picker-container {
-    right: 0;
-    left: unset;
     transform: translateX(calc(100% - 1rem));
   }
 

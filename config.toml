@@ -115,6 +115,9 @@ show_read_time = true
 #
 # words_per_minute = 200
 #
+# Whether to show a share button in articles.
+# Uses https://shareopenly.org.
+show_share_button = true
 # Whether to enable the KaTeX library for rendering LaTeX.
 # Note: This will make your page significantly heavier.
 katex = true

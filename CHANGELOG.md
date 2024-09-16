@@ -14,7 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `--disabled-opacity` CSS variable for setting opacity of disabled elements.
 - Add `--hover` CSS variable for setting zoom on hover.
 - Add `--shadow-glass` CSS variable for setting shadow for glass-like elements.
-- Add `config.extra.bundled_fonts` config variable to use custom fonts instead of system.
+- Add `config.extra.bundled_fonts` config variable to use custom fonts instead of system (#44).
+- Add `config.extra.show_share_button` confog variable for enabling share button in articles (#73).
 - Add `external` class to comment timestamp.
 - Add `h1` with page/section title by default.
 - Add active state to footer's "Powered by" links.
@@ -64,6 +65,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Show theme switcher if `config.extra.default_theme` is set, even if `config.extra.nav.show_theme_switcher` is not.
 - Tweak `kbd` styling.
 - Tweak padding of verified instance badge.
+- Use logical inset properties instead of `top`, `right`, `bottom`, and `left`.
 - Use more fitting cursors in some contexts.
 - Use percents instead of decimals for color opacity.
 - Use PNG instead of GIF for comments QR code to reduce download size.
