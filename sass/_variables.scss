@@ -19,13 +19,13 @@
 		// COLORS
 		--bg-color: color-mix(in srgb, var(--accent-color) 10%, black);
 		--fg-color: rgb(255 255 255);
-		--fg-muted-1: rgb(255 255 255 / 0.05);
-		--fg-muted-2: rgb(255 255 255 / 0.1);
-		--fg-muted-3: rgb(255 255 255 / 0.2);
-		--fg-muted-4: rgb(255 255 255 / 0.5);
-		--fg-muted-5: rgb(255 255 255 / 0.6);
-		--fg-contrast: rgb(0 0 0 / 0.8);
-		--nav-bg: rgb(25 25 25 / 0.7);
+		--fg-muted-1: rgb(255 255 255 / 5%);
+		--fg-muted-2: rgb(255 255 255 / 10%);
+		--fg-muted-3: rgb(255 255 255 / 20%);
+		--fg-muted-4: rgb(255 255 255 / 50%);
+		--fg-muted-5: rgb(255 255 255 / 60%);
+		--fg-contrast: rgb(0 0 0 / 80%);
+		--nav-bg: rgb(25 25 25 / 70%);
 		--blue-fg: rgb(153 193 241);
 		--brown-fg: rgb(205 171 143);
 		--green-fg: rgb(143 240 164);
@@ -42,16 +42,16 @@
 		--blue-fg: rgb(53 132 228);
 		--brown-bg: rgb(from var(--brown-fg) r g b / var(--color-opacity));
 		--brown-fg: rgb(99 69 44);
-		--fg-color: rgb(0 0 0 / 0.8);
+		--fg-color: rgb(0 0 0 / 80%);
 		--fg-contrast: rgb(255 255 255);
-		--fg-muted-1: rgb(0 0 0 / 0.05);
-		--fg-muted-2: rgb(0 0 0 / 0.1);
-		--fg-muted-3: rgb(0 0 0 / 0.2);
-		--fg-muted-4: rgb(0 0 0 / 0.5);
-		--fg-muted-5: rgb(0 0 0 / 0.6);
+		--fg-muted-1: rgb(0 0 0 / 5%);
+		--fg-muted-2: rgb(0 0 0 / 10%);
+		--fg-muted-3: rgb(0 0 0 / 20%);
+		--fg-muted-4: rgb(0 0 0 / 50%);
+		--fg-muted-5: rgb(0 0 0 / 60%);
 		--green-bg: rgb(from var(--green-fg) r g b / var(--color-opacity));
 		--green-fg: rgb(38 162 105);
-		--nav-bg: rgb(242 242 242 / 0.7);
+		--nav-bg: rgb(242 242 242 / 70%);
 		--accent-color-alpha: rgb(from var(--accent-color) r g b / var(--color-opacity));
 		--purple-bg: rgb(from var(--purple-fg) r g b / var(--color-opacity));
 		--purple-fg: rgb(145 65 172);
@@ -109,19 +109,19 @@
 		--font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 		// OPACITY
-		--disabled-opacity: 0.6;
-		--dim-opacity: 0.8;
-		--color-opacity: 0.1;
+		--disabled-opacity: 60%;
+		--dim-opacity: 80%;
+		--color-opacity: 10%;
 
 		// SHADOWS
-		--edge-highlight: inset 0 0.0625rem 0 rgb(255 255 255 / 0.1);
-		--shadow-raised: 0 0 0 0.0625rem rgb(0 0 0 / 0.06), 0 0.125rem 0.375rem 0.125rem rgb(0 0 0 / 0.14), 0 0.25rem 0.75rem 0.25rem rgb(0 0 0 / 0.06);
-		--shadow-glass: 0 0.75rem 1.5rem -1rem rgb(0 0 0 / 0.5);
-		--shadow: 0 0 0 0.0625rem rgb(0 0 0 / 0.03), 0 0.0625rem 0.1875rem 0.0625rem rgb(0 0 0 / 0.07), 0 0.125rem 0.375rem 0.125rem rgb(0 0 0 / 0.03);
+		--edge-highlight: inset 0 0.0625rem 0 rgb(255 255 255 / 10%);
+		--shadow-raised: 0 0 0 0.0625rem rgb(0 0 0 / 6%), 0 0.125rem 0.375rem 0.125rem rgb(0 0 0 / 14%), 0 0.25rem 0.75rem 0.25rem rgb(0 0 0 / 6%);
+		--shadow-glass: 0 0.75rem 1.5rem -1rem rgb(0 0 0 / 50%);
+		--shadow: 0 0 0 0.0625rem rgb(0 0 0 / 3%), 0 0.0625rem 0.1875rem 0.0625rem rgb(0 0 0 / 7%), 0 0.125rem 0.375rem 0.125rem rgb(0 0 0 / 3%);
 
 		// STATES
-		--hover: scale(1.1);
-		--active: scale(0.9);
+		--hover: scale(110%);
+		--active: scale(90%);
 
 		// TRANSITIONS
 		--transition-long: 0.8s;

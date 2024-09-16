@@ -41,7 +41,7 @@
 	<style type="text/css">
 		:root {
 			--accent-color: {{ config.extra.accent_color | default(value="#6f8396") | safe }};
-			--contrast-color: {% if config.extra.fix_contrast %}rgb(0 0 0 / 0.8){% else %}#fff{% endif %};
+			--contrast-color: {% if config.extra.fix_contrast %}rgb(0 0 0 / 80%){% else %}#fff{% endif %};
 		}
 
 		{%- if config.extra.accent_color_dark %}
@@ -58,12 +58,12 @@
 
 		{%- if config.extra.fix_contrast_dark %}
 			[data-theme="dark"] {
-				--contrast-color: rgb(0 0 0 / 0.8);
+				--contrast-color: rgb(0 0 0 / 80%);
 			}
 
 			@media (prefers-color-scheme: dark) {
 				:root:not([data-theme="light"]) {
-					--contrast-color: rgb(0 0 0 / 0.8);
+					--contrast-color: rgb(0 0 0 / 80%);
 				}
 			}
 		{%- endif %}

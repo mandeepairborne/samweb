@@ -749,7 +749,7 @@ You know, <span class="spoiler solid">Duckquill is a pretty dumb name.</span> I 
     if (contrastColorLight) {
       styles += `
         :root {
-          --contrast-color: rgb(0 0 0 / 0.8);
+          --contrast-color: rgb(0 0 0 / 80%);
         }
       `;
     } else {
@@ -763,11 +763,11 @@ You know, <span class="spoiler solid">Duckquill is a pretty dumb name.</span> I 
     if (contrastColorDark) {
       styles += `
         [data-theme="dark"] {
-          --contrast-color: rgb(0 0 0 / 0.8);
+          --contrast-color: rgb(0 0 0 / 80%);
         }
         @media (prefers-color-scheme: dark) {
           :root:not([data-theme="light"]) {
-            --contrast-color: rgb(0 0 0 / 0.8);
+            --contrast-color: rgb(0 0 0 / 80%);
           }
         }
       `;
