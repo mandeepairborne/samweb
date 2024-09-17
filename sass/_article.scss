@@ -84,9 +84,21 @@
 			transform-origin: bottom right;
 			animation: toc-dropdown-open var(--transition);
 
+			:root[dir*="rtl"] & {
+				transform-origin: bottom left;
+				animation: toc-dropdown-open-rtl var(--transition);
+			}
+
 			@keyframes toc-dropdown-open {
 				from {
 					transform: scale(50%) translate(1rem, 1rem);
+					opacity: 0;
+				}
+			}
+
+			@keyframes toc-dropdown-open-rtl {
+				from {
+					transform: scale(50%) translate(-1rem, 1rem);
 					opacity: 0;
 				}
 			}

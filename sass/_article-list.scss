@@ -321,13 +321,13 @@
 			padding-block-start: 0.5rem;
 		}
 
-		.blurhash {
+		.blurnail {
 			position: absolute;
 			opacity: var(--dim-opacity);
 			z-index: -2;
-			filter: var(--blurhash-blur);
+			filter: var(--blurnail-blur);
 			inset: 0;
-			background-image: var(--blurhash);
+			background-image: var(--blurnail);
 			background-position: center;
 			background-size: cover;
 		}

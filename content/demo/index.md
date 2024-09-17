@@ -198,7 +198,7 @@ Alternatively, you can append the following URL anchors. It can be more handy in
 <br />
 <figure>
 
-![Toolbx header image](https://containertoolbx.org/assets/toolbx.gif#full#pixels#transparent#no-hover)
+[![Toolbx header image](https://containertoolbx.org/assets/toolbx.gif#full#pixels#transparent#no-hover)](https://containertoolbx.org)
 <figcaption>Full-width image with an alt text, pixel-art rendering, no shadow and rounded corners, and no zoom on hover</figcaption>
 </figure>
 
