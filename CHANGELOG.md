@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add active state to footnotes' go back button.
 - Add active state to slider thumb.
 - Add Bahasa Melayu translation (#78).
+- Add blurred banner to the article in list, if one is present.
 - Add fading on top/bottom of the search results container.
 - Add loading animation to "Load Comments" button.
 - Add margin between comment author name and timestamp.

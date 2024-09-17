@@ -10,7 +10,7 @@
 		outline-color: transparent;
 		outline-style: dashed;
 		outline-width: 0.125rem;
-		box-shadow: var(--edge-highlight);
+		box-shadow: var(--edge-highlight), var(--shadow-glass);
 		border-radius: var(--rounded-corner);
 		border-start-end-radius: 2.125rem;
 		border-end-end-radius: 1.8125rem;
@@ -319,6 +319,17 @@
 			margin-block-start: 1rem;
 			border-block-start: max(1px, 0.0625rem) solid var(--fg-muted-2);
 			padding-block-start: 0.5rem;
+		}
+
+		.blurhash {
+			position: absolute;
+			opacity: var(--dim-opacity);
+			z-index: -1;
+			filter: var(--blurhash-blur);
+			inset: 0;
+			background-image: var(--blurhash);
+			background-position: center;
+			background-size: cover;
 		}
 	}
 }

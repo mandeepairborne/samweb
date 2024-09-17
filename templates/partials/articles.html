@@ -72,6 +72,11 @@
 					</small>
 				</div>
 			{%- endif -%}
+			{%- if page.extra.banner -%}
+				{%- set blurhash = resize_image(path=page.colocated_path ~ page.extra.banner, width=16, height=8, op="fill", format="webp") -%}
+				<div class="blurhash" style="--blurhash: url('{{ blurhash.url }}')"></div>
+			{%- endif -%}
+
 		</article>
 	{%- endfor %}
 </div>
