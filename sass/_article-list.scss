@@ -74,7 +74,7 @@
 			&::before {
 				position: absolute;
 				transform: translateY(-50%);
-				opacity: 0.5;
+				opacity: var(--disabled-opacity);
 				z-index: -1;
 				mask-size: cover;
 				transition: var(--transition-longer);
@@ -324,7 +324,7 @@
 		.blurhash {
 			position: absolute;
 			opacity: var(--dim-opacity);
-			z-index: -1;
+			z-index: -2;
 			filter: var(--blurhash-blur);
 			inset: 0;
 			background-image: var(--blurhash);
