@@ -38,44 +38,7 @@
 		<link rel="alternate" type={% if config.feed_filenames[0] == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="{{ config.title }}" href="{{ get_url(path=config.feed_filenames[0]) | safe }}" />
 	{%- endif %}
 
-	<style type="text/css">
-		:root {
-			--accent-color: {{ config.extra.accent_color | default(value="#6f8396") | safe }};
-			--contrast-color: {% if config.extra.fix_contrast %}rgb(0 0 0 / 80%){% else %}#fff{% endif %};
-		}
-
-		{%- if config.extra.accent_color_dark %}
-			[data-theme="dark"] {
-				--accent-color: {{ config.extra.accent_color_dark | safe }};
-			}
-
-			@media (prefers-color-scheme: dark) {
-				:root:not([data-theme="light"]) {
-					--accent-color: {{ config.extra.accent_color_dark | safe }};
-				}
-			}
-		{%- endif %}
-
-		{%- if config.extra.fix_contrast_dark %}
-			[data-theme="dark"] {
-				--contrast-color: rgb(0 0 0 / 80%);
-			}
-
-			@media (prefers-color-scheme: dark) {
-				:root:not([data-theme="light"]) {
-					--contrast-color: rgb(0 0 0 / 80%);
-				}
-			}
-		{%- endif %}
-
-		{%- if config.extra.debug_layout -%}
-			*,
-			*::before,
-			*::after {
-				outline: solid 1px var(--accent-color);
-			}
-		{%- endif -%}
-	</style>
+	{%- include "partials/variables.html" %}
 
 	{%- set styles = [ "style.css" ] %}
 
