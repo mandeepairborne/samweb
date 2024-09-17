@@ -34,6 +34,12 @@ disclaimer = """
 # host = "alpha.polymaths.social"
 # user = "orbitalmartian"
 # id = "01J7ETKJ19FGBDQGS1ZWZ3KEPP"
+#
+# Post on Sharkey
+#
+# host = "is-a.wyvern.rip"
+# user = "volpeon"
+# id = "9qy755nsnu2c0hbc"
 host = "toot.community"
 user = "sungsphinx"
 id = "111789185826519979"

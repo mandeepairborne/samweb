@@ -259,7 +259,7 @@ details {
 			transform: scaleY(-100%);
 		}
 
-		&~* {
+		& ~ * {
 			animation: details-open var(--transition);
 
 			@keyframes details-open {

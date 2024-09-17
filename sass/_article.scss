@@ -80,6 +80,18 @@
 		background-color: transparent;
 		padding: 0;
 
+		&[open] summary ~ * {
+			transform-origin: bottom right;
+			animation: toc-dropdown-open var(--transition);
+
+			@keyframes toc-dropdown-open {
+				from {
+					transform: scale(50%) translate(1rem, 1rem);
+					opacity: 0;
+				}
+			}
+		}
+
 		summary {
 			&::before {
 				display: none;
@@ -94,9 +106,11 @@
 			}
 		}
 
-		div {
+		#toc-dropdown {
 			-webkit-backdrop-filter: var(--blur);
+			display: flex;
 			position: absolute;
+			flex-direction: column;
 			backdrop-filter: var(--blur);
 			inset-block-end: 0;
 			inset-inline-end: 3rem;
@@ -105,18 +119,39 @@
 			background-color: var(--nav-bg);
 			padding: 1rem;
 			width: min(calc(var(--container-width) / 3), 90vw);
+			max-height: 50vh;
 
-			h2 {
-				margin-block-start: 0;
+			&-title {
 				color: var(--fg-muted-4);
-				font-weight: bold;
 				font-size: var(--font-size-x-large);
-				font-family: var(--font-system-ui);
+				line-height: 1;
+			}
+
+			&-container {
+				flex: 1;
+				mask-image: linear-gradient(to bottom, transparent, black 1rem, black calc(100% - 1rem), transparent);
+				margin: 0 -1rem -1rem;
+				padding: 1rem;
+				padding-block-start: 0;
+				overflow: auto;
 			}
 
 			ul {
-				margin-block-start: 0;
+				margin: 0;
 				padding-inline-start: 0.75rem;
+				font-size: var(--font-size-small);
+
+				&:first-child {
+					margin-block-start: 0.75rem;
+				}
+
+				li::marker {
+					color: var(--fg-muted-5);
+				}
+
+				a {
+					color: var(--fg-muted-5);
+				}
 			}
 		}
 	}

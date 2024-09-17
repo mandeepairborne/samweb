@@ -76,8 +76,26 @@
 	{%- if page.extra.toc -%}
 		<details id="toc">
 			<summary title="{{ macros_translate::translate(key='table_of_contents', default='Table of Contents', language_strings=language_strings) }}"><i class="icon"></i></summary>
-			<div>
-				{%- include "partials/toc.html" -%}
+			<div id="toc-dropdown">
+				<strong id="toc-dropdown-title">{{ macros_translate::translate(key="table_of_contents", default="Table of Contents", language_strings=language_strings) }}</strong>
+				<div id="toc-dropdown-container">
+					<ul>
+						{%- for h1 in page.toc -%}
+							<li>
+								<a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+								{%- if h1.children -%}
+									<ul>
+										{%- for h2 in h1.children -%}
+											<li>
+												<a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+											</li>
+										{%- endfor -%}
+									</ul>
+								{%- endif -%}
+							</li>
+						{%- endfor -%}
+					</ul>
+				</div>
 			</div>
 		</details>
 	{%- endif -%}
