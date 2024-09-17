@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `h1` with page/section title by default.
 - Add ability to set accent color per page/section.
 - Add ability to set default theme per page/section.
+- Add ability to set metadata card per page/section.
 - Add active state to footer's "Powered by" links.
 - Add active state to footnotes' go back button.
 - Add active state to slider thumb.
