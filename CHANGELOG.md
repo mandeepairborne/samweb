@@ -59,6 +59,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Change the way 404 image is resized (#74).
 - Improved CRT style, now looks a lot more like [cool-retro-term](https://github.com/Swordfish90/cool-retro-term).
 - Make comment timestamp more subtle.
+- Make list numbers bold.
 - Make the copy button inactive after it is pressed until the animation is complete.
 - Move table of contents code to a partial.
 - Only allow `external` class on links.
@@ -71,7 +72,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Set socials icons as CSS variables and not inline styles.
 - Show theme switcher if `config.extra.default_theme` is set, even if `config.extra.nav.show_theme_switcher` is not.
 - Tweak `kbd` styling.
+- Tweak margin/padding of lists.
 - Tweak padding of verified instance badge.
+- Use accent color for list bullets and numbers.
 - Use logical inset properties instead of `top`, `right`, `bottom`, and `left`.
 - Use more fitting cursors in some contexts.
 - Use percents instead of decimals for color opacity.
