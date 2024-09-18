@@ -256,7 +256,7 @@ details {
 
 	&[open] summary {
 		&::before {
-			transform: scaleY(-100%);
+			transform: scaleY(-1);
 		}
 
 		& ~ * {

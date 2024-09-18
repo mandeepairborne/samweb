@@ -76,7 +76,7 @@ video {
 	&.spoiler,
 	&[src*="#spoiler"] {
 		opacity: var(--dim-opacity);
-		clip-path: inset(0% 0% 0% 0% round var(--rounded-corner));
+		clip-path: inset(0 0 0 0 round var(--rounded-corner));
 		filter: blur(1rem);
 
 		&:hover,
@@ -89,7 +89,7 @@ video {
 		&.solid,
 		&[src*="#solid"] {
 			clip-path: none;
-			filter: brightness(0%) contrast(50%);
+			filter: brightness(0) contrast(0.5);
 			box-shadow: none;
 
 			&:hover,

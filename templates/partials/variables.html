@@ -9,11 +9,11 @@
 		{%- endif -%}
 
 		{%- if page.extra.fix_contrast -%}
-			--contrast-color: rgb(0 0 0 / 80%);
+			--contrast-color: rgb(0 0 0 / 0.8);
 		{%- elif section.extra.fix_contrast -%}
-			--contrast-color: rgb(0 0 0 / 80%);
+			--contrast-color: rgb(0 0 0 / 0.8);
 		{%- elif config.extra.fix_contrast -%}
-			--contrast-color: rgb(0 0 0 / 80%);
+			--contrast-color: rgb(0 0 0 / 0.8);
 		{%- else -%}
 			--contrast-color: #fff;
 		{%- endif -%}
@@ -53,12 +53,12 @@
 
 	{%- if page.extra.fix_contrast_dark or section.extra.fix_contrast_dark or config.extra.fix_contrast_dark -%}
 		[data-theme="dark"] {
-			--contrast-color: rgb(0 0 0 / 80%);
+			--contrast-color: rgb(0 0 0 / 0.8);
 		}
 
 		@media (prefers-color-scheme: dark) {
 			:root:not([data-theme="light"]) {
-				--contrast-color: rgb(0 0 0 / 80%);
+				--contrast-color: rgb(0 0 0 / 0.8);
 			}
 		}
 	{%- endif -%}

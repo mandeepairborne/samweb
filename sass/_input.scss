@@ -20,6 +20,10 @@ input[type="color"] {
 
 		&:hover {
 			background-color: var(--fg-muted-1);
+
+			&:checked {
+				background-color: var(--accent-color);
+			}
 		}
 	}
 }
@@ -29,7 +33,7 @@ input[type="checkbox"] {
 	&::before {
 		display: block;
 		position: absolute;
-		transform: scale(50%);
+		transform: scale(0.5);
 		opacity: 0;
 		transition: var(--transition);
 		background-color: var(--contrast-color);
@@ -39,16 +43,6 @@ input[type="checkbox"] {
 	&:checked {
 		border: 0.15rem solid transparent;
 		background-color: var(--accent-color);
-
-		&:disabled {
-			border: 0.15rem solid transparent;
-			background-color: var(--accent-color-alpha);
-
-			&::before {
-				opacity: 0.8;
-				background-color: var(--fg-color);
-			}
-		}
 
 		&::before {
 			transform: scale(1);

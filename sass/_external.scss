@@ -10,6 +10,6 @@ a.external::after {
 	content: "";
 
 	:root[dir*="rtl"] & {
-		transform: scaleX(-100%);
+		transform: scaleX(-1);
 	}
 }

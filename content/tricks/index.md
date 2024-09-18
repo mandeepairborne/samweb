@@ -174,11 +174,11 @@ Want to set some nice image as a background? We got you covered:
 
 @include theme-variables using ($theme) {
     @if $theme == "dark" {
-        --bg-overlay: linear-gradient(rgb(0 0 0 / 90%), rgb(0 0 0 / 90%));
+        --bg-overlay: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
     }
 
     @else {
-        --bg-overlay: linear-gradient(rgb(255 255 255 / 80%), rgb(255 255 255 / 80%));
+        --bg-overlay: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
     }
 }
 

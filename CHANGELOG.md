@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v5.0.0...main)
 
+### Changed
+
+- Scale up the blurred article banner in article list on hover.
+- Use decimals instead of percents (again).
+
 ## [5.0.0](https://codeberg.org/daudix/duckquill/compare/v4.8.0...v5.0.0)
 
 ### Added
