@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Increased hover scale of aside images.
 - Scale up the blurred article banner in article list on hover.
+- Simplify prev/next post nav styles.
 - Use decimals instead of percents (again).
 
 ## [5.0.0](https://codeberg.org/daudix/duckquill/compare/v4.8.0...v5.0.0)
