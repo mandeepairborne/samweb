@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Improve disabled checkbox/radio styling.
 - Increased hover scale of aside images.
 - Scale up the blurred article banner in article list on hover.
 - Simplify prev/next post nav styles.
