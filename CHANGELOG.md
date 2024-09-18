@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `config.extra.bundled_fonts` config variable to use custom fonts instead of system (#44).
 - Add `config.extra.show_share_button` config variable for enabling share button in articles (#73).
 - Add `external` class to comment timestamp.
+- Add `external` class to footer's "Powered by" links (#80).
 - Add `h1` with page/section title by default.
 - Add ability to set accent color per page/section.
 - Add ability to set default theme per page/section.
