@@ -120,7 +120,7 @@ img {
 		&[src*="#start"],
 		&[src*="#end"] {
 			&:hover {
-				transform: scale(1.6);
+				transform: scale(2);
 			}
 
 			@media only screen and (max-width: 720px) {
