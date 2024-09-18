@@ -32,7 +32,7 @@
 	}
 }
 
-#floating-buttons {
+#buttons-container {
 	display: flex;
 	position: fixed;
 	flex-direction: column;
@@ -41,7 +41,10 @@
 	inset-inline-end: 1rem;
 
 	@media only screen and (max-width: 720px) {
-		display: none;
+		position: static;
+		flex-direction: row-reverse;
+		align-items: flex-end;
+		margin-block-start: 2rem;
 	}
 
 	#toc summary,
@@ -80,7 +83,7 @@
 		background-color: transparent;
 		padding: 0;
 
-		&[open] summary ~ * {
+		&[open] summary~* {
 			transform-origin: bottom right;
 			animation: toc-dropdown-open var(--transition);
 
@@ -123,6 +126,7 @@
 			display: flex;
 			position: absolute;
 			flex-direction: column;
+			z-index: 1;
 			backdrop-filter: var(--blur);
 			inset-block-end: 0;
 			inset-inline-end: 3rem;
