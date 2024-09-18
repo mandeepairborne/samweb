@@ -88,8 +88,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Display pointer cursor if image is wrapped in a link.
 - Don't add `::before` pseudo element to color pickers.
 - Fix images being covered by other images in some scenarios.
-- Load auto-menu-close script if navbar sublinks are present.
+- Fix top spacing of navbar dropdowns on mobile.
 - Fix videos and iframes having rounded corners and edge highlight in fullscreen.
+- Load auto-menu-close script if navbar menus are present.
 
 ## [4.8.0](https://codeberg.org/daudix/duckquill/compare/v4.7.1...v4.8.0)
 

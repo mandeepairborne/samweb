@@ -189,9 +189,13 @@
 						opacity: 0;
 					}
 				}
+			}
 
-				@media only screen and (max-width: 480px) {
-					@keyframes dropdown-open {
+			@media only screen and (max-width: 480px) {
+				&[open]:has(summary:not(.circle)) ul {
+					animation: dropdown-open-2 var(--transition);
+
+					@keyframes dropdown-open-2 {
 						from {
 							transform: translate(-50%, -0.5rem);
 							opacity: 0;
@@ -215,10 +219,6 @@
 				background-color: var(--nav-bg);
 				padding: 0.25rem;
 
-				@media only screen and (max-width: 480px) {
-					transform: translate(-50%, 0.5rem);
-				}
-
 				li {
 					width: 100%;
 					white-space: nowrap;
@@ -227,6 +227,12 @@
 						border-radius: var(--rounded-corner);
 						text-align: start;
 					}
+				}
+			}
+
+			@media only screen and (max-width: 480px) {
+				&:has(summary:not(.circle)) ul {
+					transform: translate(-50%, 0.5rem);
 				}
 			}
 		}
