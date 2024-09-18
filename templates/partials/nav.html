@@ -115,10 +115,10 @@
 							{%- for feed in config.feed_filenames %}
 								<li>
 									<a href="{{ get_url(path=feed, lang=lang) }}" rel="{{ rel_attributes }}">
-										{%- if feed == "rss.xml" -%}
-											RSS
-										{%- elif feed == "atom.xml" -%}
+										{%- if feed == "atom.xml" -%}
 											Atom
+										{%- else -%}
+											RSS
 										{%- endif -%}
 									</a>
 								</li>
