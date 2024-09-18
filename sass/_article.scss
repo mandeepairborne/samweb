@@ -17,7 +17,7 @@
 		inset-inline-start: 0;
 	}
 
-	&+h1 {
+	& + h1 {
 		margin-block-start: 35vw;
 	}
 
@@ -26,7 +26,7 @@
 			margin-block-start: 50vw;
 		}
 
-		&+h1 {
+		& + h1 {
 			margin-block-start: 2rem;
 		}
 	}
@@ -134,7 +134,7 @@
 			border-radius: var(--rounded-corner);
 			background-color: var(--nav-bg);
 			padding: 1rem;
-			width: min(calc(var(--container-width) / 3), 90vw);
+			width: min(calc(var(--container-width) / 3), calc(90vw - 3rem));
 			max-height: 50vh;
 
 			&-title {
