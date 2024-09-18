@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `--hover` CSS variable for setting zoom on hover.
 - Add `--shadow-glass` CSS variable for setting shadow for glass-like elements.
 - Add `config.extra.bundled_fonts` config variable to use custom fonts instead of system (#44).
-- Add `config.extra.show_share_button` confog variable for enabling share button in articles (#73).
+- Add `config.extra.show_share_button` config variable for enabling share button in articles (#73).
 - Add `external` class to comment timestamp.
 - Add `h1` with page/section title by default.
 - Add ability to set accent color per page/section.
@@ -82,11 +82,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
-- Remove the `config.extra.primary_color_alpha` and `config.extra.primary_color_alpha_dark` config variables; they're now automatically generated from the primary color.
+- Remove the `config.extra.primary_color_alpha` and `config.extra.primary_color_alpha_dark` config variables; they're now automatically generated from the accent color.
 
 ### Fixed
 
-- `config.extra.fix_contrast_dark` should now work even if `config.extra.primary_color_dark` is not set.
+- `config.extra.fix_contrast_dark` should now work even if `config.extra.accent_color_dark` is not set.
 - Display pointer cursor if image is wrapped in a link.
 - Don't add `::before` pseudo element to color pickers.
 - Fix images being covered by other images in some scenarios.
