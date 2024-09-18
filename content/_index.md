@@ -101,6 +101,22 @@ Duckquill has some [front matter](https://www.getzola.org/documentation/content/
 
 ### Global
 
+Configuration variables from `config.toml` that can be set/overriden per page/section:
+
+- `default_theme`: Which theme should be used by default (light/dark).
+- `accent_color`: Sets theme and [browser theme](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color) color.
+- `accent_color_dark`: Ditto but for the dark theme. If not set regular variant will be used.
+- `fix_contrast`: Whether to fix low contrast in text selection, checkboxes, etc. Use only if the default doesn't provide enough contrast, e.g. the accent color is set to yellow.
+- `fix_contrast_dark`: Ditto but for the dark theme.
+- `emoji_favicon`: Use emoji as a favicon. Only one emoji is being rendered, everything else is truncated.
+- `styles`: Additional CSS styles; expects them to be in the `./static/` directory. If you are using Sass it will be generated there automatically.
+- `scripts`: Additional JavaScript scripts; expects them to be in the `./static/` directory.
+
+Other variables:
+
+- `apple_touch_icon`: Filename of the [colocated](https://www.getzola.org/documentation/content/overview/#asset-colocation) Apple Touch Icon.
+- `favicon`: Filename of the [colocated](https://www.getzola.org/documentation/content/overview/#asset-colocation) favicon.
+- `card`: Filename of the [colocated](https://www.getzola.org/documentation/content/overview/#asset-colocation) metadata card.
 - `archive`: Displays an archived message.
 - `trigger`: Displays a trigger warning message.
 - `disclaimer`: Displays a disclaimer message.
