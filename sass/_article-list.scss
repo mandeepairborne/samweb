@@ -337,3 +337,88 @@
 		}
 	}
 }
+
+#paginator {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	margin-block-start: 4rem;
+
+	#paginator-first,
+	#paginator-previous,
+	#paginator-next,
+	#paginator-last {
+		display: inline-block;
+		transition: var(--transition);
+		box-shadow: var(--edge-highlight);
+		border-radius: 999px;
+		background-color: var(--fg-muted-1);
+		padding: 0.5rem;
+		color: var(--fg-muted-4);
+		line-height: 0;
+
+		&:hover {
+			background-color: var(--fg-muted-2);
+			color: var(--fg-muted-5);
+		}
+
+		&:active {
+			transform: var(--active);
+		}
+
+		.icon {
+			transition: var(--transition);
+			width: 1rem;
+			height: 1rem;
+
+			:root[dir*="rtl"] & {
+				transform: scaleX(-1);
+			}
+		}
+	}
+
+	#paginator-first .icon {
+		mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M3 2v12h2V8.414l5.293 5.293a1 1 0 1 0 1.414-1.414L7.414 8l4.293-4.293a1 1 0 1 0-1.414-1.414L5 7.586V2zm0 0'/%3E%3C/svg%3E");
+	}
+
+	#paginator-previous .icon {
+		mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='m9.293 13.707-5-5a1 1 0 0 1 0-1.414l5-5a1 1 0 1 1 1.414 1.414L6.414 8l4.293 4.293a1 1 0 1 1-1.414 1.414m0 0'/%3E%3C/svg%3E");
+	}
+
+	#paginator-next .icon {
+		mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='m6.707 13.707 5-5a1 1 0 0 0 0-1.414l-5-5a1 1 0 1 0-1.414 1.414L9.586 8l-4.293 4.293a1 1 0 1 0 1.414 1.414m0 0'/%3E%3C/svg%3E");
+	}
+
+	#paginator-last .icon {
+		mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M11 2v5.586L5.707 2.293a1 1 0 1 0-1.414 1.414L8.586 8l-4.293 4.293a1 1 0 1 0 1.414 1.414L11 8.414V14h2V2zm0 0'/%3E%3C/svg%3E");
+	}
+
+	span {
+		&#paginator-first,
+		&#paginator-previous,
+		&#paginator-next,
+		&#paginator-last {
+			opacity: var(--disabled-opacity);
+			cursor: not-allowed;
+
+			&:hover {
+				background-color: var(--fg-muted-1);
+				color: var(--fg-muted-4);
+			}
+
+			&:active {
+				transform: none;
+			}
+		}
+	}
+
+	#paginator-counter {
+		display: inline-block;
+		color: var(--fg-muted-5);
+		line-height: 1;
+		font-variant-numeric: tabular-nums;
+		margin: 0 0.5rem;
+	}
+}

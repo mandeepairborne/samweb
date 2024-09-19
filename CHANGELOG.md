@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v5.0.0...main)
 
+### Added
+
+- Add support for [pagination](https://www.getzola.org/documentation/templates/pagination/) (#81).
+
 ### Changed
 
 - Improve disabled checkbox/radio styling.

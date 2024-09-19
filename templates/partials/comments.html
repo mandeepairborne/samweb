@@ -170,7 +170,7 @@
 							avatar.setAttribute("rel", "{{ rel_attributes }}");
 							avatar.setAttribute(
 								"title",
-								`{{ macros_translate::translate(key="view_profile", default="View profile at", language_strings=language_strings) }} @${status.account.username}@${instance}`
+								`{{ macros_translate::translate(key="view_profile", default="View Profile At", language_strings=language_strings) }} @${status.account.username}@${instance}`
 							);
 							avatar.appendChild(avatarPicture);
 
@@ -198,7 +198,7 @@
 							let permalink = document.createElement("a");
 							permalink.setAttribute("href", status.url);
 							permalink.setAttribute("itemprop", "url");
-							permalink.setAttribute("title", `{{ macros_translate::translate(key="view_comment", default="View comment at", language_strings=language_strings) }} ${instance}`);
+							permalink.setAttribute("title", `{{ macros_translate::translate(key="view_comment", default="View Comment At", language_strings=language_strings) }} ${instance}`);
 							permalink.setAttribute("rel", "{{ rel_attributes }}");
 							permalink.textContent = new Date(
 								status.created_at
@@ -363,7 +363,7 @@
 
 					else {
 						var statusText = document.createElement("p");
-						statusText.innerHTML = "{{ macros_translate::translate(key='no_comments', default='No comments yet :/', language_strings=language_strings) }}";
+						statusText.innerHTML = "{{ macros_translate::translate(key='no_comments', default='No Comments yet :/', language_strings=language_strings) }}";
 						statusText.setAttribute("id", "comments-status");
 						commentsWrapper.appendChild(statusText);
 					}
