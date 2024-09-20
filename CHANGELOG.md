@@ -14,8 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Improve disabled checkbox/radio styling.
-- Increased hover scale of aside images.
-- Rotate comment actions to the obbosite direction for RTL languages.
+- Increase hover scale of aside images.
+- Make the table layout automatic.
+- Rotate comment actions to the opposite direction for RTL languages.
 - Scale up the blurred article banner in article list on hover.
 - Simplify prev/next post nav styles.
 - Use decimals instead of percents (again).
