@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Convert code block header to a flexbox.
 - Get rid of dashed outline on article hover in article list.
 - Make comment actions slimmer.
 - Make navabr menu/search open animation nicer (scale up instead of just fading from transparency).

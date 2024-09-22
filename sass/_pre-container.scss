@@ -5,6 +5,9 @@
 
 	.header {
 		--shimmer: rgb(from var(--accent-color) r g b / calc(var(--color-opacity) * 2));
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		border-radius: var(--rounded-corner) var(--rounded-corner) 0 0;
 		background-image: linear-gradient(to right, var(--fg-muted-1) 50%, var(--shimmer) 75%, var(--fg-muted-1) 100%);
 		background-size: 200%;
@@ -12,14 +15,13 @@
 		height: 2.5rem;
 
 		span {
-			vertical-align: middle;
 			margin-inline-start: 0.75rem;
 			color: var(--fg-muted-5);
 			font-weight: bold;
+			line-height: 1;
 		}
 
 		button {
-			float: inline-end;
 			appearance: none;
 			transition: var(--transition);
 			cursor: pointer;
