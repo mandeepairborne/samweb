@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v5.1.0...main)
 
+### Changed
+
+- More visually interesting paginator.
+- Move paginator from `articles.html` to `article-list.html`.
+
 ## [5.1.0](https://codeberg.org/daudix/duckquill/compare/v5.0.0...v5.1.0)
 
 ### Added
