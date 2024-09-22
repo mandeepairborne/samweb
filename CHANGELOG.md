@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - More visually interesting paginator.
 - Move paginator from `articles.html` to `article-list.html`.
+- Tweak styling of `details`.
 
 ## [5.1.0](https://codeberg.org/daudix/duckquill/compare/v5.0.0...v5.1.0)
 
