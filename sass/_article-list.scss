@@ -7,9 +7,6 @@
 	article {
 		position: relative;
 		transition: var(--transition-longer);
-		outline-color: transparent;
-		outline-style: dashed;
-		outline-width: 0.125rem;
 		box-shadow: var(--edge-highlight), var(--shadow-glass);
 		border-radius: var(--rounded-corner);
 		border-start-end-radius: 2.125rem;
@@ -18,13 +15,8 @@
 		padding: 1rem;
 		overflow: hidden;
 
-		&:hover {
-			outline-color: var(--accent-color);
-			outline-offset: 0.5rem;
-
-			.blurnail {
-				transform: var(--hover);
-			}
+		&:hover .blurnail {
+			transform: scale(1.5);
 		}
 
 		.heading {

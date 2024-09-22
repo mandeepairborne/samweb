@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Get rid of dashed outline on article hover in article list.
 - More visually interesting paginator.
 - Move paginator from `articles.html` to `article-list.html`.
 - Tweak styling of `details`.
