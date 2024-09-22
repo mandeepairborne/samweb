@@ -19,7 +19,7 @@
 			{%- for link in config.extra.nav.links %}
 				{%- if link.menu and link.menu | length > 0 -%}
 					<li>
-						<details>
+						<details class="closable">
 							<summary>
 								<i class="icon arrow"></i>
 								{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
@@ -81,7 +81,7 @@
 			{%- endif -%}
 			{%- if config.extra.default_theme or config.extra.nav.show_theme_switcher  %}
 				<li id="theme-switcher">
-					<details>
+					<details class="closable">
 						<summary class="circle" title="{{ macros_translate::translate(key='theme', default='Theme', language_strings=language_strings) }}">
 							<i class="icon"></i>
 						</summary>
@@ -107,7 +107,7 @@
 			{%- endif %}
 			{%- if config.feed_filenames | length > 1 and config.extra.nav.show_feed -%}
 				<li id="feed">
-					<details>
+					<details class="closable">
 						<summary class="circle" title="{{ macros_translate::translate(key='feed', default='Feed', language_strings=language_strings) }}">
 							<i class="icon"></i>
 						</summary>

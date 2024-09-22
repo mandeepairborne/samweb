@@ -186,21 +186,8 @@
 
 				@keyframes dropdown-open {
 					from {
-						transform: translate(-50%, 0);
+						transform: scale(0.5) translate(-50%, -1rem);
 						opacity: 0;
-					}
-				}
-			}
-
-			@media only screen and (max-width: 480px) {
-				&[open]:has(summary:not(.circle)) ul {
-					animation: dropdown-open-2 var(--transition);
-
-					@keyframes dropdown-open-2 {
-						from {
-							transform: translate(-50%, -0.5rem);
-							opacity: 0;
-						}
 					}
 				}
 			}
@@ -210,12 +197,12 @@
 				position: absolute;
 				left: 50%;
 				flex-direction: column;
-				transform: translate(-50%, 1rem);
+				transform: translateX(-50%);
+				transform-origin: top left;
 				z-index: 1;
 				backdrop-filter: var(--blur);
-				box-shadow:
-					var(--edge-highlight),
-					var(--shadow-glass);
+				inset-block-start: 3.25rem;
+				box-shadow: var(--edge-highlight),var(--shadow-glass);
 				border-radius: calc(var(--rounded-corner) + 0.25rem);
 				background-color: var(--nav-bg);
 				padding: 0.25rem;
@@ -233,7 +220,7 @@
 
 			@media only screen and (max-width: 480px) {
 				&:has(summary:not(.circle)) ul {
-					transform: translate(-50%, 0.5rem);
+					inset-block-start: 2.75rem;
 				}
 			}
 		}
@@ -306,7 +293,7 @@
 	}
 
 	#search-container {
-		transform: translateY(-2.75rem);
+		transform: scale(0.5) translateY(-2.75rem);
 		opacity: 0;
 		transition: var(--transition);
 		padding: 0 0.5rem 0;
@@ -314,7 +301,7 @@
 		pointer-events: none;
 
 		&.active {
-			transform: translateY(0);
+			transform: none;
 			opacity: 1;
 			padding: 0 0.5rem 0.5rem;
 			height: 2.75rem;

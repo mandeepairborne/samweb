@@ -22,7 +22,7 @@ Some of the features Duckquill has to offer:
 
 - Cute and informative social media cards for Discourse, Facebook, LinkedIn, Mastodon and more.
 - [Mastodon-powered comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/); comment under a post by using your Mastodon account.
-- Lightweight by default, powerful when needed; no JavaScript is used by default.
+- Lightweight by default, powerful when needed; no mandatory JavaScript is used by default.
 - Privacy respecting analytics using [GoatCounter](https://www.goatcounter.com), with support for self-hosting.
 - Estimated read time of the post; put away those with short attention spans.
 - Light/dark/system theme switcher (for some reason everyone likes these).

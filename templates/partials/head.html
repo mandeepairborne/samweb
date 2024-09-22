@@ -63,7 +63,7 @@
 		{%- include "partials/copy_button.html" %}
 	{%- endif %}
 
-	{%- set scripts = [] %}
+	{%- set scripts = ["closable.js"] %}
 
 	{%- if config.extra.goatcounter %}
 		{%- set scripts = scripts | concat(with=["count.js"]) %}
@@ -90,10 +90,6 @@
 
 	{%- if config.extra.nav.show_theme_switcher %}
 		{%- set scripts = scripts | concat(with=["theme-switcher.js"]) %}
-	{%- endif %}
-
-	{%- if config.extra.nav.links.menu or config.languages | length > 0 or config.extra.nav.show_theme_switcher or config.feed_filenames | length > 1 and config.extra.nav.show_feed %}
-		{%- set scripts = scripts | concat(with=["details.js"]) %}
 	{%- endif %}
 
 	{%- if config.extra.scripts %}

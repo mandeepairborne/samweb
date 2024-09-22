@@ -7,9 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v5.1.0...main)
 
+### Added
+
+- Add `closable` class for making `details` closable when other `details` is open/outside area is clicked.
+
 ### Changed
 
 - Get rid of dashed outline on article hover in article list.
+- Make navabr menu/search open animation nicer (scale up instead of just fading from transparency).
 - More visually interesting paginator.
 - Move paginator from `articles.html` to `article-list.html`.
 - Tweak styling of `details`.
