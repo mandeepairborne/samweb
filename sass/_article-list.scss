@@ -421,6 +421,7 @@
 
 	#paginator-counter {
 		display: inline-block;
+		transition: var(--transition);
 		box-shadow: var(--edge-highlight);
 		border-radius: var(--rounded-corner-small);
 		background-color: var(--accent-color-alpha);
@@ -429,5 +430,15 @@
 		font-weight: bold;
 		line-height: 1;
 		font-variant-numeric: tabular-nums;
+	}
+
+	&:has(a#paginator-previous:active) #paginator-counter {
+		border-start-start-radius: 1rem;
+		border-end-start-radius: 1rem;
+	}
+
+	&:has(a#paginator-next:active) #paginator-counter {
+		border-start-end-radius: 1rem;
+		border-end-end-radius: 1rem;
 	}
 }
