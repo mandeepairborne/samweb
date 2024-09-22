@@ -1,20 +1,12 @@
 +++
 title = "Tricks"
+[extra]
+toc = true
 +++
 
 Several lesser known Duckquill thingies.
 
 <small>If you have some, please consider sharing them here.</small>
-
-## Table of Contents
-
-- [Styling](#styling)
-  - [Navbar](#navbar)
-  - [Headings](#headings)
-  - [Strikethrough](#strikethrough)
-  - [Edge Highlights](#edge-highlights)
-  - [Horizontal Rules](#horizontal-rules)
-  - [Background Image](#background-image)
 
 ## Styling
 
