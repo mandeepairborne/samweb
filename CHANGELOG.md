@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Change "From newest to oldest" in the article list to total amount of posts (#85).
 - Convert code block header to a flexbox.
 - Get rid of dashed outline on article hover in article list.
 - Make comment actions slimmer.

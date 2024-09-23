@@ -1,13 +1,14 @@
 .tags {
-	display: inline-flex;
+	display: flex;
 	flex-wrap: wrap;
 	gap: 0.25rem;
 	margin: 0;
+	margin-block-start: 2rem;
 	padding: 0;
 	list-style: none;
 
 	li {
-		display: inline-flex;
+		display: flex;
 		transition: var(--transition);
 		margin: 0;
 		padding: 0;

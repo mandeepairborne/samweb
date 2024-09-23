@@ -6,13 +6,15 @@
 {%- set number_of_posts = term.pages | length -%}
 <h1>{{ macros_translate::translate(key="posts_with_tag", default="Posts with tag", language_strings=language_strings) }} “{{ term.name }}”</h1>
 
-<small>
-	<a href="{{ get_url(path='tags', lang=lang) }}">
-		{{ macros_translate::translate(key="all_tags", default="See all tags", language_strings=language_strings) }}
-	</a>
-	<br />
-	{{ macros_translate::translate(key="posts", number=number_of_posts, default="$NUMBER posts", language_strings=language_strings) }}
-</small>
+<p>
+	<small>
+		<a href="{{ get_url(path='tags', lang=lang) }}">
+			{{ macros_translate::translate(key="all_tags", default="See all tags", language_strings=language_strings) }}
+		</a>
+		<br />
+		{{ macros_translate::translate(key="posts", number=number_of_posts, default="$NUMBER posts", language_strings=language_strings) }}
+	</small>
+</p>
 
 {% include "partials/articles.html" %}
 {% endblock content %}
