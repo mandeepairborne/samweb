@@ -16,7 +16,7 @@ Duckquill is pretty easy to restyle with just a few lines of SCSS in the [approp
 
 You can make navbar have more traditional look:
 
-![classic navabr](https://files.catbox.moe/wd9nal.png)
+![classic navabr](https://files.catbox.moe/ga4dmv.png)
 
 ```scss
 #site-nav {
@@ -44,6 +44,14 @@ You can make navbar have more traditional look:
 
     }
 
+    #home {
+        margin-inline-end: auto;
+    }
+
+    .divider {
+        display: none;
+    }
+
     #search-container {
         #search-bar {
             border-radius: var(--rounded-corner);
@@ -54,7 +62,7 @@ You can make navbar have more traditional look:
 
 Or you can make it sticked to top but not full-width:
 
-![sticked navabr](https://files.catbox.moe/vr62lb.png)
+![sticked navabr](https://files.catbox.moe/bfu3p7.png)
 
 ```scss
 #site-nav {
