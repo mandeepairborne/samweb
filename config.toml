@@ -44,6 +44,13 @@ generate_feeds = true
 
 taxonomies = [{ name = "tags", feed = true }]
 
+[languages.es]
+title = "Duckquill"
+description = "Tema Zola de opinión, moderno, bonito y limpio."
+generate_feeds = true
+
+taxonomies = [{ name = "tags", feed = true }]
+
 [languages.ms]
 title = "Duckquill"
 description = "Tema Zola yang berpandangan, moden, cantik dan bersih."
