@@ -17,7 +17,7 @@
 		inset-inline-start: 0;
 	}
 
-	& + h1 {
+	& + #heading {
 		margin-block-start: 35vw;
 	}
 
@@ -26,9 +26,31 @@
 			margin-block-start: 50vw;
 		}
 
-		& + h1 {
+		& + #heading {
 			margin-block-start: 2rem;
 		}
+	}
+}
+
+#heading {
+	margin: 2rem 0 1rem;
+	text-align: center;
+
+	h1 {
+		margin: 0;
+		background-image: linear-gradient(to right, var(--fg-muted-4), var(--fg-color), var(--fg-muted-4));
+		background-clip: text;
+		color: transparent;
+
+		& + p {
+			display: inline;
+		}
+	}
+
+	.tags {
+		display: inline-flex;
+		justify-content: center;
+		margin-block-start: 1rem;
 	}
 }
 

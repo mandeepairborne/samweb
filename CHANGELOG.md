@@ -10,9 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add `closable` class for making `details` closable when other `details` is open/outside area is clicked.
+- Add post tags back to `article.html`
 
 ### Changed
 
+- Center the title in `article.html` pages.
 - Change "From newest to oldest" in the article list to total amount of posts (#85).
 - Convert code block header to a flexbox.
 - Get rid of dashed outline on article hover in article list.
