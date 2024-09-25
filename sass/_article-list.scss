@@ -19,11 +19,6 @@
 			transform: scale(1.25);
 		}
 
-		.heading {
-			display: flex;
-			justify-content: space-between;
-		}
-
 		h3 {
 			margin: 0;
 			line-height: 1;
@@ -245,7 +240,7 @@
 		.featured-badge,
 		.hot-badge,
 		.poor-badge {
-			display: inline-block;
+			float: inline-end;
 			box-shadow: var(--edge-highlight);
 			border-radius: 999px;
 			padding: 0.375rem 0.75rem;
