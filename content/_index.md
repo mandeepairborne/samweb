@@ -70,7 +70,7 @@ It is highly recommended to switch from the `main` branch to the latest release:
 
 ```bash
 cd themes/duckquill
-git checkout tags/v5.1.0
+git checkout tags/v5.2.0
 ```
 
 Then, enable it in your `config.toml`:
@@ -84,7 +84,7 @@ To update the theme, simply switch to a new tag:
 ```bash
 git submodule update --remote --merge
 cd themes/duckquill
-git checkout tags/v5.1.0
+git checkout tags/v5.2.0
 ```
 
 {% alert(important=true) %}
