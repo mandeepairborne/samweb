@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add `closable` class for making `details` closable when other `details` is open/outside area is clicked.
+- Add Duckquill "mods" as a replacement to "tricks" (#88).
 - Add post tags back to `article.html`.
 - Add Spanish translation (#87).
 

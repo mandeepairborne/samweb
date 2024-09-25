@@ -12,7 +12,7 @@ date_locale = "es_ES"
 Links = "Enlaces"
 Blog = "Blog"
 Demo = "Demo"
-Tricks = "Trucos"
+Mods = "Mods"
 Coffee = "Café"
 
 all_tags = "Ver todas las etiquetas"
@@ -79,4 +79,3 @@ updated = "Actualizado el"
 view_comment = "Ver comentario en"
 view_profile = "Ver perfil en"
 warning = "Advertencia"
-

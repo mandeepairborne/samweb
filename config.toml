@@ -146,7 +146,7 @@ links = [
 	{ name = "Links", menu = [
 		{ url = "@/blog/_index.md", name = "Blog" },
 		{ url = "@/demo/index.md", name = "Demo" },
-		{ url = "@/tricks/index.md", name = "Tricks" },
+		{ url = "@/mods/index.md", name = "Mods" },
 	] },
 	{ url = "https://daudix.one/coffee/", name = "Coffee" },
 ]
@@ -157,7 +157,7 @@ links = [
 links = [
 	{ url = "@/blog/_index.md", name = "Blog" },
 	{ url = "@/demo/index.md", name = "Demo" },
-	{ url = "@/tricks/index.md", name = "Tricks" },
+	{ url = "@/mods/index.md", name = "Mods" },
 	{ url = "https://daudix.one/coffee/", name = "Coffee" },
 ]
 # Social links in the footer.
