@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v5.2.0...main)
 
+### Added
+
+- Add `defer` attribute to scripts.
+
 ### Changed
 
 - Restly the heading anchors.
