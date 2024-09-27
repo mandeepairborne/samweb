@@ -118,6 +118,10 @@ input[type="checkbox"] {
 			&::before {
 				transform: translateX(1rem);
 				background-color: var(--contrast-color);
+
+				:root[dir*="rtl"] & {
+					transform: translateX(-1rem);
+				}
 			}
 		}
 

@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v5.2.0...main)
 
+### Changed
+
+- Restly the heading anchors.
+
+## Fixed
+
+- Fix various RTL issues (broken toggles, article list arrow, unmirrored icons).
+
 ## [5.2.0](https://codeberg.org/daudix/duckquill/compare/v5.1.0...v5.2.0)
 
 ### Added

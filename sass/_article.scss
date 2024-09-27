@@ -107,21 +107,21 @@
 
 		&[open] summary~* {
 			transform-origin: bottom right;
-			animation: toc-dropdown-open var(--transition);
+			animation: toc-open var(--transition);
 
 			:root[dir*="rtl"] & {
 				transform-origin: bottom left;
-				animation: toc-dropdown-open-rtl var(--transition);
+				animation: toc-open-rtl var(--transition);
 			}
 
-			@keyframes toc-dropdown-open {
+			@keyframes toc-open {
 				from {
 					transform: scale(0.5) translate(1rem, 1rem);
 					opacity: 0;
 				}
 			}
 
-			@keyframes toc-dropdown-open-rtl {
+			@keyframes toc-open-rtl {
 				from {
 					transform: scale(0.5) translate(-1rem, 1rem);
 					opacity: 0;

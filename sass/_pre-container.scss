@@ -55,11 +55,15 @@
 				transition: var(--transition);
 				width: 1rem;
 				height: 1rem;
+
+				:root[dir*="rtl"] & {
+					transform: scaleX(-1);
+				}
 			}
 		}
 
 		&.active {
-			animation: active-fill var(--transition-long);
+			animation: active-shimmer var(--transition-long);
 
 			button {
 				box-shadow: var(--edge-highlight);
@@ -71,7 +75,7 @@
 				}
 			}
 
-			@keyframes active-fill {
+			@keyframes active-shimmer {
 				to {
 					background-position-x: -200%;
 				}

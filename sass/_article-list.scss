@@ -26,6 +26,10 @@
 			a:hover::after {
 				transform: none;
 				opacity: 1;
+
+				:root[dir*="rtl"] & {
+					transform: scaleX(-1);
+				}
 			}
 
 			a::after {
@@ -40,6 +44,10 @@
 				width: 1rem;
 				height: 1rem;
 				content: "";
+
+				:root[dir*="rtl"] & {
+					transform: scaleX(-1) translateX(-0.25rem);
+				}
 			}
 		}
 

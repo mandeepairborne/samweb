@@ -76,7 +76,6 @@
 				{%- set blurnail = resize_image(path=page.colocated_path ~ page.extra.banner, width=16, height=8, op="fill", format="webp") -%}
 				<div class="blurnail" style="--blurnail: url('{{ blurnail.url }}')"></div>
 			{%- endif -%}
-
 		</article>
 	{%- endfor %}
 </div>

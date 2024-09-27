@@ -32,7 +32,7 @@
 			background-color: transparent;
 
 			&:disabled {
-				animation: loading-fill var(--transition-long) ease-in-out alternate infinite;
+				animation: loading-shimmer var(--transition-long) ease-in-out alternate infinite;
 				transition: none;
 				cursor: not-allowed;
 
@@ -45,7 +45,7 @@
 					transform: none;
 				}
 
-				@keyframes loading-fill {
+				@keyframes loading-shimmer {
 					to {
 						background-position-x: -200%;
 					}
