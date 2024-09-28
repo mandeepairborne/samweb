@@ -83,8 +83,8 @@
 		<details id="toc" class="closable">
 			<summary title="{{ macros_translate::translate(key='table_of_contents', default='Table of Contents', language_strings=language_strings) }}"><i class="icon"></i></summary>
 			<div id="toc-dropdown">
-				<strong id="toc-dropdown-title">{{ macros_translate::translate(key="table_of_contents", default="Table of Contents", language_strings=language_strings) }}</strong>
-				<div id="toc-dropdown-container">
+				<strong>{{ macros_translate::translate(key="table_of_contents", default="Table of Contents", language_strings=language_strings) }}</strong>
+				<div>
 					<ul>
 						{%- for h1 in page.toc -%}
 							<li>

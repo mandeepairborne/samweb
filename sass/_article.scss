@@ -159,13 +159,13 @@
 			width: min(calc(var(--container-width) / 3), calc(90vw - 3rem));
 			max-height: 50vh;
 
-			&-title {
+			& > strong {
 				color: var(--fg-muted-4);
 				font-size: var(--font-size-x-large);
 				line-height: 1;
 			}
 
-			&-container {
+			div {
 				flex: 1;
 				mask-image: linear-gradient(to bottom, transparent, black 1rem, black calc(100% - 1rem), transparent);
 				margin: 0 -1rem -1rem;
