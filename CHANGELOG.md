@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Allow enabling KaTeX per page/section.
+- Improve the logic of inclusion feeds in `<head>`.
 - Restly the heading anchors.
 
 ## Fixed

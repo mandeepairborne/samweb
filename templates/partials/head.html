@@ -10,15 +10,6 @@
 	<title>{% include "partials/title.html" %}</title>
 	<link rel="canonical" href="{{ current_url | default(value='/') | safe }}" />
 
-	{%- if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
-		{%- if config.markdown.highlight_themes_css | length > 0 %}
-			<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme-light.css') }}" media="(prefers-color-scheme: light)" />
-			<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme-dark.css') }}" media="(prefers-color-scheme: dark)" />
-		{%- else %}
-			<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme.css') }}" />
-		{%- endif %}
-	{%- endif %}
-
 	{%- if config.extra.comments %}
 		<link rel="me" href="https://{{ config.extra.comments.host }}/@{{ config.extra.comments.user }}" />
 	{%- endif %}
@@ -45,7 +36,7 @@
 		{%- set styles = styles | concat(with=["fonts.css"]) %}
 	{%- endif %}
 
-	{%- if config.extra.katex %}
+	{%- if page.extra.katex or section.extra.katex or config.extra.katex %}
 		{%- set styles = styles | concat(with=["katex.css"]) %}
 	{%- endif %}
 
@@ -63,6 +54,15 @@
 		<link type="text/css" rel="stylesheet" href="{{ get_url(path=style) | safe }}" />
 	{%- endfor %}
 
+	{%- if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
+		{%- if config.markdown.highlight_themes_css | length > 0 %}
+			<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme-light.css') }}" media="(prefers-color-scheme: light)" />
+			<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme-dark.css') }}" media="(prefers-color-scheme: dark)" />
+		{%- else %}
+			<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme.css') }}" />
+		{%- endif %}
+	{%- endif %}
+
 	{%- if config.extra.show_copy_button %}
 		{%- include "partials/copy_button.html" %}
 	{%- endif %}
@@ -73,7 +73,7 @@
 		{%- set scripts = scripts | concat(with=["count.js"]) %}
 	{%- endif %}
 
-	{%- if config.extra.katex %}
+	{%- if page.extra.katex or section.extra.katex or config.extra.katex %}
 		{%- set scripts = scripts | concat(with=["katex.min.js", "auto-render.min.js"]) %}
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {

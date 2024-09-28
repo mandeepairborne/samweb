@@ -1,6 +1,7 @@
 +++
 title = "Demo Page"
 [extra]
+katex = true
 archive = "This page is in fact not archived. It is only here to demonstrate the archival statement."
 trigger = "This page contains blackjack and hookers, and bad jokes such as this one."
 disclaimer = """

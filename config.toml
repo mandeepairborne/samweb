@@ -127,7 +127,8 @@ show_read_time = true
 show_share_button = true
 # Whether to enable the KaTeX library for rendering LaTeX.
 # Note: This will make your page significantly heavier.
-katex = true
+# Instead, consider enabling it per page/section.
+# katex = true
 # Display outlines around all elements for debugging purposes
 # debug_layout = true
 
