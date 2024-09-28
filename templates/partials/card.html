@@ -6,5 +6,5 @@
 	{%- set card = resize_image(path=page.colocated_path ~ page.extra.banner, width=1200, height=628, op="fill") -%}
 	{{ card.url }}
 {%- else -%}
-	{{ get_url(path='card.png') }}
+	{{ get_url(path="card.png") }}
 {%- endif -%}
