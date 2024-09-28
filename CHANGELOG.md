@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Fixed
 
 - Fix CRT code blocks preferring syntax highlighting color instead of an accent color.
+- Fix height of "Skip to Main Content" button.
 - Fix various RTL issues (broken toggles, article list arrow, unmirrored icons).
 
 ## [5.2.0](https://codeberg.org/daudix/duckquill/compare/v5.1.0...v5.2.0)
