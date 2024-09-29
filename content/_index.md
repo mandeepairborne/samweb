@@ -70,7 +70,7 @@ It is highly recommended to switch from the `main` branch to the latest release:
 
 ```bash
 cd themes/duckquill
-git checkout tags/v5.2.0
+git checkout tags/v5.3.0
 ```
 
 Then, enable it in your `config.toml`:
@@ -84,7 +84,7 @@ To update the theme, simply switch to a new tag:
 ```bash
 git submodule update --remote --merge
 cd themes/duckquill
-git checkout tags/v5.2.0
+git checkout tags/v5.3.0
 ```
 
 {% alert(important=true) %}
@@ -111,6 +111,7 @@ Configuration variables from `config.toml` that can be set/overriden per page/se
 - `emoji_favicon`: Use emoji as a favicon. Only one emoji is being rendered, everything else is truncated.
 - `styles`: Additional CSS styles; expects them to be in the `./static/` directory. If you are using Sass it will be generated there automatically.
 - `scripts`: Additional JavaScript scripts; expects them to be in the `./static/` directory.
+- `katex`: Whether to enable the KaTeX library for rendering LaTeX.
 
 Other variables:
 

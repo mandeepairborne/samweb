@@ -5,7 +5,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v5.2.0...main)
+## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v5.3.0...main)
+
+## [5.3.0](https://codeberg.org/daudix/duckquill/compare/v5.2.0...v5.3.0)
 
 ### Added
 
@@ -15,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Allow enabling KaTeX per page/section.
 - Improve the logic of inclusion feeds in `<head>`.
+- Prevent articles in the article list from having multiple visual types at once (i.e., archived and featured badges at the same time).
 - Restly the heading anchors.
 
 ## Fixed
@@ -40,6 +43,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Get rid of dashed outline on article hover in article list.
 - Make comment actions slimmer.
 - Make navabr menu/search open animation nicer (scale up instead of just fading from transparency).
+- More visually interesting dropdown open animation.
 - More visually interesting paginator.
 - Move paginator from `articles.html` to `article-list.html`.
 - Tweak styling of `details`.

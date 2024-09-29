@@ -1,0 +1,11 @@
+{%- if page.draft -%}
+	class="draft"
+{%- elif page.extra.archive -%}
+	class="archive"
+{%- elif page.extra.featured -%}
+	class="featured"
+{%- elif page.extra.hot -%}
+	class="hot"
+{%- elif page.extra.poor -%}
+	class="poor"
+{%- endif -%}
