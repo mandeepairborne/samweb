@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Allow enabling KaTeX per page/section.
 - Improve the logic of inclusion feeds in `<head>`.
 - Prevent articles in the article list from having multiple visual types at once (i.e., archived and featured badges at the same time).
-- Restly the heading anchors.
+- Restyle the heading anchors.
 
 ## Fixed
 
