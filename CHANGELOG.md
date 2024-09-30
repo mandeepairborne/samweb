@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Recolor list bullets in GitHub-style alerts.
 
+### Fixed
+
+- Fix backdrop blur of dropdowns and search container in Chrome (#77 and #91).
+
 ## [5.3.0](https://codeberg.org/daudix/duckquill/compare/v5.2.0...v5.3.0)
 
 ### Added

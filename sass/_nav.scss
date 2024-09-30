@@ -1,17 +1,25 @@
 #site-nav {
-	-webkit-backdrop-filter: var(--blur);
 	position: sticky;
 	z-index: 999;
-	backdrop-filter: var(--blur);
 	margin: 1rem auto;
 	inset-block-start: 1rem;
-	box-shadow: var(--edge-highlight), var(--shadow-glass);
 	border-radius: 1.625rem;
-	background-color: var(--nav-bg);
 	max-width: 90%;
 
 	@media only screen and (max-width: 480px) {
 		position: static;
+	}
+
+	&::before {
+		-webkit-backdrop-filter: var(--blur);
+		position: absolute;
+		z-index: -1;
+		backdrop-filter: var(--blur);
+		inset: 0;
+		box-shadow: var(--edge-highlight), var(--shadow-glass);
+		border-radius: 1.625rem;
+		background-color: var(--nav-bg);
+		content: '';
 	}
 
 	nav {
@@ -203,7 +211,7 @@
 				z-index: 1;
 				backdrop-filter: var(--blur);
 				inset-block-start: 3.25rem;
-				box-shadow: var(--edge-highlight),var(--shadow-glass);
+				box-shadow: var(--edge-highlight), var(--shadow-glass);
 				border-radius: calc(var(--rounded-corner) + 0.25rem);
 				background-color: var(--nav-bg);
 				padding: 0.25rem;
@@ -314,8 +322,7 @@
 		box-shadow: var(--edge-highlight);
 		border: none;
 		border-radius: 999px;
-		background-image: none;
-		background-color: var(--fg-muted-1);
+		background: var(--fg-muted-1);
 		padding: 0.5rem 0.75rem;
 		width: 100%;
 		color: inherit;
