@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v5.3.0...main)
 
+### Changed
+
+- Recolor list bullets in GitHub-style alerts.
+
 ## [5.3.0](https://codeberg.org/daudix/duckquill/compare/v5.2.0...v5.3.0)
 
 ### Added
