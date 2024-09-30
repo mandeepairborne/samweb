@@ -7,7 +7,8 @@
 	max-width: 90%;
 
 	@media only screen and (max-width: 480px) {
-		position: static;
+		position: relative;
+		inset-block-start: 0;
 	}
 
 	&::before {
