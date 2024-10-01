@@ -5,7 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v5.3.1...main)
+## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v5.3.2...main)
+
+## [5.3.2](https://codeberg.org/daudix/duckquill/compare/v5.3.1...v5.3.2)
+
+### Fixed
+
+- Fix navbar blur covering the entire page on mobile (#93).
 
 ## [5.3.1](https://codeberg.org/daudix/duckquill/compare/v5.3.0...v5.3.1)
 
