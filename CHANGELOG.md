@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v5.3.2...main)
 
+### Changed
+
+- Allow opening search by pressing the slash key.
+- Focus search after opening it.
+
 ## [5.3.2](https://codeberg.org/daudix/duckquill/compare/v5.3.1...v5.3.2)
 
 ### Fixed
