@@ -98,6 +98,7 @@
 			}
 
 			.icon {
+				-webkit-mask-image: var(--icon);
 				mask-image: var(--icon);
 				transition: var(--transition);
 				width: 1.5rem;
