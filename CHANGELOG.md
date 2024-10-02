@@ -7,10 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v5.3.2...main)
 
+### Added
+
+- Add ability to enable inline table of contents in articles (#94 and #95).
+- Add ability to make table of contents use numbered lists (#95).
+- Add ability to open search by pressing the slash key.
+
 ### Changed
 
-- Allow opening search by pressing the slash key.
 - Focus search after opening it.
+- Move quick navigation buttons to the top on mobile.
 - Return some `-webkit-` prefixes for wider compatibility.
 
 ## [5.3.2](https://codeberg.org/daudix/duckquill/compare/v5.3.1...v5.3.2)

@@ -9,6 +9,8 @@ tags = ["Demo", "Test"]
 [extra]
 banner = "banner.webp"
 toc = true
+toc_inline = true
+toc_ordered = true
 trigger = "This page contains blackjack and hookers, and bad jokes such as this one."
 disclaimer = """
 - All tricks in this page are performed by the lab boys, don't try this at home.

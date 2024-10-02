@@ -19,8 +19,20 @@
 		color: transparent;
 		user-select: none;
 
+		:root[dir*="rtl"] & {
+			transform: scaleX(-1);
+
+			&:active {
+				transform: scaleX(-1) var(--active);
+			}
+		}
+
 		&:hover {
 			background-color: var(--accent-color);
+		}
+
+		&:active {
+			transform: var(--active);
 		}
 	}
 
@@ -31,10 +43,6 @@
 
 		&:hover {
 			opacity: 1;
-		}
-
-		&:active {
-			transform: var(--active);
 		}
 	}
 

@@ -129,6 +129,21 @@ show_share_button = true
 # Note: This will make your page significantly heavier.
 # Instead, consider enabling it per page/section.
 # katex = true
+#
+# Whether to render table of contents on all pages.
+# Will not be rendered if page doesn't have any headings.
+# Can be set per page/section.
+# toc = true
+#
+# Whether to render inline table of contents at the top of all pages,
+# in addition to floating quick navigation buttons.
+# Can be set per page/section.
+# toc_inline = true
+#
+# Whether to use numbered (ordered) list for table of contents.
+# Can be set per page/section.
+# toc_ordered = true
+#
 # Display outlines around all elements for debugging purposes
 # debug_layout = true
 
@@ -206,12 +221,3 @@ show_qr = true
 #
 # Your GoatCounter username
 user = "duckquill"
-
-# Table of Contents (TOC) configs
-[extra.toc]
-# whether to render inline static TOC at the top of the articles or not
-inline = true
-# where to show the TOC as a pop-up button
-popup = true
-# Show numbered TOC
-numbered = true
