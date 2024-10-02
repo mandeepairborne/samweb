@@ -4,6 +4,13 @@
 {%- set date_format = macros_translate::translate(key="date_format", default="%B %d, %Y", language_strings=language_strings) -%}
 {%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
 {%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
+
+{% if config.extra.toc.numbered %}
+	{% set list_element = "ol" %}
+{% else %}
+	{% set list_element = "ul" %}
+{% endif %}
+
 <article>
 	{%- if page.extra.banner -%}
 		<div id="banner-container">
@@ -41,7 +48,7 @@
 							<span> • </span>
 						{%- endif -%}
 					{%- endif -%}
-		
+
 					{%- if config.extra.show_read_time -%}
 						{%- set words = page.content | striptags | safe | wordcount -%}
 						{%- set words_per_minute = config.extra.words_per_minute | default(value=200) -%}
@@ -70,28 +77,28 @@
 	</div>
 
 	<div id="buttons-container">
-		{%- if page.extra.toc -%}
+		{%- if page.extra.toc and config.extra.toc.popup -%}
 			<details id="toc" class="closable">
 				<summary title="{{ macros_translate::translate(key='table_of_contents', default='Table of Contents', language_strings=language_strings) }}"><i class="icon"></i></summary>
 				<div id="toc-dropdown">
 					<strong>{{ macros_translate::translate(key="table_of_contents", default="Table of Contents", language_strings=language_strings) }}</strong>
 					<div>
-						<ul>
+						<{{list_element}}>
 							{%- for h1 in page.toc -%}
 								<li>
 									<a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
 									{%- if h1.children -%}
-										<ul>
+										<{{list_element}}>
 											{%- for h2 in h1.children -%}
 												<li>
 													<a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
 												</li>
 											{%- endfor -%}
-										</ul>
+										</{{list_element}}>
 									{%- endif -%}
 								</li>
 							{%- endfor -%}
-						</ul>
+						</{{list_element}}>
 					</div>
 				</div>
 			</details>
@@ -106,6 +113,28 @@
 	</div>
 
 	{%- include "partials/statements.html" -%}
+
+
+	{%- if page.extra.toc and config.extra.toc.inline-%}
+		<h2>{{ macros_translate::translate(key="table_of_contents", default="Table of Contents", language_strings=language_strings) }}</h2>
+
+		<{{list_element}} role="list">
+			{%- for h1 in page.toc -%}
+				<li>
+					<a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+					{%- if h1.children -%}
+						<{{list_element}} role="list">
+							{%- for h2 in h1.children -%}
+								<li>
+									<a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+								</li>
+							{%- endfor -%}
+						</{{list_element}}>
+					{%- endif -%}
+				</li>
+			{%- endfor -%}
+		</{{list_element}}>
+	{%- endif -%}
 
 	{{ page.content | safe }}
 </article>

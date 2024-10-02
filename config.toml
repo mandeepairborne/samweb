@@ -206,3 +206,12 @@ show_qr = true
 #
 # Your GoatCounter username
 user = "duckquill"
+
+# Table of Contents (TOC) configs
+[extra.toc]
+# whether to render inline static TOC at the top of the articles or not
+inline = true
+# where to show the TOC as a pop-up button
+popup = true
+# Show numbered TOC
+numbered = true
