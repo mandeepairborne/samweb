@@ -65,6 +65,13 @@ generate_feeds = true
 
 taxonomies = [{ name = "tags", feed = true }]
 
+[languages.fa]
+title = "Duckquill"
+description = "پوسته ای صاحب نظر، به‌روز، زیبا و تمیز برای Zola."
+generate_feeds = true
+
+taxonomies = [{ name = "tags", feed = true }]
+
 [extra]
 # Which theme should be used by default (light/dark).
 #
