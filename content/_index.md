@@ -112,6 +112,9 @@ Configuration variables from `config.toml` that can be set/overriden per page/se
 - `styles`: Additional CSS styles; expects them to be in the `./static/` directory. If you are using Sass it will be generated there automatically.
 - `scripts`: Additional JavaScript scripts; expects them to be in the `./static/` directory.
 - `katex`: Whether to enable the KaTeX library for rendering LaTeX.
+- `toc`: Enables table of contents. Only first 2 levels of headings are listed.
+- `toc_inline`: Whether to render inline table of contents at the top of all pages, in addition to floating quick navigation buttons.
+- `toc_ordered`: Whether to use numbered (ordered) list for table of contents.
 
 Other variables:
 
@@ -121,7 +124,6 @@ Other variables:
 - `archive`: Displays an archived message.
 - `trigger`: Displays a trigger warning message.
 - `disclaimer`: Displays a disclaimer message.
-- `toc`: Enables table of contents. Only first 2 levels of headings are listed.
 
 ### Blog post specific:
 
