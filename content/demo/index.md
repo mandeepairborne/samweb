@@ -166,7 +166,7 @@ Available variables are:
 - `spoiler` with `solid`: Ditto, but makes the image completely hidden.
 
 ```jinja2
-{{/* image(url="image.png", alt="This is an image" no_hover=true) */}}
+{{/* image(url="image.png", alt="This is an image", no_hover=true) */}}
 ```
 
 <figure>
