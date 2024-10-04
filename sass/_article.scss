@@ -39,6 +39,7 @@
 	text-align: center;
 
 	h1 {
+		-webkit-background-clip: text;
 		margin: 0;
 		background-image: linear-gradient(to right, var(--fg-muted-4), var(--fg-color), var(--fg-muted-4));
 		background-clip: text;
