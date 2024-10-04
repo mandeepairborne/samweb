@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Change fleuron style.
 - Focus search after opening it.
 - Make it possible to rearrange the "Powered by" links (for i18n).
 - Move quick navigation buttons to the top on mobile.
