@@ -59,9 +59,7 @@ poor = "冷清"
 posts = "共有 $NUMBER 篇文章"
 # TODO: Fix the original string
 posts_with_tag = "Posts with tag"
-# TODO: Fix the original string
-powered_by = "Powered by"
-powered_by_and = "and"
+powered_by = "由 $ZOLA 和 $DUCKQUILL 强力驱动"
 previous = "上一篇"
 published = "发布于"
 reload = "重新加载"
