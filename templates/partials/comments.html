@@ -304,7 +304,7 @@
 							let boosts = document.createElement("a");
 							boosts.className = "boosts";
 							boosts.setAttribute("href", `${status.url}/reblogs`);
-							boosts.setAttribute("title", `{{ macros_translate::translate(key="boosts_from", default="Boosts from", language_strings=language_strings) }} ${instance}`);
+							boosts.setAttribute("title", `{{ macros_translate::translate(key="boosts_from", default="Boosts from $INSTANCE", language_strings=language_strings) }}`.replace("$INSTANCE", instance));
 
 							let boostsIcon = document.createElement("i");
 							boostsIcon.className = "icon";
@@ -315,7 +315,7 @@
 							let faves = document.createElement("a");
 							faves.className = "faves";
 							faves.setAttribute("href", `${status.url}/favourites`);
-							faves.setAttribute("title", `{{ macros_translate::translate(key="faves_from", default="Favorites from", language_strings=language_strings) }} ${instance}`);
+							faves.setAttribute("title", `{{ macros_translate::translate(key="faves_from", default="Favorites from $INSTANCE", language_strings=language_strings) }}`.replace("$INSTANCE", instance));
 
 							let favesIcon = document.createElement("i");
 							favesIcon.className = "icon";
