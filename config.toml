@@ -151,6 +151,18 @@ show_share_button = true
 # Can be set per page/section.
 # toc_ordered = true
 #
+# Whether to use Content Security Policy.
+# Keep in mind that although this can potentially increase security,
+# it can break some stuff, in which case you will need to set custom policy.
+csp = [
+	{ directive = "font-src", domains = ["'self'", "data:"] },
+	{ directive = "img-src", domains = ["'self'", "https:", "data:"] },
+	{ directive = "media-src", domains = ["'self'", "https:", "data:"] },
+	{ directive = "script-src", domains = ["'self'", "'unsafe-inline'"] },
+	{ directive = "style-src", domains = ["'self'", "'unsafe-inline'"] },
+	{ directive = "frame-src", domains = ["https://player.vimeo.com", "https://www.youtube-nocookie.com"] },
+	{ directive = "connect-src", domains = ["https:"] },
+]
 # Display outlines around all elements for debugging purposes
 # debug_layout = true
 
