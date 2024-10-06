@@ -9,6 +9,7 @@
 <div id="article-list">
 	{%- for page in pages %}
 		<article {% include "partials/article_type.html" %}>
+			<a href="{{ page.permalink | safe }}"></a>
 			{%- if page.draft %}
 				<span class="draft-badge">
 					<i class="icon"></i>
@@ -35,7 +36,7 @@
 					{{- macros_translate::translate(key="poor", default="Poor", language_strings=language_strings) -}}
 				</span>
 			{%- endif %}
-			<h3><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
+			<h3>{{ page.title }}</h3>
 			{%- if page.description %}
 				{{ page.description | markdown | safe }}
 			{%- endif %}
