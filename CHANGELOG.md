@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add `external` class to the "Website Source" link in footer.
 - Add ability to enable inline table of contents in articles (#94 and #95).
 - Add ability to make table of contents use numbered lists (#95).
 - Add ability to open search by pressing the slash key.
