@@ -70,7 +70,7 @@ It is highly recommended to switch from the `main` branch to the latest release:
 
 ```bash
 cd themes/duckquill
-git checkout tags/v5.3.2
+git checkout tags/v5.4.0
 ```
 
 Then, enable it in your `config.toml`:
@@ -84,7 +84,7 @@ To update the theme, simply switch to a new tag:
 ```bash
 git submodule update --remote --merge
 cd themes/duckquill
-git checkout tags/v5.3.2
+git checkout tags/v5.4.0
 ```
 
 {% alert(important=true) %}
@@ -288,7 +288,7 @@ As for the code formatter I use built-in VSCodium one. Prettier is good but I do
 ## Thanks To
 
 - [Jakub Steiner](https://jimmac.eu) for the [OS Component Website](https://jimmac.github.io/os-component-website), which served as a starting point and inspiration.
-- [Óscar](https://osc.garden) for [tabi](https://welpo.github.io/tabi/) and its [translation system](https://github.com/welpo/tabi/blob/main/templates/macros/translate.html).
+- [Óscar](https://osc.garden) for [tabi](https://welpo.github.io/tabi/) and its [translation system](https://github.com/welpo/tabi/blob/7b00ed1d9dca5c529d2816c5b6679bfe600d63fc/templates/macros/translate.html), [rel attributes](https://github.com/welpo/tabi/blob/7b00ed1d9dca5c529d2816c5b6679bfe600d63fc/templates/macros/rel_attributes.html), and [Content Security Policy](https://github.com/welpo/tabi/blob/7b00ed1d9dca5c529d2816c5b6679bfe600d63fc/templates/partials/content_security_policy.html).
 - [Carl Schwan](https://carlschwan.eu) for the [Mastodon-powered Comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/).
 - [Jonathan Neal](https://jonneal.dev) for the [normalize.css](https://csstools.github.io/normalize.css/).
 - [GNOME design team](https://gitlab.gnome.org/Teams/Design) for the [icon development kit](https://gitlab.gnome.org/Teams/Design/icon-development-kit)
