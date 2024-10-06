@@ -72,6 +72,13 @@ generate_feeds = true
 
 taxonomies = [{ name = "tags", feed = true }]
 
+[languages.zh-Hans]
+title = "Duckquill"
+description = "有主见、现代、漂亮、简洁的 Zola 主题。"
+generate_feeds = true
+
+taxonomies = [{ name = "tags", feed = true }]
+
 [extra]
 # Which theme should be used by default (light/dark).
 #

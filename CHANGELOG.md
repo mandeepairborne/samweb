@@ -13,13 +13,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add ability to enable inline table of contents in articles (#94 and #95).
 - Add ability to make table of contents use numbered lists (#95).
 - Add ability to open search by pressing the slash key.
+- Add Simplified Chinese translation (#97).
 - Add support for Content Security Policy (#90).
 
 ### Changed
 
+- Adjust strings to make translation to specific languages possible (#100).
 - Change fleuron style.
 - Focus search after opening it.
-- Make it possible to rearrange the "Powered by" links (for i18n).
 - Make the entire article card clickable (#92).
 - Move quick navigation buttons to the top on mobile.
 - Return some `-webkit-` prefixes for wider compatibility.
