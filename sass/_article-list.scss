@@ -5,7 +5,7 @@
 	margin-block-start: 2rem;
 
 	.article-wrapper {
-		transition: var(--transition);
+		transition: var(--transition-longer);
 
 		&:active {
 			transform: var(--active);
