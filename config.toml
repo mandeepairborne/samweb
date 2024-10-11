@@ -131,10 +131,7 @@ source_url = "https://codeberg.org/daudix/duckquill"
 # See https://www.getzola.org/documentation/content/syntax-highlighting/
 show_copy_button = true
 # Whether to show estimated read time in posts.
-# Calculated using the simple math: number of words ÷ words per minute.
-show_read_time = true
-#
-# words_per_minute = 200
+show_reading_time = true
 #
 # Whether to show a share button in articles.
 # Uses https://shareopenly.org.

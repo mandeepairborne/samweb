@@ -45,24 +45,18 @@
 
 		<h1>{{ page.title }}</h1>
 
-		{%- if page.authors or config.extra.show_read_time -%}
+		{%- if page.authors or config.extra.show_reading_time -%}
 			<p>
 				<small>
 					{%- if page.authors -%}
 						<span>{% include "partials/authors.html" -%}</span>
-						{%- if config.extra.show_read_time -%}
+						{%- if config.extra.show_reading_time -%}
 							<span> • </span>
 						{%- endif -%}
 					{%- endif -%}
 
-					{%- if config.extra.show_read_time -%}
-						{%- set words = page.content | striptags | safe | wordcount -%}
-						{%- set words_per_minute = config.extra.words_per_minute | default(value=200) -%}
-						{%- set number_of_minutes = words / words_per_minute | round -%}
-						{%- if number_of_minutes == 0 -%}
-							{%- set number_of_minutes = 1 -%}
-						{%- endif -%}
-						<span>{{ macros_translate::translate(key="minutes_read", number=number_of_minutes, default="$NUMBER minute read", language_strings=language_strings) }}</span>
+					{%- if config.extra.show_reading_time -%}
+						<span>{{ macros_translate::translate(key="minutes_read", number=page.reading_time, default="$NUMBER minute read", language_strings=language_strings) }}</span>
 						{%- if page.taxonomies -%}
 							<span> • </span>
 						{%- endif -%}
