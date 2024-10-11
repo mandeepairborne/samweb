@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v5.4.0...main)
 
+### Fixed
+
+- Fix navbar mods having broken border radius.
+
 ## [5.4.0](https://codeberg.org/daudix/duckquill/compare/v5.3.2...v5.4.0)
 
 ### Added
