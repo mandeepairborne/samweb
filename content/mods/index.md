@@ -33,7 +33,10 @@ Want to set some nice image as a background? We got you covered:
 }
 
 body {
-    background: var(--bg-overlay), center / cover no-repeat fixed url("https://images.unsplash.com/photo-1523712999610-f77fbcfc3843");
+    background-image: var(--bg-overlay), url("https://images.unsplash.com/photo-1523712999610-f77fbcfc3843");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 ```
 
