@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v5.4.0...main)
 
+### Added
+
+- Add "DRAFTED" watermark to drafted posts.
+
 ### Fixed
 
 - Fix navbar mods having broken border radius.

@@ -12,6 +12,12 @@
 {%- endif -%}
 
 <article>
+	{%- if page.draft -%}
+		<div id="draft-watermark">
+			<span>{{- macros_translate::translate(key="drafted", default="Drafted", language_strings=language_strings) -}}</span>
+		</div>
+	{%- endif -%}
+
 	{%- if page.extra.banner -%}
 		<div id="banner-container">
 			<img id="banner" class="full-bleed{% if page.extra.banner_pixels %} pixels{% endif %}" src="{{ current_url ~ page.extra.banner }}" {% if config.markdown.lazy_async_image %}decoding="async" loading="lazy"{% endif %} />

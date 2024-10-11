@@ -1,3 +1,29 @@
+#draft-watermark {
+	position: fixed;
+	container-type: size;
+	margin: 0 auto;
+	inset: 50vh 0;
+	width: min(var(--container-width), 90%);
+
+	span {
+		-webkit-user-select: none;
+		display: block;
+		transform: translateY(-50%) rotate(-45deg);
+		margin: 0 auto;
+		border: 1cqw solid var(--fg-muted-1);
+		border-radius: 2cqw;
+		padding: 4cqw;
+		width: fit-content;
+		resize: horizontal;
+		pointer-events: none;
+		color: var(--fg-muted-1);
+		font-size: 20cqw;
+		line-height: 1;
+		user-select: none;
+		text-transform: uppercase;
+	}
+}
+
 #banner-container {
 	--mask: linear-gradient(black, transparent);
 	-webkit-user-select: none;
