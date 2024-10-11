@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add "DRAFTED" watermark to drafted posts.
+- Support `fediverse:creator` meta tag.
 
 ### Changed
 

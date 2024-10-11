@@ -115,6 +115,10 @@
 		{%- endfor %}
 	{%- endif %}
 
+	{%- if config.extra.comments %}
+        <meta name="fediverse:creator" content="@{{ config.extra.comments.user }}@{{ config.extra.comments.host }}" />
+	{%- endif %}
+
 	<meta property="og:site_name" content="{{ config.title }}" />
 	<meta property="og:title" content="{% include 'partials/title.html' %}" />
 	<meta property="og:url" content="{{ current_url | default(value='/') | safe }}" />
