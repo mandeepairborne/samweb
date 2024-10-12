@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Remove top/bottom margin from the first/last element in `<aside>`.
 - Rename `show_read_time` to `show_reading_time`.
 - Use Zola's built-in reading time variable instead of the custom implementation (#102).
 
