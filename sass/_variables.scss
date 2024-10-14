@@ -33,9 +33,6 @@
 		--red-fg: rgb(246 97 81);
 		--yellow-fg: rgb(248 228 92);
 
-		// FILTERS
-		--blurnail-blur: brightness(0.25) blur(1rem);
-
 		color-scheme: dark;
 	}
 
@@ -73,7 +70,6 @@
 
 		// FILTERS
 		--blur: saturate(1.8) blur(0.75rem);
-		--blurnail-blur: contrast(0.25) brightness(1.75) blur(1rem);
 
 		// FONT SIZES
 		--font-size-xx-small: 0.625rem;
