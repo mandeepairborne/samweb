@@ -4,20 +4,19 @@
 	gap: 1rem;
 	margin-block-start: 2rem;
 
-	.article-wrapper {
-		transition: var(--transition);
-
-		&:active {
-			transform: var(--active);
-		}
-	}
-
 	article {
 		position: relative;
+		transition: var(--transition);
 		box-shadow: var(--edge-highlight), var(--shadow-glass);
 		border-radius: var(--rounded-corner);
 		border-start-end-radius: 2.125rem;
 		border-end-end-radius: 1.8125rem;
+		background-image:
+			linear-gradient(var(--accent-color-alpha), var(--accent-color-alpha)),
+			linear-gradient(var(--nav-bg), var(--nav-bg)),
+			var(--blurnail);
+		background-position: center;
+		background-size: cover;
 		background-color: var(--accent-color-alpha);
 		padding: 1rem;
 		overflow: hidden;
@@ -31,13 +30,13 @@
 					transform: scaleX(-1);
 				}
 			}
-
-			.blurnail {
-				transform: scale(1.25);
-			}
 		}
 
-		& > a {
+		&:active {
+			transform: var(--active);
+		}
+
+		&>a {
 			position: absolute;
 			inset: 0;
 			border-radius: var(--rounded-corner);
@@ -46,6 +45,7 @@
 		}
 
 		h3 {
+			mix-blend-mode: invert;
 			margin: 0;
 			color: var(--accent-color);
 			font-weight: bold;
@@ -59,13 +59,13 @@
 				position: relative;
 				transform: translateX(-0.25rem);
 				opacity: 0;
-				z-index: -1;
 				mask-image: var(--icon);
 				transition: var(--transition);
 				margin-inline-start: 0.25rem;
 				background-color: currentColor;
 				width: 1rem;
 				height: 1rem;
+				pointer-events: none;
 				content: "";
 
 				:root[dir*="rtl"] & {
@@ -100,7 +100,6 @@
 				position: absolute;
 				transform: translateY(-50%);
 				opacity: var(--disabled-opacity);
-				z-index: -1;
 				mask-size: cover;
 				transition: var(--transition-longer);
 				inset-block-start: 50%;
@@ -137,6 +136,16 @@
 				color: var(--fg-muted-4);
 			}
 
+			.badge {
+				background-color: var(--fg-muted-1);
+				color: var(--fg-muted-5);
+
+				.icon {
+					-webkit-mask-image: var(--icon);
+					mask-image: var(--icon);
+				}
+			}
+
 			.tags a {
 				background-color: var(--fg-muted-1);
 				color: var(--fg-muted-5);
@@ -165,6 +174,16 @@
 
 			h3 {
 				color: var(--purple-fg);
+			}
+
+			.badge {
+				background-color: var(--purple-bg);
+				color: var(--purple-fg);
+
+				.icon {
+					-webkit-mask-image: var(--icon);
+					mask-image: var(--icon);
+				}
 			}
 
 			.tags a {
@@ -204,6 +223,16 @@
 				color: var(--yellow-fg);
 			}
 
+			.badge {
+				background-color: var(--yellow-bg);
+				color: var(--yellow-fg);
+
+				.icon {
+					-webkit-mask-image: var(--icon);
+					mask-image: var(--icon);
+				}
+			}
+
 			.tags a {
 				background-color: var(--yellow-bg);
 				color: var(--yellow-fg);
@@ -231,6 +260,16 @@
 
 			h3 {
 				color: var(--red-fg);
+			}
+
+			.badge {
+				background-color: var(--red-bg);
+				color: var(--red-fg);
+
+				.icon {
+					-webkit-mask-image: var(--icon);
+					mask-image: var(--icon);
+				}
 			}
 
 			.tags a {
@@ -262,6 +301,16 @@
 				color: var(--brown-fg);
 			}
 
+			.badge {
+				background-color: var(--brown-bg);
+				color: var(--brown-fg);
+
+				.icon {
+					-webkit-mask-image: var(--icon);
+					mask-image: var(--icon);
+				}
+			}
+
 			.tags a {
 				background-color: var(--brown-bg);
 				color: var(--brown-fg);
@@ -273,11 +322,7 @@
 			}
 		}
 
-		.draft-badge,
-		.archive-badge,
-		.featured-badge,
-		.hot-badge,
-		.poor-badge {
+		.badge {
 			float: inline-end;
 			box-shadow: var(--edge-highlight);
 			border-radius: 999px;
@@ -294,56 +339,6 @@
 			}
 		}
 
-		.draft-badge {
-			background-color: var(--fg-muted-1);
-			color: var(--fg-muted-5);
-
-			.icon {
-				-webkit-mask-image: var(--icon);
-				mask-image: var(--icon);
-			}
-		}
-
-		.archive-badge {
-			background-color: var(--purple-bg);
-			color: var(--purple-fg);
-
-			.icon {
-				-webkit-mask-image: var(--icon);
-				mask-image: var(--icon);
-			}
-		}
-
-		.featured-badge {
-			background-color: var(--yellow-bg);
-			color: var(--yellow-fg);
-
-			.icon {
-				-webkit-mask-image: var(--icon);
-				mask-image: var(--icon);
-			}
-		}
-
-		.hot-badge {
-			background-color: var(--red-bg);
-			color: var(--red-fg);
-
-			.icon {
-				-webkit-mask-image: var(--icon);
-				mask-image: var(--icon);
-			}
-		}
-
-		.poor-badge {
-			background-color: var(--brown-bg);
-			color: var(--brown-fg);
-
-			.icon {
-				-webkit-mask-image: var(--icon);
-				mask-image: var(--icon);
-			}
-		}
-
 		.details {
 			display: flex;
 			flex-wrap: nowrap;
@@ -353,18 +348,6 @@
 			margin-block-start: 1rem;
 			border-block-start: max(1px, 0.0625rem) solid var(--fg-muted-2);
 			padding-block-start: 0.5rem;
-		}
-
-		.blurnail {
-			position: absolute;
-			opacity: var(--dim-opacity);
-			z-index: -2;
-			filter: var(--blurnail-blur);
-			transition: var(--transition-longer);
-			inset: 0;
-			background-image: var(--blurnail);
-			background-position: center;
-			background-size: cover;
 		}
 	}
 }
