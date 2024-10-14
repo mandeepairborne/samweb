@@ -15,6 +15,7 @@
 
 	{%- if config.extra.comments %}
 		<link rel="me" href="https://{{ config.extra.comments.host }}/@{{ config.extra.comments.user }}" />
+        <meta name="fediverse:creator" content="@{{ config.extra.comments.user }}@{{ config.extra.comments.host }}" />
 	{%- endif %}
 
 	{%- include "partials/favicon.html" %}
@@ -113,10 +114,6 @@
 		{%- for script in scripts %}
 			<script type="text/javascript" defer {% if script == "count.js" %}data-goatcounter="https://{{ config.extra.goatcounter.user }}.{{ config.extra.goatcounter.host | default(value='goatcounter.com') }}/count"{% endif %} src="{{ get_url(path=script) | safe }}"></script>
 		{%- endfor %}
-	{%- endif %}
-
-	{%- if config.extra.comments %}
-        <meta name="fediverse:creator" content="@{{ config.extra.comments.user }}@{{ config.extra.comments.host }}" />
 	{%- endif %}
 
 	<meta property="og:site_name" content="{{ config.title }}" />
