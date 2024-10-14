@@ -13,12 +13,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Make the code and styling for article cards much cleaner.
 - Remove top/bottom margin from the first/last element in `<aside>`.
 - Rename `show_read_time` to `show_reading_time`.
 - Use Zola's built-in reading time variable instead of the custom implementation (#102).
 
 ### Fixed
 
+- Fix article cards missing a focus outline.
 - Fix navbar mods having broken border radius.
 
 ## [5.4.0](https://codeberg.org/daudix/duckquill/compare/v5.3.2...v5.4.0)
