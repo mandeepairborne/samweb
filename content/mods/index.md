@@ -42,6 +42,16 @@ body {
 
 Most of the time contrast should be okay, but what if it's not? Simply adjust the opacity of `--bg-overlay` based on your needs.
 
+## Classic Article List
+
+Prefer the less fancy look of the article list used in Duckquill some time ago (to some extent)? It can be done with the `classic-article-list` mod:
+
+![classic article list](https://files.catbox.moe/bktey7.png)
+
+```scss
+@use "../themes/duckquill/sass/mods/classic-article-list";
+```
+
 ## Classic Navbar
 
 You can make navbar have more traditional look by using the `classic-nav` mod:

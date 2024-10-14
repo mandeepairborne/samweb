@@ -1,0 +1,39 @@
+#article-list {
+	gap: 2rem;
+
+	article {
+		position: relative;
+		transition: none;
+		box-shadow: none;
+		border-radius: 0;
+		background: none;
+		padding: 0;
+		overflow: visible;
+
+		&:active {
+			transform: none;
+		}
+
+		& > a {
+			border-radius: 0;
+		}
+
+		&.draft,
+		&.archive,
+		&.featured,
+		&.hot,
+		&.poor {
+			background-color: transparent;
+
+			&::before {
+				display: none;
+			}
+		}
+
+		.details {
+			margin-block-start: 0;
+			border-block-start: none;
+			padding-block-start: 0;
+		}
+	}
+}
