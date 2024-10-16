@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add `classic-article-list` mod for returning the classic article list style.
 - Add `fediverse:creator` meta tag.
+- Add `title` class for use on `<strong>`.
 - Add support for Fuse.js search (#101).
 
 ### Changed

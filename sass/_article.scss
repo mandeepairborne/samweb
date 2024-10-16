@@ -164,10 +164,8 @@
 			width: min(calc(var(--container-width) / 3), calc(90vw - 3rem));
 			max-height: 50vh;
 
-			&>strong {
+			strong.title {
 				color: var(--fg-muted-4);
-				font-size: var(--font-size-x-large);
-				line-height: 1;
 			}
 
 			div {
