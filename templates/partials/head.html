@@ -92,8 +92,13 @@
 	{%- endif %}
 
 	{%- if config.build_search_index %}
-		{%- include "partials/search.html" %}
-		{%- set scripts = scripts | concat(with=["elasticlunr.min.js"]) %}
+		{%- if config.search.index_format == "elasticlunr_json" -%}
+			{%- include "partials/search_elasticlunr.html" %}
+			{%- set scripts = scripts | concat(with=["elasticlunr.min.js"]) %}
+		{%- elif config.search.index_format == "fuse_json" -%}
+			{%- include "partials/search_fuse.html" %}
+			{%- set scripts = scripts | concat(with=["fuse.js"]) %}
+		{%- endif -%}
 	{%- endif %}
 
 	{%- if config.extra.nav.show_theme_switcher %}

@@ -398,10 +398,18 @@
 			}
 
 			span {
-				margin-block-start: 0.5rem;
-				border-block-start: max(1px, 0.0625rem) solid var(--fg-muted-2);
-				padding-block-start: 0.25rem;
 				color: var(--fg-muted-5);
+
+				&:first-of-type,
+				&.more-matches {
+					margin-block-start: 0.5rem;
+					border-block-start: max(1px, 0.0625rem) solid var(--fg-muted-2);
+					padding-block-start: 0.25rem;
+				}
+
+				&.more-matches {
+					font-size: var(--font-size-small);
+				}
 
 				strong {
 					color: var(--fg-color);

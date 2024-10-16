@@ -132,8 +132,9 @@
 	}
 
 	function initSearch() {
-		var $searchInput = document.getElementById("search-bar");
-		var $searchResults = document.getElementById("search-results");
+		var searchBar = document.getElementById("search-bar");
+		var searchContainer = document.getElementById("search-container");
+		var searchResults = document.getElementById("search-results");
 		var MAX_ITEMS = 10;
 
 		var options = {
@@ -159,13 +160,13 @@
 			return res;
 		}
 
-		$searchInput.addEventListener("keyup", debounce(async function () {
-			var term = $searchInput.value.trim();
+		searchBar.addEventListener("keyup", debounce(async function () {
+			var term = searchBar.value.trim();
 			if (term === currentTerm) {
 				return;
 			}
-			$searchResults.style.display = term === "" ? "none" : "flex";
-			$searchResults.innerHTML = "";
+			searchResults.style.display = term === "" ? "none" : "flex";
+			searchResults.innerHTML = "";
 			currentTerm = term;
 			if (term === "") {
 				return;
@@ -173,18 +174,19 @@
 
 			var results = (await initIndex()).search(term, options);
 			if (results.length === 0) {
-				$searchResults.style.display = "none";
+				searchResults.style.display = "none";
 				return;
 			}
 
 			for (var i = 0; i < Math.min(results.length, MAX_ITEMS); i++) {
-				$searchResults.innerHTML += formatSearchResultItem(results[i], term.split(" "));
+				searchResults.innerHTML += formatSearchResultItem(results[i], term.split(" "));
 			}
 		}, 150));
 
-		window.addEventListener('click', function (e) {
-			if ($searchResults.style.display == "flex" && !$searchResults.contains(e.target)) {
-				$searchResults.style.display = "none";
+		document.addEventListener("keydown", function(event) {
+			if (event.key === "/") {
+				event.preventDefault();
+				toggleSearch();
 			}
 		});
 	}
@@ -196,13 +198,6 @@
 		searchBar.toggleAttribute("disabled");
 		searchBar.focus();
 	}
-
-	document.addEventListener("keydown", function(event) {
-		if (event.key === "/") {
-			event.preventDefault();
-			toggleSearch();
-		}
-	});
 
 	if (document.readyState === "complete" ||
 		(document.readyState !== "loading" && !document.documentElement.doScroll)

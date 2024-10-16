@@ -117,6 +117,17 @@
 	{{ page.content | safe }}
 </article>
 
+{%- if config.extra.show_backlinks and page.backlinks | length > 0 -%}
+	<h2>{{ macros_translate::translate(key="backlinks", default="Backlinks", language_strings=language_strings) }}</h2>
+	<ul>
+		{%- for backlink in page.backlinks -%}
+			<li>
+				<a href="{{ backlink.permalink }}">{{ backlink.title }}</a>
+			</li>
+		{%- endfor -%}
+	</ul>
+{%- endif -%}
+
 {%- if page.extra.comments.id -%}
 	{% include "partials/comments.html" %}
 {%- endif -%}
