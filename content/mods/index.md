@@ -46,7 +46,7 @@ Most of the time contrast should be okay, but what if it's not? Simply adjust th
 
 Prefer the less fancy look of the article list used in Duckquill some time ago (to some extent)? It can be done with the `classic-article-list` mod:
 
-![classic article list](https://files.catbox.moe/bktey7.png)
+![classic article list](https://files.catbox.moe/yf5feo.png)
 
 ```scss
 @use "../themes/duckquill/sass/mods/classic-article-list";

@@ -6,9 +6,15 @@
 		transition: none;
 		box-shadow: none;
 		border-radius: 0;
+		border-block-end: max(1px, 0.0625rem) solid var(--fg-muted-2);
 		background: none;
 		padding: 0;
+		padding-block-end: 1rem;
 		overflow: visible;
+
+		&:last-of-type {
+			border-block-end: none;
+		}
 
 		&:active {
 			transform: none;
