@@ -74,7 +74,7 @@
 		{%- if page.extra.toc and page.toc | length > 0 -%}
 			<details id="toc" class="closable">
 				<summary title="{{ macros_translate::translate(key='table_of_contents', default='Table of Contents', language_strings=language_strings) }}"><i class="icon"></i></summary>
-				<div id="toc-dropdown">
+				<div>
 					<strong class="title">{{ macros_translate::translate(key="table_of_contents", default="Table of Contents", language_strings=language_strings) }}</strong>
 					<div>
 						<{{ list_element }}>
@@ -93,6 +93,23 @@
 								</li>
 							{%- endfor -%}
 						</{{ list_element }}>
+					</div>
+				</div>
+			</details>
+		{%- endif -%}
+		{%- if config.extra.show_backlinks and page.backlinks | length > 0 -%}
+			<details id="backlinks" class="closable">
+				<summary title="{{ macros_translate::translate(key='backlinks', default='Backlinks', language_strings=language_strings) }}"><i class="icon"></i></summary>
+				<div>
+					<strong class="title">{{ macros_translate::translate(key="backlinks", default="Backlinks", language_strings=language_strings) }}</strong>
+					<div>
+						<ul>
+							{%- for backlink in page.backlinks -%}
+								<li>
+									<a href="{{ backlink.permalink }}">{{ backlink.title }}</a>
+								</li>
+							{%- endfor -%}
+						</ul>
 					</div>
 				</div>
 			</details>
@@ -116,17 +133,6 @@
 
 	{{ page.content | safe }}
 </article>
-
-{%- if config.extra.show_backlinks and page.backlinks | length > 0 -%}
-	<h2>{{ macros_translate::translate(key="backlinks", default="Backlinks", language_strings=language_strings) }}</h2>
-	<ul>
-		{%- for backlink in page.backlinks -%}
-			<li>
-				<a href="{{ backlink.permalink }}">{{ backlink.title }}</a>
-			</li>
-		{%- endfor -%}
-	</ul>
-{%- endif -%}
 
 {%- if page.extra.comments.id -%}
 	{% include "partials/comments.html" %}
