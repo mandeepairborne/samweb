@@ -167,7 +167,7 @@ csp = [
 	{ directive = "media-src", domains = ["'self'", "https:", "data:"] },
 	{ directive = "script-src", domains = ["'self'", "'unsafe-inline'"] },
 	{ directive = "style-src", domains = ["'self'", "'unsafe-inline'"] },
-	{ directive = "frame-src", domains = ["https://player.vimeo.com", "https://www.youtube-nocookie.com"] },
+	{ directive = "frame-src", domains = ["https://player.vimeo.com", "https://www.youtube-nocookie.com", "https://toot.community"] },
 	{ directive = "connect-src", domains = ["https:"] },
 ]
 # Display outlines around all elements for debugging purposes

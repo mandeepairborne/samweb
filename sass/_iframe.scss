@@ -1,4 +1,5 @@
 iframe {
+	display: block;
 	margin: 1rem auto;
 	box-shadow: var(--edge-highlight), var(--shadow);
 	border: none;
@@ -7,8 +8,13 @@ iframe {
 	width: 100%;
 	max-width: 100%;
 
-	&.youtube-embed,
-	&.vimeo-embed {
+	&.mastodon-embed {
+		aspect-ratio: 3 / 4;
+		width: min(calc(var(--container-width) / 2), 100%);
+	}
+
+	&.vimeo-embed,
+	&.youtube-embed {
 		aspect-ratio: 16 / 9;
 	}
 

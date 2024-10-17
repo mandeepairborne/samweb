@@ -10,9 +10,9 @@
 {%- endif -%}
 
 {%- if page.extra.comments.user -%}
-	{%- set username = page.extra.comments.user -%}
+	{%- set user = page.extra.comments.user -%}
 {%- else %}
-	{%- set username = config.extra.comments.user -%}
+	{%- set user = config.extra.comments.user -%}
 {%- endif -%}
 
 {%- set id = page.extra.comments.id -%}
@@ -28,7 +28,7 @@
 				decoding="async"
 				loading="lazy"
 			{%- endif -%}
-			src="https://api.qrserver.com/v1/create-qr-code/?data=https://{{ host }}/@{{ username }}/{{ id }}"
+			src="https://api.qrserver.com/v1/create-qr-code/?data=https://{{ host }}/@{{ user }}/{{ id }}"
 		/>
 	{%- endif -%}
 	<h2>{{ macros_translate::translate(key="comments", default="Comments", language_strings=language_strings) }}</h2>
@@ -37,7 +37,7 @@
 		<button id="load-comments" class="inline-button" onclick="loadComments()">
 			{{- macros_translate::translate(key="load_comments", default="Load Comments", language_strings=language_strings) -}}
 		</button>
-		<a class="inline-button colored external" href="https://{{ host }}/@{{ username }}/{{ id }}" rel="{{ rel_attributes }}">
+		<a class="inline-button colored external" href="https://{{ host }}/@{{ user }}/{{ id }}" rel="{{ rel_attributes }}">
 			{{- macros_translate::translate(key="open_post", default="Open Post", language_strings=language_strings) -}}
 		</a>
 	</div>
@@ -129,7 +129,7 @@
 							const isReply = status.in_reply_to_id !== "{{ id }}";
 
 							let op = false;
-							if (status.account.acct == "{{ username }}") {
+							if (status.account.acct == "{{ user }}") {
 								op = true;
 							}
 

@@ -13,12 +13,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `config.extra.show_backlinks` config variable for showing the backlinks button for linked articles in the article's quick actions.
 - Add `fediverse:creator` meta tag.
 - Add `title` class for use on `<strong>`.
+- Add missing translation strings for author separator and conjunctions.
+- Add shortcode for Mastodon post embedding.
 - Add support for Fuse.js search (#101).
+- Add the ability to set video attributes via shortcode.
 
 ### Changed
 
 - Make `emoji` class available outside of comments.
 - Make the code and styling for article cards much cleaner.
+- Make the shortcodes code much cleaner.
 - Remove top/bottom margin from the first/last element in `<aside>`.
 - Rename `show_read_time` to `show_reading_time`.
 - Use Zola's built-in reading time variable instead of the custom implementation (#102).

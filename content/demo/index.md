@@ -213,17 +213,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 For videos it's all the same except for a few differences: `no_hover` and `url_min` variables are not available.
 
+Additionally, the following [attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video#attributes) can be set:
+
+- `autoplay`: Start playing the video automatically.
+- `controls`: Display video controls such as volume control, seeking and pause/resume.
+- `loop`: Play the video again once it ends.
+- `muted`: Turn off the audio by default.
+- `playsinline`: Prevent the video from playing in fullscreen by default (depends on the browser).
+
 ```jinja2
-{{/* video(url="video.webm", alt="This is a video") */}}
+{{/* video(url="video.webm", alt="This is a video", controls=true) */}}
 ```
 
 <figure>
-{{ video(url="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm", alt="Red flower wakes up") }}
+{{ video(url="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm", alt="Red flower wakes up", controls=true) }}
 <figcaption>WebM video example from MDN</figcaption>
 </figure>
 
 <figure>
-{{ video(url="https://upload.wikimedia.org/wikipedia/commons/transcoded/0/0e/Duckling_preening_%2881313%29.webm/Duckling_preening_%2881313%29.webm.720p.vp9.webm", alt="Duckling preening", full_bleed=true) }}
+{{ video(url="https://upload.wikimedia.org/wikipedia/commons/transcoded/0/0e/Duckling_preening_%2881313%29.webm/Duckling_preening_%2881313%29.webm.720p.vp9.webm", alt="Duckling preening", full_bleed=true, controls=true) }}
 <figcaption>Duckling preening</figcaption>
 </figure>
 
@@ -294,6 +302,22 @@ Available variables are:
 ```
 
 {{ vimeo(id="869483483") }}
+
+#### Mastodon
+
+Allows to embed a Mastodon post.
+
+Available variables are:
+
+- `host`: The instance on which the post resides. If not set, it will fallback to the one set in the `[extra.comments]` section of `config.toml`.
+- `user`: The poster. If not set, it will fallback to the one set in the `[extra.comments]` section of `config.toml`.
+- `id`: The ID of the post, usually at the end of the URL.
+
+```jinja2
+{{/* mastodon(host="toot.community", user="sungsphinx", id="111789185826519979") */}}
+```
+
+{{ mastodon(host="toot.community", user="sungsphinx", id="111789185826519979") }}
 
 ### Description List (`<dl>`)
 
