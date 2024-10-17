@@ -174,20 +174,6 @@
 				}
 			}
 
-			.emoji {
-				all: unset;
-				display: inline-block;
-				vertical-align: middle;
-				transition: var(--transition);
-				cursor: zoom-in;
-				width: 1.5em;
-				height: 1.5em;
-
-				&:hover {
-					transform: scale(2);
-				}
-			}
-
 			.mention {
 				display: inline-block;
 				transition: var(--transition);

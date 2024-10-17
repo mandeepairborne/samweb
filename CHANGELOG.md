@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Make `emoji` class available outside of comments.
 - Make the code and styling for article cards much cleaner.
 - Remove top/bottom margin from the first/last element in `<aside>`.
 - Rename `show_read_time` to `show_reading_time`.
