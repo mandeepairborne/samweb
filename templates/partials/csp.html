@@ -1,7 +1,7 @@
 {#- Based on https://github.com/welpo/tabi/blob/7b00ed1d9dca5c529d2816c5b6679bfe600d63fc/templates/partials/content_security_policy.html -#}
 
-<meta http-equiv="Content-Security-Policy"
-content="default-src 'self'
+<meta http-equiv="content-security-policy"
+content="default-src 'none';
 {%- if config.extra.csp -%}
 
 	{#- Initialise a base script-src directive -#}
@@ -39,9 +39,7 @@ content="default-src 'self'
 		{#- Handle directives that are not connect-src -#}
 		{{ domain.directive }} {{ domain.domains | join(sep=' ') -}}
 
-		{%- if not loop.last -%}
-		;
-		{%- endif -%}
+		{%- if not loop.last -%};{%- endif -%}
 	{%- endfor -%}
 
 	{#- Insert the generated connect-src -#}
@@ -50,4 +48,4 @@ content="default-src 'self'
 	{#- Insert the generated script-src -#}
 	{{ ";" ~ script_src }}
 
-{%- endif -%}">
+{%- endif -%}" />
