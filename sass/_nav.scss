@@ -19,7 +19,7 @@
 		inset: 0;
 		box-shadow: var(--edge-highlight), var(--shadow-glass);
 		border-radius: 1.625rem;
-		background-color: var(--nav-bg);
+		background-color: var(--glass-bg);
 		content: '';
 	}
 
@@ -40,7 +40,7 @@
 				var(--edge-highlight),
 				var(--shadow-glass);
 			border-radius: 999px;
-			background-color: var(--nav-bg);
+			background-color: var(--glass-bg);
 			padding: 0.625rem 0.75rem;
 			pointer-events: none;
 			line-height: 1;
@@ -216,7 +216,7 @@
 				inset-block-start: 3.25rem;
 				box-shadow: var(--edge-highlight), var(--shadow-glass);
 				border-radius: calc(var(--rounded-corner) + 0.25rem);
-				background-color: var(--nav-bg);
+				background-color: var(--glass-bg);
 				padding: 0.25rem;
 
 				li {
@@ -361,7 +361,7 @@
 		inset-inline-start: 0;
 		box-shadow: var(--edge-highlight), var(--shadow-glass);
 		border-radius: calc(var(--rounded-corner) + 0.5rem);
-		background-color: var(--nav-bg);
+		background-color: var(--glass-bg);
 		width: 100%;
 		max-height: 50vh;
 	}

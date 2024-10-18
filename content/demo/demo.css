@@ -10,7 +10,7 @@
 	box-shadow: var(--edge-highlight), var(--shadow-glass);
 	border-start-end-radius: var(--rounded-corner);
 	border-end-end-radius: var(--rounded-corner);
-	background-color: var(--nav-bg);
+	background-color: var(--glass-bg);
 	padding: 0.5rem;
 }
 

@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- **[BREAKING]** Rename `nav-bg` CSS variable to `glass-bg`.
 - **[BREAKING]** Rename the visually hidden `hidden` class to `visually-hidden`. `hidden` is now used to completely hide the elements, including screen readers.
 - Make `emoji` class available outside of comments.
 - Make the code and styling for article cards much cleaner.

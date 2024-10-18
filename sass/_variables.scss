@@ -19,13 +19,13 @@
 		// COLORS
 		--bg-color: color-mix(in srgb, var(--accent-color) 10%, black);
 		--fg-color: rgb(255 255 255);
+		--fg-contrast: rgb(0 0 0 / 0.8);
 		--fg-muted-1: rgb(255 255 255 / 0.05);
 		--fg-muted-2: rgb(255 255 255 / 0.1);
 		--fg-muted-3: rgb(255 255 255 / 0.2);
 		--fg-muted-4: rgb(255 255 255 / 0.5);
 		--fg-muted-5: rgb(255 255 255 / 0.6);
-		--fg-contrast: rgb(0 0 0 / 0.8);
-		--nav-bg: rgb(25 25 25 / 0.7);
+		--glass-bg: rgb(25 25 25 / 0.7);
 		--blue-fg: rgb(153 193 241);
 		--brown-fg: rgb(205 171 143);
 		--green-fg: rgb(143 240 164);
@@ -39,10 +39,6 @@
 	@else {
 		// COLORS
 		--bg-color: color-mix(in srgb, var(--accent-color) 20%, white);
-		--blue-bg: rgb(from var(--blue-fg) r g b / var(--color-opacity));
-		--blue-fg: rgb(53 132 228);
-		--brown-bg: rgb(from var(--brown-fg) r g b / var(--color-opacity));
-		--brown-fg: rgb(99 69 44);
 		--fg-color: rgb(0 0 0 / 0.8);
 		--fg-contrast: rgb(255 255 255);
 		--fg-muted-1: rgb(0 0 0 / 0.05);
@@ -50,10 +46,14 @@
 		--fg-muted-3: rgb(0 0 0 / 0.2);
 		--fg-muted-4: rgb(0 0 0 / 0.5);
 		--fg-muted-5: rgb(0 0 0 / 0.6);
+		--glass-bg: rgb(242 242 242 / 0.7);
+		--accent-color-alpha: rgb(from var(--accent-color) r g b / var(--color-opacity));
+		--blue-bg: rgb(from var(--blue-fg) r g b / var(--color-opacity));
+		--blue-fg: rgb(53 132 228);
+		--brown-bg: rgb(from var(--brown-fg) r g b / var(--color-opacity));
+		--brown-fg: rgb(99 69 44);
 		--green-bg: rgb(from var(--green-fg) r g b / var(--color-opacity));
 		--green-fg: rgb(38 162 105);
-		--nav-bg: rgb(242 242 242 / 0.7);
-		--accent-color-alpha: rgb(from var(--accent-color) r g b / var(--color-opacity));
 		--purple-bg: rgb(from var(--purple-fg) r g b / var(--color-opacity));
 		--purple-fg: rgb(145 65 172);
 		--red-bg: rgb(from var(--red-fg) r g b / var(--color-opacity));
