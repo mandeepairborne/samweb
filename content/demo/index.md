@@ -483,16 +483,6 @@ With `range` type:
 <input type="range" max="100" value="33" id="range">
 <!-- For the demo purposes only -->
 <small id="range-value"></small>
-
-<script type="text/javascript">
-  var slider = document.getElementById("range");
-  var output = document.getElementById("range-value");
-  output.innerHTML = slider.value;
-
-  slider.oninput = function() {
-    output.innerHTML = this.value;
-  }
-</script>
 <!-- End -->
 
 ### Figure Captions (`<figcaption>`)
