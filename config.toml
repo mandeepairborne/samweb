@@ -169,9 +169,9 @@ csp = [
 	{ directive = "style-src", domains = ["'self'", "'unsafe-inline'"] },
 	{ directive = "frame-src", domains = ["https://player.vimeo.com", "https://www.youtube-nocookie.com", "https://toot.community"] },
 	{ directive = "connect-src", domains = ["https://toot.community"] },
-	{ directive = "frame-ancestors", domains = ["'self'"] },
-	{ directive = "base-uri", domains = ["'self'"] },
-	{ directive = "form-action", domains = ["'self'"] },
+	{ directive = "frame-ancestors", domains = ["'none'"] },
+	{ directive = "base-uri", domains = ["'none'"] },
+	{ directive = "form-action", domains = ["'none'"] },
 	{ directive = "require-trusted-types-for", domains = ["'script'"] },
 ]
 # Display outlines around all elements for debugging purposes
