@@ -165,10 +165,10 @@ csp = [
 	{ directive = "font-src", domains = ["'self'", "data:"] },
 	{ directive = "img-src", domains = ["'self'", "https:", "data:"] },
 	{ directive = "media-src", domains = ["'self'", "https:", "data:"] },
-	{ directive = "script-src", domains = ["'self'", "'unsafe-inline'"] },
+	{ directive = "script-src", domains = ["'self'"] },
 	{ directive = "style-src", domains = ["'self'", "'unsafe-inline'"] },
 	{ directive = "frame-src", domains = ["https://player.vimeo.com", "https://www.youtube-nocookie.com", "https://toot.community"] },
-	{ directive = "connect-src", domains = ["https:"] },
+	{ directive = "connect-src", domains = ["https://toot.community"] },
 ]
 # Display outlines around all elements for debugging purposes
 # debug_layout = true

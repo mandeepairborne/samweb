@@ -1,13 +1,11 @@
-{#- Based on https://codeberg.org/daudix/duckquill/issues/101#issuecomment-2377169 -#}
-
-<script type="text/javascript">
+	// Based on https://codeberg.org/daudix/duckquill/issues/101#issuecomment-2377169
 	let searchSetup = false;
 	let fuse;
 
 	async function initIndex() {
 		if (searchSetup) return;
 
-		const url = "{{ get_url(path='/', lang=lang) }}/search_index.{{ config.default_language }}.json";
+		const url = document.getElementById("search-index").textContent;
 		const response = await fetch(url);
 
 		if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
@@ -99,7 +97,8 @@
 				}
 
 				if (match.indices.length > 4) {
-					output += `<span class="more-matches">{{ macros_translate::translate(key="more_matches", default="$MATCHES more matches", language_strings=language_strings) }}</span>`.replace("$MATCHES", `+${match.indices.length - MAX_RESULTS}`);
+                    const moreMatchesText = document.getElementById("more-matches-text").textContent;
+					output += `<span class="more-matches">${moreMatchesText}</span>`.replace("$MATCHES", `+${match.indices.length - MAX_RESULTS}`);
 				}
 			}
 			return output + "</div>";
@@ -117,6 +116,8 @@
 				toggleSearch();
 			}
 		});
+
+		document.getElementById("search-toggle").addEventListener("click", toggleSearch);
 	}
 
 	if (document.readyState === "complete" ||
@@ -124,4 +125,3 @@
 		initSearch();
 	else
 		document.addEventListener("DOMContentLoaded", initSearch);
-</script>

@@ -85,6 +85,16 @@ function updateActiveButton(theme) {
 	}
 }
 
+document.getElementById("theme-light").addEventListener("click", function () {
+	switchTheme("light");
+});
+document.getElementById("theme-dark").addEventListener("click", function () {
+	switchTheme("dark");
+});
+document.getElementById("theme-system").addEventListener("click", function () {
+	switchTheme("system");
+});
+
 // Update icon class on page load based on current theme
 const currentTheme = localStorage.getItem("theme") || window.defaultTheme || "system";
 updateIconClass(currentTheme);

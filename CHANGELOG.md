@@ -20,11 +20,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- **[BREAKING]** Rename the visually hidden `hidden` class to `visually-hidden`. `hidden` is now used to completely hide the elements, including screen readers.
 - Make `emoji` class available outside of comments.
 - Make the code and styling for article cards much cleaner.
 - Make the shortcodes code much cleaner.
 - Remove top/bottom margin from the first/last element in `<aside>`.
 - Rename `show_read_time` to `show_reading_time`.
+- Replace "Go Back" button with "Go Home" on 404.
+- Rewrite JavaScript scripts to not rely on being inline, but rather function as separate files, as required by Content Security Policy.
+- Tighten the default Content Security Policy.
 - Use Zola's built-in reading time variable instead of the custom implementation (#102).
 
 ### Fixed
