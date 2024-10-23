@@ -13,6 +13,19 @@ button.inline-button {
 	appearance: none;
 	cursor: pointer;
 	border: none;
+
+	&:disabled {
+		cursor: not-allowed;
+
+		&:hover {
+			background-color: var(--fg-muted-1);
+			color: var(--fg-muted-5);
+		}
+
+		&:active {
+			transform: none;
+		}
+	}
 }
 
 a.inline-button,

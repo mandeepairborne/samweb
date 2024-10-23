@@ -20,10 +20,7 @@
 				{%- if link.menu and link.menu | length > 0 -%}
 					<li>
 						<details class="closable">
-							<summary>
-								<i class="icon arrow"></i>
-								{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
-							</summary>
+							<summary>{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}</summary>
 							<ul>
 								{%- for link in link.menu -%}
 									{%- if link.url is matching('https?://') %}

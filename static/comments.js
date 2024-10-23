@@ -105,6 +105,12 @@ function loadComments() {
 
 					status.content = emojify(status.content, status.emojis);
 
+					let comment = document.createElement("article");
+					comment.id = `comment-${status.id}`;
+					comment.className = isReply ? "comment comment-reply" : "comment";
+					comment.setAttribute("itemprop", "comment");
+					comment.setAttribute("itemtype", "http://schema.org/Comment");
+
 					let avatarSource = document.createElement("source");
 					avatarSource.setAttribute(
 						"srcset",
@@ -143,6 +149,7 @@ function loadComments() {
 						`${viewProfileText} @${status.account.username}@${instance}`
 					);
 					avatar.appendChild(avatarPicture);
+					comment.appendChild(avatar);
 
 					let instanceBadge = document.createElement("a");
 					instanceBadge.className = "instance";
@@ -164,6 +171,7 @@ function loadComments() {
 					header.className = "author";
 					header.appendChild(display);
 					header.appendChild(instanceBadge);
+					comment.appendChild(header);
 
 					let permalink = document.createElement("a");
 					permalink.setAttribute("href", status.url);
@@ -181,10 +189,12 @@ function loadComments() {
 					timestamp.setAttribute("datetime", status.created_at);
 					timestamp.appendChild(permalink);
 					permalink.classList.add("external");
+					comment.appendChild(timestamp);
 
 					let main = document.createElement("main");
 					main.setAttribute("itemprop", "text");
 					main.innerHTML = status.content;
+					comment.appendChild(main);
 
 					let attachments = status.media_attachments;
 					let SUPPORTED_MEDIA = ["image", "video", "gifv", "audio"];
@@ -267,6 +277,8 @@ function loadComments() {
 								media.appendChild(mediaLink);
 							}
 						});
+
+						comment.appendChild(media);
 					}
 
 					let interactions = document.createElement("footer");
@@ -292,24 +304,40 @@ function loadComments() {
 					faves.appendChild(favesIcon);
 					faves.insertAdjacentHTML('beforeend', ` ${status.favourites_count}`);
 					interactions.appendChild(faves);
-
-					let comment = document.createElement("article");
-					comment.id = `comment-${status.id}`;
-					comment.className = isReply ? "comment comment-reply" : "comment";
-					comment.setAttribute("itemprop", "comment");
-					comment.setAttribute("itemtype", "http://schema.org/Comment");
-					comment.appendChild(avatar);
-					comment.appendChild(header);
-					comment.appendChild(timestamp);
-					comment.appendChild(main);
-					if (
-						attachments &&
-						Array.isArray(attachments) &&
-						attachments.length > 0
-					) {
-						comment.appendChild(media);
-					}
 					comment.appendChild(interactions);
+
+					if (status.card != null) {
+						let cardFigure = document.createElement("figure");
+
+						if (status.card.image != null) {
+							let cardImg = document.createElement("img");
+							cardImg.setAttribute("src", status.card.image);
+							cardImg.classList.add("no-hover");
+							cardFigure.appendChild(cardImg);
+						}
+
+						let cardCaption = document.createElement("figcaption");
+
+						let cardTitle = document.createElement("strong");
+						cardTitle.innerHTML = status.card.title;
+						cardCaption.appendChild(cardTitle);
+
+						if (status.card.description != null && status.card.description.length > 0) {
+							let cardDescription = document.createElement("p");
+							cardDescription.innerHTML = status.card.description;
+							cardCaption.appendChild(cardDescription);
+						}
+
+						cardFigure.appendChild(cardCaption);
+
+						let card = document.createElement("a");
+						card.className = "card";
+						card.setAttribute("href", status.card.url);
+						card.setAttribute("rel", relAttributes);
+						card.appendChild(cardFigure);
+
+						comment.appendChild(card);
+					}
 
 					if (op === true) {
 						comment.classList.add("op");

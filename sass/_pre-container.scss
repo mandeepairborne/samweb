@@ -55,8 +55,6 @@
 				-webkit-mask-image: var(--icon);
 				mask-image: var(--icon);
 				transition: var(--transition);
-				width: 1rem;
-				height: 1rem;
 
 				:root[dir*="rtl"] & {
 					transform: scaleX(-1);

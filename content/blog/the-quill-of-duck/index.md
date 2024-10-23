@@ -31,6 +31,10 @@ disclaimer = """
 # user = "cassidy"
 # id = "112774854109302186"
 #
+# Thread with preview cards
+# host = "mastodon.blaede.family"
+# user = "cassidy"
+# id = "110669429936617026"
 # Post on GoToSocial
 #
 # host = "alpha.polymaths.social"

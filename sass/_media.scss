@@ -104,7 +104,7 @@ video {
 img {
 	transition: var(--transition-longer);
 
-	&:not(.no-hover, .full-bleed, [src*="#no-hover"], [src*="#full-bleed"]) {
+	&:not(.no-hover, .full-bleed, [src*="#no-hover"], [src*="#full-bleed"], .emoji) {
 		cursor: zoom-in;
 
 		&:hover {

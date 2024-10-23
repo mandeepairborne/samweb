@@ -16,12 +16,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add missing translation strings for author separator and conjunctions.
 - Add shortcode for Mastodon post embedding.
 - Add support for Fuse.js search (#101).
+- Add support for preview cards in comments.
 - Add the ability to set video attributes via shortcode.
 
 ### Changed
 
 - **[BREAKING]** Rename `nav-bg` CSS variable to `glass-bg`.
 - **[BREAKING]** Rename the visually hidden `hidden` class to `visually-hidden`. `hidden` is now used to completely hide the elements, including screen readers.
+- Add default width/height to the `icon` class.
+- Improve the look of threads in comments.
 - Make `emoji` class available outside of comments.
 - Make the code and styling for article cards much cleaner.
 - Make the shortcodes code much cleaner.
@@ -35,6 +38,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Fix article cards missing a focus outline.
+- Fix hover state of custom emojis in comments.
+- Fix hover state of the "Load Comments" button.
 - Fix navbar mods having broken border radius.
 
 ## [5.4.0](https://codeberg.org/daudix/duckquill/compare/v5.3.2...v5.4.0)
