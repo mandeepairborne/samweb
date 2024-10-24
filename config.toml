@@ -175,6 +175,8 @@ csp = [
 ]
 # Display outlines around all elements for debugging purposes
 # debug_layout = true
+# Don't load any styles for debugging purposes
+# debug_no_styles = true
 
 [extra.nav]
 # Whether to show the Atom/RSS feed button in the nav

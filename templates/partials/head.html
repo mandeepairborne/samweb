@@ -54,16 +54,18 @@
 		{%- set styles = styles | concat(with=section.extra.styles) %}
 	{%- endif %}
 
-	{%- for style in styles %}
-		<link type="text/css" rel="stylesheet" href="{{ get_url(path=style) | safe }}" />
-	{%- endfor %}
+	{%- if not config.extra.debug_no_styles %}
+		{%- for style in styles %}
+			<link type="text/css" rel="stylesheet" href="{{ get_url(path=style) | safe }}" />
+		{%- endfor %}
 
-	{%- if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
-		{%- if config.markdown.highlight_themes_css | length > 0 %}
-			<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme-light.css') }}" media="(prefers-color-scheme: light)" />
-			<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme-dark.css') }}" media="(prefers-color-scheme: dark)" />
-		{%- else %}
-			<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme.css') }}" />
+		{%- if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
+			{%- if config.markdown.highlight_themes_css | length > 0 %}
+				<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme-light.css') }}" media="(prefers-color-scheme: light)" />
+				<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme-dark.css') }}" media="(prefers-color-scheme: dark)" />
+			{%- else %}
+				<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme.css') }}" />
+			{%- endif %}
 		{%- endif %}
 	{%- endif %}
 
