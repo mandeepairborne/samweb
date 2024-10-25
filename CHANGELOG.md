@@ -16,6 +16,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `title` class for use on `<strong>`.
 - Add missing translation strings for author separator and conjunctions.
 - Add shortcode for Mastodon post embedding.
+- Add support for blurred media in comments.
+- Add support for content warnings (CWs) in comments.
 - Add support for Fuse.js search (#101).
 - Add support for preview cards in comments.
 - Add the ability to set video attributes via shortcode.

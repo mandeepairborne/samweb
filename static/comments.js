@@ -1,19 +1,20 @@
 // Taken from https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
 // Attachment code taken from https://github.com/cassidyjames/cassidyjames.github.io/blob/99782788a7e3ba3cc52d6803010873abd1b02b9e/_includes/comments.html#L251-L296
 
-let relAttributes = document.getElementById("rel-attributes").textContent;
-let host = document.getElementById("host").textContent;
-let user = document.getElementById("user").textContent;
-let id = document.getElementById("id").textContent;
-let dateLocale = document.getElementById("date-locale").textContent;
-let loadingText = document.getElementById("loading-text").textContent;
-let reloadText = document.getElementById("reload-text").textContent;
-let viewProfileText = document.getElementById("view-profile-text").textContent;
-let viewCommentText = document.getElementById("view-comment-text").textContent;
-let boostsFromText = document.getElementById("boosts-from-text").textContent;
-let favesFromText = document.getElementById("faves-from-text").textContent;
 let blogPostAuthorText = document.getElementById("blog-post-author-text").textContent;
+let boostsFromText = document.getElementById("boosts-from-text").textContent;
+let dateLocale = document.getElementById("date-locale").textContent;
+let favesFromText = document.getElementById("faves-from-text").textContent;
+let host = document.getElementById("host").textContent;
+let id = document.getElementById("id").textContent;
+let loadingText = document.getElementById("loading-text").textContent;
 let noCommentsText = document.getElementById("no-comments-text").textContent;
+let relAttributes = document.getElementById("rel-attributes").textContent;
+let reloadText = document.getElementById("reload-text").textContent;
+let sensitiveText = document.getElementById("sensitive-text").textContent;
+let user = document.getElementById("user").textContent;
+let viewCommentText = document.getElementById("view-comment-text").textContent;
+let viewProfileText = document.getElementById("view-profile-text").textContent;
 
 document.getElementById("load-comments").addEventListener("click", loadComments);
 
@@ -193,7 +194,22 @@ function loadComments() {
 
 					let main = document.createElement("main");
 					main.setAttribute("itemprop", "text");
-					main.innerHTML = status.content;
+
+					if (status.sensitive == true || status.spoiler_text != "") {
+						let summary = document.createElement("summary");
+						if (status.spoiler_text == "") {
+							status.spoiler_text == sensitiveText;
+						}
+						summary.innerHTML = status.spoiler_text;
+
+						let spoiler = document.createElement("details");
+						spoiler.appendChild(summary);
+						spoiler.innerHTML += status.content;
+
+						main.appendChild(spoiler);
+					} else {
+						main.innerHTML = status.content;
+					}
 					comment.appendChild(main);
 
 					let attachments = status.media_attachments;
@@ -224,6 +240,10 @@ function loadComments() {
 										// mediaElement.setAttribute("loading", "lazy");
 										// {% - endif -%}
 
+										if (status.sensitive == true) {
+											mediaElement.classList.add("spoiler");
+										}
+
 										media.appendChild(mediaElement);
 										break;
 
@@ -235,6 +255,10 @@ function loadComments() {
 										if (attachment.description != null) {
 											mediaElement.setAttribute("aria-title", attachment.description);
 											mediaElement.setAttribute("title", attachment.description);
+										}
+
+										if (status.sensitive == true) {
+											mediaElement.classList.add("spoiler");
 										}
 
 										media.appendChild(mediaElement);
@@ -250,6 +274,10 @@ function loadComments() {
 										if (attachment.description != null) {
 											mediaElement.setAttribute("aria-title", attachment.description);
 											mediaElement.setAttribute("title", attachment.description);
+										}
+
+										if (status.sensitive == true) {
+											mediaElement.classList.add("spoiler");
 										}
 
 										media.appendChild(mediaElement);
