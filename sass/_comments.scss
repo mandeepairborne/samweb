@@ -262,6 +262,7 @@
 					}
 
 					figcaption {
+						border-radius: var(--rounded-corner);
 						background-color: var(--fg-muted-2);
 					}
 				}
@@ -274,6 +275,10 @@
 						margin: 0;
 						box-shadow: var(--edge-highlight), var(--shadow);
 						border-radius: var(--rounded-corner) var(--rounded-corner) var(--rounded-corner-small) var(--rounded-corner-small);
+
+						&+figcaption {
+							border-radius: var(--rounded-corner-small) var(--rounded-corner-small) var(--rounded-corner) var(--rounded-corner);
+						}
 					}
 				}
 
@@ -286,10 +291,10 @@
 					img {
 						margin: 0;
 						border-radius: var(--rounded-corner) var(--rounded-corner) var(--rounded-corner-small) var(--rounded-corner-small);
-					}
 
-					img+figcaption {
-						border-radius: var(--rounded-corner-small) var(--rounded-corner-small) var(--rounded-corner) var(--rounded-corner);
+						&+figcaption {
+							border-radius: var(--rounded-corner-small) var(--rounded-corner-small) var(--rounded-corner) var(--rounded-corner);
+						}
 					}
 
 					figcaption {
