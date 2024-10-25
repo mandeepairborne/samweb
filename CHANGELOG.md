@@ -26,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **[BREAKING]** Rename the visually hidden `hidden` class to `visually-hidden`. `hidden` is now used to completely hide the elements, including screen readers.
 - Add default width/height to the `icon` class.
 - Improve the look of threads in comments.
+- Keep images slightly rounded on hover.
 - Make `emoji` class available outside of comments.
 - Make the code and styling for article cards much cleaner.
 - Make the shortcodes code much cleaner.

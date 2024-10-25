@@ -82,7 +82,7 @@ video {
 		&:hover,
 		&:active {
 			opacity: 1;
-			clip-path: inset(-1rem -1rem -1rem -1rem round 0);
+			clip-path: inset(-0.75rem -0.75rem -0.75rem -0.75rem round var(--rounded-corner-small));
 			filter: none;
 		}
 
@@ -112,7 +112,7 @@ img {
 			transform: var(--hover);
 			z-index: 1;
 			box-shadow: var(--edge-highlight), var(--shadow-raised);
-			border-radius: 0;
+			border-radius: var(--rounded-corner-small);
 		}
 
 		&.start,
