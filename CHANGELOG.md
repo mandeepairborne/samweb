@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `config.extra.show_backlinks` config variable for showing the backlinks button for linked articles in the article's quick actions.
 - Add `fediverse:creator` meta tag.
 - Add `title` class for use on `<strong>`.
+- Add back support for lazy async images in comments.
 - Add missing translation strings for author separator and conjunctions.
 - Add shortcode for Mastodon post embedding.
 - Add support for blurred media in comments.

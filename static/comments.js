@@ -7,6 +7,7 @@ let dateLocale = document.getElementById("date-locale").textContent;
 let favesFromText = document.getElementById("faves-from-text").textContent;
 let host = document.getElementById("host").textContent;
 let id = document.getElementById("id").textContent;
+let lazyAsyncImage = document.getElementById("lazy-async-image").textContent;
 let loadingText = document.getElementById("loading-text").textContent;
 let noCommentsText = document.getElementById("no-comments-text").textContent;
 let relAttributes = document.getElementById("rel-attributes").textContent;
@@ -41,10 +42,10 @@ function emojify(input, emojis) {
 		img.setAttribute("src", escapeHtml(emoji.static_url));
 		img.setAttribute("alt", `:${emoji.shortcode}:`);
 		img.setAttribute("title", `:${emoji.shortcode}:`);
-		// {% - if config.markdown.lazy_async_image -%}
-		// img.setAttribute("decoding", "async");
-		// img.setAttribute("loading", "lazy");
-		// {% - endif -%}
+		if (lazyAsyncImage == "true") {
+			img.setAttribute("decoding", "async");
+			img.setAttribute("loading", "lazy");
+		}
 
 		picture.appendChild(source);
 		picture.appendChild(img);
@@ -132,10 +133,10 @@ function loadComments() {
 						"alt",
 						`@${status.account.username}@${instance} avatar`
 					);
-					// {% - if config.markdown.lazy_async_image -%}
-					// avatarImg.setAttribute("decoding", "async");
-					// avatarImg.setAttribute("loading", "lazy");
-					// {% - endif -%}
+					if (lazyAsyncImage == "true") {
+						avatarImg.setAttribute("decoding", "async");
+						avatarImg.setAttribute("loading", "lazy");
+					}
 
 					let avatarPicture = document.createElement("picture");
 					avatarPicture.appendChild(avatarSource);
@@ -235,10 +236,10 @@ function loadComments() {
 											mediaElement.setAttribute("title", attachment.description);
 										}
 
-										// {% - if config.markdown.lazy_async_image -%}
-										// mediaElement.setAttribute("decoding", "async");
-										// mediaElement.setAttribute("loading", "lazy");
-										// {% - endif -%}
+										if (lazyAsyncImage == "true") {
+											mediaElement.setAttribute("decoding", "async");
+											mediaElement.setAttribute("loading", "lazy");
+										}
 
 										if (status.sensitive == true) {
 											mediaElement.classList.add("spoiler");

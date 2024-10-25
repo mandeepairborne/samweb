@@ -29,10 +29,11 @@
 <span id="view-comment-text" class="hidden">{{ macros_translate::translate(key="view_comment", default="View Comment At", language_strings=language_strings) }}</span>
 <span id="view-profile-text" class="hidden">{{ macros_translate::translate(key="view_profile", default="View Profile At", language_strings=language_strings) }}</span>
 
-{%- if page.extra.comments.uri -%}
-	{%- set uri = page.extra.comments.uri -%}
-	<span id="post-uri" style="display: none;">{{ uri }}</span>
-{%- endif -%}
+{%- if config.markdown.lazy_async_image %}
+	<span id="lazy-async-image" class="hidden">true</span>
+{%- else -%}
+	<span id="lazy-async-image" class="hidden">false</span>
+{%- endif %}
 
 <section id="comments">
 	{%- if config.extra.comments.show_qr -%}
