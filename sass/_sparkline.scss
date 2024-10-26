@@ -12,7 +12,11 @@
 		flex: 1;
 		transform-origin: bottom;
 		transition: var(--transition);
-		background-image: linear-gradient(to top, var(--accent-color) var(--bar-height), transparent var(--bar-height));
+		background-image: linear-gradient(
+			to top,
+			var(--accent-color) var(--bar-height),
+			transparent var(--bar-height)
+		);
 		height: 100%;
 
 		&:hover {

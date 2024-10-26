@@ -82,7 +82,10 @@ video {
 		&:hover,
 		&:active {
 			opacity: 1;
-			clip-path: inset(-0.75rem -0.75rem -0.75rem -0.75rem round var(--rounded-corner-small));
+			clip-path: inset(
+				-0.75rem -0.75rem -0.75rem -0.75rem round
+					var(--rounded-corner-small)
+			);
 			filter: none;
 		}
 
@@ -98,13 +101,18 @@ video {
 			}
 		}
 	}
-
 }
 
 img {
 	transition: var(--transition-longer);
 
-	&:not(.no-hover, .full-bleed, [src*="#no-hover"], [src*="#full-bleed"], .emoji) {
+	&:not(
+			.no-hover,
+			.full-bleed,
+			[src*="#no-hover"],
+			[src*="#full-bleed"],
+			.emoji
+		) {
 		cursor: zoom-in;
 
 		&:hover {

@@ -26,10 +26,18 @@
 		margin-block-start: 2rem;
 
 		#load-comments:disabled {
-			--shimmer: rgb(from var(--accent-color) r g b / calc(var(--color-opacity) * 2));
-			animation: loading-shimmer var(--transition-long) ease-in-out alternate infinite;
+			--shimmer: rgb(
+				from var(--accent-color) r g b / calc(var(--color-opacity) * 2)
+			);
+			animation: loading-shimmer var(--transition-long) ease-in-out
+				alternate infinite;
 			transition: none;
-			background-image: linear-gradient(to right, var(--fg-muted-1) 50%, var(--shimmer) 75%, var(--fg-muted-1) 100%);
+			background-image: linear-gradient(
+				to right,
+				var(--fg-muted-1) 50%,
+				var(--shimmer) 75%,
+				var(--fg-muted-1) 100%
+			);
 			background-size: 200%;
 			background-color: transparent;
 
@@ -81,7 +89,7 @@
 					border-end-start-radius: 0;
 				}
 
-				&+.comment-reply {
+				& + .comment-reply {
 					margin-block-start: -2rem;
 					border-start-start-radius: 0;
 					padding-block-start: 2rem;
@@ -192,7 +200,6 @@
 					color: var(--contrast-color);
 				}
 
-
 				&:active {
 					transform: var(--active);
 				}
@@ -225,26 +232,31 @@
 			details {
 				&[open] {
 					border-radius: var(--rounded-corner-small);
-					background-image:
-						linear-gradient(to right,
+					background-image: linear-gradient(
+							to right,
 							transparent,
 							transparent 0.5rem,
 							var(--fg-muted-1) 0.5rem,
 							var(--fg-muted-1) calc(100% - 0.5rem),
 							transparent calc(100% - 0.5rem),
-							transparent),
-						linear-gradient(to right,
+							transparent
+						),
+						linear-gradient(
+							to right,
 							transparent,
 							transparent 0.5rem,
 							var(--bg-color) 0.5rem,
 							var(--bg-color) calc(100% - 0.5rem),
 							transparent calc(100% - 0.5rem),
-							transparent),
-						repeating-linear-gradient(45deg,
+							transparent
+						),
+						repeating-linear-gradient(
+							45deg,
 							var(--contrast-color),
 							var(--contrast-color) 0.25rem,
 							var(--accent-color) 0.25rem,
-							var(--accent-color) 0.5rem);
+							var(--accent-color) 0.5rem
+						);
 
 					summary {
 						border-radius: 0;
@@ -254,26 +266,31 @@
 
 				summary {
 					border-radius: var(--rounded-corner-small);
-					background-image:
-						linear-gradient(to right,
+					background-image: linear-gradient(
+							to right,
 							transparent,
 							transparent 0.5rem,
 							var(--fg-muted-1) 0.5rem,
 							var(--fg-muted-1) calc(100% - 0.5rem),
 							transparent calc(100% - 0.5rem),
-							transparent),
-						linear-gradient(to right,
+							transparent
+						),
+						linear-gradient(
+							to right,
 							transparent,
 							transparent 0.5rem,
 							var(--bg-color) 0.5rem,
 							var(--bg-color) calc(100% - 0.5rem),
 							transparent calc(100% - 0.5rem),
-							transparent),
-						repeating-linear-gradient(45deg,
+							transparent
+						),
+						repeating-linear-gradient(
+							45deg,
 							var(--contrast-color),
 							var(--contrast-color) 0.25rem,
 							var(--accent-color) 0.25rem,
-							var(--accent-color) 0.5rem);
+							var(--accent-color) 0.5rem
+						);
 				}
 			}
 
@@ -332,10 +349,14 @@
 						transform: none;
 						margin: 0;
 						box-shadow: var(--edge-highlight), var(--shadow);
-						border-radius: var(--rounded-corner) var(--rounded-corner) var(--rounded-corner-small) var(--rounded-corner-small);
+						border-radius: var(--rounded-corner)
+							var(--rounded-corner) var(--rounded-corner-small)
+							var(--rounded-corner-small);
 
-						&+figcaption {
-							border-radius: var(--rounded-corner-small) var(--rounded-corner-small) var(--rounded-corner) var(--rounded-corner);
+						& + figcaption {
+							border-radius: var(--rounded-corner-small)
+								var(--rounded-corner-small)
+								var(--rounded-corner) var(--rounded-corner);
 						}
 					}
 				}
@@ -348,10 +369,14 @@
 
 					img {
 						margin: 0;
-						border-radius: var(--rounded-corner) var(--rounded-corner) var(--rounded-corner-small) var(--rounded-corner-small);
+						border-radius: var(--rounded-corner)
+							var(--rounded-corner) var(--rounded-corner-small)
+							var(--rounded-corner-small);
 
-						&+figcaption {
-							border-radius: var(--rounded-corner-small) var(--rounded-corner-small) var(--rounded-corner) var(--rounded-corner);
+						& + figcaption {
+							border-radius: var(--rounded-corner-small)
+								var(--rounded-corner-small)
+								var(--rounded-corner) var(--rounded-corner);
 						}
 					}
 

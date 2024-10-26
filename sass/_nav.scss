@@ -20,7 +20,7 @@
 		box-shadow: var(--edge-highlight), var(--shadow-glass);
 		border-radius: 1.625rem;
 		background-color: var(--glass-bg);
-		content: '';
+		content: "";
 	}
 
 	nav {
@@ -36,9 +36,7 @@
 			backdrop-filter: var(--blur);
 			transition: var(--transition);
 			inset-block-start: 0;
-			box-shadow:
-				var(--edge-highlight),
-				var(--shadow-glass);
+			box-shadow: var(--edge-highlight), var(--shadow-glass);
 			border-radius: 999px;
 			background-color: var(--glass-bg);
 			padding: 0.625rem 0.75rem;
@@ -364,7 +362,13 @@
 	}
 
 	#search-results {
-		--mask: linear-gradient(to bottom, transparent, black 1rem, black calc(100% - 1rem), transparent);
+		--mask: linear-gradient(
+			to bottom,
+			transparent,
+			black 1rem,
+			black calc(100% - 1rem),
+			transparent
+		);
 		-webkit-mask-image: var(--mask);
 		display: none;
 		flex: 1;
@@ -400,7 +404,8 @@
 				&:first-of-type,
 				&.more-matches {
 					margin-block-start: 0.5rem;
-					border-block-start: max(1px, 0.0625rem) solid var(--fg-muted-2);
+					border-block-start: max(1px, 0.0625rem) solid
+						var(--fg-muted-2);
 					padding-block-start: 0.25rem;
 				}
 
