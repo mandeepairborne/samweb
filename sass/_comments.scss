@@ -329,7 +329,7 @@
 				font-weight: normal;
 				text-decoration: none;
 
-				&:hover {
+				&:hover:not(:active) {
 					img {
 						transform: var(--hover);
 						box-shadow: var(--edge-highlight), var(--shadow-raised);
@@ -344,21 +344,6 @@
 
 				&:active {
 					transform: var(--active);
-
-					img {
-						transform: none;
-						margin: 0;
-						box-shadow: var(--edge-highlight), var(--shadow);
-						border-radius: var(--rounded-corner)
-							var(--rounded-corner) var(--rounded-corner-small)
-							var(--rounded-corner-small);
-
-						& + figcaption {
-							border-radius: var(--rounded-corner-small)
-								var(--rounded-corner-small)
-								var(--rounded-corner) var(--rounded-corner);
-						}
-					}
 				}
 
 				figure {
@@ -372,6 +357,8 @@
 						border-radius: var(--rounded-corner)
 							var(--rounded-corner) var(--rounded-corner-small)
 							var(--rounded-corner-small);
+						aspect-ratio: 16 / 9;
+						object-fit: cover;
 
 						& + figcaption {
 							border-radius: var(--rounded-corner-small)

@@ -53,12 +53,13 @@
 		}
 
 		&.colored {
-			background-color: var(--accent-color-alpha);
+			box-shadow: none;
+			background-color: transparent;
 			color: var(--accent-color);
 
 			&:hover {
-				background-color: var(--accent-color);
-				color: var(--contrast-color);
+				box-shadow: var(--edge-highlight);
+				background-color: var(--accent-color-alpha);
 			}
 		}
 
