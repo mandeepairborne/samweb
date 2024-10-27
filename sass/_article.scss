@@ -7,8 +7,8 @@
 	mask-image: var(--mask);
 	inset-block-start: 0;
 	inset-inline-start: 0;
-	width: 100vw;
-	height: 50vw; // hack to keep the aspect ratio 2:1
+	aspect-ratio: 2 / 1;
+	width: 100%;
 	user-select: none;
 
 	#banner {
