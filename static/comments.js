@@ -1,5 +1,5 @@
 // Taken from https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
-// Attachment code taken from https://github.com/cassidyjames/cassidyjames.github.io/blob/99782788a7e3ba3cc52d6803010873abd1b02b9e/_includes/comments.html#L251-L296
+// Attachment, card, and spoiler code taken from https://github.com/cassidyjames/cassidyjames.github.io/blob/99782788a7e3ba3cc52d6803010873abd1b02b9e/_includes/comments.html#L251-L296
 
 let blogPostAuthorText = document.getElementById("blog-post-author-text").textContent;
 let boostsFromText = document.getElementById("boosts-from-text").textContent;
