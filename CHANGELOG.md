@@ -25,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- **[BREAKING]** Rename `dialog-buttons` class to simply `buttons`.
 - **[BREAKING]** Rename `nav-bg` CSS variable to `glass-bg`.
 - **[BREAKING]** Rename the visually hidden `hidden` class to `visually-hidden`. `hidden` is now used to completely hide the elements, including screen readers.
 - Add default width/height to the `icon` class.
@@ -46,6 +47,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix hover state of custom emojis in comments.
 - Fix hover state of the "Load Comments" button.
 - Fix navbar mods having broken border radius.
+
+### Removed
+
+- Remove `inline-button` class and instead apply button styles by default.
 
 ## [5.4.0](https://codeberg.org/daudix/duckquill/compare/v5.3.2...v5.4.0)
 

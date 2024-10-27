@@ -47,11 +47,11 @@
 	{%- endif -%}
 	<h2>{{ macros_translate::translate(key="comments", default="Comments", language_strings=language_strings) }}</h2>
 	<p>{{ macros_translate::translate(key="comments_description", default="You can comment on this blog post by publicly replying to this post using a Mastodon or other ActivityPub/Fediverse account. Known non-private replies are displayed below.", language_strings=language_strings) }}</p>
-	<div class="dialog-buttons">
-		<button id="load-comments" class="inline-button">
+	<div class="buttons">
+		<button id="load-comments">
 			{{- macros_translate::translate(key="load_comments", default="Load Comments", language_strings=language_strings) -}}
 		</button>
-		<a class="inline-button colored external" href="https://{{ host }}/@{{ user }}/{{ id }}" rel="{{ rel_attributes }}">
+		<a class="colored external" href="https://{{ host }}/@{{ user }}/{{ id }}" rel="{{ rel_attributes }}">
 			{{- macros_translate::translate(key="open_post", default="Open Post", language_strings=language_strings) -}}
 		</a>
 	</div>

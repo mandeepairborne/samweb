@@ -638,15 +638,27 @@ You know, <span class="spoiler solid">Duckquill is a pretty dumb name.</span> I 
 ### Buttons Dialog
 
 ```html.j2
-<div class="dialog-buttons">
-  <a class="inline-button" href="#top">Go to Top</a>
-  <a class="inline-button colored external" href="https://example.org">Example</a>
+<div class="buttons">
+  <a href="#top">Go to Top</a>
+  <a class="colored external" href="https://example.org">Example</a>
 </div>
 ```
 
-<div class="dialog-buttons">
-  <a class="inline-button" href="#top">Go to Top</a>
-  <a class="inline-button colored external" href="https://example.org">Example</a>
+<div class="buttons">
+  <a href="#top">Go to Top</a>
+  <a class="colored external" href="https://example.org">Example</a>
+</div>
+
+With `centered` and `big` classes:
+
+```html.j2
+<div class="buttons centered">
+  <button class="big colored">Do Something…</button>
+</div>
+```
+
+<div class="buttons centered">
+  <button class="big colored">Do Something…</button>
 </div>
 
 [^1]: Footnote

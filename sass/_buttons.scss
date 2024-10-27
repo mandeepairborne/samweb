@@ -1,62 +1,70 @@
-.dialog-buttons {
+.buttons {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin-block-start: 4rem;
-}
 
-a.inline-button {
-	text-decoration: none;
-}
+	&.centered {
+		justify-content: space-around;
+	}
 
-button.inline-button {
-	appearance: none;
-	cursor: pointer;
-	border: none;
+	a {
+		text-decoration: none;
+	}
 
-	&:disabled {
-		cursor: not-allowed;
+	button {
+		appearance: none;
+		cursor: pointer;
+		border: none;
+
+		&:disabled {
+			cursor: not-allowed;
+
+			&:hover {
+				background-color: var(--fg-muted-1);
+				color: var(--fg-muted-5);
+			}
+
+			&:active {
+				transform: none;
+			}
+		}
+	}
+
+	a,
+	button {
+		transition: var(--transition);
+		box-shadow: var(--edge-highlight);
+		border-radius: var(--rounded-corner);
+		background-color: var(--fg-muted-1);
+		padding: 0.75rem 1rem;
+		color: var(--fg-muted-5);
+		font-weight: bold;
+		font-size: var(--font-size-small);
+		line-height: 1;
 
 		&:hover {
-			background-color: var(--fg-muted-1);
-			color: var(--fg-muted-5);
+			background-color: var(--fg-muted-2);
+			color: var(--fg-color);
 		}
 
 		&:active {
-			transform: none;
+			transform: var(--active);
 		}
-	}
-}
 
-a.inline-button,
-button.inline-button {
-	transition: var(--transition);
-	box-shadow: var(--edge-highlight);
-	border-radius: var(--rounded-corner);
-	background-color: var(--fg-muted-1);
-	padding: 0.75rem 1rem;
-	color: var(--fg-muted-5);
-	font-weight: bold;
-	font-size: var(--font-size-small);
-	line-height: 1;
-
-	&:hover {
-		background-color: var(--fg-muted-2);
-		color: var(--fg-color);
-	}
-
-	&:active {
-		transform: var(--active);
-	}
-
-	&.colored {
-		box-shadow: none;
-		background-color: transparent;
-		color: var(--accent-color);
-
-		&:hover {
-			box-shadow: var(--edge-highlight);
+		&.colored {
 			background-color: var(--accent-color-alpha);
+			color: var(--accent-color);
+
+			&:hover {
+				background-color: var(--accent-color);
+				color: var(--contrast-color);
+			}
+		}
+
+		&.big {
+			border-radius: 999px;
+			padding: 1rem 1.5rem;
 		}
 	}
 }
