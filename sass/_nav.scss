@@ -35,29 +35,42 @@
 		transform: none;
 		opacity: 1;
 	}
+
+	& + #site-nav {
+		position: fixed;
+		transform: translateY(-1rem) scale(0.5);
+		transform-origin: top;
+		opacity: 0;
+		transition: var(--transition);
+		margin: 0 auto;
+		width: max-content;
+
+		nav {
+			pointer-events: none;
+		}
+
+		&:hover,
+		&:has(*:focus-visible, *:focus) {
+			transform: none;
+			opacity: 1;
+
+			nav {
+				pointer-events: all;
+			}
+		}
+	}
 }
 
 #site-nav {
-	position: fixed;
+	position: sticky;
 	left: 50%;
-	transform: translateY(-1rem) scale(0.5);
-	transform-origin: top;
-	opacity: 0;
 	z-index: 999;
-	transition: var(--transition);
-	margin: 0 auto;
+	margin: 1rem auto 0;
 	inset-block-start: 1rem;
 	inset-inline-end: 0;
 	inset-inline-start: 0;
 	border-radius: 1.625rem;
-	width: max-content;
 	max-width: min(var(--container-width), 90%);
-
-	&:hover,
-	&:has(*:focus-visible, *:focus) {
-		transform: none;
-		opacity: 1;
-	}
 
 	&::before {
 		-webkit-backdrop-filter: var(--blur);
