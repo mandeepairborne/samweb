@@ -20,18 +20,15 @@
 	}
 
 	& + #heading {
-		margin-block-start: 35vw;
+		margin-block-start: calc(50vw - 8.75rem);
 	}
 
 	@media only screen and (max-width: 480px) {
-		body:has(&) #site-nav {
-			margin-block-start: 50vw;
-		}
-
-		& + #heading {
-			margin-block-start: 2rem;
+		body:has(&) #site-nav:not(#handle + #site-nav) {
+			margin-block-start: calc(50vw + 1rem);
 		}
 	}
+
 }
 
 #heading {
