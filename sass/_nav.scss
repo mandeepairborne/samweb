@@ -19,7 +19,7 @@
 		box-shadow: var(--edge-highlight);
 		border-radius: 999px;
 		background-color: var(--accent-color);
-		width: 25%;
+		width: min(calc(var(--container-width) / 4), 100%);
 		height: 0.5rem;
 		content: "";
 	}
