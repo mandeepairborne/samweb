@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `config.extra.debug_no_styles` config variable for debugging.
 - Add `config.extra.nav.auto_hide` config variable for making the navbar auto-hide unless hovered or keyboard-focused (#106).
 - Add `config.extra.show_backlinks` config variable for showing the backlinks button for linked articles in the article's quick actions.
+- Add `external` class to https:// links in navbar/footer.
 - Add `fediverse:creator` meta tag.
 - Add `title` class for use on `<strong>`.
 - Add back support for lazy async images in comments.
