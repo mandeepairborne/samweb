@@ -3,7 +3,7 @@
 	z-index: 1;
 	transition: var(--transition);
 	margin: 0 auto;
-	inset-block-start: 1rem;
+	inset-block-start: 0.5rem;
 	inset-inline-end: 0;
 	inset-inline-start: 0;
 	width: min(var(--container-width), 90%);
@@ -18,8 +18,8 @@
 		inset-inline-start: 0;
 		box-shadow: var(--edge-highlight);
 		border-radius: 999px;
-		background-color: var(--fg-muted-2);
-		width: 50%;
+		background-color: var(--accent-color);
+		width: 25%;
 		height: 0.5rem;
 		content: "";
 	}
