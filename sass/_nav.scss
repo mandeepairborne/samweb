@@ -34,29 +34,24 @@
 	&:hover + #site-nav {
 		transform: none;
 		opacity: 1;
+		pointer-events: auto;
 	}
 
 	& + #site-nav {
 		position: fixed;
-		transform: translateY(-1rem) scale(0.5);
+		transform: translateY(calc(-50% - 1rem)) scale(0.5);
 		transform-origin: top;
 		opacity: 0;
 		transition: var(--transition);
 		margin: 0 auto;
 		width: max-content;
-
-		nav {
-			pointer-events: none;
-		}
+		pointer-events: none;
 
 		&:hover,
 		&:has(*:focus-visible, *:focus) {
 			transform: none;
 			opacity: 1;
-
-			nav {
-				pointer-events: all;
-			}
+			pointer-events: all;
 		}
 	}
 }
