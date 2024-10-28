@@ -1,14 +1,62 @@
-#site-nav {
-	position: sticky;
-	z-index: 999;
-	margin: 1rem auto;
+#handle {
+	position: fixed;
+	z-index: 1;
+	transition: var(--transition);
+	margin: 0 auto;
 	inset-block-start: 1rem;
-	border-radius: 1.625rem;
-	max-width: 90%;
+	inset-inline-end: 0;
+	inset-inline-start: 0;
+	width: min(var(--container-width), 90%);
+	height: 3.25rem;
 
-	@media only screen and (max-width: 480px) {
-		position: relative;
+	&::before {
+		position: absolute;
+		transition: var(--transition);
+		margin: 0 auto;
 		inset-block-start: 0;
+		inset-inline-end: 0;
+		inset-inline-start: 0;
+		box-shadow: var(--edge-highlight);
+		border-radius: 999px;
+		background-color: var(--fg-muted-2);
+		width: 50%;
+		height: 0.5rem;
+		content: "";
+	}
+
+	&:hover::before,
+	&:has(+ #site-nav:hover)::before,
+	&:has(+ #site-nav *:focus-visible, + #site-nav *:focus)::before {
+		transform: translateY(-1rem) scale(0.5);
+		opacity: 0;
+	}
+
+	&:hover + #site-nav {
+		transform: none;
+		opacity: 1;
+	}
+}
+
+#site-nav {
+	position: fixed;
+	left: 50%;
+	transform: translateY(-1rem) scale(0.5);
+	transform-origin: top;
+	opacity: 0;
+	z-index: 999;
+	transition: var(--transition);
+	margin: 0 auto;
+	inset-block-start: 1rem;
+	inset-inline-end: 0;
+	inset-inline-start: 0;
+	border-radius: 1.625rem;
+	width: max-content;
+	max-width: min(var(--container-width), 90%);
+
+	&:hover,
+	&:has(*:focus-visible, *:focus) {
+		transform: none;
+		opacity: 1;
 	}
 
 	&::before {
@@ -362,13 +410,11 @@
 	}
 
 	#search-results {
-		--mask: linear-gradient(
-			to bottom,
-			transparent,
-			black 1rem,
-			black calc(100% - 1rem),
-			transparent
-		);
+		--mask: linear-gradient(to bottom,
+				transparent,
+				black 1rem,
+				black calc(100% - 1rem),
+				transparent);
 		-webkit-mask-image: var(--mask);
 		display: none;
 		flex: 1;
@@ -404,8 +450,7 @@
 				&:first-of-type,
 				&.more-matches {
 					margin-block-start: 0.5rem;
-					border-block-start: max(1px, 0.0625rem) solid
-						var(--fg-muted-2);
+					border-block-start: max(1px, 0.0625rem) solid var(--fg-muted-2);
 					padding-block-start: 0.25rem;
 				}
 
