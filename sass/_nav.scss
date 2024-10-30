@@ -3,17 +3,17 @@
 	z-index: 999;
 	transition: var(--transition);
 	margin: 0 auto;
-	inset-block-start: 1rem;
+	inset-block-start: 0;
 	inset-inline-end: 0;
 	inset-inline-start: 0;
 	width: min(var(--container-width), 90%);
-	height: 3.25rem;
+	height: 4.25rem;
 
 	&::before {
 		position: absolute;
 		transition: var(--transition);
 		margin: 0 auto;
-		inset-block-start: -0.5rem;
+		inset-block-start: 0.5rem;
 		inset-inline-end: 0;
 		inset-inline-start: 0;
 		box-shadow: var(--edge-highlight);
