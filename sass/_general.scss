@@ -30,15 +30,13 @@ body {
 
 // Make focused anchor not get covered by nav,
 // and flash it with accent color when jumping to it
-:target:not(#main) {
+:target:not(#main-content) {
 	transition:
 		all var(--transition),
 		scroll-margin-block-start 0s;
 	scroll-margin-block-start: 15vh;
 	color: var(--accent-color);
-	text-shadow:
-		var(--accent-color-alpha) 0 0 0.25rem,
-		var(--accent-color) 0 0 0.75rem;
+	text-shadow: var(--text-shadow-glow);
 }
 
 // Custom focus indicator
@@ -64,8 +62,8 @@ body {
 	}
 }
 
-.container {
-	margin: 4.25rem auto 0;
+main {
+	margin: 4.25rem auto 4rem;
 	width: min(var(--container-width), 90%);
 }
 

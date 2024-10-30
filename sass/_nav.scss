@@ -58,7 +58,6 @@
 
 #site-nav {
 	position: sticky;
-	left: 50%;
 	z-index: 999;
 	margin: 1rem auto 0;
 	inset-block-start: 1rem;
@@ -82,7 +81,7 @@
 	nav {
 		padding: 0.5rem;
 
-		#main-content {
+		& > a {
 			-webkit-backdrop-filter: var(--blur);
 			position: absolute;
 			left: 50%;

@@ -20,6 +20,17 @@ Want to set some nice image as a background? We got you covered:
 ![background image](https://files.catbox.moe/no8vfc.png)
 
 ```scss
+body {
+    background-image: var(--bg-overlay), url("https://images.unsplash.com/photo-1523712999610-f77fbcfc3843");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+```
+
+Most of the time contrast should be okay, but what if it's not? Simply adjust the opacity of `--bg-overlay` based on your needs:
+
+```scss
 @import "../themes/duckquill/sass/_variables.scss";
 
 @include theme-variables using ($theme) {
@@ -31,16 +42,7 @@ Want to set some nice image as a background? We got you covered:
         --bg-overlay: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
     }
 }
-
-body {
-    background-image: var(--bg-overlay), url("https://images.unsplash.com/photo-1523712999610-f77fbcfc3843");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
 ```
-
-Most of the time contrast should be okay, but what if it's not? Simply adjust the opacity of `--bg-overlay` based on your needs.
 
 ## Classic Article List
 

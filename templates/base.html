@@ -15,11 +15,11 @@
 	{%- if config.extra.nav.links %}
 		{% include "partials/nav.html" %}
 	{%- endif %}
-	<div id="main" class="container">
+	<main id="main-content">
 		{% block custom %}{% endblock custom %}
 		{% block content %}{% endblock content %}
 		{% include "partials/extra_features.html" %}
-	</div>
+	</main>
 	{% include "partials/footer.html" %}
 {% endblock body %}
 </body>
