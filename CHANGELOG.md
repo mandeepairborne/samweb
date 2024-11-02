@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `config.extra.debug_no_styles` config variable for debugging.
 - Add `config.extra.nav.auto_hide` config variable for making the navbar auto-hide unless hovered or keyboard-focused (#106).
 - Add `config.extra.show_backlinks` config variable for showing the backlinks button for linked articles in the article's quick actions.
-- Add `external` class to https:// links in navbar/footer.
+- Add `external` class to `https://` links in navbar/footer.
 - Add `fediverse:creator` meta tag.
 - Add `shadow-glow` and `text-shadow-glow` CSS variables so that it's easier to use these.
 - Add `title` class for use on `<strong>`.
@@ -33,7 +33,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **[BREAKING]** Rename `dialog-buttons` class to simply `buttons`.
 - **[BREAKING]** Rename `nav-bg` CSS variable to `glass-bg`.
-- **[BREAKING]** Rename the visually hidden `hidden` class to `visually-hidden`. `hidden` is now used to completely hide the elements, including screen readers.
+- **[BREAKING]** Rename `show_read_time` to `show_reading_time`.
+- **[BREAKING]** Rename main content ID from `main` to `main-content`.
+- **[BREAKING]** Rename the visually hidden `hidden` class to `visually-hidden`. `hidden` is now used to completely hide the elements, including from screen readers.
+- **[BREAKING]** Use `main` for main content instead of `div` with a `container` class.
 - Add default width/height to the `icon` class.
 - Adjust navbar, main content, and footer margins.
 - Improve the look of threads in comments.
@@ -42,12 +45,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Make the code and styling for article cards much cleaner.
 - Make the shortcodes code much cleaner.
 - Remove top/bottom margin from the first/last element in `<aside>`.
-- Rename `show_read_time` to `show_reading_time`.
-- Rename main content ID from `main` to `main-content`.
 - Replace "Go Back" button with "Go Home" on 404.
 - Rewrite JavaScript scripts to not rely on being inline, but rather function as separate files, as required by Content Security Policy.
 - Tighten the default Content Security Policy.
-- Use `main` for main content instead of `div` with a `container` class.
 - Use Zola's built-in reading time variable instead of the custom implementation (#102).
 
 ### Fixed
