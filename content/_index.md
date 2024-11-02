@@ -41,10 +41,6 @@ Some of the features Duckquill has to offer:
 - Copy button for code blocks.
 - Search functionality.
 
-{% alert(note=true) %}
-Although Duckquill is made based on the needs of [my website](https://daudix.one), I am very open to feature requests as long as they are somewhat useful to others, so if you need a feature/configuration that does not exist, feel free to open an issue, or better yet, a pull request!
-{% end %}
-
 {% alert(tip=true) %}
 If you use Duckquill and enjoy it, or just like my work, please consider [buying me a coffee](https://daudix.one/coffee/), it would mean the world to me ^^.
 {% end %}
@@ -70,7 +66,7 @@ It is highly recommended to switch from the `main` branch to the latest release:
 
 ```bash
 cd themes/duckquill
-git checkout tags/v5.4.0
+git checkout tags/v6.0.0
 ```
 
 Then, enable it in your `config.toml`:
@@ -84,7 +80,7 @@ To update the theme, simply switch to a new tag:
 ```bash
 git submodule update --remote --merge
 cd themes/duckquill
-git checkout tags/v5.4.0
+git checkout tags/v6.0.0
 ```
 
 {% alert(important=true) %}
@@ -206,7 +202,6 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and App
 
 - [agustinramirodiaz.github.io](https://agustinramirodiaz.github.io)
 - [alavi.me](https://alavi.me)
-- [amritcodes.xyz](https://amritcodes.xyz)
 - [aparoksha.dev](https://www.aparoksha.dev)
 - [arfh.pages.dev](https://arfh.pages.dev)
 - [bambalabs.co](https://www.bambalabs.co)
@@ -218,7 +213,6 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and App
 - [blog.thundernetwork.org](https://blog.thundernetwork.org)
 - [blog2.maki0419.com](https://blog2.maki0419.com)
 - [cabysm.github.io](https://cabysm.github.io)
-- [daudix.one](https://daudix.one) <small>(obviously)</small>
 - [daveparr.info](https://www.daveparr.info)
 - [davepoltorak.com](https://davepoltorak.com)
 - [drismir.ca](https://drismir.ca)
@@ -238,29 +232,24 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and App
 - [muelsyse.codeberg.page](https://muelsyse.codeberg.page)
 - [mukuljoshi.xyz](https://mukuljoshi.xyz)
 - [nbenedek.me](https://nbenedek.me)
-- [nezumi.party](https://nezumi.party)
 - [nikos-archive.org](https://nikos-archive.org)
 - [nisf.be](https://nisf.be)
 - [nullpuppy.github.io](https://nullpuppy.github.io)
 - [nutn-isc.gitlab.io](https://nutn-isc.gitlab.io/nutn-isc-website/)
-- [orbitalmartian.codeberg.page](https://orbitalmartian.codeberg.page)
 - [orzklv.uz](https://orzklv.uz)
 - [penandink.work](https://penandink.work)
 - [pyter.at](https://pyter.at)
-- [rbd.gg](https://www.rbd.gg)
 - [reallysimple.io](https://www.reallysimple.io)
 - [rerere.unlogic.co.uk](https://rerere.unlogic.co.uk)
 - [rossjr.dev](https://rossjr.dev)
 - [samienr.com](https://samienr.com)
 - [shrimple.srht.site](https://shrimple.srht.site)
 - [siddharthsabron.in](https://siddharthsabron.in)
-- [skaven.org](https://skaven.org)
 - [sorg.codeberg.page](https://sorg.codeberg.page)
 - [sungsphinx.codeberg.page](https://sungsphinx.codeberg.page)
 - [tmblog.pages.dev](https://tmblog.pages.dev)
 - [treeniks.github.io](https://treeniks.github.io)
 - [vegner.io](https://vegner.io)
-- [vikramxd.github.io](https://vikramxd.github.io)
 - [voluxyy.github.io](https://voluxyy.github.io/portfolio/)
 - [winnydows.com](https://winnydows.com)
 - [zlog.si-on.top](https://zlog.si-on.top)
