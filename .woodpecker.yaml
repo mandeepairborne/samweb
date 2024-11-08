@@ -3,13 +3,6 @@ when:
   branch:
     exclude: pages
 
-# Clone recursively to fully clone the themes given as Git submodules
-clone:
-  git:
-    image: woodpeckerci/plugin-git
-    settings:
-      recursive: true
-
 steps:
   # Check for typos
   typos:
