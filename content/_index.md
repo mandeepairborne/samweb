@@ -254,6 +254,7 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and App
 - [voluxyy.github.io](https://voluxyy.github.io/portfolio/)
 - [winnydows.com](https://winnydows.com)
 - [zlog.si-on.top](https://zlog.si-on.top)
+- [zstg.is-a.dev](https://zstg.is-a.dev)
 - Yours? <small>(feel free to [contact me](https://daudix.one/find/#contacts) or send a pull request)</small>
 
 </details>
