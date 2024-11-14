@@ -31,15 +31,22 @@
 		opacity: 0;
 	}
 
-	&:hover + #site-nav {
+	&:hover + #site-nav,
+	& + #site-nav:hover,
+	& + #site-nav:has(*:focus-visible, *:focus) {
 		transform: none;
 		opacity: 1;
 		pointer-events: auto;
+
+		&::before {
+			-webkit-backdrop-filter: var(--blur);
+			backdrop-filter: var(--blur);
+		}
 	}
 
 	& + #site-nav {
 		position: fixed;
-		transform: translateY(calc(-50% - 1rem)) scale(0.5);
+		transform: translateY(-1rem) scale(0.5);
 		transform-origin: top;
 		opacity: 0;
 		transition: var(--transition);
@@ -47,11 +54,10 @@
 		width: max-content;
 		pointer-events: none;
 
-		&:hover,
-		&:has(*:focus-visible, *:focus) {
-			transform: none;
-			opacity: 1;
-			pointer-events: all;
+		&::before {
+			-webkit-backdrop-filter: saturate(1) blur(0);
+			backdrop-filter: saturate(1) blur(0);
+			transition: var(--transition);
 		}
 	}
 }

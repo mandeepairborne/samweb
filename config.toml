@@ -158,6 +158,11 @@ show_backlinks = true
 # Can be set per page/section.
 # toc_ordered = true
 #
+# Custom separator used across the theme.
+# separator = "•"
+# Custom separator used in title tag and posts metadata.
+# title_separator = "-"
+#
 # Whether to use Content Security Policy.
 # Keep in mind that although this can potentially increase security,
 # it can break some stuff, in which case you will need to set custom policy.
@@ -173,10 +178,6 @@ csp = [
 	{ directive = "base-uri", domains = ["'none'"] },
 	{ directive = "form-action", domains = ["'none'"] }
 ]
-# Display outlines around all elements for debugging purposes
-# debug_layout = true
-# Don't load any styles for debugging purposes
-# debug_no_styles = true
 
 [extra.nav]
 # Whether to automatically hide nav when not hovered or focused
@@ -254,3 +255,9 @@ show_qr = true
 #
 # Your GoatCounter username
 user = "duckquill"
+
+[extra.debug]
+# Display outlines around all elements for debugging purposes
+layout = false
+# Don't load any styles for debugging purposes
+no_styles = false

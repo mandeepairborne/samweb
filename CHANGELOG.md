@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v6.0.0...main)
 
+### Changed
+
+- Don't scale down article cards when clicking on tags in them.
+- Improve performance of the page when navbar is hidden by using the `config.extra.nav.auto_hide` config variable.
+- Replace `config.extra.debug_*` config variables with variables under the `config.extra.debug` section.
+
 ## [6.0.0](https://codeberg.org/daudix/duckquill/compare/v5.4.0...v6.0.0)
 
 ### Added

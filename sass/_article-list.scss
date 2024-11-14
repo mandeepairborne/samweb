@@ -31,7 +31,7 @@
 			}
 		}
 
-		&:active {
+		&:active:not(:has(.tag:active)) {
 			transform: var(--active);
 		}
 
