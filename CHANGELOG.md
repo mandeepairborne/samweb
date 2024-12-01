@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [v6.1.1](https://codeberg.org/daudix/duckquill/compare/v6.1.0...v6.1.1)
 
-# Fixed
+### Fixed
 
 - Fix translation of table of contents heading.
 
