@@ -13,6 +13,10 @@ body {
 	text-wrap: pretty;
 	display: grid; // Put footer at the bottom for short pages, such as the 404
 	grid-template-rows: auto minmax(auto, 1fr) auto; // Header, stuff, footer
+	grid-template-areas:
+		"nav"
+		"main"
+		"footer";
 	margin: 0;
 	background-color: var(--bg-color);
 	min-height: 100vh;
@@ -20,6 +24,21 @@ body {
 	line-height: 1.5;
 	font-family: var(--font-system-ui), var(--font-emoji);
 	overflow-wrap: break-word;
+
+	&:has(#sidebar) {
+		grid-template-columns: 1fr min(var(--container-width), 90%) 1fr;
+		grid-template-areas:
+			"nav nav nav"
+			"sidebar main ."
+			"footer footer footer";
+		@media only screen and (max-width: 1200px) {
+			grid-template-areas:
+			"nav nav nav"
+			". sidebar ."
+			". main ."
+			"footer footer footer";
+		}
+	}
 }
 
 // Style text selection to use accent color
@@ -67,7 +86,52 @@ main {
 	width: min(var(--container-width), 90%);
 }
 
+#sidebar {
+	display: flex;
+	position: sticky;
+	top: 0;
+	grid-area: sidebar;
+	opacity: 0.2;
+	transition: var(--transition);
+	padding: 1rem;
+	height: 100vh;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	@media only screen and (max-width: 1200px) {
+		position: static;
+		opacity: 1;
+		margin-block-start: 4.25rem;
+		margin-block-end: -4.25rem;
+		padding: 0;
+		height: auto;
+	}
+
+	& > div {
+		--mask: linear-gradient(to bottom,
+				transparent,
+				black 1rem,
+				black calc(100% - 1rem),
+				transparent);
+		-webkit-mask-image: var(--mask);
+		flex: 1;
+		mask-image: var(--mask);
+		overflow: auto;
+	}
+
+	& + main {
+		grid-area: main;
+		margin: 0;
+		margin-block-start: 4.25rem;
+		margin-block-end: 4rem;
+		width: auto;
+	}
+}
+
 @media (prefers-reduced-motion) {
+
 	*,
 	*::before,
 	*::after {

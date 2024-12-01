@@ -64,6 +64,7 @@
 
 #site-nav {
 	position: sticky;
+	grid-area: nav;
 	z-index: 999;
 	margin: 1rem auto 0;
 	inset-block-start: 1rem;
