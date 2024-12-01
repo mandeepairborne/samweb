@@ -2,6 +2,7 @@
 title = "Mods"
 [extra]
 toc = true
+toc_sidebar = true
 +++
 
 Mods enhance/change some Duckquill visuals. They are updated alongside Duckquill to ensure that you don't need to manually update them every release.

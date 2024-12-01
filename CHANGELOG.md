@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v6.0.0...main)
 
+### Added
+
+- Add `toc_sidebar` page/section variable for turning table of contents to a sidebar.
+
 ### Changed
 
 - Don't scale down article cards when clicking on tags in them.
