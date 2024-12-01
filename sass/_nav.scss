@@ -72,6 +72,11 @@
 	border-radius: 1.625rem;
 	max-width: min(var(--container-width), 90%);
 
+	@media only screen and (max-width: 480px) {
+		position: relative;
+		margin: 0 auto;
+	}
+
 	&::before {
 		-webkit-backdrop-filter: var(--blur);
 		position: absolute;
