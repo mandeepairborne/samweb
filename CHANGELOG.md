@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Don't scale down article cards when clicking on tags in them.
 - Improve performance of the page when navbar is hidden by using the `config.extra.nav.auto_hide` config variable.
+- Improve tab title generation.
 - Replace `config.extra.debug_*` config variables with variables under the `config.extra.debug` section.
 
 ### Fixed
