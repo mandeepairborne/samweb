@@ -93,7 +93,6 @@ main {
 	grid-area: sidebar;
 	opacity: 0.2;
 	transition: var(--transition);
-	padding: 1rem;
 	height: 100vh;
 
 	&:hover {
@@ -116,8 +115,8 @@ main {
 				black calc(100% - 1rem),
 				transparent);
 		-webkit-mask-image: var(--mask);
-		flex: 1;
 		mask-image: var(--mask);
+		padding: 1rem;
 		overflow: auto;
 	}
 
