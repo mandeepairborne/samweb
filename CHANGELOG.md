@@ -5,13 +5,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v6.0.0...main)
+## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v6.1.1...main)
+
+## [v6.1.1](https://codeberg.org/daudix/duckquill/compare/v6.1.0...v6.1.1)
+
+### Fixed
+
+- Fix translation of table of contents heading.
+
+## [v6.1.0](https://codeberg.org/daudix/duckquill/compare/v6.0.0...v6.1.0)
+
+### Added
+
+- Add `toc_sidebar` page/section variable for turning table of contents to a sidebar.
 
 ### Changed
 
 - Don't scale down article cards when clicking on tags in them.
 - Improve performance of the page when navbar is hidden by using the `config.extra.nav.auto_hide` config variable.
+- Improve tab title generation.
 - Replace `config.extra.debug_*` config variables with variables under the `config.extra.debug` section.
+
+### Fixed
+
+- Fix navbar not scrolling with content on mobile (#109).
 
 ## [6.0.0](https://codeberg.org/daudix/duckquill/compare/v5.4.0...v6.0.0)
 

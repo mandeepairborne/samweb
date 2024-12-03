@@ -66,7 +66,7 @@ It is highly recommended to switch from the `main` branch to the latest release:
 
 ```bash
 cd themes/duckquill
-git checkout tags/v6.0.0
+git checkout tags/v6.1.1
 ```
 
 Then, enable it in your `config.toml`:
@@ -80,7 +80,7 @@ To update the theme, simply switch to a new tag:
 ```bash
 git submodule update --remote --merge
 cd themes/duckquill
-git checkout tags/v6.0.0
+git checkout tags/v6.1.1
 ```
 
 {% alert(important=true) %}
@@ -111,6 +111,7 @@ Configuration variables from `config.toml` that can be set/overriden per page/se
 - `toc`: Enables table of contents. Only first 2 levels of headings are listed.
 - `toc_inline`: Whether to render inline table of contents at the top of all pages, in addition to floating quick navigation buttons.
 - `toc_ordered`: Whether to use numbered (ordered) list for table of contents.
+- `toc_sidebar`: Whether to display table of contents as a sidebar (useful for long pages).
 
 Other variables:
 

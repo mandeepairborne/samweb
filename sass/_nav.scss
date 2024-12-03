@@ -64,6 +64,7 @@
 
 #site-nav {
 	position: sticky;
+	grid-area: nav;
 	z-index: 999;
 	margin: 1rem auto 0;
 	inset-block-start: 1rem;
@@ -71,6 +72,11 @@
 	inset-inline-start: 0;
 	border-radius: 1.625rem;
 	max-width: min(var(--container-width), 90%);
+
+	@media only screen and (max-width: 480px) {
+		position: relative;
+		margin: 0 auto;
+	}
 
 	&::before {
 		-webkit-backdrop-filter: var(--blur);
