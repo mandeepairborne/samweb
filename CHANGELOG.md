@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v6.1.1...main)
 
+### Added
+
+- Add French translation (#113).
+
+### Changed
+
+- Don't use all available width for table of contents sidebar.
+
+### Fixed
+
+- Fix build failing if social sharing button is enabled and page is missing a description (#114).
+
 ## [v6.1.1](https://codeberg.org/daudix/duckquill/compare/v6.1.0...v6.1.1)
 
 ### Fixed
