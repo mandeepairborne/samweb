@@ -10,9 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add French translation (#113).
+- Provide a way to subscribe to the tag feed (#104).
 
 ### Changed
 
+- Convert all icons to CSS variables for de-duplication and easier replacement.
 - Don't use all available width for table of contents sidebar.
 
 ### Fixed
@@ -21,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
-- **[BREAKING]** Remove `fix_contrast` and `fix_contrast_dark` config/page/section variables in favor of automatic contrast color picking (#43).
+- **[BREAKING]** Remove `extra.fix_contrast` and `extra.fix_contrast_dark` config/page/section variables in favor of automatic contrast color picking (#43).
 
 ## [v6.1.1](https://codeberg.org/daudix/duckquill/compare/v6.1.0...v6.1.1)
 

@@ -6,7 +6,10 @@
 {%- set number_of_posts = term.pages | length -%}
 
 {%- set term_name = "“" ~ term.name ~ "”" -%}
-<h1>{{ macros_translate::translate(key="posts_with_tag", default="Posts with tag $TAG", language_strings=language_strings) | replace(from="$TAG", to=term_name) }}</h1>
+<h1>
+	{{- macros_translate::translate(key="posts_with_tag", default="Posts with tag $TAG", language_strings=language_strings) | replace(from="$TAG", to=term_name) -}}
+	<a href="{{ current_url ~ 'atom.xml' }}"><i class="icon feed"></i></a>
+</h1>
 
 <p>
 	<small>
