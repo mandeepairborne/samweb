@@ -204,18 +204,20 @@
   .publication-entry {
     flex-direction: column !important;
     align-items: center !important;
-    gap: 1rem;
+    gap: 1rem !important;
     padding: 0.5rem !important;
   }
   
+  /* Remove desktop flex settings by disabling flex for child elements */
   .venue-container,
   .content-container,
   .authors-list,
   .links {
+    flex: none !important;
     width: 100% !important;
     text-align: center !important;
   }
-
+  
   .research-content ul.publications {
     display: block !important;
   }
