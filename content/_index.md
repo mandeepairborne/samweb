@@ -84,7 +84,7 @@ a) It is the digital manifestation of my evolving thoughts — a delicate collap
 </mark>
 
 <mark>
-<p class="highlight">c) I noticed that many scientists had personal websites. My friend <a href="https://mandeepairborne.github.io/">Mandeep</a> was kind enough to help me set this up, so now I have one too.</p></mark>
+b) I noticed that many scientists had personal websites. My friend <a href="https://mandeepairborne.github.io/">Mandeep</a> was kind enough to help me set this up, so now I have one too.</mark>
 
 ---
 
