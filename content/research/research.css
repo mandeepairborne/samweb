@@ -202,32 +202,22 @@
 
 @media (max-width: 768px) {
   .publication-entry {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column !important;
+    align-items: center !important;
     gap: 1rem;
+    padding: 0.5rem !important;
   }
   
-  .venue-container {
-    flex: none;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 0.5rem;
-  }
-  
-  .content-container {
-    width: 100%;
+  .venue-container,
+  .content-container,
+  .authors-list,
+  .links {
+    width: 100% !important;
+    text-align: center !important;
   }
 
   .research-content ul.publications {
-    display: block; /* Stack items instead of flex */
-  }
-  .publication-entry {
-    margin-bottom: 1rem;
-    /* If needed, adjust padding or width, e.g.: */
-    padding: 0.5rem;
-  }
-  .authors-list, .links, .venue-container {
-    text-align: center;
+    display: block !important;
   }
 }
 
