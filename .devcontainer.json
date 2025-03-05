@@ -1,0 +1,10 @@
+{
+    "name": "Cargo",
+    "image": "mcr.microsoft.com/devcontainers/base:jammy",
+
+    
+    "onCreateCommand": "curl https://sh.rustup.rs -sSf | sh -s -- -y",
+
+    
+    "postCreateCommand": ". $HOME/.cargo/env && cargo install aftman"
+}

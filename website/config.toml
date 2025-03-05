@@ -1,0 +1,98 @@
+title = "sam"
+base_url = "https://mandeepairborne.github.io"
+description = "more than personal website"
+
+compile_sass = true
+minify_html = true
+generate_feeds = true
+feed_filenames = ["rss.xml", "atom.xml"]
+build_search_index = true
+author = "mandeep"
+
+default_language = "English"
+
+taxonomies = [{ name = "tags", feed = true }]
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+    { theme = "solarized-dark", filename = "syntax-theme-dark.css" },
+    { theme = "solarized-light", filename = "syntax-theme-light.css" }
+]
+smart_punctuation = true
+bottom_footnotes = true
+
+[search]
+index_format = "fuse_json"
+
+[languages.hi]
+title = "Sameer jain"
+description = "mai sameer hu"
+generate_feeds = true
+
+taxonomies = [{ name = "tags", feed = true }]
+
+[extra]
+# Updated accent colors with a warmer, more inviting palette.
+accent_color = "#ff7800"         # A warm, peachy-orange tone for light theme.
+accent_color_dark = "#ffa348"    # A rich, burnt orange tone for dark mode.
+emoji_favicon = "🪶"
+default_theme = "light"
+
+
+show_copy_button = true
+show_reading_time = true
+show_share_button = true
+show_backlinks = true
+separator = "•"
+title_separator = "-"
+
+csp = [
+    { directive = "font-src", domains = ["'self'", "https://cdnjs.cloudflare.com"] },
+    { directive = "img-src", domains = ["'self'", "https:", "data:"] },
+    { directive = "media-src", domains = ["'self'", "https:"] },
+    { directive = "script-src", domains = ["'self'", "https://cdnjs.cloudflare.com"] },
+    { directive = "style-src", domains = ["'self'", "'unsafe-inline'", "https://cdnjs.cloudflare.com"] },
+    { directive = "frame-src", domains = ["https://player.vimeo.com", "https://www.youtube-nocookie.com", "https://toot.community"] },
+    { directive = "connect-src", domains = ["https://toot.community"] },
+    { directive = "base-uri", domains = ["'none'"] },
+    { directive = "form-action", domains = ["'none'"] }
+]
+
+[extra.nav]
+show_feed = true
+show_theme_switcher = true
+show_repo = true
+links = [
+    { url = "@/blog/_index.md", name = "Blog" },
+    { url = "@/inspire/index.md", name = "Inspire" },
+    { url = "@/research/index.md", name = "Research" },
+    { url = "@/resources/index.md", name = "Resources" }
+]
+
+[extra.footer]
+links = [
+	{ url = "@/blog/_index.md", name = "Blog" },
+    { url = "@/inspire/index.md", name = "Inspire" },
+    { url = "@/research/index.md", name = "Research" },
+    { url = "@/resources/index.md", name = "Resources" }
+]
+
+socials = [
+  { url = "https://orcid.org/0009-0005-0398-7714", name = "Orcid", icon = "fa-brands fa-orcid" },
+  { url = "https://www.linkedin.com/in/sameer-jain-219215255", name = "Linkedin", icon = "fa-brands fa-linkedin" },
+  { url = "mailto:sameerjainofficial@gmail.com", name = "Email", icon = "fa-solid fa-envelope" }
+]
+
+show_copyright = true
+
+# Custom witty copyright message
+copyright = "© 2025 [mandeep](https://mandeepairborne.github.io). All rights reserved. Built with quirky code, a dash of wit, and endless cups of coffee."
+show_powered_by = false
+show_source = false
+
+
+
+
+
