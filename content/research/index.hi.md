@@ -22,8 +22,8 @@ katex = true
 
 ## सम्मेलन और पत्रिकाओं में प्रकाशित शोध
 
-अधिक जानकारी के लिए कृपया मेरा [CV](/assets/sameer-cv.pdf) देखें!  
-{.mod-note}(* = समान योगदान, † = अनुसंधान मेंटर)
+अधिक जानकारी के लिए कृपया मेरा [CV](/assets/sameer-cv.pdf) देखें!
+<p class="mod-note">* = समान योगदान, † = अनुसंधान मेंटर</p>
 
 <div class="research-content">
   <ul class="publications">

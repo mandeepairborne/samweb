@@ -217,5 +217,17 @@
   .content-container {
     width: 100%;
   }
+
+  .research-content ul.publications {
+    display: block; /* Stack items instead of flex */
+  }
+  .publication-entry {
+    margin-bottom: 1rem;
+    /* If needed, adjust padding or width, e.g.: */
+    padding: 0.5rem;
+  }
+  .authors-list, .links, .venue-container {
+    text-align: center;
+  }
 }
 

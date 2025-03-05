@@ -21,7 +21,7 @@ Right now, I'm studying <span class="special"><span>h</span><span>a</span><span>
 ## Conference and Journal Publications
 
 For more, please see my [CV](/assets/sameer-cv.pdf)!
-{.mod-note}(* = equal contribution, † = research mentee)
+<p class="mod-note">* = equal contribution, † = research mentee</p>
 
 <div class="research-content">
   <ul class="publications">

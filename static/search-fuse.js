@@ -1,4 +1,3 @@
-	// Based on https://codeberg.org/daudix/duckquill/issues/101#issuecomment-2377169
 	let searchSetup = false;
 	let fuse;
 
