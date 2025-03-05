@@ -87,6 +87,8 @@ a) It is the digital manifestation of my evolving thoughts — a delicate collap
 b) In a universe of probabilities, having a personal website is a highly probable eigenstate, and here I am!
 </mark>
 
+<p class="highlight">b) I noticed that many scientists had personal websites. My friend <a href="https://mandeepairborne.github.io/">Mandeep</a> was kind enough to help me set this up, so now I have one too.</p>
+
 ---
 
 ## Uncertainty & Expression
@@ -150,7 +152,7 @@ $$\langle\phi|\hat{A}|\psi\rangle$$
 ## Get in Touch
 
 <div class="buttons" style="margin: 2rem 0;">
-  <a class="colored external" href="mailto:sameerjain@example.com">Email Me</a>
+  <a class="colored external" href="mailto:sameerjainofficial@gmail.com">Email Me</a>
   <a href="#top">Back to Top &#8593;</a>
 </div>
 

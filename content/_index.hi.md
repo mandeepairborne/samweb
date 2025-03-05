@@ -1,5 +1,5 @@
 +++
-title = "Home"
+title = "होम"
 [extra]
 katex = true
 +++
@@ -8,14 +8,14 @@ katex = true
 <div class="profile-header" style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; padding: 1rem 0;">
   <!-- Left Container: Photo -->
   <div class="profile-photo" style="flex: 0 0 200px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <img src="/processed_images/sam.jpg" alt="Sameer Jain" style="max-width: 100%; border-radius: 50%; border: 3px solid var(--accent-color);" />
+    <img src="/assets/sam.jpg" alt="Sameer Jain" style="max-width: 100%; border-radius: 50%; border: 3px solid var(--accent-color);" />
   </div>
   <!-- Right Container: Name, Affiliation, and Links -->
   <div class="profile-info" style="flex: 1; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <h1 style="margin: 0; font-size: 2rem;">Sameer Jain</h1>
-    <!-- Added affiliation line -->
+    <!-- Affiliation line -->
     <p style="margin: 0.5rem 0; font-size: 1rem; color: var(--text-color);">
-      Quantum Researcher &amp; Ph.D. Candidate at NITJ
+      क्वांटम अनुसंधानकर्ता एवं NITJ में पीएचडी उम्मीदवार
     </p>
     <ul class="profile-links" style="list-style: none; padding: 0; margin: 0; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
       <li>
@@ -29,7 +29,7 @@ katex = true
         </a>
       </li>
       <li>
-        <a href="https://orcid.org/0009-0005-0398-7714" title="Orcid" style="text-decoration: none;">
+        <a href="https://orcid.org/0009-0005-4333" title="Orcid" style="text-decoration: none;">
           <i class="fa-brands fa-orcid"></i> Orcid
         </a>
       </li>
@@ -54,8 +54,8 @@ katex = true
   readme.txt
 
 <strong>sameer@quantum ~</strong> cat readme.txt  
-Welcome to my quantum corner!  
-I'm Sameer Jain, a physicist exploring reality's fundamental nature.
+मेरी क्वांटम दुनिया में आपका स्वागत है!  
+मैं Sameer Jain हूँ, एक भौतिक विज्ञानी जो वास्तविकता के मौलिक सिद्धांतों की खोज में लगा है।
     </pre>
   </div>
 </div>
@@ -65,93 +65,95 @@ I'm Sameer Jain, a physicist exploring reality's fundamental nature.
 
 
 {% alert(note=true) %}
-$|\text{Website}\rangle = \alpha|\text{Under Construction}\rangle + \beta|\text{Evolving}\rangle$
+$|\text{Website}\rangle = \alpha|\text{निर्माणाधीन}\rangle + \beta|\text{विकसित}\rangle$
 {% end %}
 
-## Welcome to My Quantum Realm
+## मेरी क्वांटम दुनिया में आपका स्वागत है
 
-I'm Sameer Jain — a physicist passionate about unveiling the quantum fabric of reality.
+मैं Sameer Jain हूँ — एक भौतिक विज्ञानी, जिनमें क्वांटम संरचना के रहस्यों को उजागर करने का जज्बा है।
 
-I hold a Bachelor's in Physics from **Jiwaji University** and an M.Sc. in Physics from **NITJ**.  
-Currently, I am exploring PhD opportunities in _High Energy Physics (HEP)_ while researching innovative ideas in quantum field theory and particle dynamics.
-
----
-
-## Why This Website?
-
-<mark>
-a) It is the digital manifestation of my evolving thoughts — a delicate collapse of my ideas into reality.
-</mark>
-
-<mark>
-b) In a universe of probabilities, having a personal website is a highly probable eigenstate, and here I am!
-</mark>
+मैंने **Jiwaji University** से भौतिकी में स्नातक की डिग्री प्राप्त की और **NITJ** से एम.एससी. में भौतिकी की पढ़ाई की है।  
+वर्तमान में, मैं उच्च ऊर्जा भौतिकी (HEP) में पीएचडी के अवसरों की खोज के साथ-साथ क्वांटम फील्ड थ्योरी और कण गतिशीलता में नवाचारों पर शोध कर रहा हूँ।
 
 ---
 
-## Uncertainty & Expression
+## इस वेबसाइट का उद्देश्य?
 
-In the spirit of quantum mechanics, the purpose of this site obeys:
+<mark>
+a) यह मेरे बदलते विचारों का डिजिटल रूप है — जहाँ मेरे विचार एक सूक्ष्म तरीके से वास्तविकता का रूप धारण करते हैं।
+</mark>
+
+<mark>
+b) संभावनाओं के ब्रह्मांड में, एक व्यक्तिगत वेबसाइट होना एक अत्यधिक संभाव्य अवस्था है – और मैं यहाँ हूँ!
+</mark>
+
+<p class="highlight">मैंने देखा कि कई वैज्ञानिकों की अपनी व्यक्तिगत वेबसाइटें थीं। मेरे दोस्त <a href="https://mandeepairborne.github.io/">Mandeep</a> ने दयालु होकर मेरी मदद की, जिससे अब मेरी भी अपनी वेबसाइट है।</p>
+
+---
+
+## अनिश्चितता एवं अभिव्यक्ति
+
+क्वांटम यांत्रिकी की भावना में, इस साइट का उद्देश्य निम्न समीकरण का पालन करता है:
 
 $$\Delta \text{purpose} \cdot \Delta \text{expression} \geq \frac{\hbar}{2}$$
 
-Every update is a measurement that collapses the wave function of ideas into a refined reality.  
-Expect occasional quantum fluctuations—imperfections that remind us of the beauty of uncertainty.
+हर अपडेट एक ऐसा मापन है जो विचारों के तरंग फलन को कुंद कर एक परिष्कृत वास्तविकता में बदल देता है।  
+यहाँ आप समय-समय पर क्वांटम उतार-चढ़ाव देखेंगे — परिपूर्णता के न अधिक होने का, बल्कि अनिश्चितता की खूबसूरती का प्रमाण।
 
 ---
 
-## Academic Trajectory
+## शैक्षणिक यात्रा
 
 <dl>
-  <dt><strong>M.Sc. in Physics</strong></dt>
+  <dt><strong>एम.एससी. इन फिज़िक्स</strong></dt>
   <dd>Dr. B. R. Ambedkar National Institute of Technology, Jalandhar (NITJ)</dd>
 
-  <dt><strong>B.Sc. in Physics</strong></dt>
+  <dt><strong>बी.एससी. इन फिज़िक्स</strong></dt>
   <dd>Jiwaji University</dd>
 
-  <dt><strong>Research Interests</strong></dt>
-  <dd>High Energy Physics (HEP), Quantum Field Theory, Particle Physics</dd>
+  <dt><strong>अनुसंधान रुचियाँ</strong></dt>
+  <dd>उच्च ऊर्जा भौतिकी (HEP), क्वांटम फील्ड थ्योरी, कण भौतिकी</dd>
 </dl>
 
 ---
 
-## Physics & Beyond
+## भौतिकी और उससे परे
 
-As a scientist, I view the universe as a balance of kinetic and potential energies:
+एक वैज्ञानिक के रूप में, मैं ब्रह्मांड को गतिज और स्थैतिक ऊर्जा के संतुलन के रूप में देखता हूँ:
 
 $$\hat{H} = \hat{T} + \hat{V}$$
 
-And in the words of Dirac:
+और जैसा कि Dirac ने कहा है:
 
 $$i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = \hat{H}|\psi(t)\rangle$$
 
-This equation reminds us that time evolution is governed by energy — both in physics and in life.
+यह समीकरण हमें याद दिलाता है कि समय के साथ विकसित होना ऊर्जा द्वारा नियंत्रित होता है — भौतिकी में भी और जीवन में भी।
 
 {% alert(tip=true) %}
-When $[\hat{x},\hat{p}] = i\hbar$, we discover that perfect knowledge is an illusion — an eternal reminder of nature’s mystery.
+जब $[\hat{x},\hat{p}] = i\hbar$, तो हमें एहसास होता है कि पूर्ण ज्ञान एक भ्रम है — प्रकृति की रहस्यमयी सुंदरता का अनंत स्मरण।
 {% end %}
 
 ---
 
-## Quantum Musings
+## क्वांटम चिंतन
 
-> *"Not only is the Universe stranger than we imagine, it is stranger than we can imagine."*  
+> *"संसार न सिर्फ उतना अजीब है जितना हम सोचते हैं, बल्कि उससे भी ज्यादा अजीब है जितना हम कल्पना कर सकते हैं।"*  
 > — Werner Heisenberg
 >
-> *"God does not play dice with the universe; He sometimes throws them."*  
+> *"ईश्वर ब्रह्मांड के साथ पासा नहीं खेलते; कभी-कभी वे इन्हें फेंकते हैं।"*  
 > — Niels Bohr
 
-Mathematics and physics provide the language to explore these mysteries:
+गणित और भौतिकी हमें इन रहस्यों की खोज का भाषा प्रदान करती हैं:
 
 $$\langle\phi|\hat{A}|\psi\rangle$$
 
 ---
 
-## Get in Touch
+## संपर्क करें
 
 <div class="buttons" style="margin: 2rem 0;">
-  <a class="colored external" href="mailto:sameerjain@example.com">Email Me</a>
-  <a href="#top">Back to Top &#8593;</a>
+  <a class="colored external" href="mailto:sameerjainofficial@gmail.com">मुझे ईमेल करें</a>
+  <a href="#top">ऊपर जाएँ &#8593;</a>
 </div>
 
-<small>Last updated: March 2025</small>
+<small>अंतिम अपडेट: मार्च 2025</small>

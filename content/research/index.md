@@ -16,9 +16,7 @@ My work involves:
 
 Right now, I'm studying <span class="special"><span>h</span><span>a</span><span>d</span><span>r</span><span>o</span><span>n</span><span>s</span></span> to better understand their internal structure and behavior.
 
-<div class="callout">
-    How can computational and theoretical methods help us understand the basic building blocks of matter?
-</div>
+
 
 ## Conference and Journal Publications
 
@@ -38,9 +36,9 @@ For more, please see my [CV](/assets/sameer-cv.pdf)!
           </a>
         </h4>
         <div class="authors-list">
-          <span><a href="https://orcid.org/0009-0005-0398-7714">Sameer Jain</a> <span class="mod-note">&#8727;&dagger;</span></span>
-          <span><a href="https://orcid.org/0000-0002-3047-4333">Shubham Sharma</a> <span class="mod-note">&#8727;&dagger;</span></span>
-          <span><a href="https://orcid.org/0000-0002-3288-2250">Harleen Dhaiya</a> <span class="mod-note">&#8727;&dagger;</span></span>
+          <span><a href="https://orcid.org/0009-0005-0398-7714">Sameer Jain</a><sup class="mod-note">&#8727;&dagger;</sup></span>
+          <span><a href="https://orcid.org/0000-0002-3047-4333">Shubham Sharma</a><sup class="mod-note">&#8727;&dagger;</sup></span>
+          <span><a href="https://orcid.org/0000-0002-3288-2250">Harleen Dhaiya</a><sup class="mod-note">&#8727;&dagger;</sup></span>
         </div>
         <div class="links">
           <a href="/assets/twist3.pdf">PDF</a>
@@ -62,8 +60,8 @@ For more, please see my [CV](/assets/sameer-cv.pdf)!
           </a>
         </h4>
         <div class="authors-list">
-          <span><a href="https://orcid.org/0000-0005-4333">Shubham Sharma</a> <span class="mod-note">&#8727;&dagger;</span></span>
-          <span><a href="https://orcid.org/0009-0005-0398-7714">Sameer Jain</a> <span class="mod-note">&#8727;</span></span>
+          <span><a href="https://orcid.org/0000-0005-4333">Shubham Sharma</a><sup class="mod-note">&#8727;&dagger;</sup></span>
+          <span><a href="https://orcid.org/0009-0005-0398-7714">Sameer Jain</a><sup class="mod-note">&#8727;</sup></span>
           <span><a href="https://orcid.org/0000-0002-3288-2250">Harleen Dhaiya</a></span>
         </div>
         <div class="links">

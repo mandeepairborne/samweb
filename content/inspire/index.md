@@ -1,6 +1,6 @@
 +++
 title = "Inspiration Unleashed: A Fusion of Art & Music"
-date = "2025-06-30"
+date = "2025-03-04"
 authors = ["Sameer Jain"]
 description = "An exploration of art and music that stokes the fires of creativity and deep contemplation."
 [extra]

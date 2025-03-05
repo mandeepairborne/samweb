@@ -1,4 +1,4 @@
-title = "sam"
+title = "Sameer Jain"
 base_url = "https://mandeepairborne.github.io"
 description = "more than personal website"
 
@@ -88,7 +88,7 @@ socials = [
 show_copyright = true
 
 # Custom witty copyright message
-copyright = "© 2025 [mandeep](https://mandeepairborne.github.io). All rights reserved. Built with quirky code, a dash of wit, and endless cups of coffee."
+copyright = "© 2025 [Mandeep](https://mandeepairborne.github.io). Built with quirky code, a dash of wit, and endless cups of coffee."
 show_powered_by = false
 show_source = false
 

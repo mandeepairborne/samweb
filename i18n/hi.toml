@@ -11,10 +11,9 @@ date_locale = "hi_IN"
 # Should match the names in config.extra.nav.links and config.extra.footer.links.
 
 Blog = "ब्लॉग"
-Inspire = "ब्लॉग"
-Research = "ब्लॉग"
-Resources = "ब्लॉग"
-
+Inspire = "प्रेरणा"
+Research = "अनुसंधान"
+Resources = "संसाधन"
 
 all_tags = "सभी टैग दिखाएं"
 archived = "संग्रहीत"
@@ -27,7 +26,7 @@ boosts_from = "$INSTANCE से बूस्ट्स"
 by_author = "$AUTHOR द्वारा"
 caution = "सावधानी"
 comments = "टिप्पणियाँ"
-comments_description = "आप इस ब्लॉग पोस्ट पर अपने Mastodon या अन्य ActivityPub/Fediverse खाते के साथ सार्वजनिक टिप्पणी करके टिप्पणी कर सकते हैं।"
+comments_description = "आप इस ब्लॉग पोस्ट पर अपने Mastodon या अन्य ActivityPub/Fediverse खाते का उपयोग करके सार्वजनिक टिप्पणी कर सकते हैं।"
 comments_noscript = "टिप्पणी दिखाने के लिए JavaScript आवश्यक है। कृपया JavaScript चालू करें या पोस्ट Mastodon पर देखें।"
 comments_qr = "Mastodon पोस्ट का QR कोड"
 copy_code = "कोड कॉपी करें"
