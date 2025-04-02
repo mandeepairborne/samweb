@@ -8,7 +8,7 @@ katex = true
 <div class="profile-header" style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; padding: 1rem 0;">
   <!-- Left Container: Photo -->
   <div class="profile-photo" style="flex: 0 0 200px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <img src="/assets/sam.jpg" alt="Sameer Jain" style="max-width: 100%; border-radius: 50%; border: 3px solid var(--accent-color);" />
+    <img src="{{ get_url(path='assets/samshot.jpg') }}" alt="Sameer Jain" style="max-width: 100%; border-radius: 50%; border: 3px solid var(--accent-color);" />
   </div>
   <!-- Right Container: Name, Affiliation, and Links -->
   <div class="profile-info" style="flex: 1; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
